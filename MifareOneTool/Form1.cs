@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography;
+using System.Text.RegularExpressions;
+using Microsoft.VisualBasic;
 
 namespace MifareOneTool
 {
@@ -21,16 +23,6 @@ namespace MifareOneTool
 
         private Process process = new Process();
         private bool lprocess = false;
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked == true)
-            {
-                button2.Enabled = false;
-            }else{
-                button2.Enabled = true;
-            }
-        }
 
         private void lockBtn(bool locks)
         {
@@ -499,6 +491,47 @@ namespace MifareOneTool
         private void button15_Click(object sender, EventArgs e)
         {
             process.Kill();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            string pat = "[0-9A-Fa-f]{8}";
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+            byte[] buid = new byte[4];
+            RNGCryptoServiceProvider rng=new RNGCryptoServiceProvider();
+            rng.GetNonZeroBytes(buid);
+            string uid = Interaction.InputBox("请输入UID号", "请输入需要写入的UID卡号，共8位十六进制数，如E44A3BF1。", hex(buid),-1,-1).Trim();
+            if(!Regex.IsMatch(uid, pat)){
+                MessageBox.Show("输入的UID号不合法", "InputError", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            BackgroundWorker bgw = new BackgroundWorker();
+            bgw.DoWork += new DoWorkEventHandler(set_uid);
+            bgw.WorkerReportsProgress = true;
+            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+            bgw.RunWorkerAsync();
+        }
+
+        void set_uid(object sender, DoWorkEventArgs e)
+        {
+            if (lprocess) { return; }
+            ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/nfc-mfsetuid.exe");
+            psi.Arguments = "" + ((string)e.Argument).Substring(0,8) + "2B0804006263646566676869";
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+            lprocess = true;
+            BackgroundWorker b = (BackgroundWorker)sender;
+            process = Process.Start(psi);
+            process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            //StreamReader stderr = process.StandardError;
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+            process.WaitForExit();
+            lprocess = false;
+            b.ReportProgress(100, "##运行完毕##");
         }
     }
 }
