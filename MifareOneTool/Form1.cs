@@ -82,7 +82,7 @@ namespace MifareOneTool
 
         private void Form1_Load(object sender, EventArgs e)
         {
-        
+            linkLabel1.Links.Add(0, linkLabel1.Text.Length, "https://github.com/xcicode/MifareOneTool/releases/latest");
         }
 
         private void button2_Click(object sender, EventArgs e)
