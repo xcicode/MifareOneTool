@@ -490,7 +490,13 @@ namespace MifareOneTool
 
         private void button15_Click(object sender, EventArgs e)
         {
-            process.Kill();
+            if (lprocess)
+            {
+                if (process.HasExited == false)
+                {
+                    process.Kill();
+                }
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -500,7 +506,7 @@ namespace MifareOneTool
             byte[] buid = new byte[4];
             RNGCryptoServiceProvider rng=new RNGCryptoServiceProvider();
             rng.GetNonZeroBytes(buid);
-            string uid = Interaction.InputBox("请输入UID号", "请输入需要写入的UID卡号，共8位十六进制数，如E44A3BF1。", hex(buid),-1,-1).Trim();
+            string uid = Interaction.InputBox("请输入需要写入的UID卡号，共8位十六进制数，如E44A3BF1。", "请输入UID号", hex(buid),-1,-1).Trim();
             if(!Regex.IsMatch(uid, pat)){
                 MessageBox.Show("输入的UID号不合法", "InputError", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -509,7 +515,7 @@ namespace MifareOneTool
             bgw.DoWork += new DoWorkEventHandler(set_uid);
             bgw.WorkerReportsProgress = true;
             bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
-            bgw.RunWorkerAsync();
+            bgw.RunWorkerAsync(uid);
         }
 
         void set_uid(object sender, DoWorkEventArgs e)
