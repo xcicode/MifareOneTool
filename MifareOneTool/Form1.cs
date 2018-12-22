@@ -539,5 +539,10 @@ namespace MifareOneTool
             lprocess = false;
             b.ReportProgress(100, "##运行完毕##");
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/xcicode/MifareOneTool/releases/latest");
+        }
     }
 }
