@@ -483,5 +483,22 @@ namespace MifareOneTool
             lprocess = false;
             b.ReportProgress(100, "##运行完毕##");
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            string logtext = richTextBox1.Text;
+            File.WriteAllText("m1t.log", logtext, Encoding.UTF8);
+            MessageBox.Show("终端内容已保存至m1t.log文件", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            process.Kill();
+        }
     }
 }
