@@ -41,7 +41,7 @@ namespace MifareOneTool
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+                        if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(list_dev);
             bgw.WorkerReportsProgress = true;
@@ -52,6 +52,10 @@ namespace MifareOneTool
         void default_rpt(object sender, ProgressChangedEventArgs e)
         {
             logAppend((string)e.UserState);
+            if (e.ProgressPercentage == 100)
+            {
+                Text = "MifareOne Tool - 运行完毕";
+            }
         }
 
         private void logAppend(string msg){
@@ -87,7 +91,7 @@ namespace MifareOneTool
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+                        if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(list_tag);
             bgw.WorkerReportsProgress = true;
@@ -118,7 +122,7 @@ namespace MifareOneTool
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+                        if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "";
             SaveFileDialog ofd = new SaveFileDialog();
             ofd.AddExtension = true;
@@ -196,7 +200,7 @@ namespace MifareOneTool
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+                        if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
@@ -251,7 +255,7 @@ namespace MifareOneTool
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+                        if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "";
             SaveFileDialog ofd = new SaveFileDialog();
             ofd.AddExtension = true;
@@ -298,7 +302,7 @@ namespace MifareOneTool
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+                        if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(reset_uid);
             bgw.WorkerReportsProgress = true;
@@ -344,7 +348,7 @@ namespace MifareOneTool
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+                        if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             if (MessageBox.Show("该操作将会清空UID卡内全部数据！！！\n清空后不可恢复！请确认是否要继续操作？", "危险操作警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.Cancel)
             { return; }
             BackgroundWorker bgw = new BackgroundWorker();
@@ -381,7 +385,7 @@ namespace MifareOneTool
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+                        if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "";
             SaveFileDialog ofd = new SaveFileDialog();
             ofd.AddExtension = true;
@@ -428,7 +432,7 @@ namespace MifareOneTool
 
         private void button11_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+                        if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
@@ -495,6 +499,7 @@ namespace MifareOneTool
                 if (process.HasExited == false)
                 {
                     process.Kill();
+                    Form1.ActiveForm.Text = "MifareOne Tool - 已终止";
                 }
             }
         }
@@ -502,7 +507,7 @@ namespace MifareOneTool
         private void button8_Click(object sender, EventArgs e)
         {
             string pat = "[0-9A-Fa-f]{8}";
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+                        if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             byte[] buid = new byte[4];
             RNGCryptoServiceProvider rng=new RNGCryptoServiceProvider();
             rng.GetNonZeroBytes(buid);
