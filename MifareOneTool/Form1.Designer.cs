@@ -30,24 +30,25 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCLI = new System.Windows.Forms.Button();
+            this.buttonScanCard = new System.Windows.Forms.Button();
+            this.buttonListDev = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonMfRead = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonBmfWrite = new System.Windows.Forms.Button();
+            this.buttonBmfRead = new System.Windows.Forms.Button();
+            this.buttonMfoc = new System.Windows.Forms.Button();
+            this.buttonUidWrite = new System.Windows.Forms.Button();
+            this.buttonUidFormat = new System.Windows.Forms.Button();
+            this.buttonUidReset = new System.Windows.Forms.Button();
+            this.buttonMfWrite = new System.Windows.Forms.Button();
+            this.buttonSelectKey = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.buttonKill = new System.Windows.Forms.Button();
+            this.buttonConSave = new System.Windows.Forms.Button();
+            this.buttonConClr = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -56,9 +57,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.linkLabel1);
-            this.groupBox1.Controls.Add(this.button12);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonCLI);
+            this.groupBox1.Controls.Add(this.buttonScanCard);
+            this.groupBox1.Controls.Add(this.buttonListDev);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 83);
@@ -77,35 +78,35 @@
             this.linkLabel1.Text = "检查更新";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // button12
+            // buttonCLI
             // 
-            this.button12.Location = new System.Drawing.Point(102, 24);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(90, 23);
-            this.button12.TabIndex = 11;
-            this.button12.Text = "手动CLI";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.buttonCLI.Location = new System.Drawing.Point(102, 24);
+            this.buttonCLI.Name = "buttonCLI";
+            this.buttonCLI.Size = new System.Drawing.Size(90, 23);
+            this.buttonCLI.TabIndex = 11;
+            this.buttonCLI.Text = "手动CLI";
+            this.buttonCLI.UseVisualStyleBackColor = true;
+            this.buttonCLI.Click += new System.EventHandler(this.buttonCLI_Click);
             // 
-            // button2
+            // buttonScanCard
             // 
-            this.button2.Location = new System.Drawing.Point(6, 53);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "手动扫描";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonScanCard.Location = new System.Drawing.Point(6, 53);
+            this.buttonScanCard.Name = "buttonScanCard";
+            this.buttonScanCard.Size = new System.Drawing.Size(90, 23);
+            this.buttonScanCard.TabIndex = 1;
+            this.buttonScanCard.Text = "手动扫描";
+            this.buttonScanCard.UseVisualStyleBackColor = true;
+            this.buttonScanCard.Click += new System.EventHandler(this.buttonScanCard_Click);
             // 
-            // button1
+            // buttonListDev
             // 
-            this.button1.Location = new System.Drawing.Point(6, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "检测";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonListDev.Location = new System.Drawing.Point(6, 24);
+            this.buttonListDev.Name = "buttonListDev";
+            this.buttonListDev.Size = new System.Drawing.Size(90, 23);
+            this.buttonListDev.TabIndex = 0;
+            this.buttonListDev.Text = "检测";
+            this.buttonListDev.UseVisualStyleBackColor = true;
+            this.buttonListDev.Click += new System.EventHandler(this.buttonListDev_Click);
             // 
             // richTextBox1
             // 
@@ -118,27 +119,27 @@
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "Hello,cardman!\n";
             // 
-            // button3
+            // buttonMfRead
             // 
-            this.button3.Location = new System.Drawing.Point(6, 24);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "读卡";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonMfRead.Location = new System.Drawing.Point(6, 24);
+            this.buttonMfRead.Name = "buttonMfRead";
+            this.buttonMfRead.Size = new System.Drawing.Size(75, 23);
+            this.buttonMfRead.TabIndex = 3;
+            this.buttonMfRead.Text = "读卡";
+            this.buttonMfRead.UseVisualStyleBackColor = true;
+            this.buttonMfRead.Click += new System.EventHandler(this.buttonMfRead_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button11);
-            this.groupBox2.Controls.Add(this.button10);
-            this.groupBox2.Controls.Add(this.button9);
-            this.groupBox2.Controls.Add(this.button8);
-            this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.buttonBmfWrite);
+            this.groupBox2.Controls.Add(this.buttonBmfRead);
+            this.groupBox2.Controls.Add(this.buttonMfoc);
+            this.groupBox2.Controls.Add(this.buttonUidWrite);
+            this.groupBox2.Controls.Add(this.buttonUidFormat);
+            this.groupBox2.Controls.Add(this.buttonUidReset);
+            this.groupBox2.Controls.Add(this.buttonMfWrite);
+            this.groupBox2.Controls.Add(this.buttonSelectKey);
+            this.groupBox2.Controls.Add(this.buttonMfRead);
             this.groupBox2.Location = new System.Drawing.Point(218, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(417, 83);
@@ -146,91 +147,91 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "功能";
             // 
-            // button11
+            // buttonBmfWrite
             // 
-            this.button11.Location = new System.Drawing.Point(330, 53);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "后门写";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.buttonBmfWrite.Location = new System.Drawing.Point(330, 53);
+            this.buttonBmfWrite.Name = "buttonBmfWrite";
+            this.buttonBmfWrite.Size = new System.Drawing.Size(75, 23);
+            this.buttonBmfWrite.TabIndex = 10;
+            this.buttonBmfWrite.Text = "后门写";
+            this.buttonBmfWrite.UseVisualStyleBackColor = true;
+            this.buttonBmfWrite.Click += new System.EventHandler(this.buttonBmfWrite_Click);
             // 
-            // button10
+            // buttonBmfRead
             // 
-            this.button10.Location = new System.Drawing.Point(330, 24);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "后门读";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.buttonBmfRead.Location = new System.Drawing.Point(330, 24);
+            this.buttonBmfRead.Name = "buttonBmfRead";
+            this.buttonBmfRead.Size = new System.Drawing.Size(75, 23);
+            this.buttonBmfRead.TabIndex = 9;
+            this.buttonBmfRead.Text = "后门读";
+            this.buttonBmfRead.UseVisualStyleBackColor = true;
+            this.buttonBmfRead.Click += new System.EventHandler(this.buttonBmfRead_Click);
             // 
-            // button9
+            // buttonMfoc
             // 
-            this.button9.Location = new System.Drawing.Point(249, 53);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "MFOC";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.buttonMfoc.Location = new System.Drawing.Point(249, 53);
+            this.buttonMfoc.Name = "buttonMfoc";
+            this.buttonMfoc.Size = new System.Drawing.Size(75, 23);
+            this.buttonMfoc.TabIndex = 8;
+            this.buttonMfoc.Text = "MFOC";
+            this.buttonMfoc.UseVisualStyleBackColor = true;
+            this.buttonMfoc.Click += new System.EventHandler(this.buttonMfoc_Click);
             // 
-            // button8
+            // buttonUidWrite
             // 
-            this.button8.Location = new System.Drawing.Point(168, 53);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "UID写号";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.buttonUidWrite.Location = new System.Drawing.Point(168, 53);
+            this.buttonUidWrite.Name = "buttonUidWrite";
+            this.buttonUidWrite.Size = new System.Drawing.Size(75, 23);
+            this.buttonUidWrite.TabIndex = 5;
+            this.buttonUidWrite.Text = "UID写号";
+            this.buttonUidWrite.UseVisualStyleBackColor = true;
+            this.buttonUidWrite.Click += new System.EventHandler(this.buttonUidWrite_Click);
             // 
-            // button7
+            // buttonUidFormat
             // 
-            this.button7.Location = new System.Drawing.Point(249, 24);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "UID全格";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.buttonUidFormat.Location = new System.Drawing.Point(249, 24);
+            this.buttonUidFormat.Name = "buttonUidFormat";
+            this.buttonUidFormat.Size = new System.Drawing.Size(75, 23);
+            this.buttonUidFormat.TabIndex = 7;
+            this.buttonUidFormat.Text = "UID全格";
+            this.buttonUidFormat.UseVisualStyleBackColor = true;
+            this.buttonUidFormat.Click += new System.EventHandler(this.buttonUidFormat_Click);
             // 
-            // button6
+            // buttonUidReset
             // 
-            this.button6.Location = new System.Drawing.Point(168, 24);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "UID重置";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.buttonUidReset.Location = new System.Drawing.Point(168, 24);
+            this.buttonUidReset.Name = "buttonUidReset";
+            this.buttonUidReset.Size = new System.Drawing.Size(75, 23);
+            this.buttonUidReset.TabIndex = 6;
+            this.buttonUidReset.Text = "UID重置";
+            this.buttonUidReset.UseVisualStyleBackColor = true;
+            this.buttonUidReset.Click += new System.EventHandler(this.buttonUidReset_Click);
             // 
-            // button5
+            // buttonMfWrite
             // 
-            this.button5.Location = new System.Drawing.Point(87, 24);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "写卡";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonMfWrite.Location = new System.Drawing.Point(87, 24);
+            this.buttonMfWrite.Name = "buttonMfWrite";
+            this.buttonMfWrite.Size = new System.Drawing.Size(75, 23);
+            this.buttonMfWrite.TabIndex = 5;
+            this.buttonMfWrite.Text = "写卡";
+            this.buttonMfWrite.UseVisualStyleBackColor = true;
+            this.buttonMfWrite.Click += new System.EventHandler(this.buttonMfWrite_Click);
             // 
-            // button4
+            // buttonSelectKey
             // 
-            this.button4.Location = new System.Drawing.Point(6, 53);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(156, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "选择key.mfd";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonSelectKey.Location = new System.Drawing.Point(6, 53);
+            this.buttonSelectKey.Name = "buttonSelectKey";
+            this.buttonSelectKey.Size = new System.Drawing.Size(156, 23);
+            this.buttonSelectKey.TabIndex = 4;
+            this.buttonSelectKey.Text = "选择key.mfd";
+            this.buttonSelectKey.UseVisualStyleBackColor = true;
+            this.buttonSelectKey.Click += new System.EventHandler(this.buttonSelectKey_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button15);
-            this.groupBox3.Controls.Add(this.button14);
-            this.groupBox3.Controls.Add(this.button13);
+            this.groupBox3.Controls.Add(this.buttonKill);
+            this.groupBox3.Controls.Add(this.buttonConSave);
+            this.groupBox3.Controls.Add(this.buttonConClr);
             this.groupBox3.Location = new System.Drawing.Point(641, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(169, 83);
@@ -238,41 +239,51 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "运行/终端";
             // 
-            // button15
+            // buttonKill
             // 
-            this.button15.Location = new System.Drawing.Point(6, 53);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 23);
-            this.button15.TabIndex = 2;
-            this.button15.Text = "停止运行";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.buttonKill.Location = new System.Drawing.Point(6, 53);
+            this.buttonKill.Name = "buttonKill";
+            this.buttonKill.Size = new System.Drawing.Size(75, 23);
+            this.buttonKill.TabIndex = 2;
+            this.buttonKill.Text = "停止运行";
+            this.buttonKill.UseVisualStyleBackColor = true;
+            this.buttonKill.Click += new System.EventHandler(this.buttonKill_Click);
             // 
-            // button14
+            // buttonConSave
             // 
-            this.button14.Location = new System.Drawing.Point(87, 24);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "保存日志";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.buttonConSave.Location = new System.Drawing.Point(87, 24);
+            this.buttonConSave.Name = "buttonConSave";
+            this.buttonConSave.Size = new System.Drawing.Size(75, 23);
+            this.buttonConSave.TabIndex = 1;
+            this.buttonConSave.Text = "保存日志";
+            this.buttonConSave.UseVisualStyleBackColor = true;
+            this.buttonConSave.Click += new System.EventHandler(this.buttonConSave_Click);
             // 
-            // button13
+            // buttonConClr
             // 
-            this.button13.Location = new System.Drawing.Point(6, 24);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 23);
-            this.button13.TabIndex = 0;
-            this.button13.Text = "清空终端";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.buttonConClr.Location = new System.Drawing.Point(6, 24);
+            this.buttonConClr.Name = "buttonConClr";
+            this.buttonConClr.Size = new System.Drawing.Size(75, 23);
+            this.buttonConClr.TabIndex = 0;
+            this.buttonConClr.Text = "清空终端";
+            this.buttonConClr.UseVisualStyleBackColor = true;
+            this.buttonConClr.Click += new System.EventHandler(this.buttonConClr_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Location = new System.Drawing.Point(641, 101);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(169, 293);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "工具";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(835, 406);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.richTextBox1);
@@ -293,25 +304,26 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonScanCard;
+        private System.Windows.Forms.Button buttonListDev;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonMfRead;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button buttonUidWrite;
+        private System.Windows.Forms.Button buttonUidFormat;
+        private System.Windows.Forms.Button buttonUidReset;
+        private System.Windows.Forms.Button buttonMfWrite;
+        private System.Windows.Forms.Button buttonSelectKey;
+        private System.Windows.Forms.Button buttonCLI;
+        private System.Windows.Forms.Button buttonBmfWrite;
+        private System.Windows.Forms.Button buttonBmfRead;
+        private System.Windows.Forms.Button buttonMfoc;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button buttonConSave;
+        private System.Windows.Forms.Button buttonConClr;
+        private System.Windows.Forms.Button buttonKill;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 
