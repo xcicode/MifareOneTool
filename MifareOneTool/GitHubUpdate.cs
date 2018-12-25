@@ -25,7 +25,7 @@ namespace MifareOneTool
         //        return default(T);
         //    }
         //}
-        void _GitHubUpdate(string GitHubR)
+        public GitHubUpdate(string GitHubR)
         {
             this.localVersion = Assembly.GetExecutingAssembly().GetName().Version;
             try

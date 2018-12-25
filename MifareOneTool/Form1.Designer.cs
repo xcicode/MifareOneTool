@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.buttonCLI = new System.Windows.Forms.Button();
@@ -49,9 +50,10 @@
             this.buttonConSave = new System.Windows.Forms.Button();
             this.buttonConClr = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.buttonGuide = new System.Windows.Forms.Button();
-            this.buttonHexTool = new System.Windows.Forms.Button();
             this.buttonMfcuk = new System.Windows.Forms.Button();
+            this.buttonHexTool = new System.Windows.Forms.Button();
+            this.buttonTool1 = new System.Windows.Forms.Button();
+            this.toolTipHelp = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -129,7 +131,7 @@
             this.buttonMfRead.Name = "buttonMfRead";
             this.buttonMfRead.Size = new System.Drawing.Size(75, 23);
             this.buttonMfRead.TabIndex = 3;
-            this.buttonMfRead.Text = "读卡";
+            this.buttonMfRead.Text = "读M1卡";
             this.buttonMfRead.UseVisualStyleBackColor = true;
             this.buttonMfRead.Click += new System.EventHandler(this.buttonMfRead_Click);
             // 
@@ -177,7 +179,8 @@
             this.buttonMfoc.Name = "buttonMfoc";
             this.buttonMfoc.Size = new System.Drawing.Size(75, 23);
             this.buttonMfoc.TabIndex = 8;
-            this.buttonMfoc.Text = "MFOC";
+            this.buttonMfoc.Text = "MFOC读";
+            this.toolTipHelp.SetToolTip(this.buttonMfoc, "按住Ctrl点击该按钮可添加已知密钥。");
             this.buttonMfoc.UseVisualStyleBackColor = true;
             this.buttonMfoc.Click += new System.EventHandler(this.buttonMfoc_Click);
             // 
@@ -217,7 +220,7 @@
             this.buttonMfWrite.Name = "buttonMfWrite";
             this.buttonMfWrite.Size = new System.Drawing.Size(75, 23);
             this.buttonMfWrite.TabIndex = 5;
-            this.buttonMfWrite.Text = "写卡";
+            this.buttonMfWrite.Text = "写M1卡";
             this.buttonMfWrite.UseVisualStyleBackColor = true;
             this.buttonMfWrite.Click += new System.EventHandler(this.buttonMfWrite_Click);
             // 
@@ -249,7 +252,7 @@
             this.buttonKill.Name = "buttonKill";
             this.buttonKill.Size = new System.Drawing.Size(75, 23);
             this.buttonKill.TabIndex = 2;
-            this.buttonKill.Text = "停止运行";
+            this.buttonKill.Text = "停运行";
             this.buttonKill.UseVisualStyleBackColor = true;
             this.buttonKill.Click += new System.EventHandler(this.buttonKill_Click);
             // 
@@ -259,7 +262,7 @@
             this.buttonConSave.Name = "buttonConSave";
             this.buttonConSave.Size = new System.Drawing.Size(75, 23);
             this.buttonConSave.TabIndex = 1;
-            this.buttonConSave.Text = "保存日志";
+            this.buttonConSave.Text = "存日志";
             this.buttonConSave.UseVisualStyleBackColor = true;
             this.buttonConSave.Click += new System.EventHandler(this.buttonConSave_Click);
             // 
@@ -269,7 +272,7 @@
             this.buttonConClr.Name = "buttonConClr";
             this.buttonConClr.Size = new System.Drawing.Size(75, 23);
             this.buttonConClr.TabIndex = 0;
-            this.buttonConClr.Text = "清空终端";
+            this.buttonConClr.Text = "清终端";
             this.buttonConClr.UseVisualStyleBackColor = true;
             this.buttonConClr.Click += new System.EventHandler(this.buttonConClr_Click);
             // 
@@ -277,33 +280,13 @@
             // 
             this.groupBox4.Controls.Add(this.buttonMfcuk);
             this.groupBox4.Controls.Add(this.buttonHexTool);
-            this.groupBox4.Controls.Add(this.buttonGuide);
+            this.groupBox4.Controls.Add(this.buttonTool1);
             this.groupBox4.Location = new System.Drawing.Point(641, 101);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(169, 293);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "工具";
-            // 
-            // buttonGuide
-            // 
-            this.buttonGuide.Enabled = false;
-            this.buttonGuide.Location = new System.Drawing.Point(6, 24);
-            this.buttonGuide.Name = "buttonGuide";
-            this.buttonGuide.Size = new System.Drawing.Size(156, 45);
-            this.buttonGuide.TabIndex = 0;
-            this.buttonGuide.Text = "向导模式";
-            this.buttonGuide.UseVisualStyleBackColor = true;
-            this.buttonGuide.Click += new System.EventHandler(this.buttonGuide_Click);
-            // 
-            // buttonHexTool
-            // 
-            this.buttonHexTool.Location = new System.Drawing.Point(6, 75);
-            this.buttonHexTool.Name = "buttonHexTool";
-            this.buttonHexTool.Size = new System.Drawing.Size(156, 45);
-            this.buttonHexTool.TabIndex = 1;
-            this.buttonHexTool.Text = "Hex工具";
-            this.buttonHexTool.UseVisualStyleBackColor = true;
             // 
             // buttonMfcuk
             // 
@@ -314,6 +297,35 @@
             this.buttonMfcuk.TabIndex = 3;
             this.buttonMfcuk.Text = "全加密密钥恢复\r\nMFCUK";
             this.buttonMfcuk.UseVisualStyleBackColor = true;
+            this.buttonMfcuk.Click += new System.EventHandler(this.buttonMfcuk_Click);
+            // 
+            // buttonHexTool
+            // 
+            this.buttonHexTool.Enabled = false;
+            this.buttonHexTool.Location = new System.Drawing.Point(6, 75);
+            this.buttonHexTool.Name = "buttonHexTool";
+            this.buttonHexTool.Size = new System.Drawing.Size(156, 45);
+            this.buttonHexTool.TabIndex = 1;
+            this.buttonHexTool.Text = "Hex工具";
+            this.buttonHexTool.UseVisualStyleBackColor = true;
+            // 
+            // buttonTool1
+            // 
+            this.buttonTool1.Enabled = false;
+            this.buttonTool1.Location = new System.Drawing.Point(6, 24);
+            this.buttonTool1.Name = "buttonTool1";
+            this.buttonTool1.Size = new System.Drawing.Size(156, 45);
+            this.buttonTool1.TabIndex = 0;
+            this.buttonTool1.Text = "key.mfd工具";
+            this.buttonTool1.UseVisualStyleBackColor = true;
+            // 
+            // toolTipHelp
+            // 
+            this.toolTipHelp.AutoPopDelay = 2000;
+            this.toolTipHelp.InitialDelay = 500;
+            this.toolTipHelp.ReshowDelay = 100;
+            this.toolTipHelp.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipHelp.ToolTipTitle = "提示";
             // 
             // Form1
             // 
@@ -362,9 +374,10 @@
         private System.Windows.Forms.Button buttonKill;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button buttonGuide;
+        private System.Windows.Forms.Button buttonTool1;
         private System.Windows.Forms.Button buttonHexTool;
         private System.Windows.Forms.Button buttonMfcuk;
+        private System.Windows.Forms.ToolTip toolTipHelp;
     }
 }
 
