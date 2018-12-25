@@ -3,7 +3,7 @@ A GUI Mifare Classic tool on Windows
 
 ## 安装
 1. [下载最新发布](https://github.com/xcicode/MifareOneTool/releases/latest)
-2. 解压M1T.zip到独立目录（建议目录中不要出现空格）/运行M1T-Instalk.zip中的安装工具  
+2. 解压M1T-Release.zip到独立目录（建议目录中不要出现空格）  
 3. 就绪！
 
 ## 兼容设备
