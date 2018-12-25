@@ -109,21 +109,7 @@ namespace MifareOneTool
         private void buttonMfRead_Click(object sender, EventArgs e)
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
-            string rmfd = "";
-            SaveFileDialog ofd = new SaveFileDialog();
-            ofd.AddExtension = true;
-            ofd.DefaultExt = ".mfd";
-            ofd.Title = "请选择MFD文件保存位置及文件名";
-            ofd.OverwritePrompt = true;
-            ofd.Filter = "MFD文件|*.mfd";
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                rmfd = ofd.FileName;
-            }
-            else
-            {
-                return;
-            }
+            string rmfd = "MfRead.tmp";
             string kt = "a";
             string nn = "";
             switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
@@ -141,6 +127,23 @@ namespace MifareOneTool
             bgw.WorkerReportsProgress = true;
             bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
             bgw.RunWorkerAsync(new string[] { rmfd, kt,nn });
+            
+            SaveFileDialog ofd = new SaveFileDialog();
+            ofd.AddExtension = true;
+            ofd.DefaultExt = ".mfd";
+            ofd.Title = "请选择MFD文件保存位置及文件名";
+            ofd.OverwritePrompt = true;
+            ofd.Filter = "MFD文件|*.mfd";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                File.Move(rmfd, ofd.FileName);
+                logAppend("##已保存-" + ofd.FileName + "##");
+            }
+            else
+            {
+                File.Delete(rmfd);
+                logAppend("##未保存##");
+            }
         }
 
         void mf_read(object sender, DoWorkEventArgs e)
@@ -264,7 +267,13 @@ namespace MifareOneTool
         private void buttonMfoc_Click(object sender, EventArgs e)
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
-            string rmfd = "";
+            string rmfd = "Mfoc.tmp";
+            
+            BackgroundWorker bgw = new BackgroundWorker();
+            bgw.DoWork += new DoWorkEventHandler(mfoc);
+            bgw.WorkerReportsProgress = true;
+            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+            bgw.RunWorkerAsync(rmfd);
             SaveFileDialog ofd = new SaveFileDialog();
             ofd.AddExtension = true;
             ofd.DefaultExt = ".mfd";
@@ -273,17 +282,14 @@ namespace MifareOneTool
             ofd.Title = "请选择破解MFD的保存位置及文件名";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                rmfd = ofd.FileName;
+                File.Move(rmfd,ofd.FileName);
+                logAppend("##已保存-" + ofd.FileName + "##");
             }
             else
             {
-                return;
+                File.Delete(rmfd);
+                logAppend("##未保存##");
             }
-            BackgroundWorker bgw = new BackgroundWorker();
-            bgw.DoWork += new DoWorkEventHandler(mfoc);
-            bgw.WorkerReportsProgress = true;
-            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
-            bgw.RunWorkerAsync(rmfd);
         }
 
         void mfoc(object sender, DoWorkEventArgs e)
@@ -395,7 +401,13 @@ namespace MifareOneTool
         private void buttonBmfRead_Click(object sender, EventArgs e)
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
-            string rmfd = "";
+            string rmfd = "BmfRead.tmp";
+
+            BackgroundWorker bgw = new BackgroundWorker();
+            bgw.DoWork += new DoWorkEventHandler(bmf_read);
+            bgw.WorkerReportsProgress = true;
+            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+            bgw.RunWorkerAsync(new string[] { rmfd });
             SaveFileDialog ofd = new SaveFileDialog();
             ofd.AddExtension = true;
             ofd.DefaultExt = ".mfd";
@@ -404,17 +416,14 @@ namespace MifareOneTool
             ofd.Title = "请选择MFD文件的保存位置及文件名";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                rmfd = ofd.FileName;
+                File.Move(rmfd, ofd.FileName);
+                logAppend("##已保存-" + ofd.FileName + "##");
             }
             else
             {
-                return;
+                File.Delete(rmfd);
+                logAppend("##未保存##");
             }
-            BackgroundWorker bgw = new BackgroundWorker();
-            bgw.DoWork += new DoWorkEventHandler(bmf_read);
-            bgw.WorkerReportsProgress = true;
-            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
-            bgw.RunWorkerAsync(new string[] { rmfd });
         }
 
         void bmf_read(object sender, DoWorkEventArgs e)
@@ -560,6 +569,16 @@ namespace MifareOneTool
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/xcicode/MifareOneTool/releases/latest");
+        }
+
+        private void buttonGuide_Click(object sender, EventArgs e)
+        {
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+            Text = "MifareOne Tool - 向导模式运行中";
+            FormGuide fg = new FormGuide();
+            fg.ShowDialog();
+            lprocess = false;
+            Text = "MifareOne Tool - 向导模式运行完毕";
         }
     }
 }

@@ -49,9 +49,13 @@
             this.buttonConSave = new System.Windows.Forms.Button();
             this.buttonConClr = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonGuide = new System.Windows.Forms.Button();
+            this.buttonHexTool = new System.Windows.Forms.Button();
+            this.buttonMfcuk = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -117,7 +121,7 @@
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(623, 293);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Hello,cardman!\n";
+            this.richTextBox1.Text = "Hello,cardman!\n建议点击\"检测\"以加快后续运行速度\n";
             // 
             // buttonMfRead
             // 
@@ -153,7 +157,7 @@
             this.buttonBmfWrite.Name = "buttonBmfWrite";
             this.buttonBmfWrite.Size = new System.Drawing.Size(75, 23);
             this.buttonBmfWrite.TabIndex = 10;
-            this.buttonBmfWrite.Text = "后门写";
+            this.buttonBmfWrite.Text = "UID写";
             this.buttonBmfWrite.UseVisualStyleBackColor = true;
             this.buttonBmfWrite.Click += new System.EventHandler(this.buttonBmfWrite_Click);
             // 
@@ -163,7 +167,7 @@
             this.buttonBmfRead.Name = "buttonBmfRead";
             this.buttonBmfRead.Size = new System.Drawing.Size(75, 23);
             this.buttonBmfRead.TabIndex = 9;
-            this.buttonBmfRead.Text = "后门读";
+            this.buttonBmfRead.Text = "UID读";
             this.buttonBmfRead.UseVisualStyleBackColor = true;
             this.buttonBmfRead.Click += new System.EventHandler(this.buttonBmfRead_Click);
             // 
@@ -271,12 +275,45 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.buttonMfcuk);
+            this.groupBox4.Controls.Add(this.buttonHexTool);
+            this.groupBox4.Controls.Add(this.buttonGuide);
             this.groupBox4.Location = new System.Drawing.Point(641, 101);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(169, 293);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "工具";
+            // 
+            // buttonGuide
+            // 
+            this.buttonGuide.Enabled = false;
+            this.buttonGuide.Location = new System.Drawing.Point(6, 24);
+            this.buttonGuide.Name = "buttonGuide";
+            this.buttonGuide.Size = new System.Drawing.Size(156, 45);
+            this.buttonGuide.TabIndex = 0;
+            this.buttonGuide.Text = "向导模式";
+            this.buttonGuide.UseVisualStyleBackColor = true;
+            this.buttonGuide.Click += new System.EventHandler(this.buttonGuide_Click);
+            // 
+            // buttonHexTool
+            // 
+            this.buttonHexTool.Location = new System.Drawing.Point(6, 75);
+            this.buttonHexTool.Name = "buttonHexTool";
+            this.buttonHexTool.Size = new System.Drawing.Size(156, 45);
+            this.buttonHexTool.TabIndex = 1;
+            this.buttonHexTool.Text = "Hex工具";
+            this.buttonHexTool.UseVisualStyleBackColor = true;
+            // 
+            // buttonMfcuk
+            // 
+            this.buttonMfcuk.Font = new System.Drawing.Font("宋体", 8.5F);
+            this.buttonMfcuk.Location = new System.Drawing.Point(6, 126);
+            this.buttonMfcuk.Name = "buttonMfcuk";
+            this.buttonMfcuk.Size = new System.Drawing.Size(156, 45);
+            this.buttonMfcuk.TabIndex = 3;
+            this.buttonMfcuk.Text = "全加密密钥恢复\r\nMFCUK";
+            this.buttonMfcuk.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -297,6 +334,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -324,6 +362,9 @@
         private System.Windows.Forms.Button buttonKill;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button buttonGuide;
+        private System.Windows.Forms.Button buttonHexTool;
+        private System.Windows.Forms.Button buttonMfcuk;
     }
 }
 
