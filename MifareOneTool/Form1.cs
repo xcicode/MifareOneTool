@@ -52,6 +52,9 @@ namespace MifareOneTool
                 ofd.Filter = "MFD文件|*.mfd";
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
+                    if(File.Exists(ofd.FileName)){
+                        File.Delete(ofd.FileName);
+                    }
                     File.Move(omfd, ofd.FileName);
                     logAppend("##已保存-" + ofd.FileName + "##");
                 }
@@ -602,24 +605,25 @@ Text = "MifareOne Tool - 运行完毕";
 
         void Mfcuk(object sender, DoWorkEventArgs e)
         {
-            if (lprocess) { return; }
-            ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/mfcuk.exe");
-            psi.Arguments = "-v 4 -C -R -1";
-            psi.CreateNoWindow = true;
-            psi.UseShellExecute = false;
-            psi.RedirectStandardOutput = true;
-            psi.RedirectStandardError = true;
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+            ProcessStartInfo psi = new ProcessStartInfo("cmd");
+            psi.Arguments = "/k mfcuk.exe -v 4 -C -R -1";
+            psi.WorkingDirectory = "nfc-bin";
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);
-            process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
-            process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
-            //StreamReader stderr = process.StandardError;
-            process.BeginOutputReadLine();
-            process.BeginErrorReadLine();
+            process=Process.Start(psi);
             process.WaitForExit();
             lprocess = false;
             b.ReportProgress(100, "##运行完毕##");
+        }
+
+        private void buttonSuperCard_Click(object sender, EventArgs e)
+        {
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+            FormSuperCard fsc = new FormSuperCard(ref process);
+            lprocess = true;
+            fsc.ShowDialog();
+            lprocess = false;
         }
     }
 }

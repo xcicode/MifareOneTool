@@ -54,6 +54,7 @@
             this.buttonHexTool = new System.Windows.Forms.Button();
             this.buttonTool1 = new System.Windows.Forms.Button();
             this.toolTipHelp = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonSuperCard = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -278,6 +279,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.buttonSuperCard);
             this.groupBox4.Controls.Add(this.buttonMfcuk);
             this.groupBox4.Controls.Add(this.buttonHexTool);
             this.groupBox4.Controls.Add(this.buttonTool1);
@@ -326,6 +328,16 @@
             this.toolTipHelp.ReshowDelay = 100;
             this.toolTipHelp.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipHelp.ToolTipTitle = "提示";
+            // 
+            // buttonSuperCard
+            // 
+            this.buttonSuperCard.Location = new System.Drawing.Point(6, 177);
+            this.buttonSuperCard.Name = "buttonSuperCard";
+            this.buttonSuperCard.Size = new System.Drawing.Size(156, 45);
+            this.buttonSuperCard.TabIndex = 4;
+            this.buttonSuperCard.Text = "超级卡工具";
+            this.buttonSuperCard.UseVisualStyleBackColor = true;
+            this.buttonSuperCard.Click += new System.EventHandler(this.buttonSuperCard_Click);
             // 
             // Form1
             // 
@@ -378,6 +390,7 @@
         private System.Windows.Forms.Button buttonHexTool;
         private System.Windows.Forms.Button buttonMfcuk;
         private System.Windows.Forms.ToolTip toolTipHelp;
+        private System.Windows.Forms.Button buttonSuperCard;
     }
 }
 
