@@ -607,7 +607,7 @@ Text = "MifareOne Tool - 运行完毕";
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             ProcessStartInfo psi = new ProcessStartInfo("cmd");
-            psi.Arguments = "/k mfcuk.exe -v 4 -C -R -1";
+            psi.Arguments = "/k mfcuk.exe -v 3 -C -R -1 -s 250 -S 250";
             psi.WorkingDirectory = "nfc-bin";
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
@@ -617,13 +617,147 @@ Text = "MifareOne Tool - 运行完毕";
             b.ReportProgress(100, "##运行完毕##");
         }
 
-        private void buttonSuperCard_Click(object sender, EventArgs e)
+        private void buttonCmfWrite_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
-            FormSuperCard fsc = new FormSuperCard(ref process);
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            string rmfd = "";
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.CheckFileExists = true;
+            ofd.Filter = "MFD文件|*.mfd";
+            ofd.Title = "请选择需要写入的MFD文件";
+            ofd.Multiselect = false;
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                rmfd = ofd.FileName;
+            }
+            else
+            {
+                return;
+            }
+            string kt = "a";
+            string nn = "";
+            switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
+            {
+                case DialogResult.No:
+                    kt = "b";
+                    break;
+
+                case DialogResult.Cancel:
+                    nn = "x";
+                    break;
+            }
+            BackgroundWorker bgw = new BackgroundWorker();
+            bgw.DoWork += new DoWorkEventHandler(cmf_write);
+            bgw.WorkerReportsProgress = true;
+            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+            bgw.RunWorkerAsync(new string[] { rmfd, kt, nn });
+        }
+
+        void cmf_write(object sender, DoWorkEventArgs e)
+        {
+            if (lprocess) { return; }
+            ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/nfc-mfclassic.exe");
+            string[] args = (string[])e.Argument;
+            psi.Arguments = "c " + args[1] + " u \"" + args[0] + "\"";
+            if (keymfd != "" && args[2] == "")
+            {
+                psi.Arguments += " \"" + keymfd + "\" f";
+            }
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
             lprocess = true;
-            fsc.ShowDialog();
+            BackgroundWorker b = (BackgroundWorker)sender;
+            process = Process.Start(psi);
+            process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            //StreamReader stderr = process.StandardError;
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+            process.WaitForExit();
             lprocess = false;
+            b.ReportProgress(100, "##运行完毕##");
+        }
+
+        private void buttonLockUfuid_Click(object sender, EventArgs e)
+        {
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            if (MessageBox.Show("该操作将会锁死UFUID卡片！！！\n锁死后不可恢复！无法再次更改0块！请确认是否要继续操作？", "危险操作警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.Cancel)
+            { return; }
+            BackgroundWorker bgw = new BackgroundWorker();
+            bgw.DoWork += new DoWorkEventHandler(lock_ufuid);
+            bgw.WorkerReportsProgress = true;
+            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+            bgw.RunWorkerAsync();
+        }
+
+        void lock_ufuid(object sender, DoWorkEventArgs e)
+        {
+            if (lprocess) { return; }
+            ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/nfc-mfsetuid.exe");
+            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+            byte[] uid = new byte[4];
+            rng.GetNonZeroBytes(uid);
+            psi.Arguments = "-l";
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+            lprocess = true;
+            BackgroundWorker b = (BackgroundWorker)sender;
+            process = Process.Start(psi);
+            process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            //StreamReader stderr = process.StandardError;
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+            process.WaitForExit();
+            lprocess = false;
+            b.ReportProgress(100, "##运行完毕##");
+        }
+
+        private void buttonMfFormat_Click(object sender, EventArgs e)
+        {
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } 
+            if (keymfd=="") { MessageBox.Show("未选择有效key.mfd。", "无密钥", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            string rmfd = keymfd;
+            string kt = "a";
+            switch (MessageBox.Show("使用KeyA（是）或KeyB（否）？", "KeyA/B", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
+            {
+                case DialogResult.No:
+                    kt = "b";
+                    break;
+            }
+            BackgroundWorker bgw = new BackgroundWorker();
+            bgw.DoWork += new DoWorkEventHandler(mf_format);
+            bgw.WorkerReportsProgress = true;
+            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+            bgw.RunWorkerAsync(new string[] { rmfd, kt});
+        }
+
+        void mf_format(object sender, DoWorkEventArgs e)
+        {
+            if (lprocess) { return; }
+            ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/nfc-mfclassic.exe");
+            string[] args = (string[])e.Argument;
+            psi.Arguments = "f " + args[1] + " u \"" + args[0] + "\"";
+            psi.Arguments += " \"" + keymfd + "\" f";
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+            lprocess = true;
+            BackgroundWorker b = (BackgroundWorker)sender;
+            process = Process.Start(psi);
+            process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            //StreamReader stderr = process.StandardError;
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+            process.WaitForExit();
+            lprocess = false;
+            b.ReportProgress(100, "##运行完毕##");
         }
     }
 }

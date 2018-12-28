@@ -49,12 +49,14 @@
             this.buttonKill = new System.Windows.Forms.Button();
             this.buttonConSave = new System.Windows.Forms.Button();
             this.buttonConClr = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.buttonMfcuk = new System.Windows.Forms.Button();
             this.buttonHexTool = new System.Windows.Forms.Button();
             this.buttonTool1 = new System.Windows.Forms.Button();
             this.toolTipHelp = new System.Windows.Forms.ToolTip(this.components);
-            this.buttonSuperCard = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonCmfWrite = new System.Windows.Forms.Button();
+            this.buttonLockUfuid = new System.Windows.Forms.Button();
+            this.buttonMfFormat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -87,6 +89,7 @@
             // 
             // buttonCLI
             // 
+            this.buttonCLI.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonCLI.Location = new System.Drawing.Point(102, 24);
             this.buttonCLI.Name = "buttonCLI";
             this.buttonCLI.Size = new System.Drawing.Size(90, 23);
@@ -97,6 +100,7 @@
             // 
             // buttonScanCard
             // 
+            this.buttonScanCard.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonScanCard.Location = new System.Drawing.Point(6, 53);
             this.buttonScanCard.Name = "buttonScanCard";
             this.buttonScanCard.Size = new System.Drawing.Size(90, 23);
@@ -107,6 +111,7 @@
             // 
             // buttonListDev
             // 
+            this.buttonListDev.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonListDev.Location = new System.Drawing.Point(6, 24);
             this.buttonListDev.Name = "buttonListDev";
             this.buttonListDev.Size = new System.Drawing.Size(90, 23);
@@ -119,15 +124,16 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.Black;
             this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
-            this.richTextBox1.Location = new System.Drawing.Point(12, 101);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 190);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(623, 293);
+            this.richTextBox1.Size = new System.Drawing.Size(623, 300);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "Hello,cardman!\n建议点击\"检测\"以加快后续运行速度\n";
             // 
             // buttonMfRead
             // 
+            this.buttonMfRead.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonMfRead.Location = new System.Drawing.Point(6, 24);
             this.buttonMfRead.Name = "buttonMfRead";
             this.buttonMfRead.Size = new System.Drawing.Size(75, 23);
@@ -156,6 +162,7 @@
             // 
             // buttonBmfWrite
             // 
+            this.buttonBmfWrite.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonBmfWrite.Location = new System.Drawing.Point(330, 53);
             this.buttonBmfWrite.Name = "buttonBmfWrite";
             this.buttonBmfWrite.Size = new System.Drawing.Size(75, 23);
@@ -166,6 +173,7 @@
             // 
             // buttonBmfRead
             // 
+            this.buttonBmfRead.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonBmfRead.Location = new System.Drawing.Point(330, 24);
             this.buttonBmfRead.Name = "buttonBmfRead";
             this.buttonBmfRead.Size = new System.Drawing.Size(75, 23);
@@ -176,6 +184,7 @@
             // 
             // buttonMfoc
             // 
+            this.buttonMfoc.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonMfoc.Location = new System.Drawing.Point(249, 53);
             this.buttonMfoc.Name = "buttonMfoc";
             this.buttonMfoc.Size = new System.Drawing.Size(75, 23);
@@ -187,6 +196,7 @@
             // 
             // buttonUidWrite
             // 
+            this.buttonUidWrite.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonUidWrite.Location = new System.Drawing.Point(168, 53);
             this.buttonUidWrite.Name = "buttonUidWrite";
             this.buttonUidWrite.Size = new System.Drawing.Size(75, 23);
@@ -197,6 +207,7 @@
             // 
             // buttonUidFormat
             // 
+            this.buttonUidFormat.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonUidFormat.Location = new System.Drawing.Point(249, 24);
             this.buttonUidFormat.Name = "buttonUidFormat";
             this.buttonUidFormat.Size = new System.Drawing.Size(75, 23);
@@ -207,6 +218,7 @@
             // 
             // buttonUidReset
             // 
+            this.buttonUidReset.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonUidReset.Location = new System.Drawing.Point(168, 24);
             this.buttonUidReset.Name = "buttonUidReset";
             this.buttonUidReset.Size = new System.Drawing.Size(75, 23);
@@ -217,6 +229,7 @@
             // 
             // buttonMfWrite
             // 
+            this.buttonMfWrite.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonMfWrite.Location = new System.Drawing.Point(87, 24);
             this.buttonMfWrite.Name = "buttonMfWrite";
             this.buttonMfWrite.Size = new System.Drawing.Size(75, 23);
@@ -227,6 +240,7 @@
             // 
             // buttonSelectKey
             // 
+            this.buttonSelectKey.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonSelectKey.Location = new System.Drawing.Point(6, 53);
             this.buttonSelectKey.Name = "buttonSelectKey";
             this.buttonSelectKey.Size = new System.Drawing.Size(156, 23);
@@ -240,7 +254,7 @@
             this.groupBox3.Controls.Add(this.buttonKill);
             this.groupBox3.Controls.Add(this.buttonConSave);
             this.groupBox3.Controls.Add(this.buttonConClr);
-            this.groupBox3.Location = new System.Drawing.Point(641, 12);
+            this.groupBox3.Location = new System.Drawing.Point(467, 101);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(169, 83);
             this.groupBox3.TabIndex = 5;
@@ -249,6 +263,7 @@
             // 
             // buttonKill
             // 
+            this.buttonKill.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonKill.Location = new System.Drawing.Point(6, 53);
             this.buttonKill.Name = "buttonKill";
             this.buttonKill.Size = new System.Drawing.Size(75, 23);
@@ -259,6 +274,7 @@
             // 
             // buttonConSave
             // 
+            this.buttonConSave.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonConSave.Location = new System.Drawing.Point(87, 24);
             this.buttonConSave.Name = "buttonConSave";
             this.buttonConSave.Size = new System.Drawing.Size(75, 23);
@@ -269,6 +285,7 @@
             // 
             // buttonConClr
             // 
+            this.buttonConClr.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonConClr.Location = new System.Drawing.Point(6, 24);
             this.buttonConClr.Name = "buttonConClr";
             this.buttonConClr.Size = new System.Drawing.Size(75, 23);
@@ -277,36 +294,24 @@
             this.buttonConClr.UseVisualStyleBackColor = true;
             this.buttonConClr.Click += new System.EventHandler(this.buttonConClr_Click);
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.buttonSuperCard);
-            this.groupBox4.Controls.Add(this.buttonMfcuk);
-            this.groupBox4.Controls.Add(this.buttonHexTool);
-            this.groupBox4.Controls.Add(this.buttonTool1);
-            this.groupBox4.Location = new System.Drawing.Point(641, 101);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(169, 293);
-            this.groupBox4.TabIndex = 6;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "工具";
-            // 
             // buttonMfcuk
             // 
             this.buttonMfcuk.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonMfcuk.Location = new System.Drawing.Point(6, 126);
+            this.buttonMfcuk.Location = new System.Drawing.Point(168, 24);
             this.buttonMfcuk.Name = "buttonMfcuk";
-            this.buttonMfcuk.Size = new System.Drawing.Size(156, 45);
+            this.buttonMfcuk.Size = new System.Drawing.Size(70, 52);
             this.buttonMfcuk.TabIndex = 3;
-            this.buttonMfcuk.Text = "全加密密钥恢复\r\nMFCUK";
+            this.buttonMfcuk.Text = "MFCUK\r\n爆密钥";
             this.buttonMfcuk.UseVisualStyleBackColor = true;
             this.buttonMfcuk.Click += new System.EventHandler(this.buttonMfcuk_Click);
             // 
             // buttonHexTool
             // 
             this.buttonHexTool.Enabled = false;
-            this.buttonHexTool.Location = new System.Drawing.Point(6, 75);
+            this.buttonHexTool.Font = new System.Drawing.Font("宋体", 8.5F);
+            this.buttonHexTool.Location = new System.Drawing.Point(6, 53);
             this.buttonHexTool.Name = "buttonHexTool";
-            this.buttonHexTool.Size = new System.Drawing.Size(156, 45);
+            this.buttonHexTool.Size = new System.Drawing.Size(156, 23);
             this.buttonHexTool.TabIndex = 1;
             this.buttonHexTool.Text = "Hex工具";
             this.buttonHexTool.UseVisualStyleBackColor = true;
@@ -314,9 +319,10 @@
             // buttonTool1
             // 
             this.buttonTool1.Enabled = false;
+            this.buttonTool1.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonTool1.Location = new System.Drawing.Point(6, 24);
             this.buttonTool1.Name = "buttonTool1";
-            this.buttonTool1.Size = new System.Drawing.Size(156, 45);
+            this.buttonTool1.Size = new System.Drawing.Size(156, 23);
             this.buttonTool1.TabIndex = 0;
             this.buttonTool1.Text = "key.mfd工具";
             this.buttonTool1.UseVisualStyleBackColor = true;
@@ -329,21 +335,56 @@
             this.toolTipHelp.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipHelp.ToolTipTitle = "提示";
             // 
-            // buttonSuperCard
+            // groupBox4
             // 
-            this.buttonSuperCard.Location = new System.Drawing.Point(6, 177);
-            this.buttonSuperCard.Name = "buttonSuperCard";
-            this.buttonSuperCard.Size = new System.Drawing.Size(156, 45);
-            this.buttonSuperCard.TabIndex = 4;
-            this.buttonSuperCard.Text = "超级卡工具";
-            this.buttonSuperCard.UseVisualStyleBackColor = true;
-            this.buttonSuperCard.Click += new System.EventHandler(this.buttonSuperCard_Click);
+            this.groupBox4.Controls.Add(this.buttonMfFormat);
+            this.groupBox4.Controls.Add(this.buttonLockUfuid);
+            this.groupBox4.Controls.Add(this.buttonCmfWrite);
+            this.groupBox4.Controls.Add(this.buttonMfcuk);
+            this.groupBox4.Controls.Add(this.buttonTool1);
+            this.groupBox4.Controls.Add(this.buttonHexTool);
+            this.groupBox4.Location = new System.Drawing.Point(12, 101);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(449, 83);
+            this.groupBox4.TabIndex = 11;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "工具";
+            // 
+            // buttonCmfWrite
+            // 
+            this.buttonCmfWrite.Location = new System.Drawing.Point(244, 23);
+            this.buttonCmfWrite.Name = "buttonCmfWrite";
+            this.buttonCmfWrite.Size = new System.Drawing.Size(75, 23);
+            this.buttonCmfWrite.TabIndex = 4;
+            this.buttonCmfWrite.Text = "CUID写";
+            this.buttonCmfWrite.UseVisualStyleBackColor = true;
+            this.buttonCmfWrite.Click += new System.EventHandler(this.buttonCmfWrite_Click);
+            // 
+            // buttonLockUfuid
+            // 
+            this.buttonLockUfuid.Location = new System.Drawing.Point(244, 52);
+            this.buttonLockUfuid.Name = "buttonLockUfuid";
+            this.buttonLockUfuid.Size = new System.Drawing.Size(75, 23);
+            this.buttonLockUfuid.TabIndex = 5;
+            this.buttonLockUfuid.Text = "锁Ufuid";
+            this.buttonLockUfuid.UseVisualStyleBackColor = true;
+            this.buttonLockUfuid.Click += new System.EventHandler(this.buttonLockUfuid_Click);
+            // 
+            // buttonMfFormat
+            // 
+            this.buttonMfFormat.Location = new System.Drawing.Point(325, 23);
+            this.buttonMfFormat.Name = "buttonMfFormat";
+            this.buttonMfFormat.Size = new System.Drawing.Size(75, 23);
+            this.buttonMfFormat.TabIndex = 6;
+            this.buttonMfFormat.Text = "清M1卡";
+            this.buttonMfFormat.UseVisualStyleBackColor = true;
+            this.buttonMfFormat.Click += new System.EventHandler(this.buttonMfFormat_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 406);
+            this.ClientSize = new System.Drawing.Size(649, 502);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -385,12 +426,14 @@
         private System.Windows.Forms.Button buttonConClr;
         private System.Windows.Forms.Button buttonKill;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button buttonTool1;
         private System.Windows.Forms.Button buttonHexTool;
         private System.Windows.Forms.Button buttonMfcuk;
         private System.Windows.Forms.ToolTip toolTipHelp;
-        private System.Windows.Forms.Button buttonSuperCard;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button buttonLockUfuid;
+        private System.Windows.Forms.Button buttonCmfWrite;
+        private System.Windows.Forms.Button buttonMfFormat;
     }
 }
 

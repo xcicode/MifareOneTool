@@ -79,12 +79,6 @@
     <Compile Include="FormKeyMfd.Designer.cs">
       <DependentUpon>FormKeyMfd.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSuperCard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSuperCard.Designer.cs">
-      <DependentUpon>FormSuperCard.cs</DependentUpon>
-    </Compile>
     <Compile Include="GitHubUpdate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,9 +87,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormKeyMfd.resx">
       <DependentUpon>FormKeyMfd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSuperCard.resx">
-      <DependentUpon>FormSuperCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
