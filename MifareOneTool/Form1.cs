@@ -50,21 +50,30 @@ namespace MifareOneTool
                 ofd.Title = "请选择MFD文件保存位置及文件名";
                 ofd.OverwritePrompt = true;
                 ofd.Filter = "MFD文件|*.mfd";
-                if (ofd.ShowDialog() == DialogResult.OK)
+                if (File.Exists(omfd) && new FileInfo(omfd).Length > 1)
                 {
-                    if(File.Exists(ofd.FileName)){
-                        File.Delete(ofd.FileName);
+                    if (ofd.ShowDialog() == DialogResult.OK)
+                    {
+                        if (File.Exists(ofd.FileName))
+                        {
+                            File.Delete(ofd.FileName);
+                        }
+                        File.Move(omfd, ofd.FileName);
+                        logAppend("##已保存-" + ofd.FileName + "##");
                     }
-                    File.Move(omfd, ofd.FileName);
-                    logAppend("##已保存-" + ofd.FileName + "##");
+                    else
+                    {
+                        File.Delete(omfd);
+                        logAppend("##未保存##");
+                    }
                 }
                 else
                 {
                     File.Delete(omfd);
-                    logAppend("##未保存##");
+                    logAppend("##缓存文件异常##");
                 }
                 omfd = "";
-Text = "MifareOne Tool - 运行完毕";
+                Text = "MifareOne Tool - 运行完毕";
             }
         }
 
