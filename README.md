@@ -1,5 +1,6 @@
 # MifareOneTool
 A GUI Mifare Classic tool on Windows
+# 本文档需要更新
 
 ## 安装
 1. [下载最新发布](https://github.com/xcicode/MifareOneTool/releases/latest)
