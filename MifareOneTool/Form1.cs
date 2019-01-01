@@ -75,6 +75,8 @@ namespace MifareOneTool
                 omfd = "";
                 Text = "MifareOne Tool - 运行完毕";
             }
+                Application.DoEvents();
+
         }
 
         private void logAppend(string msg)
@@ -767,6 +769,103 @@ namespace MifareOneTool
             process.WaitForExit();
             lprocess = false;
             b.ReportProgress(100, "##运行完毕##");
+        }
+
+        private void buttonEMfoc_Click(object sender, EventArgs e)
+        {
+            buttonMfoc_Click(sender,e);
+        }
+
+        private void buttonEscan_Click(object sender, EventArgs e)
+        {
+            buttonListDev_Click(sender, e);
+        }
+
+        private void buttoEScanCard_Click(object sender, EventArgs e)
+        {
+            buttonScanCard_Click(sender, e);
+        }
+
+        private void buttonECmfoc_Click(object sender, EventArgs e)
+        {
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            string rmfd = "Mfoc.tmp";
+            string key = "";
+                string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", "FFFFFFFFFFFF", -1, -1).Trim().Split(',');
+                if (ks.Length > 0)
+                {
+                    foreach (string k in ks)
+                    {
+                        string pat = "[0-9A-Fa-f]{12}";
+                        if (Regex.IsMatch(k, pat))
+                        {
+                            key += "-k " + k.Substring(0, 12) + " ";
+                        }
+                    }
+                }
+            BackgroundWorker bgw = new BackgroundWorker();
+            bgw.DoWork += new DoWorkEventHandler(mfoc);
+            bgw.WorkerReportsProgress = true;
+            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+            bgw.RunWorkerAsync(new string[] { rmfd, key });
+            omfd = rmfd;
+        }
+
+        private void buttonEUpdate_Click(object sender, EventArgs e)
+        {
+            linkLabel1_LinkClicked(sender, null);
+        }
+
+        private void buttonESelectKey_Click(object sender, EventArgs e)
+        {
+            buttonSelectKey_Click(sender, e);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            buttonMfRead_Click(sender, e);
+        }
+
+        private void buttonEMfWrite_Click(object sender, EventArgs e)
+        {
+            buttonMfWrite_Click(sender, e);
+        }
+
+        private void buttonECuidWrite_Click(object sender, EventArgs e)
+        {
+            buttonCmfWrite_Click(sender, e);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            buttonLockUfuid_Click(sender, e);
+        }
+
+        private void buttonEAdv_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.TabPages.Count - 1;
+        }
+
+        private void buttonEnAcr122u_Click(object sender, EventArgs e)
+        {
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            if (MessageBox.Show("同时打开ACR122U支持可能会引起操作速度下降。\n请确认是否要继续操作？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.Cancel)
+            { return; }
+            lprocess = true;
+            if (File.Exists("nfc-bin/libnfc(PN532Only).dll"))
+            {
+                logAppend("ACR122U支持已经打开过。");
+            }
+            if (File.Exists("nfc-bin/libnfc(ACR122U).dll"))
+            {
+                logAppend("正在打开ACR122U支持……");
+                File.Move("nfc-bin/libnfc.dll", "nfc-bin/libnfc(PN532Only).dll");
+                File.Move("nfc-bin/libnfc(ACR122U).dll", "nfc-bin/libnfc.dll");
+                logAppend("已打开。");
+            }
+            lprocess = false;
+            Text = "MifareOne Tool - 运行完毕";
+            logAppend("##运行完毕##");
         }
     }
 }
