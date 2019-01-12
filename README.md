@@ -2,7 +2,7 @@
 A GUI Mifare Classic tool on Windows
 
 ## 文档版本
-- v1.4.0
+- v1.5.0
 
 ## 安装
 1. [下载最新发布](https://github.com/xcicode/MifareOneTool/releases/latest)
@@ -13,7 +13,7 @@ A GUI Mifare Classic tool on Windows
 PN532-UART  
 ACR122U(需要手动打开支持)
 
-## 功能
+## 高级界面功能说明
 检测：检测NFC设备连接状态  
 手动扫描： 扫描读卡器上的卡片并显示基本信息  
 手动CLI： 打开cmd，切换到nfc-bin/下，可手动调用命令行工具  
@@ -36,3 +36,5 @@ CUID写： 写入CUID卡(一种使用普通指令写0块的卡片)
 清M1卡： 使用选择的key.mfd清空卡内数据
 启用ACR122U支持： 打开对ACR122U的支持  
 `注：打开后可能会导致运行速度变慢。`
+Hex编辑器： 打开集成编辑器S50HTool  
+检加密：查看M1卡的加密情况
