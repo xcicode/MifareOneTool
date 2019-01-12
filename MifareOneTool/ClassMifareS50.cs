@@ -33,16 +33,16 @@ namespace MifareOneTool
             {
                 ac[i] = (byte)~ac[i];
             }
-            acbits[0] = (byte)(((ac[0] & 0x01) <<2)
-                + ((ac[0] & 0x10) >>3)
+            acbits[0] = (byte)(((ac[0] & 0x01) << 2)
+                + ((ac[0] & 0x10) >> 3)
                 + ((ac[1] & 0x01)));
-            acbits[1] = (byte)(((ac[0] & 0x02) <<1)
-                + ((ac[0] & 0x20)>>4)
+            acbits[1] = (byte)(((ac[0] & 0x02) << 1)
+                + ((ac[0] & 0x20) >> 4)
                 + ((ac[1] & 0x02) >> 1));
             acbits[2] = (byte)(((ac[0] & 0x04))
                 + ((ac[0] & 0x40) >> 5)
                 + ((ac[1] & 0x04) >> 2));
-            acbits[3] = (byte)(((ac[0] & 0x08) >>1)
+            acbits[3] = (byte)(((ac[0] & 0x08) >> 1)
                 + ((ac[0] & 0x80) >> 6)
                 + ((ac[1] & 0x08) >> 3));
             return acbits;
@@ -51,34 +51,35 @@ namespace MifareOneTool
         {
             byte[] acbits = new byte[4];
             acbits[3] = 0x00;
-            acbits[1] = (byte)((ac[0]<< 2)& 0x10
-                | (ac[1] << 3) & 0x20
-                | (ac[2] << 4) & 0x40
-                | (ac[3]<<5)&0x80);
-            acbits[2] = (byte)((ac[0]>>1)& 0x01
-                | (ac[1]) & 0x02
-                | (ac[2] << 1) & 0x04
-                | (ac[3]<<2)&0x08);
-            acbits[2] = (byte)((ac[0] << 4) & 0x10
-                | (ac[1] << 5) & 0x20
-                | (ac[2] << 6) & 0x40
-                | (ac[3] << 7) & 0x80);
+            acbits[1] = (byte)(((ac[0] << 2) & 0x10)
+                | ((ac[1] << 3) & 0x20)
+                | ((ac[2] << 4) & 0x40)
+                | ((ac[3] << 5) & 0x80));
+            acbits[2] = (byte)(((ac[0] >> 1) & 0x01)
+                | ((ac[1]) & 0x02)
+                | ((ac[2] << 1) & 0x04)
+                | ((ac[3] << 2) & 0x08)
+                | ((ac[0] << 4) & 0x10)
+                | ((ac[1] << 5) & 0x20)
+                | ((ac[2] << 6) & 0x40)
+                | ((ac[3] << 7) & 0x80));
             for (int i = 0; i < ac.Length; i++)
             {
-                ac[i] = (byte)(ac[i] ^ 0xff);
+                ac[i] = (byte)~ac[i];
             }
-            acbits[1] = (byte)((ac[0]) & 0x01
-                | (ac[1] << 1) & 0x02
-                | (ac[2] << 2) & 0x04
-                | (ac[3] << 3) & 0x08);
-            acbits[0] = (byte)((ac[0]>>2) & 0x01
-                | (ac[1] >>1) & 0x02
-                | (ac[2]) & 0x04
-                | (ac[3] << 1) & 0x08);
-            acbits[0] = (byte)((ac[0] << 3) & 0x10
-                | (ac[1] << 4) & 0x20
-                | (ac[2] << 5) & 0x40
-                | (ac[3] << 6) & 0x80);
+            acbits[1] = (byte)(acbits[1] |
+                ((ac[0]) & 0x01)
+                | ((ac[1] << 1) & 0x02)
+                | ((ac[2] << 2) & 0x04)
+                | ((ac[3] << 3) & 0x08));
+            acbits[0] = (byte)(((ac[0] >> 2) & 0x01)
+                | ((ac[1] >> 1) & 0x02)
+                | ((ac[2]) & 0x04)
+                | ((ac[3] << 1) & 0x08)
+                | ((ac[0] << 3) & 0x10)
+                | ((ac[1] << 4) & 0x20)
+                | ((ac[2] << 5) & 0x40)
+                | ((ac[3] << 6) & 0x80));
             return acbits;
         }
     }
@@ -308,6 +309,7 @@ namespace MifareOneTool
         public void ExportToMfd(string file)
         {
             byte[] fileBuffer = this.SectorsRaw;
+            File.WriteAllBytes(file, fileBuffer);
         }
     }
 }

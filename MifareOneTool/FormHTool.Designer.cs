@@ -150,6 +150,7 @@
             this.修改UIDToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
             this.修改UIDToolStripMenuItem.Size = new System.Drawing.Size(191, 24);
             this.修改UIDToolStripMenuItem.Text = "修改UID";
+            this.修改UIDToolStripMenuItem.Click += new System.EventHandler(this.修改UIDToolStripMenuItem_Click);
             // 
             // 检查全卡ToolStripMenuItem
             // 
@@ -486,7 +487,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "FormHTool";
-            this.Text = "S50HTool";
+            this.Text = "S50HTool-beta";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

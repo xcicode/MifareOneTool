@@ -14,17 +14,6 @@ namespace MifareOneTool
     {
         Version localVersion;
         Version remoteVersion;
-        //public static T FromJSON<T>(this string input)
-        //{
-        //    try
-        //    {
-        //        return JsonConvert.DeserializeObject<T>(input);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return default(T);
-        //    }
-        //}
         public GitHubUpdate(string GitHubR)
         {
             this.localVersion = Assembly.GetExecutingAssembly().GetName().Version;

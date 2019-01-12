@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Security.Cryptography;
+using Microsoft.VisualBasic;
 
 namespace MifareOneTool
 {
@@ -20,6 +22,7 @@ namespace MifareOneTool
 
         private S50 currentS50 = new S50();
         string currentFilename = "";
+        int currentSector = -1;
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -37,6 +40,7 @@ namespace MifareOneTool
         }
         private void reloadEdit(int sectorIndex)
         {
+            currentSector = sectorIndex;
             if (sectorIndex == -1)
             {
                 comboBox1.SelectedIndex = 0;
@@ -123,7 +127,7 @@ namespace MifareOneTool
                 return;
             }
             reloadList();
-            logAppend("打开了"+ofd.FileName);
+            logAppend("打开了" + ofd.FileName);
         }
 
         private void reloadList()
@@ -188,7 +192,7 @@ namespace MifareOneTool
             const string pattern = @"[0-9A-Fa-f]{32}";
             TextBox tb = ((TextBox)sender);
             string content = tb.Text.Trim();
-            if (!(Regex.IsMatch(content, pattern)))
+            if (!(Regex.IsMatch(content, pattern)&&content.Length==32))
             {
                 tb.BackColor = Color.Tomato;
                 //e.Cancel = true;
@@ -205,7 +209,7 @@ namespace MifareOneTool
             const string pattern = @"[0-9A-Fa-f]{12}";
             TextBox tb = ((TextBox)sender);
             string content = tb.Text.Trim();
-            if (!(Regex.IsMatch(content, pattern)))
+            if (!(Regex.IsMatch(content, pattern) && content.Length == 12))
             {
                 tb.BackColor = Color.Tomato;
                 //e.Cancel = true;
@@ -217,10 +221,51 @@ namespace MifareOneTool
             }
         }
 
+        private static byte[] Hex2Block(string hex,int bytelen)
+        {
+            hex = hex.Replace(" ", "");
+            byte[] returnBytes = new byte[bytelen];
+            for (int i = 0; i < bytelen; i++)
+                returnBytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+            return returnBytes;
+        }
+
         private void buttonSaveSectorEdit_Click(object sender, EventArgs e)
         {
-            this.ValidateChildren();
-
+            if (currentSector >= 0 && currentSector <= 15)
+            {
+                this.ValidateChildren();
+                if (block0Edit.BackColor != Color.Aquamarine
+                    || block1Edit.BackColor != Color.Aquamarine
+                    || block2Edit.BackColor != Color.Aquamarine
+                    || keyAEdit.BackColor != Color.Aquamarine
+                    || keyBEdit.BackColor != Color.Aquamarine)
+                {
+                    MessageBox.Show("当前扇区数据仍有错误，不能执行修改。");
+                    return;
+                }
+                currentS50.Sectors[currentSector].Block[0] = Hex2Block(block0Edit.Text.Trim(),16);
+                currentS50.Sectors[currentSector].Block[1] = Hex2Block(block1Edit.Text.Trim(), 16);
+                currentS50.Sectors[currentSector].Block[2] = Hex2Block(block2Edit.Text.Trim(), 16);
+                byte[] kA = Hex2Block(keyAEdit.Text.Trim(), 6);
+                byte[] kB = Hex2Block(keyBEdit.Text.Trim(), 6);
+                byte[] ac = new byte[4] { 
+                    (byte)comboBox1.SelectedIndex, 
+                    (byte)comboBox2.SelectedIndex, 
+                    (byte)comboBox3.SelectedIndex, 
+                    (byte)comboBox4.SelectedIndex };
+                byte[] kC = Utils.GenAC(ac);
+                List<byte> list3=new List<byte>(kA);
+                list3.AddRange(kC);
+                list3.AddRange(kB);
+                byte[] block3 = list3.Take(16).ToArray();
+                currentS50.Sectors[currentSector].Block[3] = block3;
+                for (int i = 0; i < 16; i++)
+                {
+                    dataGridView1.Rows[i].Cells[0].Value = currentS50.Sectors[i].Info(i);
+                }
+                logAppend("已更新扇区" + currentSector.ToString());
+            }
         }
 
         private void comboBox1_Validating(object sender, CancelEventArgs e)
@@ -249,7 +294,7 @@ namespace MifareOneTool
                 string msg = "该文件存在以下错误：\n";
                 for (int i = 0; i < 16; i++)
                 {
-                    msg += "扇区" + i.ToString()+"：\n";
+                    msg += "扇区" + i.ToString() + "：\n";
                     if ((res[i] & 0x01) == 0x01)
                     {
                         msg += "该扇区UID校验值错误，请点击打开扇区0来自动更正。\n";
@@ -270,6 +315,30 @@ namespace MifareOneTool
                 richTextBox1.Clear();
                 logAppend(msg);
             }
+        }
+
+        private void 修改UIDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            reloadEdit(-1);
+            byte[] buid = new byte[4];
+            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+            rng.GetNonZeroBytes(buid);
+            string uid = Interaction.InputBox("请输入需要更改的UID卡号，共8位十六进制数，如E44A3BF1。", "请输入UID号", Form1.hex(buid), -1, -1).Trim();
+            string pat = "[0-9A-Fa-f]{8}";
+            if (!Regex.IsMatch(uid, pat))
+            {
+                MessageBox.Show("输入的UID号不合法", "InputError", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            buid = Hex2Block(uid, 4);
+            byte bcc=(byte)(buid[0]^buid[1]^buid[2]^buid[3]);
+            currentS50.Sectors[0].Block[0][0] = buid[0];
+            currentS50.Sectors[0].Block[0][1] = buid[1];
+            currentS50.Sectors[0].Block[0][2] = buid[2];
+            currentS50.Sectors[0].Block[0][3] = buid[3];
+            currentS50.Sectors[0].Block[0][4] = bcc;
+            logAppend("UID已改为" + Form1.hex(buid) + "，计算得到BCC=" + Form1.hex(new byte[]{bcc}));
+            reloadEdit(0);
         }
     }
 }
