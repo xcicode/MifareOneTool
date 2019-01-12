@@ -886,7 +886,7 @@ namespace MifareOneTool
         }
 
         private void buttonCheckEncrypt_Click(object sender, EventArgs e)
-        {
+        {//其实这个mfdetect就是个mfoc阉割版。。只检测不破解而已，所以-f -k什么的可以加上，测试自己的key
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(MfDetect);
