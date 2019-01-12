@@ -30,11 +30,5 @@ assignees: ''
  - 软件版本 [e.g. v1.5.0.0]
  - 操作的卡片 [e.g. CUID卡]  
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+**还有什么想说的？**
+写下来。
