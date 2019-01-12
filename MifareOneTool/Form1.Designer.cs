@@ -54,38 +54,47 @@
             this.buttonTool1 = new System.Windows.Forms.Button();
             this.toolTipHelp = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.buttonCmfWrite = new System.Windows.Forms.Button();
-            this.buttonLockUfuid = new System.Windows.Forms.Button();
+            this.buttonEnAcr122u = new System.Windows.Forms.Button();
             this.buttonMfFormat = new System.Windows.Forms.Button();
+            this.buttonLockUfuid = new System.Windows.Forms.Button();
+            this.buttonCmfWrite = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.buttonEMfoc = new System.Windows.Forms.Button();
-            this.buttonEMfRead = new System.Windows.Forms.Button();
-            this.buttonECmfoc = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.buttonEscan = new System.Windows.Forms.Button();
-            this.buttoEScanCard = new System.Windows.Forms.Button();
-            this.buttonESelectKey = new System.Windows.Forms.Button();
-            this.buttonEUpdate = new System.Windows.Forms.Button();
+            this.buttonEAdv = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.buttonECuidWrite = new System.Windows.Forms.Button();
             this.buttonEUIDWrite = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.buttonEMfWrite = new System.Windows.Forms.Button();
-            this.buttonEAdv = new System.Windows.Forms.Button();
-            this.buttonEnAcr122u = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.buttonEUpdate = new System.Windows.Forms.Button();
+            this.buttoEScanCard = new System.Windows.Forms.Button();
+            this.buttonEscan = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.buttonESelectKey = new System.Windows.Forms.Button();
+            this.buttonECmfoc = new System.Windows.Forms.Button();
+            this.buttonEMfRead = new System.Windows.Forms.Button();
+            this.buttonEMfoc = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.runTimeLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.localVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.remoteVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.buttonCheckEncrypt = new System.Windows.Forms.Button();
+            this.buttonECheckEncrypt = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -152,7 +161,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(12, 219);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(623, 290);
+            this.richTextBox1.Size = new System.Drawing.Size(623, 300);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "Hello,cardman!\n建议点击\"检测\"以加快后续运行速度\n";
             // 
@@ -332,7 +341,6 @@
             // 
             // buttonHexTool
             // 
-            this.buttonHexTool.Enabled = false;
             this.buttonHexTool.Font = new System.Drawing.Font("宋体", 8.5F);
             this.buttonHexTool.Location = new System.Drawing.Point(6, 53);
             this.buttonHexTool.Name = "buttonHexTool";
@@ -340,6 +348,7 @@
             this.buttonHexTool.TabIndex = 1;
             this.buttonHexTool.Text = "Hex工具";
             this.buttonHexTool.UseVisualStyleBackColor = true;
+            this.buttonHexTool.Click += new System.EventHandler(this.buttonHexTool_Click);
             // 
             // buttonTool1
             // 
@@ -362,6 +371,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.buttonCheckEncrypt);
             this.groupBox4.Controls.Add(this.buttonEnAcr122u);
             this.groupBox4.Controls.Add(this.buttonMfFormat);
             this.groupBox4.Controls.Add(this.buttonLockUfuid);
@@ -376,25 +386,15 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "工具";
             // 
-            // buttonCmfWrite
+            // buttonEnAcr122u
             // 
-            this.buttonCmfWrite.Location = new System.Drawing.Point(198, 23);
-            this.buttonCmfWrite.Name = "buttonCmfWrite";
-            this.buttonCmfWrite.Size = new System.Drawing.Size(75, 23);
-            this.buttonCmfWrite.TabIndex = 4;
-            this.buttonCmfWrite.Text = "CUID写";
-            this.buttonCmfWrite.UseVisualStyleBackColor = true;
-            this.buttonCmfWrite.Click += new System.EventHandler(this.buttonCmfWrite_Click);
-            // 
-            // buttonLockUfuid
-            // 
-            this.buttonLockUfuid.Location = new System.Drawing.Point(198, 52);
-            this.buttonLockUfuid.Name = "buttonLockUfuid";
-            this.buttonLockUfuid.Size = new System.Drawing.Size(75, 23);
-            this.buttonLockUfuid.TabIndex = 5;
-            this.buttonLockUfuid.Text = "锁Ufuid";
-            this.buttonLockUfuid.UseVisualStyleBackColor = true;
-            this.buttonLockUfuid.Click += new System.EventHandler(this.buttonLockUfuid_Click);
+            this.buttonEnAcr122u.Location = new System.Drawing.Point(279, 52);
+            this.buttonEnAcr122u.Name = "buttonEnAcr122u";
+            this.buttonEnAcr122u.Size = new System.Drawing.Size(156, 23);
+            this.buttonEnAcr122u.TabIndex = 7;
+            this.buttonEnAcr122u.Text = "启用ACR122U支持";
+            this.buttonEnAcr122u.UseVisualStyleBackColor = true;
+            this.buttonEnAcr122u.Click += new System.EventHandler(this.buttonEnAcr122u_Click);
             // 
             // buttonMfFormat
             // 
@@ -406,6 +406,26 @@
             this.buttonMfFormat.UseVisualStyleBackColor = true;
             this.buttonMfFormat.Click += new System.EventHandler(this.buttonMfFormat_Click);
             // 
+            // buttonLockUfuid
+            // 
+            this.buttonLockUfuid.Location = new System.Drawing.Point(198, 52);
+            this.buttonLockUfuid.Name = "buttonLockUfuid";
+            this.buttonLockUfuid.Size = new System.Drawing.Size(75, 23);
+            this.buttonLockUfuid.TabIndex = 5;
+            this.buttonLockUfuid.Text = "锁Ufuid";
+            this.buttonLockUfuid.UseVisualStyleBackColor = true;
+            this.buttonLockUfuid.Click += new System.EventHandler(this.buttonLockUfuid_Click);
+            // 
+            // buttonCmfWrite
+            // 
+            this.buttonCmfWrite.Location = new System.Drawing.Point(198, 23);
+            this.buttonCmfWrite.Name = "buttonCmfWrite";
+            this.buttonCmfWrite.Size = new System.Drawing.Size(75, 23);
+            this.buttonCmfWrite.TabIndex = 4;
+            this.buttonCmfWrite.Text = "CUID写";
+            this.buttonCmfWrite.UseVisualStyleBackColor = true;
+            this.buttonCmfWrite.Click += new System.EventHandler(this.buttonCmfWrite_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage2);
@@ -415,20 +435,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(640, 212);
             this.tabControl1.TabIndex = 11;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.groupBox4);
-            this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(632, 183);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "高级操作模式";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -444,100 +450,15 @@
             this.tabPage2.Text = "复制卡模式";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // groupBox5
+            // buttonEAdv
             // 
-            this.groupBox5.Controls.Add(this.buttonESelectKey);
-            this.groupBox5.Controls.Add(this.buttonECmfoc);
-            this.groupBox5.Controls.Add(this.buttonEMfRead);
-            this.groupBox5.Controls.Add(this.buttonEMfoc);
-            this.groupBox5.Location = new System.Drawing.Point(140, 6);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(128, 171);
-            this.groupBox5.TabIndex = 0;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "[2]读取原卡";
-            // 
-            // buttonEMfoc
-            // 
-            this.buttonEMfoc.Location = new System.Drawing.Point(6, 25);
-            this.buttonEMfoc.Name = "buttonEMfoc";
-            this.buttonEMfoc.Size = new System.Drawing.Size(116, 25);
-            this.buttonEMfoc.TabIndex = 0;
-            this.buttonEMfoc.Text = "[1]半加密破解";
-            this.buttonEMfoc.UseVisualStyleBackColor = true;
-            this.buttonEMfoc.Click += new System.EventHandler(this.buttonEMfoc_Click);
-            // 
-            // buttonEMfRead
-            // 
-            this.buttonEMfRead.Location = new System.Drawing.Point(6, 140);
-            this.buttonEMfRead.Name = "buttonEMfRead";
-            this.buttonEMfRead.Size = new System.Drawing.Size(116, 25);
-            this.buttonEMfRead.TabIndex = 1;
-            this.buttonEMfRead.Text = "已知密钥读";
-            this.buttonEMfRead.UseVisualStyleBackColor = true;
-            this.buttonEMfRead.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // buttonECmfoc
-            // 
-            this.buttonECmfoc.Location = new System.Drawing.Point(6, 80);
-            this.buttonECmfoc.Name = "buttonECmfoc";
-            this.buttonECmfoc.Size = new System.Drawing.Size(116, 25);
-            this.buttonECmfoc.TabIndex = 2;
-            this.buttonECmfoc.Text = "知一密破解";
-            this.buttonECmfoc.UseVisualStyleBackColor = true;
-            this.buttonECmfoc.Click += new System.EventHandler(this.buttonECmfoc_Click);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.buttonEUpdate);
-            this.groupBox6.Controls.Add(this.buttoEScanCard);
-            this.groupBox6.Controls.Add(this.buttonEscan);
-            this.groupBox6.Location = new System.Drawing.Point(6, 6);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(128, 171);
-            this.groupBox6.TabIndex = 3;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "[1]检测";
-            // 
-            // buttonEscan
-            // 
-            this.buttonEscan.Location = new System.Drawing.Point(6, 25);
-            this.buttonEscan.Name = "buttonEscan";
-            this.buttonEscan.Size = new System.Drawing.Size(116, 25);
-            this.buttonEscan.TabIndex = 0;
-            this.buttonEscan.Text = "[1]检测连接";
-            this.buttonEscan.UseVisualStyleBackColor = true;
-            this.buttonEscan.Click += new System.EventHandler(this.buttonEscan_Click);
-            // 
-            // buttoEScanCard
-            // 
-            this.buttoEScanCard.Location = new System.Drawing.Point(6, 56);
-            this.buttoEScanCard.Name = "buttoEScanCard";
-            this.buttoEScanCard.Size = new System.Drawing.Size(116, 25);
-            this.buttoEScanCard.TabIndex = 1;
-            this.buttoEScanCard.Text = "[2]扫描卡片";
-            this.buttoEScanCard.UseVisualStyleBackColor = true;
-            this.buttoEScanCard.Click += new System.EventHandler(this.buttoEScanCard_Click);
-            // 
-            // buttonESelectKey
-            // 
-            this.buttonESelectKey.Location = new System.Drawing.Point(6, 109);
-            this.buttonESelectKey.Name = "buttonESelectKey";
-            this.buttonESelectKey.Size = new System.Drawing.Size(116, 25);
-            this.buttonESelectKey.TabIndex = 2;
-            this.buttonESelectKey.Text = "加载密钥…";
-            this.buttonESelectKey.UseVisualStyleBackColor = true;
-            this.buttonESelectKey.Click += new System.EventHandler(this.buttonESelectKey_Click);
-            // 
-            // buttonEUpdate
-            // 
-            this.buttonEUpdate.Location = new System.Drawing.Point(6, 140);
-            this.buttonEUpdate.Name = "buttonEUpdate";
-            this.buttonEUpdate.Size = new System.Drawing.Size(116, 25);
-            this.buttonEUpdate.TabIndex = 4;
-            this.buttonEUpdate.Text = "检查M1T更新";
-            this.buttonEUpdate.UseVisualStyleBackColor = true;
-            this.buttonEUpdate.Click += new System.EventHandler(this.buttonEUpdate_Click);
+            this.buttonEAdv.Location = new System.Drawing.Point(408, 16);
+            this.buttonEAdv.Name = "buttonEAdv";
+            this.buttonEAdv.Size = new System.Drawing.Size(218, 40);
+            this.buttonEAdv.TabIndex = 4;
+            this.buttonEAdv.Text = "点此进入高级模式>>>";
+            this.buttonEAdv.UseVisualStyleBackColor = true;
+            this.buttonEAdv.Click += new System.EventHandler(this.buttonEAdv_Click);
             // 
             // groupBox7
             // 
@@ -591,31 +512,187 @@
             this.buttonEMfWrite.UseVisualStyleBackColor = true;
             this.buttonEMfWrite.Click += new System.EventHandler(this.buttonEMfWrite_Click);
             // 
-            // buttonEAdv
+            // groupBox6
             // 
-            this.buttonEAdv.Location = new System.Drawing.Point(408, 16);
-            this.buttonEAdv.Name = "buttonEAdv";
-            this.buttonEAdv.Size = new System.Drawing.Size(218, 40);
-            this.buttonEAdv.TabIndex = 4;
-            this.buttonEAdv.Text = "点此进入高级模式>>>";
-            this.buttonEAdv.UseVisualStyleBackColor = true;
-            this.buttonEAdv.Click += new System.EventHandler(this.buttonEAdv_Click);
+            this.groupBox6.Controls.Add(this.buttonECheckEncrypt);
+            this.groupBox6.Controls.Add(this.buttonEUpdate);
+            this.groupBox6.Controls.Add(this.buttoEScanCard);
+            this.groupBox6.Controls.Add(this.buttonEscan);
+            this.groupBox6.Location = new System.Drawing.Point(6, 6);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(128, 171);
+            this.groupBox6.TabIndex = 3;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "[1]检测";
             // 
-            // buttonEnAcr122u
+            // buttonEUpdate
             // 
-            this.buttonEnAcr122u.Location = new System.Drawing.Point(279, 52);
-            this.buttonEnAcr122u.Name = "buttonEnAcr122u";
-            this.buttonEnAcr122u.Size = new System.Drawing.Size(164, 23);
-            this.buttonEnAcr122u.TabIndex = 7;
-            this.buttonEnAcr122u.Text = "启用ACR122U支持";
-            this.buttonEnAcr122u.UseVisualStyleBackColor = true;
-            this.buttonEnAcr122u.Click += new System.EventHandler(this.buttonEnAcr122u_Click);
+            this.buttonEUpdate.Location = new System.Drawing.Point(6, 140);
+            this.buttonEUpdate.Name = "buttonEUpdate";
+            this.buttonEUpdate.Size = new System.Drawing.Size(116, 25);
+            this.buttonEUpdate.TabIndex = 4;
+            this.buttonEUpdate.Text = "检查M1T更新";
+            this.buttonEUpdate.UseVisualStyleBackColor = true;
+            this.buttonEUpdate.Click += new System.EventHandler(this.buttonEUpdate_Click);
+            // 
+            // buttoEScanCard
+            // 
+            this.buttoEScanCard.Location = new System.Drawing.Point(6, 56);
+            this.buttoEScanCard.Name = "buttoEScanCard";
+            this.buttoEScanCard.Size = new System.Drawing.Size(116, 25);
+            this.buttoEScanCard.TabIndex = 1;
+            this.buttoEScanCard.Text = "[2]扫描卡片";
+            this.buttoEScanCard.UseVisualStyleBackColor = true;
+            this.buttoEScanCard.Click += new System.EventHandler(this.buttoEScanCard_Click);
+            // 
+            // buttonEscan
+            // 
+            this.buttonEscan.Location = new System.Drawing.Point(6, 25);
+            this.buttonEscan.Name = "buttonEscan";
+            this.buttonEscan.Size = new System.Drawing.Size(116, 25);
+            this.buttonEscan.TabIndex = 0;
+            this.buttonEscan.Text = "[1]检测连接";
+            this.buttonEscan.UseVisualStyleBackColor = true;
+            this.buttonEscan.Click += new System.EventHandler(this.buttonEscan_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.buttonESelectKey);
+            this.groupBox5.Controls.Add(this.buttonECmfoc);
+            this.groupBox5.Controls.Add(this.buttonEMfRead);
+            this.groupBox5.Controls.Add(this.buttonEMfoc);
+            this.groupBox5.Location = new System.Drawing.Point(140, 6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(128, 171);
+            this.groupBox5.TabIndex = 0;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "[2]读取原卡";
+            // 
+            // buttonESelectKey
+            // 
+            this.buttonESelectKey.Location = new System.Drawing.Point(6, 109);
+            this.buttonESelectKey.Name = "buttonESelectKey";
+            this.buttonESelectKey.Size = new System.Drawing.Size(116, 25);
+            this.buttonESelectKey.TabIndex = 2;
+            this.buttonESelectKey.Text = "加载密钥…";
+            this.buttonESelectKey.UseVisualStyleBackColor = true;
+            this.buttonESelectKey.Click += new System.EventHandler(this.buttonESelectKey_Click);
+            // 
+            // buttonECmfoc
+            // 
+            this.buttonECmfoc.Location = new System.Drawing.Point(6, 80);
+            this.buttonECmfoc.Name = "buttonECmfoc";
+            this.buttonECmfoc.Size = new System.Drawing.Size(116, 25);
+            this.buttonECmfoc.TabIndex = 2;
+            this.buttonECmfoc.Text = "知一密破解";
+            this.buttonECmfoc.UseVisualStyleBackColor = true;
+            this.buttonECmfoc.Click += new System.EventHandler(this.buttonECmfoc_Click);
+            // 
+            // buttonEMfRead
+            // 
+            this.buttonEMfRead.Location = new System.Drawing.Point(6, 140);
+            this.buttonEMfRead.Name = "buttonEMfRead";
+            this.buttonEMfRead.Size = new System.Drawing.Size(116, 25);
+            this.buttonEMfRead.TabIndex = 1;
+            this.buttonEMfRead.Text = "已知密钥读";
+            this.buttonEMfRead.UseVisualStyleBackColor = true;
+            this.buttonEMfRead.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // buttonEMfoc
+            // 
+            this.buttonEMfoc.Location = new System.Drawing.Point(6, 25);
+            this.buttonEMfoc.Name = "buttonEMfoc";
+            this.buttonEMfoc.Size = new System.Drawing.Size(116, 25);
+            this.buttonEMfoc.TabIndex = 0;
+            this.buttonEMfoc.Text = "[1]半加密破解";
+            this.buttonEMfoc.UseVisualStyleBackColor = true;
+            this.buttonEMfoc.Click += new System.EventHandler(this.buttonEMfoc_Click);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.groupBox4);
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(632, 183);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "高级操作模式";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusLabel,
+            this.runTimeLabel,
+            this.localVersionLabel,
+            this.remoteVersionLabel});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 522);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(649, 26);
+            this.statusStrip1.TabIndex = 12;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.AutoSize = false;
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(60, 21);
+            this.statusLabel.Text = "就绪";
+            // 
+            // runTimeLabel
+            // 
+            this.runTimeLabel.AutoSize = false;
+            this.runTimeLabel.Name = "runTimeLabel";
+            this.runTimeLabel.Size = new System.Drawing.Size(150, 21);
+            this.runTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // localVersionLabel
+            // 
+            this.localVersionLabel.Name = "localVersionLabel";
+            this.localVersionLabel.Size = new System.Drawing.Size(0, 21);
+            this.localVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // remoteVersionLabel
+            // 
+            this.remoteVersionLabel.AutoSize = false;
+            this.remoteVersionLabel.Name = "remoteVersionLabel";
+            this.remoteVersionLabel.Size = new System.Drawing.Size(130, 21);
+            this.remoteVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // buttonCheckEncrypt
+            // 
+            this.buttonCheckEncrypt.Location = new System.Drawing.Point(360, 23);
+            this.buttonCheckEncrypt.Name = "buttonCheckEncrypt";
+            this.buttonCheckEncrypt.Size = new System.Drawing.Size(75, 23);
+            this.buttonCheckEncrypt.TabIndex = 13;
+            this.buttonCheckEncrypt.Text = "检加密";
+            this.buttonCheckEncrypt.UseVisualStyleBackColor = true;
+            this.buttonCheckEncrypt.Click += new System.EventHandler(this.buttonCheckEncrypt_Click);
+            // 
+            // buttonECheckEncrypt
+            // 
+            this.buttonECheckEncrypt.Location = new System.Drawing.Point(6, 87);
+            this.buttonECheckEncrypt.Name = "buttonECheckEncrypt";
+            this.buttonECheckEncrypt.Size = new System.Drawing.Size(116, 25);
+            this.buttonECheckEncrypt.TabIndex = 5;
+            this.buttonECheckEncrypt.Text = "[3]检测加密";
+            this.buttonECheckEncrypt.UseVisualStyleBackColor = true;
+            this.buttonECheckEncrypt.Click += new System.EventHandler(this.buttonECheckEncrypt_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 521);
+            this.ClientSize = new System.Drawing.Size(649, 548);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.richTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -629,12 +706,15 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -687,6 +767,14 @@
         private System.Windows.Forms.Button buttonEMfWrite;
         private System.Windows.Forms.Button buttonEAdv;
         private System.Windows.Forms.Button buttonEnAcr122u;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel statusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel runTimeLabel;
+        private System.Windows.Forms.ToolStripStatusLabel localVersionLabel;
+        private System.Windows.Forms.ToolStripStatusLabel remoteVersionLabel;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button buttonCheckEncrypt;
+        private System.Windows.Forms.Button buttonECheckEncrypt;
     }
 }
 
