@@ -65,6 +65,7 @@
             this.labelCurSec = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.新建ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.s50BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -88,6 +89,7 @@
             // 文件ToolStripMenuItem
             // 
             this.文件ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.新建ToolStripMenuItem,
             this.打开ToolStripMenuItem,
             this.保存ToolStripMenuItem,
             this.另存为ToolStripMenuItem,
@@ -233,11 +235,11 @@
             // 
             // buttonSaveSectorEdit
             // 
-            this.buttonSaveSectorEdit.Location = new System.Drawing.Point(186, 16);
+            this.buttonSaveSectorEdit.Location = new System.Drawing.Point(147, 16);
             this.buttonSaveSectorEdit.Name = "buttonSaveSectorEdit";
-            this.buttonSaveSectorEdit.Size = new System.Drawing.Size(100, 25);
+            this.buttonSaveSectorEdit.Size = new System.Drawing.Size(139, 25);
             this.buttonSaveSectorEdit.TabIndex = 20;
-            this.buttonSaveSectorEdit.Text = "修改扇区";
+            this.buttonSaveSectorEdit.Text = "修改扇区(Enter)";
             this.buttonSaveSectorEdit.UseVisualStyleBackColor = true;
             this.buttonSaveSectorEdit.Click += new System.EventHandler(this.buttonSaveSectorEdit_Click);
             // 
@@ -470,12 +472,21 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "欢迎使用M1T的集成编辑器S50HTool！\n打开文件请点左上角文件-打开或Ctrl+O\n";
             // 
+            // 新建ToolStripMenuItem
+            // 
+            this.新建ToolStripMenuItem.Name = "新建ToolStripMenuItem";
+            this.新建ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.新建ToolStripMenuItem.Size = new System.Drawing.Size(222, 24);
+            this.新建ToolStripMenuItem.Text = "新建";
+            this.新建ToolStripMenuItem.Click += new System.EventHandler(this.新建ToolStripMenuItem_Click);
+            // 
             // s50BindingSource
             // 
             this.s50BindingSource.DataSource = typeof(MifareOneTool.S50);
             // 
             // FormHTool
             // 
+            this.AcceptButton = this.buttonSaveSectorEdit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 452);
@@ -540,5 +551,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ToolStripMenuItem 新建ToolStripMenuItem;
     }
 }

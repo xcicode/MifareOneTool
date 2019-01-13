@@ -340,5 +340,13 @@ namespace MifareOneTool
             logAppend("UID已改为" + Form1.hex(buid) + "，计算得到BCC=" + Form1.hex(new byte[]{bcc}));
             reloadEdit(0);
         }
+
+        private void 新建ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            reloadEdit(-1);
+            this.currentS50 = new S50();
+            reloadList();
+            logAppend("已重置并新建卡。");
+        }
     }
 }

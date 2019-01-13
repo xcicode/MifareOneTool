@@ -212,6 +212,10 @@ namespace MifareOneTool
             {
                 info += " 有数据";
             }
+            if (this.Verify() != 0x00)
+            {
+                info += " 有错误";
+            }
             return info;
         }
     }
