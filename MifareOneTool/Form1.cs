@@ -237,6 +237,28 @@ namespace MifareOneTool
             }
         }
 
+        bool writecheck(string file)
+        {
+            S50 card = new S50();
+            try
+            {
+                card.LoadFromMfd(file);
+            }
+            catch (IOException ioe)
+            {
+                MessageBox.Show(ioe.Message, "打开出错", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (card.Verify()[16] == 0x00)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         private void buttonMfWrite_Click(object sender, EventArgs e)
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
@@ -254,6 +276,7 @@ namespace MifareOneTool
             {
                 return;
             }
+            if (!writecheck(rmfd)) { MessageBox.Show("将要写入的文件存在错误，请用高级模式中的Hex工具打开查看。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
             string kt = "a";
             string nn = "";
             switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
@@ -649,6 +672,7 @@ namespace MifareOneTool
             {
                 return;
             }
+            if (!writecheck(rmfd)) { MessageBox.Show("将要写入的文件存在错误，请用高级模式中的Hex工具打开查看。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
             string kt = "a";
             string nn = "";
             switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
