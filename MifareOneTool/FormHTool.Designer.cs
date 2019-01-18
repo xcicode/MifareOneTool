@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.新建ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.打开ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.保存ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.另存为ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,8 +66,11 @@
             this.labelCurSec = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.新建ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.s50BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.检查并纠正全卡ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.导出为MCT格式ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -98,6 +102,14 @@
             this.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem";
             this.文件ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.文件ToolStripMenuItem.Text = "文件";
+            // 
+            // 新建ToolStripMenuItem
+            // 
+            this.新建ToolStripMenuItem.Name = "新建ToolStripMenuItem";
+            this.新建ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.新建ToolStripMenuItem.Size = new System.Drawing.Size(222, 24);
+            this.新建ToolStripMenuItem.Text = "新建";
+            this.新建ToolStripMenuItem.Click += new System.EventHandler(this.新建ToolStripMenuItem_Click);
             // 
             // 打开ToolStripMenuItem
             // 
@@ -141,7 +153,11 @@
             // 
             this.工具ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.修改UIDToolStripMenuItem,
-            this.检查全卡ToolStripMenuItem});
+            this.toolStripSeparator2,
+            this.检查全卡ToolStripMenuItem,
+            this.检查并纠正全卡ToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.导出为MCT格式ToolStripMenuItem});
             this.工具ToolStripMenuItem.Name = "工具ToolStripMenuItem";
             this.工具ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.工具ToolStripMenuItem.Text = "工具";
@@ -150,7 +166,7 @@
             // 
             this.修改UIDToolStripMenuItem.Name = "修改UIDToolStripMenuItem";
             this.修改UIDToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.修改UIDToolStripMenuItem.Size = new System.Drawing.Size(191, 24);
+            this.修改UIDToolStripMenuItem.Size = new System.Drawing.Size(239, 24);
             this.修改UIDToolStripMenuItem.Text = "修改UID";
             this.修改UIDToolStripMenuItem.Click += new System.EventHandler(this.修改UIDToolStripMenuItem_Click);
             // 
@@ -158,7 +174,7 @@
             // 
             this.检查全卡ToolStripMenuItem.Name = "检查全卡ToolStripMenuItem";
             this.检查全卡ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.J)));
-            this.检查全卡ToolStripMenuItem.Size = new System.Drawing.Size(191, 24);
+            this.检查全卡ToolStripMenuItem.Size = new System.Drawing.Size(239, 24);
             this.检查全卡ToolStripMenuItem.Text = "检查全卡";
             this.检查全卡ToolStripMenuItem.Click += new System.EventHandler(this.检查全卡ToolStripMenuItem_Click);
             // 
@@ -472,17 +488,35 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "欢迎使用M1T的集成编辑器S50HTool！\n打开文件请点左上角文件-打开或Ctrl+O\n";
             // 
-            // 新建ToolStripMenuItem
-            // 
-            this.新建ToolStripMenuItem.Name = "新建ToolStripMenuItem";
-            this.新建ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.新建ToolStripMenuItem.Size = new System.Drawing.Size(222, 24);
-            this.新建ToolStripMenuItem.Text = "新建";
-            this.新建ToolStripMenuItem.Click += new System.EventHandler(this.新建ToolStripMenuItem_Click);
-            // 
             // s50BindingSource
             // 
             this.s50BindingSource.DataSource = typeof(MifareOneTool.S50);
+            // 
+            // 检查并纠正全卡ToolStripMenuItem
+            // 
+            this.检查并纠正全卡ToolStripMenuItem.Name = "检查并纠正全卡ToolStripMenuItem";
+            this.检查并纠正全卡ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
+            this.检查并纠正全卡ToolStripMenuItem.Size = new System.Drawing.Size(239, 24);
+            this.检查并纠正全卡ToolStripMenuItem.Text = "检查并纠正全卡";
+            this.检查并纠正全卡ToolStripMenuItem.Click += new System.EventHandler(this.检查并纠正全卡ToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(245, 6);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(245, 6);
+            // 
+            // 导出为MCT格式ToolStripMenuItem
+            // 
+            this.导出为MCT格式ToolStripMenuItem.Name = "导出为MCT格式ToolStripMenuItem";
+            this.导出为MCT格式ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
+            this.导出为MCT格式ToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
+            this.导出为MCT格式ToolStripMenuItem.Text = "导出为MCT格式";
+            this.导出为MCT格式ToolStripMenuItem.Click += new System.EventHandler(this.导出为MCT格式ToolStripMenuItem_Click);
             // 
             // FormHTool
             // 
@@ -552,5 +586,9 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ToolStripMenuItem 新建ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 检查并纠正全卡ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem 导出为MCT格式ToolStripMenuItem;
     }
 }

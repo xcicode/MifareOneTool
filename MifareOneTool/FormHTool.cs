@@ -301,11 +301,11 @@ namespace MifareOneTool
                     }
                     if ((res[i] & 0x02) == 0x02)
                     {
-                        msg += "该扇区访问控制位无效，写入将会损坏卡片，已重新设置。\n";
+                        msg += "该扇区访问控制位无效，写入将会损坏卡片，请重新设置。\n";
                     }
                     if ((res[i] & 0x04) == 0x04)
                     {
-                        msg += "该扇区访问控制位损坏，写入将会损坏卡片，已重新设置。\n";
+                        msg += "该扇区访问控制位损坏，写入将会损坏卡片，请重新设置。\n";
                     }
                     if (res[i] == 0)
                     {
@@ -347,6 +347,84 @@ namespace MifareOneTool
             this.currentS50 = new S50();
             reloadList();
             logAppend("已重置并新建卡。");
+        }
+
+        private void 检查并纠正全卡ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            byte[] defaultAC = new byte[] { 0xff, 0x07, 0x80, 0x69 };
+            int[] res = currentS50.Verify();
+            if (res[16] == 0)
+            {
+                MessageBox.Show("该文件一切正常。");
+            }
+            else
+            {
+                string msg = "该文件存在以下错误：\n";
+                for (int i = 0; i < 16; i++)
+                {
+                    msg += "扇区" + i.ToString() + "：\n";
+                    if ((res[i] & 0x01) == 0x01)
+                    {
+                        currentS50.Sectors[i].Block[0][4]
+                            = (byte)(currentS50.Sectors[i].Block[0][0]
+                            ^ currentS50.Sectors[i].Block[0][1]
+                            ^ currentS50.Sectors[i].Block[0][2]
+                            ^ currentS50.Sectors[i].Block[0][3]);
+                        block0Edit.Text = Form1.hex(currentS50.Sectors[i].Block[0]);
+                        msg += "该扇区UID校验值错误，已自动更正。\n";
+                    }
+                    if ((res[i] & 0x02) == 0x02)
+                    {
+                        for (int j = 6; j < 10; j++)
+                        {
+                            currentS50.Sectors[i].Block[3][j] = defaultAC[j - 6];
+                        }
+                        msg += "该扇区访问控制位无效，写入将会损坏卡片，已重新设置。\n";
+                    }
+                    if ((res[i] & 0x04) == 0x04)
+                    {
+                        for (int j = 6; j < 10; j++)
+                        {
+                            currentS50.Sectors[i].Block[3][j] = defaultAC[j - 6];
+                        }
+                        msg += "该扇区访问控制位损坏，写入将会损坏卡片，已重新设置。\n";
+                    }
+                    if (res[i] == 0)
+                    {
+                        msg += "该扇区一切正常。\n";
+                    }
+                }
+                richTextBox1.Clear();
+                logAppend(msg);
+            }
+        }
+
+        private void 导出为MCT格式ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string filename;
+            SaveFileDialog ofd = new SaveFileDialog();
+            ofd.AddExtension = true;
+            ofd.DefaultExt = ".txt";
+            ofd.Title = "请选择MCT.txt文件保存位置及文件名";
+            ofd.OverwritePrompt = true;
+            ofd.Filter = "txt文件|*.txt";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                filename = ofd.FileName;
+            }
+            else
+            {
+                return;
+            }
+            try
+            {
+                this.currentS50.ExportToMctTxt(filename);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "写入出错", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            logAppend("已导出MCT文件" + filename + "。");
         }
     }
 }
