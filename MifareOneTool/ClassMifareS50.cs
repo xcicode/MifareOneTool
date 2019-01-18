@@ -9,6 +9,15 @@ namespace MifareOneTool
 {
     class Utils
     {
+        public static string Hex2Str(byte[] bytes)
+        {
+            StringBuilder ret = new StringBuilder();
+            foreach (byte b in bytes)
+            {
+                ret.AppendFormat("{0:x2}", b);
+            }
+            return ret.ToString();
+        }
         public static byte[] ReadAC(byte[] ac)
         {
             byte[] acbits = new byte[4];
@@ -212,6 +221,10 @@ namespace MifareOneTool
             {
                 info += " 有数据";
             }
+            if (this.Verify() != 0x00)
+            {
+                info += " 有错误";
+            }
             return info;
         }
     }
@@ -310,6 +323,19 @@ namespace MifareOneTool
         {
             byte[] fileBuffer = this.SectorsRaw;
             File.WriteAllBytes(file, fileBuffer);
+        }
+        public void ExportToMctTxt(string file)
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < 16; i++)
+            {
+                sb.AppendLine("+Sector: " + i.ToString());
+                for (int j = 0; j < 4; j++)
+                {
+                    sb.AppendLine(Utils.Hex2Str(this._sectors[i].Block[j]));
+                }
+            }
+            File.WriteAllText(file, sb.ToString());
         }
     }
 }
