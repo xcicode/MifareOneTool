@@ -222,7 +222,7 @@ namespace MifareOneTool
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd";
+            ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
             ofd.Title = "请选择一个包含目标卡密钥的MFD文件（通常是已经破解出的该卡的MFD文件）";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -243,7 +243,7 @@ namespace MifareOneTool
             string rmfd = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd";
+            ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
             ofd.Title = "请选择需要写入的MFD文件";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -491,7 +491,7 @@ namespace MifareOneTool
             string rmfd = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd";
+            ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
             ofd.Title = "请选择需要写入的MFD文件";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -638,7 +638,7 @@ namespace MifareOneTool
             string rmfd = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd";
+            ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
             ofd.Title = "请选择需要写入的MFD文件";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
