@@ -426,5 +426,26 @@ namespace MifareOneTool
             }
             logAppend("已导出MCT文件" + filename + "。");
         }
+
+        private void 导出密钥字典ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string filename;
+            SaveFileDialog ofd = new SaveFileDialog();
+            ofd.AddExtension = true;
+            ofd.DefaultExt = ".dic";
+            ofd.Title = "请选择密钥字典文件保存位置及文件名";
+            ofd.OverwritePrompt = true;
+            ofd.Filter = "字典文件|*.dic";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                filename = ofd.FileName;
+            }
+            else
+            {
+                return;
+            }
+            File.WriteAllLines(filename, this.currentS50.KeyListStr().ToArray());
+            logAppend("已导出密钥字典文件" + filename + "。");
+        }
     }
 }

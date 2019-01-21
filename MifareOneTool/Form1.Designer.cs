@@ -51,9 +51,10 @@
             this.buttonConClr = new System.Windows.Forms.Button();
             this.buttonMfcuk = new System.Windows.Forms.Button();
             this.buttonHexTool = new System.Windows.Forms.Button();
-            this.buttonTool1 = new System.Windows.Forms.Button();
+            this.buttonDiffTool = new System.Windows.Forms.Button();
             this.toolTipHelp = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonCheckEncrypt = new System.Windows.Forms.Button();
             this.buttonEnAcr122u = new System.Windows.Forms.Button();
             this.buttonMfFormat = new System.Windows.Forms.Button();
             this.buttonLockUfuid = new System.Windows.Forms.Button();
@@ -67,6 +68,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.buttonEMfWrite = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.buttonECheckEncrypt = new System.Windows.Forms.Button();
             this.buttonEUpdate = new System.Windows.Forms.Button();
             this.buttoEScanCard = new System.Windows.Forms.Button();
             this.buttonEscan = new System.Windows.Forms.Button();
@@ -82,8 +84,6 @@
             this.localVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.remoteVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.buttonCheckEncrypt = new System.Windows.Forms.Button();
-            this.buttonECheckEncrypt = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -346,20 +346,20 @@
             this.buttonHexTool.Name = "buttonHexTool";
             this.buttonHexTool.Size = new System.Drawing.Size(110, 23);
             this.buttonHexTool.TabIndex = 1;
-            this.buttonHexTool.Text = "Hex工具";
+            this.buttonHexTool.Text = "Hex编辑器";
             this.buttonHexTool.UseVisualStyleBackColor = true;
             this.buttonHexTool.Click += new System.EventHandler(this.buttonHexTool_Click);
             // 
-            // buttonTool1
+            // buttonDiffTool
             // 
-            this.buttonTool1.Enabled = false;
-            this.buttonTool1.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonTool1.Location = new System.Drawing.Point(6, 24);
-            this.buttonTool1.Name = "buttonTool1";
-            this.buttonTool1.Size = new System.Drawing.Size(110, 23);
-            this.buttonTool1.TabIndex = 0;
-            this.buttonTool1.Text = "key.mfd工具";
-            this.buttonTool1.UseVisualStyleBackColor = true;
+            this.buttonDiffTool.Enabled = false;
+            this.buttonDiffTool.Font = new System.Drawing.Font("宋体", 8.5F);
+            this.buttonDiffTool.Location = new System.Drawing.Point(6, 24);
+            this.buttonDiffTool.Name = "buttonDiffTool";
+            this.buttonDiffTool.Size = new System.Drawing.Size(110, 23);
+            this.buttonDiffTool.TabIndex = 0;
+            this.buttonDiffTool.Text = "差异比较";
+            this.buttonDiffTool.UseVisualStyleBackColor = true;
             // 
             // toolTipHelp
             // 
@@ -377,7 +377,7 @@
             this.groupBox4.Controls.Add(this.buttonLockUfuid);
             this.groupBox4.Controls.Add(this.buttonCmfWrite);
             this.groupBox4.Controls.Add(this.buttonMfcuk);
-            this.groupBox4.Controls.Add(this.buttonTool1);
+            this.groupBox4.Controls.Add(this.buttonDiffTool);
             this.groupBox4.Controls.Add(this.buttonHexTool);
             this.groupBox4.Location = new System.Drawing.Point(3, 95);
             this.groupBox4.Name = "groupBox4";
@@ -385,6 +385,16 @@
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "工具";
+            // 
+            // buttonCheckEncrypt
+            // 
+            this.buttonCheckEncrypt.Location = new System.Drawing.Point(360, 23);
+            this.buttonCheckEncrypt.Name = "buttonCheckEncrypt";
+            this.buttonCheckEncrypt.Size = new System.Drawing.Size(75, 23);
+            this.buttonCheckEncrypt.TabIndex = 13;
+            this.buttonCheckEncrypt.Text = "检加密";
+            this.buttonCheckEncrypt.UseVisualStyleBackColor = true;
+            this.buttonCheckEncrypt.Click += new System.EventHandler(this.buttonCheckEncrypt_Click);
             // 
             // buttonEnAcr122u
             // 
@@ -524,6 +534,16 @@
             this.groupBox6.TabIndex = 3;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "[1]检测";
+            // 
+            // buttonECheckEncrypt
+            // 
+            this.buttonECheckEncrypt.Location = new System.Drawing.Point(6, 87);
+            this.buttonECheckEncrypt.Name = "buttonECheckEncrypt";
+            this.buttonECheckEncrypt.Size = new System.Drawing.Size(116, 25);
+            this.buttonECheckEncrypt.TabIndex = 5;
+            this.buttonECheckEncrypt.Text = "[3]检测加密";
+            this.buttonECheckEncrypt.UseVisualStyleBackColor = true;
+            this.buttonECheckEncrypt.Click += new System.EventHandler(this.buttonECheckEncrypt_Click);
             // 
             // buttonEUpdate
             // 
@@ -667,26 +687,6 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // buttonCheckEncrypt
-            // 
-            this.buttonCheckEncrypt.Location = new System.Drawing.Point(360, 23);
-            this.buttonCheckEncrypt.Name = "buttonCheckEncrypt";
-            this.buttonCheckEncrypt.Size = new System.Drawing.Size(75, 23);
-            this.buttonCheckEncrypt.TabIndex = 13;
-            this.buttonCheckEncrypt.Text = "检加密";
-            this.buttonCheckEncrypt.UseVisualStyleBackColor = true;
-            this.buttonCheckEncrypt.Click += new System.EventHandler(this.buttonCheckEncrypt_Click);
-            // 
-            // buttonECheckEncrypt
-            // 
-            this.buttonECheckEncrypt.Location = new System.Drawing.Point(6, 87);
-            this.buttonECheckEncrypt.Name = "buttonECheckEncrypt";
-            this.buttonECheckEncrypt.Size = new System.Drawing.Size(116, 25);
-            this.buttonECheckEncrypt.TabIndex = 5;
-            this.buttonECheckEncrypt.Text = "[3]检测加密";
-            this.buttonECheckEncrypt.UseVisualStyleBackColor = true;
-            this.buttonECheckEncrypt.Click += new System.EventHandler(this.buttonECheckEncrypt_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -740,7 +740,7 @@
         private System.Windows.Forms.Button buttonConClr;
         private System.Windows.Forms.Button buttonKill;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button buttonTool1;
+        private System.Windows.Forms.Button buttonDiffTool;
         private System.Windows.Forms.Button buttonHexTool;
         private System.Windows.Forms.Button buttonMfcuk;
         private System.Windows.Forms.ToolTip toolTipHelp;

@@ -227,6 +227,21 @@ namespace MifareOneTool
             }
             return info;
         }
+        public byte[] KeyA
+        {
+            get { return this._sector[3].Skip(0).Take(6).ToArray(); }
+            set { for (int i = 0; i < 6; i++) { this._sector[3][i] = value[i]; } }
+        }
+        public byte[] KeyB
+        {
+            get { return this._sector[3].Skip(10).Take(6).ToArray(); }
+            set { for (int i = 10; i < 16; i++) { this._sector[3][i] = value[i]; } }
+        }
+        public byte[] ACBits
+        {
+            get { return this._sector[3].Skip(6).Take(4).ToArray(); }
+            set { for (int i = 6; i < 10; i++) { this._sector[3][i] = value[i]; } }
+        }
     }
     class S50
     {
@@ -336,6 +351,28 @@ namespace MifareOneTool
                 }
             }
             File.WriteAllText(file, sb.ToString());
+        }
+        public List<byte[]> KeyList()
+        {
+            List<byte[]> keys = new List<byte[]>();
+            foreach (Sector s in this._sectors)
+            {
+                keys.Add(s.KeyA);
+                keys.Add(s.KeyB);
+            }
+            keys = keys.Distinct().ToList();
+            return keys;
+        }
+        public List<string> KeyListStr()
+        {
+            List<string> keys = new List<string>();
+            foreach (Sector s in this._sectors)
+            {
+                keys.Add(Utils.Hex2Str(s.KeyA));
+                keys.Add(Utils.Hex2Str(s.KeyB));
+            }
+            keys = keys.Distinct().ToList();
+            return keys;
         }
     }
 }

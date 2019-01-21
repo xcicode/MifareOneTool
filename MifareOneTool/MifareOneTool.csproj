@@ -73,6 +73,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDiff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiff.Designer.cs">
+      <DependentUpon>FormDiff.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHTool.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiff.resx">
+      <DependentUpon>FormDiff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHTool.resx">
       <DependentUpon>FormHTool.cs</DependentUpon>
