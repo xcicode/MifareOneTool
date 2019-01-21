@@ -12,6 +12,7 @@ using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using Microsoft.VisualBasic;
 using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace MifareOneTool
 {
@@ -28,7 +29,7 @@ namespace MifareOneTool
 
         private void buttonListDev_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } 
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(list_dev);
@@ -77,7 +78,7 @@ namespace MifareOneTool
                 omfd = "";
                 Text = "MifareOne Tool - 运行完毕";
             }
-                Application.DoEvents();
+            Application.DoEvents();
 
         }
 
@@ -97,7 +98,7 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -105,15 +106,17 @@ namespace MifareOneTool
             process.BeginErrorReadLine();
             process.WaitForExit();
             lprocess = false;
-            running=false;
+            running = false;
             b.ReportProgress(100, "##运行完毕##");
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            linkLabel1.Links.Add(0, linkLabel1.Text.Length, "https://github.com/xcicode/MifareOneTool/releases/latest");
             logAppend("#软件版本 " + Assembly.GetExecutingAssembly().GetName().Version.ToString());
-            localVersionLabel.Text="本地版本 " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            localVersionLabel.Text = "本地版本 " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            //GitHubUpdate ghu = new GitHubUpdate(Properties.Settings.Default.GitHubR);
+            //ghu.Update(Properties.Settings.Default.GitHubR);
+            //remoteVersionLabel.Text = "远程版本 " + ghu.remoteVersion;
         }
 
         private void buttonScanCard_Click(object sender, EventArgs e)
@@ -136,14 +139,14 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
         }
 
@@ -169,9 +172,9 @@ namespace MifareOneTool
             bgw.DoWork += new DoWorkEventHandler(mf_read);
             bgw.WorkerReportsProgress = true;
             bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
-            bgw.RunWorkerAsync(new string[] { rmfd, kt,nn });
+            bgw.RunWorkerAsync(new string[] { rmfd, kt, nn });
             omfd = rmfd;
-            
+
         }
 
         void mf_read(object sender, DoWorkEventArgs e)
@@ -190,14 +193,14 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             if (process.ExitCode == 0)
             {
                 b.ReportProgress(101, "##运行完毕##");
@@ -282,18 +285,18 @@ namespace MifareOneTool
             switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
             {
                 case DialogResult.No:
-                kt = "b";
-                break;
+                    kt = "b";
+                    break;
 
                 case DialogResult.Cancel:
-                    nn="x";
+                    nn = "x";
                     break;
             }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(mf_write);
             bgw.WorkerReportsProgress = true;
             bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
-            bgw.RunWorkerAsync(new string[] { rmfd, kt,nn });
+            bgw.RunWorkerAsync(new string[] { rmfd, kt, nn });
         }
 
         void mf_write(object sender, DoWorkEventArgs e)
@@ -302,7 +305,7 @@ namespace MifareOneTool
             ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/nfc-mfclassic.exe");
             string[] args = (string[])e.Argument;
             psi.Arguments = "w " + args[1] + " u \"" + args[0] + "\"";
-            if (keymfd != "" && args[2]=="")
+            if (keymfd != "" && args[2] == "")
             {
                 psi.Arguments += " \"" + keymfd + "\" f";
             }
@@ -312,42 +315,43 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
         }
 
         private void buttonMfoc_Click(object sender, EventArgs e)
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
-                string rmfd = "Mfoc.tmp";
-                string key = "";
-                if (Control.ModifierKeys == Keys.Control)
+            string rmfd = "Mfoc.tmp";
+            string key = "";
+            if (Control.ModifierKeys == Keys.Control)
+            {
+                string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", "FFFFFFFFFFFF", -1, -1).Trim().Split(',');
+                if (ks.Length > 0)
                 {
-                    string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", "FFFFFFFFFFFF", -1, -1).Trim().Split(',');
-                    if (ks.Length > 0)
+                    foreach (string k in ks)
                     {
-                        foreach(string k in ks){
-                            string pat = "[0-9A-Fa-f]{12}";
-                            if (Regex.IsMatch(k, pat))
-                            {
-                                key += "-k " + k.Substring(0, 12) + " ";
-                            }
+                        string pat = "[0-9A-Fa-f]{12}";
+                        if (Regex.IsMatch(k, pat))
+                        {
+                            key += "-k " + k.Substring(0, 12) + " ";
                         }
-                    }                    
+                    }
                 }
-                BackgroundWorker bgw = new BackgroundWorker();
-                bgw.DoWork += new DoWorkEventHandler(mfoc);
-                bgw.WorkerReportsProgress = true;
-                bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
-                bgw.RunWorkerAsync(new string[] { rmfd, key });
-                omfd = rmfd;
+            }
+            BackgroundWorker bgw = new BackgroundWorker();
+            bgw.DoWork += new DoWorkEventHandler(mfoc);
+            bgw.WorkerReportsProgress = true;
+            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+            bgw.RunWorkerAsync(new string[] { rmfd, key });
+            omfd = rmfd;
         }
 
         void mfoc(object sender, DoWorkEventArgs e)
@@ -362,14 +366,14 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             if (process.ExitCode == 0)
             {
                 b.ReportProgress(101, "##运行完毕##");
@@ -416,14 +420,14 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
         }
 
@@ -453,14 +457,14 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
         }
 
@@ -489,14 +493,14 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             if (process.ExitCode == 0)
             {
                 b.ReportProgress(101, "##运行完毕##");
@@ -548,14 +552,14 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
         }
 
@@ -614,25 +618,20 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://github.com/xcicode/MifareOneTool/releases/latest");
         }
 
         private void buttonMfcuk_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } 
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             Text = "MifareOne Tool - 运行中";
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(Mfcuk);
@@ -649,9 +648,9 @@ namespace MifareOneTool
             psi.WorkingDirectory = "nfc-bin";
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process=Process.Start(psi);
+            process = Process.Start(psi);
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
         }
 
@@ -708,14 +707,14 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
         }
 
@@ -745,21 +744,21 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
         }
 
         private void buttonMfFormat_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } 
-            if (keymfd=="") { MessageBox.Show("未选择有效key.mfd。", "无密钥", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+            if (keymfd == "") { MessageBox.Show("未选择有效key.mfd。", "无密钥", MessageBoxButtons.OK, MessageBoxIcon.Error); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = keymfd;
             string kt = "a";
             switch (MessageBox.Show("使用KeyA（是）或KeyB（否）？", "KeyA/B", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
@@ -772,7 +771,7 @@ namespace MifareOneTool
             bgw.DoWork += new DoWorkEventHandler(mf_format);
             bgw.WorkerReportsProgress = true;
             bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
-            bgw.RunWorkerAsync(new string[] { rmfd, kt});
+            bgw.RunWorkerAsync(new string[] { rmfd, kt });
         }
 
         void mf_format(object sender, DoWorkEventArgs e)
@@ -788,20 +787,20 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi);running=true;
+            process = Process.Start(psi); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
         }
 
         private void buttonEMfoc_Click(object sender, EventArgs e)
         {
-            buttonMfoc_Click(sender,e);
+            buttonMfoc_Click(sender, e);
         }
 
         private void buttonEscan_Click(object sender, EventArgs e)
@@ -819,18 +818,18 @@ namespace MifareOneTool
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "Mfoc.tmp";
             string key = "";
-                string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", "FFFFFFFFFFFF", -1, -1).Trim().Split(',');
-                if (ks.Length > 0)
+            string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", "FFFFFFFFFFFF", -1, -1).Trim().Split(',');
+            if (ks.Length > 0)
+            {
+                foreach (string k in ks)
                 {
-                    foreach (string k in ks)
+                    string pat = "[0-9A-Fa-f]{12}";
+                    if (Regex.IsMatch(k, pat))
                     {
-                        string pat = "[0-9A-Fa-f]{12}";
-                        if (Regex.IsMatch(k, pat))
-                        {
-                            key += "-k " + k.Substring(0, 12) + " ";
-                        }
+                        key += "-k " + k.Substring(0, 12) + " ";
                     }
                 }
+            }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(mfoc);
             bgw.WorkerReportsProgress = true;
@@ -841,7 +840,7 @@ namespace MifareOneTool
 
         private void buttonEUpdate_Click(object sender, EventArgs e)
         {
-            linkLabel1_LinkClicked(sender, null);
+            toolStripCheckUpdate_ButtonClick(sender, e);
         }
 
         private void buttonESelectKey_Click(object sender, EventArgs e)
@@ -878,7 +877,7 @@ namespace MifareOneTool
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             if (MessageBox.Show("同时打开ACR122U支持可能会引起操作速度下降。\n请确认是否要继续操作？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.Cancel)
-            { return; }
+            { Text = "MifareOne Tool"; return; }
             lprocess = true;
             if (File.Exists("nfc-bin/libnfc(PN532Only).dll"))
             {
@@ -891,19 +890,21 @@ namespace MifareOneTool
                 File.Move("nfc-bin/libnfc(ACR122U).dll", "nfc-bin/libnfc.dll");
                 logAppend("已打开。");
             }
-            lprocess = false;running=false;
+            lprocess = false; running = false;
             Text = "MifareOne Tool - 运行完毕";
             logAppend("##运行完毕##");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (running) { 
+            if (running)
+            {
                 statusLabel.Text = "运行中";
-                if(process.HasExited==false){
-                DateTime now = DateTime.Now;
-                TimeSpan runtime = now - process.StartTime;
-                runTimeLabel.Text = "运行时间:"+((int)runtime.TotalSeconds).ToString()+"秒";
+                if (process.HasExited == false)
+                {
+                    DateTime now = DateTime.Now;
+                    TimeSpan runtime = now - process.StartTime;
+                    runTimeLabel.Text = "运行时间:" + ((int)runtime.TotalSeconds).ToString() + "秒";
                 }
             }
             else { statusLabel.Text = "空闲"; }
@@ -958,6 +959,103 @@ namespace MifareOneTool
         private void buttonECheckEncrypt_Click(object sender, EventArgs e)
         {
             buttonCheckEncrypt_Click(sender, e);
+        }
+
+        private void toolStripCheckUpdate_ButtonClick(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/xcicode/MifareOneTool/releases/latest");
+        }
+
+        private void buttonDiffTool_Click(object sender, EventArgs e)
+        {
+            FormDiff df = new FormDiff();
+            df.Show();
+        }
+
+        private void buttonnKeysMfoc_Click(object sender, EventArgs e)
+        {
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            string rmfd = "Mfoc.tmp";
+            string key = "";
+            string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", "FFFFFFFFFFFF", -1, -1).Trim().Split(',');
+            if (ks.Length > 0)
+            {
+                foreach (string k in ks)
+                {
+                    string pat = "[0-9A-Fa-f]{12}";
+                    if (Regex.IsMatch(k, pat))
+                    {
+                        key += "-k " + k.Substring(0, 12) + " ";
+                    }
+                }
+            }
+            BackgroundWorker bgw = new BackgroundWorker();
+            bgw.DoWork += new DoWorkEventHandler(mfoc);
+            bgw.WorkerReportsProgress = true;
+            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+            bgw.RunWorkerAsync(new string[] { rmfd, key });
+            omfd = rmfd;
+        }
+
+        private void buttonDictMfoc_Click(object sender, EventArgs e)
+        {
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            string cmd_mode="/c";
+            if (Control.ModifierKeys == Keys.Control)
+            {
+                cmd_mode="/k";
+            }
+            string filename = "";
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.CheckFileExists = true;
+            ofd.Filter = "密钥字典文件|*.dic";
+            ofd.Title = "请选择需要打开的密钥字典文件";
+            ofd.Multiselect = false;
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                filename=ofd.FileName;
+            }
+            else
+            {
+                Text = "MifareOne Tool - 已取消";
+                return;
+            }
+            string rmfd = "Mfoc.tmp";
+            string key = "-f " + filename + " ";
+            BackgroundWorker bgw = new BackgroundWorker();
+            bgw.DoWork += new DoWorkEventHandler(mfocCMD);
+            bgw.WorkerReportsProgress = true;
+            bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+            bgw.RunWorkerAsync(new string[] { rmfd, key, cmd_mode });
+            omfd = rmfd;
+        }
+
+        [DllImport("user32.dll", EntryPoint = "SetWindowText")]
+        public static extern int SetWindowText(IntPtr hwnd, string lpString);
+        [DllImport("user32", SetLastError = true)]
+        public static extern int GetWindowText(IntPtr hWnd,StringBuilder lpString,int nMaxCount);
+
+        void mfocCMD(object sender, DoWorkEventArgs e)
+        {
+            if (lprocess) { return; }
+            ProcessStartInfo psi = new ProcessStartInfo("cmd.exe");
+            string[] args = (string[])e.Argument;
+            psi.WorkingDirectory = "./";
+            psi.Arguments = "/T:0A "+ args[2] + @" nfc-bin\mfoc.exe " + args[1] + " -O \"" + args[0] + "\"";
+            lprocess = true;
+            BackgroundWorker b = (BackgroundWorker)sender;
+            process = Process.Start(psi); running = true;
+            process.WaitForExit();
+            lprocess = false; running = false;
+            if (process.ExitCode == 0)
+            {
+                b.ReportProgress(101, "##运行完毕##");
+            }
+            else
+            {
+                b.ReportProgress(100, "##运行出错##");
+                File.Delete(args[0]);
+            }
         }
     }
 }

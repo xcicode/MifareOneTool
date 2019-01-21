@@ -18,6 +18,16 @@ namespace MifareOneTool
             }
             return ret.ToString();
         }
+        public static string Hex2StrS(byte[] bytes)
+        {
+            StringBuilder ret = new StringBuilder();
+            foreach (byte b in bytes)
+            {
+                ret.AppendFormat("{0:x2}", b);
+                ret.Append(" ");
+            }
+            return ret.ToString();
+        }
         public static byte[] ReadAC(byte[] ac)
         {
             byte[] acbits = new byte[4];

@@ -447,5 +447,20 @@ namespace MifareOneTool
             File.WriteAllLines(filename, this.currentS50.KeyListStr().ToArray());
             logAppend("已导出密钥字典文件" + filename + "。");
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {//测试后门
+            StreamWriter sw = File.CreateText("x.dic");
+            for (int i = 0; i < 4000 * 32; i++)
+            {
+                RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+                byte[] keyn = new byte[6];
+                rng.GetBytes(keyn);
+                sw.WriteLine(Utils.Hex2Str(keyn));
+                sw.Flush();
+            }
+            sw.Flush();
+            sw.Close();
+        }
     }
 }
