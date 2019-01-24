@@ -71,8 +71,10 @@
             this.labelCurSec = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.s50BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.导入MCT格式ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.列出全卡密钥ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -159,9 +161,11 @@
             this.检查全卡ToolStripMenuItem,
             this.检查并纠正全卡ToolStripMenuItem,
             this.toolStripSeparator3,
+            this.导入MCT格式ToolStripMenuItem,
             this.导出为MCT格式ToolStripMenuItem,
             this.导出密钥字典ToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.toolStripSeparator4,
+            this.列出全卡密钥ToolStripMenuItem});
             this.工具ToolStripMenuItem.Name = "工具ToolStripMenuItem";
             this.工具ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.工具ToolStripMenuItem.Text = "工具";
@@ -526,17 +530,30 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "欢迎使用M1T的集成编辑器S50HTool！\n打开文件请点左上角文件-打开或Ctrl+O\n";
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(248, 24);
-            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Visible = false;
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
             // s50BindingSource
             // 
             this.s50BindingSource.DataSource = typeof(MifareOneTool.S50);
+            // 
+            // 导入MCT格式ToolStripMenuItem
+            // 
+            this.导入MCT格式ToolStripMenuItem.Name = "导入MCT格式ToolStripMenuItem";
+            this.导入MCT格式ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
+            this.导入MCT格式ToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
+            this.导入MCT格式ToolStripMenuItem.Text = "导入MCT格式";
+            this.导入MCT格式ToolStripMenuItem.Click += new System.EventHandler(this.导入MCT格式ToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(245, 6);
+            // 
+            // 列出全卡密钥ToolStripMenuItem
+            // 
+            this.列出全卡密钥ToolStripMenuItem.Name = "列出全卡密钥ToolStripMenuItem";
+            this.列出全卡密钥ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
+            this.列出全卡密钥ToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
+            this.列出全卡密钥ToolStripMenuItem.Text = "列出全卡密钥";
+            this.列出全卡密钥ToolStripMenuItem.Click += new System.EventHandler(this.列出全卡密钥ToolStripMenuItem_Click);
             // 
             // FormHTool
             // 
@@ -612,5 +629,8 @@
         private System.Windows.Forms.ToolStripMenuItem 导出为MCT格式ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 导出密钥字典ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 导入MCT格式ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem 列出全卡密钥ToolStripMenuItem;
     }
 }
