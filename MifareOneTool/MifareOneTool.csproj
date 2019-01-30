@@ -86,12 +86,6 @@
     <Compile Include="FormHTool.Designer.cs">
       <DependentUpon>FormHTool.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormKeyMfd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormKeyMfd.Designer.cs">
-      <DependentUpon>FormKeyMfd.cs</DependentUpon>
-    </Compile>
     <Compile Include="GitHubUpdate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,9 +97,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormHTool.resx">
       <DependentUpon>FormHTool.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormKeyMfd.resx">
-      <DependentUpon>FormKeyMfd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
