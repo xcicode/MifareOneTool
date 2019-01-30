@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonCLI = new System.Windows.Forms.Button();
-            this.buttonEnAcr122u = new System.Windows.Forms.Button();
             this.buttonScanCard = new System.Windows.Forms.Button();
             this.buttonListDev = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -79,6 +78,8 @@
             this.buttonEMfoc = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.buttonDictMfoc = new System.Windows.Forms.Button();
+            this.buttonnKeysMfoc = new System.Windows.Forms.Button();
             this.buttonHardNested = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -90,8 +91,7 @@
             this.remoteVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.buttonnKeysMfoc = new System.Windows.Forms.Button();
-            this.buttonDictMfoc = new System.Windows.Forms.Button();
+            this.buttonSniffDev = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -110,8 +110,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.buttonSniffDev);
             this.groupBox1.Controls.Add(this.buttonCLI);
-            this.groupBox1.Controls.Add(this.buttonEnAcr122u);
             this.groupBox1.Controls.Add(this.buttonScanCard);
             this.groupBox1.Controls.Add(this.buttonListDev);
             this.groupBox1.Location = new System.Drawing.Point(3, 6);
@@ -129,19 +129,9 @@
             this.buttonCLI.Size = new System.Drawing.Size(90, 23);
             this.buttonCLI.TabIndex = 11;
             this.buttonCLI.Text = "手动CLI";
+            this.toolTipHelp.SetToolTip(this.buttonCLI, "打开NFC命令行以进行高级操作。");
             this.buttonCLI.UseVisualStyleBackColor = true;
             this.buttonCLI.Click += new System.EventHandler(this.buttonCLI_Click);
-            // 
-            // buttonEnAcr122u
-            // 
-            this.buttonEnAcr122u.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonEnAcr122u.Location = new System.Drawing.Point(102, 53);
-            this.buttonEnAcr122u.Name = "buttonEnAcr122u";
-            this.buttonEnAcr122u.Size = new System.Drawing.Size(90, 23);
-            this.buttonEnAcr122u.TabIndex = 7;
-            this.buttonEnAcr122u.Text = "122U支持";
-            this.buttonEnAcr122u.UseVisualStyleBackColor = true;
-            this.buttonEnAcr122u.Click += new System.EventHandler(this.buttonEnAcr122u_Click);
             // 
             // buttonScanCard
             // 
@@ -151,6 +141,7 @@
             this.buttonScanCard.Size = new System.Drawing.Size(90, 23);
             this.buttonScanCard.TabIndex = 1;
             this.buttonScanCard.Text = "手动扫描";
+            this.toolTipHelp.SetToolTip(this.buttonScanCard, "扫描有效卡片。");
             this.buttonScanCard.UseVisualStyleBackColor = true;
             this.buttonScanCard.Click += new System.EventHandler(this.buttonScanCard_Click);
             // 
@@ -162,6 +153,7 @@
             this.buttonListDev.Size = new System.Drawing.Size(90, 23);
             this.buttonListDev.TabIndex = 0;
             this.buttonListDev.Text = "检测设备";
+            this.toolTipHelp.SetToolTip(this.buttonListDev, "扫描已连接的NFC设备\r\n(目前支持PN532、ACR122U)");
             this.buttonListDev.UseVisualStyleBackColor = true;
             this.buttonListDev.Click += new System.EventHandler(this.buttonListDev_Click);
             // 
@@ -172,7 +164,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(0, 219);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(767, 300);
+            this.richTextBox1.Size = new System.Drawing.Size(767, 381);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "Hello,cardman!\n建议点击\"检测\"以加快后续运行速度\n";
             // 
@@ -184,6 +176,7 @@
             this.buttonMfRead.Size = new System.Drawing.Size(50, 23);
             this.buttonMfRead.TabIndex = 3;
             this.buttonMfRead.Text = "读M1";
+            this.toolTipHelp.SetToolTip(this.buttonMfRead, "读取普通M1卡片（可能需要加载密钥文件）");
             this.buttonMfRead.UseVisualStyleBackColor = true;
             this.buttonMfRead.Click += new System.EventHandler(this.buttonMfRead_Click);
             // 
@@ -208,6 +201,7 @@
             this.buttonMfFormat.Size = new System.Drawing.Size(50, 23);
             this.buttonMfFormat.TabIndex = 6;
             this.buttonMfFormat.Text = "清M1";
+            this.toolTipHelp.SetToolTip(this.buttonMfFormat, "格式化普通M1卡（必须加载密钥文件）");
             this.buttonMfFormat.UseVisualStyleBackColor = true;
             this.buttonMfFormat.Click += new System.EventHandler(this.buttonMfFormat_Click);
             // 
@@ -219,6 +213,7 @@
             this.buttonMfWrite.Size = new System.Drawing.Size(50, 23);
             this.buttonMfWrite.TabIndex = 5;
             this.buttonMfWrite.Text = "写M1";
+            this.toolTipHelp.SetToolTip(this.buttonMfWrite, "写入普通M1卡（可能需要加载密钥文件）");
             this.buttonMfWrite.UseVisualStyleBackColor = true;
             this.buttonMfWrite.Click += new System.EventHandler(this.buttonMfWrite_Click);
             // 
@@ -230,6 +225,7 @@
             this.buttonSelectKey.Size = new System.Drawing.Size(156, 23);
             this.buttonSelectKey.TabIndex = 4;
             this.buttonSelectKey.Text = "选择key.mfd";
+            this.toolTipHelp.SetToolTip(this.buttonSelectKey, "加载含有正确读写卡密钥及正确控制位的MFD文件。");
             this.buttonSelectKey.UseVisualStyleBackColor = true;
             this.buttonSelectKey.Click += new System.EventHandler(this.buttonSelectKey_Click);
             // 
@@ -241,6 +237,7 @@
             this.buttonBmfWrite.Size = new System.Drawing.Size(75, 23);
             this.buttonBmfWrite.TabIndex = 10;
             this.buttonBmfWrite.Text = "UID写";
+            this.toolTipHelp.SetToolTip(this.buttonBmfWrite, "写入UID卡片。");
             this.buttonBmfWrite.UseVisualStyleBackColor = true;
             this.buttonBmfWrite.Click += new System.EventHandler(this.buttonBmfWrite_Click);
             // 
@@ -252,6 +249,7 @@
             this.buttonBmfRead.Size = new System.Drawing.Size(75, 23);
             this.buttonBmfRead.TabIndex = 9;
             this.buttonBmfRead.Text = "UID读";
+            this.toolTipHelp.SetToolTip(this.buttonBmfRead, "读取UID卡片。");
             this.buttonBmfRead.UseVisualStyleBackColor = true;
             this.buttonBmfRead.Click += new System.EventHandler(this.buttonBmfRead_Click);
             // 
@@ -263,7 +261,7 @@
             this.buttonMfoc.Size = new System.Drawing.Size(75, 23);
             this.buttonMfoc.TabIndex = 8;
             this.buttonMfoc.Text = "MFOC读";
-            this.toolTipHelp.SetToolTip(this.buttonMfoc, "按住Ctrl点击该按钮可添加已知密钥。");
+            this.toolTipHelp.SetToolTip(this.buttonMfoc, "对半加密卡片进行Nested破解。\r\n按住Ctrl点击该按钮可添加已知密钥。");
             this.buttonMfoc.UseVisualStyleBackColor = true;
             this.buttonMfoc.Click += new System.EventHandler(this.buttonMfoc_Click);
             // 
@@ -275,6 +273,7 @@
             this.buttonUidWrite.Size = new System.Drawing.Size(75, 23);
             this.buttonUidWrite.TabIndex = 5;
             this.buttonUidWrite.Text = "UID写号";
+            this.toolTipHelp.SetToolTip(this.buttonUidWrite, "向UID卡片写入置顶卡号，厂商设置为复旦。");
             this.buttonUidWrite.UseVisualStyleBackColor = true;
             this.buttonUidWrite.Click += new System.EventHandler(this.buttonUidWrite_Click);
             // 
@@ -286,6 +285,7 @@
             this.buttonUidFormat.Size = new System.Drawing.Size(75, 23);
             this.buttonUidFormat.TabIndex = 7;
             this.buttonUidFormat.Text = "UID全格";
+            this.toolTipHelp.SetToolTip(this.buttonUidFormat, "将全卡清空并重新初始化。\r\n可用于ACbit损坏/KEY全部被改等情况的急救。");
             this.buttonUidFormat.UseVisualStyleBackColor = true;
             this.buttonUidFormat.Click += new System.EventHandler(this.buttonUidFormat_Click);
             // 
@@ -297,6 +297,7 @@
             this.buttonUidReset.Size = new System.Drawing.Size(75, 23);
             this.buttonUidReset.TabIndex = 6;
             this.buttonUidReset.Text = "UID重置";
+            this.toolTipHelp.SetToolTip(this.buttonUidReset, "重置UID卡片0块，UID随机，厂商号为复旦。");
             this.buttonUidReset.UseVisualStyleBackColor = true;
             this.buttonUidReset.Click += new System.EventHandler(this.buttonUidReset_Click);
             // 
@@ -353,6 +354,7 @@
             this.buttonMfcuk.Size = new System.Drawing.Size(104, 22);
             this.buttonMfcuk.TabIndex = 3;
             this.buttonMfcuk.Text = "全加密爆破";
+            this.toolTipHelp.SetToolTip(this.buttonMfcuk, "对卡片执行Darkside工具（不一定成功）");
             this.buttonMfcuk.UseVisualStyleBackColor = true;
             this.buttonMfcuk.Click += new System.EventHandler(this.buttonMfcuk_Click);
             // 
@@ -382,7 +384,7 @@
             // 
             this.toolTipHelp.AutoPopDelay = 2000;
             this.toolTipHelp.InitialDelay = 500;
-            this.toolTipHelp.ReshowDelay = 100;
+            this.toolTipHelp.ReshowDelay = 1000;
             this.toolTipHelp.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipHelp.ToolTipTitle = "提示";
             // 
@@ -405,6 +407,7 @@
             this.buttonCheckEncrypt.Size = new System.Drawing.Size(75, 23);
             this.buttonCheckEncrypt.TabIndex = 13;
             this.buttonCheckEncrypt.Text = "检加密";
+            this.toolTipHelp.SetToolTip(this.buttonCheckEncrypt, "检测卡片加密情况。");
             this.buttonCheckEncrypt.UseVisualStyleBackColor = true;
             this.buttonCheckEncrypt.Click += new System.EventHandler(this.buttonCheckEncrypt_Click);
             // 
@@ -416,6 +419,7 @@
             this.buttonLockUfuid.Size = new System.Drawing.Size(75, 23);
             this.buttonLockUfuid.TabIndex = 5;
             this.buttonLockUfuid.Text = "锁Ufuid";
+            this.toolTipHelp.SetToolTip(this.buttonLockUfuid, "锁死UFUID卡片0块数据（测试中）");
             this.buttonLockUfuid.UseVisualStyleBackColor = true;
             this.buttonLockUfuid.Click += new System.EventHandler(this.buttonLockUfuid_Click);
             // 
@@ -427,6 +431,7 @@
             this.buttonCmfWrite.Size = new System.Drawing.Size(75, 23);
             this.buttonCmfWrite.TabIndex = 4;
             this.buttonCmfWrite.Text = "CUID写";
+            this.toolTipHelp.SetToolTip(this.buttonCmfWrite, "写入CUID/FUID卡片（可能需要密钥文件）");
             this.buttonCmfWrite.UseVisualStyleBackColor = true;
             this.buttonCmfWrite.Click += new System.EventHandler(this.buttonCmfWrite_Click);
             // 
@@ -654,6 +659,28 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "破解工具";
             // 
+            // buttonDictMfoc
+            // 
+            this.buttonDictMfoc.Location = new System.Drawing.Point(87, 51);
+            this.buttonDictMfoc.Name = "buttonDictMfoc";
+            this.buttonDictMfoc.Size = new System.Drawing.Size(85, 23);
+            this.buttonDictMfoc.TabIndex = 16;
+            this.buttonDictMfoc.Text = "字典测试";
+            this.toolTipHelp.SetToolTip(this.buttonDictMfoc, "导入字典文件进行Nested破解。");
+            this.buttonDictMfoc.UseVisualStyleBackColor = true;
+            this.buttonDictMfoc.Click += new System.EventHandler(this.buttonDictMfoc_Click);
+            // 
+            // buttonnKeysMfoc
+            // 
+            this.buttonnKeysMfoc.Location = new System.Drawing.Point(87, 22);
+            this.buttonnKeysMfoc.Name = "buttonnKeysMfoc";
+            this.buttonnKeysMfoc.Size = new System.Drawing.Size(85, 23);
+            this.buttonnKeysMfoc.TabIndex = 15;
+            this.buttonnKeysMfoc.Text = "知n密";
+            this.toolTipHelp.SetToolTip(this.buttonnKeysMfoc, "输入已知密钥进行Nested破解。");
+            this.buttonnKeysMfoc.UseVisualStyleBackColor = true;
+            this.buttonnKeysMfoc.Click += new System.EventHandler(this.buttonnKeysMfoc_Click);
+            // 
             // buttonHardNested
             // 
             this.buttonHardNested.Enabled = false;
@@ -708,7 +735,7 @@
             this.localVersionLabel,
             this.remoteVersionLabel,
             this.toolStripCheckUpdate});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 522);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 603);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(767, 26);
             this.statusStrip1.TabIndex = 12;
@@ -757,31 +784,21 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // buttonnKeysMfoc
+            // buttonSniffDev
             // 
-            this.buttonnKeysMfoc.Location = new System.Drawing.Point(87, 22);
-            this.buttonnKeysMfoc.Name = "buttonnKeysMfoc";
-            this.buttonnKeysMfoc.Size = new System.Drawing.Size(85, 23);
-            this.buttonnKeysMfoc.TabIndex = 15;
-            this.buttonnKeysMfoc.Text = "知n密";
-            this.buttonnKeysMfoc.UseVisualStyleBackColor = true;
-            this.buttonnKeysMfoc.Click += new System.EventHandler(this.buttonnKeysMfoc_Click);
-            // 
-            // buttonDictMfoc
-            // 
-            this.buttonDictMfoc.Location = new System.Drawing.Point(87, 51);
-            this.buttonDictMfoc.Name = "buttonDictMfoc";
-            this.buttonDictMfoc.Size = new System.Drawing.Size(85, 23);
-            this.buttonDictMfoc.TabIndex = 16;
-            this.buttonDictMfoc.Text = "字典测试";
-            this.buttonDictMfoc.UseVisualStyleBackColor = true;
-            this.buttonDictMfoc.Click += new System.EventHandler(this.buttonDictMfoc_Click);
+            this.buttonSniffDev.Enabled = false;
+            this.buttonSniffDev.Location = new System.Drawing.Point(102, 52);
+            this.buttonSniffDev.Name = "buttonSniffDev";
+            this.buttonSniffDev.Size = new System.Drawing.Size(90, 23);
+            this.buttonSniffDev.TabIndex = 12;
+            this.buttonSniffDev.Text = "联机嗅探";
+            this.buttonSniffDev.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 548);
+            this.ClientSize = new System.Drawing.Size(767, 629);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.richTextBox1);
@@ -858,7 +875,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button buttonEMfWrite;
         private System.Windows.Forms.Button buttonEAdv;
-        private System.Windows.Forms.Button buttonEnAcr122u;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
         private System.Windows.Forms.ToolStripStatusLabel runTimeLabel;
@@ -875,6 +891,7 @@
         private System.Windows.Forms.ToolStripSplitButton toolStripCheckUpdate;
         private System.Windows.Forms.Button buttonDictMfoc;
         private System.Windows.Forms.Button buttonnKeysMfoc;
+        private System.Windows.Forms.Button buttonSniffDev;
     }
 }
 

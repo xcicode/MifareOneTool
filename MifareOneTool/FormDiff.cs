@@ -119,8 +119,8 @@ namespace MifareOneTool
                             res+="## ";
                         }
                     }
-                    stb.AppendLine("A: " + Utils.Hex2StrS(sa.Sectors[i].Block[a]));
-                     stb.AppendLine("B: " + Utils.Hex2StrS(sb.Sectors[i].Block[a]));
+                    stb.AppendLine("A: " + Utils.Hex2StrWithSpan(sa.Sectors[i].Block[a]));
+                     stb.AppendLine("B: " + Utils.Hex2StrWithSpan(sb.Sectors[i].Block[a]));
                      stb.AppendLine("   " + res);
                      if(res.Contains("##"))
                      {

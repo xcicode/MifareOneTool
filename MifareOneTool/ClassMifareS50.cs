@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Security.Cryptography;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace MifareOneTool
 {
@@ -18,7 +19,7 @@ namespace MifareOneTool
             }
             return ret.ToString();
         }
-        public static string Hex2StrS(byte[] bytes)
+        public static string Hex2StrWithSpan(byte[] bytes)
         {
             StringBuilder ret = new StringBuilder();
             foreach (byte b in bytes)
@@ -27,6 +28,14 @@ namespace MifareOneTool
                 ret.Append(" ");
             }
             return ret.ToString();
+        }
+        public static byte[] Hex2Block(string hex, int bytelen)
+        {
+            hex = hex.Replace(" ", "");
+            byte[] returnBytes = new byte[bytelen];
+            for (int i = 0; i < bytelen; i++)
+                returnBytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+            return returnBytes;
         }
         public static byte[] ReadAC(byte[] ac)
         {
@@ -101,6 +110,23 @@ namespace MifareOneTool
                 | ((ac[3] << 6) & 0x80));
             return acbits;
         }
+        //public static bool DtKeyAB(byte[] ac)
+        //{
+        //    byte[] acbits = new byte[4];
+        //    acbits[0] = (byte)(((ac[2] & 0x10) >> 4)
+        //        + ((ac[2] & 0x01) << 1)
+        //        + ((ac[1] & 0x10) >> 2));
+        //    acbits[1] = (byte)(((ac[2] & 0x20) >> 5)
+        //        + ((ac[2] & 0x02))
+        //        + ((ac[1] & 0x20) >> 3));
+        //    acbits[2] = (byte)(((ac[2] & 0x40) >> 6)
+        //        + ((ac[2] & 0x04) >> 1)
+        //        + ((ac[1] & 0x40) >> 4));
+        //    acbits[3] = (byte)(((ac[2] & 0x80) >> 7)
+        //        + ((ac[2] & 0x08) >> 2)
+        //        + ((ac[1] & 0x80) >> 5));
+        //    return acbits;
+        //}
     }
     enum AccessBitsT
     {
@@ -170,7 +196,7 @@ namespace MifareOneTool
         }
         public Sector(byte[] uid)
         {
-            if(uid.Length!=4){throw new Exception("不恰当的4字节UID长度");}
+            if (uid.Length != 4) { throw new Exception("不恰当的4字节UID长度"); }
             this._isSector0 = true;
             this.Wipe();
             byte bcc = (byte)(uid[0] ^ uid[1] ^ uid[2] ^ uid[3]);
@@ -192,13 +218,13 @@ namespace MifareOneTool
             int retCode = 0;
             if (this._isSector0)
             {
-                byte bc0 = (byte)(_sector[0][0]^_sector[0][1]^_sector[0][2]^_sector[0][3]^_sector[0][4]);
+                byte bc0 = (byte)(_sector[0][0] ^ _sector[0][1] ^ _sector[0][2] ^ _sector[0][3] ^ _sector[0][4]);
                 if (bc0 != 0x00) { retCode = retCode | 0x01; }
             }
-            byte[] ac=new byte[4]{_sector[3][6],_sector[3][7],_sector[3][8],_sector[3][9]};
+            byte[] ac = new byte[4] { _sector[3][6], _sector[3][7], _sector[3][8], _sector[3][9] };
             byte[] acP = Utils.ReadAC(ac);
             byte[] acN = Utils.ReadRAC(ac);
-            if (!Enumerable.SequenceEqual(acP,acN))
+            if (!Enumerable.SequenceEqual(acP, acN))
             {
                 retCode = retCode | 0x04;
             }
@@ -259,7 +285,8 @@ namespace MifareOneTool
 
         internal byte[] SectorsRaw
         {
-            get {
+            get
+            {
                 byte[] buffer = new byte[1024];
                 for (int i = 0; i < 16; i++)
                 {
@@ -271,7 +298,7 @@ namespace MifareOneTool
                         }
                     }
                 }
-                return buffer; 
+                return buffer;
             }
             set
             {
@@ -343,6 +370,33 @@ namespace MifareOneTool
             byte[] loadByte = File.ReadAllBytes(file);
             this.Wipe();
             this.SectorsRaw = (byte[])loadByte;
+        }
+        public void LoadFromMctTxt(string file)
+        {
+            if (!File.Exists(file)) { throw new IOException("加载的文件不存在。"); }
+            if (new FileInfo(file).Length < 2300 || new FileInfo(file).Length > 2400) { throw new IOException("加载的S50卡文件大小异常。"); }
+            List<string> lines = new List<string>(File.ReadAllLines(file));
+            List<string> invaild = new List<string>();
+            foreach (string line in lines)
+            {
+                if (!Regex.IsMatch(line, "[0-9A-Fa-f]{32}") || line.Length != 32)
+                {
+                    invaild.Add(line);
+                }
+            }
+            foreach (string inv in invaild)
+            {
+                lines.Remove(inv);
+            }
+            if (lines.Count != 64)
+            {
+                throw new Exception("文件内不是含有64个块数据，可能不完整或不兼容。");
+            }
+            this.Wipe();
+            for (int i = 0; i < lines.Count; i++)
+            {
+                this._sectors[i / 4].Block[i % 4] = Utils.Hex2Block(lines[i], 16);
+            }
         }
         public void ExportToMfd(string file)
         {

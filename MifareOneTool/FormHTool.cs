@@ -221,15 +221,6 @@ namespace MifareOneTool
             }
         }
 
-        private static byte[] Hex2Block(string hex,int bytelen)
-        {
-            hex = hex.Replace(" ", "");
-            byte[] returnBytes = new byte[bytelen];
-            for (int i = 0; i < bytelen; i++)
-                returnBytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
-            return returnBytes;
-        }
-
         private void buttonSaveSectorEdit_Click(object sender, EventArgs e)
         {
             if (currentSector >= 0 && currentSector <= 15)
@@ -244,11 +235,11 @@ namespace MifareOneTool
                     MessageBox.Show("当前扇区数据仍有错误，不能执行修改。");
                     return;
                 }
-                currentS50.Sectors[currentSector].Block[0] = Hex2Block(block0Edit.Text.Trim(),16);
-                currentS50.Sectors[currentSector].Block[1] = Hex2Block(block1Edit.Text.Trim(), 16);
-                currentS50.Sectors[currentSector].Block[2] = Hex2Block(block2Edit.Text.Trim(), 16);
-                byte[] kA = Hex2Block(keyAEdit.Text.Trim(), 6);
-                byte[] kB = Hex2Block(keyBEdit.Text.Trim(), 6);
+                currentS50.Sectors[currentSector].Block[0] = Utils.Hex2Block(block0Edit.Text.Trim(),16);
+                currentS50.Sectors[currentSector].Block[1] = Utils.Hex2Block(block1Edit.Text.Trim(), 16);
+                currentS50.Sectors[currentSector].Block[2] = Utils.Hex2Block(block2Edit.Text.Trim(), 16);
+                byte[] kA = Utils.Hex2Block(keyAEdit.Text.Trim(), 6);
+                byte[] kB = Utils.Hex2Block(keyBEdit.Text.Trim(), 6);
                 byte[] ac = new byte[4] { 
                     (byte)comboBox1.SelectedIndex, 
                     (byte)comboBox2.SelectedIndex, 
@@ -313,7 +304,7 @@ namespace MifareOneTool
                     }
                 }
                 richTextBox1.Clear();
-                logAppend(msg);
+                richTextBox1.Text = msg ;
             }
         }
 
@@ -330,7 +321,7 @@ namespace MifareOneTool
                 MessageBox.Show("输入的UID号不合法", "InputError", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            buid = Hex2Block(uid, 4);
+            buid = Utils.Hex2Block(uid, 4);
             byte bcc=(byte)(buid[0]^buid[1]^buid[2]^buid[3]);
             currentS50.Sectors[0].Block[0][0] = buid[0];
             currentS50.Sectors[0].Block[0][1] = buid[1];
@@ -395,7 +386,7 @@ namespace MifareOneTool
                     }
                 }
                 richTextBox1.Clear();
-                logAppend(msg);
+                richTextBox1.Text=msg;
             }
         }
 
@@ -448,19 +439,48 @@ namespace MifareOneTool
             logAppend("已导出密钥字典文件" + filename + "。");
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {//测试后门
-            StreamWriter sw = File.CreateText("x.dic");
-            for (int i = 0; i < 4000 * 32; i++)
+        private void 导入MCT格式ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            reloadEdit(-1);
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.CheckFileExists = true;
+            ofd.Filter = "MCT格式|*.*";
+            ofd.Title = "请选择需要打开的MCT格式文件";
+            ofd.Multiselect = false;
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
-                RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
-                byte[] keyn = new byte[6];
-                rng.GetBytes(keyn);
-                sw.WriteLine(Utils.Hex2Str(keyn));
-                sw.Flush();
+                currentFilename = ofd.FileName;
             }
-            sw.Flush();
-            sw.Close();
+            else
+            {
+                return;
+            }
+            this.currentS50 = new S50();
+            try
+            {
+                this.currentS50.LoadFromMctTxt(currentFilename);
+            }
+            catch (IOException ioe)
+            {
+                MessageBox.Show(ioe.Message, "打开出错", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.currentS50 = new S50();
+                return;
+            }
+            reloadList();
+            logAppend("打开了" + ofd.FileName);
+        }
+
+        private void 列出全卡密钥ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < 16; i++)
+            {
+                sb.AppendLine("#扇区 " + i.ToString());
+                sb.AppendLine("[A] " + Utils.Hex2Str(this.currentS50.Sectors[i].KeyA));
+                sb.AppendLine("[B] " + Utils.Hex2Str(this.currentS50.Sectors[i].KeyB));
+            }
+            richTextBox1.Clear();
+            richTextBox1.Text = sb.ToString();
         }
     }
 }

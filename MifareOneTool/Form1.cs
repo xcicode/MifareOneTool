@@ -760,7 +760,7 @@ namespace MifareOneTool
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             if (keymfd == "") { MessageBox.Show("未选择有效key.mfd。", "无密钥", MessageBoxButtons.OK, MessageBoxIcon.Error); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = keymfd;
-            string kt = "a";
+            string kt = "c";
             switch (MessageBox.Show("使用KeyA（是）或KeyB（否）？", "KeyA/B", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
             {
                 case DialogResult.No:
@@ -1000,11 +1000,11 @@ namespace MifareOneTool
         private void buttonDictMfoc_Click(object sender, EventArgs e)
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
-            string cmd_mode="/c";
-            if (Control.ModifierKeys == Keys.Control)
-            {
-                cmd_mode="/k";
-            }
+            string cmd_mode="/k";
+            //if (Control.ModifierKeys == Keys.Control)
+            //{
+            //    cmd_mode="/k";
+            //}
             string filename = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
