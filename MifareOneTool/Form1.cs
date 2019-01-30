@@ -156,12 +156,12 @@ namespace MifareOneTool
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "MfRead.tmp";
-            string kt = "a";
+            string kt = "A";
             string nn = "";
             switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
             {
                 case DialogResult.No:
-                    kt = "b";
+                    kt = "B";
                     break;
 
                 case DialogResult.Cancel:
@@ -280,12 +280,12 @@ namespace MifareOneTool
                 return;
             }
             if (!writecheck(rmfd)) { MessageBox.Show("将要写入的文件存在错误，请用高级模式中的Hex工具打开查看。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
-            string kt = "a";
+            string kt = "A";
             string nn = "";
             switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
             {
                 case DialogResult.No:
-                    kt = "b";
+                    kt = "B";
                     break;
 
                 case DialogResult.Cancel:
@@ -672,12 +672,12 @@ namespace MifareOneTool
                 return;
             }
             if (!writecheck(rmfd)) { MessageBox.Show("将要写入的文件存在错误，请用高级模式中的Hex工具打开查看。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
-            string kt = "a";
+            string kt = "A";
             string nn = "";
             switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
             {
                 case DialogResult.No:
-                    kt = "b";
+                    kt = "B";
                     break;
 
                 case DialogResult.Cancel:
@@ -760,11 +760,11 @@ namespace MifareOneTool
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             if (keymfd == "") { MessageBox.Show("未选择有效key.mfd。", "无密钥", MessageBoxButtons.OK, MessageBoxIcon.Error); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = keymfd;
-            string kt = "c";
+            string kt = "A";
             switch (MessageBox.Show("使用KeyA（是）或KeyB（否）？", "KeyA/B", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
             {
                 case DialogResult.No:
-                    kt = "b";
+                    kt = "B";
                     break;
             }
             BackgroundWorker bgw = new BackgroundWorker();
