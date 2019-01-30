@@ -133,7 +133,7 @@ namespace MifareOneTool
                 }
 
             }
-            return "共找到 " + diffCount.ToString() + " 处不同\n" + stb.ToString();
+            return "共找到 " + diffCount.ToString() + " 个扇区不同\n" + stb.ToString();
         }
     }
 }

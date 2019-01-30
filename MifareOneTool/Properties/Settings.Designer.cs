@@ -31,5 +31,17 @@ namespace MifareOneTool.Properties {
                 return ((string)(this["GitHubR"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AutoABN {
+            get {
+                return ((bool)(this["AutoABN"]));
+            }
+            set {
+                this["AutoABN"] = value;
+            }
+        }
     }
 }

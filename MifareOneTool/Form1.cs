@@ -117,6 +117,7 @@ namespace MifareOneTool
             //GitHubUpdate ghu = new GitHubUpdate(Properties.Settings.Default.GitHubR);
             //ghu.Update(Properties.Settings.Default.GitHubR);
             //remoteVersionLabel.Text = "远程版本 " + ghu.remoteVersion;
+            checkBoxAutoABN.Checked = Properties.Settings.Default.AutoABN;
         }
 
         private void buttonScanCard_Click(object sender, EventArgs e)
@@ -158,15 +159,23 @@ namespace MifareOneTool
             string rmfd = "MfRead.tmp";
             string kt = "A";
             string nn = "";
-            switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
+            if (checkBoxAutoABN.Checked && keymfd != "")
             {
-                case DialogResult.No:
-                    kt = "B";
-                    break;
+                kt = "C";
+                logAppend("正在使用智能KeyABN…");
+            }
+            else
+            {
+                switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
+                {
+                    case DialogResult.No:
+                        kt = "B";
+                        break;
 
-                case DialogResult.Cancel:
-                    nn = "x";
-                    break;
+                    case DialogResult.Cancel:
+                        nn = "x";
+                        break;
+                }
             }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(mf_read);
@@ -282,15 +291,23 @@ namespace MifareOneTool
             if (!writecheck(rmfd)) { MessageBox.Show("将要写入的文件存在错误，请用高级模式中的Hex工具打开查看。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
             string kt = "A";
             string nn = "";
-            switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
+            if (checkBoxAutoABN.Checked && keymfd != "")
             {
-                case DialogResult.No:
-                    kt = "B";
-                    break;
+                kt = "C";
+                logAppend("正在使用智能KeyABN…");
+            }
+            else
+            {
+                switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
+                {
+                    case DialogResult.No:
+                        kt = "B";
+                        break;
 
-                case DialogResult.Cancel:
-                    nn = "x";
-                    break;
+                    case DialogResult.Cancel:
+                        nn = "x";
+                        break;
+                }
             }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(mf_write);
@@ -674,15 +691,23 @@ namespace MifareOneTool
             if (!writecheck(rmfd)) { MessageBox.Show("将要写入的文件存在错误，请用高级模式中的Hex工具打开查看。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
             string kt = "A";
             string nn = "";
-            switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
+            if (checkBoxAutoABN.Checked && keymfd != "")
             {
-                case DialogResult.No:
-                    kt = "B";
-                    break;
+                kt = "C";
+                logAppend("正在使用智能KeyABN…");
+            }
+            else
+            {
+                switch (MessageBox.Show("使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？", "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
+                {
+                    case DialogResult.No:
+                        kt = "B";
+                        break;
 
-                case DialogResult.Cancel:
-                    nn = "x";
-                    break;
+                    case DialogResult.Cancel:
+                        nn = "x";
+                        break;
+                }
             }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(cmf_write);
@@ -761,11 +786,19 @@ namespace MifareOneTool
             if (keymfd == "") { MessageBox.Show("未选择有效key.mfd。", "无密钥", MessageBoxButtons.OK, MessageBoxIcon.Error); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = keymfd;
             string kt = "A";
-            switch (MessageBox.Show("使用KeyA（是）或KeyB（否）？", "KeyA/B", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
+            if (checkBoxAutoABN.Checked && keymfd != "")
             {
-                case DialogResult.No:
-                    kt = "B";
-                    break;
+                kt = "C";
+                logAppend("正在使用智能KeyABN…");
+            }
+            else
+            {
+                switch (MessageBox.Show("使用KeyA（是）或KeyB（否）？", "KeyA/B", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
+                {
+                    case DialogResult.No:
+                        kt = "B";
+                        break;
+                }
             }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(mf_format);
@@ -1000,7 +1033,7 @@ namespace MifareOneTool
         private void buttonDictMfoc_Click(object sender, EventArgs e)
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
-            string cmd_mode="/k";
+            string cmd_mode = "/k";
             //if (Control.ModifierKeys == Keys.Control)
             //{
             //    cmd_mode="/k";
@@ -1013,7 +1046,7 @@ namespace MifareOneTool
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                filename=ofd.FileName;
+                filename = ofd.FileName;
             }
             else
             {
@@ -1033,7 +1066,7 @@ namespace MifareOneTool
         [DllImport("user32.dll", EntryPoint = "SetWindowText")]
         public static extern int SetWindowText(IntPtr hwnd, string lpString);
         [DllImport("user32", SetLastError = true)]
-        public static extern int GetWindowText(IntPtr hWnd,StringBuilder lpString,int nMaxCount);
+        public static extern int GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
 
         void mfocCMD(object sender, DoWorkEventArgs e)
         {
@@ -1041,7 +1074,7 @@ namespace MifareOneTool
             ProcessStartInfo psi = new ProcessStartInfo("cmd.exe");
             string[] args = (string[])e.Argument;
             psi.WorkingDirectory = "./";
-            psi.Arguments = "/T:0A "+ args[2] + @" nfc-bin\mfoc.exe " + args[1] + " -O \"" + args[0] + "\"";
+            psi.Arguments = "/T:0A " + args[2] + @" nfc-bin\mfoc.exe " + args[1] + " -O \"" + args[0] + "\"";
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); running = true;
@@ -1056,6 +1089,11 @@ namespace MifareOneTool
                 b.ReportProgress(100, "##运行出错##");
                 File.Delete(args[0]);
             }
+        }
+
+        private void checkBoxAutoABN_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.AutoABN = checkBoxAutoABN.Checked;
         }
     }
 }
