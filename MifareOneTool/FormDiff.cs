@@ -94,7 +94,7 @@ namespace MifareOneTool
             if (File.Exists(fa) && File.Exists(fb))
             {
                 richTextBox1.Clear();
-                richTextBox1.Text=Compare();
+                richTextBox1.Text = Compare();
             }
             else
             {
@@ -111,21 +111,25 @@ namespace MifareOneTool
                 stb.AppendLine("扇区 " + i.ToString());
                 for (int a = 0; a < 4; a++)
                 {
-                    string res="";
-                    for(int b=0;b<16;b++){
-                        if(sa.Sectors[i].Block[a][b]==sb.Sectors[i].Block[a][b]){
-                            res+="-- ";
-                        }else{
-                            res+="## ";
+                    string res = "";
+                    for (int b = 0; b < 16; b++)
+                    {
+                        if (sa.Sectors[i].Block[a][b] == sb.Sectors[i].Block[a][b])
+                        {
+                            res += "-- ";
+                        }
+                        else
+                        {
+                            res += "## ";
                         }
                     }
                     stb.AppendLine("A: " + Utils.Hex2StrWithSpan(sa.Sectors[i].Block[a]));
-                     stb.AppendLine("B: " + Utils.Hex2StrWithSpan(sb.Sectors[i].Block[a]));
-                     stb.AppendLine("   " + res);
-                     if(res.Contains("##"))
-                     {
-                         diffCount++;
-                     }
+                    stb.AppendLine("B: " + Utils.Hex2StrWithSpan(sb.Sectors[i].Block[a]));
+                    stb.AppendLine("   " + res);
+                    if (res.Contains("##"))
+                    {
+                        diffCount++;
+                    }
                 }
 
             }
