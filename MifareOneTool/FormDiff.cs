@@ -104,6 +104,7 @@ namespace MifareOneTool
         private string Compare()
         {
             StringBuilder stb = new StringBuilder();
+            int diffCount = 0;
             for (int i = 0; i < 16; i++)
             {
                 stb.AppendLine("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
@@ -121,10 +122,14 @@ namespace MifareOneTool
                     stb.AppendLine("A: " + Utils.Hex2StrS(sa.Sectors[i].Block[a]));
                      stb.AppendLine("B: " + Utils.Hex2StrS(sb.Sectors[i].Block[a]));
                      stb.AppendLine("   " + res);
+                     if(res.Contains("##"))
+                     {
+                         diffCount++;
+                     }
                 }
 
             }
-            return stb.ToString();
+            return "共找到 " + diffCount.ToString() + " 处不同\n" + stb.ToString();
         }
     }
 }
