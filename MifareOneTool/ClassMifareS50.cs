@@ -374,7 +374,8 @@ namespace MifareOneTool
         public void LoadFromMctTxt(string file)
         {
             if (!File.Exists(file)) { throw new IOException("加载的文件不存在。"); }
-            if (new FileInfo(file).Length < 2300 || new FileInfo(file).Length > 2400) { throw new IOException("加载的S50卡文件大小异常。"); }
+            long fileLength=new FileInfo(file).Length;
+            if (fileLength < 2200 || fileLength > 2400) { throw new IOException("加载的S50卡文件大小异常。"); }
             List<string> lines = new List<string>(File.ReadAllLines(file));
             List<string> invaild = new List<string>();
             foreach (string line in lines)
