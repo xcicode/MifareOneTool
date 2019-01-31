@@ -118,6 +118,7 @@ namespace MifareOneTool
             //ghu.Update(Properties.Settings.Default.GitHubR);
             //remoteVersionLabel.Text = "远程版本 " + ghu.remoteVersion;
             checkBoxAutoABN.Checked = Properties.Settings.Default.AutoABN;
+            checkBoxWriteProtect.Checked = Properties.Settings.Default.WriteCheck;
         }
 
         private void buttonScanCard_Click(object sender, EventArgs e)
@@ -251,6 +252,8 @@ namespace MifareOneTool
 
         bool writecheck(string file)
         {
+            if (checkBoxWriteProtect.Checked == false)
+            { return true; }//如果禁用，直接假装检查成功
             S50 card = new S50();
             try
             {
@@ -1094,6 +1097,21 @@ namespace MifareOneTool
         private void checkBoxAutoABN_CheckedChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.AutoABN = checkBoxAutoABN.Checked;
+        }
+
+        private void buttonEUIDWrite_Click(object sender, EventArgs e)
+        {
+            buttonBmfWrite_Click(sender, e);
+        }
+
+        private void buttonEReadUID_Click(object sender, EventArgs e)
+        {
+            buttonBmfRead_Click(sender, e);
+        }
+
+        private void checkBoxWriteProtect_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.WriteCheck = checkBoxWriteProtect.Checked;
         }
     }
 }

@@ -43,5 +43,17 @@ namespace MifareOneTool.Properties {
                 this["AutoABN"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool WriteCheck {
+            get {
+                return ((bool)(this["WriteCheck"]));
+            }
+            set {
+                this["WriteCheck"] = value;
+            }
+        }
     }
 }
