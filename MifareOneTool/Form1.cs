@@ -1113,5 +1113,52 @@ namespace MifareOneTool
         {
             Properties.Settings.Default.WriteCheck = checkBoxWriteProtect.Checked;
         }
+
+        private void buttonHardNested_Click(object sender, EventArgs e)
+        {
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            FormHardNes fhn = new FormHardNes();
+            if (fhn.ShowDialog() == DialogResult.Yes)
+            {
+                string hardargs = fhn.GetArg();
+                BackgroundWorker bgw = new BackgroundWorker();
+                bgw.DoWork += new DoWorkEventHandler(Hardnest);
+                bgw.WorkerReportsProgress = true;
+                bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
+                bgw.RunWorkerAsync(hardargs);
+            }
+            else
+            {
+                Text = "MifareOne Tool - 已取消";
+            }
+        }
+        void Hardnest(object sender, DoWorkEventArgs e)
+        {
+            if (lprocess) { return; }
+            ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/libnfc_hardnested.exe");
+            psi.Arguments = (string)e.Argument;
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+            lprocess = true;
+            BackgroundWorker b = (BackgroundWorker)sender;
+            process = Process.Start(psi); running = true;
+            process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            //StreamReader stderr = process.StandardError;
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+            process.WaitForExit();
+            lprocess = false; running = false;
+            if (process.ExitCode == 0)
+            {
+                b.ReportProgress(100, "##运行完毕##");
+            }
+            else
+            {
+                b.ReportProgress(100, "##运行出错##");
+            }
+        }
     }
 }

@@ -83,6 +83,12 @@
     <Compile Include="FormDiff.Designer.cs">
       <DependentUpon>FormDiff.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHardNes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHardNes.Designer.cs">
+      <DependentUpon>FormHardNes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHTool.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDiff.resx">
       <DependentUpon>FormDiff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHardNes.resx">
+      <DependentUpon>FormHardNes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHTool.resx">
       <DependentUpon>FormHTool.cs</DependentUpon>

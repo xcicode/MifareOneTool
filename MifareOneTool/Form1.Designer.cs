@@ -98,6 +98,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.checkBoxWriteProtect = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -179,7 +181,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(0, 219);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(767, 381);
+            this.richTextBox1.Size = new System.Drawing.Size(767, 390);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "Hello,cardman!\n建议点击\"检测\"以加快后续运行速度\n";
             // 
@@ -486,6 +488,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label3);
@@ -686,13 +690,13 @@
             // 
             // buttonHardNested
             // 
-            this.buttonHardNested.Enabled = false;
             this.buttonHardNested.Location = new System.Drawing.Point(178, 51);
             this.buttonHardNested.Name = "buttonHardNested";
             this.buttonHardNested.Size = new System.Drawing.Size(104, 25);
             this.buttonHardNested.TabIndex = 14;
             this.buttonHardNested.Text = "HardNested";
             this.buttonHardNested.UseVisualStyleBackColor = true;
+            this.buttonHardNested.Click += new System.EventHandler(this.buttonHardNested_Click);
             // 
             // groupBox9
             // 
@@ -738,7 +742,7 @@
             this.localVersionLabel,
             this.remoteVersionLabel,
             this.toolStripCheckUpdate});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 603);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 609);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(767, 26);
             this.statusStrip1.TabIndex = 12;
@@ -870,11 +874,31 @@
             this.checkBoxWriteProtect.UseVisualStyleBackColor = true;
             this.checkBoxWriteProtect.CheckedChanged += new System.EventHandler(this.checkBoxWriteProtect_CheckedChanged);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Green;
+            this.label7.Location = new System.Drawing.Point(84, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 30);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "请放\r\n原卡";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Green;
+            this.label8.Location = new System.Drawing.Point(392, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 30);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "请放\r\n新卡";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 629);
+            this.ClientSize = new System.Drawing.Size(767, 635);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.richTextBox1);
@@ -976,6 +1000,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
 
