@@ -69,9 +69,7 @@
             this.buttonEUIDWrite = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.buttonEMfWrite = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.buttonECheckEncrypt = new System.Windows.Forms.Button();
-            this.buttonEUpdate = new System.Windows.Forms.Button();
             this.buttoEScanCard = new System.Windows.Forms.Button();
             this.buttonEscan = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -93,6 +91,15 @@
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.checkBoxAutoABN = new System.Windows.Forms.CheckBox();
+            this.buttonEReadUID = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.checkBoxWriteProtect = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -100,7 +107,6 @@
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -175,7 +181,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(0, 219);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(767, 381);
+            this.richTextBox1.Size = new System.Drawing.Size(767, 390);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "Hello,cardman!\n建议点击\"检测\"以加快后续运行速度\n";
             // 
@@ -459,6 +465,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.checkBoxWriteProtect);
             this.groupBox4.Controls.Add(this.checkBoxAutoABN);
             this.groupBox4.Controls.Add(this.buttonDiffTool);
             this.groupBox4.Controls.Add(this.buttonHexTool);
@@ -481,10 +488,19 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.buttonECheckEncrypt);
             this.tabPage2.Controls.Add(this.buttonEAdv);
+            this.tabPage2.Controls.Add(this.buttoEScanCard);
             this.tabPage2.Controls.Add(this.groupBox7);
-            this.tabPage2.Controls.Add(this.groupBox6);
+            this.tabPage2.Controls.Add(this.buttonEscan);
             this.tabPage2.Controls.Add(this.groupBox5);
+            this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -495,9 +511,9 @@
             // 
             // buttonEAdv
             // 
-            this.buttonEAdv.Location = new System.Drawing.Point(408, 16);
+            this.buttonEAdv.Location = new System.Drawing.Point(574, 6);
             this.buttonEAdv.Name = "buttonEAdv";
-            this.buttonEAdv.Size = new System.Drawing.Size(218, 40);
+            this.buttonEAdv.Size = new System.Drawing.Size(177, 40);
             this.buttonEAdv.TabIndex = 4;
             this.buttonEAdv.Text = "点此进入高级模式>>>";
             this.buttonEAdv.UseVisualStyleBackColor = true;
@@ -509,7 +525,7 @@
             this.groupBox7.Controls.Add(this.buttonEUIDWrite);
             this.groupBox7.Controls.Add(this.button4);
             this.groupBox7.Controls.Add(this.buttonEMfWrite);
-            this.groupBox7.Location = new System.Drawing.Point(274, 6);
+            this.groupBox7.Location = new System.Drawing.Point(440, 6);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(128, 171);
             this.groupBox7.TabIndex = 3;
@@ -534,6 +550,7 @@
             this.buttonEUIDWrite.TabIndex = 2;
             this.buttonEUIDWrite.Text = "写(UF)UID卡";
             this.buttonEUIDWrite.UseVisualStyleBackColor = true;
+            this.buttonEUIDWrite.Click += new System.EventHandler(this.buttonEUIDWrite_Click);
             // 
             // button4
             // 
@@ -555,66 +572,44 @@
             this.buttonEMfWrite.UseVisualStyleBackColor = true;
             this.buttonEMfWrite.Click += new System.EventHandler(this.buttonEMfWrite_Click);
             // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.buttonECheckEncrypt);
-            this.groupBox6.Controls.Add(this.buttonEUpdate);
-            this.groupBox6.Controls.Add(this.buttoEScanCard);
-            this.groupBox6.Controls.Add(this.buttonEscan);
-            this.groupBox6.Location = new System.Drawing.Point(6, 6);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(128, 171);
-            this.groupBox6.TabIndex = 3;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "[1]检测";
-            // 
             // buttonECheckEncrypt
             // 
-            this.buttonECheckEncrypt.Location = new System.Drawing.Point(6, 87);
+            this.buttonECheckEncrypt.Location = new System.Drawing.Point(123, 55);
             this.buttonECheckEncrypt.Name = "buttonECheckEncrypt";
-            this.buttonECheckEncrypt.Size = new System.Drawing.Size(116, 25);
+            this.buttonECheckEncrypt.Size = new System.Drawing.Size(85, 25);
             this.buttonECheckEncrypt.TabIndex = 5;
-            this.buttonECheckEncrypt.Text = "[3]检测加密";
+            this.buttonECheckEncrypt.Text = "检测加密";
             this.buttonECheckEncrypt.UseVisualStyleBackColor = true;
             this.buttonECheckEncrypt.Click += new System.EventHandler(this.buttonECheckEncrypt_Click);
             // 
-            // buttonEUpdate
-            // 
-            this.buttonEUpdate.Location = new System.Drawing.Point(6, 140);
-            this.buttonEUpdate.Name = "buttonEUpdate";
-            this.buttonEUpdate.Size = new System.Drawing.Size(116, 25);
-            this.buttonEUpdate.TabIndex = 4;
-            this.buttonEUpdate.Text = "检查M1T更新";
-            this.buttonEUpdate.UseVisualStyleBackColor = true;
-            this.buttonEUpdate.Click += new System.EventHandler(this.buttonEUpdate_Click);
-            // 
             // buttoEScanCard
             // 
-            this.buttoEScanCard.Location = new System.Drawing.Point(6, 56);
+            this.buttoEScanCard.Location = new System.Drawing.Point(123, 24);
             this.buttoEScanCard.Name = "buttoEScanCard";
-            this.buttoEScanCard.Size = new System.Drawing.Size(116, 25);
+            this.buttoEScanCard.Size = new System.Drawing.Size(85, 25);
             this.buttoEScanCard.TabIndex = 1;
-            this.buttoEScanCard.Text = "[2]扫描卡片";
+            this.buttoEScanCard.Text = "扫描卡片";
             this.buttoEScanCard.UseVisualStyleBackColor = true;
             this.buttoEScanCard.Click += new System.EventHandler(this.buttoEScanCard_Click);
             // 
             // buttonEscan
             // 
-            this.buttonEscan.Location = new System.Drawing.Point(6, 25);
+            this.buttonEscan.Location = new System.Drawing.Point(8, 24);
             this.buttonEscan.Name = "buttonEscan";
-            this.buttonEscan.Size = new System.Drawing.Size(116, 25);
+            this.buttonEscan.Size = new System.Drawing.Size(85, 25);
             this.buttonEscan.TabIndex = 0;
-            this.buttonEscan.Text = "[1]检测连接";
+            this.buttonEscan.Text = "检测连接";
             this.buttonEscan.UseVisualStyleBackColor = true;
             this.buttonEscan.Click += new System.EventHandler(this.buttonEscan_Click);
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.buttonEReadUID);
             this.groupBox5.Controls.Add(this.buttonESelectKey);
             this.groupBox5.Controls.Add(this.buttonECmfoc);
             this.groupBox5.Controls.Add(this.buttonEMfRead);
             this.groupBox5.Controls.Add(this.buttonEMfoc);
-            this.groupBox5.Location = new System.Drawing.Point(140, 6);
+            this.groupBox5.Location = new System.Drawing.Point(253, 6);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(128, 171);
             this.groupBox5.TabIndex = 0;
@@ -653,11 +648,11 @@
             // 
             // buttonEMfoc
             // 
-            this.buttonEMfoc.Location = new System.Drawing.Point(6, 25);
+            this.buttonEMfoc.Location = new System.Drawing.Point(6, 18);
             this.buttonEMfoc.Name = "buttonEMfoc";
             this.buttonEMfoc.Size = new System.Drawing.Size(116, 25);
             this.buttonEMfoc.TabIndex = 0;
-            this.buttonEMfoc.Text = "[1]半加密破解";
+            this.buttonEMfoc.Text = "一键解原卡";
             this.buttonEMfoc.UseVisualStyleBackColor = true;
             this.buttonEMfoc.Click += new System.EventHandler(this.buttonEMfoc_Click);
             // 
@@ -695,13 +690,13 @@
             // 
             // buttonHardNested
             // 
-            this.buttonHardNested.Enabled = false;
             this.buttonHardNested.Location = new System.Drawing.Point(178, 51);
             this.buttonHardNested.Name = "buttonHardNested";
             this.buttonHardNested.Size = new System.Drawing.Size(104, 25);
             this.buttonHardNested.TabIndex = 14;
             this.buttonHardNested.Text = "HardNested";
             this.buttonHardNested.UseVisualStyleBackColor = true;
+            this.buttonHardNested.Click += new System.EventHandler(this.buttonHardNested_Click);
             // 
             // groupBox9
             // 
@@ -747,7 +742,7 @@
             this.localVersionLabel,
             this.remoteVersionLabel,
             this.toolStripCheckUpdate});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 603);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 609);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(767, 26);
             this.statusStrip1.TabIndex = 12;
@@ -809,15 +804,106 @@
             this.checkBoxAutoABN.UseVisualStyleBackColor = true;
             this.checkBoxAutoABN.CheckedChanged += new System.EventHandler(this.checkBoxAutoABN_CheckedChanged);
             // 
+            // buttonEReadUID
+            // 
+            this.buttonEReadUID.Location = new System.Drawing.Point(6, 49);
+            this.buttonEReadUID.Name = "buttonEReadUID";
+            this.buttonEReadUID.Size = new System.Drawing.Size(116, 25);
+            this.buttonEReadUID.TabIndex = 3;
+            this.buttonEReadUID.Text = "从UID卡读回";
+            this.buttonEReadUID.UseVisualStyleBackColor = true;
+            this.buttonEReadUID.Click += new System.EventHandler(this.buttonEReadUID_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(97, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = ">>";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(214, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 15);
+            this.label3.TabIndex = 7;
+            this.label3.Text = ">>>";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(387, 41);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 15);
+            this.label4.TabIndex = 8;
+            this.label4.Text = ">>>>>";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Blue;
+            this.label5.Location = new System.Drawing.Point(8, 6);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(232, 165);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "从这里开始\r\n\r\n\r\n\r\n\r\n\r\n\r\n本工具仅支持SAK=08/18/28的\r\n卡片复制。\r\n若要复制S70卡片，请在高级界\r\n面上取消勾选“数据写入保护”。\r\n" +
+                "";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(574, 101);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(159, 15);
+            this.label6.TabIndex = 10;
+            this.label6.Text = ">>> 尝试一下是否成功";
+            // 
+            // checkBoxWriteProtect
+            // 
+            this.checkBoxWriteProtect.AutoSize = true;
+            this.checkBoxWriteProtect.Checked = true;
+            this.checkBoxWriteProtect.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxWriteProtect.Location = new System.Drawing.Point(120, 55);
+            this.checkBoxWriteProtect.Name = "checkBoxWriteProtect";
+            this.checkBoxWriteProtect.Size = new System.Drawing.Size(165, 19);
+            this.checkBoxWriteProtect.TabIndex = 11;
+            this.checkBoxWriteProtect.Text = "数据写入保护(建议)";
+            this.checkBoxWriteProtect.UseVisualStyleBackColor = true;
+            this.checkBoxWriteProtect.CheckedChanged += new System.EventHandler(this.checkBoxWriteProtect_CheckedChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Green;
+            this.label7.Location = new System.Drawing.Point(84, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 30);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "请放\r\n原卡";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Green;
+            this.label8.Location = new System.Drawing.Point(392, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 30);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "请放\r\n新卡";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 629);
+            this.ClientSize = new System.Drawing.Size(767, 635);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.richTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "MifareOne Tool";
@@ -829,8 +915,8 @@
             this.groupBox4.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.groupBox7.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
@@ -880,11 +966,9 @@
         private System.Windows.Forms.Button buttonECmfoc;
         private System.Windows.Forms.Button buttonEMfRead;
         private System.Windows.Forms.Button buttonEMfoc;
-        private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button buttonEscan;
         private System.Windows.Forms.Button buttoEScanCard;
         private System.Windows.Forms.Button buttonESelectKey;
-        private System.Windows.Forms.Button buttonEUpdate;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button buttonECuidWrite;
         private System.Windows.Forms.Button buttonEUIDWrite;
@@ -909,6 +993,15 @@
         private System.Windows.Forms.Button buttonnKeysMfoc;
         private System.Windows.Forms.Button buttonSniffDev;
         private System.Windows.Forms.CheckBox checkBoxAutoABN;
+        private System.Windows.Forms.Button buttonEReadUID;
+        private System.Windows.Forms.CheckBox checkBoxWriteProtect;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
 
