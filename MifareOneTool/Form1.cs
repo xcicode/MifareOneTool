@@ -117,8 +117,17 @@ namespace MifareOneTool
             //GitHubUpdate ghu = new GitHubUpdate(Properties.Settings.Default.GitHubR);
             //ghu.Update(Properties.Settings.Default.GitHubR);
             //remoteVersionLabel.Text = "远程版本 " + ghu.remoteVersion;
+            Directory.CreateDirectory("auto_keys");
             checkBoxAutoABN.Checked = Properties.Settings.Default.AutoABN;
             checkBoxWriteProtect.Checked = Properties.Settings.Default.WriteCheck;
+            checkBoxAutoLoadKey.Checked = Properties.Settings.Default.AutoLoadUidKey;
+            richTextBox1.ForeColor = Properties.Settings.Default.MainCLIColor;
+            buttonCLIColor.ForeColor = Properties.Settings.Default.MainCLIColor;
+            checkBoxDefIsAdv.Checked = Properties.Settings.Default.DefIsAdv;
+            if (Properties.Settings.Default.DefIsAdv)
+            {
+                tabControl1.SelectedIndex = 1;
+            }
         }
 
         private void buttonScanCard_Click(object sender, EventArgs e)
@@ -154,12 +163,62 @@ namespace MifareOneTool
 
         string omfd = "";
 
+        private string GetUID()
+        {
+            ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/nfc-list.exe");
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+            Process p = Process.Start(psi);
+            p.WaitForExit();
+            string rawStr = p.StandardOutput.ReadToEnd();
+            string uid;
+            string pattern = @"UID\s\(NFCID1\)\: ([0-9A-Fa-f]{2}\s\s[0-9A-Fa-f]{2}\s\s[0-9A-Fa-f]{2}\s\s[0-9A-Fa-f]{2})";
+            if (Regex.IsMatch(rawStr, pattern))
+            {
+                uid = Regex.Match(rawStr, pattern).Captures[0].Value.Replace(" ", "").Replace("UID(NFCID1):",""); ;
+            }
+            else
+            {
+                uid = "";
+            }
+            return uid;
+        }
+        private void LoadUidKey(string uid)
+        {
+            if (!Directory.Exists("auto_keys"))
+            {
+                Directory.CreateDirectory("auto_keys");
+                return;
+            }
+            if (uid.Length < 8) { return; }
+            logAppend("正在检索是否存在key.mfd…");
+            List<string> files = Directory.EnumerateFiles("auto_keys", "*.mfd").ToList<string>();
+            for (int i = 0; i < files.Count; i++)
+            {
+                if (files[i].StartsWith("auto_keys\\" + uid))
+                {
+                    logAppend("已找到！K=" + files[i]);
+                    keymfd = files[i];
+                    buttonSelectKey.Text = "K=" + files[i];
+                    return;
+                }
+            }
+            return;
+        }
+
         private void buttonMfRead_Click(object sender, EventArgs e)
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "MfRead.tmp";
             string kt = "A";
             string nn = "";
+            if (checkBoxAutoLoadKey.Checked)
+            {
+                string uid = GetUID();
+                LoadUidKey(uid);
+            }
             if (checkBoxAutoABN.Checked && keymfd != "")
             {
                 kt = "C";
@@ -906,7 +965,7 @@ namespace MifareOneTool
 
         private void buttonEAdv_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = tabControl1.TabPages.Count - 1;
+            tabControl1.SelectedIndex = 1;
         }
 
         private void buttonEnAcr122u_Click(object sender, EventArgs e)
@@ -1159,6 +1218,35 @@ namespace MifareOneTool
             {
                 b.ReportProgress(100, "##运行出错##");
             }
+        }
+
+        private void checkBoxAutoLoadKey_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.AutoLoadUidKey = checkBoxAutoLoadKey.Checked;
+        }
+
+        private void buttonCLIColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog cd = new ColorDialog();
+            cd.AllowFullOpen = true;
+            cd.AnyColor = true;
+            if (cd.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.ForeColor = cd.Color;
+                buttonCLIColor.ForeColor = cd.Color;
+                Properties.Settings.Default.MainCLIColor = cd.Color;
+            }
+        }
+
+        private void numericCLIFontSize_ValueChanged(object sender, EventArgs e)
+        {
+            richTextBox1.Font = new Font(richTextBox1.Font.FontFamily, (float)numericCLIFontSize.Value);
+            Properties.Settings.Default.MainCLIFontSize = (float)numericCLIFontSize.Value;
+        }
+
+        private void checkBoxDefIsAdv_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.DefIsAdv = checkBoxDefIsAdv.Checked;
         }
     }
 }
