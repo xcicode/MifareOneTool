@@ -52,7 +52,7 @@ namespace MifareOneTool
                     if (File.Exists(omfd) && new FileInfo(omfd).Length > 1)
                     {
                         Directory.CreateDirectory("auto_keys");
-                        string filename = "auto_keys\\" + lastuid + "_" + DateTime.Now.ToString() + ".mfd";
+                        string filename = "auto_keys\\" + lastuid + "_" + DateTime.Now.ToString().Replace("/","-").Replace(" ","_").Replace(":","-") + ".mfd";
                         if (File.Exists(filename))
                         {
                             File.Delete(filename);
