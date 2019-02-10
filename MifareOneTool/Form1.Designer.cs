@@ -91,13 +91,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.checkBoxDefIsAdv = new System.Windows.Forms.CheckBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.numericCLIFontSize = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.buttonCLIColor = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.checkBoxWriteProtect = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.checkBoxWriteProtect = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoLoadKey = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoABN = new System.Windows.Forms.CheckBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -107,8 +109,7 @@
             this.remoteVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.checkBoxDefIsAdv = new System.Windows.Forms.CheckBox();
+            this.checkBoxAutoSave = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -122,11 +123,11 @@
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericCLIFontSize)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -732,8 +733,8 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(232, 165);
             this.label5.TabIndex = 9;
-            this.label5.Text = "从这里开始\r\n\r\n\r\n\r\n\r\n\r\n\r\n本工具仅支持SAK=08/18/28的\r\n卡片复制。\r\n若要复制S70卡片，请在高级界\r\n面上取消勾选“数据写入保护”。\r\n" +
-                "";
+            this.label5.Text = "从这里开始\r\n\r\n\r\n\r\n\r\n\r\n\r\n本工具仅支持SAK=08/18/28的\r\n卡片复制。SAK28无一键解密。\r\n若要复制S70卡片，请在高级界\r\n面上取消勾选" +
+                "“数据写入保护”。\r\n";
             // 
             // tabPage1
             // 
@@ -825,6 +826,28 @@
             this.tabPage3.Text = "软件设置";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.checkBoxAutoSave);
+            this.groupBox13.Controls.Add(this.checkBoxDefIsAdv);
+            this.groupBox13.Location = new System.Drawing.Point(3, 109);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(200, 71);
+            this.groupBox13.TabIndex = 13;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "偏好设置";
+            // 
+            // checkBoxDefIsAdv
+            // 
+            this.checkBoxDefIsAdv.AutoSize = true;
+            this.checkBoxDefIsAdv.Location = new System.Drawing.Point(9, 24);
+            this.checkBoxDefIsAdv.Name = "checkBoxDefIsAdv";
+            this.checkBoxDefIsAdv.Size = new System.Drawing.Size(179, 19);
+            this.checkBoxDefIsAdv.TabIndex = 0;
+            this.checkBoxDefIsAdv.Text = "自动转到高级操作模式";
+            this.checkBoxDefIsAdv.UseVisualStyleBackColor = true;
+            this.checkBoxDefIsAdv.CheckedChanged += new System.EventHandler(this.checkBoxDefIsAdv_CheckedChanged);
+            // 
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.numericCLIFontSize);
@@ -893,6 +916,18 @@
             this.label9.TabIndex = 13;
             this.label9.Text = "终端文字颜色";
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.checkBoxWriteProtect);
+            this.groupBox6.Controls.Add(this.checkBoxAutoLoadKey);
+            this.groupBox6.Controls.Add(this.checkBoxAutoABN);
+            this.groupBox6.Location = new System.Drawing.Point(3, 3);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(200, 100);
+            this.groupBox6.TabIndex = 0;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "卡操作相关";
+            // 
             // checkBoxWriteProtect
             // 
             this.checkBoxWriteProtect.AutoSize = true;
@@ -905,18 +940,6 @@
             this.checkBoxWriteProtect.Text = "数据写入保护(建议)";
             this.checkBoxWriteProtect.UseVisualStyleBackColor = true;
             this.checkBoxWriteProtect.CheckedChanged += new System.EventHandler(this.checkBoxWriteProtect_CheckedChanged);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.checkBoxWriteProtect);
-            this.groupBox6.Controls.Add(this.checkBoxAutoLoadKey);
-            this.groupBox6.Controls.Add(this.checkBoxAutoABN);
-            this.groupBox6.Location = new System.Drawing.Point(3, 3);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(200, 100);
-            this.groupBox6.TabIndex = 0;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "卡操作相关";
             // 
             // checkBoxAutoLoadKey
             // 
@@ -999,26 +1022,16 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // groupBox13
+            // checkBoxAutoSave
             // 
-            this.groupBox13.Controls.Add(this.checkBoxDefIsAdv);
-            this.groupBox13.Location = new System.Drawing.Point(3, 109);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(200, 71);
-            this.groupBox13.TabIndex = 13;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "偏好设置";
-            // 
-            // checkBoxDefIsAdv
-            // 
-            this.checkBoxDefIsAdv.AutoSize = true;
-            this.checkBoxDefIsAdv.Location = new System.Drawing.Point(9, 24);
-            this.checkBoxDefIsAdv.Name = "checkBoxDefIsAdv";
-            this.checkBoxDefIsAdv.Size = new System.Drawing.Size(179, 19);
-            this.checkBoxDefIsAdv.TabIndex = 0;
-            this.checkBoxDefIsAdv.Text = "自动转到高级操作模式";
-            this.checkBoxDefIsAdv.UseVisualStyleBackColor = true;
-            this.checkBoxDefIsAdv.CheckedChanged += new System.EventHandler(this.checkBoxDefIsAdv_CheckedChanged);
+            this.checkBoxAutoSave.AutoSize = true;
+            this.checkBoxAutoSave.Location = new System.Drawing.Point(9, 46);
+            this.checkBoxAutoSave.Name = "checkBoxAutoSave";
+            this.checkBoxAutoSave.Size = new System.Drawing.Size(173, 19);
+            this.checkBoxAutoSave.TabIndex = 1;
+            this.checkBoxAutoSave.Text = "自动以UID名保存文件";
+            this.checkBoxAutoSave.UseVisualStyleBackColor = true;
+            this.checkBoxAutoSave.CheckedChanged += new System.EventHandler(this.checkBoxAutoSave_CheckedChanged);
             // 
             // Form1
             // 
@@ -1033,6 +1046,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "MifareOne Tool";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -1049,6 +1063,8 @@
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericCLIFontSize)).EndInit();
@@ -1056,8 +1072,6 @@
             this.groupBox6.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1144,6 +1158,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.CheckBox checkBoxDefIsAdv;
+        private System.Windows.Forms.CheckBox checkBoxAutoSave;
     }
 }
 
