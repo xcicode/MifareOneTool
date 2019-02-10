@@ -47,33 +47,55 @@ namespace MifareOneTool
             }
             else if (e.ProgressPercentage == 101)
             {
-                SaveFileDialog ofd = new SaveFileDialog();
-                ofd.AddExtension = true;
-                ofd.DefaultExt = ".mfd";
-                ofd.Title = "请选择MFD文件保存位置及文件名";
-                ofd.OverwritePrompt = true;
-                ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
-                if (File.Exists(omfd) && new FileInfo(omfd).Length > 1)
+                if (lastuid != "")
                 {
-                    if (ofd.ShowDialog() == DialogResult.OK)
+                    if (File.Exists(omfd) && new FileInfo(omfd).Length > 1)
                     {
-                        if (File.Exists(ofd.FileName))
+                        string filename = lastuid + "_" + DateTime.Now.ToString() + ".mfd";
+                        if (File.Exists(filename))
                         {
-                            File.Delete(ofd.FileName);
+                            File.Delete(filename);
                         }
-                        File.Move(omfd, ofd.FileName);
-                        logAppend("##已保存-" + ofd.FileName + "##");
+                        File.Move(omfd, filename);
+                        logAppend("##已自动保存-" + filename + "##");
                     }
                     else
                     {
                         File.Delete(omfd);
-                        logAppend("##未保存##");
+                        logAppend("##缓存文件异常##");
                     }
+                    lastuid = "";
                 }
                 else
                 {
-                    File.Delete(omfd);
-                    logAppend("##缓存文件异常##");
+                    SaveFileDialog ofd = new SaveFileDialog();
+                    ofd.AddExtension = true;
+                    ofd.DefaultExt = ".mfd";
+                    ofd.Title = "请选择MFD文件保存位置及文件名";
+                    ofd.OverwritePrompt = true;
+                    ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
+                    if (File.Exists(omfd) && new FileInfo(omfd).Length > 1)
+                    {
+                        if (ofd.ShowDialog() == DialogResult.OK)
+                        {
+                            if (File.Exists(ofd.FileName))
+                            {
+                                File.Delete(ofd.FileName);
+                            }
+                            File.Move(omfd, ofd.FileName);
+                            logAppend("##已保存-" + ofd.FileName + "##");
+                        }
+                        else
+                        {
+                            File.Delete(omfd);
+                            logAppend("##未保存##");
+                        }
+                    }
+                    else
+                    {
+                        File.Delete(omfd);
+                        logAppend("##缓存文件异常##");
+                    }
                 }
                 omfd = "";
                 Text = "MifareOne Tool - 运行完毕";
@@ -117,8 +139,17 @@ namespace MifareOneTool
             //GitHubUpdate ghu = new GitHubUpdate(Properties.Settings.Default.GitHubR);
             //ghu.Update(Properties.Settings.Default.GitHubR);
             //remoteVersionLabel.Text = "远程版本 " + ghu.remoteVersion;
+            Directory.CreateDirectory("auto_keys");
             checkBoxAutoABN.Checked = Properties.Settings.Default.AutoABN;
             checkBoxWriteProtect.Checked = Properties.Settings.Default.WriteCheck;
+            checkBoxAutoLoadKey.Checked = Properties.Settings.Default.AutoLoadUidKey;
+            richTextBox1.ForeColor = Properties.Settings.Default.MainCLIColor;
+            buttonCLIColor.ForeColor = Properties.Settings.Default.MainCLIColor;
+            checkBoxDefIsAdv.Checked = Properties.Settings.Default.DefIsAdv;
+            if (Properties.Settings.Default.DefIsAdv)
+            {
+                tabControl1.SelectedIndex = 1;
+            }
         }
 
         private void buttonScanCard_Click(object sender, EventArgs e)
@@ -154,12 +185,69 @@ namespace MifareOneTool
 
         string omfd = "";
 
+        private string GetUID()
+        {
+            ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/nfc-list.exe");
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+            Process p = Process.Start(psi);
+            p.WaitForExit();
+            string rawStr = p.StandardOutput.ReadToEnd();
+            string uid;
+            string pattern = @"UID\s\(NFCID1\)\: ([0-9A-Fa-f]{2}\s\s[0-9A-Fa-f]{2}\s\s[0-9A-Fa-f]{2}\s\s[0-9A-Fa-f]{2})";
+            if (Regex.IsMatch(rawStr, pattern))
+            {
+                uid = Regex.Match(rawStr, pattern).Captures[0].Value.Replace(" ", "").Replace("UID(NFCID1):", ""); ;
+            }
+            else
+            {
+                uid = "";
+            }
+            return uid;
+        }
+        private void LoadUidKey(string uid)
+        {
+            if (!Directory.Exists("auto_keys"))
+            {
+                Directory.CreateDirectory("auto_keys");
+                return;
+            }
+            if (uid.Length < 8) { return; }
+            logAppend("正在检索是否存在key.mfd…");
+            List<string> files = Directory.EnumerateFiles("auto_keys", "*.mfd").ToList<string>();
+            for (int i = 0; i < files.Count; i++)
+            {
+                if (files[i].StartsWith("auto_keys\\" + uid))
+                {
+                    logAppend("已找到！K=" + files[i]);
+                    keymfd = files[i];
+                    buttonSelectKey.Text = "K=" + files[i];
+                    return;
+                }
+            }
+            return;
+        }
+
+        string lastuid = "";
+
         private void buttonMfRead_Click(object sender, EventArgs e)
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "MfRead.tmp";
             string kt = "A";
             string nn = "";
+            string uid;
+            if (checkBoxAutoLoadKey.Checked)
+            {
+                uid = GetUID();
+                LoadUidKey(uid);
+            }
+            if (checkBoxAutoSave.Checked)
+            {
+                lastuid = GetUID();
+            }
             if (checkBoxAutoABN.Checked && keymfd != "")
             {
                 kt = "C";
@@ -366,6 +454,10 @@ namespace MifareOneTool
                     }
                 }
             }
+            if (checkBoxAutoSave.Checked)
+            {
+                lastuid = GetUID();
+            }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(mfoc);
             bgw.WorkerReportsProgress = true;
@@ -492,7 +584,10 @@ namespace MifareOneTool
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "BmfRead.tmp";
-
+            if (checkBoxAutoSave.Checked)
+            {
+                lastuid = GetUID();
+            }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(bmf_read);
             bgw.WorkerReportsProgress = true;
@@ -906,7 +1001,7 @@ namespace MifareOneTool
 
         private void buttonEAdv_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = tabControl1.TabPages.Count - 1;
+            tabControl1.SelectedIndex = 1;
         }
 
         private void buttonEnAcr122u_Click(object sender, EventArgs e)
@@ -1025,6 +1120,10 @@ namespace MifareOneTool
                     }
                 }
             }
+            if (checkBoxAutoSave.Checked)
+            {
+                lastuid = GetUID();
+            }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(mfoc);
             bgw.WorkerReportsProgress = true;
@@ -1058,6 +1157,10 @@ namespace MifareOneTool
             }
             string rmfd = "Mfoc.tmp";
             string key = "-f " + filename + " ";
+            if (checkBoxAutoSave.Checked)
+            {
+                lastuid = GetUID();
+            }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(mfocCMD);
             bgw.WorkerReportsProgress = true;
@@ -1159,6 +1262,45 @@ namespace MifareOneTool
             {
                 b.ReportProgress(100, "##运行出错##");
             }
+        }
+
+        private void checkBoxAutoLoadKey_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.AutoLoadUidKey = checkBoxAutoLoadKey.Checked;
+        }
+
+        private void buttonCLIColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog cd = new ColorDialog();
+            cd.AllowFullOpen = true;
+            cd.AnyColor = true;
+            if (cd.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.ForeColor = cd.Color;
+                buttonCLIColor.ForeColor = cd.Color;
+                Properties.Settings.Default.MainCLIColor = cd.Color;
+            }
+        }
+
+        private void numericCLIFontSize_ValueChanged(object sender, EventArgs e)
+        {
+            richTextBox1.Font = new Font(richTextBox1.Font.FontFamily, (float)numericCLIFontSize.Value);
+            Properties.Settings.Default.MainCLIFontSize = (float)numericCLIFontSize.Value;
+        }
+
+        private void checkBoxDefIsAdv_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.DefIsAdv = checkBoxDefIsAdv.Checked;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Save();
+        }
+
+        private void checkBoxAutoSave_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.AutoSave = checkBoxAutoSave.Checked;
         }
     }
 }
