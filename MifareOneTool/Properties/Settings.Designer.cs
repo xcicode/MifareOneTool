@@ -115,5 +115,17 @@ namespace MifareOneTool.Properties {
                 this["AutoSave"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool HardLowCost {
+            get {
+                return ((bool)(this["HardLowCost"]));
+            }
+            set {
+                this["HardLowCost"] = value;
+            }
+        }
     }
 }

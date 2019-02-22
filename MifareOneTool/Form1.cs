@@ -52,7 +52,7 @@ namespace MifareOneTool
                     if (File.Exists(omfd) && new FileInfo(omfd).Length > 1)
                     {
                         Directory.CreateDirectory("auto_keys");
-                        string filename = "auto_keys\\" + lastuid + "_" + DateTime.Now.ToString().Replace("/","-").Replace(" ","_").Replace(":","-") + ".mfd";
+                        string filename = "auto_keys\\" + lastuid + "_" + DateTime.Now.ToString().Replace("/", "-").Replace(" ", "_").Replace(":", "-") + ".mfd";
                         if (File.Exists(filename))
                         {
                             File.Delete(filename);
@@ -101,6 +101,21 @@ namespace MifareOneTool
                 omfd = "";
                 Text = "MifareOne Tool - 运行完毕";
             }
+            else if (e.ProgressPercentage == 102)
+            {
+                string noncefile = lastuid;
+                lastuid = "";
+                if (File.Exists(noncefile))
+                {
+                    logAppend("##Nonce收集完毕-" + noncefile + "##");
+                    logAppend("您可以在本地计算，或是上传到云计算服务节点进行计算。");
+                }
+                else
+                {
+                    logAppend("##Nonce收集出错##");
+                }
+                Text = "MifareOne Tool - 运行完毕";
+            }
             Application.DoEvents();
 
         }
@@ -147,6 +162,7 @@ namespace MifareOneTool
             richTextBox1.ForeColor = Properties.Settings.Default.MainCLIColor;
             buttonCLIColor.ForeColor = Properties.Settings.Default.MainCLIColor;
             checkBoxDefIsAdv.Checked = Properties.Settings.Default.DefIsAdv;
+            checkBoxHardLowCost.Checked = Properties.Settings.Default.HardLowCost;
             if (Properties.Settings.Default.DefIsAdv)
             {
                 tabControl1.SelectedIndex = 1;
@@ -1226,7 +1242,15 @@ namespace MifareOneTool
             {
                 string hardargs = fhn.GetArg();
                 BackgroundWorker bgw = new BackgroundWorker();
-                bgw.DoWork += new DoWorkEventHandler(Hardnest);
+                if (fhn.collectOnly())
+                {
+                    lastuid = "0x" + GetUID() + fhn.GetFileAfter();
+                    bgw.DoWork += new DoWorkEventHandler(CollectNonce);
+                }
+                else
+                {
+                    bgw.DoWork += new DoWorkEventHandler(Hardnest);
+                }
                 bgw.WorkerReportsProgress = true;
                 bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
                 bgw.RunWorkerAsync(hardargs);
@@ -1240,6 +1264,10 @@ namespace MifareOneTool
         {
             if (lprocess) { return; }
             ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/libnfc_hardnested.exe");
+            if (Properties.Settings.Default.HardLowCost)
+            {
+                psi.FileName = "nfc-bin/libnfc_hardnestedlc.exe";
+            }
             psi.Arguments = (string)e.Argument;
             psi.CreateNoWindow = true;
             psi.UseShellExecute = false;
@@ -1258,6 +1286,35 @@ namespace MifareOneTool
             if (process.ExitCode == 0)
             {
                 b.ReportProgress(100, "##运行完毕##");
+            }
+            else
+            {
+                b.ReportProgress(100, "##运行出错##");
+            }
+        }
+
+        void CollectNonce(object sender, DoWorkEventArgs e)
+        {
+            if (lprocess) { return; }
+            ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/collect.exe");
+            psi.Arguments = (string)e.Argument;
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+            lprocess = true;
+            BackgroundWorker b = (BackgroundWorker)sender;
+            process = Process.Start(psi); running = true;
+            process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            //StreamReader stderr = process.StandardError;
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+            process.WaitForExit();
+            lprocess = false; running = false;
+            if (process.ExitCode == 0)
+            {
+                b.ReportProgress(102, "##运行完毕##");
             }
             else
             {
@@ -1302,6 +1359,11 @@ namespace MifareOneTool
         private void checkBoxAutoSave_CheckedChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.AutoSave = checkBoxAutoSave.Checked;
+        }
+
+        private void checkBoxHardLowCost_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.HardLowCost = checkBoxHardLowCost.Checked;
         }
     }
 }

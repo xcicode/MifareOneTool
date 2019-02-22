@@ -31,20 +31,21 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.keyEdit = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.radioKey1A = new System.Windows.Forms.RadioButton();
             this.radioKey1B = new System.Windows.Forms.RadioButton();
+            this.radioKey1A = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.sector1 = new System.Windows.Forms.TextBox();
+            this.keyEdit = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.radioKey2B = new System.Windows.Forms.RadioButton();
             this.radioKey2A = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.sector2 = new System.Windows.Forms.TextBox();
-            this.sector1 = new System.Windows.Forms.TextBox();
+            this.checkBoxColOnly = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -86,50 +87,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "目标卡信息";
             // 
-            // label1
+            // radioKey1B
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(12, 192);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "解密时请保证设备良好散热！";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "已知的Key";
-            // 
-            // keyEdit
-            // 
-            this.keyEdit.Location = new System.Drawing.Point(9, 39);
-            this.keyEdit.Name = "keyEdit";
-            this.keyEdit.Size = new System.Drawing.Size(120, 25);
-            this.keyEdit.TabIndex = 10;
-            this.keyEdit.Text = "ffffffffffff";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(132, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "扇区号";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(190, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 15);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "类型";
+            this.radioKey1B.AutoSize = true;
+            this.radioKey1B.Location = new System.Drawing.Point(259, 40);
+            this.radioKey1B.Name = "radioKey1B";
+            this.radioKey1B.Size = new System.Drawing.Size(60, 19);
+            this.radioKey1B.TabIndex = 15;
+            this.radioKey1B.Text = "KeyB";
+            this.radioKey1B.UseVisualStyleBackColor = true;
             // 
             // radioKey1A
             // 
@@ -143,15 +109,58 @@
             this.radioKey1A.Text = "KeyA";
             this.radioKey1A.UseVisualStyleBackColor = true;
             // 
-            // radioKey1B
+            // label4
             // 
-            this.radioKey1B.AutoSize = true;
-            this.radioKey1B.Location = new System.Drawing.Point(259, 40);
-            this.radioKey1B.Name = "radioKey1B";
-            this.radioKey1B.Size = new System.Drawing.Size(60, 19);
-            this.radioKey1B.TabIndex = 15;
-            this.radioKey1B.Text = "KeyB";
-            this.radioKey1B.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(190, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 15);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "类型";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(132, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "扇区号";
+            // 
+            // sector1
+            // 
+            this.sector1.Location = new System.Drawing.Point(135, 39);
+            this.sector1.Name = "sector1";
+            this.sector1.Size = new System.Drawing.Size(46, 25);
+            this.sector1.TabIndex = 11;
+            this.sector1.Text = "0";
+            // 
+            // keyEdit
+            // 
+            this.keyEdit.Location = new System.Drawing.Point(9, 39);
+            this.keyEdit.Name = "keyEdit";
+            this.keyEdit.Size = new System.Drawing.Size(120, 25);
+            this.keyEdit.TabIndex = 10;
+            this.keyEdit.Text = "ffffffffffff";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "已知的Key";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(12, 192);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(202, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "解密时请保证设备良好散热！";
             // 
             // radioKey2B
             // 
@@ -195,6 +204,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkBoxColOnly);
             this.groupBox2.Controls.Add(this.radioKey2B);
             this.groupBox2.Controls.Add(this.radioKey2A);
             this.groupBox2.Controls.Add(this.label5);
@@ -215,13 +225,15 @@
             this.sector2.TabIndex = 11;
             this.sector2.Text = "1";
             // 
-            // sector1
+            // checkBoxColOnly
             // 
-            this.sector1.Location = new System.Drawing.Point(135, 39);
-            this.sector1.Name = "sector1";
-            this.sector1.Size = new System.Drawing.Size(46, 25);
-            this.sector1.TabIndex = 11;
-            this.sector1.Text = "0";
+            this.checkBoxColOnly.AutoSize = true;
+            this.checkBoxColOnly.Location = new System.Drawing.Point(9, 39);
+            this.checkBoxColOnly.Name = "checkBoxColOnly";
+            this.checkBoxColOnly.Size = new System.Drawing.Size(119, 19);
+            this.checkBoxColOnly.TabIndex = 17;
+            this.checkBoxColOnly.Text = "只采集不计算";
+            this.checkBoxColOnly.UseVisualStyleBackColor = true;
             // 
             // FormHardNes
             // 
@@ -269,5 +281,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox sector2;
         private System.Windows.Forms.TextBox sector1;
+        private System.Windows.Forms.CheckBox checkBoxColOnly;
     }
 }

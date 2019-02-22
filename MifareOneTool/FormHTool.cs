@@ -250,7 +250,9 @@ namespace MifareOneTool
                 list3.AddRange(kC);
                 list3.AddRange(kB);
                 byte[] block3 = list3.Take(16).ToArray();
+                byte lastUC=currentS50.Sectors[currentSector].Block[3][9];
                 currentS50.Sectors[currentSector].Block[3] = block3;
+                currentS50.Sectors[currentSector].Block[3][9] = lastUC;
                 for (int i = 0; i < 16; i++)
                 {
                     dataGridView1.Rows[i].Cells[0].Value = currentS50.Sectors[i].Info(i);
@@ -481,6 +483,11 @@ namespace MifareOneTool
             }
             richTextBox1.Clear();
             richTextBox1.Text = sb.ToString();
+        }
+
+        private void FormHTool_Load(object sender, EventArgs e)
+        {
+            新建ToolStripMenuItem_Click(sender, e);
         }
     }
 }

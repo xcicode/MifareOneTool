@@ -92,6 +92,7 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.checkBoxAutoSave = new System.Windows.Forms.CheckBox();
             this.checkBoxDefIsAdv = new System.Windows.Forms.CheckBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.numericCLIFontSize = new System.Windows.Forms.NumericUpDown();
@@ -109,7 +110,8 @@
             this.remoteVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.checkBoxAutoSave = new System.Windows.Forms.CheckBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.checkBoxHardLowCost = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -128,6 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericCLIFontSize)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -816,6 +819,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.groupBox11);
             this.tabPage3.Controls.Add(this.groupBox13);
             this.tabPage3.Controls.Add(this.groupBox12);
             this.tabPage3.Controls.Add(this.groupBox6);
@@ -836,6 +840,17 @@
             this.groupBox13.TabIndex = 13;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "偏好设置";
+            // 
+            // checkBoxAutoSave
+            // 
+            this.checkBoxAutoSave.AutoSize = true;
+            this.checkBoxAutoSave.Location = new System.Drawing.Point(9, 46);
+            this.checkBoxAutoSave.Name = "checkBoxAutoSave";
+            this.checkBoxAutoSave.Size = new System.Drawing.Size(173, 19);
+            this.checkBoxAutoSave.TabIndex = 1;
+            this.checkBoxAutoSave.Text = "自动以UID名保存文件";
+            this.checkBoxAutoSave.UseVisualStyleBackColor = true;
+            this.checkBoxAutoSave.CheckedChanged += new System.EventHandler(this.checkBoxAutoSave_CheckedChanged);
             // 
             // checkBoxDefIsAdv
             // 
@@ -1022,16 +1037,26 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // checkBoxAutoSave
+            // groupBox11
             // 
-            this.checkBoxAutoSave.AutoSize = true;
-            this.checkBoxAutoSave.Location = new System.Drawing.Point(9, 46);
-            this.checkBoxAutoSave.Name = "checkBoxAutoSave";
-            this.checkBoxAutoSave.Size = new System.Drawing.Size(173, 19);
-            this.checkBoxAutoSave.TabIndex = 1;
-            this.checkBoxAutoSave.Text = "自动以UID名保存文件";
-            this.checkBoxAutoSave.UseVisualStyleBackColor = true;
-            this.checkBoxAutoSave.CheckedChanged += new System.EventHandler(this.checkBoxAutoSave_CheckedChanged);
+            this.groupBox11.Controls.Add(this.checkBoxHardLowCost);
+            this.groupBox11.Location = new System.Drawing.Point(209, 89);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(200, 91);
+            this.groupBox11.TabIndex = 14;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "HardNested";
+            // 
+            // checkBoxHardLowCost
+            // 
+            this.checkBoxHardLowCost.AutoSize = true;
+            this.checkBoxHardLowCost.Location = new System.Drawing.Point(9, 24);
+            this.checkBoxHardLowCost.Name = "checkBoxHardLowCost";
+            this.checkBoxHardLowCost.Size = new System.Drawing.Size(104, 19);
+            this.checkBoxHardLowCost.TabIndex = 0;
+            this.checkBoxHardLowCost.Text = "单线程计算";
+            this.checkBoxHardLowCost.UseVisualStyleBackColor = true;
+            this.checkBoxHardLowCost.CheckedChanged += new System.EventHandler(this.checkBoxHardLowCost_CheckedChanged);
             // 
             // Form1
             // 
@@ -1072,6 +1097,8 @@
             this.groupBox6.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1159,6 +1186,8 @@
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.CheckBox checkBoxDefIsAdv;
         private System.Windows.Forms.CheckBox checkBoxAutoSave;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.CheckBox checkBoxHardLowCost;
     }
 }
 

@@ -22,11 +22,11 @@ namespace MifareOneTool
             int trailer_block = 0;
             if (sector < 32)
             {
-                trailer_block = sector*4 + 3;
+                trailer_block = sector * 4 + 3;
             }
             else
             {
-                trailer_block = 128+16*(sector-32) + 15;
+                trailer_block = 128 + 16 * (sector - 32) + 15;
             }
             return trailer_block;
         }
@@ -36,10 +36,24 @@ namespace MifareOneTool
             string arg = "";
             arg += keyEdit.Text.ToUpper() + " ";
             arg += getBlock(Convert.ToInt32(sector1.Text.Trim())).ToString() + " ";
-            arg += (radioKey1A.Checked ?"A":"B") + " ";
+            arg += (radioKey1A.Checked ? "A" : "B") + " ";
             arg += getBlock(Convert.ToInt32(sector2.Text.Trim())).ToString() + " ";
             arg += radioKey2A.Checked ? "A" : "B";
             return arg;
+        }
+
+        public string GetFileAfter()
+        {
+            string a = "_";
+            a += string.Format("{0:D3}", getBlock(Convert.ToInt32(sector2.Text.Trim())));
+            a += radioKey2A.Checked ? "A" : "B";
+            a += ".txt";
+            return a;
+        }
+
+        public bool collectOnly()
+        {
+            return checkBoxColOnly.Checked;
         }
 
         private void button2_Click(object sender, EventArgs e)
