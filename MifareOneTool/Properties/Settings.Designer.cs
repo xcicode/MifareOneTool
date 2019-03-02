@@ -127,5 +127,29 @@ namespace MifareOneTool.Properties {
                 this["HardLowCost"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ffffffffffff")]
+        public string LastTryKey {
+            get {
+                return ((string)(this["LastTryKey"]));
+            }
+            set {
+                this["LastTryKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool NewScan {
+            get {
+                return ((bool)(this["NewScan"]));
+            }
+            set {
+                this["NewScan"] = value;
+            }
+        }
     }
 }

@@ -44,8 +44,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.sector2 = new System.Windows.Forms.TextBox();
             this.checkBoxColOnly = new System.Windows.Forms.CheckBox();
+            this.sector2 = new System.Windows.Forms.TextBox();
+            this.checkBoxCollectAll = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +57,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 25);
             this.button1.TabIndex = 0;
-            this.button1.Text = "解密!";
+            this.button1.Text = "执行!";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -204,6 +205,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkBoxCollectAll);
             this.groupBox2.Controls.Add(this.checkBoxColOnly);
             this.groupBox2.Controls.Add(this.radioKey2B);
             this.groupBox2.Controls.Add(this.radioKey2A);
@@ -217,23 +219,34 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "解密设置";
             // 
+            // checkBoxColOnly
+            // 
+            this.checkBoxColOnly.AutoSize = true;
+            this.checkBoxColOnly.Location = new System.Drawing.Point(7, 24);
+            this.checkBoxColOnly.Name = "checkBoxColOnly";
+            this.checkBoxColOnly.Size = new System.Drawing.Size(119, 19);
+            this.checkBoxColOnly.TabIndex = 17;
+            this.checkBoxColOnly.Text = "只采集不计算";
+            this.checkBoxColOnly.UseVisualStyleBackColor = true;
+            // 
             // sector2
             // 
             this.sector2.Location = new System.Drawing.Point(135, 39);
             this.sector2.Name = "sector2";
             this.sector2.Size = new System.Drawing.Size(46, 25);
             this.sector2.TabIndex = 11;
-            this.sector2.Text = "1";
             // 
-            // checkBoxColOnly
+            // checkBoxCollectAll
             // 
-            this.checkBoxColOnly.AutoSize = true;
-            this.checkBoxColOnly.Location = new System.Drawing.Point(9, 39);
-            this.checkBoxColOnly.Name = "checkBoxColOnly";
-            this.checkBoxColOnly.Size = new System.Drawing.Size(119, 19);
-            this.checkBoxColOnly.TabIndex = 17;
-            this.checkBoxColOnly.Text = "只采集不计算";
-            this.checkBoxColOnly.UseVisualStyleBackColor = true;
+            this.checkBoxCollectAll.AutoSize = true;
+            this.checkBoxCollectAll.Location = new System.Drawing.Point(7, 49);
+            this.checkBoxCollectAll.Name = "checkBoxCollectAll";
+            this.checkBoxCollectAll.Size = new System.Drawing.Size(89, 19);
+            this.checkBoxCollectAll.TabIndex = 18;
+            this.checkBoxCollectAll.Text = "全卡采集";
+            this.checkBoxCollectAll.UseVisualStyleBackColor = true;
+            this.checkBoxCollectAll.Visible = false;
+            this.checkBoxCollectAll.CheckedChanged += new System.EventHandler(this.checkBoxCollectAll_CheckedChanged);
             // 
             // FormHardNes
             // 
@@ -282,5 +295,6 @@
         private System.Windows.Forms.TextBox sector2;
         private System.Windows.Forms.TextBox sector1;
         private System.Windows.Forms.CheckBox checkBoxColOnly;
+        private System.Windows.Forms.CheckBox checkBoxCollectAll;
     }
 }

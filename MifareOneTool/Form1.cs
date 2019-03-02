@@ -31,6 +31,8 @@ namespace MifareOneTool
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            if (Properties.Settings.Default.NewScan)
+            { File.Delete("libnfc.conf"); }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(list_dev);
             bgw.WorkerReportsProgress = true;
@@ -38,15 +40,25 @@ namespace MifareOneTool
             bgw.RunWorkerAsync();
         }
 
+        void writeConfig(string devstr, bool autoscan = true, bool intscan = false)
+        {
+            string cfg = "allow_autoscan = " + (autoscan ? "true" : "false") + "\n";
+            cfg += "allow_intrusive_scan = " + (intscan ? "true" : "false") + "\n";
+            cfg += "device.name = \"NFC-Device\"\n";
+            cfg += "device.connstring = \"" + devstr + "\"";
+            File.WriteAllText("libnfc.conf", cfg);
+        }
+
         void default_rpt(object sender, ProgressChangedEventArgs e)
         {
-            logAppend((string)e.UserState);
             if (e.ProgressPercentage == 100)
             {
+                logAppend((string)e.UserState);
                 Text = "MifareOne Tool - 运行完毕";
             }
             else if (e.ProgressPercentage == 101)
             {
+                logAppend((string)e.UserState);
                 if (lastuid != "")
                 {
                     if (File.Exists(omfd) && new FileInfo(omfd).Length > 1)
@@ -74,7 +86,7 @@ namespace MifareOneTool
                     ofd.DefaultExt = ".mfd";
                     ofd.Title = "请选择MFD文件保存位置及文件名";
                     ofd.OverwritePrompt = true;
-                    ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
+                    ofd.Filter = "MFD文件|*.mfd;*.dump";
                     if (File.Exists(omfd) && new FileInfo(omfd).Length > 1)
                     {
                         if (ofd.ShowDialog() == DialogResult.OK)
@@ -103,18 +115,29 @@ namespace MifareOneTool
             }
             else if (e.ProgressPercentage == 102)
             {
-                string noncefile = lastuid;
-                lastuid = "";
-                if (File.Exists(noncefile))
-                {
-                    logAppend("##Nonce收集完毕-" + noncefile + "##");
-                    logAppend("您可以在本地计算，或是上传到云计算服务节点进行计算。");
-                }
-                else
-                {
-                    logAppend("##Nonce收集出错##");
-                }
+                logAppend((string)e.UserState);
+                logAppend("##Nonce收集完毕##");
+                logAppend("您可以在本地计算，或是上传到云计算服务节点进行计算。");
+
                 Text = "MifareOne Tool - 运行完毕";
+            }
+            else if (e.ProgressPercentage == 103)
+            {
+                logAppend("识别了以下设备：");
+                List<string> myReaders = (List<string>)(e.UserState);
+                foreach (string reader in myReaders)
+                {
+                    logAppend(reader);
+                }
+                if (myReaders.Count > 0)
+                {
+                    logAppend("将自动选择首个设备：" + myReaders.First());
+                    writeConfig(myReaders.First());
+                }
+            }
+            else
+            {
+                logAppend((string)e.UserState);
             }
             Application.DoEvents();
 
@@ -137,7 +160,22 @@ namespace MifareOneTool
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); running = true;
-            process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
+            List<string> myReader = new List<string>();
+            process.OutputDataReceived += (s, _e) =>
+            {
+                b.ReportProgress(0, _e.Data);
+                if (Properties.Settings.Default.NewScan)
+                {
+                    if (!string.IsNullOrEmpty(_e.Data))
+                    {
+                        Match m = Regex.Match(_e.Data, "pn532_uart:COM\\d:115200");
+                        if (m.Success)
+                        {
+                            myReader.Add(m.Value);
+                        }
+                    }
+                }
+            };
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
             process.BeginOutputReadLine();
@@ -145,6 +183,7 @@ namespace MifareOneTool
             process.WaitForExit();
             lprocess = false;
             running = false;
+            b.ReportProgress(103, myReader);
             b.ReportProgress(100, "##运行完毕##");
         }
 
@@ -163,10 +202,12 @@ namespace MifareOneTool
             buttonCLIColor.ForeColor = Properties.Settings.Default.MainCLIColor;
             checkBoxDefIsAdv.Checked = Properties.Settings.Default.DefIsAdv;
             checkBoxHardLowCost.Checked = Properties.Settings.Default.HardLowCost;
+            checkBoxNewScan.Checked = Properties.Settings.Default.NewScan;
             if (Properties.Settings.Default.DefIsAdv)
             {
                 tabControl1.SelectedIndex = 1;
             }
+            File.Delete("libnfc.conf");
         }
 
         private void buttonScanCard_Click(object sender, EventArgs e)
@@ -385,7 +426,7 @@ namespace MifareOneTool
             string rmfd = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
+            ofd.Filter = "MFD文件|*.mfd;*.dump";
             ofd.Title = "请选择需要写入的MFD文件";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -458,9 +499,10 @@ namespace MifareOneTool
             string key = "";
             if (Control.ModifierKeys == Keys.Control)
             {
-                string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", "FFFFFFFFFFFF", -1, -1).Trim().Split(',');
+                string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", Properties.Settings.Default.LastTryKey, -1, -1).Trim().Split(',');
                 if (ks.Length > 0)
                 {
+                    Properties.Settings.Default.LastTryKey = string.Join(",", ks);
                     foreach (string k in ks)
                     {
                         string pat = "[0-9A-Fa-f]{12}";
@@ -650,7 +692,7 @@ namespace MifareOneTool
             string rmfd = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
+            ofd.Filter = "MFD文件|*.mfd;*.dump";
             ofd.Title = "请选择需要写入的MFD文件";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -792,7 +834,7 @@ namespace MifareOneTool
             string rmfd = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
+            ofd.Filter = "MFD文件|*.mfd;*.dump";
             ofd.Title = "请选择需要写入的MFD文件";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -1061,18 +1103,35 @@ namespace MifareOneTool
         private void buttonCheckEncrypt_Click(object sender, EventArgs e)
         {//其实这个mfdetect就是个mfoc阉割版。。只检测不破解而已，所以-f -k什么的可以加上，测试自己的key
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            string key = "";
+            if (Control.ModifierKeys == Keys.Control)
+            {
+                string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", Properties.Settings.Default.LastTryKey, -1, -1).Trim().Split(',');
+                if (ks.Length > 0)
+                {
+                    Properties.Settings.Default.LastTryKey = string.Join(",", ks);
+                    foreach (string k in ks)
+                    {
+                        string pat = "[0-9A-Fa-f]{12}";
+                        if (Regex.IsMatch(k, pat))
+                        {
+                            key += "-k " + k.Substring(0, 12) + " ";
+                        }
+                    }
+                }
+            }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(MfDetect);
             bgw.WorkerReportsProgress = true;
             bgw.ProgressChanged += new ProgressChangedEventHandler(default_rpt);
-            bgw.RunWorkerAsync();
+            bgw.RunWorkerAsync(key);
         }
 
         void MfDetect(object sender, DoWorkEventArgs e)
         {
             if (lprocess) { return; }
             ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/mfdetect.exe");
-            psi.Arguments = "-O dummy.tmp";
+            psi.Arguments = (string)(e.Argument) + "-O dummy.tmp";
             psi.CreateNoWindow = true;
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
@@ -1125,9 +1184,10 @@ namespace MifareOneTool
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "Mfoc.tmp";
             string key = "";
-            string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", "FFFFFFFFFFFF", -1, -1).Trim().Split(',');
+            string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", Properties.Settings.Default.LastTryKey, -1, -1).Trim().Split(',');
             if (ks.Length > 0)
             {
+                Properties.Settings.Default.LastTryKey = string.Join(",", ks);
                 foreach (string k in ks)
                 {
                     string pat = "[0-9A-Fa-f]{12}";
@@ -1244,7 +1304,7 @@ namespace MifareOneTool
                 BackgroundWorker bgw = new BackgroundWorker();
                 if (fhn.collectOnly())
                 {
-                    lastuid = "0x" + GetUID() + fhn.GetFileAfter();
+                    //lastuid = "0x" + GetUID() + fhn.GetFileAfter();
                     bgw.DoWork += new DoWorkEventHandler(CollectNonce);
                 }
                 else
@@ -1364,6 +1424,11 @@ namespace MifareOneTool
         private void checkBoxHardLowCost_CheckedChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.HardLowCost = checkBoxHardLowCost.Checked;
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.NewScan = checkBoxNewScan.Checked;
         }
     }
 }

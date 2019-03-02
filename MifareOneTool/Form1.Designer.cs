@@ -69,7 +69,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonECheckEncrypt = new System.Windows.Forms.Button();
-            this.buttonEAdv = new System.Windows.Forms.Button();
             this.buttoEScanCard = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.buttonECuidWrite = new System.Windows.Forms.Button();
@@ -91,6 +90,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.checkBoxHardLowCost = new System.Windows.Forms.CheckBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.checkBoxAutoSave = new System.Windows.Forms.CheckBox();
             this.checkBoxDefIsAdv = new System.Windows.Forms.CheckBox();
@@ -110,8 +111,9 @@
             this.remoteVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.checkBoxHardLowCost = new System.Windows.Forms.CheckBox();
+            this.buttonEStop = new System.Windows.Forms.Button();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.checkBoxNewScan = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -125,12 +127,13 @@
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericCLIFontSize)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.groupBox11.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -494,6 +497,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.buttonEStop);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label6);
@@ -501,7 +505,6 @@
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.buttonECheckEncrypt);
-            this.tabPage2.Controls.Add(this.buttonEAdv);
             this.tabPage2.Controls.Add(this.buttoEScanCard);
             this.tabPage2.Controls.Add(this.groupBox7);
             this.tabPage2.Controls.Add(this.buttonEscan);
@@ -580,16 +583,6 @@
             this.buttonECheckEncrypt.Text = "检测加密";
             this.buttonECheckEncrypt.UseVisualStyleBackColor = true;
             this.buttonECheckEncrypt.Click += new System.EventHandler(this.buttonECheckEncrypt_Click);
-            // 
-            // buttonEAdv
-            // 
-            this.buttonEAdv.Location = new System.Drawing.Point(574, 6);
-            this.buttonEAdv.Name = "buttonEAdv";
-            this.buttonEAdv.Size = new System.Drawing.Size(177, 40);
-            this.buttonEAdv.TabIndex = 4;
-            this.buttonEAdv.Text = "点此进入高级模式>>>";
-            this.buttonEAdv.UseVisualStyleBackColor = true;
-            this.buttonEAdv.Click += new System.EventHandler(this.buttonEAdv_Click);
             // 
             // buttoEScanCard
             // 
@@ -819,6 +812,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.groupBox14);
             this.tabPage3.Controls.Add(this.groupBox11);
             this.tabPage3.Controls.Add(this.groupBox13);
             this.tabPage3.Controls.Add(this.groupBox12);
@@ -829,6 +823,28 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "软件设置";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.checkBoxHardLowCost);
+            this.groupBox11.Location = new System.Drawing.Point(209, 89);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(200, 91);
+            this.groupBox11.TabIndex = 14;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "HardNested";
+            // 
+            // checkBoxHardLowCost
+            // 
+            this.checkBoxHardLowCost.AutoSize = true;
+            this.checkBoxHardLowCost.Location = new System.Drawing.Point(9, 24);
+            this.checkBoxHardLowCost.Name = "checkBoxHardLowCost";
+            this.checkBoxHardLowCost.Size = new System.Drawing.Size(104, 19);
+            this.checkBoxHardLowCost.TabIndex = 0;
+            this.checkBoxHardLowCost.Text = "单线程计算";
+            this.checkBoxHardLowCost.UseVisualStyleBackColor = true;
+            this.checkBoxHardLowCost.CheckedChanged += new System.EventHandler(this.checkBoxHardLowCost_CheckedChanged);
             // 
             // groupBox13
             // 
@@ -1037,26 +1053,37 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // groupBox11
+            // buttonEStop
             // 
-            this.groupBox11.Controls.Add(this.checkBoxHardLowCost);
-            this.groupBox11.Location = new System.Drawing.Point(209, 89);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(200, 91);
-            this.groupBox11.TabIndex = 14;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "HardNested";
+            this.buttonEStop.Font = new System.Drawing.Font("宋体", 11F);
+            this.buttonEStop.Location = new System.Drawing.Point(662, 143);
+            this.buttonEStop.Name = "buttonEStop";
+            this.buttonEStop.Size = new System.Drawing.Size(89, 31);
+            this.buttonEStop.TabIndex = 13;
+            this.buttonEStop.Text = "停止";
+            this.buttonEStop.UseVisualStyleBackColor = true;
             // 
-            // checkBoxHardLowCost
+            // groupBox14
             // 
-            this.checkBoxHardLowCost.AutoSize = true;
-            this.checkBoxHardLowCost.Location = new System.Drawing.Point(9, 24);
-            this.checkBoxHardLowCost.Name = "checkBoxHardLowCost";
-            this.checkBoxHardLowCost.Size = new System.Drawing.Size(104, 19);
-            this.checkBoxHardLowCost.TabIndex = 0;
-            this.checkBoxHardLowCost.Text = "单线程计算";
-            this.checkBoxHardLowCost.UseVisualStyleBackColor = true;
-            this.checkBoxHardLowCost.CheckedChanged += new System.EventHandler(this.checkBoxHardLowCost_CheckedChanged);
+            this.groupBox14.Controls.Add(this.checkBoxNewScan);
+            this.groupBox14.Location = new System.Drawing.Point(415, 3);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(150, 177);
+            this.groupBox14.TabIndex = 15;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "优化设置";
+            // 
+            // checkBoxNewScan
+            // 
+            this.checkBoxNewScan.AutoSize = true;
+            this.checkBoxNewScan.Checked = true;
+            this.checkBoxNewScan.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxNewScan.Location = new System.Drawing.Point(6, 24);
+            this.checkBoxNewScan.Name = "checkBoxNewScan";
+            this.checkBoxNewScan.Size = new System.Drawing.Size(134, 19);
+            this.checkBoxNewScan.TabIndex = 1;
+            this.checkBoxNewScan.Text = "减少找设备延迟";
+            this.checkBoxNewScan.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1088,6 +1115,8 @@
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.groupBox12.ResumeLayout(false);
@@ -1097,8 +1126,8 @@
             this.groupBox6.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1148,7 +1177,6 @@
         private System.Windows.Forms.Button buttonEUIDWrite;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button buttonEMfWrite;
-        private System.Windows.Forms.Button buttonEAdv;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
         private System.Windows.Forms.ToolStripStatusLabel runTimeLabel;
@@ -1188,6 +1216,9 @@
         private System.Windows.Forms.CheckBox checkBoxAutoSave;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.CheckBox checkBoxHardLowCost;
+        private System.Windows.Forms.Button buttonEStop;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.CheckBox checkBoxNewScan;
     }
 }
 

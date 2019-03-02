@@ -29,5 +29,11 @@
     <Setting Name="HardLowCost" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="LastTryKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ffffffffffff</Value>
+    </Setting>
+    <Setting Name="NewScan" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
