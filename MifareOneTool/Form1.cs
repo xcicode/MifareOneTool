@@ -1430,5 +1430,10 @@ namespace MifareOneTool
         {
             Properties.Settings.Default.NewScan = checkBoxNewScan.Checked;
         }
+
+        private void buttonEStop_Click(object sender, EventArgs e)
+        {
+            buttonKill_Click(sender, e);
+        }
     }
 }

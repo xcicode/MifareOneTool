@@ -1062,6 +1062,7 @@
             this.buttonEStop.TabIndex = 13;
             this.buttonEStop.Text = "停止";
             this.buttonEStop.UseVisualStyleBackColor = true;
+            this.buttonEStop.Click += new System.EventHandler(this.buttonEStop_Click);
             // 
             // groupBox14
             // 
