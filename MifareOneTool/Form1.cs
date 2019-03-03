@@ -757,6 +757,7 @@ namespace MifareOneTool
                 {
                     process.Kill();
                     Form1.ActiveForm.Text = "MifareOne Tool - 已终止";
+                    logAppend("##程序已被强制停止##");
                 }
             }
         }
