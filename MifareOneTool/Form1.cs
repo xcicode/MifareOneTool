@@ -83,10 +83,10 @@ namespace MifareOneTool
                 {
                     SaveFileDialog ofd = new SaveFileDialog();
                     ofd.AddExtension = true;
-                    ofd.DefaultExt = ".mfd";
+                    //ofd.DefaultExt = ".mfd";
                     ofd.Title = "请选择MFD文件保存位置及文件名";
                     ofd.OverwritePrompt = true;
-                    ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
+                    ofd.Filter = "DUMP文件|*.dump|MFD文件|*.mfd";
                     if (File.Exists(omfd) && new FileInfo(omfd).Length > 1)
                     {
                         if (ofd.ShowDialog() == DialogResult.OK)
