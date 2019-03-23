@@ -212,6 +212,7 @@ namespace MifareOneTool
                 tabControl1.SelectedIndex = 1;
             }
             //File.Delete("libnfc.conf");//用户COM口一般不常变化
+            checkBoxMultiDev.Checked = Properties.Settings.Default.MultiMode;
             if (Properties.Settings.Default.MultiMode)
             {
                 if (File.Exists("libnfc.conf"))
