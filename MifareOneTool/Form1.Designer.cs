@@ -62,6 +62,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.buttonEStop = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -90,11 +91,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.checkBoxHardLowCost = new System.Windows.Forms.CheckBox();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.SetDeviceCombo = new System.Windows.Forms.ComboBox();
+            this.checkBoxNewScan = new System.Windows.Forms.CheckBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.checkBoxAutoSave = new System.Windows.Forms.CheckBox();
             this.checkBoxDefIsAdv = new System.Windows.Forms.CheckBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.checkBoxHardLowCost = new System.Windows.Forms.CheckBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.numericCLIFontSize = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
@@ -108,12 +113,10 @@
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.runTimeLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.localVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.remoteVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.buttonEStop = new System.Windows.Forms.Button();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.checkBoxNewScan = new System.Windows.Forms.CheckBox();
+            this.checkBoxMultiDev = new System.Windows.Forms.CheckBox();
+            this.curDevice = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -127,13 +130,13 @@
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.groupBox11.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             this.groupBox13.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericCLIFontSize)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.groupBox14.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -141,9 +144,11 @@
             this.groupBox1.Controls.Add(this.buttonCLI);
             this.groupBox1.Controls.Add(this.buttonScanCard);
             this.groupBox1.Controls.Add(this.buttonListDev);
-            this.groupBox1.Location = new System.Drawing.Point(3, 6);
+            this.groupBox1.Location = new System.Drawing.Point(2, 5);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 83);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(150, 66);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "设备控制";
@@ -151,9 +156,10 @@
             // buttonCLI
             // 
             this.buttonCLI.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonCLI.Location = new System.Drawing.Point(102, 24);
+            this.buttonCLI.Location = new System.Drawing.Point(76, 19);
+            this.buttonCLI.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCLI.Name = "buttonCLI";
-            this.buttonCLI.Size = new System.Drawing.Size(90, 25);
+            this.buttonCLI.Size = new System.Drawing.Size(68, 20);
             this.buttonCLI.TabIndex = 11;
             this.buttonCLI.Text = "手动CLI";
             this.toolTipHelp.SetToolTip(this.buttonCLI, "打开NFC命令行以进行高级操作。");
@@ -163,9 +169,10 @@
             // buttonScanCard
             // 
             this.buttonScanCard.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonScanCard.Location = new System.Drawing.Point(4, 53);
+            this.buttonScanCard.Location = new System.Drawing.Point(3, 42);
+            this.buttonScanCard.Margin = new System.Windows.Forms.Padding(2);
             this.buttonScanCard.Name = "buttonScanCard";
-            this.buttonScanCard.Size = new System.Drawing.Size(90, 25);
+            this.buttonScanCard.Size = new System.Drawing.Size(68, 20);
             this.buttonScanCard.TabIndex = 1;
             this.buttonScanCard.Text = "手动扫描";
             this.toolTipHelp.SetToolTip(this.buttonScanCard, "扫描有效卡片。");
@@ -175,9 +182,10 @@
             // buttonListDev
             // 
             this.buttonListDev.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonListDev.Location = new System.Drawing.Point(4, 24);
+            this.buttonListDev.Location = new System.Drawing.Point(3, 19);
+            this.buttonListDev.Margin = new System.Windows.Forms.Padding(2);
             this.buttonListDev.Name = "buttonListDev";
-            this.buttonListDev.Size = new System.Drawing.Size(90, 25);
+            this.buttonListDev.Size = new System.Drawing.Size(68, 20);
             this.buttonListDev.TabIndex = 0;
             this.buttonListDev.Text = "检测设备";
             this.toolTipHelp.SetToolTip(this.buttonListDev, "扫描已连接的NFC设备\r\n(目前支持PN532、ACR122U)");
@@ -188,19 +196,21 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.Black;
             this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 219);
+            this.richTextBox1.Location = new System.Drawing.Point(0, 175);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(767, 390);
+            this.richTextBox1.Size = new System.Drawing.Size(576, 313);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "Hello,cardman!\n建议点击\"检测\"以加快后续运行速度\n";
             // 
             // buttonMfRead
             // 
             this.buttonMfRead.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonMfRead.Location = new System.Drawing.Point(6, 24);
+            this.buttonMfRead.Location = new System.Drawing.Point(4, 19);
+            this.buttonMfRead.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMfRead.Name = "buttonMfRead";
-            this.buttonMfRead.Size = new System.Drawing.Size(50, 25);
+            this.buttonMfRead.Size = new System.Drawing.Size(38, 20);
             this.buttonMfRead.TabIndex = 3;
             this.buttonMfRead.Text = "读M1";
             this.toolTipHelp.SetToolTip(this.buttonMfRead, "读取普通M1卡片（可能需要加载密钥文件）");
@@ -213,9 +223,11 @@
             this.groupBox2.Controls.Add(this.buttonMfWrite);
             this.groupBox2.Controls.Add(this.buttonSelectKey);
             this.groupBox2.Controls.Add(this.buttonMfRead);
-            this.groupBox2.Location = new System.Drawing.Point(209, 6);
+            this.groupBox2.Location = new System.Drawing.Point(157, 5);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(169, 83);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(127, 66);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "普通卡操作";
@@ -223,9 +235,10 @@
             // buttonMfFormat
             // 
             this.buttonMfFormat.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonMfFormat.Location = new System.Drawing.Point(112, 24);
+            this.buttonMfFormat.Location = new System.Drawing.Point(84, 19);
+            this.buttonMfFormat.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMfFormat.Name = "buttonMfFormat";
-            this.buttonMfFormat.Size = new System.Drawing.Size(50, 25);
+            this.buttonMfFormat.Size = new System.Drawing.Size(38, 20);
             this.buttonMfFormat.TabIndex = 6;
             this.buttonMfFormat.Text = "清M1";
             this.toolTipHelp.SetToolTip(this.buttonMfFormat, "格式化普通M1卡（必须加载密钥文件）");
@@ -235,9 +248,10 @@
             // buttonMfWrite
             // 
             this.buttonMfWrite.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonMfWrite.Location = new System.Drawing.Point(59, 24);
+            this.buttonMfWrite.Location = new System.Drawing.Point(44, 19);
+            this.buttonMfWrite.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMfWrite.Name = "buttonMfWrite";
-            this.buttonMfWrite.Size = new System.Drawing.Size(50, 25);
+            this.buttonMfWrite.Size = new System.Drawing.Size(38, 20);
             this.buttonMfWrite.TabIndex = 5;
             this.buttonMfWrite.Text = "写M1";
             this.toolTipHelp.SetToolTip(this.buttonMfWrite, "写入普通M1卡（可能需要加载密钥文件）");
@@ -247,9 +261,10 @@
             // buttonSelectKey
             // 
             this.buttonSelectKey.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonSelectKey.Location = new System.Drawing.Point(6, 53);
+            this.buttonSelectKey.Location = new System.Drawing.Point(4, 42);
+            this.buttonSelectKey.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSelectKey.Name = "buttonSelectKey";
-            this.buttonSelectKey.Size = new System.Drawing.Size(156, 25);
+            this.buttonSelectKey.Size = new System.Drawing.Size(117, 20);
             this.buttonSelectKey.TabIndex = 4;
             this.buttonSelectKey.Text = "选择key.mfd";
             this.toolTipHelp.SetToolTip(this.buttonSelectKey, "加载含有正确读写卡密钥及正确控制位的MFD文件。");
@@ -259,9 +274,10 @@
             // buttonBmfWrite
             // 
             this.buttonBmfWrite.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonBmfWrite.Location = new System.Drawing.Point(6, 53);
+            this.buttonBmfWrite.Location = new System.Drawing.Point(4, 42);
+            this.buttonBmfWrite.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBmfWrite.Name = "buttonBmfWrite";
-            this.buttonBmfWrite.Size = new System.Drawing.Size(75, 25);
+            this.buttonBmfWrite.Size = new System.Drawing.Size(56, 20);
             this.buttonBmfWrite.TabIndex = 10;
             this.buttonBmfWrite.Text = "UID写";
             this.toolTipHelp.SetToolTip(this.buttonBmfWrite, "写入UID卡片。");
@@ -271,9 +287,10 @@
             // buttonBmfRead
             // 
             this.buttonBmfRead.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonBmfRead.Location = new System.Drawing.Point(6, 24);
+            this.buttonBmfRead.Location = new System.Drawing.Point(4, 19);
+            this.buttonBmfRead.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBmfRead.Name = "buttonBmfRead";
-            this.buttonBmfRead.Size = new System.Drawing.Size(75, 25);
+            this.buttonBmfRead.Size = new System.Drawing.Size(56, 20);
             this.buttonBmfRead.TabIndex = 9;
             this.buttonBmfRead.Text = "UID读";
             this.toolTipHelp.SetToolTip(this.buttonBmfRead, "读取UID卡片。");
@@ -283,9 +300,10 @@
             // buttonMfoc
             // 
             this.buttonMfoc.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonMfoc.Location = new System.Drawing.Point(6, 22);
+            this.buttonMfoc.Location = new System.Drawing.Point(4, 18);
+            this.buttonMfoc.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMfoc.Name = "buttonMfoc";
-            this.buttonMfoc.Size = new System.Drawing.Size(75, 25);
+            this.buttonMfoc.Size = new System.Drawing.Size(56, 20);
             this.buttonMfoc.TabIndex = 8;
             this.buttonMfoc.Text = "MFOC读";
             this.toolTipHelp.SetToolTip(this.buttonMfoc, "对半加密卡片进行Nested破解。\r\n按住Ctrl点击该按钮可添加已知密钥。");
@@ -295,9 +313,10 @@
             // buttonUidWrite
             // 
             this.buttonUidWrite.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonUidWrite.Location = new System.Drawing.Point(84, 53);
+            this.buttonUidWrite.Location = new System.Drawing.Point(63, 42);
+            this.buttonUidWrite.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUidWrite.Name = "buttonUidWrite";
-            this.buttonUidWrite.Size = new System.Drawing.Size(75, 25);
+            this.buttonUidWrite.Size = new System.Drawing.Size(56, 20);
             this.buttonUidWrite.TabIndex = 5;
             this.buttonUidWrite.Text = "UID写号";
             this.toolTipHelp.SetToolTip(this.buttonUidWrite, "向UID卡片写入置顶卡号，厂商设置为复旦。");
@@ -307,9 +326,10 @@
             // buttonUidFormat
             // 
             this.buttonUidFormat.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonUidFormat.Location = new System.Drawing.Point(162, 24);
+            this.buttonUidFormat.Location = new System.Drawing.Point(122, 19);
+            this.buttonUidFormat.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUidFormat.Name = "buttonUidFormat";
-            this.buttonUidFormat.Size = new System.Drawing.Size(75, 25);
+            this.buttonUidFormat.Size = new System.Drawing.Size(56, 20);
             this.buttonUidFormat.TabIndex = 7;
             this.buttonUidFormat.Text = "UID全格";
             this.toolTipHelp.SetToolTip(this.buttonUidFormat, "将全卡清空并重新初始化。\r\n可用于ACbit损坏/KEY全部被改等情况的急救。");
@@ -319,9 +339,10 @@
             // buttonUidReset
             // 
             this.buttonUidReset.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonUidReset.Location = new System.Drawing.Point(84, 24);
+            this.buttonUidReset.Location = new System.Drawing.Point(63, 19);
+            this.buttonUidReset.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUidReset.Name = "buttonUidReset";
-            this.buttonUidReset.Size = new System.Drawing.Size(75, 25);
+            this.buttonUidReset.Size = new System.Drawing.Size(56, 20);
             this.buttonUidReset.TabIndex = 6;
             this.buttonUidReset.Text = "UID重置";
             this.toolTipHelp.SetToolTip(this.buttonUidReset, "重置UID卡片0块，UID随机，厂商号为复旦。");
@@ -333,9 +354,11 @@
             this.groupBox3.Controls.Add(this.buttonKill);
             this.groupBox3.Controls.Add(this.buttonConSave);
             this.groupBox3.Controls.Add(this.buttonConClr);
-            this.groupBox3.Location = new System.Drawing.Point(587, 94);
+            this.groupBox3.Location = new System.Drawing.Point(440, 75);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(169, 84);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Size = new System.Drawing.Size(127, 67);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "运行/终端";
@@ -343,9 +366,10 @@
             // buttonKill
             // 
             this.buttonKill.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonKill.Location = new System.Drawing.Point(6, 52);
+            this.buttonKill.Location = new System.Drawing.Point(4, 42);
+            this.buttonKill.Margin = new System.Windows.Forms.Padding(2);
             this.buttonKill.Name = "buttonKill";
-            this.buttonKill.Size = new System.Drawing.Size(75, 25);
+            this.buttonKill.Size = new System.Drawing.Size(56, 20);
             this.buttonKill.TabIndex = 2;
             this.buttonKill.Text = "停运行";
             this.buttonKill.UseVisualStyleBackColor = true;
@@ -354,9 +378,10 @@
             // buttonConSave
             // 
             this.buttonConSave.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonConSave.Location = new System.Drawing.Point(87, 22);
+            this.buttonConSave.Location = new System.Drawing.Point(65, 18);
+            this.buttonConSave.Margin = new System.Windows.Forms.Padding(2);
             this.buttonConSave.Name = "buttonConSave";
-            this.buttonConSave.Size = new System.Drawing.Size(75, 25);
+            this.buttonConSave.Size = new System.Drawing.Size(56, 20);
             this.buttonConSave.TabIndex = 1;
             this.buttonConSave.Text = "存日志";
             this.buttonConSave.UseVisualStyleBackColor = true;
@@ -365,9 +390,10 @@
             // buttonConClr
             // 
             this.buttonConClr.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonConClr.Location = new System.Drawing.Point(6, 22);
+            this.buttonConClr.Location = new System.Drawing.Point(4, 18);
+            this.buttonConClr.Margin = new System.Windows.Forms.Padding(2);
             this.buttonConClr.Name = "buttonConClr";
-            this.buttonConClr.Size = new System.Drawing.Size(75, 25);
+            this.buttonConClr.Size = new System.Drawing.Size(56, 20);
             this.buttonConClr.TabIndex = 0;
             this.buttonConClr.Text = "清终端";
             this.buttonConClr.UseVisualStyleBackColor = true;
@@ -376,9 +402,10 @@
             // buttonMfcuk
             // 
             this.buttonMfcuk.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonMfcuk.Location = new System.Drawing.Point(178, 22);
+            this.buttonMfcuk.Location = new System.Drawing.Point(134, 18);
+            this.buttonMfcuk.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMfcuk.Name = "buttonMfcuk";
-            this.buttonMfcuk.Size = new System.Drawing.Size(104, 25);
+            this.buttonMfcuk.Size = new System.Drawing.Size(78, 20);
             this.buttonMfcuk.TabIndex = 3;
             this.buttonMfcuk.Text = "全加密爆破";
             this.toolTipHelp.SetToolTip(this.buttonMfcuk, "对卡片执行Darkside工具（不一定成功）");
@@ -388,9 +415,10 @@
             // buttonHexTool
             // 
             this.buttonHexTool.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonHexTool.Location = new System.Drawing.Point(4, 52);
+            this.buttonHexTool.Location = new System.Drawing.Point(3, 42);
+            this.buttonHexTool.Margin = new System.Windows.Forms.Padding(2);
             this.buttonHexTool.Name = "buttonHexTool";
-            this.buttonHexTool.Size = new System.Drawing.Size(110, 25);
+            this.buttonHexTool.Size = new System.Drawing.Size(82, 20);
             this.buttonHexTool.TabIndex = 1;
             this.buttonHexTool.Text = "Hex编辑器";
             this.buttonHexTool.UseVisualStyleBackColor = true;
@@ -399,9 +427,10 @@
             // buttonDiffTool
             // 
             this.buttonDiffTool.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonDiffTool.Location = new System.Drawing.Point(4, 22);
+            this.buttonDiffTool.Location = new System.Drawing.Point(3, 18);
+            this.buttonDiffTool.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDiffTool.Name = "buttonDiffTool";
-            this.buttonDiffTool.Size = new System.Drawing.Size(110, 25);
+            this.buttonDiffTool.Size = new System.Drawing.Size(82, 20);
             this.buttonDiffTool.TabIndex = 0;
             this.buttonDiffTool.Text = "差异比较";
             this.buttonDiffTool.UseVisualStyleBackColor = true;
@@ -418,9 +447,10 @@
             // buttonCheckEncrypt
             // 
             this.buttonCheckEncrypt.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonCheckEncrypt.Location = new System.Drawing.Point(6, 51);
+            this.buttonCheckEncrypt.Location = new System.Drawing.Point(4, 41);
+            this.buttonCheckEncrypt.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCheckEncrypt.Name = "buttonCheckEncrypt";
-            this.buttonCheckEncrypt.Size = new System.Drawing.Size(75, 25);
+            this.buttonCheckEncrypt.Size = new System.Drawing.Size(56, 20);
             this.buttonCheckEncrypt.TabIndex = 13;
             this.buttonCheckEncrypt.Text = "检加密";
             this.toolTipHelp.SetToolTip(this.buttonCheckEncrypt, "检测卡片加密情况。");
@@ -430,9 +460,10 @@
             // buttonLockUfuid
             // 
             this.buttonLockUfuid.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonLockUfuid.Location = new System.Drawing.Point(162, 53);
+            this.buttonLockUfuid.Location = new System.Drawing.Point(122, 42);
+            this.buttonLockUfuid.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLockUfuid.Name = "buttonLockUfuid";
-            this.buttonLockUfuid.Size = new System.Drawing.Size(75, 25);
+            this.buttonLockUfuid.Size = new System.Drawing.Size(56, 20);
             this.buttonLockUfuid.TabIndex = 5;
             this.buttonLockUfuid.Text = "锁Ufuid";
             this.toolTipHelp.SetToolTip(this.buttonLockUfuid, "锁死UFUID卡片0块数据（测试中）");
@@ -442,9 +473,10 @@
             // buttonCmfWrite
             // 
             this.buttonCmfWrite.Font = new System.Drawing.Font("宋体", 8.5F);
-            this.buttonCmfWrite.Location = new System.Drawing.Point(25, 53);
+            this.buttonCmfWrite.Location = new System.Drawing.Point(19, 42);
+            this.buttonCmfWrite.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCmfWrite.Name = "buttonCmfWrite";
-            this.buttonCmfWrite.Size = new System.Drawing.Size(75, 25);
+            this.buttonCmfWrite.Size = new System.Drawing.Size(56, 20);
             this.buttonCmfWrite.TabIndex = 4;
             this.buttonCmfWrite.Text = "CUID写";
             this.toolTipHelp.SetToolTip(this.buttonCmfWrite, "写入CUID/FUID卡片（可能需要密钥文件）");
@@ -453,9 +485,10 @@
             // 
             // buttonDictMfoc
             // 
-            this.buttonDictMfoc.Location = new System.Drawing.Point(87, 51);
+            this.buttonDictMfoc.Location = new System.Drawing.Point(65, 41);
+            this.buttonDictMfoc.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDictMfoc.Name = "buttonDictMfoc";
-            this.buttonDictMfoc.Size = new System.Drawing.Size(85, 25);
+            this.buttonDictMfoc.Size = new System.Drawing.Size(64, 20);
             this.buttonDictMfoc.TabIndex = 16;
             this.buttonDictMfoc.Text = "字典测试";
             this.toolTipHelp.SetToolTip(this.buttonDictMfoc, "导入字典文件进行Nested破解。");
@@ -464,9 +497,10 @@
             // 
             // buttonnKeysMfoc
             // 
-            this.buttonnKeysMfoc.Location = new System.Drawing.Point(87, 22);
+            this.buttonnKeysMfoc.Location = new System.Drawing.Point(65, 18);
+            this.buttonnKeysMfoc.Margin = new System.Windows.Forms.Padding(2);
             this.buttonnKeysMfoc.Name = "buttonnKeysMfoc";
-            this.buttonnKeysMfoc.Size = new System.Drawing.Size(85, 25);
+            this.buttonnKeysMfoc.Size = new System.Drawing.Size(64, 20);
             this.buttonnKeysMfoc.TabIndex = 15;
             this.buttonnKeysMfoc.Text = "知n密";
             this.toolTipHelp.SetToolTip(this.buttonnKeysMfoc, "输入已知密钥进行Nested破解。");
@@ -477,9 +511,11 @@
             // 
             this.groupBox4.Controls.Add(this.buttonDiffTool);
             this.groupBox4.Controls.Add(this.buttonHexTool);
-            this.groupBox4.Location = new System.Drawing.Point(3, 94);
+            this.groupBox4.Location = new System.Drawing.Point(2, 75);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(282, 83);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Size = new System.Drawing.Size(212, 66);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "集成辅助工具";
@@ -489,10 +525,11 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(0, 5);
+            this.tabControl1.Location = new System.Drawing.Point(0, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(767, 212);
+            this.tabControl1.Size = new System.Drawing.Size(575, 170);
             this.tabControl1.TabIndex = 11;
             // 
             // tabPage2
@@ -510,21 +547,35 @@
             this.tabPage2.Controls.Add(this.buttonEscan);
             this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(759, 183);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(567, 144);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "复制卡模式";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // buttonEStop
+            // 
+            this.buttonEStop.Font = new System.Drawing.Font("宋体", 11F);
+            this.buttonEStop.Location = new System.Drawing.Point(496, 114);
+            this.buttonEStop.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEStop.Name = "buttonEStop";
+            this.buttonEStop.Size = new System.Drawing.Size(67, 25);
+            this.buttonEStop.TabIndex = 13;
+            this.buttonEStop.Text = "停止";
+            this.buttonEStop.UseVisualStyleBackColor = true;
+            this.buttonEStop.Click += new System.EventHandler(this.buttonEStop_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Green;
-            this.label8.Location = new System.Drawing.Point(392, 9);
+            this.label8.Location = new System.Drawing.Point(294, 7);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 30);
+            this.label8.Size = new System.Drawing.Size(29, 24);
             this.label8.TabIndex = 12;
             this.label8.Text = "请放\r\n新卡";
             // 
@@ -532,53 +583,59 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Green;
-            this.label7.Location = new System.Drawing.Point(84, 50);
+            this.label7.Location = new System.Drawing.Point(63, 40);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 30);
+            this.label7.Size = new System.Drawing.Size(29, 24);
             this.label7.TabIndex = 11;
             this.label7.Text = "请放\r\n原卡";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(574, 101);
+            this.label6.Location = new System.Drawing.Point(430, 81);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(159, 15);
+            this.label6.Size = new System.Drawing.Size(125, 12);
             this.label6.TabIndex = 10;
             this.label6.Text = ">>> 尝试一下是否成功";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(387, 41);
+            this.label4.Location = new System.Drawing.Point(290, 33);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 15);
+            this.label4.Size = new System.Drawing.Size(35, 12);
             this.label4.TabIndex = 8;
             this.label4.Text = ">>>>>";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(214, 29);
+            this.label3.Location = new System.Drawing.Point(160, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 15);
+            this.label3.Size = new System.Drawing.Size(23, 12);
             this.label3.TabIndex = 7;
             this.label3.Text = ">>>";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(97, 29);
+            this.label2.Location = new System.Drawing.Point(73, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 15);
+            this.label2.Size = new System.Drawing.Size(17, 12);
             this.label2.TabIndex = 6;
             this.label2.Text = ">>";
             // 
             // buttonECheckEncrypt
             // 
-            this.buttonECheckEncrypt.Location = new System.Drawing.Point(123, 55);
+            this.buttonECheckEncrypt.Location = new System.Drawing.Point(92, 44);
+            this.buttonECheckEncrypt.Margin = new System.Windows.Forms.Padding(2);
             this.buttonECheckEncrypt.Name = "buttonECheckEncrypt";
-            this.buttonECheckEncrypt.Size = new System.Drawing.Size(85, 25);
+            this.buttonECheckEncrypt.Size = new System.Drawing.Size(64, 20);
             this.buttonECheckEncrypt.TabIndex = 5;
             this.buttonECheckEncrypt.Text = "检测加密";
             this.buttonECheckEncrypt.UseVisualStyleBackColor = true;
@@ -586,9 +643,10 @@
             // 
             // buttoEScanCard
             // 
-            this.buttoEScanCard.Location = new System.Drawing.Point(123, 24);
+            this.buttoEScanCard.Location = new System.Drawing.Point(92, 19);
+            this.buttoEScanCard.Margin = new System.Windows.Forms.Padding(2);
             this.buttoEScanCard.Name = "buttoEScanCard";
-            this.buttoEScanCard.Size = new System.Drawing.Size(85, 25);
+            this.buttoEScanCard.Size = new System.Drawing.Size(64, 20);
             this.buttoEScanCard.TabIndex = 1;
             this.buttoEScanCard.Text = "扫描卡片";
             this.buttoEScanCard.UseVisualStyleBackColor = true;
@@ -600,18 +658,21 @@
             this.groupBox7.Controls.Add(this.buttonEUIDWrite);
             this.groupBox7.Controls.Add(this.button4);
             this.groupBox7.Controls.Add(this.buttonEMfWrite);
-            this.groupBox7.Location = new System.Drawing.Point(440, 6);
+            this.groupBox7.Location = new System.Drawing.Point(330, 5);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(128, 171);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox7.Size = new System.Drawing.Size(96, 137);
             this.groupBox7.TabIndex = 3;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "[3]写入新卡";
             // 
             // buttonECuidWrite
             // 
-            this.buttonECuidWrite.Location = new System.Drawing.Point(6, 56);
+            this.buttonECuidWrite.Location = new System.Drawing.Point(4, 45);
+            this.buttonECuidWrite.Margin = new System.Windows.Forms.Padding(2);
             this.buttonECuidWrite.Name = "buttonECuidWrite";
-            this.buttonECuidWrite.Size = new System.Drawing.Size(116, 25);
+            this.buttonECuidWrite.Size = new System.Drawing.Size(87, 20);
             this.buttonECuidWrite.TabIndex = 2;
             this.buttonECuidWrite.Text = "写C/FUID卡";
             this.buttonECuidWrite.UseVisualStyleBackColor = true;
@@ -619,9 +680,10 @@
             // 
             // buttonEUIDWrite
             // 
-            this.buttonEUIDWrite.Location = new System.Drawing.Point(6, 25);
+            this.buttonEUIDWrite.Location = new System.Drawing.Point(4, 20);
+            this.buttonEUIDWrite.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEUIDWrite.Name = "buttonEUIDWrite";
-            this.buttonEUIDWrite.Size = new System.Drawing.Size(116, 25);
+            this.buttonEUIDWrite.Size = new System.Drawing.Size(87, 20);
             this.buttonEUIDWrite.TabIndex = 2;
             this.buttonEUIDWrite.Text = "写(UF)UID卡";
             this.buttonEUIDWrite.UseVisualStyleBackColor = true;
@@ -629,9 +691,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(6, 85);
+            this.button4.Location = new System.Drawing.Point(4, 68);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 25);
+            this.button4.Size = new System.Drawing.Size(87, 20);
             this.button4.TabIndex = 1;
             this.button4.Text = "锁UFUID卡";
             this.button4.UseVisualStyleBackColor = true;
@@ -639,9 +702,10 @@
             // 
             // buttonEMfWrite
             // 
-            this.buttonEMfWrite.Location = new System.Drawing.Point(6, 140);
+            this.buttonEMfWrite.Location = new System.Drawing.Point(4, 112);
+            this.buttonEMfWrite.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEMfWrite.Name = "buttonEMfWrite";
-            this.buttonEMfWrite.Size = new System.Drawing.Size(116, 25);
+            this.buttonEMfWrite.Size = new System.Drawing.Size(87, 20);
             this.buttonEMfWrite.TabIndex = 0;
             this.buttonEMfWrite.Text = "写入普通卡";
             this.buttonEMfWrite.UseVisualStyleBackColor = true;
@@ -649,9 +713,10 @@
             // 
             // buttonEscan
             // 
-            this.buttonEscan.Location = new System.Drawing.Point(8, 24);
+            this.buttonEscan.Location = new System.Drawing.Point(6, 19);
+            this.buttonEscan.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEscan.Name = "buttonEscan";
-            this.buttonEscan.Size = new System.Drawing.Size(85, 25);
+            this.buttonEscan.Size = new System.Drawing.Size(64, 20);
             this.buttonEscan.TabIndex = 0;
             this.buttonEscan.Text = "检测连接";
             this.buttonEscan.UseVisualStyleBackColor = true;
@@ -664,18 +729,21 @@
             this.groupBox5.Controls.Add(this.buttonECmfoc);
             this.groupBox5.Controls.Add(this.buttonEMfRead);
             this.groupBox5.Controls.Add(this.buttonEMfoc);
-            this.groupBox5.Location = new System.Drawing.Point(253, 6);
+            this.groupBox5.Location = new System.Drawing.Point(190, 5);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(128, 171);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Size = new System.Drawing.Size(96, 137);
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "[2]读取原卡";
             // 
             // buttonEReadUID
             // 
-            this.buttonEReadUID.Location = new System.Drawing.Point(6, 49);
+            this.buttonEReadUID.Location = new System.Drawing.Point(4, 39);
+            this.buttonEReadUID.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEReadUID.Name = "buttonEReadUID";
-            this.buttonEReadUID.Size = new System.Drawing.Size(116, 25);
+            this.buttonEReadUID.Size = new System.Drawing.Size(87, 20);
             this.buttonEReadUID.TabIndex = 3;
             this.buttonEReadUID.Text = "从UID卡读回";
             this.buttonEReadUID.UseVisualStyleBackColor = true;
@@ -683,9 +751,10 @@
             // 
             // buttonESelectKey
             // 
-            this.buttonESelectKey.Location = new System.Drawing.Point(6, 109);
+            this.buttonESelectKey.Location = new System.Drawing.Point(4, 87);
+            this.buttonESelectKey.Margin = new System.Windows.Forms.Padding(2);
             this.buttonESelectKey.Name = "buttonESelectKey";
-            this.buttonESelectKey.Size = new System.Drawing.Size(116, 25);
+            this.buttonESelectKey.Size = new System.Drawing.Size(87, 20);
             this.buttonESelectKey.TabIndex = 2;
             this.buttonESelectKey.Text = "加载密钥…";
             this.buttonESelectKey.UseVisualStyleBackColor = true;
@@ -693,9 +762,10 @@
             // 
             // buttonECmfoc
             // 
-            this.buttonECmfoc.Location = new System.Drawing.Point(6, 80);
+            this.buttonECmfoc.Location = new System.Drawing.Point(4, 64);
+            this.buttonECmfoc.Margin = new System.Windows.Forms.Padding(2);
             this.buttonECmfoc.Name = "buttonECmfoc";
-            this.buttonECmfoc.Size = new System.Drawing.Size(116, 25);
+            this.buttonECmfoc.Size = new System.Drawing.Size(87, 20);
             this.buttonECmfoc.TabIndex = 2;
             this.buttonECmfoc.Text = "知一密破解";
             this.buttonECmfoc.UseVisualStyleBackColor = true;
@@ -703,9 +773,10 @@
             // 
             // buttonEMfRead
             // 
-            this.buttonEMfRead.Location = new System.Drawing.Point(6, 140);
+            this.buttonEMfRead.Location = new System.Drawing.Point(4, 112);
+            this.buttonEMfRead.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEMfRead.Name = "buttonEMfRead";
-            this.buttonEMfRead.Size = new System.Drawing.Size(116, 25);
+            this.buttonEMfRead.Size = new System.Drawing.Size(87, 20);
             this.buttonEMfRead.TabIndex = 1;
             this.buttonEMfRead.Text = "已知密钥读";
             this.buttonEMfRead.UseVisualStyleBackColor = true;
@@ -713,9 +784,10 @@
             // 
             // buttonEMfoc
             // 
-            this.buttonEMfoc.Location = new System.Drawing.Point(6, 18);
+            this.buttonEMfoc.Location = new System.Drawing.Point(4, 14);
+            this.buttonEMfoc.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEMfoc.Name = "buttonEMfoc";
-            this.buttonEMfoc.Size = new System.Drawing.Size(116, 25);
+            this.buttonEMfoc.Size = new System.Drawing.Size(87, 20);
             this.buttonEMfoc.TabIndex = 0;
             this.buttonEMfoc.Text = "一键解原卡";
             this.buttonEMfoc.UseVisualStyleBackColor = true;
@@ -725,9 +797,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(8, 6);
+            this.label5.Location = new System.Drawing.Point(6, 5);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(232, 165);
+            this.label5.Size = new System.Drawing.Size(185, 132);
             this.label5.TabIndex = 9;
             this.label5.Text = "从这里开始\r\n\r\n\r\n\r\n\r\n\r\n\r\n本工具仅支持SAK=08/18/28的\r\n卡片复制。SAK28无一键解密。\r\n若要复制S70卡片，请在高级界\r\n面上取消勾选" +
                 "“数据写入保护”。\r\n";
@@ -741,10 +814,11 @@
             this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(759, 183);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(567, 144);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "高级操作模式";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -757,18 +831,21 @@
             this.groupBox10.Controls.Add(this.buttonMfcuk);
             this.groupBox10.Controls.Add(this.buttonCheckEncrypt);
             this.groupBox10.Controls.Add(this.buttonMfoc);
-            this.groupBox10.Location = new System.Drawing.Point(291, 94);
+            this.groupBox10.Location = new System.Drawing.Point(218, 75);
+            this.groupBox10.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(290, 83);
+            this.groupBox10.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox10.Size = new System.Drawing.Size(218, 66);
             this.groupBox10.TabIndex = 6;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "破解工具";
             // 
             // buttonHardNested
             // 
-            this.buttonHardNested.Location = new System.Drawing.Point(178, 51);
+            this.buttonHardNested.Location = new System.Drawing.Point(134, 41);
+            this.buttonHardNested.Margin = new System.Windows.Forms.Padding(2);
             this.buttonHardNested.Name = "buttonHardNested";
-            this.buttonHardNested.Size = new System.Drawing.Size(104, 25);
+            this.buttonHardNested.Size = new System.Drawing.Size(78, 20);
             this.buttonHardNested.TabIndex = 14;
             this.buttonHardNested.Text = "HardNested";
             this.buttonHardNested.UseVisualStyleBackColor = true;
@@ -778,9 +855,11 @@
             // 
             this.groupBox9.Controls.Add(this.label1);
             this.groupBox9.Controls.Add(this.buttonCmfWrite);
-            this.groupBox9.Location = new System.Drawing.Point(633, 6);
+            this.groupBox9.Location = new System.Drawing.Point(475, 5);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(123, 83);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox9.Size = new System.Drawing.Size(92, 66);
             this.groupBox9.TabIndex = 14;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "C/FUID卡操作";
@@ -788,9 +867,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 19);
+            this.label1.Location = new System.Drawing.Point(16, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 30);
+            this.label1.Size = new System.Drawing.Size(65, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "该卡种读取\r\n同普通卡";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -803,9 +883,11 @@
             this.groupBox8.Controls.Add(this.buttonUidWrite);
             this.groupBox8.Controls.Add(this.buttonUidFormat);
             this.groupBox8.Controls.Add(this.buttonUidReset);
-            this.groupBox8.Location = new System.Drawing.Point(384, 6);
+            this.groupBox8.Location = new System.Drawing.Point(288, 5);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(244, 83);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox8.Size = new System.Drawing.Size(183, 66);
             this.groupBox8.TabIndex = 6;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "UID/UFUID卡操作";
@@ -813,46 +895,76 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.groupBox14);
-            this.tabPage3.Controls.Add(this.groupBox11);
             this.tabPage3.Controls.Add(this.groupBox13);
+            this.tabPage3.Controls.Add(this.groupBox11);
             this.tabPage3.Controls.Add(this.groupBox12);
             this.tabPage3.Controls.Add(this.groupBox6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(759, 183);
+            this.tabPage3.Size = new System.Drawing.Size(567, 144);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "软件设置";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // groupBox11
+            // groupBox14
             // 
-            this.groupBox11.Controls.Add(this.checkBoxHardLowCost);
-            this.groupBox11.Location = new System.Drawing.Point(209, 89);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(200, 91);
-            this.groupBox11.TabIndex = 14;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "HardNested";
+            this.groupBox14.Controls.Add(this.checkBoxMultiDev);
+            this.groupBox14.Controls.Add(this.label11);
+            this.groupBox14.Controls.Add(this.SetDeviceCombo);
+            this.groupBox14.Controls.Add(this.checkBoxNewScan);
+            this.groupBox14.Location = new System.Drawing.Point(311, 2);
+            this.groupBox14.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox14.Size = new System.Drawing.Size(142, 142);
+            this.groupBox14.TabIndex = 15;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "优化设置";
             // 
-            // checkBoxHardLowCost
+            // label11
             // 
-            this.checkBoxHardLowCost.AutoSize = true;
-            this.checkBoxHardLowCost.Location = new System.Drawing.Point(9, 24);
-            this.checkBoxHardLowCost.Name = "checkBoxHardLowCost";
-            this.checkBoxHardLowCost.Size = new System.Drawing.Size(104, 19);
-            this.checkBoxHardLowCost.TabIndex = 0;
-            this.checkBoxHardLowCost.Text = "单线程计算";
-            this.checkBoxHardLowCost.UseVisualStyleBackColor = true;
-            this.checkBoxHardLowCost.CheckedChanged += new System.EventHandler(this.checkBoxHardLowCost_CheckedChanged);
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(5, 40);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 12);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "指定设备";
+            // 
+            // SetDeviceCombo
+            // 
+            this.SetDeviceCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SetDeviceCombo.DropDownWidth = 150;
+            this.SetDeviceCombo.FormattingEnabled = true;
+            this.SetDeviceCombo.Location = new System.Drawing.Point(5, 55);
+            this.SetDeviceCombo.Name = "SetDeviceCombo";
+            this.SetDeviceCombo.Size = new System.Drawing.Size(131, 20);
+            this.SetDeviceCombo.TabIndex = 2;
+            this.SetDeviceCombo.SelectedIndexChanged += new System.EventHandler(this.SetDeviceCombo_SelectedIndexChanged);
+            // 
+            // checkBoxNewScan
+            // 
+            this.checkBoxNewScan.AutoSize = true;
+            this.checkBoxNewScan.Checked = true;
+            this.checkBoxNewScan.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxNewScan.Location = new System.Drawing.Point(4, 19);
+            this.checkBoxNewScan.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxNewScan.Name = "checkBoxNewScan";
+            this.checkBoxNewScan.Size = new System.Drawing.Size(108, 16);
+            this.checkBoxNewScan.TabIndex = 1;
+            this.checkBoxNewScan.Text = "减少找设备延迟";
+            this.checkBoxNewScan.UseVisualStyleBackColor = true;
             // 
             // groupBox13
             // 
             this.groupBox13.Controls.Add(this.checkBoxAutoSave);
             this.groupBox13.Controls.Add(this.checkBoxDefIsAdv);
-            this.groupBox13.Location = new System.Drawing.Point(3, 109);
+            this.groupBox13.Location = new System.Drawing.Point(157, 70);
+            this.groupBox13.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(200, 71);
+            this.groupBox13.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox13.Size = new System.Drawing.Size(150, 72);
             this.groupBox13.TabIndex = 13;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "偏好设置";
@@ -860,9 +972,10 @@
             // checkBoxAutoSave
             // 
             this.checkBoxAutoSave.AutoSize = true;
-            this.checkBoxAutoSave.Location = new System.Drawing.Point(9, 46);
+            this.checkBoxAutoSave.Location = new System.Drawing.Point(7, 37);
+            this.checkBoxAutoSave.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAutoSave.Name = "checkBoxAutoSave";
-            this.checkBoxAutoSave.Size = new System.Drawing.Size(173, 19);
+            this.checkBoxAutoSave.Size = new System.Drawing.Size(138, 16);
             this.checkBoxAutoSave.TabIndex = 1;
             this.checkBoxAutoSave.Text = "自动以UID名保存文件";
             this.checkBoxAutoSave.UseVisualStyleBackColor = true;
@@ -871,13 +984,38 @@
             // checkBoxDefIsAdv
             // 
             this.checkBoxDefIsAdv.AutoSize = true;
-            this.checkBoxDefIsAdv.Location = new System.Drawing.Point(9, 24);
+            this.checkBoxDefIsAdv.Location = new System.Drawing.Point(7, 19);
+            this.checkBoxDefIsAdv.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxDefIsAdv.Name = "checkBoxDefIsAdv";
-            this.checkBoxDefIsAdv.Size = new System.Drawing.Size(179, 19);
+            this.checkBoxDefIsAdv.Size = new System.Drawing.Size(144, 16);
             this.checkBoxDefIsAdv.TabIndex = 0;
             this.checkBoxDefIsAdv.Text = "自动转到高级操作模式";
             this.checkBoxDefIsAdv.UseVisualStyleBackColor = true;
             this.checkBoxDefIsAdv.CheckedChanged += new System.EventHandler(this.checkBoxDefIsAdv_CheckedChanged);
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.checkBoxHardLowCost);
+            this.groupBox11.Location = new System.Drawing.Point(2, 86);
+            this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox11.Size = new System.Drawing.Size(150, 56);
+            this.groupBox11.TabIndex = 14;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "HardNested";
+            // 
+            // checkBoxHardLowCost
+            // 
+            this.checkBoxHardLowCost.AutoSize = true;
+            this.checkBoxHardLowCost.Location = new System.Drawing.Point(7, 19);
+            this.checkBoxHardLowCost.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxHardLowCost.Name = "checkBoxHardLowCost";
+            this.checkBoxHardLowCost.Size = new System.Drawing.Size(84, 16);
+            this.checkBoxHardLowCost.TabIndex = 0;
+            this.checkBoxHardLowCost.Text = "单线程计算";
+            this.checkBoxHardLowCost.UseVisualStyleBackColor = true;
+            this.checkBoxHardLowCost.CheckedChanged += new System.EventHandler(this.checkBoxHardLowCost_CheckedChanged);
             // 
             // groupBox12
             // 
@@ -885,9 +1023,11 @@
             this.groupBox12.Controls.Add(this.label10);
             this.groupBox12.Controls.Add(this.buttonCLIColor);
             this.groupBox12.Controls.Add(this.label9);
-            this.groupBox12.Location = new System.Drawing.Point(209, 3);
+            this.groupBox12.Location = new System.Drawing.Point(157, 2);
+            this.groupBox12.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(200, 80);
+            this.groupBox12.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox12.Size = new System.Drawing.Size(150, 64);
             this.groupBox12.TabIndex = 12;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "界面设置";
@@ -895,7 +1035,8 @@
             // numericCLIFontSize
             // 
             this.numericCLIFontSize.DecimalPlaces = 1;
-            this.numericCLIFontSize.Location = new System.Drawing.Point(109, 47);
+            this.numericCLIFontSize.Location = new System.Drawing.Point(82, 38);
+            this.numericCLIFontSize.Margin = new System.Windows.Forms.Padding(2);
             this.numericCLIFontSize.Maximum = new decimal(new int[] {
             36,
             0,
@@ -907,7 +1048,7 @@
             0,
             0});
             this.numericCLIFontSize.Name = "numericCLIFontSize";
-            this.numericCLIFontSize.Size = new System.Drawing.Size(85, 25);
+            this.numericCLIFontSize.Size = new System.Drawing.Size(64, 21);
             this.numericCLIFontSize.TabIndex = 16;
             this.numericCLIFontSize.Value = new decimal(new int[] {
             9,
@@ -919,9 +1060,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 50);
+            this.label10.Location = new System.Drawing.Point(4, 40);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(97, 15);
+            this.label10.Size = new System.Drawing.Size(77, 12);
             this.label10.TabIndex = 15;
             this.label10.Text = "终端文字大小";
             // 
@@ -930,9 +1072,10 @@
             this.buttonCLIColor.BackColor = System.Drawing.Color.Black;
             this.buttonCLIColor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCLIColor.ForeColor = System.Drawing.Color.Lime;
-            this.buttonCLIColor.Location = new System.Drawing.Point(109, 16);
+            this.buttonCLIColor.Location = new System.Drawing.Point(82, 13);
+            this.buttonCLIColor.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCLIColor.Name = "buttonCLIColor";
-            this.buttonCLIColor.Size = new System.Drawing.Size(85, 25);
+            this.buttonCLIColor.Size = new System.Drawing.Size(64, 20);
             this.buttonCLIColor.TabIndex = 14;
             this.buttonCLIColor.Text = "#M1T#";
             this.buttonCLIColor.UseVisualStyleBackColor = false;
@@ -941,9 +1084,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 21);
+            this.label9.Location = new System.Drawing.Point(4, 17);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 15);
+            this.label9.Size = new System.Drawing.Size(77, 12);
             this.label9.TabIndex = 13;
             this.label9.Text = "终端文字颜色";
             // 
@@ -952,9 +1096,11 @@
             this.groupBox6.Controls.Add(this.checkBoxWriteProtect);
             this.groupBox6.Controls.Add(this.checkBoxAutoLoadKey);
             this.groupBox6.Controls.Add(this.checkBoxAutoABN);
-            this.groupBox6.Location = new System.Drawing.Point(3, 3);
+            this.groupBox6.Location = new System.Drawing.Point(2, 2);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(200, 100);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox6.Size = new System.Drawing.Size(150, 80);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "卡操作相关";
@@ -964,9 +1110,10 @@
             this.checkBoxWriteProtect.AutoSize = true;
             this.checkBoxWriteProtect.Checked = true;
             this.checkBoxWriteProtect.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxWriteProtect.Location = new System.Drawing.Point(6, 74);
+            this.checkBoxWriteProtect.Location = new System.Drawing.Point(4, 59);
+            this.checkBoxWriteProtect.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxWriteProtect.Name = "checkBoxWriteProtect";
-            this.checkBoxWriteProtect.Size = new System.Drawing.Size(165, 19);
+            this.checkBoxWriteProtect.Size = new System.Drawing.Size(132, 16);
             this.checkBoxWriteProtect.TabIndex = 11;
             this.checkBoxWriteProtect.Text = "数据写入保护(建议)";
             this.checkBoxWriteProtect.UseVisualStyleBackColor = true;
@@ -975,9 +1122,10 @@
             // checkBoxAutoLoadKey
             // 
             this.checkBoxAutoLoadKey.AutoSize = true;
-            this.checkBoxAutoLoadKey.Location = new System.Drawing.Point(6, 49);
+            this.checkBoxAutoLoadKey.Location = new System.Drawing.Point(4, 39);
+            this.checkBoxAutoLoadKey.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAutoLoadKey.Name = "checkBoxAutoLoadKey";
-            this.checkBoxAutoLoadKey.Size = new System.Drawing.Size(175, 19);
+            this.checkBoxAutoLoadKey.Size = new System.Drawing.Size(138, 16);
             this.checkBoxAutoLoadKey.TabIndex = 12;
             this.checkBoxAutoLoadKey.Text = "自动加载uid.Key文件";
             this.checkBoxAutoLoadKey.UseVisualStyleBackColor = true;
@@ -988,9 +1136,10 @@
             this.checkBoxAutoABN.AutoSize = true;
             this.checkBoxAutoABN.Checked = true;
             this.checkBoxAutoABN.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxAutoABN.Location = new System.Drawing.Point(6, 24);
+            this.checkBoxAutoABN.Location = new System.Drawing.Point(4, 19);
+            this.checkBoxAutoABN.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAutoABN.Name = "checkBoxAutoABN";
-            this.checkBoxAutoABN.Size = new System.Drawing.Size(161, 19);
+            this.checkBoxAutoABN.Size = new System.Drawing.Size(126, 16);
             this.checkBoxAutoABN.TabIndex = 2;
             this.checkBoxAutoABN.Text = "自动判断Key(beta)";
             this.checkBoxAutoABN.UseVisualStyleBackColor = true;
@@ -1002,11 +1151,12 @@
             this.statusLabel,
             this.runTimeLabel,
             this.localVersionLabel,
-            this.remoteVersionLabel,
-            this.toolStripCheckUpdate});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 609);
+            this.toolStripCheckUpdate,
+            this.curDevice});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 482);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(767, 26);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(575, 26);
             this.statusStrip1.TabIndex = 12;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -1021,22 +1171,15 @@
             // 
             this.runTimeLabel.AutoSize = false;
             this.runTimeLabel.Name = "runTimeLabel";
-            this.runTimeLabel.Size = new System.Drawing.Size(150, 21);
+            this.runTimeLabel.Size = new System.Drawing.Size(140, 21);
             this.runTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // localVersionLabel
             // 
             this.localVersionLabel.AutoSize = false;
             this.localVersionLabel.Name = "localVersionLabel";
-            this.localVersionLabel.Size = new System.Drawing.Size(125, 21);
+            this.localVersionLabel.Size = new System.Drawing.Size(120, 21);
             this.localVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // remoteVersionLabel
-            // 
-            this.remoteVersionLabel.AutoSize = false;
-            this.remoteVersionLabel.Name = "remoteVersionLabel";
-            this.remoteVersionLabel.Size = new System.Drawing.Size(125, 21);
-            this.remoteVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // toolStripCheckUpdate
             // 
@@ -1044,7 +1187,7 @@
             this.toolStripCheckUpdate.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCheckUpdate.Image")));
             this.toolStripCheckUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripCheckUpdate.Name = "toolStripCheckUpdate";
-            this.toolStripCheckUpdate.Size = new System.Drawing.Size(85, 24);
+            this.toolStripCheckUpdate.Size = new System.Drawing.Size(72, 24);
             this.toolStripCheckUpdate.Text = "检查更新";
             this.toolStripCheckUpdate.ButtonClick += new System.EventHandler(this.toolStripCheckUpdate_ButtonClick);
             // 
@@ -1053,49 +1196,33 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // buttonEStop
+            // checkBoxMultiDev
             // 
-            this.buttonEStop.Font = new System.Drawing.Font("宋体", 11F);
-            this.buttonEStop.Location = new System.Drawing.Point(662, 143);
-            this.buttonEStop.Name = "buttonEStop";
-            this.buttonEStop.Size = new System.Drawing.Size(89, 31);
-            this.buttonEStop.TabIndex = 13;
-            this.buttonEStop.Text = "停止";
-            this.buttonEStop.UseVisualStyleBackColor = true;
-            this.buttonEStop.Click += new System.EventHandler(this.buttonEStop_Click);
+            this.checkBoxMultiDev.AutoSize = true;
+            this.checkBoxMultiDev.Location = new System.Drawing.Point(4, 84);
+            this.checkBoxMultiDev.Name = "checkBoxMultiDev";
+            this.checkBoxMultiDev.Size = new System.Drawing.Size(108, 40);
+            this.checkBoxMultiDev.TabIndex = 4;
+            this.checkBoxMultiDev.Text = "多实例运行模式\r\n会禁用多开检测\r\n请自行指定设备";
+            this.checkBoxMultiDev.UseVisualStyleBackColor = true;
+            this.checkBoxMultiDev.CheckedChanged += new System.EventHandler(this.checkBoxMultiDev_CheckedChanged);
             // 
-            // groupBox14
+            // curDevice
             // 
-            this.groupBox14.Controls.Add(this.checkBoxNewScan);
-            this.groupBox14.Location = new System.Drawing.Point(415, 3);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(150, 177);
-            this.groupBox14.TabIndex = 15;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "优化设置";
-            // 
-            // checkBoxNewScan
-            // 
-            this.checkBoxNewScan.AutoSize = true;
-            this.checkBoxNewScan.Checked = true;
-            this.checkBoxNewScan.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxNewScan.Location = new System.Drawing.Point(6, 24);
-            this.checkBoxNewScan.Name = "checkBoxNewScan";
-            this.checkBoxNewScan.Size = new System.Drawing.Size(134, 19);
-            this.checkBoxNewScan.TabIndex = 1;
-            this.checkBoxNewScan.Text = "减少找设备延迟";
-            this.checkBoxNewScan.UseVisualStyleBackColor = true;
+            this.curDevice.Name = "curDevice";
+            this.curDevice.Size = new System.Drawing.Size(0, 21);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 635);
+            this.ClientSize = new System.Drawing.Size(575, 508);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.richTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "MifareOne Tool";
@@ -1116,10 +1243,12 @@
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericCLIFontSize)).EndInit();
@@ -1127,8 +1256,6 @@
             this.groupBox6.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1182,7 +1309,6 @@
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
         private System.Windows.Forms.ToolStripStatusLabel runTimeLabel;
         private System.Windows.Forms.ToolStripStatusLabel localVersionLabel;
-        private System.Windows.Forms.ToolStripStatusLabel remoteVersionLabel;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button buttonCheckEncrypt;
         private System.Windows.Forms.Button buttonECheckEncrypt;
@@ -1220,6 +1346,10 @@
         private System.Windows.Forms.Button buttonEStop;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.CheckBox checkBoxNewScan;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox SetDeviceCombo;
+        private System.Windows.Forms.CheckBox checkBoxMultiDev;
+        private System.Windows.Forms.ToolStripStatusLabel curDevice;
     }
 }
 

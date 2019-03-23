@@ -15,18 +15,17 @@ namespace MifareOneTool
         [STAThread]
         static void Main()
         {
-            bool ret;
-            System.Threading.Mutex mutex = new System.Threading.Mutex(true, Application.ProductName, out ret);
-            if (ret)
+            if (Properties.Settings.Default.MultiMode)
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new Form1());
-                mutex.ReleaseMutex();
             }
             else
             {
-                if (MessageBox.Show("您已经运行了MifareOne Tool，打开多个本程序可能会造成冲突及不可预料到的错误。\n确认要继续吗？", "您正在试图重复运行", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                bool ret;
+                System.Threading.Mutex mutex = new System.Threading.Mutex(true, Application.ProductName, out ret);
+                if (ret)
                 {
                     Application.EnableVisualStyles();
                     Application.SetCompatibleTextRenderingDefault(false);
@@ -35,7 +34,17 @@ namespace MifareOneTool
                 }
                 else
                 {
-                    Application.Exit();
+                    if (MessageBox.Show("您已经运行了MifareOne Tool，打开多个本程序可能会造成冲突及不可预料到的错误。\n确认要继续吗？", "您正在试图重复运行", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                    {
+                        Application.EnableVisualStyles();
+                        Application.SetCompatibleTextRenderingDefault(false);
+                        Application.Run(new Form1());
+                        mutex.ReleaseMutex();
+                    }
+                    else
+                    {
+                        Application.Exit();
+                    }
                 }
             }
         }

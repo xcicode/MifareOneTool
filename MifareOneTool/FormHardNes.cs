@@ -121,25 +121,5 @@ namespace MifareOneTool
             this.DialogResult = DialogResult.Yes;
             this.Close();
         }
-
-        private void checkBoxCollectAll_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxCollectAll.Checked)
-            {
-                checkBoxColOnly.Checked = true;
-                checkBoxColOnly.Enabled = false;
-                sector2.Enabled = false;
-                radioKey2A.Enabled = false;
-                radioKey2B.Enabled = false;
-            }
-            else
-            {
-                checkBoxColOnly.Checked = false;
-                checkBoxColOnly.Enabled = true;
-                sector2.Enabled = true;
-                radioKey2A.Enabled = true;
-                radioKey2B.Enabled = true;
-            }
-        }
     }
 }

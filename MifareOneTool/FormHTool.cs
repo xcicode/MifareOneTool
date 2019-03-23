@@ -489,5 +489,10 @@ namespace MifareOneTool
         {
             新建ToolStripMenuItem_Click(sender, e);
         }
+
+        private void keyAEdit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

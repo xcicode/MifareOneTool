@@ -47,6 +47,7 @@ namespace MifareOneTool
             cfg += "device.name = \"NFC-Device\"\n";
             cfg += "device.connstring = \"" + devstr + "\"";
             File.WriteAllText("libnfc.conf", cfg);
+            curDevice.Text = "设备串口：" + devstr.Replace("pn532_uart:", "").Replace(":115200", "");
         }
 
         void default_rpt(object sender, ProgressChangedEventArgs e)
@@ -117,7 +118,7 @@ namespace MifareOneTool
             {
                 logAppend((string)e.UserState);
                 logAppend("##Nonce收集完毕##");
-                logAppend("您可以在本地计算，或是上传到云计算服务节点进行计算。");
+                logAppend("您可以上传到云计算服务节点进行计算。");
 
                 Text = "MifareOne Tool - 运行完毕";
             }
@@ -133,6 +134,9 @@ namespace MifareOneTool
                 {
                     logAppend("将自动选择首个设备：" + myReaders.First());
                     writeConfig(myReaders.First());
+                    SetDeviceCombo.Items.Clear();
+                    SetDeviceCombo.Items.AddRange(myReaders.ToArray());
+                    SetDeviceCombo.SelectedIndex = 0;
                 }
             }
             else
@@ -207,7 +211,21 @@ namespace MifareOneTool
             {
                 tabControl1.SelectedIndex = 1;
             }
-            File.Delete("libnfc.conf");
+            //File.Delete("libnfc.conf");//用户COM口一般不常变化
+            if (Properties.Settings.Default.MultiMode)
+            {
+                if (File.Exists("libnfc.conf"))
+                {
+                    string[] conf = File.ReadAllLines("libnfc.conf");
+                    foreach (string line in conf)
+                    {
+                        if (line.StartsWith("device.connstring = \"pn532_uart:"))
+                        {
+                            curDevice.Text = "设备串口：" + line.Replace("device.connstring = \"pn532_uart:", "").Replace(":115200\"", "");
+                        }
+                    }
+                }
+            }
         }
 
         private void buttonScanCard_Click(object sender, EventArgs e)
@@ -275,6 +293,7 @@ namespace MifareOneTool
             if (uid.Length < 8) { return; }
             logAppend("正在检索是否存在key.mfd…");
             List<string> files = Directory.EnumerateFiles("auto_keys", "*.mfd").ToList<string>();
+            files.Reverse();//保证拿到最新的
             for (int i = 0; i < files.Count; i++)
             {
                 if (files[i].StartsWith("auto_keys\\" + uid))
@@ -749,18 +768,7 @@ namespace MifareOneTool
             MessageBox.Show("终端内容已保存至m1t.log文件", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void buttonKill_Click(object sender, EventArgs e)
-        {
-            if (lprocess)
-            {
-                if (process.HasExited == false)
-                {
-                    process.Kill();
-                    Form1.ActiveForm.Text = "MifareOne Tool - 已终止";
-                    logAppend("##程序已被强制停止##");
-                }
-            }
-        }
+
 
         private void buttonUidWrite_Click(object sender, EventArgs e)
         {
@@ -899,6 +907,19 @@ namespace MifareOneTool
             process.WaitForExit();
             lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
+        }
+
+        private void buttonKill_Click(object sender, EventArgs e)
+        {
+            if (lprocess)
+            {
+                if (process.HasExited == false)
+                {
+                    process.Kill();
+                    Form1.ActiveForm.Text = "MifareOne Tool - 已终止";
+                    logAppend("##程序已被强制停止##");
+                }
+            }
         }
 
         private void buttonLockUfuid_Click(object sender, EventArgs e)
@@ -1435,6 +1456,20 @@ namespace MifareOneTool
         private void buttonEStop_Click(object sender, EventArgs e)
         {
             buttonKill_Click(sender, e);
+        }
+
+        private void SetDeviceCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (SetDeviceCombo.SelectedIndex >= 0)
+            {
+                writeConfig(SetDeviceCombo.SelectedItem.ToString());
+                logAppend("已指定使用该NFC设备：" + SetDeviceCombo.SelectedItem.ToString());
+            }
+        }
+
+        private void checkBoxMultiDev_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.MultiMode = checkBoxMultiDev.Checked;
         }
     }
 }

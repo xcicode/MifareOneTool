@@ -151,5 +151,17 @@ namespace MifareOneTool.Properties {
                 this["NewScan"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool MultiMode {
+            get {
+                return ((bool)(this["MultiMode"]));
+            }
+            set {
+                this["MultiMode"] = value;
+            }
+        }
     }
 }
