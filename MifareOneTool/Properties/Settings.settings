@@ -15,7 +15,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="MainCLIColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">Lime</Value>
+      <Value Profile="(Default)">192, 255, 255</Value>
     </Setting>
     <Setting Name="MainCLIFontSize" Type="System.Single" Scope="User">
       <Value Profile="(Default)">9</Value>

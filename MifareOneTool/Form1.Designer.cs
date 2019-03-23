@@ -195,7 +195,7 @@
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.Black;
-            this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
+            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.richTextBox1.Location = new System.Drawing.Point(0, 175);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
@@ -1071,7 +1071,7 @@
             // 
             this.buttonCLIColor.BackColor = System.Drawing.Color.Black;
             this.buttonCLIColor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCLIColor.ForeColor = System.Drawing.Color.Lime;
+            this.buttonCLIColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.buttonCLIColor.Location = new System.Drawing.Point(82, 13);
             this.buttonCLIColor.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCLIColor.Name = "buttonCLIColor";

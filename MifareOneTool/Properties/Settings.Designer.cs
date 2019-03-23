@@ -70,7 +70,7 @@ namespace MifareOneTool.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Lime")]
+        [global::System.Configuration.DefaultSettingValueAttribute("192, 255, 255")]
         public global::System.Drawing.Color MainCLIColor {
             get {
                 return ((global::System.Drawing.Color)(this["MainCLIColor"]));
