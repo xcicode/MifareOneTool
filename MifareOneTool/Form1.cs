@@ -207,6 +207,7 @@ namespace MifareOneTool
             checkBoxDefIsAdv.Checked = Properties.Settings.Default.DefIsAdv;
             checkBoxHardLowCost.Checked = Properties.Settings.Default.HardLowCost;
             checkBoxNewScan.Checked = Properties.Settings.Default.NewScan;
+            checkBoxCuidKeyOver.Checked = Properties.Settings.Default.CuidKeyOver;
             if (Properties.Settings.Default.DefIsAdv)
             {
                 tabControl1.SelectedIndex = 1;
@@ -838,6 +839,8 @@ namespace MifareOneTool
             b.ReportProgress(100, "##运行完毕##");
         }
 
+        bool cuidKeyOver = false;
+
         private void buttonCmfWrite_Click(object sender, EventArgs e)
         {
             if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
@@ -856,6 +859,14 @@ namespace MifareOneTool
                 return;
             }
             if (!writecheck(rmfd)) { MessageBox.Show("将要写入的文件存在错误，请用高级模式中的Hex工具打开查看。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
+            if (keymfd == "" && Properties.Settings.Default.CuidKeyOver)
+            {
+                cuidKeyOver = true;
+                S50 empty = new S50();
+                empty.ExportToMfd("cuid_empty.kmf");
+                keymfd = "cuid_empty.kmf";
+                logAppend("已启用CUID空卡写入补丁");
+            }
             string kt = "A";
             string nn = "";
             if (checkBoxAutoABN.Checked && keymfd != "")
@@ -907,6 +918,12 @@ namespace MifareOneTool
             process.BeginErrorReadLine();
             process.WaitForExit();
             lprocess = false; running = false;
+            if (cuidKeyOver == true)
+            {
+                keymfd = "";
+                cuidKeyOver = false;
+                File.Delete("cuid_empty.kmf");
+            }
             b.ReportProgress(100, "##运行完毕##");
         }
 
@@ -1471,6 +1488,11 @@ namespace MifareOneTool
         private void checkBoxMultiDev_CheckedChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.MultiMode = checkBoxMultiDev.Checked;
+        }
+
+        private void checkBoxCuidKeyOver_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.CuidKeyOver = checkBoxCuidKeyOver.Checked;
         }
     }
 }

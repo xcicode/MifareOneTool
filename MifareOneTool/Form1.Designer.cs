@@ -92,6 +92,7 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.checkBoxMultiDev = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
             this.SetDeviceCombo = new System.Windows.Forms.ComboBox();
             this.checkBoxNewScan = new System.Windows.Forms.CheckBox();
@@ -114,9 +115,9 @@
             this.runTimeLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.localVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.checkBoxMultiDev = new System.Windows.Forms.CheckBox();
             this.curDevice = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.checkBoxCuidKeyOver = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -923,6 +924,17 @@
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "优化设置";
             // 
+            // checkBoxMultiDev
+            // 
+            this.checkBoxMultiDev.AutoSize = true;
+            this.checkBoxMultiDev.Location = new System.Drawing.Point(4, 84);
+            this.checkBoxMultiDev.Name = "checkBoxMultiDev";
+            this.checkBoxMultiDev.Size = new System.Drawing.Size(108, 40);
+            this.checkBoxMultiDev.TabIndex = 4;
+            this.checkBoxMultiDev.Text = "多实例运行模式\r\n会禁用多开检测\r\n请自行指定设备";
+            this.checkBoxMultiDev.UseVisualStyleBackColor = true;
+            this.checkBoxMultiDev.CheckedChanged += new System.EventHandler(this.checkBoxMultiDev_CheckedChanged);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -996,11 +1008,11 @@
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.checkBoxHardLowCost);
-            this.groupBox11.Location = new System.Drawing.Point(2, 86);
+            this.groupBox11.Location = new System.Drawing.Point(2, 99);
             this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox11.Size = new System.Drawing.Size(150, 56);
+            this.groupBox11.Size = new System.Drawing.Size(150, 43);
             this.groupBox11.TabIndex = 14;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "HardNested";
@@ -1093,6 +1105,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.checkBoxCuidKeyOver);
             this.groupBox6.Controls.Add(this.checkBoxWriteProtect);
             this.groupBox6.Controls.Add(this.checkBoxAutoLoadKey);
             this.groupBox6.Controls.Add(this.checkBoxAutoABN);
@@ -1100,7 +1113,7 @@
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Size = new System.Drawing.Size(150, 80);
+            this.groupBox6.Size = new System.Drawing.Size(150, 93);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "卡操作相关";
@@ -1110,7 +1123,7 @@
             this.checkBoxWriteProtect.AutoSize = true;
             this.checkBoxWriteProtect.Checked = true;
             this.checkBoxWriteProtect.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxWriteProtect.Location = new System.Drawing.Point(4, 59);
+            this.checkBoxWriteProtect.Location = new System.Drawing.Point(4, 53);
             this.checkBoxWriteProtect.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxWriteProtect.Name = "checkBoxWriteProtect";
             this.checkBoxWriteProtect.Size = new System.Drawing.Size(132, 16);
@@ -1122,7 +1135,7 @@
             // checkBoxAutoLoadKey
             // 
             this.checkBoxAutoLoadKey.AutoSize = true;
-            this.checkBoxAutoLoadKey.Location = new System.Drawing.Point(4, 39);
+            this.checkBoxAutoLoadKey.Location = new System.Drawing.Point(4, 33);
             this.checkBoxAutoLoadKey.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAutoLoadKey.Name = "checkBoxAutoLoadKey";
             this.checkBoxAutoLoadKey.Size = new System.Drawing.Size(138, 16);
@@ -1136,7 +1149,7 @@
             this.checkBoxAutoABN.AutoSize = true;
             this.checkBoxAutoABN.Checked = true;
             this.checkBoxAutoABN.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxAutoABN.Location = new System.Drawing.Point(4, 19);
+            this.checkBoxAutoABN.Location = new System.Drawing.Point(4, 13);
             this.checkBoxAutoABN.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAutoABN.Name = "checkBoxAutoABN";
             this.checkBoxAutoABN.Size = new System.Drawing.Size(126, 16);
@@ -1191,26 +1204,28 @@
             this.toolStripCheckUpdate.Text = "检查更新";
             this.toolStripCheckUpdate.ButtonClick += new System.EventHandler(this.toolStripCheckUpdate_ButtonClick);
             // 
+            // curDevice
+            // 
+            this.curDevice.Name = "curDevice";
+            this.curDevice.Size = new System.Drawing.Size(0, 21);
+            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // checkBoxMultiDev
+            // checkBoxCuidKeyOver
             // 
-            this.checkBoxMultiDev.AutoSize = true;
-            this.checkBoxMultiDev.Location = new System.Drawing.Point(4, 84);
-            this.checkBoxMultiDev.Name = "checkBoxMultiDev";
-            this.checkBoxMultiDev.Size = new System.Drawing.Size(108, 40);
-            this.checkBoxMultiDev.TabIndex = 4;
-            this.checkBoxMultiDev.Text = "多实例运行模式\r\n会禁用多开检测\r\n请自行指定设备";
-            this.checkBoxMultiDev.UseVisualStyleBackColor = true;
-            this.checkBoxMultiDev.CheckedChanged += new System.EventHandler(this.checkBoxMultiDev_CheckedChanged);
-            // 
-            // curDevice
-            // 
-            this.curDevice.Name = "curDevice";
-            this.curDevice.Size = new System.Drawing.Size(0, 21);
+            this.checkBoxCuidKeyOver.AutoSize = true;
+            this.checkBoxCuidKeyOver.Checked = true;
+            this.checkBoxCuidKeyOver.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxCuidKeyOver.Location = new System.Drawing.Point(4, 72);
+            this.checkBoxCuidKeyOver.Name = "checkBoxCuidKeyOver";
+            this.checkBoxCuidKeyOver.Size = new System.Drawing.Size(108, 16);
+            this.checkBoxCuidKeyOver.TabIndex = 13;
+            this.checkBoxCuidKeyOver.Text = "CUID写空卡补丁";
+            this.checkBoxCuidKeyOver.UseVisualStyleBackColor = true;
+            this.checkBoxCuidKeyOver.CheckedChanged += new System.EventHandler(this.checkBoxCuidKeyOver_CheckedChanged);
             // 
             // Form1
             // 
@@ -1350,6 +1365,7 @@
         private System.Windows.Forms.ComboBox SetDeviceCombo;
         private System.Windows.Forms.CheckBox checkBoxMultiDev;
         private System.Windows.Forms.ToolStripStatusLabel curDevice;
+        private System.Windows.Forms.CheckBox checkBoxCuidKeyOver;
     }
 }
 
