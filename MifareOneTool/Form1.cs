@@ -172,7 +172,7 @@ namespace MifareOneTool
                 {
                     if (!string.IsNullOrEmpty(_e.Data))
                     {
-                        Match m = Regex.Match(_e.Data, "pn532_uart:COM\\d:115200");
+                        Match m = Regex.Match(_e.Data, "pn532_uart:COM\\d+:115200");
                         if (m.Success)
                         {
                             myReader.Add(m.Value);
