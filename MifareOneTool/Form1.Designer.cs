@@ -1160,6 +1160,8 @@
             // checkBoxAutoLoadKey
             // 
             this.checkBoxAutoLoadKey.AutoSize = true;
+            this.checkBoxAutoLoadKey.Checked = true;
+            this.checkBoxAutoLoadKey.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxAutoLoadKey.Location = new System.Drawing.Point(4, 33);
             this.checkBoxAutoLoadKey.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAutoLoadKey.Name = "checkBoxAutoLoadKey";
