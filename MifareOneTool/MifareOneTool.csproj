@@ -95,6 +95,12 @@
     <Compile Include="FormHTool.Designer.cs">
       <DependentUpon>FormHTool.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMFF08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMFF08.Designer.cs">
+      <DependentUpon>FormMFF08.cs</DependentUpon>
+    </Compile>
     <Compile Include="GitHubUpdate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormHTool.resx">
       <DependentUpon>FormHTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMFF08.resx">
+      <DependentUpon>FormMFF08.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

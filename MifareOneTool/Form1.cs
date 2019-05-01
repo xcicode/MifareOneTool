@@ -55,6 +55,7 @@ namespace MifareOneTool
             if (e.ProgressPercentage == 100)
             {
                 logAppend((string)e.UserState);
+                logAppend("");
                 Text = "MifareOne Tool - 运行完毕";
             }
             else if (e.ProgressPercentage == 101)
@@ -112,6 +113,7 @@ namespace MifareOneTool
                     }
                 }
                 omfd = "";
+                logAppend("");
                 Text = "MifareOne Tool - 运行完毕";
             }
             else if (e.ProgressPercentage == 102)
@@ -119,6 +121,7 @@ namespace MifareOneTool
                 logAppend((string)e.UserState);
                 logAppend("##Nonce收集完毕##");
                 logAppend("您可以上传到云计算服务节点进行计算。");
+                logAppend("");
 
                 Text = "MifareOne Tool - 运行完毕";
             }
@@ -138,13 +141,17 @@ namespace MifareOneTool
                     SetDeviceCombo.Items.AddRange(myReaders.ToArray());
                     SetDeviceCombo.SelectedIndex = 0;
                 }
+                else
+                {
+                    logAppend("没有发现任何有效的NFC设备。");
+                    logAppend("请检查接线是否正确/驱动是否正常安装/设备电源是否已经打开（对于具有电源开关的型号）。");
+                }
             }
             else
             {
                 logAppend((string)e.UserState);
             }
             Application.DoEvents();
-
         }
 
         private void logAppend(string msg)
@@ -163,7 +170,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi); 
+            b.ReportProgress(0, "开始执行检测设备……"); running = true;
             List<string> myReader = new List<string>();
             process.OutputDataReceived += (s, _e) =>
             {
@@ -195,9 +203,6 @@ namespace MifareOneTool
         {
             logAppend("#软件版本 " + Assembly.GetExecutingAssembly().GetName().Version.ToString());
             localVersionLabel.Text = "本地版本 " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            //GitHubUpdate ghu = new GitHubUpdate(Properties.Settings.Default.GitHubR);
-            //ghu.Update(Properties.Settings.Default.GitHubR);
-            //remoteVersionLabel.Text = "远程版本 " + ghu.remoteVersion;
             Directory.CreateDirectory("auto_keys");
             checkBoxAutoABN.Checked = Properties.Settings.Default.AutoABN;
             checkBoxWriteProtect.Checked = Properties.Settings.Default.WriteCheck;
@@ -250,7 +255,9 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0,"开始执行扫描卡片……");
+            running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -370,7 +377,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行读取卡片……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -502,7 +510,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行写入M1卡片……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -558,7 +567,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行MFOC解密……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -612,7 +622,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行重置UID卡片卡号……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -649,7 +660,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行UID卡片全格……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -688,7 +700,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行UID卡片读取……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -747,7 +760,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行UID卡片写入……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -803,7 +817,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行UID卡片设定卡号……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -834,6 +849,7 @@ namespace MifareOneTool
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行全加密卡片爆破……");
             process.WaitForExit();
             lprocess = false; running = false;
             b.ReportProgress(100, "##运行完毕##");
@@ -863,7 +879,7 @@ namespace MifareOneTool
             {
                 cuidKeyOver = true;
                 string uid = GetUID();
-                S50 empty = new S50(Utils.Hex2Block(uid,4));
+                S50 empty = new S50(Utils.Hex2Block(uid, 4));
                 empty.ExportToMfd("cuid_empty.kmf");
                 keymfd = "cuid_empty.kmf";
                 logAppend("已启用CUID空卡写入补丁");
@@ -911,7 +927,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行CUID/FUID卡片写入……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -960,14 +977,15 @@ namespace MifareOneTool
             RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
             byte[] uid = new byte[4];
             rng.GetNonZeroBytes(uid);
-            psi.Arguments = "-l";
+            psi.Arguments = "-q -l";
             psi.CreateNoWindow = true;
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi); 
+            b.ReportProgress(0, "开始执行UFUID卡片锁定……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -1018,7 +1036,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi);
+            b.ReportProgress(0, "开始执行格式化M1卡片……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -1179,7 +1198,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi); 
+            b.ReportProgress(0, "开始执行检测卡片加密……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -1274,7 +1294,7 @@ namespace MifareOneTool
                 return;
             }
             string rmfd = "Mfoc.tmp";
-            string key = "-f " + filename + " ";
+            string key = "-f \"" + filename + "\" ";
             if (checkBoxAutoSave.Checked)
             {
                 lastuid = GetUID();
@@ -1301,10 +1321,11 @@ namespace MifareOneTool
             psi.Arguments = "/T:0A " + args[2] + @" nfc-bin\mfoc.exe " + args[1] + " -O \"" + args[0] + "\"";
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi); 
+            b.ReportProgress(0, "开始执行字典模式MFOC解密……"); running = true;
             process.WaitForExit();
             lprocess = false; running = false;
-            if (process.ExitCode == 0)
+            if (process.ExitCode == -1073741510)    //Why this
             {
                 b.ReportProgress(101, "##运行完毕##");
             }
@@ -1376,7 +1397,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi); 
+            b.ReportProgress(0, "开始执行HardNested解密强化卡……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -1405,7 +1427,8 @@ namespace MifareOneTool
             psi.RedirectStandardError = true;
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); running = true;
+            process = Process.Start(psi); 
+            b.ReportProgress(0, "开始执行HardNested收集数据……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -1494,6 +1517,12 @@ namespace MifareOneTool
         private void checkBoxCuidKeyOver_CheckedChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.CuidKeyOver = checkBoxCuidKeyOver.Checked;
+        }
+
+        private void buttonMFF08_Click(object sender, EventArgs e)
+        {
+            FormMFF08 mff08 = new FormMFF08();
+            mff08.ShowDialog();
         }
     }
 }

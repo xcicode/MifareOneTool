@@ -60,6 +60,7 @@
             this.buttonDictMfoc = new System.Windows.Forms.Button();
             this.buttonnKeysMfoc = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonMFF08 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.buttonEStop = new System.Windows.Forms.Button();
@@ -203,7 +204,7 @@
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(576, 313);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Hello,cardman!\n建议点击\"检测\"以加快后续运行速度\n";
+            this.richTextBox1.Text = "Hello,cardman!\n首次运行建议点击\"检测设备\"以加快后续运行速度\n";
             // 
             // buttonMfRead
             // 
@@ -510,6 +511,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.buttonMFF08);
             this.groupBox4.Controls.Add(this.buttonDiffTool);
             this.groupBox4.Controls.Add(this.buttonHexTool);
             this.groupBox4.Location = new System.Drawing.Point(2, 75);
@@ -520,6 +522,16 @@
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "集成辅助工具";
+            // 
+            // buttonMFF08
+            // 
+            this.buttonMFF08.Location = new System.Drawing.Point(90, 16);
+            this.buttonMFF08.Name = "buttonMFF08";
+            this.buttonMFF08.Size = new System.Drawing.Size(117, 25);
+            this.buttonMFF08.TabIndex = 2;
+            this.buttonMFF08.Text = "MFF08 CUID修复";
+            this.buttonMFF08.UseVisualStyleBackColor = true;
+            this.buttonMFF08.Click += new System.EventHandler(this.buttonMFF08_Click);
             // 
             // tabControl1
             // 
@@ -919,7 +931,7 @@
             this.groupBox14.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox14.Size = new System.Drawing.Size(142, 142);
+            this.groupBox14.Size = new System.Drawing.Size(142, 140);
             this.groupBox14.TabIndex = 15;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "优化设置";
@@ -1366,6 +1378,7 @@
         private System.Windows.Forms.CheckBox checkBoxMultiDev;
         private System.Windows.Forms.ToolStripStatusLabel curDevice;
         private System.Windows.Forms.CheckBox checkBoxCuidKeyOver;
+        private System.Windows.Forms.Button buttonMFF08;
     }
 }
 
