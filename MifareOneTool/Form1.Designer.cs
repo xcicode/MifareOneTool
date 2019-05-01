@@ -107,6 +107,7 @@
             this.buttonCLIColor = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.checkBoxCuidKeyOver = new System.Windows.Forms.CheckBox();
             this.checkBoxWriteProtect = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoLoadKey = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoABN = new System.Windows.Forms.CheckBox();
@@ -117,7 +118,6 @@
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.curDevice = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.checkBoxCuidKeyOver = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1118,6 +1118,19 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "卡操作相关";
             // 
+            // checkBoxCuidKeyOver
+            // 
+            this.checkBoxCuidKeyOver.AutoSize = true;
+            this.checkBoxCuidKeyOver.Checked = true;
+            this.checkBoxCuidKeyOver.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxCuidKeyOver.Location = new System.Drawing.Point(4, 72);
+            this.checkBoxCuidKeyOver.Name = "checkBoxCuidKeyOver";
+            this.checkBoxCuidKeyOver.Size = new System.Drawing.Size(108, 16);
+            this.checkBoxCuidKeyOver.TabIndex = 13;
+            this.checkBoxCuidKeyOver.Text = "CUID写空卡补丁";
+            this.checkBoxCuidKeyOver.UseVisualStyleBackColor = true;
+            this.checkBoxCuidKeyOver.CheckedChanged += new System.EventHandler(this.checkBoxCuidKeyOver_CheckedChanged);
+            // 
             // checkBoxWriteProtect
             // 
             this.checkBoxWriteProtect.AutoSize = true;
@@ -1213,19 +1226,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // checkBoxCuidKeyOver
-            // 
-            this.checkBoxCuidKeyOver.AutoSize = true;
-            this.checkBoxCuidKeyOver.Checked = true;
-            this.checkBoxCuidKeyOver.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxCuidKeyOver.Location = new System.Drawing.Point(4, 72);
-            this.checkBoxCuidKeyOver.Name = "checkBoxCuidKeyOver";
-            this.checkBoxCuidKeyOver.Size = new System.Drawing.Size(108, 16);
-            this.checkBoxCuidKeyOver.TabIndex = 13;
-            this.checkBoxCuidKeyOver.Text = "CUID写空卡补丁";
-            this.checkBoxCuidKeyOver.UseVisualStyleBackColor = true;
-            this.checkBoxCuidKeyOver.CheckedChanged += new System.EventHandler(this.checkBoxCuidKeyOver_CheckedChanged);
             // 
             // Form1
             // 

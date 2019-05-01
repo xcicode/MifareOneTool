@@ -172,7 +172,7 @@ namespace MifareOneTool
                 {
                     if (!string.IsNullOrEmpty(_e.Data))
                     {
-                        Match m = Regex.Match(_e.Data, "pn532_uart:COM\\d:115200");
+                        Match m = Regex.Match(_e.Data, "pn532_uart:COM\\d+:115200");
                         if (m.Success)
                         {
                             myReader.Add(m.Value);
@@ -862,7 +862,8 @@ namespace MifareOneTool
             if (keymfd == "" && Properties.Settings.Default.CuidKeyOver)
             {
                 cuidKeyOver = true;
-                S50 empty = new S50();
+                string uid = GetUID();
+                S50 empty = new S50(Utils.Hex2Block(uid,4));
                 empty.ExportToMfd("cuid_empty.kmf");
                 keymfd = "cuid_empty.kmf";
                 logAppend("已启用CUID空卡写入补丁");
