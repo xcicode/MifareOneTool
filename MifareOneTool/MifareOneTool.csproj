@@ -104,19 +104,55 @@
     <Compile Include="GitHubUpdate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectLanguage.designer.cs">
+      <DependentUpon>SelectLanguage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.ru.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.zh.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDiff.resx">
       <DependentUpon>FormDiff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDiff.ru.resx">
+      <DependentUpon>FormDiff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiff.zh.resx">
+      <DependentUpon>FormDiff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHardNes.resx">
+      <DependentUpon>FormHardNes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHardNes.ru.resx">
+      <DependentUpon>FormHardNes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHardNes.zh.resx">
       <DependentUpon>FormHardNes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHTool.resx">
       <DependentUpon>FormHTool.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHTool.ru.resx">
+      <DependentUpon>FormHTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHTool.zh.resx">
+      <DependentUpon>FormHTool.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMFF08.resx">
+      <DependentUpon>FormMFF08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMFF08.ru.resx">
+      <DependentUpon>FormMFF08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMFF08.zh.resx">
       <DependentUpon>FormMFF08.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -128,6 +164,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SelectLanguage.resx">
+      <DependentUpon>SelectLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLanguage.zh.resx">
+      <DependentUpon>SelectLanguage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -162,6 +204,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MifareOneTool_ml.xml" />
     <Content Include="nfc_128.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

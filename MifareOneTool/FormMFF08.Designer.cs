@@ -48,24 +48,15 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(635, 100);
-            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "说明";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 9.5F);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(6, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(584, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "本工具由nfc-mfclassic做少许修改而来。可用于1K大小CUID卡0块损坏的修复。\r\n本工具可以修复：SAK写错（不认卡类型）、ATQA写错（不认卡大小）" +
-                "，对于BCC写错暂时无能为力。\r\n请准备好你最后一次写入该卡导致0块损坏的卡数据文件（如果卡片有加密）。";
             // 
             // groupBox2
             // 
@@ -75,106 +66,73 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.buttonKeyWrite);
             this.groupBox2.Controls.Add(this.buttonWriteEmpty);
-            this.groupBox2.Location = new System.Drawing.Point(12, 118);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(635, 100);
-            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "操作";
             // 
             // buttonClr
             // 
-            this.buttonClr.Location = new System.Drawing.Point(585, 33);
+            resources.ApplyResources(this.buttonClr, "buttonClr");
             this.buttonClr.Name = "buttonClr";
-            this.buttonClr.Size = new System.Drawing.Size(44, 23);
-            this.buttonClr.TabIndex = 4;
-            this.buttonClr.Text = "清除";
             this.buttonClr.UseVisualStyleBackColor = true;
             this.buttonClr.Click += new System.EventHandler(this.buttonClr_Click);
             // 
             // buttonLoadKey
             // 
-            this.buttonLoadKey.Location = new System.Drawing.Point(504, 33);
+            resources.ApplyResources(this.buttonLoadKey, "buttonLoadKey");
             this.buttonLoadKey.Name = "buttonLoadKey";
-            this.buttonLoadKey.Size = new System.Drawing.Size(75, 23);
-            this.buttonLoadKey.TabIndex = 1;
-            this.buttonLoadKey.Text = "加载…";
             this.buttonLoadKey.UseVisualStyleBackColor = true;
             this.buttonLoadKey.Click += new System.EventHandler(this.buttonLoadKey_Click);
             // 
             // keyfileBox
             // 
-            this.keyfileBox.Location = new System.Drawing.Point(237, 35);
+            resources.ApplyResources(this.keyfileBox, "keyfileBox");
             this.keyfileBox.Name = "keyfileBox";
-            this.keyfileBox.Size = new System.Drawing.Size(261, 21);
-            this.keyfileBox.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(235, 20);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(227, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "最后一次写卡导致0块损坏的卡数据文件：";
             // 
             // buttonKeyWrite
             // 
-            this.buttonKeyWrite.Font = new System.Drawing.Font("宋体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonKeyWrite.Location = new System.Drawing.Point(121, 20);
+            resources.ApplyResources(this.buttonKeyWrite, "buttonKeyWrite");
             this.buttonKeyWrite.Name = "buttonKeyWrite";
-            this.buttonKeyWrite.Size = new System.Drawing.Size(83, 74);
-            this.buttonKeyWrite.TabIndex = 1;
-            this.buttonKeyWrite.Text = "修复写入\r\n有密码\r\nCUID卡";
             this.buttonKeyWrite.UseVisualStyleBackColor = true;
             this.buttonKeyWrite.Click += new System.EventHandler(this.buttonKeyWrite_Click);
             // 
             // buttonWriteEmpty
             // 
-            this.buttonWriteEmpty.Font = new System.Drawing.Font("宋体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonWriteEmpty.Location = new System.Drawing.Point(8, 20);
+            resources.ApplyResources(this.buttonWriteEmpty, "buttonWriteEmpty");
             this.buttonWriteEmpty.Name = "buttonWriteEmpty";
-            this.buttonWriteEmpty.Size = new System.Drawing.Size(83, 74);
-            this.buttonWriteEmpty.TabIndex = 0;
-            this.buttonWriteEmpty.Text = "修复写入\r\n无密空白\r\nCUID卡";
             this.buttonWriteEmpty.UseVisualStyleBackColor = true;
             this.buttonWriteEmpty.Click += new System.EventHandler(this.buttonWriteEmpty_Click);
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.logBox);
-            this.groupBox3.Location = new System.Drawing.Point(12, 224);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(635, 188);
-            this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "日志";
             // 
             // logBox
             // 
             this.logBox.BackColor = System.Drawing.Color.Black;
-            this.logBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.logBox, "logBox");
             this.logBox.ForeColor = System.Drawing.Color.Gold;
-            this.logBox.Location = new System.Drawing.Point(3, 17);
             this.logBox.Name = "logBox";
             this.logBox.ReadOnly = true;
-            this.logBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.logBox.Size = new System.Drawing.Size(629, 168);
-            this.logBox.TabIndex = 0;
-            this.logBox.Text = resources.GetString("logBox.Text");
             // 
             // FormMFF08
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 424);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "FormMFF08";
-            this.Text = "MFF08 Tool-CUID修复工具";
             this.Load += new System.EventHandler(this.FormMFF08_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
