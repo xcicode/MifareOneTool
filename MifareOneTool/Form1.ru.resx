@@ -118,31 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="buttoEScanCard.Text" xml:space="preserve">
-    <value>Сканирование карты</value>
+    <value>Поиск карт</value>
   </data>
   <data name="button4.Text" xml:space="preserve">
     <value>Блокировка карты UFUID</value>
   </data>
   <data name="buttonBmfRead.Text" xml:space="preserve">
-    <value>Чтение UID</value>
+    <value>Читать UID</value>
   </data>
   <data name="buttonBmfRead.ToolTip" xml:space="preserve">
-    <value>Прочитайте карту UID.</value>
+    <value>Прочитать UID карты</value>
   </data>
   <data name="buttonBmfWrite.Text" xml:space="preserve">
-    <value>UID написать</value>
+    <value>Запись UID</value>
   </data>
   <data name="buttonBmfWrite.ToolTip" xml:space="preserve">
     <value>Напишите UID-карту.</value>
   </data>
   <data name="buttonCheckEncrypt.Text" xml:space="preserve">
-    <value>Проверьте шифрование</value>
+    <value>Проверка шифрования</value>
   </data>
   <data name="buttonCheckEncrypt.ToolTip" xml:space="preserve">
-    <value>Проверьте шифрование карты.</value>
+    <value>Обнаружение шифрования карты.</value>
   </data>
   <data name="buttonCLI.Text" xml:space="preserve">
-    <value>Ручной CLI</value>
+    <value>Команды</value>
   </data>
   <data name="buttonCLI.ToolTip" xml:space="preserve">
     <value>Откройте командную строку NFC для расширенных операций.</value>
@@ -151,7 +151,7 @@
     <value># M1T #</value>
   </data>
   <data name="buttonCmfWrite.Text" xml:space="preserve">
-    <value>CUID написать</value>
+    <value>Запись CUID</value>
   </data>
   <data name="buttonCmfWrite.ToolTip" xml:space="preserve">
     <value>Запишите CUID / FUID карту (может понадобиться файл ключа)</value>
@@ -163,59 +163,59 @@
     <value>Сохранить журнал</value>
   </data>
   <data name="buttonDictMfoc.Text" xml:space="preserve">
-    <value>Словарный тест</value>
+    <value>Тест словаря</value>
   </data>
   <data name="buttonDictMfoc.ToolTip" xml:space="preserve">
-    <value>Импортируйте файл словаря для Nested crack.</value>
+    <value>Импорт файлов словарей для взлома</value>
   </data>
   <data name="buttonDiffTool.Text" xml:space="preserve">
-    <value>Сравнение различий</value>
+    <value>Сравнение дампов</value>
   </data>
   <data name="buttonECheckEncrypt.Text" xml:space="preserve">
     <value>Определить шифрование</value>
   </data>
   <data name="buttonECmfoc.Text" xml:space="preserve">
-    <value>Знай секретную трещину</value>
+    <value>Ввести известный ключ</value>
   </data>
   <data name="buttonECuidWrite.Text" xml:space="preserve">
-    <value>Написать C / FUID карту</value>
+    <value>Запись карты C/FUID</value>
   </data>
   <data name="buttonEMfoc.Text" xml:space="preserve">
-    <value>Решение в один клик</value>
+    <value>Автоматически</value>
   </data>
   <data name="buttonEMfRead.Text" xml:space="preserve">
-    <value>Известный ключ чтения</value>
+    <value>Известный ключ для чтения</value>
   </data>
   <data name="buttonEMfWrite.Text" xml:space="preserve">
-    <value>Написать обычную карту</value>
+    <value>Записать обычную карту</value>
   </data>
   <data name="buttonEReadUID.Text" xml:space="preserve">
-    <value>Читать обратно с UID карты</value>
+    <value>Чтение UID</value>
   </data>
   <data name="buttonEscan.Text" xml:space="preserve">
-    <value>Определить соединение</value>
+    <value>Определить считыватель</value>
   </data>
   <data name="buttonESelectKey.Text" xml:space="preserve">
     <value>Загрузить ключ ...</value>
   </data>
   <data name="buttonEStop.Text" xml:space="preserve">
-    <value>Остановить или Стоп</value>
+    <value>Остановить</value>
   </data>
   <data name="buttonEUIDWrite.Text" xml:space="preserve">
-    <value>Запись (UF) UID карты</value>
+    <value>Запись карты (UF)UID</value>
   </data>
   <data name="buttonHexTool.Text" xml:space="preserve">
-    <value>Шестнадцатеричный редактор</value>
+    <value>Редактор дампа</value>
   </data>
   <data name="buttonKill.Text" xml:space="preserve">
-    <value>Хватит бегать</value>
+    <value>Остановить</value>
   </data>
   <data name="buttonListDev.Text" xml:space="preserve">
-    <value>Испытательное оборудование</value>
+    <value>Определить</value>
   </data>
   <data name="buttonListDev.ToolTip" xml:space="preserve">
-    <value>Сканирование подключенного устройства NFC
-(в настоящее время поддерживает PN532, ACR122U)</value>
+    <value>Сканирование подключенных устройств NFC
+(В настоящее время поддерживает PN532, ACR122U)</value>
   </data>
   <data name="buttonLockUfuid.Text" xml:space="preserve">
     <value>Блокировка Ufuid</value>
@@ -224,44 +224,44 @@
     <value>Заблокированная карта UFUID 0 блокирует данные (тестирование)</value>
   </data>
   <data name="buttonMfcuk.Text" xml:space="preserve">
-    <value>Полностью зашифрованные взрывные работы</value>
+    <value>MFUK</value>
   </data>
   <data name="buttonMfcuk.ToolTip" xml:space="preserve">
-    <value>Внедрите инструмент Darkside на карту (не обязательно успешный)</value>
+    <value>Инструмент Darkside (не обязательно успешный）</value>
   </data>
   <data name="buttonMFF08.Text" xml:space="preserve">
     <value>MFF08 CUID ремонт</value>
   </data>
   <data name="buttonMfFormat.Text" xml:space="preserve">
-    <value>Очистить М1</value>
+    <value>Очистить</value>
   </data>
   <data name="buttonMfFormat.ToolTip" xml:space="preserve">
     <value>Отформатируйте нормальную карту M1 (необходимо загрузить файл ключа)</value>
   </data>
   <data name="buttonMfoc.Text" xml:space="preserve">
-    <value>Чтение MFOC</value>
+    <value>MFOC</value>
   </data>
   <data name="buttonMfoc.ToolTip" xml:space="preserve">
-    <value>Вложенный взлом на полушифрованных картах.
+    <value>Взлом на полушифрованных картах.
 Нажмите Ctrl и нажмите эту кнопку, чтобы добавить известный ключ.</value>
   </data>
   <data name="buttonMfRead.Text" xml:space="preserve">
-    <value>Читай М1</value>
+    <value>Чтение</value>
   </data>
   <data name="buttonMfRead.ToolTip" xml:space="preserve">
     <value>Прочитайте обычные карты M1 (возможно, потребуется загрузить файл ключа)</value>
   </data>
   <data name="buttonMfWrite.Text" xml:space="preserve">
-    <value>Написать M1</value>
+    <value>Запись</value>
   </data>
   <data name="buttonMfWrite.ToolTip" xml:space="preserve">
     <value>Напишите нормальную карту M1 (возможно, потребуется загрузить файл ключа)</value>
   </data>
   <data name="buttonnKeysMfoc.Text" xml:space="preserve">
-    <value>Знать н</value>
+    <value>Ввод известного ключа</value>
   </data>
   <data name="buttonnKeysMfoc.ToolTip" xml:space="preserve">
-    <value>Введите известный ключ для вложенного взлома.</value>
+    <value>Введите известный ключ для взлома.</value>
   </data>
   <data name="buttonScanCard.Text" xml:space="preserve">
     <value>Ручное сканирование</value>
@@ -270,13 +270,13 @@
     <value>Сканирование для действительной карты.</value>
   </data>
   <data name="buttonSelectKey.Text" xml:space="preserve">
-    <value>Выберите key.mfd</value>
+    <value>Выбрать key.mfd</value>
   </data>
   <data name="buttonSelectKey.ToolTip" xml:space="preserve">
     <value>Загрузите файл MFD с правильным ключом для чтения и записи и правильными битами управления.</value>
   </data>
   <data name="buttonUidFormat.Text" xml:space="preserve">
-    <value>UID полная сетка</value>
+    <value>Полный UID</value>
   </data>
   <data name="buttonUidFormat.ToolTip" xml:space="preserve">
     <value>Очистите карту и повторно инициализируйте ее.
@@ -307,13 +307,14 @@
     <value>CUID запись патча пустой карты</value>
   </data>
   <data name="checkBoxDefIsAdv.Text" xml:space="preserve">
-    <value>Автоматически перейти в расширенный режим работы</value>
+    <value>Автоматический переход в 
+расширенный режим работы</value>
   </data>
   <data name="checkBoxHardLowCost.Text" xml:space="preserve">
     <value>Однопоточные вычисления</value>
   </data>
   <data name="checkBoxMultiDev.Text" xml:space="preserve">
-    <value>Режим нескольких экземпляров
+    <value>Режим нескольких устройств
 Multi-Open обнаружение будет отключено
 Пожалуйста, укажите ваше собственное устройство</value>
   </data>
@@ -327,53 +328,53 @@ Multi-Open обнаружение будет отключено
     <value>Управление устройством</value>
   </data>
   <data name="groupBox10.Text" xml:space="preserve">
-    <value>Взломать инструмент</value>
+    <value>Взлом</value>
   </data>
   <data name="groupBox12.Text" xml:space="preserve">
     <value>Настройки интерфейса</value>
   </data>
   <data name="groupBox13.Text" xml:space="preserve">
-    <value>предпочтения</value>
+    <value>Предпочтения</value>
   </data>
   <data name="groupBox14.Text" xml:space="preserve">
     <value>Настройки оптимизации</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Обычная операция с картой</value>
+    <value>Обычные операции с картой</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
-    <value>Run / Terminal</value>
+    <value>Терминал</value>
   </data>
   <data name="groupBox4.Text" xml:space="preserve">
-    <value>Интегрированные средства</value>
+    <value>Дополнительные инструменты</value>
   </data>
   <data name="groupBox5.Text" xml:space="preserve">
-    <value>[2] читать оригинал карты</value>
+    <value>2. Прочитать карту</value>
   </data>
   <data name="groupBox6.Text" xml:space="preserve">
     <value>Операция с картой</value>
   </data>
   <data name="groupBox7.Text" xml:space="preserve">
-    <value>[3] написать новую карту</value>
+    <value>3. Записать новую карту</value>
   </data>
   <data name="groupBox8.Text" xml:space="preserve">
-    <value>Работа UID / UFUID карты</value>
+    <value>Операции с UID/UFUID</value>
   </data>
   <data name="groupBox9.Text" xml:space="preserve">
-    <value>Работа с картой C / FUID</value>
+    <value>Работа с картой C/FUID</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Карточка читается
-То же, что и обычная карта</value>
+    <value>Карточка читается 
+как и обычная карта</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Размер текста терминала</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>Назначенное устройство</value>
+    <value>Укажите устройство</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Начните здесь
+    <value>1. Начните здесь
 
 
 
@@ -387,32 +388,30 @@ Multi-Open обнаружение будет отключено
 </value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>&gt;&gt;&gt; Попробуй посмотреть, получится ли</value>
+    <value>&gt;&gt;&gt; Проверьте результат</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>Пожалуйста, поставьте
-Оригинальная карта</value>
+    <value>Пожалуйста, 
+вставьте оигинальную карту</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>Пожалуйста, поставьте
-Новая карта</value>
+    <value>Пожалуйста, вставьте 
+новую карту</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Цвет текста терминала</value>
   </data>
   <data name="richTextBox1.Lines[0]" xml:space="preserve">
-    <value>Привет, кардмен!</value>
+    <value>Привет!</value>
   </data>
   <data name="richTextBox1.Lines[1]" xml:space="preserve">
     <value>Для первого запуска нажмите «Определить устройство», чтобы ускорить последующие запуски.</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Привет, кардмен!
-Для первого запуска нажмите «Определить устройство», чтобы ускорить последующие запуски.
-</value>
+    <value>Рекомендуется нажать «Определить», чтобы ускорить последующую операцию.</value>
   </data>
   <data name="statusLabel.Text" xml:space="preserve">
-    <value>готовый</value>
+    <value>Готов</value>
   </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Расширенный режим работы</value>
@@ -421,7 +420,7 @@ Multi-Open обнаружение будет отключено
     <value>Режим копирования карты</value>
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
-    <value>Настройки программного обеспечения</value>
+    <value>Настройки программы</value>
   </data>
   <data name="toolStripCheckUpdate.Text" xml:space="preserve">
     <value>Проверьте наличие обновлений</value>
