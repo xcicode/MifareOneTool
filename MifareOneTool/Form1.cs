@@ -1524,5 +1524,20 @@ namespace MifareOneTool
             FormMFF08 mff08 = new FormMFF08();
             mff08.ShowDialog();
         }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TableLayoutPanel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
