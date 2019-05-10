@@ -35,7 +35,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\Сборки\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -156,18 +156,22 @@
       <DependentUpon>FormMFF08.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SelectLanguage.resx">
-      <DependentUpon>SelectLanguage.cs</DependentUpon>
+    <EmbeddedResource Include="Properties\Resources.ru.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SelectLanguage.zh.resx">
+    <EmbeddedResource Include="Properties\Resources.zh.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLanguage.resx">
       <DependentUpon>SelectLanguage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />

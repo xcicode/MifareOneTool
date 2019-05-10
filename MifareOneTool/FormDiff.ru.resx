@@ -118,13 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="button1.Text" xml:space="preserve">
-    <value />
+    <value>A</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
     <value>В</value>
   </data>
   <data name="button3.Text" xml:space="preserve">
-    <value>сравнить</value>
+    <value>Сравнить</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Сравнение дампов</value>
   </data>
   <data name="richTextBox1.Lines[0]" xml:space="preserve">
     <value>Добро пожаловать во встроенный инструмент различий M1T!</value>
@@ -139,10 +142,9 @@
     <value>Затем нажмите «Сравнить», чтобы увидеть результаты.</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Добро пожаловать во встроенный инструмент различий M1T!
+    <value>Добро пожаловать во встроенный инструмент сравнения дампов!
 Описание:
-Нажмите две кнопки AB выше, чтобы выбрать файл MFD.
-Затем нажмите «Сравнить», чтобы увидеть результаты.
-</value>
+1. Нажмите  А или В, чтобы выбрать файл MFD.
+2. Нажмите «Сравнить», чтобы увидеть результаты.</value>
   </data>
 </root>

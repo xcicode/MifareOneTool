@@ -75,12 +75,24 @@
             this.labelCurSec = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.s50BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.s50BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -249,27 +261,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.buttonSaveSectorEdit);
-            this.groupBox2.Controls.Add(this.comboBox4);
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.keyBEdit);
-            this.groupBox2.Controls.Add(this.keyAEdit);
-            this.groupBox2.Controls.Add(this.block2Edit);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.block1Edit);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.block0Edit);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.labelCurSec);
             resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Controls.Add(this.tableLayoutPanel2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -432,8 +425,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.richTextBox1);
             resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Controls.Add(this.richTextBox1);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -445,6 +438,63 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 1, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel3, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel2, 0, 1);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // flowLayoutPanel1
+            // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Controls.Add(this.labelCurSec);
+            this.flowLayoutPanel1.Controls.Add(this.buttonSaveSectorEdit);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // flowLayoutPanel2
+            // 
+            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
+            this.flowLayoutPanel2.Controls.Add(this.label1);
+            this.flowLayoutPanel2.Controls.Add(this.block0Edit);
+            this.flowLayoutPanel2.Controls.Add(this.label2);
+            this.flowLayoutPanel2.Controls.Add(this.block1Edit);
+            this.flowLayoutPanel2.Controls.Add(this.label3);
+            this.flowLayoutPanel2.Controls.Add(this.block2Edit);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            // 
+            // tableLayoutPanel3
+            // 
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.keyAEdit, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label5, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.keyBEdit, 1, 1);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            // 
+            // flowLayoutPanel3
+            // 
+            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
+            this.flowLayoutPanel3.Controls.Add(this.label6);
+            this.flowLayoutPanel3.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel3.Controls.Add(this.label7);
+            this.flowLayoutPanel3.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel3.Controls.Add(this.label8);
+            this.flowLayoutPanel3.Controls.Add(this.comboBox3);
+            this.flowLayoutPanel3.Controls.Add(this.label9);
+            this.flowLayoutPanel3.Controls.Add(this.comboBox4);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            // 
             // s50BindingSource
             // 
             this.s50BindingSource.DataSource = typeof(MifareOneTool.S50);
@@ -454,9 +504,7 @@
             this.AcceptButton = this.buttonSaveSectorEdit;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
@@ -470,6 +518,18 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.s50BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -524,5 +584,11 @@
         private System.Windows.Forms.ToolStripMenuItem 导入MCT格式ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem 列出全卡密钥ToolStripMenuItem;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

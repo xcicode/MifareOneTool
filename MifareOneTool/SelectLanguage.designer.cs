@@ -69,6 +69,7 @@ namespace MultiLang
             resources.ApplyResources(this.lstCultures, "lstCultures");
             this.lstCultures.DisplayMember = "NativeName";
             this.lstCultures.Name = "lstCultures";
+            this.lstCultures.SelectedIndexChanged += new System.EventHandler(this.LstCultures_SelectedIndexChanged);
             this.lstCultures.DoubleClick += new System.EventHandler(this.btOK_Click);
             // 
             // btOK

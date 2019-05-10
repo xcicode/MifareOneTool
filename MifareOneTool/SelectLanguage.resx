@@ -117,27 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btOK.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="lblStartup.Text" xml:space="preserve">
-    <value>Next time ...</value>
-  </data>
-  <data name="rbDefault.Text" xml:space="preserve">
-    <value>Use the default language</value>
-  </data>
-  <data name="rbSelected.Text" xml:space="preserve">
-    <value>Use the selected language</value>
-  </data>
-  <data name="rbShow.Text" xml:space="preserve">
-    <value>Show this form again</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>SelectLanguage</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="rbSelected.AccessibleDescription" xml:space="preserve">
     <value />
   </data>
@@ -164,6 +143,9 @@
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="rbSelected.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="rbSelected.Text" xml:space="preserve">
+    <value>Use the selected language</value>
   </data>
   <data name="&gt;&gt;rbSelected.Name" xml:space="preserve">
     <value>rbSelected</value>
@@ -201,6 +183,9 @@
   <data name="rbShow.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="rbShow.Text" xml:space="preserve">
+    <value>Show this form again</value>
+  </data>
   <data name="&gt;&gt;rbShow.Name" xml:space="preserve">
     <value>rbShow</value>
   </data>
@@ -233,6 +218,9 @@
   </data>
   <data name="lblStartup.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="lblStartup.Text" xml:space="preserve">
+    <value>Next time ...</value>
   </data>
   <data name="&gt;&gt;lblStartup.Name" xml:space="preserve">
     <value>lblStartup</value>
@@ -269,6 +257,9 @@
   </data>
   <data name="rbDefault.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="rbDefault.Text" xml:space="preserve">
+    <value>Use the default language</value>
   </data>
   <data name="&gt;&gt;rbDefault.Name" xml:space="preserve">
     <value>rbDefault</value>
@@ -342,6 +333,9 @@
   <data name="btOK.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
+  <data name="btOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="&gt;&gt;btOK.Name" xml:space="preserve">
     <value>btOK</value>
   </data>
@@ -384,6 +378,9 @@
   <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>9, 20</value>
   </data>
@@ -395,6 +392,9 @@
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>SelectLanguage</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>SelectLanguage</value>

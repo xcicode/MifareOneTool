@@ -157,16 +157,16 @@
     <value>Запишите CUID / FUID карту (может понадобиться файл ключа)</value>
   </data>
   <data name="buttonConClr.Text" xml:space="preserve">
-    <value>Очистить терминал</value>
+    <value>Очистить</value>
   </data>
   <data name="buttonConSave.Text" xml:space="preserve">
-    <value>Сохранить журнал</value>
+    <value>Сохранить</value>
   </data>
   <data name="buttonDictMfoc.Text" xml:space="preserve">
     <value>Тест словаря</value>
   </data>
   <data name="buttonDictMfoc.ToolTip" xml:space="preserve">
-    <value>Импорт файлов словарей для взлома</value>
+    <value>Импортируйте файл словаря для Nested crack.</value>
   </data>
   <data name="buttonDiffTool.Text" xml:space="preserve">
     <value>Сравнение дампов</value>
@@ -196,7 +196,7 @@
     <value>Определить считыватель</value>
   </data>
   <data name="buttonESelectKey.Text" xml:space="preserve">
-    <value>Загрузить ключ ...</value>
+    <value>Загрузить ключ...</value>
   </data>
   <data name="buttonEStop.Text" xml:space="preserve">
     <value>Остановить</value>
@@ -227,7 +227,8 @@
     <value>MFUK</value>
   </data>
   <data name="buttonMfcuk.ToolTip" xml:space="preserve">
-    <value>Инструмент Darkside (не обязательно успешный）</value>
+    <value>Инструмент Darkside (не обязательно успешный）
+</value>
   </data>
   <data name="buttonMFF08.Text" xml:space="preserve">
     <value>MFF08 CUID ремонт</value>
@@ -239,7 +240,7 @@
     <value>Отформатируйте нормальную карту M1 (необходимо загрузить файл ключа)</value>
   </data>
   <data name="buttonMfoc.Text" xml:space="preserve">
-    <value>MFOC</value>
+    <value>Чтение MFOC</value>
   </data>
   <data name="buttonMfoc.ToolTip" xml:space="preserve">
     <value>Взлом на полушифрованных картах.
@@ -258,7 +259,7 @@
     <value>Напишите нормальную карту M1 (возможно, потребуется загрузить файл ключа)</value>
   </data>
   <data name="buttonnKeysMfoc.Text" xml:space="preserve">
-    <value>Ввод известного ключа</value>
+    <value>Ввод ключа</value>
   </data>
   <data name="buttonnKeysMfoc.ToolTip" xml:space="preserve">
     <value>Введите известный ключ для взлома.</value>
@@ -307,16 +308,15 @@
     <value>CUID запись патча пустой карты</value>
   </data>
   <data name="checkBoxDefIsAdv.Text" xml:space="preserve">
-    <value>Автоматический переход в 
-расширенный режим работы</value>
+    <value>Автоматический переход в расширенный режим работы</value>
   </data>
   <data name="checkBoxHardLowCost.Text" xml:space="preserve">
-    <value>Однопоточные вычисления</value>
+    <value>Однопоточные вычисления
+</value>
   </data>
   <data name="checkBoxMultiDev.Text" xml:space="preserve">
-    <value>Режим нескольких устройств
-Multi-Open обнаружение будет отключено
-Пожалуйста, укажите ваше собственное устройство</value>
+    <value>Режим нескольких устройств. Пожалуйста, укажите 
+ваше собственное устройство</value>
   </data>
   <data name="checkBoxNewScan.Text" xml:space="preserve">
     <value>Уменьшить задержку оборудования</value>
@@ -328,7 +328,7 @@ Multi-Open обнаружение будет отключено
     <value>Управление устройством</value>
   </data>
   <data name="groupBox10.Text" xml:space="preserve">
-    <value>Взлом</value>
+    <value>Взломать</value>
   </data>
   <data name="groupBox12.Text" xml:space="preserve">
     <value>Настройки интерфейса</value>
@@ -340,16 +340,16 @@ Multi-Open обнаружение будет отключено
     <value>Настройки оптимизации</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Обычные операции с картой</value>
+    <value>Обычные операции</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>Терминал</value>
   </data>
   <data name="groupBox4.Text" xml:space="preserve">
-    <value>Дополнительные инструменты</value>
+    <value>Дополнительно</value>
   </data>
   <data name="groupBox5.Text" xml:space="preserve">
-    <value>2. Прочитать карту</value>
+    <value>2. Прочитать оригинальную карту</value>
   </data>
   <data name="groupBox6.Text" xml:space="preserve">
     <value>Операция с картой</value>
@@ -371,7 +371,8 @@ Multi-Open обнаружение будет отключено
     <value>Размер текста терминала</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>Укажите устройство</value>
+    <value>Укажите устройство
+</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>1. Начните здесь
@@ -381,10 +382,10 @@ Multi-Open обнаружение будет отключено
 
 
 
-Этот инструмент поддерживает только SAK = 08/18/28
-Копия карты. SAK28 не имеет одного ключа для расшифровки.
-Чтобы скопировать карты S70, пожалуйста, в продвинутом мире
-Снимите флажок «Защита от записи данных» на поверхности.
+本工具仅支持SAK=08/18/28的
+卡片复制。SAK28无一键解密。
+若要复制S70卡片，请在高级界
+面上取消勾选“数据写入保护”。
 </value>
   </data>
   <data name="label6.Text" xml:space="preserve">
@@ -392,10 +393,11 @@ Multi-Open обнаружение будет отключено
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Пожалуйста, 
-вставьте оигинальную карту</value>
+вставьте карту</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>Пожалуйста, вставьте 
+    <value>Пожалуйста, 
+вставьте 
 новую карту</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
@@ -408,7 +410,10 @@ Multi-Open обнаружение будет отключено
     <value>Для первого запуска нажмите «Определить устройство», чтобы ускорить последующие запуски.</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Рекомендуется нажать «Определить», чтобы ускорить последующую операцию.</value>
+    <value>Привет! 
+
+Рекомендуется нажать «Определить», чтобы ускорить последующую операцию.
+</value>
   </data>
   <data name="statusLabel.Text" xml:space="preserve">
     <value>Готов</value>
@@ -423,10 +428,10 @@ Multi-Open обнаружение будет отключено
     <value>Настройки программы</value>
   </data>
   <data name="toolStripCheckUpdate.Text" xml:space="preserve">
-    <value>Проверьте наличие обновлений</value>
+    <value>Проверка обновлений</value>
   </data>
   <data name="toolStripCheckUpdate.ToolTipText" xml:space="preserve">
-    <value>Проверьте наличие обновлений</value>
+    <value>Проверка обновлений</value>
   </data>
   <data name="groupBox1.ToolTip" xml:space="preserve">
     <value />

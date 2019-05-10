@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MifareOneTool.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace MifareOneTool
     class GitHubUpdate
     {
         public Version localVersion;
-        public string remoteVersion="未知";
+        public string remoteVersion=Resources.未知;
         public void Update(string GitHubR)
         {
             try

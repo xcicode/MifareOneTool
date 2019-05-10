@@ -117,10 +117,201 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="buttonSaveSectorEdit.Text" xml:space="preserve">
+    <value>Изменить сектор (Enter)</value>
+  </data>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Cектор</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>KeyAB читать, писать, увеличивать и уменьшать</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</value>
+  </data>
+  <data name="comboBox1.Items3" xml:space="preserve">
+    <value>KeyB чтение / запись / не сложение и вычитание</value>
+  </data>
+  <data name="comboBox1.Items4" xml:space="preserve">
+    <value>KeyAB чтение / KeyB запись / без увеличения или уменьшения</value>
+  </data>
+  <data name="comboBox1.Items5" xml:space="preserve">
+    <value>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</value>
+  </data>
+  <data name="comboBox1.Items6" xml:space="preserve">
+    <value>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</value>
+  </data>
+  <data name="comboBox1.Items7" xml:space="preserve">
+    <value>[только для чтения] заблокировать сектор</value>
+  </data>
+  <data name="comboBox2.Items" xml:space="preserve">
+    <value>KeyAB читать, писать, увеличивать и уменьшать</value>
+  </data>
+  <data name="comboBox2.Items1" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</value>
+  </data>
+  <data name="comboBox2.Items2" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</value>
+  </data>
+  <data name="comboBox2.Items3" xml:space="preserve">
+    <value>KeyB чтение / запись / не сложение и вычитание</value>
+  </data>
+  <data name="comboBox2.Items4" xml:space="preserve">
+    <value>KeyAB чтение / KeyB запись / без увеличения или уменьшения</value>
+  </data>
+  <data name="comboBox2.Items5" xml:space="preserve">
+    <value>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</value>
+  </data>
+  <data name="comboBox2.Items6" xml:space="preserve">
+    <value>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</value>
+  </data>
+  <data name="comboBox2.Items7" xml:space="preserve">
+    <value>[только для чтения] заблокировать сектор</value>
+  </data>
+  <data name="comboBox3.Items" xml:space="preserve">
+    <value>KeyAB читать, писать, увеличивать и уменьшать</value>
+  </data>
+  <data name="comboBox3.Items1" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</value>
+  </data>
+  <data name="comboBox3.Items2" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</value>
+  </data>
+  <data name="comboBox3.Items3" xml:space="preserve">
+    <value>KeyB чтение / запись / не сложение и вычитание</value>
+  </data>
+  <data name="comboBox3.Items4" xml:space="preserve">
+    <value>KeyAB чтение / KeyB запись / без увеличения или уменьшения</value>
+  </data>
+  <data name="comboBox3.Items5" xml:space="preserve">
+    <value>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</value>
+  </data>
+  <data name="comboBox3.Items6" xml:space="preserve">
+    <value>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</value>
+  </data>
+  <data name="comboBox3.Items7" xml:space="preserve">
+    <value>[только для чтения] заблокировать сектор</value>
+  </data>
+  <data name="comboBox4.Items" xml:space="preserve">
+    <value>[Необратимый] KeyA: запись / AC: только чтение / KeyB: чтение и запись</value>
+  </data>
+  <data name="comboBox4.Items1" xml:space="preserve">
+    <value>KeyA: запись / AC: чтение / запись / KeyB: чтение и запись</value>
+  </data>
+  <data name="comboBox4.Items2" xml:space="preserve">
+    <value>[Необратимый] KeyA: невозможно чтение / запись / AC: только для чтения / KeyB: чтение</value>
+  </data>
+  <data name="comboBox4.Items3" xml:space="preserve">
+    <value>KeyA: B запись / AC: A только для чтения B чтение / запись / KeyB: B запись</value>
+  </data>
+  <data name="comboBox4.Items4" xml:space="preserve">
+    <value>[необратимый] KeyA: запись B / AC: только чтение AB / KeyB: запись B</value>
+  </data>
+  <data name="comboBox4.Items5" xml:space="preserve">
+    <value>KeyA: невозможно чтение / запись / AC: A только для чтения B чтение / запись / KeyB: невозможно чтение или запись</value>
+  </data>
+  <data name="comboBox4.Items6" xml:space="preserve">
+    <value>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись</value>
+  </data>
+  <data name="comboBox4.Items7" xml:space="preserve">
+    <value>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись (повторяется?)</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Редактор дампа (бета)</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Список секторов</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Информация о секторе</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Просмотр</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Блок 0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Блок 1</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Блок 2</value>
+  </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>KEYA</value>
+    <value>Ключ A</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>KEYB</value>
+    <value>Ключ B</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Условия доступа блока 0</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Условия доступа блока 1</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Условия доступа блока 2</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Ключ / ACbits разрешение</value>
+  </data>
+  <data name="labelCurSec.Text" xml:space="preserve">
+    <value>Текущий выбранный сектор: ?</value>
+  </data>
+  <data name="richTextBox1.Lines[0]" xml:space="preserve">
+    <value>Добро пожаловать в интегрированный редактор M1T S50HTool!</value>
+  </data>
+  <data name="richTextBox1.Lines[1]" xml:space="preserve">
+    <value>Откройте файл, пожалуйста, нажмите на файл в верхнем левом углу - открыть или Ctrl + O</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Добро пожаловать в интегрированный редактор дампа!
+Чтобы открыть файл, пожалуйста, нажмите на Файл в верхнем левом углу - Открыть или Ctrl + O
+Вы можете обновить данные вашей карты.</value>
+  </data>
+  <data name="保存ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="修改UIDToolStripMenuItem.Text" xml:space="preserve">
+    <value>Изменить UID</value>
+  </data>
+  <data name="列出全卡密钥ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Перечислите полный ключ карты</value>
+  </data>
+  <data name="另存为ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Сохранить как</value>
+  </data>
+  <data name="导入MCT格式ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Импортировать формат MCT</value>
+  </data>
+  <data name="导出为MCT格式ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Экспорт в формат MCT</value>
+  </data>
+  <data name="导出密钥字典ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Словарь ключей экспорта</value>
+  </data>
+  <data name="工具ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Инструменты</value>
+  </data>
+  <data name="打开ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="文件ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="新建ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="检查全卡ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Проверка полной карты</value>
+  </data>
+  <data name="检查并纠正全卡ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Проверка и исправление полной карты</value>
+  </data>
+  <data name="退出ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Выход</value>
   </data>
 </root>
