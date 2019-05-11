@@ -326,6 +326,12 @@
   <data name="checkBoxWriteProtect.Text" xml:space="preserve">
     <value>数据写入保护(建议)</value>
   </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>标准</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>俄语</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>MifareOne Tool</value>
   </data>
@@ -346,6 +352,9 @@
   </data>
   <data name="groupBox14.Text" xml:space="preserve">
     <value>优化设置</value>
+  </data>
+  <data name="groupBox15.Text" xml:space="preserve">
+    <value>语言和地区</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>普通卡操作</value>
@@ -380,6 +389,9 @@
   </data>
   <data name="label11.Text" xml:space="preserve">
     <value>指定设备</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>选择界面语言</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>&gt;&gt;</value>
@@ -428,9 +440,6 @@
     <value>Hello,cardman!
 首次运行建议点击"检测设备"以加快后续运行速度
 </value>
-    <comment>Previous text: Hello,cardman!
-首次运行建议点击"检测设备"以加快后续运行速度
-</comment>
   </data>
   <data name="statusLabel.Text" xml:space="preserve">
     <value>就绪</value>

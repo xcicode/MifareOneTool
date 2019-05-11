@@ -1002,6 +1002,18 @@
   <GeneralIds>
     <StringID>334</StringID>
   </GeneralIds>
+  <GeneralIds>
+    <StringID>335</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>336</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>337</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>338</StringID>
+  </GeneralIds>
   <Languages>
     <LanguageID>30724</LanguageID>
     <LanguageName>Китайский</LanguageName>
@@ -5060,6 +5072,54 @@ CUID карта</LanguageText>
     <StringID>104</StringID>
     <LanguageID>25</LanguageID>
     <LanguageText>Сравнение дампов</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>335</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>语言和地区</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>336</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>选择界面语言</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>337</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>标准</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>338</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>俄语</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>337</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Китайский</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>338</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Русский</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>335</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Язык и регион</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>336</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Выберите язык интерфейса</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <Properties>
@@ -9708,6 +9768,70 @@ CUID карта</LanguageText>
     <StringID>106</StringID>
     <Selected>true</Selected>
     <ResourceName>richTextBox1.Lines[0]</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>groupBox15.Text</Name>
+    <StringID>335</StringID>
+    <Selected>true</Selected>
+    <ResourceName>groupBox15.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>label12.Text</Name>
+    <StringID>336</StringID>
+    <Selected>true</Selected>
+    <ResourceName>label12.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>groupBox15.Text</Name>
+    <StringID>335</StringID>
+    <Selected>true</Selected>
+    <ResourceName>groupBox15.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>label12.Text</Name>
+    <StringID>336</StringID>
+    <Selected>true</Selected>
+    <ResourceName>label12.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>comboBox1.Items</Name>
+    <StringID>337</StringID>
+    <Selected>true</Selected>
+    <ResourceName>comboBox1.Items</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>comboBox1.Items1</Name>
+    <StringID>338</StringID>
+    <Selected>true</Selected>
+    <ResourceName>comboBox1.Items1</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>comboBox1.Items[0]</Name>
+    <StringID>337</StringID>
+    <Selected>true</Selected>
+    <ResourceName>comboBox1.Items</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>comboBox1.Items[1]</Name>
+    <StringID>338</StringID>
+    <Selected>true</Selected>
+    <ResourceName>comboBox1.Items1</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <GeneralAttributes>

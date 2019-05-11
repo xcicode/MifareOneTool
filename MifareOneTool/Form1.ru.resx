@@ -324,6 +324,12 @@
   <data name="checkBoxWriteProtect.Text" xml:space="preserve">
     <value>Защита от записи данных (рекомендуется)</value>
   </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>Китайский</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>Русский</value>
+  </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Управление устройством</value>
   </data>
@@ -338,6 +344,9 @@
   </data>
   <data name="groupBox14.Text" xml:space="preserve">
     <value>Настройки оптимизации</value>
+  </data>
+  <data name="groupBox15.Text" xml:space="preserve">
+    <value>Язык и регион</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Обычные операции</value>
@@ -373,6 +382,9 @@
   <data name="label11.Text" xml:space="preserve">
     <value>Укажите устройство
 </value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Выберите язык интерфейса</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>1. Начните здесь

@@ -282,9 +282,5 @@ namespace MultiLang
                 StartupMode = enumStartupMode.UseDefaultCulture;
         }
 
-        private void LstCultures_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

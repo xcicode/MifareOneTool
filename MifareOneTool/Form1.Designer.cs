@@ -121,6 +121,7 @@
             this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -140,6 +141,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.SetDeviceCombo = new System.Windows.Forms.ComboBox();
             this.checkBoxMultiDev = new System.Windows.Forms.CheckBox();
+            this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.checkBoxDefIsAdv = new System.Windows.Forms.CheckBox();
@@ -154,6 +156,10 @@
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.curDevice = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
@@ -196,6 +202,7 @@
             this.groupBox9.SuspendLayout();
             this.flowLayoutPanel21.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tableLayoutPanel14.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -204,11 +211,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericCLIFontSize)).BeginInit();
             this.groupBox14.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
+            this.flowLayoutPanel22.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.flowLayoutPanel23.SuspendLayout();
+            this.groupBox15.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -871,11 +881,18 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.flowLayoutPanel6);
+            this.tabPage3.Controls.Add(this.tableLayoutPanel14);
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // tableLayoutPanel14
+            // 
+            resources.ApplyResources(this.tableLayoutPanel14, "tableLayoutPanel14");
+            this.tableLayoutPanel14.Controls.Add(this.flowLayoutPanel6, 0, 0);
+            this.tableLayoutPanel14.Controls.Add(this.flowLayoutPanel22, 0, 1);
+            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             // 
             // flowLayoutPanel6
             // 
@@ -883,8 +900,6 @@
             this.flowLayoutPanel6.Controls.Add(this.groupBox6);
             this.flowLayoutPanel6.Controls.Add(this.groupBox12);
             this.flowLayoutPanel6.Controls.Add(this.groupBox14);
-            this.flowLayoutPanel6.Controls.Add(this.groupBox13);
-            this.flowLayoutPanel6.Controls.Add(this.groupBox11);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             // 
             // groupBox6
@@ -941,8 +956,8 @@
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.tableLayoutPanel12);
             resources.ApplyResources(this.groupBox12, "groupBox12");
+            this.groupBox12.Controls.Add(this.tableLayoutPanel12);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.TabStop = false;
             // 
@@ -1041,6 +1056,14 @@
             this.checkBoxMultiDev.UseVisualStyleBackColor = true;
             this.checkBoxMultiDev.CheckedChanged += new System.EventHandler(this.checkBoxMultiDev_CheckedChanged);
             // 
+            // flowLayoutPanel22
+            // 
+            resources.ApplyResources(this.flowLayoutPanel22, "flowLayoutPanel22");
+            this.flowLayoutPanel22.Controls.Add(this.groupBox15);
+            this.flowLayoutPanel22.Controls.Add(this.groupBox13);
+            this.flowLayoutPanel22.Controls.Add(this.groupBox11);
+            this.flowLayoutPanel22.Name = "flowLayoutPanel22";
+            // 
             // groupBox13
             // 
             resources.ApplyResources(this.groupBox13, "groupBox13");
@@ -1132,6 +1155,35 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // flowLayoutPanel23
+            // 
+            resources.ApplyResources(this.flowLayoutPanel23, "flowLayoutPanel23");
+            this.flowLayoutPanel23.Controls.Add(this.label12);
+            this.flowLayoutPanel23.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel23.Name = "flowLayoutPanel23";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // comboBox1
+            // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1")});
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            // 
+            // groupBox15
+            // 
+            resources.ApplyResources(this.groupBox15, "groupBox15");
+            this.groupBox15.Controls.Add(this.flowLayoutPanel23);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.TabStop = false;
             // 
             // Form1
             // 
@@ -1227,6 +1279,8 @@
             this.flowLayoutPanel21.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tableLayoutPanel14.ResumeLayout(false);
+            this.tableLayoutPanel14.PerformLayout();
             this.flowLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel6.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -1242,6 +1296,8 @@
             this.groupBox14.PerformLayout();
             this.flowLayoutPanel5.ResumeLayout(false);
             this.flowLayoutPanel5.PerformLayout();
+            this.flowLayoutPanel22.ResumeLayout(false);
+            this.flowLayoutPanel22.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
@@ -1252,6 +1308,10 @@
             this.flowLayoutPanel3.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.flowLayoutPanel23.ResumeLayout(false);
+            this.flowLayoutPanel23.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1383,6 +1443,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
         private System.Windows.Forms.Button buttonEMfWrite;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel22;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel23;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

@@ -1058,6 +1058,36 @@
   <ControlsScanResults>
     <ControlsScanID>71</ControlsScanID>
     <Component>Form1.cs</Component>
+    <FullName>comboBox1.Items[0]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>标准</OriginalText>
+    <SortKey>BAcomboBox1.Items[0]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>72</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>comboBox1.Items[1]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>俄语</OriginalText>
+    <SortKey>BAcomboBox1.Items[1]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>1</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[1]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>73</ControlsScanID>
+    <Component>Form1.cs</Component>
     <FullName>groupBox1.Text</FullName>
     <ShortName>Text</ShortName>
     <XPath />
@@ -1071,7 +1101,7 @@
     <CompilerName>groupBox1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>72</ControlsScanID>
+    <ControlsScanID>74</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox10.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1086,7 +1116,7 @@
     <CompilerName>groupBox10.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>73</ControlsScanID>
+    <ControlsScanID>75</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox11.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1101,7 +1131,7 @@
     <CompilerName>groupBox11.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>74</ControlsScanID>
+    <ControlsScanID>76</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox12.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1116,7 +1146,7 @@
     <CompilerName>groupBox12.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>75</ControlsScanID>
+    <ControlsScanID>77</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox13.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1131,7 +1161,7 @@
     <CompilerName>groupBox13.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>76</ControlsScanID>
+    <ControlsScanID>78</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox14.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1146,7 +1176,22 @@
     <CompilerName>groupBox14.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>77</ControlsScanID>
+    <ControlsScanID>79</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox15.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>语言和地区</OriginalText>
+    <SortKey>BAgroupBox15.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox15.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>80</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1161,7 +1206,7 @@
     <CompilerName>groupBox2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>78</ControlsScanID>
+    <ControlsScanID>81</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1176,7 +1221,7 @@
     <CompilerName>groupBox3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>79</ControlsScanID>
+    <ControlsScanID>82</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox4.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1191,7 +1236,7 @@
     <CompilerName>groupBox4.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>80</ControlsScanID>
+    <ControlsScanID>83</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox5.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1206,7 +1251,7 @@
     <CompilerName>groupBox5.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>81</ControlsScanID>
+    <ControlsScanID>84</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox6.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1221,7 +1266,7 @@
     <CompilerName>groupBox6.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>82</ControlsScanID>
+    <ControlsScanID>85</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox7.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1236,7 +1281,7 @@
     <CompilerName>groupBox7.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>83</ControlsScanID>
+    <ControlsScanID>86</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox8.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1251,7 +1296,7 @@
     <CompilerName>groupBox8.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>84</ControlsScanID>
+    <ControlsScanID>87</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox9.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1266,7 +1311,7 @@
     <CompilerName>groupBox9.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>85</ControlsScanID>
+    <ControlsScanID>88</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1282,7 +1327,7 @@
     <CompilerName>label1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>86</ControlsScanID>
+    <ControlsScanID>89</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label10.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1297,7 +1342,7 @@
     <CompilerName>label10.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>87</ControlsScanID>
+    <ControlsScanID>90</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label11.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1312,7 +1357,22 @@
     <CompilerName>label11.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>88</ControlsScanID>
+    <ControlsScanID>91</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>label12.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>选择界面语言</OriginalText>
+    <SortKey>BAlabel12.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label12.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>92</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1327,7 +1387,7 @@
     <CompilerName>label2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>89</ControlsScanID>
+    <ControlsScanID>93</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1342,7 +1402,7 @@
     <CompilerName>label3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>90</ControlsScanID>
+    <ControlsScanID>94</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label4.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1357,7 +1417,7 @@
     <CompilerName>label4.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>91</ControlsScanID>
+    <ControlsScanID>95</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label5.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1383,7 +1443,7 @@
     <CompilerName>label5.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>92</ControlsScanID>
+    <ControlsScanID>96</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label6.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1398,7 +1458,7 @@
     <CompilerName>label6.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>93</ControlsScanID>
+    <ControlsScanID>97</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label7.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1414,7 +1474,7 @@
     <CompilerName>label7.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>94</ControlsScanID>
+    <ControlsScanID>98</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label8.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1430,7 +1490,7 @@
     <CompilerName>label8.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>95</ControlsScanID>
+    <ControlsScanID>99</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label9.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1445,7 +1505,7 @@
     <CompilerName>label9.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>96</ControlsScanID>
+    <ControlsScanID>100</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>richTextBox1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1462,7 +1522,7 @@
     <CompilerName>richTextBox1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>97</ControlsScanID>
+    <ControlsScanID>101</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>statusLabel.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1477,7 +1537,7 @@
     <CompilerName>statusLabel.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>98</ControlsScanID>
+    <ControlsScanID>102</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>statusStrip1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1492,7 +1552,7 @@
     <CompilerName>statusStrip1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>99</ControlsScanID>
+    <ControlsScanID>103</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>tabPage1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1507,7 +1567,7 @@
     <CompilerName>tabPage1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>100</ControlsScanID>
+    <ControlsScanID>104</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>tabPage2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1522,7 +1582,7 @@
     <CompilerName>tabPage2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>101</ControlsScanID>
+    <ControlsScanID>105</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>tabPage3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1537,7 +1597,7 @@
     <CompilerName>tabPage3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>102</ControlsScanID>
+    <ControlsScanID>106</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>toolStripCheckUpdate.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1552,7 +1612,7 @@
     <CompilerName>toolStripCheckUpdate.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>103</ControlsScanID>
+    <ControlsScanID>107</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>toolStripCheckUpdate.ToolTipText</FullName>
     <ShortName>ToolTipText</ShortName>
@@ -1567,7 +1627,7 @@
     <CompilerName>toolStripCheckUpdate.ToolTipText</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>104</ControlsScanID>
+    <ControlsScanID>108</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>richTextBox1.Lines[0]</FullName>
     <ShortName>Lines</ShortName>
@@ -1582,7 +1642,7 @@
     <CompilerName>richTextBox1.Lines[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>105</ControlsScanID>
+    <ControlsScanID>109</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>richTextBox1.Lines[1]</FullName>
     <ShortName>Lines</ShortName>
@@ -1597,7 +1657,7 @@
     <CompilerName>richTextBox1.Lines[1]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>106</ControlsScanID>
+    <ControlsScanID>110</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>richTextBox1.Lines[2]</FullName>
     <ShortName>Lines</ShortName>
@@ -1612,7 +1672,7 @@
     <CompilerName>richTextBox1.Lines[2]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>107</ControlsScanID>
+    <ControlsScanID>111</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>FormDiff.cs</FullName>
     <ShortName>FormDiff.cs</ShortName>
@@ -1627,7 +1687,7 @@
     <CompilerName />
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>108</ControlsScanID>
+    <ControlsScanID>112</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>FormDiff.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1642,7 +1702,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>109</ControlsScanID>
+    <ControlsScanID>113</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>button1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1657,7 +1717,7 @@
     <CompilerName>button1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>110</ControlsScanID>
+    <ControlsScanID>114</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>button2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1672,7 +1732,7 @@
     <CompilerName>button2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>111</ControlsScanID>
+    <ControlsScanID>115</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>button3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1687,7 +1747,7 @@
     <CompilerName>button3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>112</ControlsScanID>
+    <ControlsScanID>116</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>richTextBox1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1706,7 +1766,7 @@
     <CompilerName>richTextBox1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>113</ControlsScanID>
+    <ControlsScanID>117</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>richTextBox1.Lines[0]</FullName>
     <ShortName>Lines</ShortName>
@@ -1721,7 +1781,7 @@
     <CompilerName>richTextBox1.Lines[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>114</ControlsScanID>
+    <ControlsScanID>118</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>richTextBox1.Lines[1]</FullName>
     <ShortName>Lines</ShortName>
@@ -1736,7 +1796,7 @@
     <CompilerName>richTextBox1.Lines[1]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>115</ControlsScanID>
+    <ControlsScanID>119</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>richTextBox1.Lines[2]</FullName>
     <ShortName>Lines</ShortName>
@@ -1751,7 +1811,7 @@
     <CompilerName>richTextBox1.Lines[2]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>116</ControlsScanID>
+    <ControlsScanID>120</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>richTextBox1.Lines[3]</FullName>
     <ShortName>Lines</ShortName>
@@ -1766,7 +1826,7 @@
     <CompilerName>richTextBox1.Lines[3]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>117</ControlsScanID>
+    <ControlsScanID>121</ControlsScanID>
     <Component>FormDiff.cs</Component>
     <FullName>richTextBox1.Lines[4]</FullName>
     <ShortName>Lines</ShortName>
@@ -1781,7 +1841,7 @@
     <CompilerName>richTextBox1.Lines[4]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>118</ControlsScanID>
+    <ControlsScanID>122</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>FormHardNes.cs</FullName>
     <ShortName>FormHardNes.cs</ShortName>
@@ -1796,7 +1856,7 @@
     <CompilerName />
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>119</ControlsScanID>
+    <ControlsScanID>123</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>FormHardNes.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1811,7 +1871,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>120</ControlsScanID>
+    <ControlsScanID>124</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>button1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1826,7 +1886,7 @@
     <CompilerName>button1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>121</ControlsScanID>
+    <ControlsScanID>125</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>button2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1841,7 +1901,7 @@
     <CompilerName>button2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>122</ControlsScanID>
+    <ControlsScanID>126</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>checkBoxColOnly.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1856,7 +1916,7 @@
     <CompilerName>checkBoxColOnly.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>123</ControlsScanID>
+    <ControlsScanID>127</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>groupBox1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1871,7 +1931,7 @@
     <CompilerName>groupBox1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>124</ControlsScanID>
+    <ControlsScanID>128</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>groupBox2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1886,7 +1946,7 @@
     <CompilerName>groupBox2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>125</ControlsScanID>
+    <ControlsScanID>129</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>keyEdit.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1901,7 +1961,7 @@
     <CompilerName>keyEdit.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>126</ControlsScanID>
+    <ControlsScanID>130</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1916,7 +1976,7 @@
     <CompilerName>label1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>127</ControlsScanID>
+    <ControlsScanID>131</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1931,7 +1991,7 @@
     <CompilerName>label2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>128</ControlsScanID>
+    <ControlsScanID>132</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1946,7 +2006,7 @@
     <CompilerName>label3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>129</ControlsScanID>
+    <ControlsScanID>133</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label4.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1961,7 +2021,7 @@
     <CompilerName>label4.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>130</ControlsScanID>
+    <ControlsScanID>134</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label5.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1976,7 +2036,7 @@
     <CompilerName>label5.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>131</ControlsScanID>
+    <ControlsScanID>135</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label6.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1991,7 +2051,7 @@
     <CompilerName>label6.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>132</ControlsScanID>
+    <ControlsScanID>136</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>radioKey1A.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2006,7 +2066,7 @@
     <CompilerName>radioKey1A.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>133</ControlsScanID>
+    <ControlsScanID>137</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>radioKey1B.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2021,7 +2081,7 @@
     <CompilerName>radioKey1B.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>134</ControlsScanID>
+    <ControlsScanID>138</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>radioKey2A.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2036,7 +2096,7 @@
     <CompilerName>radioKey2A.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>135</ControlsScanID>
+    <ControlsScanID>139</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>radioKey2B.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2051,7 +2111,7 @@
     <CompilerName>radioKey2B.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>136</ControlsScanID>
+    <ControlsScanID>140</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>sector1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2066,7 +2126,7 @@
     <CompilerName>sector1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>137</ControlsScanID>
+    <ControlsScanID>141</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>keyEdit.Lines[0]</FullName>
     <ShortName>Lines</ShortName>
@@ -2081,7 +2141,7 @@
     <CompilerName>keyEdit.Lines[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>138</ControlsScanID>
+    <ControlsScanID>142</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>sector1.Lines[0]</FullName>
     <ShortName>Lines</ShortName>
@@ -2096,7 +2156,7 @@
     <CompilerName>sector1.Lines[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>139</ControlsScanID>
+    <ControlsScanID>143</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>FormHTool.cs</FullName>
     <ShortName>FormHTool.cs</ShortName>
@@ -2111,7 +2171,7 @@
     <CompilerName />
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>140</ControlsScanID>
+    <ControlsScanID>144</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>FormHTool.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2126,7 +2186,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>141</ControlsScanID>
+    <ControlsScanID>145</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>buttonSaveSectorEdit.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2141,7 +2201,7 @@
     <CompilerName>buttonSaveSectorEdit.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>142</ControlsScanID>
+    <ControlsScanID>146</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>Column1.HeaderText</FullName>
     <ShortName>HeaderText</ShortName>
@@ -2156,7 +2216,7 @@
     <CompilerName>Column1.HeaderText</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>143</ControlsScanID>
+    <ControlsScanID>147</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox1.Items[0]</FullName>
     <ShortName>Items</ShortName>
@@ -2171,7 +2231,7 @@
     <CompilerName>comboBox1.Items[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>144</ControlsScanID>
+    <ControlsScanID>148</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox1.Items[1]</FullName>
     <ShortName>Items</ShortName>
@@ -2186,7 +2246,7 @@
     <CompilerName>comboBox1.Items[1]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>145</ControlsScanID>
+    <ControlsScanID>149</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox1.Items[2]</FullName>
     <ShortName>Items</ShortName>
@@ -2201,7 +2261,7 @@
     <CompilerName>comboBox1.Items[2]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>146</ControlsScanID>
+    <ControlsScanID>150</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox1.Items[3]</FullName>
     <ShortName>Items</ShortName>
@@ -2216,7 +2276,7 @@
     <CompilerName>comboBox1.Items[3]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>147</ControlsScanID>
+    <ControlsScanID>151</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox1.Items[4]</FullName>
     <ShortName>Items</ShortName>
@@ -2231,7 +2291,7 @@
     <CompilerName>comboBox1.Items[4]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>148</ControlsScanID>
+    <ControlsScanID>152</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox1.Items[5]</FullName>
     <ShortName>Items</ShortName>
@@ -2246,7 +2306,7 @@
     <CompilerName>comboBox1.Items[5]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>149</ControlsScanID>
+    <ControlsScanID>153</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox1.Items[6]</FullName>
     <ShortName>Items</ShortName>
@@ -2261,7 +2321,7 @@
     <CompilerName>comboBox1.Items[6]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>150</ControlsScanID>
+    <ControlsScanID>154</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox1.Items[7]</FullName>
     <ShortName>Items</ShortName>
@@ -2276,7 +2336,7 @@
     <CompilerName>comboBox1.Items[7]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>151</ControlsScanID>
+    <ControlsScanID>155</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox2.Items[0]</FullName>
     <ShortName>Items</ShortName>
@@ -2291,7 +2351,7 @@
     <CompilerName>comboBox2.Items[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>152</ControlsScanID>
+    <ControlsScanID>156</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox2.Items[1]</FullName>
     <ShortName>Items</ShortName>
@@ -2306,7 +2366,7 @@
     <CompilerName>comboBox2.Items[1]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>153</ControlsScanID>
+    <ControlsScanID>157</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox2.Items[2]</FullName>
     <ShortName>Items</ShortName>
@@ -2321,7 +2381,7 @@
     <CompilerName>comboBox2.Items[2]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>154</ControlsScanID>
+    <ControlsScanID>158</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox2.Items[3]</FullName>
     <ShortName>Items</ShortName>
@@ -2336,7 +2396,7 @@
     <CompilerName>comboBox2.Items[3]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>155</ControlsScanID>
+    <ControlsScanID>159</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox2.Items[4]</FullName>
     <ShortName>Items</ShortName>
@@ -2351,7 +2411,7 @@
     <CompilerName>comboBox2.Items[4]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>156</ControlsScanID>
+    <ControlsScanID>160</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox2.Items[5]</FullName>
     <ShortName>Items</ShortName>
@@ -2366,7 +2426,7 @@
     <CompilerName>comboBox2.Items[5]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>157</ControlsScanID>
+    <ControlsScanID>161</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox2.Items[6]</FullName>
     <ShortName>Items</ShortName>
@@ -2381,7 +2441,7 @@
     <CompilerName>comboBox2.Items[6]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>158</ControlsScanID>
+    <ControlsScanID>162</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox2.Items[7]</FullName>
     <ShortName>Items</ShortName>
@@ -2396,7 +2456,7 @@
     <CompilerName>comboBox2.Items[7]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>159</ControlsScanID>
+    <ControlsScanID>163</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox3.Items[0]</FullName>
     <ShortName>Items</ShortName>
@@ -2411,7 +2471,7 @@
     <CompilerName>comboBox3.Items[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>160</ControlsScanID>
+    <ControlsScanID>164</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox3.Items[1]</FullName>
     <ShortName>Items</ShortName>
@@ -2426,7 +2486,7 @@
     <CompilerName>comboBox3.Items[1]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>161</ControlsScanID>
+    <ControlsScanID>165</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox3.Items[2]</FullName>
     <ShortName>Items</ShortName>
@@ -2441,7 +2501,7 @@
     <CompilerName>comboBox3.Items[2]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>162</ControlsScanID>
+    <ControlsScanID>166</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox3.Items[3]</FullName>
     <ShortName>Items</ShortName>
@@ -2456,7 +2516,7 @@
     <CompilerName>comboBox3.Items[3]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>163</ControlsScanID>
+    <ControlsScanID>167</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox3.Items[4]</FullName>
     <ShortName>Items</ShortName>
@@ -2471,7 +2531,7 @@
     <CompilerName>comboBox3.Items[4]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>164</ControlsScanID>
+    <ControlsScanID>168</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox3.Items[5]</FullName>
     <ShortName>Items</ShortName>
@@ -2486,7 +2546,7 @@
     <CompilerName>comboBox3.Items[5]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>165</ControlsScanID>
+    <ControlsScanID>169</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox3.Items[6]</FullName>
     <ShortName>Items</ShortName>
@@ -2501,7 +2561,7 @@
     <CompilerName>comboBox3.Items[6]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>166</ControlsScanID>
+    <ControlsScanID>170</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox3.Items[7]</FullName>
     <ShortName>Items</ShortName>
@@ -2516,7 +2576,7 @@
     <CompilerName>comboBox3.Items[7]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>167</ControlsScanID>
+    <ControlsScanID>171</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox4.Items[0]</FullName>
     <ShortName>Items</ShortName>
@@ -2531,7 +2591,7 @@
     <CompilerName>comboBox4.Items[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>168</ControlsScanID>
+    <ControlsScanID>172</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox4.Items[1]</FullName>
     <ShortName>Items</ShortName>
@@ -2546,7 +2606,7 @@
     <CompilerName>comboBox4.Items[1]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>169</ControlsScanID>
+    <ControlsScanID>173</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox4.Items[2]</FullName>
     <ShortName>Items</ShortName>
@@ -2561,7 +2621,7 @@
     <CompilerName>comboBox4.Items[2]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>170</ControlsScanID>
+    <ControlsScanID>174</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox4.Items[3]</FullName>
     <ShortName>Items</ShortName>
@@ -2576,7 +2636,7 @@
     <CompilerName>comboBox4.Items[3]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>171</ControlsScanID>
+    <ControlsScanID>175</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox4.Items[4]</FullName>
     <ShortName>Items</ShortName>
@@ -2591,7 +2651,7 @@
     <CompilerName>comboBox4.Items[4]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>172</ControlsScanID>
+    <ControlsScanID>176</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox4.Items[5]</FullName>
     <ShortName>Items</ShortName>
@@ -2606,7 +2666,7 @@
     <CompilerName>comboBox4.Items[5]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>173</ControlsScanID>
+    <ControlsScanID>177</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox4.Items[6]</FullName>
     <ShortName>Items</ShortName>
@@ -2621,7 +2681,7 @@
     <CompilerName>comboBox4.Items[6]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>174</ControlsScanID>
+    <ControlsScanID>178</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>comboBox4.Items[7]</FullName>
     <ShortName>Items</ShortName>
@@ -2636,7 +2696,7 @@
     <CompilerName>comboBox4.Items[7]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>175</ControlsScanID>
+    <ControlsScanID>179</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>groupBox1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2651,7 +2711,7 @@
     <CompilerName>groupBox1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>176</ControlsScanID>
+    <ControlsScanID>180</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>groupBox2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2666,7 +2726,7 @@
     <CompilerName>groupBox2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>177</ControlsScanID>
+    <ControlsScanID>181</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>groupBox3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2681,7 +2741,7 @@
     <CompilerName>groupBox3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>178</ControlsScanID>
+    <ControlsScanID>182</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>label1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2696,7 +2756,7 @@
     <CompilerName>label1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>179</ControlsScanID>
+    <ControlsScanID>183</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>label2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2711,7 +2771,7 @@
     <CompilerName>label2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>180</ControlsScanID>
+    <ControlsScanID>184</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>label3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2726,7 +2786,7 @@
     <CompilerName>label3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>181</ControlsScanID>
+    <ControlsScanID>185</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>label4.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2741,7 +2801,7 @@
     <CompilerName>label4.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>182</ControlsScanID>
+    <ControlsScanID>186</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>label5.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2756,7 +2816,7 @@
     <CompilerName>label5.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>183</ControlsScanID>
+    <ControlsScanID>187</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>label6.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2771,7 +2831,7 @@
     <CompilerName>label6.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>184</ControlsScanID>
+    <ControlsScanID>188</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>label7.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2786,7 +2846,7 @@
     <CompilerName>label7.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>185</ControlsScanID>
+    <ControlsScanID>189</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>label8.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2801,7 +2861,7 @@
     <CompilerName>label8.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>186</ControlsScanID>
+    <ControlsScanID>190</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>label9.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2816,7 +2876,7 @@
     <CompilerName>label9.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>187</ControlsScanID>
+    <ControlsScanID>191</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>labelCurSec.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2831,7 +2891,7 @@
     <CompilerName>labelCurSec.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>188</ControlsScanID>
+    <ControlsScanID>192</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>menuStrip1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2846,7 +2906,7 @@
     <CompilerName>menuStrip1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>189</ControlsScanID>
+    <ControlsScanID>193</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>richTextBox1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2863,7 +2923,7 @@
     <CompilerName>richTextBox1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>190</ControlsScanID>
+    <ControlsScanID>194</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>保存ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2878,7 +2938,7 @@
     <CompilerName>保存ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>191</ControlsScanID>
+    <ControlsScanID>195</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>修改UIDToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2893,7 +2953,7 @@
     <CompilerName>修改UIDToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>192</ControlsScanID>
+    <ControlsScanID>196</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>列出全卡密钥ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2908,7 +2968,7 @@
     <CompilerName>列出全卡密钥ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>193</ControlsScanID>
+    <ControlsScanID>197</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>另存为ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2923,7 +2983,7 @@
     <CompilerName>另存为ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>194</ControlsScanID>
+    <ControlsScanID>198</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>导入MCT格式ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2938,7 +2998,7 @@
     <CompilerName>导入MCT格式ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>195</ControlsScanID>
+    <ControlsScanID>199</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>导出为MCT格式ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2953,7 +3013,7 @@
     <CompilerName>导出为MCT格式ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>196</ControlsScanID>
+    <ControlsScanID>200</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>导出密钥字典ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2968,7 +3028,7 @@
     <CompilerName>导出密钥字典ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>197</ControlsScanID>
+    <ControlsScanID>201</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>工具ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2983,7 +3043,7 @@
     <CompilerName>工具ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>198</ControlsScanID>
+    <ControlsScanID>202</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>打开ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2998,7 +3058,7 @@
     <CompilerName>打开ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>199</ControlsScanID>
+    <ControlsScanID>203</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>文件ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3013,7 +3073,7 @@
     <CompilerName>文件ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>200</ControlsScanID>
+    <ControlsScanID>204</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>新建ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3028,7 +3088,7 @@
     <CompilerName>新建ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>201</ControlsScanID>
+    <ControlsScanID>205</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>检查全卡ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3043,7 +3103,7 @@
     <CompilerName>检查全卡ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>202</ControlsScanID>
+    <ControlsScanID>206</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>检查并纠正全卡ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3058,7 +3118,7 @@
     <CompilerName>检查并纠正全卡ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>203</ControlsScanID>
+    <ControlsScanID>207</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>退出ToolStripMenuItem.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3073,7 +3133,7 @@
     <CompilerName>退出ToolStripMenuItem.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>204</ControlsScanID>
+    <ControlsScanID>208</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>richTextBox1.Lines[0]</FullName>
     <ShortName>Lines</ShortName>
@@ -3088,7 +3148,7 @@
     <CompilerName>richTextBox1.Lines[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>205</ControlsScanID>
+    <ControlsScanID>209</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>richTextBox1.Lines[1]</FullName>
     <ShortName>Lines</ShortName>
@@ -3103,7 +3163,7 @@
     <CompilerName>richTextBox1.Lines[1]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>206</ControlsScanID>
+    <ControlsScanID>210</ControlsScanID>
     <Component>FormHTool.cs</Component>
     <FullName>richTextBox1.Lines[2]</FullName>
     <ShortName>Lines</ShortName>
@@ -3118,7 +3178,7 @@
     <CompilerName>richTextBox1.Lines[2]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>207</ControlsScanID>
+    <ControlsScanID>211</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>FormMFF08.cs</FullName>
     <ShortName>FormMFF08.cs</ShortName>
@@ -3133,7 +3193,7 @@
     <CompilerName />
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>208</ControlsScanID>
+    <ControlsScanID>212</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>FormMFF08.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3148,7 +3208,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>209</ControlsScanID>
+    <ControlsScanID>213</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>buttonClr.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3163,7 +3223,7 @@
     <CompilerName>buttonClr.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>210</ControlsScanID>
+    <ControlsScanID>214</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>buttonKeyWrite.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3180,7 +3240,7 @@ CUID卡</OriginalText>
     <CompilerName>buttonKeyWrite.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>211</ControlsScanID>
+    <ControlsScanID>215</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>buttonLoadKey.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3195,7 +3255,7 @@ CUID卡</OriginalText>
     <CompilerName>buttonLoadKey.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>212</ControlsScanID>
+    <ControlsScanID>216</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>buttonWriteEmpty.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3212,7 +3272,7 @@ CUID卡</OriginalText>
     <CompilerName>buttonWriteEmpty.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>213</ControlsScanID>
+    <ControlsScanID>217</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>groupBox1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3227,7 +3287,7 @@ CUID卡</OriginalText>
     <CompilerName>groupBox1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>214</ControlsScanID>
+    <ControlsScanID>218</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>groupBox2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3242,7 +3302,7 @@ CUID卡</OriginalText>
     <CompilerName>groupBox2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>215</ControlsScanID>
+    <ControlsScanID>219</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>groupBox3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3257,7 +3317,7 @@ CUID卡</OriginalText>
     <CompilerName>groupBox3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>216</ControlsScanID>
+    <ControlsScanID>220</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>label1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3274,7 +3334,7 @@ CUID卡</OriginalText>
     <CompilerName>label1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>217</ControlsScanID>
+    <ControlsScanID>221</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>label2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3289,7 +3349,7 @@ CUID卡</OriginalText>
     <CompilerName>label2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>218</ControlsScanID>
+    <ControlsScanID>222</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>logBox.Text</FullName>
     <ShortName>Text</ShortName>
@@ -3309,7 +3369,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <CompilerName>logBox.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>219</ControlsScanID>
+    <ControlsScanID>223</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>logBox.Lines[0]</FullName>
     <ShortName>Lines</ShortName>
@@ -3324,7 +3384,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <CompilerName>logBox.Lines[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>220</ControlsScanID>
+    <ControlsScanID>224</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>logBox.Lines[1]</FullName>
     <ShortName>Lines</ShortName>
@@ -3339,7 +3399,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <CompilerName>logBox.Lines[1]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>221</ControlsScanID>
+    <ControlsScanID>225</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>logBox.Lines[2]</FullName>
     <ShortName>Lines</ShortName>
@@ -3354,7 +3414,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <CompilerName>logBox.Lines[2]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>222</ControlsScanID>
+    <ControlsScanID>226</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>logBox.Lines[3]</FullName>
     <ShortName>Lines</ShortName>
@@ -3369,7 +3429,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <CompilerName>logBox.Lines[3]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>223</ControlsScanID>
+    <ControlsScanID>227</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>logBox.Lines[4]</FullName>
     <ShortName>Lines</ShortName>
@@ -3384,7 +3444,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <CompilerName>logBox.Lines[4]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>224</ControlsScanID>
+    <ControlsScanID>228</ControlsScanID>
     <Component>FormMFF08.cs</Component>
     <FullName>logBox.Lines[5]</FullName>
     <ShortName>Lines</ShortName>
@@ -3397,110 +3457,5 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>5</ArrayIndexOrCount>
     <CompilerName>logBox.Lines[5]</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>225</ControlsScanID>
-    <Component>SelectLanguage.cs</Component>
-    <FullName>SelectLanguage.cs</FullName>
-    <ShortName>SelectLanguage.cs</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText />
-    <SortKey>SelectLanguage.cs</SortKey>
-    <NodeType>0</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>0</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName />
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>226</ControlsScanID>
-    <Component>SelectLanguage.cs</Component>
-    <FullName>SelectLanguage.Text</FullName>
-    <ShortName>Text</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>SelectLanguage</OriginalText>
-    <SortKey>AASelectLanguage.Text</SortKey>
-    <NodeType>8963</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>$this.Text</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>227</ControlsScanID>
-    <Component>SelectLanguage.cs</Component>
-    <FullName>btOK.Text</FullName>
-    <ShortName>Text</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>OK</OriginalText>
-    <SortKey>BAbtOK.Text</SortKey>
-    <NodeType>8963</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>btOK.Text</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>228</ControlsScanID>
-    <Component>SelectLanguage.cs</Component>
-    <FullName>lblStartup.Text</FullName>
-    <ShortName>Text</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>Next time ...</OriginalText>
-    <SortKey>BAlblStartup.Text</SortKey>
-    <NodeType>8963</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>lblStartup.Text</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>229</ControlsScanID>
-    <Component>SelectLanguage.cs</Component>
-    <FullName>rbDefault.Text</FullName>
-    <ShortName>Text</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>Use the default language</OriginalText>
-    <SortKey>BArbDefault.Text</SortKey>
-    <NodeType>8963</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>rbDefault.Text</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>230</ControlsScanID>
-    <Component>SelectLanguage.cs</Component>
-    <FullName>rbSelected.Text</FullName>
-    <ShortName>Text</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>Use the selected language</OriginalText>
-    <SortKey>BArbSelected.Text</SortKey>
-    <NodeType>8963</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>rbSelected.Text</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>231</ControlsScanID>
-    <Component>SelectLanguage.cs</Component>
-    <FullName>rbShow.Text</FullName>
-    <ShortName>Text</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>Show this form again</OriginalText>
-    <SortKey>BArbShow.Text</SortKey>
-    <NodeType>8963</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>rbShow.Text</CompilerName>
   </ControlsScanResults>
 </ControlsScanResultsCache>

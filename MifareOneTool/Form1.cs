@@ -14,6 +14,7 @@ using System.Text.RegularExpressions;
 using Microsoft.VisualBasic;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Globalization;
 
 namespace MifareOneTool
 {
@@ -21,6 +22,8 @@ namespace MifareOneTool
     {
         public Form1()
         {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
+            System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
             InitializeComponent();
         }
 
@@ -1540,5 +1543,26 @@ namespace MifareOneTool
         {
 
         }
-    }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem.ToString() == "标准")
+            {
+                System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("zh-ZH");
+                System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("zh-ZH");
+                Properties.Settings.Default.Language = "zh-ZH";
+                Properties.Settings.Default.Save();
+                Application.Restart();
+            }
+            else if (comboBox1.SelectedItem.ToString() == "俄语")
+            {
+                System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("ru-RU");
+                System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("ru-RU");
+                Properties.Settings.Default.Language = "ru-RU";
+                Properties.Settings.Default.Save();
+                Application.Restart();
+
+            }
+        }
+}
 }
