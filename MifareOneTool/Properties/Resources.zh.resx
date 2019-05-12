@@ -235,6 +235,9 @@
   <data name="使用KeyA_是_或KeyB_否_还是不使用_用于全新白卡_" xml:space="preserve">
     <value>使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？</value>
   </data>
+  <data name="俄语" xml:space="preserve">
+    <value>俄语</value>
+  </data>
   <data name="共找到" xml:space="preserve">
     <value>共找到 </value>
   </data>
@@ -409,6 +412,9 @@
   </data>
   <data name="本地版本" xml:space="preserve">
     <value>本地版本 </value>
+  </data>
+  <data name="标准" xml:space="preserve">
+    <value>标准</value>
   </data>
   <data name="正在使用智能KeyABN" xml:space="preserve">
     <value>正在使用智能KeyABN…</value>

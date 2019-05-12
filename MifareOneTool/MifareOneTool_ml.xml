@@ -29,9 +29,13 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>10</StringID>
+    <Comment>Previous text: Hello,cardman!
+首次运行建议点击"检测设备"以加快后续运行速度
+</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>11</StringID>
+    <Comment>Previous text: ппппппппппппппппппп</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>12</StringID>
@@ -254,6 +258,9 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>85</StringID>
+    <Comment>Previous text: 多实例运行模式
+会禁用多开检测
+请自行指定设备</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>86</StringID>
@@ -1014,6 +1021,28 @@
   <GeneralIds>
     <StringID>338</StringID>
   </GeneralIds>
+  <GeneralIds>
+    <StringID>339</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>340</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>341</StringID>
+    <Comment>Previous text: round_create_black_18pt_1x.png</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>342</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>343</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>344</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>345</StringID>
+  </GeneralIds>
   <Languages>
     <LanguageID>30724</LanguageID>
     <LanguageName>Китайский</LanguageName>
@@ -1089,9 +1118,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>10</StringID>
     <LanguageID>30724</LanguageID>
-    <LanguageText>Hello,cardman!
-首次运行建议点击"检测设备"以加快后续运行速度
-</LanguageText>
+    <LanguageText>ппппппппппппппппппп</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -1383,7 +1410,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>58</StringID>
     <LanguageID>30724</LanguageID>
-    <LanguageText>&gt;&gt;&gt; 尝试一下是否成功</LanguageText>
+    <LanguageText>尝试一下是否成功</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -1557,9 +1584,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>85</StringID>
     <LanguageID>30724</LanguageID>
-    <LanguageText>多实例运行模式
-会禁用多开检测
-请自行指定设备</LanguageText>
+    <LanguageText>多实例运行模式 会禁用多开检测 请自行指定设备</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3654,9 +3679,8 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>85</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Режим нескольких устройств. Пожалуйста, укажите 
-ваше собственное устройство</LanguageText>
-    <Status>2</Status>
+    <LanguageText>Режим нескольких устройств. Пожалуйста, укажите ваше собственное устройство</LanguageText>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>87</StringID>
@@ -3721,8 +3745,8 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>70</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>2. Прочитать оригинальную карту</LanguageText>
-    <Status>2</Status>
+    <LanguageText>2. Прочитать карту</LanguageText>
+    <Status>6</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>96</StringID>
@@ -3733,7 +3757,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>64</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>3. Записать новую карту</LanguageText>
+    <LanguageText>3. Записать карту</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3788,7 +3812,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>58</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>&gt;&gt;&gt; Проверьте результат</LanguageText>
+    <LanguageText>Проверьте результат</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3813,7 +3837,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
 
 Рекомендуется нажать «Определить», чтобы ускорить последующую операцию.
 </LanguageText>
-    <Status>2</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>95</StringID>
@@ -3855,7 +3879,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <StringID>11</StringID>
     <LanguageID>25</LanguageID>
     <LanguageText>Привет!</LanguageText>
-    <Status>2</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>12</StringID>
@@ -4426,7 +4450,7 @@ CUID карта</LanguageText>
 -------------------------------------------------- ----------------------
 
 </LanguageText>
-    <Status>5</Status>
+    <Status>6</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>138</StringID>
@@ -4704,26 +4728,26 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>275</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>операция</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Операция выполняется</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>276</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Продолжительность:</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Время выполнения: </LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>277</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>второй</LanguageText>
-    <Status>5</Status>
+    <LanguageText> с.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>278</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>вхолостую</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Ожидание операции</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>279</StringID>
@@ -5122,6 +5146,73 @@ CUID карта</LanguageText>
     <LanguageText>Выберите язык интерфейса</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
+  <GeneralTexts>
+    <StringID>339</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>从这里开始</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>340</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>本工具仅支持SAK=08/18/28的
+卡片复制。SAK28无一键解密。
+若要复制S70卡片，请在高级界
+面上取消勾选“数据写入保护”。
+</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>339</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>1. Начните здесь</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>341</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>sharp_file_copy_black_18pt_1x.png</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>342</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>round_build_black_18pt_1x.png</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>343</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>Hello,cardman!</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>344</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>计时器</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>344</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Таймер</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>345</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>round_settings_black_18pt_1x.png</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>340</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Этот инструмент поддерживает только копирование 
+карт SAK=08/18/28. SAK28 расшифровывается без ключа. 
+Чтобы скопировать карту S70, снимите флажок
+“Защита от записи данных” в настройках программы.</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
   <Properties>
     <Component>FormMFF08.resx</Component>
     <Name>logBox.Text</Name>
@@ -5197,8 +5288,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>Form1.cs</Component>
     <Name>richTextBox1.Text</Name>
-    <StringID>10</StringID>
-    <Selected>true</Selected>
+    <Selected>false</Selected>
     <ResourceName>richTextBox1.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
@@ -7096,14 +7186,6 @@ CUID карта</LanguageText>
     <StringID>102</StringID>
     <Selected>true</Selected>
     <ResourceName>toolStripCheckUpdate.Text</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Form1.resx</Component>
-    <Name>richTextBox1.Text</Name>
-    <StringID>10</StringID>
-    <Selected>true</Selected>
-    <ResourceName>richTextBox1.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <Properties>
@@ -9832,6 +9914,126 @@ CUID карта</LanguageText>
     <StringID>338</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items1</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>俄语</Name>
+    <StringID>338</StringID>
+    <Selected>true</Selected>
+    <ResourceName>俄语</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>标准</Name>
+    <StringID>337</StringID>
+    <Selected>true</Selected>
+    <ResourceName>标准</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>groupBox16.Text</Name>
+    <StringID>339</StringID>
+    <Selected>true</Selected>
+    <ResourceName>groupBox16.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>label13.Text</Name>
+    <StringID>340</StringID>
+    <Selected>true</Selected>
+    <ResourceName>label13.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>groupBox16.Text</Name>
+    <StringID>339</StringID>
+    <Selected>true</Selected>
+    <ResourceName>groupBox16.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>label13.Text</Name>
+    <StringID>340</StringID>
+    <Selected>true</Selected>
+    <ResourceName>label13.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>tabPage2.ImageKey</Name>
+    <StringID>341</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPage2.ImageKey</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>tabPage1.ImageKey</Name>
+    <StringID>342</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPage1.ImageKey</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>tabPage2.ImageKey</Name>
+    <StringID>341</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPage2.ImageKey</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>tabPage1.ImageKey</Name>
+    <StringID>342</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPage1.ImageKey</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>richTextBox1.Text</Name>
+    <StringID>343</StringID>
+    <Selected>true</Selected>
+    <ResourceName>richTextBox1.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>runTimeLabel.Text</Name>
+    <StringID>344</StringID>
+    <Selected>true</Selected>
+    <ResourceName>runTimeLabel.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>runTimeLabel.Text</Name>
+    <StringID>344</StringID>
+    <Selected>true</Selected>
+    <ResourceName>runTimeLabel.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>tabPage3.ImageKey</Name>
+    <StringID>345</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPage3.ImageKey</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>tabPage3.ImageKey</Name>
+    <StringID>345</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPage3.ImageKey</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <GeneralAttributes>

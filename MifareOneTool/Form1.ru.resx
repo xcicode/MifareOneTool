@@ -315,8 +315,10 @@
 </value>
   </data>
   <data name="checkBoxMultiDev.Text" xml:space="preserve">
-    <value>Режим нескольких устройств. Пожалуйста, укажите 
-ваше собственное устройство</value>
+    <value>Режим нескольких устройств. Пожалуйста, укажите ваше собственное устройство</value>
+    <comment>Previous text: 多实例运行模式
+会禁用多开检测
+请自行指定设备</comment>
   </data>
   <data name="checkBoxNewScan.Text" xml:space="preserve">
     <value>Уменьшить задержку оборудования</value>
@@ -348,6 +350,9 @@
   <data name="groupBox15.Text" xml:space="preserve">
     <value>Язык и регион</value>
   </data>
+  <data name="groupBox16.Text" xml:space="preserve">
+    <value>1. Начните здесь</value>
+  </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Обычные операции</value>
   </data>
@@ -358,13 +363,13 @@
     <value>Дополнительно</value>
   </data>
   <data name="groupBox5.Text" xml:space="preserve">
-    <value>2. Прочитать оригинальную карту</value>
+    <value>2. Прочитать карту</value>
   </data>
   <data name="groupBox6.Text" xml:space="preserve">
     <value>Операция с картой</value>
   </data>
   <data name="groupBox7.Text" xml:space="preserve">
-    <value>3. Записать новую карту</value>
+    <value>3. Записать карту</value>
   </data>
   <data name="groupBox8.Text" xml:space="preserve">
     <value>Операции с UID/UFUID</value>
@@ -386,22 +391,14 @@
   <data name="label12.Text" xml:space="preserve">
     <value>Выберите язык интерфейса</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>1. Начните здесь
-
-
-
-
-
-
-本工具仅支持SAK=08/18/28的
-卡片复制。SAK28无一键解密。
-若要复制S70卡片，请在高级界
-面上取消勾选“数据写入保护”。
-</value>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Этот инструмент поддерживает только копирование 
+карт SAK=08/18/28. SAK28 расшифровывается без ключа. 
+Чтобы скопировать карту S70, снимите флажок
+“Защита от записи данных” в настройках программы.</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>&gt;&gt;&gt; Проверьте результат</value>
+    <value>Проверьте результат</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Пожалуйста, 
@@ -417,15 +414,10 @@
   </data>
   <data name="richTextBox1.Lines[0]" xml:space="preserve">
     <value>Привет!</value>
+    <comment>Previous text: ппппппппппппппппппп</comment>
   </data>
-  <data name="richTextBox1.Lines[1]" xml:space="preserve">
-    <value>Для первого запуска нажмите «Определить устройство», чтобы ускорить последующие запуски.</value>
-  </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Привет! 
-
-Рекомендуется нажать «Определить», чтобы ускорить последующую операцию.
-</value>
+  <data name="runTimeLabel.Text" xml:space="preserve">
+    <value>Таймер</value>
   </data>
   <data name="statusLabel.Text" xml:space="preserve">
     <value>Готов</value>
@@ -445,210 +437,554 @@
   <data name="toolStripCheckUpdate.ToolTipText" xml:space="preserve">
     <value>Проверка обновлений</value>
   </data>
-  <data name="groupBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="richTextBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonKill.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonConSave.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonConClr.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonHexTool.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonDiffTool.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonMFF08.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonEStop.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label8.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label6.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonECheckEncrypt.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttoEScanCard.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonECuidWrite.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonEUIDWrite.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonEMfWrite.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonEscan.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonEReadUID.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonESelectKey.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonECmfoc.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonEMfRead.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonEMfoc.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonHardNested.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox10.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox8.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBoxMultiDev.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="SetDeviceCombo.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBoxNewScan.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox14.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBoxAutoSave.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBoxDefIsAdv.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox13.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBoxHardLowCost.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numericCLIFontSize.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label10.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonCLIColor.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox12.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBoxCuidKeyOver.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBoxWriteProtect.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBoxAutoLoadKey.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBoxAutoABN.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox6.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabControl1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolStripCheckUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 74</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 96</value>
+  </data>
+  <data name="flowLayoutPanel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 29</value>
+  </data>
+  <data name="buttonScanCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 25</value>
+  </data>
+  <data name="flowLayoutPanel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 29</value>
+  </data>
+  <data name="buttonListDev.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 25</value>
+  </data>
+  <data name="buttonCLI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 2</value>
+  </data>
+  <data name="buttonCLI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 25</value>
+  </data>
+  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1098, 174</value>
+  </data>
+  <data name="buttonMfRead.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 25</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 2</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 96</value>
+  </data>
+  <data name="tableLayoutPanel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 74</value>
+  </data>
+  <data name="flowLayoutPanel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 29</value>
+  </data>
+  <data name="buttonSelectKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 25</value>
+  </data>
+  <data name="flowLayoutPanel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 29</value>
+  </data>
+  <data name="buttonMfWrite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 2</value>
+  </data>
+  <data name="buttonMfWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 25</value>
+  </data>
+  <data name="buttonMfFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 2</value>
+  </data>
+  <data name="buttonMfFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 25</value>
+  </data>
+  <data name="buttonBmfWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 27</value>
+  </data>
+  <data name="buttonBmfRead.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 27</value>
+  </data>
+  <data name="buttonMfoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 25</value>
+  </data>
+  <data name="buttonUidWrite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 2</value>
+  </data>
+  <data name="buttonUidWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 27</value>
+  </data>
+  <data name="buttonUidFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 2</value>
+  </data>
+  <data name="buttonUidFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 27</value>
+  </data>
+  <data name="buttonUidReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 2</value>
+  </data>
+  <data name="buttonUidReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 27</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>586, 2</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 96</value>
+  </data>
+  <data name="tableLayoutPanel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 74</value>
+  </data>
+  <data name="flowLayoutPanel20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 29</value>
+  </data>
+  <data name="buttonKill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 25</value>
+  </data>
+  <data name="flowLayoutPanel19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 29</value>
+  </data>
+  <data name="buttonConClr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 25</value>
+  </data>
+  <data name="buttonConSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 2</value>
+  </data>
+  <data name="buttonConSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 25</value>
+  </data>
+  <data name="buttonMfcuk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 2</value>
+  </data>
+  <data name="buttonMfcuk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 25</value>
+  </data>
+  <data name="buttonHexTool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 25</value>
+  </data>
+  <data name="buttonDiffTool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 27</value>
+  </data>
+  <data name="buttonCheckEncrypt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 25</value>
+  </data>
+  <data name="buttonLockUfuid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 2</value>
+  </data>
+  <data name="buttonLockUfuid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 27</value>
+  </data>
+  <data name="buttonCmfWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 25</value>
+  </data>
+  <data name="buttonDictMfoc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 2</value>
+  </data>
+  <data name="buttonDictMfoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 25</value>
+  </data>
+  <data name="buttonnKeysMfoc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 2</value>
+  </data>
+  <data name="buttonnKeysMfoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 25</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 96</value>
+  </data>
+  <data name="tableLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 74</value>
+  </data>
+  <data name="flowLayoutPanel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 29</value>
+  </data>
+  <data name="flowLayoutPanel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 31</value>
+  </data>
+  <data name="buttonMFF08.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 3</value>
+  </data>
+  <data name="buttonMFF08.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1090, 225</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1090, 225</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1090, 225</value>
+  </data>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
-        JQAAFiUBSVIk8AAAAgNJREFUOE+lkutLk2EYxvePhJaHShFBUTEPiCieQOmDiEZgrEbpYGiCQxkqA80I
-        RUkUEZ0YRMS+DDI70MkTmzJnDc8iU8QT2mAEItnle90wHwTDyBduXnie5/rd133Q4ZKfAJqHFs9E08A8
-        zD1emDpmYXjqRlnTFIrMk8iuGkNaxWekGEaQrHecBfw+/vPXODw6hj9whN2fh/Bt/8LSRgA3cxr/DeBZ
-        9kvmTNMoHGNbIrYN+3Aj23IxgJkpds0doP3VstgmsNexhutZ9QrAms8T0zYzU5xXM46kcjsmvfvoeL2i
-        AeoUgA07T8yaaZuZKab1rzN74jgys1YB2O2gmBZzH49LODXrrJlnzEzxe9cOLH1ziMioVgCOiuIFX0CE
-        Q+/WYf+yieiCFrRp9tkwxnP7Kt5MbKGm6wfC000KwDlTXNLgEvHMkh+Db32o7fYivtQm1l9+3IBOp5P7
-        yjYPwlKNCsAluWudxgvtknb5t9oWcL/VLU2Mvd2JFq3uqs7vAtE/ceNayiMF4KiYMSjmY2O7B4Ua+NaD
-        YQGEJumRbvyG1IcfBHI12aAAXM8R57aIWTNrLLY4tfNPiCvpR1SeVeu6WWzHFD6THSDwFMDdpmUG62NJ
-        PKM4Or9ZxBxb8H8l7g5CEu8pAOfM3WanSeeS8CFHxW4zM2umbWamOCShXAH+/wNOANABIDUxWnDPAAAA
-        AElFTkSuQmCC
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABk
+        CwAAAk1TRnQBSQFMAgEBBAEAAaABAAGgAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD//8A/wD/AP8AGwAE/yEA
+        BP8HAAG8AgABbQwAAQcC7QHvBwAB/wH0AfMB9AH/FAAB/wHyAewBbQHxAf8GAAHrAgABFQgABP8BbQIA
+        ARUE/wMAAf8B7AEUAW0B8QH/EgAB/wHyAW0CAAHsAf8DAAHqAfABvAQAAewB8gHqAbwDAAH/AfQB7wG8
+        Ae8BEQIAAQ4B7wHwAe8B8wH/AgAB/wETAgABEgHxAf8RAAHyAeoDAAH3Af8BAAH/AewKAAETAf8CAAH/
+        AZIBDgEQAQ8EAAEOAREBDgHsAf8CAAH/AewDAAETAfEQAAHyARIDAAHrAfMB/wEAAfIFAAHrAZIBEAQA
+        Ae8CAAHzAQ8DAAFDAfcB7wERAwABDwHxAf8BAAH/AfMB7AMAARUB8g4AAfIBFAMAAesB8wH/AgAB/wH3
+        AQ4BAAEOAfEB/wEAAfQBDgIAAW0B9AIAAf8B7AIAAUMB8gL/AfIBDwIAAW0B9AH/AgAB/wHzAesDAAEQ
+        AfIJAAH/AfIB8AG8ARUDAAFtAfMB/wUAAW0BAAESBAAB7QIAAfMEAAH0AeoBAAHsAfQCAAH/Ae0BAAET
+        AfMGAAH0AW0DAAEQAfIGAAH/AfABQwYAAeoB9AYAAf8BFAEAAUMB/wIAAf8BbQIAAfADAAH/AfMBEgEA
+        AesB9AIAAf8B7AEAARQB8gH/BgAB9AFtAwABFAHyAf8EAAHwBwAB6gH0BgAB9AEOAwAB7QH/AQAB8QMA
+        AQ4B8gIAAfQBbQIAAQ4BBwL0AbwBDwIAAeoB8wH/BgAB9AFtAgABDgH3Av8CAAH/AUMBAAIOBAAB8QcA
+        AfQBDgQAARUB6gEOAwABDgHyAgAB8wERAwABDwHrAW0BDgMAARAB8gH/BwAB9AHsAQ4B7QHxAe8B8gH/
+        AQAB9AEAARABkgH3AUMDAAHwCAAB8AoAAewDAAH/Ae8BDgFDARAEAAEOARUBDgGSAf8JAAH0AQcB8gHs
+        AQ4B7AH0AQAB9AEPAQcC/wGSAQ4CAAHxCQABvALzARECAAEOAfEB9AG8AfMDAAH/AfQBvAHxAbwBQwIA
+        AQ8BBwHyAbwB9AH/CgAB/wG8AQ4BEAEHAf8BAAH/AbwB/wEAAf8B7QEOAQABEAH/DAAB7AIAARMIAAT/
+        AW0CAAEVBP8LAAH/AfQB9wEHAv8CAAH/AQAB/wHvARACAAG8Af8MAAHzAu8B8AwAAfAC9wEHEAAD/wUA
+        Af8BvAEQAQABFQHwAf9HAAFCAU0BPgcAAT4DAAEoAwABQAMAASADAAEBAQABAQYAAQEWAAP/gQAC/wH8
+        AT8D/wHhAfwBPwH8AT8BgwL/AcAB/AE/AcABAwGBAv8BgAHgAQMBgAEBAYAC/wKAAQEBgAEBAYAC/wEA
+        AYABAQGAAQABgAF/Af4BAQGAAYEBgAEAAcABPwHgAQMB4wHDAcEBgwHwAR8BgAEPAcEBgwKBAfgBBwGA
+        AR8BgAGBAYABAAH8AQMBAAE/AYABAQGAAQAB/gEBAQABPwHAAQMBgAEBAf8BAQEAAT8B4AEDAYABAQH/
+        AYEBEAE/AfwBPwHAAQMB/wGBAaABPwH8AT8B/AE/Af8BxwHAAX8I/ws=
 </value>
   </data>
-  <data name="statusStrip1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1098, 253</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1086, 221</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>623, 3</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 215</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 51</value>
+  </data>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 54</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 29</value>
+  </data>
+  <data name="groupBox16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 215</value>
+  </data>
+  <data name="tableLayoutPanel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 140</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>402, 68</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 34</value>
+  </data>
+  <data name="buttonEscan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 30</value>
+  </data>
+  <data name="buttonECheckEncrypt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 2</value>
+  </data>
+  <data name="buttonECheckEncrypt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 30</value>
+  </data>
+  <data name="buttoEScanCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 36</value>
+  </data>
+  <data name="buttoEScanCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 30</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 3</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 3</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 68</value>
+  </data>
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>432, 2</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 217</value>
+  </data>
+  <data name="tableLayoutPanel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 195</value>
+  </data>
+  <data name="buttonEReadUID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 27</value>
+  </data>
+  <data name="buttonEMfRead.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 27</value>
+  </data>
+  <data name="buttonECmfoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 27</value>
+  </data>
+  <data name="buttonEMfoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 27</value>
+  </data>
+  <data name="buttonESelectKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 27</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>893, 3</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 215</value>
+  </data>
+  <data name="flowLayoutPanel24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 32</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 32</value>
+  </data>
+  <data name="buttonEStop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 186</value>
+  </data>
+  <data name="buttonEStop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 27</value>
+  </data>
+  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>720, 2</value>
+  </data>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 217</value>
+  </data>
+  <data name="tableLayoutPanel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 195</value>
+  </data>
+  <data name="buttonEUIDWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 27</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 27</value>
+  </data>
+  <data name="buttonECuidWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 27</value>
+  </data>
+  <data name="buttonEMfWrite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 166</value>
+  </data>
+  <data name="buttonEMfWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 27</value>
+  </data>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 212</value>
+  </data>
+  <data name="flowLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>856, 100</value>
+  </data>
+  <data name="groupBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 2</value>
+  </data>
+  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 96</value>
+  </data>
+  <data name="tableLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 74</value>
+  </data>
+  <data name="flowLayoutPanel18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 35</value>
+  </data>
+  <data name="buttonHardNested.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 2</value>
+  </data>
+  <data name="flowLayoutPanel17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 29</value>
+  </data>
+  <data name="flowLayoutPanel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>856, 100</value>
+  </data>
+  <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>374, 2</value>
+  </data>
+  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 96</value>
+  </data>
+  <data name="tableLayoutPanel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 74</value>
+  </data>
+  <data name="flowLayoutPanel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 31</value>
+  </data>
+  <data name="flowLayoutPanel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 31</value>
+  </data>
+  <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>712, 2</value>
+  </data>
+  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 96</value>
+  </data>
+  <data name="flowLayoutPanel21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 74</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 34</value>
+  </data>
+  <data name="tableLayoutPanel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1090, 225</value>
+  </data>
+  <data name="flowLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1084, 120</value>
+  </data>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 116</value>
+  </data>
+  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 94</value>
+  </data>
+  <data name="checkBoxAutoABN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 19</value>
+  </data>
+  <data name="checkBoxAutoLoadKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 19</value>
+  </data>
+  <data name="checkBoxWriteProtect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 19</value>
+  </data>
+  <data name="checkBoxCuidKeyOver.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 19</value>
+  </data>
+  <data name="groupBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 2</value>
+  </data>
+  <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 116</value>
+  </data>
+  <data name="tableLayoutPanel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 56</value>
+  </data>
+  <data name="numericCLIFontSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 31</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 15</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 15</value>
+  </data>
+  <data name="buttonCLIColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 2</value>
+  </data>
+  <data name="groupBox14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 2</value>
+  </data>
+  <data name="groupBox14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 116</value>
+  </data>
+  <data name="flowLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>483, 94</value>
+  </data>
+  <data name="checkBoxNewScan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 19</value>
+  </data>
+  <data name="checkBoxMultiDev.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 19</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 15</value>
+  </data>
+  <data name="flowLayoutPanel22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1084, 93</value>
+  </data>
+  <data name="groupBox15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 68</value>
+  </data>
+  <data name="flowLayoutPanel23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 44</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 15</value>
+  </data>
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 23</value>
+  </data>
+  <data name="groupBox13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 2</value>
+  </data>
+  <data name="groupBox13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 70</value>
+  </data>
+  <data name="flowLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 48</value>
+  </data>
+  <data name="checkBoxDefIsAdv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 19</value>
+  </data>
+  <data name="checkBoxAutoSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 19</value>
+  </data>
+  <data name="groupBox11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>528, 2</value>
+  </data>
+  <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 70</value>
+  </data>
+  <data name="flowLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 48</value>
+  </data>
+  <data name="checkBoxHardLowCost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 19</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 434</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1098, 22</value>
+  </data>
+  <data name="statusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 23</value>
+  </data>
+  <data name="localVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 23</value>
+  </data>
+  <data name="toolStripCheckUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIGSURBVDhPrZLrS5NhGMbff0RMs4OKCEaJR0ISD4Hih5CM
+        wJiOtMHQBEcxVAZqEYpiJCK6MIiIfRl4qshzsiVz1vAsMUXURBuMQCS7eq9bx+MHw5BeuHnheZ7rd1/3
+        QfsvX33PAo5HXfccLO0+mFtmYHzqQVHdZ+RbJpFZMY608iGkGAeQZHDiSH4I+HXw+6+xt3+AQHAf33/s
+        wb/5E4trQURn1f4bwLsUkMwZ5jE4xzdEbO/z43Km9XQAM1Psnt1F85slsU1gh/MbLt14rACs+SQxbTMz
+        xTlVE0gsdmDSt4OWt8s64JECsGEniVkzbTMzxbQ+Mr0tjb6YUa0A7HZITIvZDyckXLp11swzZqb4nXsL
+        1s5ZXLheqQAcFcXz/qAIewZX4RheR+zNBjTp9tkwRptjBb2fNlD1/Cui0s0KwDlTXFjjFvH0YgAv+/2o
+        fuHDldt2sf76wxoFcv+gyYvzqSYF4JLctU3hlX5Ju/zb7PMoeeKRJsYXtKJBr7ui9YtADI0eRKaUKQBH
+        xYwhMR+bmr3I08HJpX0COJdoQLppFKn33wskIsmoAFzPAdemiFkza7xldelr+xEJhV2IybHpXbeI7bi8
+        Z7IDBB7JNY27TcsM1seSeEZxbG69iDm20D8s4Q7Cr91TAM6Zu81Ok84l4UOOit1mZtZM28xMcfjVYgU4
+        +6dpfwAbFjEWhbPs1wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="toolStripCheckUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1098, 456</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1781,8 +2117,5 @@
         ////////////////////////////////////////////////////////////////////////////////
         //////////////////////////////////8=
 </value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>

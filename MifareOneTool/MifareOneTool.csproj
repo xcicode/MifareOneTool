@@ -201,6 +201,23 @@
   <ItemGroup>
     <Content Include="MifareOneTool_ml.xml" />
     <Content Include="nfc_128.ico" />
+    <None Include="Resources\round_sync_black_18pt_1x.png" />
+    <None Include="Resources\outline_info_black_18pt_1x.png" />
+    <None Include="Resources\round_info_black_18pt_1x.png" />
+    <None Include="Resources\round_timer_black_18pt_1x.png" />
+    <None Include="Resources\round_update_black_18pt_1x.png" />
+    <None Include="Resources\round_update_black_24pt_1x.png" />
+    <None Include="Resources\round_done_black_48pt_1x.png" />
+    <None Include="Resources\round_done_black_24pt_1x.png" />
+    <None Include="Resources\round_done_outline_black_24pt_1x.png" />
+    <None Include="Resources\round_done_all_black_24pt_1x.png" />
+    <None Include="Resources\round_done_all_black_36pt_1x.png" />
+    <None Include="Resources\round_done_all_black_18pt_1x.png" />
+    <None Include="Resources\round_done_all_black_18pt_2x.png" />
+    <None Include="Resources\round_clear_black_24dp.png" />
+    <None Include="Resources\round_done_all_black_36dp.png" />
+    <None Include="Resources\round_done_all_black_24dp.png" />
+    <None Include="Resources\round_chevron_right_black_24dp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

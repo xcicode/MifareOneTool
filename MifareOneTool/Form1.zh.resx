@@ -316,9 +316,10 @@
     <value>单线程计算</value>
   </data>
   <data name="checkBoxMultiDev.Text" xml:space="preserve">
-    <value>多实例运行模式
+    <value>多实例运行模式 会禁用多开检测 请自行指定设备</value>
+    <comment>Previous text: 多实例运行模式
 会禁用多开检测
-请自行指定设备</value>
+请自行指定设备</comment>
   </data>
   <data name="checkBoxNewScan.Text" xml:space="preserve">
     <value>减少找设备延迟</value>
@@ -355,6 +356,9 @@
   </data>
   <data name="groupBox15.Text" xml:space="preserve">
     <value>语言和地区</value>
+  </data>
+  <data name="groupBox16.Text" xml:space="preserve">
+    <value>从这里开始</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>普通卡操作</value>
@@ -393,31 +397,15 @@
   <data name="label12.Text" xml:space="preserve">
     <value>选择界面语言</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>&gt;&gt;</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>&gt;&gt;&gt;</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>&gt;&gt;&gt;&gt;&gt;</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>从这里开始
-
-
-
-
-
-
-本工具仅支持SAK=08/18/28的
+  <data name="label13.Text" xml:space="preserve">
+    <value>本工具仅支持SAK=08/18/28的
 卡片复制。SAK28无一键解密。
 若要复制S70卡片，请在高级界
 面上取消勾选“数据写入保护”。
 </value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>&gt;&gt;&gt; 尝试一下是否成功</value>
+    <value>尝试一下是否成功</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>请放
@@ -432,14 +420,10 @@
   </data>
   <data name="richTextBox1.Lines[0]" xml:space="preserve">
     <value>Hello,cardman!</value>
+    <comment>Previous text: ппппппппппппппппппп</comment>
   </data>
-  <data name="richTextBox1.Lines[1]" xml:space="preserve">
-    <value>首次运行建议点击"检测设备"以加快后续运行速度</value>
-  </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Hello,cardman!
-首次运行建议点击"检测设备"以加快后续运行速度
-</value>
+  <data name="runTimeLabel.Text" xml:space="preserve">
+    <value>计时器</value>
   </data>
   <data name="statusLabel.Text" xml:space="preserve">
     <value>就绪</value>
@@ -447,11 +431,21 @@
   <data name="statusStrip1.Text" xml:space="preserve">
     <value>statusStrip1</value>
   </data>
+  <data name="tabPage1.ImageKey" xml:space="preserve">
+    <value>round_build_black_18pt_1x.png</value>
+  </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>高级操作模式</value>
   </data>
+  <data name="tabPage2.ImageKey" xml:space="preserve">
+    <value>sharp_file_copy_black_18pt_1x.png</value>
+    <comment>Previous text: round_create_black_18pt_1x.png</comment>
+  </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>复制卡模式</value>
+  </data>
+  <data name="tabPage3.ImageKey" xml:space="preserve">
+    <value>round_settings_black_18pt_1x.png</value>
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>软件设置</value>

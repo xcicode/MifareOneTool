@@ -235,6 +235,9 @@
   <data name="使用KeyA_是_或KeyB_否_还是不使用_用于全新白卡_" xml:space="preserve">
     <value>使用KeyA（是）或KeyB（否），还是不使用（用于全新白卡）（取消）？</value>
   </data>
+  <data name="俄语" xml:space="preserve">
+    <value>俄语</value>
+  </data>
   <data name="共找到" xml:space="preserve">
     <value>共找到 </value>
   </data>
@@ -410,6 +413,9 @@
   <data name="本地版本" xml:space="preserve">
     <value>本地版本 </value>
   </data>
+  <data name="标准" xml:space="preserve">
+    <value>标准</value>
+  </data>
   <data name="正在使用智能KeyABN" xml:space="preserve">
     <value>正在使用智能KeyABN…</value>
   </data>
@@ -555,5 +561,45 @@
   </data>
   <data name="错误" xml:space="preserve">
     <value>错误</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="round_chevron_right_black_24dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_chevron_right_black_24dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_clear_black_24dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_clear_black_24dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_done_all_black_24dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_done_all_black_24dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="outline_info_black_18pt_1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\outline_info_black_18pt_1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_done_all_black_18pt_1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_done_all_black_18pt_1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_done_all_black_24pt_1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_done_all_black_24pt_1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_done_black_24pt_1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_done_black_24pt_1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_done_outline_black_24pt_1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_done_outline_black_24pt_1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_info_black_18pt_1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_info_black_18pt_1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_sync_black_18pt_1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_sync_black_18pt_1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_timer_black_18pt_1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_timer_black_18pt_1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_update_black_18pt_1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_update_black_18pt_1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="round_update_black_24pt_1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\round_update_black_24pt_1x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -19,7 +19,7 @@ namespace MifareOneTool.Properties {
     // с помощью такого средства, как ResGen или Visual Studio.
     // Чтобы добавить или удалить член, измените файл .ResX и снова запустите ResGen
     // с параметром /str или перестройте свой проект VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -359,11 +359,141 @@ namespace MifareOneTool.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap outline_info_black_18pt_1x {
+            get {
+                object obj = ResourceManager.GetObject("outline_info_black_18pt_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на 。.
         /// </summary>
         public static string res {
             get {
                 return ResourceManager.GetString("res", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_chevron_right_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("round_chevron_right_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_clear_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("round_clear_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_done_all_black_18pt_1x {
+            get {
+                object obj = ResourceManager.GetObject("round_done_all_black_18pt_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_done_all_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("round_done_all_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_done_all_black_24pt_1x {
+            get {
+                object obj = ResourceManager.GetObject("round_done_all_black_24pt_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_done_black_24pt_1x {
+            get {
+                object obj = ResourceManager.GetObject("round_done_black_24pt_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_done_outline_black_24pt_1x {
+            get {
+                object obj = ResourceManager.GetObject("round_done_outline_black_24pt_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_info_black_18pt_1x {
+            get {
+                object obj = ResourceManager.GetObject("round_info_black_18pt_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_sync_black_18pt_1x {
+            get {
+                object obj = ResourceManager.GetObject("round_sync_black_18pt_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_timer_black_18pt_1x {
+            get {
+                object obj = ResourceManager.GetObject("round_timer_black_18pt_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_update_black_18pt_1x {
+            get {
+                object obj = ResourceManager.GetObject("round_update_black_18pt_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap round_update_black_24pt_1x {
+            get {
+                object obj = ResourceManager.GetObject("round_update_black_24pt_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -409,6 +539,15 @@ namespace MifareOneTool.Properties {
         public static string 使用KeyA_是_或KeyB_否_还是不使用_用于全新白卡_ {
             get {
                 return ResourceManager.GetString("使用KeyA_是_或KeyB_否_还是不使用_用于全新白卡_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 俄语.
+        /// </summary>
+        public static string 俄语 {
+            get {
+                return ResourceManager.GetString("俄语", resourceCulture);
             }
         }
         
@@ -926,6 +1065,15 @@ namespace MifareOneTool.Properties {
         public static string 本地版本 {
             get {
                 return ResourceManager.GetString("本地版本", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 标准.
+        /// </summary>
+        public static string 标准 {
+            get {
+                return ResourceManager.GetString("标准", resourceCulture);
             }
         }
         

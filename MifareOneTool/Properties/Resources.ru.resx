@@ -226,6 +226,9 @@
   <data name="使用KeyA_是_或KeyB_否_还是不使用_用于全新白卡_" xml:space="preserve">
     <value>Использовать KeyA (да) или KeyB (нет) или нет (для новых белых карточек) (отменить)?</value>
   </data>
+  <data name="俄语" xml:space="preserve">
+    <value>Русский</value>
+  </data>
   <data name="共找到" xml:space="preserve">
     <value>найденный</value>
   </data>
@@ -401,6 +404,9 @@
   <data name="本地版本" xml:space="preserve">
     <value>Версия - </value>
   </data>
+  <data name="标准" xml:space="preserve">
+    <value>Китайский</value>
+  </data>
   <data name="正在使用智能KeyABN" xml:space="preserve">
     <value>Использование Smart KeyABN ...</value>
   </data>
@@ -414,10 +420,10 @@
     <value>Не было обнаружено никаких активных устройств NFC.</value>
   </data>
   <data name="秒" xml:space="preserve">
-    <value>второй</value>
+    <value> с.</value>
   </data>
   <data name="空闲" xml:space="preserve">
-    <value>вхолостую</value>
+    <value>Ожидание операции</value>
   </data>
   <data name="终端内容已保存至m1t_log文件" xml:space="preserve">
     <value>Содержимое терминала сохранено в файле m1t.log</value>
@@ -536,10 +542,10 @@
     <value>Введенный номер UID недействителен.</value>
   </data>
   <data name="运行中" xml:space="preserve">
-    <value>операция</value>
+    <value>Операция выполняется</value>
   </data>
   <data name="运行时间" xml:space="preserve">
-    <value>Продолжительность:</value>
+    <value>Время выполнения: </value>
   </data>
   <data name="选择key_mfd" xml:space="preserve">
     <value>Выбрать key.mfd</value>

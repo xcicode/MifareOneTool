@@ -1015,9 +1015,7 @@
     <ShortName>Text</ShortName>
     <XPath />
     <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>多实例运行模式
-会禁用多开检测
-请自行指定设备</OriginalText>
+    <OriginalText>多实例运行模式 会禁用多开检测 请自行指定设备</OriginalText>
     <SortKey>BAcheckBoxMultiDev.Text</SortKey>
     <NodeType>8963</NodeType>
     <Expanded>false</Expanded>
@@ -1193,6 +1191,21 @@
   <ControlsScanResults>
     <ControlsScanID>80</ControlsScanID>
     <Component>Form1.cs</Component>
+    <FullName>groupBox16.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>从这里开始</OriginalText>
+    <SortKey>BAgroupBox16.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox16.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>81</ControlsScanID>
+    <Component>Form1.cs</Component>
     <FullName>groupBox2.Text</FullName>
     <ShortName>Text</ShortName>
     <XPath />
@@ -1206,7 +1219,7 @@
     <CompilerName>groupBox2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>81</ControlsScanID>
+    <ControlsScanID>82</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1221,7 +1234,7 @@
     <CompilerName>groupBox3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>82</ControlsScanID>
+    <ControlsScanID>83</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox4.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1236,7 +1249,7 @@
     <CompilerName>groupBox4.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>83</ControlsScanID>
+    <ControlsScanID>84</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox5.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1251,7 +1264,7 @@
     <CompilerName>groupBox5.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>84</ControlsScanID>
+    <ControlsScanID>85</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox6.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1266,7 +1279,7 @@
     <CompilerName>groupBox6.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>85</ControlsScanID>
+    <ControlsScanID>86</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox7.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1281,7 +1294,7 @@
     <CompilerName>groupBox7.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>86</ControlsScanID>
+    <ControlsScanID>87</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox8.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1296,7 +1309,7 @@
     <CompilerName>groupBox8.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>87</ControlsScanID>
+    <ControlsScanID>88</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>groupBox9.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1311,7 +1324,7 @@
     <CompilerName>groupBox9.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>88</ControlsScanID>
+    <ControlsScanID>89</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1327,7 +1340,7 @@
     <CompilerName>label1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>89</ControlsScanID>
+    <ControlsScanID>90</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label10.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1342,7 +1355,7 @@
     <CompilerName>label10.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>90</ControlsScanID>
+    <ControlsScanID>91</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label11.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1357,7 +1370,7 @@
     <CompilerName>label11.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>91</ControlsScanID>
+    <ControlsScanID>92</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label12.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1372,84 +1385,32 @@
     <CompilerName>label12.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>92</ControlsScanID>
-    <Component>Form1.cs</Component>
-    <FullName>label2.Text</FullName>
-    <ShortName>Text</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>&gt;&gt;</OriginalText>
-    <SortKey>BAlabel2.Text</SortKey>
-    <NodeType>8963</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>label2.Text</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
     <ControlsScanID>93</ControlsScanID>
     <Component>Form1.cs</Component>
-    <FullName>label3.Text</FullName>
+    <FullName>label13.Text</FullName>
     <ShortName>Text</ShortName>
     <XPath />
     <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>&gt;&gt;&gt;</OriginalText>
-    <SortKey>BAlabel3.Text</SortKey>
-    <NodeType>8963</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>label3.Text</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>94</ControlsScanID>
-    <Component>Form1.cs</Component>
-    <FullName>label4.Text</FullName>
-    <ShortName>Text</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>&gt;&gt;&gt;&gt;&gt;</OriginalText>
-    <SortKey>BAlabel4.Text</SortKey>
-    <NodeType>8963</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>label4.Text</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>95</ControlsScanID>
-    <Component>Form1.cs</Component>
-    <FullName>label5.Text</FullName>
-    <ShortName>Text</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>从这里开始
-
-
-
-
-
-
-本工具仅支持SAK=08/18/28的
+    <OriginalText>本工具仅支持SAK=08/18/28的
 卡片复制。SAK28无一键解密。
 若要复制S70卡片，请在高级界
 面上取消勾选“数据写入保护”。
 </OriginalText>
-    <SortKey>BAlabel5.Text</SortKey>
+    <SortKey>BAlabel13.Text</SortKey>
     <NodeType>8963</NodeType>
     <Expanded>false</Expanded>
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>label5.Text</CompilerName>
+    <CompilerName>label13.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>96</ControlsScanID>
+    <ControlsScanID>94</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label6.Text</FullName>
     <ShortName>Text</ShortName>
     <XPath />
     <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>&gt;&gt;&gt; 尝试一下是否成功</OriginalText>
+    <OriginalText>尝试一下是否成功</OriginalText>
     <SortKey>BAlabel6.Text</SortKey>
     <NodeType>8963</NodeType>
     <Expanded>false</Expanded>
@@ -1458,7 +1419,7 @@
     <CompilerName>label6.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>97</ControlsScanID>
+    <ControlsScanID>95</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label7.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1474,7 +1435,7 @@
     <CompilerName>label7.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>98</ControlsScanID>
+    <ControlsScanID>96</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label8.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1490,7 +1451,7 @@
     <CompilerName>label8.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>99</ControlsScanID>
+    <ControlsScanID>97</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>label9.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1505,24 +1466,37 @@
     <CompilerName>label9.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>100</ControlsScanID>
+    <ControlsScanID>98</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>richTextBox1.Text</FullName>
     <ShortName>Text</ShortName>
     <XPath />
     <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>Hello,cardman!
-首次运行建议点击"检测设备"以加快后续运行速度
-</OriginalText>
+    <OriginalText>Hello,cardman!</OriginalText>
     <SortKey>BArichTextBox1.Text</SortKey>
-    <NodeType>8963</NodeType>
+    <NodeType>8707</NodeType>
     <Expanded>false</Expanded>
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>-1</ArrayIndexOrCount>
     <CompilerName>richTextBox1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>101</ControlsScanID>
+    <ControlsScanID>99</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>runTimeLabel.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripStatusLabel</ProgID>
+    <OriginalText>计时器</OriginalText>
+    <SortKey>BArunTimeLabel.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>runTimeLabel.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>100</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>statusLabel.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1537,7 +1511,7 @@
     <CompilerName>statusLabel.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>102</ControlsScanID>
+    <ControlsScanID>101</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>statusStrip1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1550,6 +1524,21 @@
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>-1</ArrayIndexOrCount>
     <CompilerName>statusStrip1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>102</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>tabPage1.ImageKey</FullName>
+    <ShortName>ImageKey</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>round_build_black_18pt_1x.png</OriginalText>
+    <SortKey>BAtabPage1.ImageKey</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>tabPage1.ImageKey</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
     <ControlsScanID>103</ControlsScanID>
@@ -1569,6 +1558,21 @@
   <ControlsScanResults>
     <ControlsScanID>104</ControlsScanID>
     <Component>Form1.cs</Component>
+    <FullName>tabPage2.ImageKey</FullName>
+    <ShortName>ImageKey</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>sharp_file_copy_black_18pt_1x.png</OriginalText>
+    <SortKey>BAtabPage2.ImageKey</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>tabPage2.ImageKey</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>105</ControlsScanID>
+    <Component>Form1.cs</Component>
     <FullName>tabPage2.Text</FullName>
     <ShortName>Text</ShortName>
     <XPath />
@@ -1582,7 +1586,22 @@
     <CompilerName>tabPage2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>105</ControlsScanID>
+    <ControlsScanID>106</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>tabPage3.ImageKey</FullName>
+    <ShortName>ImageKey</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>round_settings_black_18pt_1x.png</OriginalText>
+    <SortKey>BAtabPage3.ImageKey</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>tabPage3.ImageKey</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>107</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>tabPage3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1597,7 +1616,7 @@
     <CompilerName>tabPage3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>106</ControlsScanID>
+    <ControlsScanID>108</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>toolStripCheckUpdate.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1612,7 +1631,7 @@
     <CompilerName>toolStripCheckUpdate.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>107</ControlsScanID>
+    <ControlsScanID>109</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>toolStripCheckUpdate.ToolTipText</FullName>
     <ShortName>ToolTipText</ShortName>
@@ -1627,7 +1646,7 @@
     <CompilerName>toolStripCheckUpdate.ToolTipText</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>108</ControlsScanID>
+    <ControlsScanID>110</ControlsScanID>
     <Component>Form1.cs</Component>
     <FullName>richTextBox1.Lines[0]</FullName>
     <ShortName>Lines</ShortName>
@@ -1640,36 +1659,6 @@
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>0</ArrayIndexOrCount>
     <CompilerName>richTextBox1.Lines[0]</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>109</ControlsScanID>
-    <Component>Form1.cs</Component>
-    <FullName>richTextBox1.Lines[1]</FullName>
-    <ShortName>Lines</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>首次运行建议点击"检测设备"以加快后续运行速度</OriginalText>
-    <SortKey>BLines(0001)</SortKey>
-    <NodeType>8965</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>1</ArrayIndexOrCount>
-    <CompilerName>richTextBox1.Lines[1]</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>110</ControlsScanID>
-    <Component>Form1.cs</Component>
-    <FullName>richTextBox1.Lines[2]</FullName>
-    <ShortName>Lines</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText />
-    <SortKey>BLines(0002)</SortKey>
-    <NodeType>8709</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>2</ArrayIndexOrCount>
-    <CompilerName>richTextBox1.Lines[2]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
     <ControlsScanID>111</ControlsScanID>

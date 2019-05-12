@@ -7475,7 +7475,8 @@
     <SourceScanID>373</SourceScanID>
     <ModuleName>Form1.cs</ModuleName>
     <LineNumber>1549</LineNumber>
-    <ColumnNumber>55</ColumnNumber>
+    <ColumnNumber>54</ColumnNumber>
+    <StringID>337</StringID>
     <OriginalText>标准</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
@@ -7485,6 +7486,7 @@
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>ComboBox1_SelectedIndexChanged</CodeElement>
     <RelativeLineNumber>2</RelativeLineNumber>
+    <NamedResource>标准</NamedResource>
     <IsHiddenString>false</IsHiddenString>
     <IsInterpolatedString>false</IsInterpolatedString>
     <ClassName>MifareOneTool.Form1</ClassName>
@@ -7551,7 +7553,8 @@
     <SourceScanID>377</SourceScanID>
     <ModuleName>Form1.cs</ModuleName>
     <LineNumber>1557</LineNumber>
-    <ColumnNumber>60</ColumnNumber>
+    <ColumnNumber>59</ColumnNumber>
+    <StringID>338</StringID>
     <OriginalText>俄语</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
@@ -7561,6 +7564,7 @@
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>ComboBox1_SelectedIndexChanged</CodeElement>
     <RelativeLineNumber>10</RelativeLineNumber>
+    <NamedResource>俄语</NamedResource>
     <IsHiddenString>false</IsHiddenString>
     <IsInterpolatedString>false</IsInterpolatedString>
     <ClassName>MifareOneTool.Form1</ClassName>

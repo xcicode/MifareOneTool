@@ -78,16 +78,17 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.buttonEscan = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.buttonECheckEncrypt = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.buttoEScanCard = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonEReadUID = new System.Windows.Forms.Button();
@@ -96,6 +97,8 @@
             this.buttonEMfoc = new System.Windows.Forms.Button();
             this.buttonESelectKey = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel24 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonEStop = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -138,10 +141,14 @@
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.checkBoxNewScan = new System.Windows.Forms.CheckBox();
+            this.checkBoxMultiDev = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
             this.SetDeviceCombo = new System.Windows.Forms.ComboBox();
-            this.checkBoxMultiDev = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.checkBoxDefIsAdv = new System.Windows.Forms.CheckBox();
@@ -153,13 +160,10 @@
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.runTimeLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.localVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.curDevice = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
@@ -180,11 +184,17 @@
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.groupBox16.SuspendLayout();
+            this.tableLayoutPanel15.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -212,19 +222,20 @@
             this.groupBox14.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel22.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            this.flowLayoutPanel23.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.flowLayoutPanel23.SuspendLayout();
-            this.groupBox15.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.tableLayoutPanel5);
+            this.groupBox1.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -244,9 +255,12 @@
             // buttonScanCard
             // 
             resources.ApplyResources(this.buttonScanCard, "buttonScanCard");
+            this.buttonScanCard.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonScanCard.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonScanCard.ForeColor = System.Drawing.Color.White;
             this.buttonScanCard.Name = "buttonScanCard";
             this.toolTipHelp.SetToolTip(this.buttonScanCard, resources.GetString("buttonScanCard.ToolTip"));
-            this.buttonScanCard.UseVisualStyleBackColor = true;
+            this.buttonScanCard.UseVisualStyleBackColor = false;
             this.buttonScanCard.Click += new System.EventHandler(this.buttonScanCard_Click);
             // 
             // flowLayoutPanel11
@@ -259,39 +273,50 @@
             // buttonListDev
             // 
             resources.ApplyResources(this.buttonListDev, "buttonListDev");
+            this.buttonListDev.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonListDev.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonListDev.ForeColor = System.Drawing.Color.White;
             this.buttonListDev.Name = "buttonListDev";
             this.toolTipHelp.SetToolTip(this.buttonListDev, resources.GetString("buttonListDev.ToolTip"));
-            this.buttonListDev.UseVisualStyleBackColor = true;
+            this.buttonListDev.UseVisualStyleBackColor = false;
             this.buttonListDev.Click += new System.EventHandler(this.buttonListDev_Click);
             // 
             // buttonCLI
             // 
             resources.ApplyResources(this.buttonCLI, "buttonCLI");
+            this.buttonCLI.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCLI.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCLI.ForeColor = System.Drawing.Color.White;
             this.buttonCLI.Name = "buttonCLI";
             this.toolTipHelp.SetToolTip(this.buttonCLI, resources.GetString("buttonCLI.ToolTip"));
-            this.buttonCLI.UseVisualStyleBackColor = true;
+            this.buttonCLI.UseVisualStyleBackColor = false;
             this.buttonCLI.Click += new System.EventHandler(this.buttonCLI_Click);
             // 
             // richTextBox1
             // 
             resources.ApplyResources(this.richTextBox1, "richTextBox1");
-            this.richTextBox1.BackColor = System.Drawing.Color.Black;
-            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.richTextBox1.BackColor = System.Drawing.Color.AliceBlue;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.ForeColor = System.Drawing.Color.Black;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             // 
             // buttonMfRead
             // 
             resources.ApplyResources(this.buttonMfRead, "buttonMfRead");
+            this.buttonMfRead.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMfRead.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMfRead.ForeColor = System.Drawing.Color.White;
             this.buttonMfRead.Name = "buttonMfRead";
             this.toolTipHelp.SetToolTip(this.buttonMfRead, resources.GetString("buttonMfRead.ToolTip"));
-            this.buttonMfRead.UseVisualStyleBackColor = true;
+            this.buttonMfRead.UseVisualStyleBackColor = false;
             this.buttonMfRead.Click += new System.EventHandler(this.buttonMfRead_Click);
             // 
             // groupBox2
             // 
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.tableLayoutPanel7);
+            this.groupBox2.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -311,9 +336,12 @@
             // buttonSelectKey
             // 
             resources.ApplyResources(this.buttonSelectKey, "buttonSelectKey");
+            this.buttonSelectKey.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonSelectKey.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonSelectKey.ForeColor = System.Drawing.Color.White;
             this.buttonSelectKey.Name = "buttonSelectKey";
             this.toolTipHelp.SetToolTip(this.buttonSelectKey, resources.GetString("buttonSelectKey.ToolTip"));
-            this.buttonSelectKey.UseVisualStyleBackColor = true;
+            this.buttonSelectKey.UseVisualStyleBackColor = false;
             this.buttonSelectKey.Click += new System.EventHandler(this.buttonSelectKey_Click);
             // 
             // flowLayoutPanel13
@@ -327,71 +355,97 @@
             // buttonMfWrite
             // 
             resources.ApplyResources(this.buttonMfWrite, "buttonMfWrite");
+            this.buttonMfWrite.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMfWrite.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMfWrite.ForeColor = System.Drawing.Color.White;
             this.buttonMfWrite.Name = "buttonMfWrite";
             this.toolTipHelp.SetToolTip(this.buttonMfWrite, resources.GetString("buttonMfWrite.ToolTip"));
-            this.buttonMfWrite.UseVisualStyleBackColor = true;
+            this.buttonMfWrite.UseVisualStyleBackColor = false;
             this.buttonMfWrite.Click += new System.EventHandler(this.buttonMfWrite_Click);
             // 
             // buttonMfFormat
             // 
             resources.ApplyResources(this.buttonMfFormat, "buttonMfFormat");
+            this.buttonMfFormat.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMfFormat.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMfFormat.ForeColor = System.Drawing.Color.White;
             this.buttonMfFormat.Name = "buttonMfFormat";
             this.toolTipHelp.SetToolTip(this.buttonMfFormat, resources.GetString("buttonMfFormat.ToolTip"));
-            this.buttonMfFormat.UseVisualStyleBackColor = true;
+            this.buttonMfFormat.UseVisualStyleBackColor = false;
             this.buttonMfFormat.Click += new System.EventHandler(this.buttonMfFormat_Click);
             // 
             // buttonBmfWrite
             // 
             resources.ApplyResources(this.buttonBmfWrite, "buttonBmfWrite");
+            this.buttonBmfWrite.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonBmfWrite.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonBmfWrite.ForeColor = System.Drawing.Color.White;
             this.buttonBmfWrite.Name = "buttonBmfWrite";
             this.toolTipHelp.SetToolTip(this.buttonBmfWrite, resources.GetString("buttonBmfWrite.ToolTip"));
-            this.buttonBmfWrite.UseVisualStyleBackColor = true;
+            this.buttonBmfWrite.UseVisualStyleBackColor = false;
             this.buttonBmfWrite.Click += new System.EventHandler(this.buttonBmfWrite_Click);
             // 
             // buttonBmfRead
             // 
             resources.ApplyResources(this.buttonBmfRead, "buttonBmfRead");
+            this.buttonBmfRead.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonBmfRead.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonBmfRead.ForeColor = System.Drawing.Color.White;
             this.buttonBmfRead.Name = "buttonBmfRead";
             this.toolTipHelp.SetToolTip(this.buttonBmfRead, resources.GetString("buttonBmfRead.ToolTip"));
-            this.buttonBmfRead.UseVisualStyleBackColor = true;
+            this.buttonBmfRead.UseVisualStyleBackColor = false;
             this.buttonBmfRead.Click += new System.EventHandler(this.buttonBmfRead_Click);
             // 
             // buttonMfoc
             // 
             resources.ApplyResources(this.buttonMfoc, "buttonMfoc");
+            this.buttonMfoc.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMfoc.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMfoc.ForeColor = System.Drawing.Color.White;
             this.buttonMfoc.Name = "buttonMfoc";
             this.toolTipHelp.SetToolTip(this.buttonMfoc, resources.GetString("buttonMfoc.ToolTip"));
-            this.buttonMfoc.UseVisualStyleBackColor = true;
+            this.buttonMfoc.UseVisualStyleBackColor = false;
             this.buttonMfoc.Click += new System.EventHandler(this.buttonMfoc_Click);
             // 
             // buttonUidWrite
             // 
             resources.ApplyResources(this.buttonUidWrite, "buttonUidWrite");
+            this.buttonUidWrite.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonUidWrite.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonUidWrite.ForeColor = System.Drawing.Color.White;
             this.buttonUidWrite.Name = "buttonUidWrite";
             this.toolTipHelp.SetToolTip(this.buttonUidWrite, resources.GetString("buttonUidWrite.ToolTip"));
-            this.buttonUidWrite.UseVisualStyleBackColor = true;
+            this.buttonUidWrite.UseVisualStyleBackColor = false;
             this.buttonUidWrite.Click += new System.EventHandler(this.buttonUidWrite_Click);
             // 
             // buttonUidFormat
             // 
             resources.ApplyResources(this.buttonUidFormat, "buttonUidFormat");
+            this.buttonUidFormat.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonUidFormat.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonUidFormat.ForeColor = System.Drawing.Color.White;
             this.buttonUidFormat.Name = "buttonUidFormat";
             this.toolTipHelp.SetToolTip(this.buttonUidFormat, resources.GetString("buttonUidFormat.ToolTip"));
-            this.buttonUidFormat.UseVisualStyleBackColor = true;
+            this.buttonUidFormat.UseVisualStyleBackColor = false;
             this.buttonUidFormat.Click += new System.EventHandler(this.buttonUidFormat_Click);
             // 
             // buttonUidReset
             // 
             resources.ApplyResources(this.buttonUidReset, "buttonUidReset");
+            this.buttonUidReset.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonUidReset.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonUidReset.ForeColor = System.Drawing.Color.White;
             this.buttonUidReset.Name = "buttonUidReset";
             this.toolTipHelp.SetToolTip(this.buttonUidReset, resources.GetString("buttonUidReset.ToolTip"));
-            this.buttonUidReset.UseVisualStyleBackColor = true;
+            this.buttonUidReset.UseVisualStyleBackColor = false;
             this.buttonUidReset.Click += new System.EventHandler(this.buttonUidReset_Click);
             // 
             // groupBox3
             // 
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.tableLayoutPanel10);
+            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox3.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -411,8 +465,11 @@
             // buttonKill
             // 
             resources.ApplyResources(this.buttonKill, "buttonKill");
+            this.buttonKill.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonKill.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonKill.ForeColor = System.Drawing.Color.White;
             this.buttonKill.Name = "buttonKill";
-            this.buttonKill.UseVisualStyleBackColor = true;
+            this.buttonKill.UseVisualStyleBackColor = false;
             this.buttonKill.Click += new System.EventHandler(this.buttonKill_Click);
             // 
             // flowLayoutPanel19
@@ -425,37 +482,52 @@
             // buttonConClr
             // 
             resources.ApplyResources(this.buttonConClr, "buttonConClr");
+            this.buttonConClr.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonConClr.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonConClr.ForeColor = System.Drawing.Color.White;
             this.buttonConClr.Name = "buttonConClr";
-            this.buttonConClr.UseVisualStyleBackColor = true;
+            this.buttonConClr.UseVisualStyleBackColor = false;
             this.buttonConClr.Click += new System.EventHandler(this.buttonConClr_Click);
             // 
             // buttonConSave
             // 
             resources.ApplyResources(this.buttonConSave, "buttonConSave");
+            this.buttonConSave.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonConSave.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonConSave.ForeColor = System.Drawing.Color.White;
             this.buttonConSave.Name = "buttonConSave";
-            this.buttonConSave.UseVisualStyleBackColor = true;
+            this.buttonConSave.UseVisualStyleBackColor = false;
             this.buttonConSave.Click += new System.EventHandler(this.buttonConSave_Click);
             // 
             // buttonMfcuk
             // 
             resources.ApplyResources(this.buttonMfcuk, "buttonMfcuk");
+            this.buttonMfcuk.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMfcuk.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMfcuk.ForeColor = System.Drawing.Color.White;
             this.buttonMfcuk.Name = "buttonMfcuk";
             this.toolTipHelp.SetToolTip(this.buttonMfcuk, resources.GetString("buttonMfcuk.ToolTip"));
-            this.buttonMfcuk.UseVisualStyleBackColor = true;
+            this.buttonMfcuk.UseVisualStyleBackColor = false;
             this.buttonMfcuk.Click += new System.EventHandler(this.buttonMfcuk_Click);
             // 
             // buttonHexTool
             // 
             resources.ApplyResources(this.buttonHexTool, "buttonHexTool");
+            this.buttonHexTool.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonHexTool.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonHexTool.ForeColor = System.Drawing.Color.White;
             this.buttonHexTool.Name = "buttonHexTool";
-            this.buttonHexTool.UseVisualStyleBackColor = true;
+            this.buttonHexTool.UseVisualStyleBackColor = false;
             this.buttonHexTool.Click += new System.EventHandler(this.buttonHexTool_Click);
             // 
             // buttonDiffTool
             // 
             resources.ApplyResources(this.buttonDiffTool, "buttonDiffTool");
+            this.buttonDiffTool.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonDiffTool.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonDiffTool.ForeColor = System.Drawing.Color.White;
             this.buttonDiffTool.Name = "buttonDiffTool";
-            this.buttonDiffTool.UseVisualStyleBackColor = true;
+            this.buttonDiffTool.UseVisualStyleBackColor = false;
             this.buttonDiffTool.Click += new System.EventHandler(this.buttonDiffTool_Click);
             // 
             // toolTipHelp
@@ -469,49 +541,66 @@
             // buttonCheckEncrypt
             // 
             resources.ApplyResources(this.buttonCheckEncrypt, "buttonCheckEncrypt");
+            this.buttonCheckEncrypt.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCheckEncrypt.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCheckEncrypt.ForeColor = System.Drawing.Color.White;
             this.buttonCheckEncrypt.Name = "buttonCheckEncrypt";
             this.toolTipHelp.SetToolTip(this.buttonCheckEncrypt, resources.GetString("buttonCheckEncrypt.ToolTip"));
-            this.buttonCheckEncrypt.UseVisualStyleBackColor = true;
+            this.buttonCheckEncrypt.UseVisualStyleBackColor = false;
             this.buttonCheckEncrypt.Click += new System.EventHandler(this.buttonCheckEncrypt_Click);
             // 
             // buttonLockUfuid
             // 
             resources.ApplyResources(this.buttonLockUfuid, "buttonLockUfuid");
+            this.buttonLockUfuid.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonLockUfuid.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonLockUfuid.ForeColor = System.Drawing.Color.White;
             this.buttonLockUfuid.Name = "buttonLockUfuid";
             this.toolTipHelp.SetToolTip(this.buttonLockUfuid, resources.GetString("buttonLockUfuid.ToolTip"));
-            this.buttonLockUfuid.UseVisualStyleBackColor = true;
+            this.buttonLockUfuid.UseVisualStyleBackColor = false;
             this.buttonLockUfuid.Click += new System.EventHandler(this.buttonLockUfuid_Click);
             // 
             // buttonCmfWrite
             // 
             resources.ApplyResources(this.buttonCmfWrite, "buttonCmfWrite");
+            this.buttonCmfWrite.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCmfWrite.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCmfWrite.ForeColor = System.Drawing.Color.White;
             this.buttonCmfWrite.Name = "buttonCmfWrite";
             this.toolTipHelp.SetToolTip(this.buttonCmfWrite, resources.GetString("buttonCmfWrite.ToolTip"));
-            this.buttonCmfWrite.UseVisualStyleBackColor = true;
+            this.buttonCmfWrite.UseVisualStyleBackColor = false;
             this.buttonCmfWrite.Click += new System.EventHandler(this.buttonCmfWrite_Click);
             // 
             // buttonDictMfoc
             // 
             resources.ApplyResources(this.buttonDictMfoc, "buttonDictMfoc");
+            this.buttonDictMfoc.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonDictMfoc.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonDictMfoc.ForeColor = System.Drawing.Color.White;
             this.buttonDictMfoc.Name = "buttonDictMfoc";
             this.toolTipHelp.SetToolTip(this.buttonDictMfoc, resources.GetString("buttonDictMfoc.ToolTip"));
-            this.buttonDictMfoc.UseVisualStyleBackColor = true;
+            this.buttonDictMfoc.UseVisualStyleBackColor = false;
             this.buttonDictMfoc.Click += new System.EventHandler(this.buttonDictMfoc_Click);
             // 
             // buttonnKeysMfoc
             // 
             resources.ApplyResources(this.buttonnKeysMfoc, "buttonnKeysMfoc");
+            this.buttonnKeysMfoc.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonnKeysMfoc.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonnKeysMfoc.ForeColor = System.Drawing.Color.White;
             this.buttonnKeysMfoc.Name = "buttonnKeysMfoc";
             this.toolTipHelp.SetToolTip(this.buttonnKeysMfoc, resources.GetString("buttonnKeysMfoc.ToolTip"));
-            this.buttonnKeysMfoc.UseVisualStyleBackColor = true;
+            this.buttonnKeysMfoc.UseVisualStyleBackColor = false;
             this.buttonnKeysMfoc.Click += new System.EventHandler(this.buttonnKeysMfoc_Click);
             // 
             // groupBox4
             // 
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.tableLayoutPanel6);
+            this.groupBox4.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // tableLayoutPanel6
             // 
@@ -536,8 +625,11 @@
             // buttonMFF08
             // 
             resources.ApplyResources(this.buttonMFF08, "buttonMFF08");
+            this.buttonMFF08.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMFF08.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonMFF08.ForeColor = System.Drawing.Color.White;
             this.buttonMFF08.Name = "buttonMFF08";
-            this.buttonMFF08.UseVisualStyleBackColor = true;
+            this.buttonMFF08.UseVisualStyleBackColor = false;
             this.buttonMFF08.Click += new System.EventHandler(this.buttonMFF08_Click);
             // 
             // tabControl1
@@ -546,21 +638,23 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.ImageList = this.imageList2;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.tableLayoutPanel2);
             resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.groupBox16, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.groupBox5, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.groupBox7, 3, 0);
@@ -570,87 +664,115 @@
             // 
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Controls.Add(this.label8);
-            this.flowLayoutPanel1.Controls.Add(this.label4);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
-            this.label8.ForeColor = System.Drawing.Color.Green;
+            this.label8.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label8.Name = "label8";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label4
+            // pictureBox3
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Image = global::MifareOneTool.Properties.Resources.round_chevron_right_black_24dp;
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
             // 
-            // panel1
+            // groupBox16
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(this.groupBox16, "groupBox16");
+            this.groupBox16.Controls.Add(this.tableLayoutPanel15);
+            this.groupBox16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox16.ForeColor = System.Drawing.Color.MediumBlue;
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.TabStop = false;
+            // 
+            // tableLayoutPanel15
+            // 
+            resources.ApplyResources(this.tableLayoutPanel15, "tableLayoutPanel15");
+            this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tableLayoutPanel15.Controls.Add(this.label13, 0, 1);
+            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
+            this.tableLayoutPanel15.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel15_Paint);
             // 
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.buttonEscan, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonECheckEncrypt, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttoEScanCard, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 3, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel1_Paint);
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
-            this.label7.ForeColor = System.Drawing.Color.Green;
+            this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label7.Name = "label7";
             // 
             // buttonEscan
             // 
             resources.ApplyResources(this.buttonEscan, "buttonEscan");
+            this.buttonEscan.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEscan.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEscan.ForeColor = System.Drawing.Color.White;
             this.buttonEscan.Name = "buttonEscan";
-            this.buttonEscan.UseVisualStyleBackColor = true;
+            this.buttonEscan.UseVisualStyleBackColor = false;
             this.buttonEscan.Click += new System.EventHandler(this.buttonEscan_Click);
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
             // 
             // buttonECheckEncrypt
             // 
             resources.ApplyResources(this.buttonECheckEncrypt, "buttonECheckEncrypt");
+            this.buttonECheckEncrypt.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonECheckEncrypt.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonECheckEncrypt.ForeColor = System.Drawing.Color.White;
             this.buttonECheckEncrypt.Name = "buttonECheckEncrypt";
-            this.buttonECheckEncrypt.UseVisualStyleBackColor = true;
+            this.buttonECheckEncrypt.UseVisualStyleBackColor = false;
             this.buttonECheckEncrypt.Click += new System.EventHandler(this.buttonECheckEncrypt_Click);
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
             // 
             // buttoEScanCard
             // 
             resources.ApplyResources(this.buttoEScanCard, "buttoEScanCard");
+            this.buttoEScanCard.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttoEScanCard.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttoEScanCard.ForeColor = System.Drawing.Color.White;
             this.buttoEScanCard.Name = "buttoEScanCard";
-            this.buttoEScanCard.UseVisualStyleBackColor = true;
+            this.buttoEScanCard.UseVisualStyleBackColor = false;
             this.buttoEScanCard.Click += new System.EventHandler(this.buttoEScanCard_Click);
             // 
-            // label5
+            // pictureBox1
             // 
-            this.label5.AutoEllipsis = true;
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Name = "label5";
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::MifareOneTool.Properties.Resources.round_chevron_right_black_24dp;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MifareOneTool.Properties.Resources.round_chevron_right_black_24dp;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label13.Name = "label13";
             // 
             // groupBox5
             // 
             resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.BackColor = System.Drawing.Color.White;
             this.groupBox5.Controls.Add(this.tableLayoutPanel11);
+            this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox5.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 
@@ -667,61 +789,95 @@
             // buttonEReadUID
             // 
             resources.ApplyResources(this.buttonEReadUID, "buttonEReadUID");
+            this.buttonEReadUID.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEReadUID.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEReadUID.ForeColor = System.Drawing.Color.White;
             this.buttonEReadUID.Name = "buttonEReadUID";
-            this.buttonEReadUID.UseVisualStyleBackColor = true;
+            this.buttonEReadUID.UseVisualStyleBackColor = false;
             this.buttonEReadUID.Click += new System.EventHandler(this.buttonEReadUID_Click);
             // 
             // buttonEMfRead
             // 
             resources.ApplyResources(this.buttonEMfRead, "buttonEMfRead");
+            this.buttonEMfRead.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEMfRead.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEMfRead.ForeColor = System.Drawing.Color.White;
             this.buttonEMfRead.Name = "buttonEMfRead";
-            this.buttonEMfRead.UseVisualStyleBackColor = true;
+            this.buttonEMfRead.UseVisualStyleBackColor = false;
             this.buttonEMfRead.Click += new System.EventHandler(this.button2_Click);
             // 
             // buttonECmfoc
             // 
             resources.ApplyResources(this.buttonECmfoc, "buttonECmfoc");
+            this.buttonECmfoc.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonECmfoc.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonECmfoc.ForeColor = System.Drawing.Color.White;
             this.buttonECmfoc.Name = "buttonECmfoc";
-            this.buttonECmfoc.UseVisualStyleBackColor = true;
+            this.buttonECmfoc.UseVisualStyleBackColor = false;
             this.buttonECmfoc.Click += new System.EventHandler(this.buttonECmfoc_Click);
             // 
             // buttonEMfoc
             // 
             resources.ApplyResources(this.buttonEMfoc, "buttonEMfoc");
+            this.buttonEMfoc.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEMfoc.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEMfoc.ForeColor = System.Drawing.Color.White;
             this.buttonEMfoc.Name = "buttonEMfoc";
-            this.buttonEMfoc.UseVisualStyleBackColor = true;
+            this.buttonEMfoc.UseVisualStyleBackColor = false;
             this.buttonEMfoc.Click += new System.EventHandler(this.buttonEMfoc_Click);
             // 
             // buttonESelectKey
             // 
             resources.ApplyResources(this.buttonESelectKey, "buttonESelectKey");
+            this.buttonESelectKey.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonESelectKey.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonESelectKey.ForeColor = System.Drawing.Color.White;
             this.buttonESelectKey.Name = "buttonESelectKey";
-            this.buttonESelectKey.UseVisualStyleBackColor = true;
+            this.buttonESelectKey.UseVisualStyleBackColor = false;
             this.buttonESelectKey.Click += new System.EventHandler(this.buttonESelectKey_Click);
             // 
             // tableLayoutPanel3
             // 
             resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
-            this.tableLayoutPanel3.Controls.Add(this.label6, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel24, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.buttonEStop, 0, 1);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            // 
+            // flowLayoutPanel24
+            // 
+            resources.ApplyResources(this.flowLayoutPanel24, "flowLayoutPanel24");
+            this.flowLayoutPanel24.Controls.Add(this.pictureBox4);
+            this.flowLayoutPanel24.Controls.Add(this.label6);
+            this.flowLayoutPanel24.Name = "flowLayoutPanel24";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MifareOneTool.Properties.Resources.round_done_outline_black_24pt_1x;
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.TabStop = false;
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // buttonEStop
             // 
             resources.ApplyResources(this.buttonEStop, "buttonEStop");
+            this.buttonEStop.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEStop.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEStop.ForeColor = System.Drawing.Color.White;
             this.buttonEStop.Name = "buttonEStop";
-            this.buttonEStop.UseVisualStyleBackColor = true;
+            this.buttonEStop.UseVisualStyleBackColor = false;
             this.buttonEStop.Click += new System.EventHandler(this.buttonEStop_Click);
             // 
             // groupBox7
             // 
             resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Controls.Add(this.tableLayoutPanel13);
+            this.groupBox7.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
@@ -737,37 +893,49 @@
             // buttonEUIDWrite
             // 
             resources.ApplyResources(this.buttonEUIDWrite, "buttonEUIDWrite");
+            this.buttonEUIDWrite.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEUIDWrite.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEUIDWrite.ForeColor = System.Drawing.Color.White;
             this.buttonEUIDWrite.Name = "buttonEUIDWrite";
-            this.buttonEUIDWrite.UseVisualStyleBackColor = true;
+            this.buttonEUIDWrite.UseVisualStyleBackColor = false;
             this.buttonEUIDWrite.Click += new System.EventHandler(this.buttonEUIDWrite_Click);
             // 
             // button4
             // 
             resources.ApplyResources(this.button4, "button4");
+            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // buttonECuidWrite
             // 
             resources.ApplyResources(this.buttonECuidWrite, "buttonECuidWrite");
+            this.buttonECuidWrite.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonECuidWrite.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonECuidWrite.ForeColor = System.Drawing.Color.White;
             this.buttonECuidWrite.Name = "buttonECuidWrite";
-            this.buttonECuidWrite.UseVisualStyleBackColor = true;
+            this.buttonECuidWrite.UseVisualStyleBackColor = false;
             this.buttonECuidWrite.Click += new System.EventHandler(this.buttonECuidWrite_Click);
             // 
             // buttonEMfWrite
             // 
             resources.ApplyResources(this.buttonEMfWrite, "buttonEMfWrite");
+            this.buttonEMfWrite.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEMfWrite.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEMfWrite.ForeColor = System.Drawing.Color.White;
             this.buttonEMfWrite.Name = "buttonEMfWrite";
-            this.buttonEMfWrite.UseVisualStyleBackColor = true;
+            this.buttonEMfWrite.UseVisualStyleBackColor = false;
             this.buttonEMfWrite.Click += new System.EventHandler(this.buttonEMfWrite_Click);
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.tableLayoutPanel4);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel4
             // 
@@ -788,6 +956,7 @@
             // 
             resources.ApplyResources(this.groupBox10, "groupBox10");
             this.groupBox10.Controls.Add(this.tableLayoutPanel8);
+            this.groupBox10.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.TabStop = false;
             // 
@@ -809,8 +978,11 @@
             // buttonHardNested
             // 
             resources.ApplyResources(this.buttonHardNested, "buttonHardNested");
+            this.buttonHardNested.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonHardNested.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonHardNested.ForeColor = System.Drawing.Color.White;
             this.buttonHardNested.Name = "buttonHardNested";
-            this.buttonHardNested.UseVisualStyleBackColor = true;
+            this.buttonHardNested.UseVisualStyleBackColor = false;
             this.buttonHardNested.Click += new System.EventHandler(this.buttonHardNested_Click);
             // 
             // flowLayoutPanel17
@@ -834,6 +1006,7 @@
             // 
             resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Controls.Add(this.tableLayoutPanel9);
+            this.groupBox8.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
             // 
@@ -864,6 +1037,7 @@
             // 
             resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Controls.Add(this.flowLayoutPanel21);
+            this.groupBox9.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.TabStop = false;
             // 
@@ -877,14 +1051,15 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Name = "label1";
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.White;
             this.tabPage3.Controls.Add(this.tableLayoutPanel14);
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // tableLayoutPanel14
@@ -905,24 +1080,30 @@
             // groupBox6
             // 
             resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.BackColor = System.Drawing.Color.DodgerBlue;
             this.groupBox6.Controls.Add(this.flowLayoutPanel2);
+            this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox6.ForeColor = System.Drawing.Color.White;
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.TabStop = false;
             // 
             // flowLayoutPanel2
             // 
             resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel2.Controls.Add(this.checkBoxAutoABN);
             this.flowLayoutPanel2.Controls.Add(this.checkBoxAutoLoadKey);
             this.flowLayoutPanel2.Controls.Add(this.checkBoxWriteProtect);
             this.flowLayoutPanel2.Controls.Add(this.checkBoxCuidKeyOver);
+            this.flowLayoutPanel2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
             // checkBoxAutoABN
             // 
             resources.ApplyResources(this.checkBoxAutoABN, "checkBoxAutoABN");
-            this.checkBoxAutoABN.Checked = true;
-            this.checkBoxAutoABN.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxAutoABN.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.checkBoxAutoABN.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.checkBoxAutoABN.ForeColor = System.Drawing.Color.DodgerBlue;
             this.checkBoxAutoABN.Name = "checkBoxAutoABN";
             this.checkBoxAutoABN.UseVisualStyleBackColor = true;
             this.checkBoxAutoABN.CheckedChanged += new System.EventHandler(this.checkBoxAutoABN_CheckedChanged);
@@ -930,8 +1111,6 @@
             // checkBoxAutoLoadKey
             // 
             resources.ApplyResources(this.checkBoxAutoLoadKey, "checkBoxAutoLoadKey");
-            this.checkBoxAutoLoadKey.Checked = true;
-            this.checkBoxAutoLoadKey.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxAutoLoadKey.Name = "checkBoxAutoLoadKey";
             this.checkBoxAutoLoadKey.UseVisualStyleBackColor = true;
             this.checkBoxAutoLoadKey.CheckedChanged += new System.EventHandler(this.checkBoxAutoLoadKey_CheckedChanged);
@@ -939,8 +1118,6 @@
             // checkBoxWriteProtect
             // 
             resources.ApplyResources(this.checkBoxWriteProtect, "checkBoxWriteProtect");
-            this.checkBoxWriteProtect.Checked = true;
-            this.checkBoxWriteProtect.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxWriteProtect.Name = "checkBoxWriteProtect";
             this.checkBoxWriteProtect.UseVisualStyleBackColor = true;
             this.checkBoxWriteProtect.CheckedChanged += new System.EventHandler(this.checkBoxWriteProtect_CheckedChanged);
@@ -948,8 +1125,6 @@
             // checkBoxCuidKeyOver
             // 
             resources.ApplyResources(this.checkBoxCuidKeyOver, "checkBoxCuidKeyOver");
-            this.checkBoxCuidKeyOver.Checked = true;
-            this.checkBoxCuidKeyOver.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxCuidKeyOver.Name = "checkBoxCuidKeyOver";
             this.checkBoxCuidKeyOver.UseVisualStyleBackColor = true;
             this.checkBoxCuidKeyOver.CheckedChanged += new System.EventHandler(this.checkBoxCuidKeyOver_CheckedChanged);
@@ -957,23 +1132,29 @@
             // groupBox12
             // 
             resources.ApplyResources(this.groupBox12, "groupBox12");
+            this.groupBox12.BackColor = System.Drawing.Color.DodgerBlue;
             this.groupBox12.Controls.Add(this.tableLayoutPanel12);
+            this.groupBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox12.ForeColor = System.Drawing.Color.White;
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.TabStop = false;
             // 
             // tableLayoutPanel12
             // 
             resources.ApplyResources(this.tableLayoutPanel12, "tableLayoutPanel12");
+            this.tableLayoutPanel12.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel12.Controls.Add(this.numericCLIFontSize, 1, 1);
             this.tableLayoutPanel12.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel12.Controls.Add(this.buttonCLIColor, 1, 0);
+            this.tableLayoutPanel12.Controls.Add(this.label10, 0, 1);
+            this.tableLayoutPanel12.ForeColor = System.Drawing.Color.DodgerBlue;
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             // 
             // numericCLIFontSize
             // 
-            this.numericCLIFontSize.DecimalPlaces = 1;
             resources.ApplyResources(this.numericCLIFontSize, "numericCLIFontSize");
+            this.numericCLIFontSize.BackColor = System.Drawing.Color.AliceBlue;
+            this.numericCLIFontSize.DecimalPlaces = 1;
             this.numericCLIFontSize.Maximum = new decimal(new int[] {
             36,
             0,
@@ -1004,9 +1185,9 @@
             // 
             // buttonCLIColor
             // 
-            this.buttonCLIColor.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.buttonCLIColor, "buttonCLIColor");
-            this.buttonCLIColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.buttonCLIColor.BackColor = System.Drawing.Color.AliceBlue;
+            this.buttonCLIColor.ForeColor = System.Drawing.Color.DarkRed;
             this.buttonCLIColor.Name = "buttonCLIColor";
             this.buttonCLIColor.UseVisualStyleBackColor = false;
             this.buttonCLIColor.Click += new System.EventHandler(this.buttonCLIColor_Click);
@@ -1014,17 +1195,22 @@
             // groupBox14
             // 
             resources.ApplyResources(this.groupBox14, "groupBox14");
+            this.groupBox14.BackColor = System.Drawing.Color.DodgerBlue;
             this.groupBox14.Controls.Add(this.flowLayoutPanel5);
+            this.groupBox14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox14.ForeColor = System.Drawing.Color.White;
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.TabStop = false;
             // 
             // flowLayoutPanel5
             // 
             resources.ApplyResources(this.flowLayoutPanel5, "flowLayoutPanel5");
+            this.flowLayoutPanel5.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel5.Controls.Add(this.checkBoxNewScan);
+            this.flowLayoutPanel5.Controls.Add(this.checkBoxMultiDev);
             this.flowLayoutPanel5.Controls.Add(this.label11);
             this.flowLayoutPanel5.Controls.Add(this.SetDeviceCombo);
-            this.flowLayoutPanel5.Controls.Add(this.checkBoxMultiDev);
+            this.flowLayoutPanel5.ForeColor = System.Drawing.Color.DodgerBlue;
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             // 
             // checkBoxNewScan
@@ -1035,6 +1221,13 @@
             this.checkBoxNewScan.Name = "checkBoxNewScan";
             this.checkBoxNewScan.UseVisualStyleBackColor = true;
             // 
+            // checkBoxMultiDev
+            // 
+            resources.ApplyResources(this.checkBoxMultiDev, "checkBoxMultiDev");
+            this.checkBoxMultiDev.Name = "checkBoxMultiDev";
+            this.checkBoxMultiDev.UseVisualStyleBackColor = true;
+            this.checkBoxMultiDev.CheckedChanged += new System.EventHandler(this.checkBoxMultiDev_CheckedChanged);
+            // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
@@ -1042,19 +1235,13 @@
             // 
             // SetDeviceCombo
             // 
+            this.SetDeviceCombo.BackColor = System.Drawing.Color.AliceBlue;
             this.SetDeviceCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SetDeviceCombo.DropDownWidth = 150;
-            this.SetDeviceCombo.FormattingEnabled = true;
             resources.ApplyResources(this.SetDeviceCombo, "SetDeviceCombo");
+            this.SetDeviceCombo.FormattingEnabled = true;
             this.SetDeviceCombo.Name = "SetDeviceCombo";
             this.SetDeviceCombo.SelectedIndexChanged += new System.EventHandler(this.SetDeviceCombo_SelectedIndexChanged);
-            // 
-            // checkBoxMultiDev
-            // 
-            resources.ApplyResources(this.checkBoxMultiDev, "checkBoxMultiDev");
-            this.checkBoxMultiDev.Name = "checkBoxMultiDev";
-            this.checkBoxMultiDev.UseVisualStyleBackColor = true;
-            this.checkBoxMultiDev.CheckedChanged += new System.EventHandler(this.checkBoxMultiDev_CheckedChanged);
             // 
             // flowLayoutPanel22
             // 
@@ -1064,18 +1251,58 @@
             this.flowLayoutPanel22.Controls.Add(this.groupBox11);
             this.flowLayoutPanel22.Name = "flowLayoutPanel22";
             // 
+            // groupBox15
+            // 
+            resources.ApplyResources(this.groupBox15, "groupBox15");
+            this.groupBox15.BackColor = System.Drawing.Color.DodgerBlue;
+            this.groupBox15.Controls.Add(this.flowLayoutPanel23);
+            this.groupBox15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox15.ForeColor = System.Drawing.Color.White;
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.TabStop = false;
+            // 
+            // flowLayoutPanel23
+            // 
+            resources.ApplyResources(this.flowLayoutPanel23, "flowLayoutPanel23");
+            this.flowLayoutPanel23.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel23.Controls.Add(this.label12);
+            this.flowLayoutPanel23.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel23.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.flowLayoutPanel23.Name = "flowLayoutPanel23";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.AliceBlue;
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1")});
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            // 
             // groupBox13
             // 
             resources.ApplyResources(this.groupBox13, "groupBox13");
+            this.groupBox13.BackColor = System.Drawing.Color.DodgerBlue;
             this.groupBox13.Controls.Add(this.flowLayoutPanel4);
+            this.groupBox13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox13.ForeColor = System.Drawing.Color.White;
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.TabStop = false;
             // 
             // flowLayoutPanel4
             // 
             resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel4.Controls.Add(this.checkBoxDefIsAdv);
             this.flowLayoutPanel4.Controls.Add(this.checkBoxAutoSave);
+            this.flowLayoutPanel4.ForeColor = System.Drawing.Color.DodgerBlue;
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             // 
             // checkBoxDefIsAdv
@@ -1095,14 +1322,19 @@
             // groupBox11
             // 
             resources.ApplyResources(this.groupBox11, "groupBox11");
+            this.groupBox11.BackColor = System.Drawing.Color.DodgerBlue;
             this.groupBox11.Controls.Add(this.flowLayoutPanel3);
+            this.groupBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox11.ForeColor = System.Drawing.Color.White;
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.TabStop = false;
             // 
             // flowLayoutPanel3
             // 
             resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
+            this.flowLayoutPanel3.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel3.Controls.Add(this.checkBoxHardLowCost);
+            this.flowLayoutPanel3.ForeColor = System.Drawing.Color.DodgerBlue;
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
             // checkBoxHardLowCost
@@ -1114,85 +1346,78 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel,
             this.runTimeLabel,
             this.localVersionLabel,
-            this.toolStripCheckUpdate,
-            this.curDevice});
-            resources.ApplyResources(this.statusStrip1, "statusStrip1");
+            this.curDevice,
+            this.toolStripCheckUpdate});
+            this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             // 
             // statusLabel
             // 
+            this.statusLabel.Image = global::MifareOneTool.Properties.Resources.round_sync_black_18pt_1x;
             resources.ApplyResources(this.statusLabel, "statusLabel");
+            this.statusLabel.Margin = new System.Windows.Forms.Padding(0, 0, 50, 0);
             this.statusLabel.Name = "statusLabel";
             // 
             // runTimeLabel
             // 
+            this.runTimeLabel.Image = global::MifareOneTool.Properties.Resources.round_timer_black_18pt_1x;
             resources.ApplyResources(this.runTimeLabel, "runTimeLabel");
+            this.runTimeLabel.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
             this.runTimeLabel.Name = "runTimeLabel";
             // 
             // localVersionLabel
             // 
+            this.localVersionLabel.Image = global::MifareOneTool.Properties.Resources.outline_info_black_18pt_1x;
             resources.ApplyResources(this.localVersionLabel, "localVersionLabel");
+            this.localVersionLabel.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
             this.localVersionLabel.Name = "localVersionLabel";
-            // 
-            // toolStripCheckUpdate
-            // 
-            this.toolStripCheckUpdate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            resources.ApplyResources(this.toolStripCheckUpdate, "toolStripCheckUpdate");
-            this.toolStripCheckUpdate.Name = "toolStripCheckUpdate";
-            this.toolStripCheckUpdate.ButtonClick += new System.EventHandler(this.toolStripCheckUpdate_ButtonClick);
             // 
             // curDevice
             // 
+            this.curDevice.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
             this.curDevice.Name = "curDevice";
             resources.ApplyResources(this.curDevice, "curDevice");
+            // 
+            // toolStripCheckUpdate
+            // 
+            this.toolStripCheckUpdate.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripCheckUpdate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripCheckUpdate.ForeColor = System.Drawing.SystemColors.ControlText;
+            resources.ApplyResources(this.toolStripCheckUpdate, "toolStripCheckUpdate");
+            this.toolStripCheckUpdate.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.toolStripCheckUpdate.Name = "toolStripCheckUpdate";
+            this.toolStripCheckUpdate.ButtonClick += new System.EventHandler(this.toolStripCheckUpdate_ButtonClick);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // flowLayoutPanel23
+            // imageList2
             // 
-            resources.ApplyResources(this.flowLayoutPanel23, "flowLayoutPanel23");
-            this.flowLayoutPanel23.Controls.Add(this.label12);
-            this.flowLayoutPanel23.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel23.Name = "flowLayoutPanel23";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            // 
-            // comboBox1
-            // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1")});
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
-            // 
-            // groupBox15
-            // 
-            resources.ApplyResources(this.groupBox15, "groupBox15");
-            this.groupBox15.Controls.Add(this.flowLayoutPanel23);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.TabStop = false;
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "sharp_file_copy_black_18pt_1x.png");
+            this.imageList2.Images.SetKeyName(1, "round_settings_black_18pt_1x.png");
+            this.imageList2.Images.SetKeyName(2, "round_build_black_18pt_1x.png");
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.richTextBox1);
-            this.MaximizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1235,16 +1460,24 @@
             this.tableLayoutPanel2.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            this.tableLayoutPanel15.ResumeLayout(false);
+            this.tableLayoutPanel15.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.flowLayoutPanel24.ResumeLayout(false);
+            this.flowLayoutPanel24.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.tableLayoutPanel13.ResumeLayout(false);
@@ -1298,6 +1531,10 @@
             this.flowLayoutPanel5.PerformLayout();
             this.flowLayoutPanel22.ResumeLayout(false);
             this.flowLayoutPanel22.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
+            this.flowLayoutPanel23.ResumeLayout(false);
+            this.flowLayoutPanel23.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
@@ -1308,10 +1545,6 @@
             this.flowLayoutPanel3.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.flowLayoutPanel23.ResumeLayout(false);
-            this.flowLayoutPanel23.PerformLayout();
-            this.groupBox15.ResumeLayout(false);
-            this.groupBox15.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1372,16 +1605,11 @@
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.ToolStripSplitButton toolStripCheckUpdate;
         private System.Windows.Forms.Button buttonDictMfoc;
         private System.Windows.Forms.Button buttonnKeysMfoc;
         private System.Windows.Forms.Button buttonEReadUID;
         private System.Windows.Forms.CheckBox checkBoxWriteProtect;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox checkBoxAutoABN;
         private System.Windows.Forms.TabPage tabPage3;
@@ -1406,12 +1634,10 @@
         private System.Windows.Forms.ToolStripStatusLabel curDevice;
         private System.Windows.Forms.CheckBox checkBoxCuidKeyOver;
         private System.Windows.Forms.Button buttonMFF08;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
@@ -1449,6 +1675,17 @@
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel24;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.ToolStripSplitButton toolStripCheckUpdate;
+        private System.Windows.Forms.ImageList imageList2;
     }
 }
 

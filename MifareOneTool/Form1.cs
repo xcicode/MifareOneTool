@@ -1546,7 +1546,7 @@ namespace MifareOneTool
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem.ToString() == "标准")
+            if (comboBox1.SelectedItem.ToString() == Resources.标准)
             {
                 System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("zh-ZH");
                 System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("zh-ZH");
@@ -1554,7 +1554,7 @@ namespace MifareOneTool
                 Properties.Settings.Default.Save();
                 Application.Restart();
             }
-            else if (comboBox1.SelectedItem.ToString() == "俄语")
+            else if (comboBox1.SelectedItem.ToString() == Resources.俄语)
             {
                 System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("ru-RU");
                 System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("ru-RU");
@@ -1564,5 +1564,30 @@ namespace MifareOneTool
 
             }
         }
-}
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

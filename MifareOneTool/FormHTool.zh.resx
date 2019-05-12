@@ -274,9 +274,6 @@
     <value>欢迎使用M1T的集成编辑器S50HTool！
 打开文件请点左上角文件-打开或Ctrl+O
 </value>
-    <comment>Previous text: 欢迎使用M1T的集成编辑器S50HTool！
-打开文件请点左上角文件-打开或Ctrl+O
-</comment>
   </data>
   <data name="保存ToolStripMenuItem.Text" xml:space="preserve">
     <value>保存</value>
