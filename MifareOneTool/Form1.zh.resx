@@ -117,6 +117,345 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="buttoEScanCard.Text" xml:space="preserve">
+    <value>扫描卡片</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>锁UFUID卡</value>
+  </data>
+  <data name="buttonBmfRead.Text" xml:space="preserve">
+    <value>UID读</value>
+  </data>
+  <data name="buttonBmfRead.ToolTip" xml:space="preserve">
+    <value>读取UID卡片。</value>
+  </data>
+  <data name="buttonBmfWrite.Text" xml:space="preserve">
+    <value>UID写</value>
+  </data>
+  <data name="buttonBmfWrite.ToolTip" xml:space="preserve">
+    <value>写入UID卡片。</value>
+  </data>
+  <data name="buttonCheckEncrypt.Text" xml:space="preserve">
+    <value>检加密</value>
+  </data>
+  <data name="buttonCheckEncrypt.ToolTip" xml:space="preserve">
+    <value>检测卡片加密情况。</value>
+  </data>
+  <data name="buttonCLI.Text" xml:space="preserve">
+    <value>手动CLI</value>
+  </data>
+  <data name="buttonCLI.ToolTip" xml:space="preserve">
+    <value>打开NFC命令行以进行高级操作。</value>
+  </data>
+  <data name="buttonCLIColor.Text" xml:space="preserve">
+    <value>#M1T#</value>
+  </data>
+  <data name="buttonCmfWrite.Text" xml:space="preserve">
+    <value>CUID写</value>
+  </data>
+  <data name="buttonCmfWrite.ToolTip" xml:space="preserve">
+    <value>写入CUID/FUID卡片（可能需要密钥文件）</value>
+  </data>
+  <data name="buttonConClr.Text" xml:space="preserve">
+    <value>清终端</value>
+  </data>
+  <data name="buttonConSave.Text" xml:space="preserve">
+    <value>存日志</value>
+  </data>
+  <data name="buttonDictMfoc.Text" xml:space="preserve">
+    <value>字典测试</value>
+  </data>
+  <data name="buttonDictMfoc.ToolTip" xml:space="preserve">
+    <value>导入字典文件进行Nested破解。</value>
+  </data>
+  <data name="buttonDiffTool.Text" xml:space="preserve">
+    <value>差异比较</value>
+  </data>
+  <data name="buttonECheckEncrypt.Text" xml:space="preserve">
+    <value>检测加密</value>
+  </data>
+  <data name="buttonECmfoc.Text" xml:space="preserve">
+    <value>知一密破解</value>
+  </data>
+  <data name="buttonECuidWrite.Text" xml:space="preserve">
+    <value>写C/FUID卡</value>
+  </data>
+  <data name="buttonEMfoc.Text" xml:space="preserve">
+    <value>一键解原卡</value>
+  </data>
+  <data name="buttonEMfRead.Text" xml:space="preserve">
+    <value>已知密钥读</value>
+  </data>
+  <data name="buttonEMfWrite.Text" xml:space="preserve">
+    <value>写入普通卡</value>
+  </data>
+  <data name="buttonEReadUID.Text" xml:space="preserve">
+    <value>从UID卡读回</value>
+  </data>
+  <data name="buttonEscan.Text" xml:space="preserve">
+    <value>检测连接</value>
+  </data>
+  <data name="buttonESelectKey.Text" xml:space="preserve">
+    <value>加载密钥…</value>
+  </data>
+  <data name="buttonEStop.Text" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="buttonEUIDWrite.Text" xml:space="preserve">
+    <value>写(UF)UID卡</value>
+  </data>
+  <data name="buttonHardNested.Text" xml:space="preserve">
+    <value>HardNested</value>
+  </data>
+  <data name="buttonHexTool.Text" xml:space="preserve">
+    <value>Hex编辑器</value>
+  </data>
+  <data name="buttonKill.Text" xml:space="preserve">
+    <value>停运行</value>
+  </data>
+  <data name="buttonListDev.Text" xml:space="preserve">
+    <value>检测设备</value>
+  </data>
+  <data name="buttonListDev.ToolTip" xml:space="preserve">
+    <value>扫描已连接的NFC设备
+(目前支持PN532、ACR122U)</value>
+  </data>
+  <data name="buttonLockUfuid.Text" xml:space="preserve">
+    <value>锁Ufuid</value>
+  </data>
+  <data name="buttonLockUfuid.ToolTip" xml:space="preserve">
+    <value>锁死UFUID卡片0块数据（测试中）</value>
+  </data>
+  <data name="buttonMfcuk.Text" xml:space="preserve">
+    <value>全加密爆破</value>
+  </data>
+  <data name="buttonMfcuk.ToolTip" xml:space="preserve">
+    <value>对卡片执行Darkside工具（不一定成功）</value>
+  </data>
+  <data name="buttonMFF08.Text" xml:space="preserve">
+    <value>MFF08 CUID修复</value>
+  </data>
+  <data name="buttonMfFormat.Text" xml:space="preserve">
+    <value>清M1</value>
+  </data>
+  <data name="buttonMfFormat.ToolTip" xml:space="preserve">
+    <value>格式化普通M1卡（必须加载密钥文件）</value>
+  </data>
+  <data name="buttonMfoc.Text" xml:space="preserve">
+    <value>MFOC读</value>
+  </data>
+  <data name="buttonMfoc.ToolTip" xml:space="preserve">
+    <value>对半加密卡片进行Nested破解。
+按住Ctrl点击该按钮可添加已知密钥。</value>
+  </data>
+  <data name="buttonMfRead.Text" xml:space="preserve">
+    <value>读M1</value>
+  </data>
+  <data name="buttonMfRead.ToolTip" xml:space="preserve">
+    <value>读取普通M1卡片（可能需要加载密钥文件）</value>
+  </data>
+  <data name="buttonMfWrite.Text" xml:space="preserve">
+    <value>写M1</value>
+  </data>
+  <data name="buttonMfWrite.ToolTip" xml:space="preserve">
+    <value>写入普通M1卡（可能需要加载密钥文件）</value>
+  </data>
+  <data name="buttonnKeysMfoc.Text" xml:space="preserve">
+    <value>知n密</value>
+  </data>
+  <data name="buttonnKeysMfoc.ToolTip" xml:space="preserve">
+    <value>输入已知密钥进行Nested破解。</value>
+  </data>
+  <data name="buttonScanCard.Text" xml:space="preserve">
+    <value>手动扫描</value>
+  </data>
+  <data name="buttonScanCard.ToolTip" xml:space="preserve">
+    <value>扫描有效卡片。</value>
+  </data>
+  <data name="buttonSelectKey.Text" xml:space="preserve">
+    <value>选择key.mfd</value>
+  </data>
+  <data name="buttonSelectKey.ToolTip" xml:space="preserve">
+    <value>加载含有正确读写卡密钥及正确控制位的MFD文件。</value>
+  </data>
+  <data name="buttonUidFormat.Text" xml:space="preserve">
+    <value>UID全格</value>
+  </data>
+  <data name="buttonUidFormat.ToolTip" xml:space="preserve">
+    <value>将全卡清空并重新初始化。
+可用于ACbit损坏/KEY全部被改等情况的急救。</value>
+  </data>
+  <data name="buttonUidReset.Text" xml:space="preserve">
+    <value>UID重置</value>
+  </data>
+  <data name="buttonUidReset.ToolTip" xml:space="preserve">
+    <value>重置UID卡片0块，UID随机，厂商号为复旦。</value>
+  </data>
+  <data name="buttonUidWrite.Text" xml:space="preserve">
+    <value>UID写号</value>
+  </data>
+  <data name="buttonUidWrite.ToolTip" xml:space="preserve">
+    <value>向UID卡片写入置顶卡号，厂商设置为复旦。</value>
+  </data>
+  <data name="checkBoxAutoABN.Text" xml:space="preserve">
+    <value>自动判断Key(beta)</value>
+  </data>
+  <data name="checkBoxAutoLoadKey.Text" xml:space="preserve">
+    <value>自动加载uid.Key文件</value>
+  </data>
+  <data name="checkBoxAutoSave.Text" xml:space="preserve">
+    <value>自动以UID名保存文件</value>
+  </data>
+  <data name="checkBoxCuidKeyOver.Text" xml:space="preserve">
+    <value>CUID写空卡补丁</value>
+  </data>
+  <data name="checkBoxDefIsAdv.Text" xml:space="preserve">
+    <value>自动转到高级操作模式</value>
+  </data>
+  <data name="checkBoxHardLowCost.Text" xml:space="preserve">
+    <value>单线程计算</value>
+  </data>
+  <data name="checkBoxMultiDev.Text" xml:space="preserve">
+    <value>多实例运行模式 会禁用多开检测 请自行指定设备</value>
+    <comment>Previous text: 多实例运行模式
+会禁用多开检测
+请自行指定设备</comment>
+  </data>
+  <data name="checkBoxNewScan.Text" xml:space="preserve">
+    <value>减少找设备延迟</value>
+  </data>
+  <data name="checkBoxWriteProtect.Text" xml:space="preserve">
+    <value>数据写入保护(建议)</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>标准</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>俄语</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MifareOne Tool</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>设备控制</value>
+  </data>
+  <data name="groupBox10.Text" xml:space="preserve">
+    <value>破解工具</value>
+  </data>
+  <data name="groupBox11.Text" xml:space="preserve">
+    <value>HardNested</value>
+  </data>
+  <data name="groupBox12.Text" xml:space="preserve">
+    <value>界面设置</value>
+  </data>
+  <data name="groupBox13.Text" xml:space="preserve">
+    <value>偏好设置</value>
+  </data>
+  <data name="groupBox14.Text" xml:space="preserve">
+    <value>优化设置</value>
+  </data>
+  <data name="groupBox15.Text" xml:space="preserve">
+    <value>语言和地区</value>
+  </data>
+  <data name="groupBox16.Text" xml:space="preserve">
+    <value>从这里开始</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>普通卡操作</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>运行/终端</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>集成辅助工具</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>[2]读取原卡</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>卡操作相关</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>[3]写入新卡</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>UID/UFUID卡操作</value>
+  </data>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>C/FUID卡操作</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>该卡种读取
+同普通卡</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>终端文字大小</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>指定设备</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>选择界面语言</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>本工具仅支持SAK=08/18/28的
+卡片复制。SAK28无一键解密。
+若要复制S70卡片，请在高级界
+面上取消勾选“数据写入保护”。
+</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>尝试一下是否成功</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>请放
+原卡</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>请放
+新卡</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>终端文字颜色</value>
+  </data>
+  <data name="richTextBox1.Lines[0]" xml:space="preserve">
+    <value>Hello,cardman!</value>
+    <comment>Previous text: ппппппппппппппппппп</comment>
+  </data>
+  <data name="runTimeLabel.Text" xml:space="preserve">
+    <value>计时器</value>
+  </data>
+  <data name="statusLabel.Text" xml:space="preserve">
+    <value>就绪</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="tabPage1.ImageKey" xml:space="preserve">
+    <value>round_build_black_18pt_1x.png</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>高级操作模式</value>
+  </data>
+  <data name="tabPage2.ImageKey" xml:space="preserve">
+    <value>sharp_file_copy_black_18pt_1x.png</value>
+    <comment>Previous text: round_create_black_18pt_1x.png</comment>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>复制卡模式</value>
+  </data>
+  <data name="tabPage3.ImageKey" xml:space="preserve">
+    <value>round_settings_black_18pt_1x.png</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>软件设置</value>
+  </data>
+  <data name="toolStripCheckUpdate.Text" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="toolStripCheckUpdate.ToolTipText" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="toolStripCheckUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

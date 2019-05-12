@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MifareOneTool.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -196,7 +197,7 @@ namespace MifareOneTool
         }
         public Sector(byte[] uid)
         {
-            if (uid.Length != 4) { throw new Exception("不恰当的4字节UID长度"); }
+            if (uid.Length != 4) { throw new Exception(Resources.不恰当的4字节UID长度); }
             this._isSector0 = true;
             this.Wipe();
             byte bcc = (byte)(uid[0] ^ uid[1] ^ uid[2] ^ uid[3]);
@@ -240,7 +241,7 @@ namespace MifareOneTool
         }
         public string Info(int sec)
         {
-            string info = "扇区" + sec.ToString();
+            string info = Resources.扇区 + sec.ToString();
             if (Enumerable.SequenceEqual(
                 new byte[16] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
                 this._sector[0]) &&
@@ -251,15 +252,15 @@ namespace MifareOneTool
                 new byte[16] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
                 this._sector[2]))
             {
-                info += " 空扇区";
+                info += Resources._空扇区;
             }
             else
             {
-                info += " 有数据";
+                info += Resources._有数据;
             }
             if (this.Verify() != 0x00)
             {
-                info += " 有错误";
+                info += Resources._有错误;
             }
             return info;
         }
@@ -333,7 +334,7 @@ namespace MifareOneTool
         public S50(byte[] uid)
         {
             _sectors.Capacity = 16;
-            if (uid.Length != 4) { throw new Exception("不恰当的4字节UID长度"); }
+            if (uid.Length != 4) { throw new Exception(Resources.不恰当的4字节UID长度); }
             for (int i = 0; i < 16; i++)
             {
                 if (i == 0) { _sectors.Add(new Sector(uid)); }
@@ -365,17 +366,17 @@ namespace MifareOneTool
         }
         public void LoadFromMfd(string file)
         {
-            if (!File.Exists(file)) { throw new IOException("加载的文件不存在。"); }
-            if (new FileInfo(file).Length != 1024) { throw new IOException("加载的S50卡文件大小异常。"); }
+            if (!File.Exists(file)) { throw new IOException(Resources.加载的文件不存在); }
+            if (new FileInfo(file).Length != 1024) { throw new IOException(Resources.加载的S50卡文件大小异常); }
             byte[] loadByte = File.ReadAllBytes(file);
             this.Wipe();
             this.SectorsRaw = (byte[])loadByte;
         }
         public void LoadFromMctTxt(string file)
         {
-            if (!File.Exists(file)) { throw new IOException("加载的文件不存在。"); }
+            if (!File.Exists(file)) { throw new IOException(Resources.加载的文件不存在); }
             long fileLength=new FileInfo(file).Length;
-            if (fileLength < 2200 || fileLength > 2400) { throw new IOException("加载的S50卡文件大小异常。"); }
+            if (fileLength < 2200 || fileLength > 2400) { throw new IOException(Resources.加载的S50卡文件大小异常); }
             List<string> lines = new List<string>(File.ReadAllLines(file));
             List<string> invaild = new List<string>();
             foreach (string line in lines)
@@ -391,7 +392,7 @@ namespace MifareOneTool
             }
             if (lines.Count != 64)
             {
-                throw new Exception("文件内不是含有64个块数据，可能不完整或不兼容。");
+                throw new Exception(Resources.文件内不是含有64个块数据_可能不完整或不兼容);
             }
             this.Wipe();
             for (int i = 0; i < lines.Count; i++)
@@ -409,7 +410,7 @@ namespace MifareOneTool
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < 16; i++)
             {
-                sb.AppendLine("+Sector: " + i.ToString());
+                sb.AppendLine(Resources._Sector + i.ToString());
                 for (int j = 0; j < 4; j++)
                 {
                     sb.AppendLine(Utils.Hex2Str(this._sectors[i].Block[j]));

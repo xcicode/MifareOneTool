@@ -118,22 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="button1.Text" xml:space="preserve">
-    <value>Исполнение!</value>
+    <value>Начать!</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
     <value>Отмена</value>
   </data>
   <data name="checkBoxColOnly.Text" xml:space="preserve">
-    <value>Только сбор не рассчитывается</value>
+    <value>Только сбор
+не засчитывается</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Инициализировать HardNested расшифровку</value>
+    <value>Расшифровка HardNested</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Целевая карта - известная информация</value>
+    <value>Известная информция о карте</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Настройки расшифровки целевого сектора</value>
+    <value>Настройка расшифровки сектора</value>
   </data>
   <data name="keyEdit.Lines[0]" xml:space="preserve">
     <value>FFFFFFFFFFFF</value>
@@ -142,7 +143,8 @@
     <value>FFFFFFFFFFFF</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Обратите внимание на теплоотдачу устройства при непрерывной работе!</value>
+    <value>Обратите внимание на устройство 
+при непрерывной работе!</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Известный ключ</value>
@@ -151,24 +153,24 @@
     <value>Номер сектора</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>тип</value>
+    <value>Тип ключа</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>тип</value>
+    <value>Тип ключа</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Номер сектора</value>
   </data>
   <data name="radioKey1A.Text" xml:space="preserve">
-    <value>KEYA</value>
+    <value>Ключ A</value>
   </data>
   <data name="radioKey1B.Text" xml:space="preserve">
-    <value>KEYB</value>
+    <value>Ключ B</value>
   </data>
   <data name="radioKey2A.Text" xml:space="preserve">
-    <value>KEYA</value>
+    <value>Ключ A</value>
   </data>
   <data name="radioKey2B.Text" xml:space="preserve">
-    <value>KEYB</value>
+    <value>Ключ B</value>
   </data>
 </root>

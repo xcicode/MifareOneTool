@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MifareOneTool.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,8 +23,8 @@ namespace MifareOneTool
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd|DUMP文件|*.dump";
-            ofd.Title = "请选择最后一次写卡导致0块损坏的卡数据文件";
+            ofd.Filter = Resources.MFD文件_mfd_DUMP文件_dump;
+            ofd.Title = Resources.请选择最后一次写卡导致0块损坏的卡数据文件;
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -66,7 +67,7 @@ namespace MifareOneTool
 
         private void buttonWriteEmpty_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+            if (lprocess) { MessageBox.Show(Resources.有任务运行中_不可执行, Resources.设备忙, MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             S50 empty = new S50();
             empty.ExportToMfd("mff08_empty.kmf");
             BackgroundWorker bgw = new BackgroundWorker();
@@ -101,17 +102,17 @@ namespace MifareOneTool
             process.BeginErrorReadLine();
             process.WaitForExit();
             lprocess = false;
-            b.ReportProgress(100, "##运行完毕##");
+            b.ReportProgress(100, Resources._运行完毕);
         }
 
         private void buttonKeyWrite_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+            if (lprocess) { MessageBox.Show(Resources.有任务运行中_不可执行, Resources.设备忙, MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             S50 empty = new S50();
             empty.ExportToMfd("mff08_empty.kmf");
             if (keyfileBox.Text == "")
             {
-                MessageBox.Show("您没有给定最后一次写卡导致0块损坏的卡数据文件来作为写卡时的密钥源。\n操作终止。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Resources.您没有给定最后一次写卡导致0块损坏的卡数据文件来作为写卡时的, Resources.错误, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             BackgroundWorker bgw = new BackgroundWorker();
@@ -125,7 +126,7 @@ namespace MifareOneTool
         {
             if (!File.Exists("nfc-bin/mff08.exe"))
             {
-                MessageBox.Show("无法找到MFF08程序文件。\n操作终止。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Resources.无法找到MFF08程序文件_操作终止, Resources.错误, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

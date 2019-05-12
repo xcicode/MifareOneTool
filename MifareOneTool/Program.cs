@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MifareOneTool.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -19,13 +20,6 @@ namespace MifareOneTool
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-
-      //Show the language select dialog
-      MultiLang.SelectLanguage frmLang = new MultiLang.SelectLanguage() ;
-      frmLang.LoadSettingsAndShow() ;
-      frmLang.Dispose() ;
-      frmLang = null ;
-
                 Application.Run(new Form1());
             }
             else
@@ -41,7 +35,7 @@ namespace MifareOneTool
                 }
                 else
                 {
-                    if (MessageBox.Show("您已经运行了MifareOne Tool，打开多个本程序可能会造成冲突及不可预料到的错误。\n确认要继续吗？", "您正在试图重复运行", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                    if (MessageBox.Show(Resources.您已经运行了MifareOne_Tool_打开多个本程序可能, Resources.您正在试图重复运行, MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
                     {
                         Application.EnableVisualStyles();
                         Application.SetCompatibleTextRenderingDefault(false);
