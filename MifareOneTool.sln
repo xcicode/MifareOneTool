@@ -1,10 +1,16 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MifareOneTool", "MifareOneTool\MifareOneTool.csproj", "{CDB26016-FC77-403F-B22A-A011F8622FCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		beta|Any CPU = beta|Any CPU
+		beta|Mixed Platforms = beta|Mixed Platforms
+		beta|Win32 = beta|Win32
+		beta|x86 = beta|x86
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|Win32 = Debug|Win32
@@ -15,6 +21,13 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Any CPU.ActiveCfg = beta|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Mixed Platforms.ActiveCfg = Release|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Mixed Platforms.Build.0 = Release|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Win32.ActiveCfg = beta|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Win32.Build.0 = beta|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|x86.ActiveCfg = beta|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|x86.Build.0 = beta|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.Debug|Mixed Platforms.Build.0 = Debug|x86
@@ -30,5 +43,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0173FBA9-DDA4-4B2B-A55D-546257C2E727}
 	EndGlobalSection
 EndGlobal

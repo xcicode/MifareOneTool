@@ -120,6 +120,7 @@
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel16 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel15 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ShowUID = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -136,8 +137,8 @@
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.numericCLIFontSize = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.buttonCLIColor = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.checkBoxNewScan = new System.Windows.Forms.CheckBox();
@@ -156,6 +157,7 @@
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.checkBoxHardLowCost = new System.Windows.Forms.CheckBox();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.runTimeLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -163,7 +165,6 @@
             this.curDevice = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
@@ -238,6 +239,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
             // 
             // tableLayoutPanel5
             // 
@@ -245,12 +247,14 @@
             this.tableLayoutPanel5.Controls.Add(this.flowLayoutPanel12, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.flowLayoutPanel11, 0, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel5, resources.GetString("tableLayoutPanel5.ToolTip"));
             // 
             // flowLayoutPanel12
             // 
             resources.ApplyResources(this.flowLayoutPanel12, "flowLayoutPanel12");
             this.flowLayoutPanel12.Controls.Add(this.buttonScanCard);
             this.flowLayoutPanel12.Name = "flowLayoutPanel12";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel12, resources.GetString("flowLayoutPanel12.ToolTip"));
             // 
             // buttonScanCard
             // 
@@ -269,6 +273,7 @@
             this.flowLayoutPanel11.Controls.Add(this.buttonListDev);
             this.flowLayoutPanel11.Controls.Add(this.buttonCLI);
             this.flowLayoutPanel11.Name = "flowLayoutPanel11";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel11, resources.GetString("flowLayoutPanel11.ToolTip"));
             // 
             // buttonListDev
             // 
@@ -300,6 +305,7 @@
             this.richTextBox1.ForeColor = System.Drawing.Color.Black;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
+            this.toolTipHelp.SetToolTip(this.richTextBox1, resources.GetString("richTextBox1.ToolTip"));
             // 
             // buttonMfRead
             // 
@@ -319,6 +325,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox2, resources.GetString("groupBox2.ToolTip"));
             // 
             // tableLayoutPanel7
             // 
@@ -326,12 +333,14 @@
             this.tableLayoutPanel7.Controls.Add(this.flowLayoutPanel14, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.flowLayoutPanel13, 0, 0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel7, resources.GetString("tableLayoutPanel7.ToolTip"));
             // 
             // flowLayoutPanel14
             // 
             resources.ApplyResources(this.flowLayoutPanel14, "flowLayoutPanel14");
             this.flowLayoutPanel14.Controls.Add(this.buttonSelectKey);
             this.flowLayoutPanel14.Name = "flowLayoutPanel14";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel14, resources.GetString("flowLayoutPanel14.ToolTip"));
             // 
             // buttonSelectKey
             // 
@@ -351,6 +360,7 @@
             this.flowLayoutPanel13.Controls.Add(this.buttonMfWrite);
             this.flowLayoutPanel13.Controls.Add(this.buttonMfFormat);
             this.flowLayoutPanel13.Name = "flowLayoutPanel13";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel13, resources.GetString("flowLayoutPanel13.ToolTip"));
             // 
             // buttonMfWrite
             // 
@@ -448,6 +458,7 @@
             this.groupBox3.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox3, resources.GetString("groupBox3.ToolTip"));
             // 
             // tableLayoutPanel10
             // 
@@ -455,12 +466,14 @@
             this.tableLayoutPanel10.Controls.Add(this.flowLayoutPanel20, 0, 1);
             this.tableLayoutPanel10.Controls.Add(this.flowLayoutPanel19, 0, 0);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel10, resources.GetString("tableLayoutPanel10.ToolTip"));
             // 
             // flowLayoutPanel20
             // 
             resources.ApplyResources(this.flowLayoutPanel20, "flowLayoutPanel20");
             this.flowLayoutPanel20.Controls.Add(this.buttonKill);
             this.flowLayoutPanel20.Name = "flowLayoutPanel20";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel20, resources.GetString("flowLayoutPanel20.ToolTip"));
             // 
             // buttonKill
             // 
@@ -469,6 +482,7 @@
             this.buttonKill.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonKill.ForeColor = System.Drawing.Color.White;
             this.buttonKill.Name = "buttonKill";
+            this.toolTipHelp.SetToolTip(this.buttonKill, resources.GetString("buttonKill.ToolTip"));
             this.buttonKill.UseVisualStyleBackColor = false;
             this.buttonKill.Click += new System.EventHandler(this.buttonKill_Click);
             // 
@@ -478,6 +492,7 @@
             this.flowLayoutPanel19.Controls.Add(this.buttonConClr);
             this.flowLayoutPanel19.Controls.Add(this.buttonConSave);
             this.flowLayoutPanel19.Name = "flowLayoutPanel19";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel19, resources.GetString("flowLayoutPanel19.ToolTip"));
             // 
             // buttonConClr
             // 
@@ -486,6 +501,7 @@
             this.buttonConClr.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonConClr.ForeColor = System.Drawing.Color.White;
             this.buttonConClr.Name = "buttonConClr";
+            this.toolTipHelp.SetToolTip(this.buttonConClr, resources.GetString("buttonConClr.ToolTip"));
             this.buttonConClr.UseVisualStyleBackColor = false;
             this.buttonConClr.Click += new System.EventHandler(this.buttonConClr_Click);
             // 
@@ -496,6 +512,7 @@
             this.buttonConSave.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonConSave.ForeColor = System.Drawing.Color.White;
             this.buttonConSave.Name = "buttonConSave";
+            this.toolTipHelp.SetToolTip(this.buttonConSave, resources.GetString("buttonConSave.ToolTip"));
             this.buttonConSave.UseVisualStyleBackColor = false;
             this.buttonConSave.Click += new System.EventHandler(this.buttonConSave_Click);
             // 
@@ -517,6 +534,7 @@
             this.buttonHexTool.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonHexTool.ForeColor = System.Drawing.Color.White;
             this.buttonHexTool.Name = "buttonHexTool";
+            this.toolTipHelp.SetToolTip(this.buttonHexTool, resources.GetString("buttonHexTool.ToolTip"));
             this.buttonHexTool.UseVisualStyleBackColor = false;
             this.buttonHexTool.Click += new System.EventHandler(this.buttonHexTool_Click);
             // 
@@ -527,6 +545,7 @@
             this.buttonDiffTool.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonDiffTool.ForeColor = System.Drawing.Color.White;
             this.buttonDiffTool.Name = "buttonDiffTool";
+            this.toolTipHelp.SetToolTip(this.buttonDiffTool, resources.GetString("buttonDiffTool.ToolTip"));
             this.buttonDiffTool.UseVisualStyleBackColor = false;
             this.buttonDiffTool.Click += new System.EventHandler(this.buttonDiffTool_Click);
             // 
@@ -600,6 +619,7 @@
             this.groupBox4.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox4, resources.GetString("groupBox4.ToolTip"));
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // tableLayoutPanel6
@@ -608,12 +628,14 @@
             this.tableLayoutPanel6.Controls.Add(this.flowLayoutPanel10, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.flowLayoutPanel9, 0, 0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel6, resources.GetString("tableLayoutPanel6.ToolTip"));
             // 
             // flowLayoutPanel10
             // 
             resources.ApplyResources(this.flowLayoutPanel10, "flowLayoutPanel10");
             this.flowLayoutPanel10.Controls.Add(this.buttonHexTool);
             this.flowLayoutPanel10.Name = "flowLayoutPanel10";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel10, resources.GetString("flowLayoutPanel10.ToolTip"));
             // 
             // flowLayoutPanel9
             // 
@@ -621,6 +643,7 @@
             this.flowLayoutPanel9.Controls.Add(this.buttonDiffTool);
             this.flowLayoutPanel9.Controls.Add(this.buttonMFF08);
             this.flowLayoutPanel9.Name = "flowLayoutPanel9";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel9, resources.GetString("flowLayoutPanel9.ToolTip"));
             // 
             // buttonMFF08
             // 
@@ -629,6 +652,7 @@
             this.buttonMFF08.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonMFF08.ForeColor = System.Drawing.Color.White;
             this.buttonMFF08.Name = "buttonMFF08";
+            this.toolTipHelp.SetToolTip(this.buttonMFF08, resources.GetString("buttonMFF08.ToolTip"));
             this.buttonMFF08.UseVisualStyleBackColor = false;
             this.buttonMFF08.Click += new System.EventHandler(this.buttonMFF08_Click);
             // 
@@ -641,14 +665,16 @@
             this.tabControl1.ImageList = this.imageList2;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
+            this.toolTipHelp.SetToolTip(this.tabControl1, resources.GetString("tabControl1.ToolTip"));
             // 
             // tabPage2
             // 
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.tableLayoutPanel2);
-            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.tabPage2.Name = "tabPage2";
+            this.toolTipHelp.SetToolTip(this.tabPage2, resources.GetString("tabPage2.ToolTip"));
             // 
             // tableLayoutPanel2
             // 
@@ -659,6 +685,7 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.groupBox7, 3, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel2, resources.GetString("tableLayoutPanel2.ToolTip"));
             // 
             // flowLayoutPanel1
             // 
@@ -666,12 +693,14 @@
             this.flowLayoutPanel1.Controls.Add(this.label8);
             this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel1, resources.GetString("flowLayoutPanel1.ToolTip"));
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label8.Name = "label8";
+            this.toolTipHelp.SetToolTip(this.label8, resources.GetString("label8.ToolTip"));
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // pictureBox3
@@ -680,6 +709,7 @@
             this.pictureBox3.Image = global::MifareOneTool.Properties.Resources.round_chevron_right_black_24dp;
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.pictureBox3, resources.GetString("pictureBox3.ToolTip"));
             // 
             // groupBox16
             // 
@@ -689,6 +719,7 @@
             this.groupBox16.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox16, resources.GetString("groupBox16.ToolTip"));
             // 
             // tableLayoutPanel15
             // 
@@ -696,6 +727,7 @@
             this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.label13, 0, 1);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel15, resources.GetString("tableLayoutPanel15.ToolTip"));
             this.tableLayoutPanel15.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel15_Paint);
             // 
             // tableLayoutPanel1
@@ -708,6 +740,7 @@
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 3, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel1, resources.GetString("tableLayoutPanel1.ToolTip"));
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel1_Paint);
             // 
             // label7
@@ -715,6 +748,7 @@
             resources.ApplyResources(this.label7, "label7");
             this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label7.Name = "label7";
+            this.toolTipHelp.SetToolTip(this.label7, resources.GetString("label7.ToolTip"));
             // 
             // buttonEscan
             // 
@@ -723,6 +757,7 @@
             this.buttonEscan.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonEscan.ForeColor = System.Drawing.Color.White;
             this.buttonEscan.Name = "buttonEscan";
+            this.toolTipHelp.SetToolTip(this.buttonEscan, resources.GetString("buttonEscan.ToolTip"));
             this.buttonEscan.UseVisualStyleBackColor = false;
             this.buttonEscan.Click += new System.EventHandler(this.buttonEscan_Click);
             // 
@@ -733,6 +768,7 @@
             this.buttonECheckEncrypt.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonECheckEncrypt.ForeColor = System.Drawing.Color.White;
             this.buttonECheckEncrypt.Name = "buttonECheckEncrypt";
+            this.toolTipHelp.SetToolTip(this.buttonECheckEncrypt, resources.GetString("buttonECheckEncrypt.ToolTip"));
             this.buttonECheckEncrypt.UseVisualStyleBackColor = false;
             this.buttonECheckEncrypt.Click += new System.EventHandler(this.buttonECheckEncrypt_Click);
             // 
@@ -743,6 +779,7 @@
             this.buttoEScanCard.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttoEScanCard.ForeColor = System.Drawing.Color.White;
             this.buttoEScanCard.Name = "buttoEScanCard";
+            this.toolTipHelp.SetToolTip(this.buttoEScanCard, resources.GetString("buttoEScanCard.ToolTip"));
             this.buttoEScanCard.UseVisualStyleBackColor = false;
             this.buttoEScanCard.Click += new System.EventHandler(this.buttoEScanCard_Click);
             // 
@@ -752,19 +789,22 @@
             this.pictureBox1.Image = global::MifareOneTool.Properties.Resources.round_chevron_right_black_24dp;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.pictureBox1, resources.GetString("pictureBox1.ToolTip"));
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::MifareOneTool.Properties.Resources.round_chevron_right_black_24dp;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::MifareOneTool.Properties.Resources.round_chevron_right_black_24dp;
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.pictureBox2, resources.GetString("pictureBox2.ToolTip"));
             // 
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label13.Name = "label13";
+            this.toolTipHelp.SetToolTip(this.label13, resources.GetString("label13.ToolTip"));
             // 
             // groupBox5
             // 
@@ -775,6 +815,7 @@
             this.groupBox5.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox5, resources.GetString("groupBox5.ToolTip"));
             // 
             // tableLayoutPanel11
             // 
@@ -785,6 +826,7 @@
             this.tableLayoutPanel11.Controls.Add(this.buttonEMfoc, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.buttonESelectKey, 0, 3);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel11, resources.GetString("tableLayoutPanel11.ToolTip"));
             // 
             // buttonEReadUID
             // 
@@ -793,6 +835,7 @@
             this.buttonEReadUID.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonEReadUID.ForeColor = System.Drawing.Color.White;
             this.buttonEReadUID.Name = "buttonEReadUID";
+            this.toolTipHelp.SetToolTip(this.buttonEReadUID, resources.GetString("buttonEReadUID.ToolTip"));
             this.buttonEReadUID.UseVisualStyleBackColor = false;
             this.buttonEReadUID.Click += new System.EventHandler(this.buttonEReadUID_Click);
             // 
@@ -803,6 +846,7 @@
             this.buttonEMfRead.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonEMfRead.ForeColor = System.Drawing.Color.White;
             this.buttonEMfRead.Name = "buttonEMfRead";
+            this.toolTipHelp.SetToolTip(this.buttonEMfRead, resources.GetString("buttonEMfRead.ToolTip"));
             this.buttonEMfRead.UseVisualStyleBackColor = false;
             this.buttonEMfRead.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -813,6 +857,7 @@
             this.buttonECmfoc.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonECmfoc.ForeColor = System.Drawing.Color.White;
             this.buttonECmfoc.Name = "buttonECmfoc";
+            this.toolTipHelp.SetToolTip(this.buttonECmfoc, resources.GetString("buttonECmfoc.ToolTip"));
             this.buttonECmfoc.UseVisualStyleBackColor = false;
             this.buttonECmfoc.Click += new System.EventHandler(this.buttonECmfoc_Click);
             // 
@@ -823,6 +868,7 @@
             this.buttonEMfoc.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonEMfoc.ForeColor = System.Drawing.Color.White;
             this.buttonEMfoc.Name = "buttonEMfoc";
+            this.toolTipHelp.SetToolTip(this.buttonEMfoc, resources.GetString("buttonEMfoc.ToolTip"));
             this.buttonEMfoc.UseVisualStyleBackColor = false;
             this.buttonEMfoc.Click += new System.EventHandler(this.buttonEMfoc_Click);
             // 
@@ -833,6 +879,7 @@
             this.buttonESelectKey.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonESelectKey.ForeColor = System.Drawing.Color.White;
             this.buttonESelectKey.Name = "buttonESelectKey";
+            this.toolTipHelp.SetToolTip(this.buttonESelectKey, resources.GetString("buttonESelectKey.ToolTip"));
             this.buttonESelectKey.UseVisualStyleBackColor = false;
             this.buttonESelectKey.Click += new System.EventHandler(this.buttonESelectKey_Click);
             // 
@@ -842,6 +889,7 @@
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel24, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.buttonEStop, 0, 1);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel3, resources.GetString("tableLayoutPanel3.ToolTip"));
             // 
             // flowLayoutPanel24
             // 
@@ -849,18 +897,21 @@
             this.flowLayoutPanel24.Controls.Add(this.pictureBox4);
             this.flowLayoutPanel24.Controls.Add(this.label6);
             this.flowLayoutPanel24.Name = "flowLayoutPanel24";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel24, resources.GetString("flowLayoutPanel24.ToolTip"));
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::MifareOneTool.Properties.Resources.round_done_outline_black_24pt_1x;
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
+            this.pictureBox4.Image = global::MifareOneTool.Properties.Resources.round_done_outline_black_24pt_1x;
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.pictureBox4, resources.GetString("pictureBox4.ToolTip"));
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
+            this.toolTipHelp.SetToolTip(this.label6, resources.GetString("label6.ToolTip"));
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // buttonEStop
@@ -870,6 +921,7 @@
             this.buttonEStop.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonEStop.ForeColor = System.Drawing.Color.White;
             this.buttonEStop.Name = "buttonEStop";
+            this.toolTipHelp.SetToolTip(this.buttonEStop, resources.GetString("buttonEStop.ToolTip"));
             this.buttonEStop.UseVisualStyleBackColor = false;
             this.buttonEStop.Click += new System.EventHandler(this.buttonEStop_Click);
             // 
@@ -880,6 +932,7 @@
             this.groupBox7.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox7, resources.GetString("groupBox7.ToolTip"));
             // 
             // tableLayoutPanel13
             // 
@@ -889,6 +942,7 @@
             this.tableLayoutPanel13.Controls.Add(this.buttonECuidWrite, 0, 1);
             this.tableLayoutPanel13.Controls.Add(this.buttonEMfWrite, 0, 3);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel13, resources.GetString("tableLayoutPanel13.ToolTip"));
             // 
             // buttonEUIDWrite
             // 
@@ -897,6 +951,7 @@
             this.buttonEUIDWrite.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonEUIDWrite.ForeColor = System.Drawing.Color.White;
             this.buttonEUIDWrite.Name = "buttonEUIDWrite";
+            this.toolTipHelp.SetToolTip(this.buttonEUIDWrite, resources.GetString("buttonEUIDWrite.ToolTip"));
             this.buttonEUIDWrite.UseVisualStyleBackColor = false;
             this.buttonEUIDWrite.Click += new System.EventHandler(this.buttonEUIDWrite_Click);
             // 
@@ -907,6 +962,7 @@
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Name = "button4";
+            this.toolTipHelp.SetToolTip(this.button4, resources.GetString("button4.ToolTip"));
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -917,6 +973,7 @@
             this.buttonECuidWrite.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonECuidWrite.ForeColor = System.Drawing.Color.White;
             this.buttonECuidWrite.Name = "buttonECuidWrite";
+            this.toolTipHelp.SetToolTip(this.buttonECuidWrite, resources.GetString("buttonECuidWrite.ToolTip"));
             this.buttonECuidWrite.UseVisualStyleBackColor = false;
             this.buttonECuidWrite.Click += new System.EventHandler(this.buttonECuidWrite_Click);
             // 
@@ -927,15 +984,17 @@
             this.buttonEMfWrite.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonEMfWrite.ForeColor = System.Drawing.Color.White;
             this.buttonEMfWrite.Name = "buttonEMfWrite";
+            this.toolTipHelp.SetToolTip(this.buttonEMfWrite, resources.GetString("buttonEMfWrite.ToolTip"));
             this.buttonEMfWrite.UseVisualStyleBackColor = false;
             this.buttonEMfWrite.Click += new System.EventHandler(this.buttonEMfWrite_Click);
             // 
             // tabPage1
             // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.tableLayoutPanel4);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
+            this.toolTipHelp.SetToolTip(this.tabPage1, resources.GetString("tabPage1.ToolTip"));
             // 
             // tableLayoutPanel4
             // 
@@ -943,6 +1002,7 @@
             this.tableLayoutPanel4.Controls.Add(this.flowLayoutPanel8, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.flowLayoutPanel7, 0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel4, resources.GetString("tableLayoutPanel4.ToolTip"));
             // 
             // flowLayoutPanel8
             // 
@@ -951,6 +1011,7 @@
             this.flowLayoutPanel8.Controls.Add(this.groupBox10);
             this.flowLayoutPanel8.Controls.Add(this.groupBox3);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel8, resources.GetString("flowLayoutPanel8.ToolTip"));
             // 
             // groupBox10
             // 
@@ -959,6 +1020,7 @@
             this.groupBox10.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox10, resources.GetString("groupBox10.ToolTip"));
             // 
             // tableLayoutPanel8
             // 
@@ -966,6 +1028,7 @@
             this.tableLayoutPanel8.Controls.Add(this.flowLayoutPanel18, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.flowLayoutPanel17, 0, 0);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel8, resources.GetString("tableLayoutPanel8.ToolTip"));
             // 
             // flowLayoutPanel18
             // 
@@ -974,6 +1037,7 @@
             this.flowLayoutPanel18.Controls.Add(this.buttonDictMfoc);
             this.flowLayoutPanel18.Controls.Add(this.buttonHardNested);
             this.flowLayoutPanel18.Name = "flowLayoutPanel18";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel18, resources.GetString("flowLayoutPanel18.ToolTip"));
             // 
             // buttonHardNested
             // 
@@ -982,6 +1046,7 @@
             this.buttonHardNested.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonHardNested.ForeColor = System.Drawing.Color.White;
             this.buttonHardNested.Name = "buttonHardNested";
+            this.toolTipHelp.SetToolTip(this.buttonHardNested, resources.GetString("buttonHardNested.ToolTip"));
             this.buttonHardNested.UseVisualStyleBackColor = false;
             this.buttonHardNested.Click += new System.EventHandler(this.buttonHardNested_Click);
             // 
@@ -992,6 +1057,7 @@
             this.flowLayoutPanel17.Controls.Add(this.buttonnKeysMfoc);
             this.flowLayoutPanel17.Controls.Add(this.buttonMfcuk);
             this.flowLayoutPanel17.Name = "flowLayoutPanel17";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel17, resources.GetString("flowLayoutPanel17.ToolTip"));
             // 
             // flowLayoutPanel7
             // 
@@ -1001,6 +1067,7 @@
             this.flowLayoutPanel7.Controls.Add(this.groupBox8);
             this.flowLayoutPanel7.Controls.Add(this.groupBox9);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel7, resources.GetString("flowLayoutPanel7.ToolTip"));
             // 
             // groupBox8
             // 
@@ -1009,6 +1076,7 @@
             this.groupBox8.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox8, resources.GetString("groupBox8.ToolTip"));
             // 
             // tableLayoutPanel9
             // 
@@ -1016,6 +1084,7 @@
             this.tableLayoutPanel9.Controls.Add(this.flowLayoutPanel16, 0, 1);
             this.tableLayoutPanel9.Controls.Add(this.flowLayoutPanel15, 0, 0);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel9, resources.GetString("tableLayoutPanel9.ToolTip"));
             // 
             // flowLayoutPanel16
             // 
@@ -1024,6 +1093,7 @@
             this.flowLayoutPanel16.Controls.Add(this.buttonUidWrite);
             this.flowLayoutPanel16.Controls.Add(this.buttonLockUfuid);
             this.flowLayoutPanel16.Name = "flowLayoutPanel16";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel16, resources.GetString("flowLayoutPanel16.ToolTip"));
             // 
             // flowLayoutPanel15
             // 
@@ -1031,7 +1101,20 @@
             this.flowLayoutPanel15.Controls.Add(this.buttonBmfRead);
             this.flowLayoutPanel15.Controls.Add(this.buttonUidReset);
             this.flowLayoutPanel15.Controls.Add(this.buttonUidFormat);
+            this.flowLayoutPanel15.Controls.Add(this.ShowUID);
             this.flowLayoutPanel15.Name = "flowLayoutPanel15";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel15, resources.GetString("flowLayoutPanel15.ToolTip"));
+            // 
+            // ShowUID
+            // 
+            resources.ApplyResources(this.ShowUID, "ShowUID");
+            this.ShowUID.BackColor = System.Drawing.Color.DodgerBlue;
+            this.ShowUID.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ShowUID.ForeColor = System.Drawing.Color.White;
+            this.ShowUID.Name = "ShowUID";
+            this.toolTipHelp.SetToolTip(this.ShowUID, resources.GetString("ShowUID.ToolTip"));
+            this.ShowUID.UseVisualStyleBackColor = false;
+            this.ShowUID.Click += new System.EventHandler(this.ShowUID_Click);
             // 
             // groupBox9
             // 
@@ -1040,6 +1123,7 @@
             this.groupBox9.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox9, resources.GetString("groupBox9.ToolTip"));
             // 
             // flowLayoutPanel21
             // 
@@ -1047,19 +1131,22 @@
             this.flowLayoutPanel21.Controls.Add(this.label1);
             this.flowLayoutPanel21.Controls.Add(this.buttonCmfWrite);
             this.flowLayoutPanel21.Name = "flowLayoutPanel21";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel21, resources.GetString("flowLayoutPanel21.ToolTip"));
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Name = "label1";
+            this.toolTipHelp.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // tabPage3
             // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.BackColor = System.Drawing.Color.White;
             this.tabPage3.Controls.Add(this.tableLayoutPanel14);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
+            this.toolTipHelp.SetToolTip(this.tabPage3, resources.GetString("tabPage3.ToolTip"));
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // tableLayoutPanel14
@@ -1068,6 +1155,7 @@
             this.tableLayoutPanel14.Controls.Add(this.flowLayoutPanel6, 0, 0);
             this.tableLayoutPanel14.Controls.Add(this.flowLayoutPanel22, 0, 1);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel14, resources.GetString("tableLayoutPanel14.ToolTip"));
             // 
             // flowLayoutPanel6
             // 
@@ -1076,6 +1164,7 @@
             this.flowLayoutPanel6.Controls.Add(this.groupBox12);
             this.flowLayoutPanel6.Controls.Add(this.groupBox14);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel6, resources.GetString("flowLayoutPanel6.ToolTip"));
             // 
             // groupBox6
             // 
@@ -1086,6 +1175,7 @@
             this.groupBox6.ForeColor = System.Drawing.Color.White;
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox6, resources.GetString("groupBox6.ToolTip"));
             // 
             // flowLayoutPanel2
             // 
@@ -1097,6 +1187,7 @@
             this.flowLayoutPanel2.Controls.Add(this.checkBoxCuidKeyOver);
             this.flowLayoutPanel2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel2, resources.GetString("flowLayoutPanel2.ToolTip"));
             // 
             // checkBoxAutoABN
             // 
@@ -1105,6 +1196,7 @@
             this.checkBoxAutoABN.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.checkBoxAutoABN.ForeColor = System.Drawing.Color.DodgerBlue;
             this.checkBoxAutoABN.Name = "checkBoxAutoABN";
+            this.toolTipHelp.SetToolTip(this.checkBoxAutoABN, resources.GetString("checkBoxAutoABN.ToolTip"));
             this.checkBoxAutoABN.UseVisualStyleBackColor = true;
             this.checkBoxAutoABN.CheckedChanged += new System.EventHandler(this.checkBoxAutoABN_CheckedChanged);
             // 
@@ -1112,6 +1204,7 @@
             // 
             resources.ApplyResources(this.checkBoxAutoLoadKey, "checkBoxAutoLoadKey");
             this.checkBoxAutoLoadKey.Name = "checkBoxAutoLoadKey";
+            this.toolTipHelp.SetToolTip(this.checkBoxAutoLoadKey, resources.GetString("checkBoxAutoLoadKey.ToolTip"));
             this.checkBoxAutoLoadKey.UseVisualStyleBackColor = true;
             this.checkBoxAutoLoadKey.CheckedChanged += new System.EventHandler(this.checkBoxAutoLoadKey_CheckedChanged);
             // 
@@ -1119,6 +1212,7 @@
             // 
             resources.ApplyResources(this.checkBoxWriteProtect, "checkBoxWriteProtect");
             this.checkBoxWriteProtect.Name = "checkBoxWriteProtect";
+            this.toolTipHelp.SetToolTip(this.checkBoxWriteProtect, resources.GetString("checkBoxWriteProtect.ToolTip"));
             this.checkBoxWriteProtect.UseVisualStyleBackColor = true;
             this.checkBoxWriteProtect.CheckedChanged += new System.EventHandler(this.checkBoxWriteProtect_CheckedChanged);
             // 
@@ -1126,6 +1220,7 @@
             // 
             resources.ApplyResources(this.checkBoxCuidKeyOver, "checkBoxCuidKeyOver");
             this.checkBoxCuidKeyOver.Name = "checkBoxCuidKeyOver";
+            this.toolTipHelp.SetToolTip(this.checkBoxCuidKeyOver, resources.GetString("checkBoxCuidKeyOver.ToolTip"));
             this.checkBoxCuidKeyOver.UseVisualStyleBackColor = true;
             this.checkBoxCuidKeyOver.CheckedChanged += new System.EventHandler(this.checkBoxCuidKeyOver_CheckedChanged);
             // 
@@ -1138,6 +1233,7 @@
             this.groupBox12.ForeColor = System.Drawing.Color.White;
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox12, resources.GetString("groupBox12.ToolTip"));
             // 
             // tableLayoutPanel12
             // 
@@ -1149,6 +1245,7 @@
             this.tableLayoutPanel12.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel12.ForeColor = System.Drawing.Color.DodgerBlue;
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.toolTipHelp.SetToolTip(this.tableLayoutPanel12, resources.GetString("tableLayoutPanel12.ToolTip"));
             // 
             // numericCLIFontSize
             // 
@@ -1166,6 +1263,7 @@
             0,
             0});
             this.numericCLIFontSize.Name = "numericCLIFontSize";
+            this.toolTipHelp.SetToolTip(this.numericCLIFontSize, resources.GetString("numericCLIFontSize.ToolTip"));
             this.numericCLIFontSize.Value = new decimal(new int[] {
             9,
             0,
@@ -1177,11 +1275,7 @@
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
+            this.toolTipHelp.SetToolTip(this.label9, resources.GetString("label9.ToolTip"));
             // 
             // buttonCLIColor
             // 
@@ -1189,8 +1283,15 @@
             this.buttonCLIColor.BackColor = System.Drawing.Color.AliceBlue;
             this.buttonCLIColor.ForeColor = System.Drawing.Color.DarkRed;
             this.buttonCLIColor.Name = "buttonCLIColor";
+            this.toolTipHelp.SetToolTip(this.buttonCLIColor, resources.GetString("buttonCLIColor.ToolTip"));
             this.buttonCLIColor.UseVisualStyleBackColor = false;
             this.buttonCLIColor.Click += new System.EventHandler(this.buttonCLIColor_Click);
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            this.toolTipHelp.SetToolTip(this.label10, resources.GetString("label10.ToolTip"));
             // 
             // groupBox14
             // 
@@ -1201,6 +1302,7 @@
             this.groupBox14.ForeColor = System.Drawing.Color.White;
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox14, resources.GetString("groupBox14.ToolTip"));
             // 
             // flowLayoutPanel5
             // 
@@ -1212,6 +1314,7 @@
             this.flowLayoutPanel5.Controls.Add(this.SetDeviceCombo);
             this.flowLayoutPanel5.ForeColor = System.Drawing.Color.DodgerBlue;
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel5, resources.GetString("flowLayoutPanel5.ToolTip"));
             // 
             // checkBoxNewScan
             // 
@@ -1219,12 +1322,14 @@
             this.checkBoxNewScan.Checked = true;
             this.checkBoxNewScan.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxNewScan.Name = "checkBoxNewScan";
+            this.toolTipHelp.SetToolTip(this.checkBoxNewScan, resources.GetString("checkBoxNewScan.ToolTip"));
             this.checkBoxNewScan.UseVisualStyleBackColor = true;
             // 
             // checkBoxMultiDev
             // 
             resources.ApplyResources(this.checkBoxMultiDev, "checkBoxMultiDev");
             this.checkBoxMultiDev.Name = "checkBoxMultiDev";
+            this.toolTipHelp.SetToolTip(this.checkBoxMultiDev, resources.GetString("checkBoxMultiDev.ToolTip"));
             this.checkBoxMultiDev.UseVisualStyleBackColor = true;
             this.checkBoxMultiDev.CheckedChanged += new System.EventHandler(this.checkBoxMultiDev_CheckedChanged);
             // 
@@ -1232,15 +1337,17 @@
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
+            this.toolTipHelp.SetToolTip(this.label11, resources.GetString("label11.ToolTip"));
             // 
             // SetDeviceCombo
             // 
+            resources.ApplyResources(this.SetDeviceCombo, "SetDeviceCombo");
             this.SetDeviceCombo.BackColor = System.Drawing.Color.AliceBlue;
             this.SetDeviceCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SetDeviceCombo.DropDownWidth = 150;
-            resources.ApplyResources(this.SetDeviceCombo, "SetDeviceCombo");
             this.SetDeviceCombo.FormattingEnabled = true;
             this.SetDeviceCombo.Name = "SetDeviceCombo";
+            this.toolTipHelp.SetToolTip(this.SetDeviceCombo, resources.GetString("SetDeviceCombo.ToolTip"));
             this.SetDeviceCombo.SelectedIndexChanged += new System.EventHandler(this.SetDeviceCombo_SelectedIndexChanged);
             // 
             // flowLayoutPanel22
@@ -1250,6 +1357,7 @@
             this.flowLayoutPanel22.Controls.Add(this.groupBox13);
             this.flowLayoutPanel22.Controls.Add(this.groupBox11);
             this.flowLayoutPanel22.Name = "flowLayoutPanel22";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel22, resources.GetString("flowLayoutPanel22.ToolTip"));
             // 
             // groupBox15
             // 
@@ -1260,6 +1368,7 @@
             this.groupBox15.ForeColor = System.Drawing.Color.White;
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox15, resources.GetString("groupBox15.ToolTip"));
             // 
             // flowLayoutPanel23
             // 
@@ -1269,21 +1378,24 @@
             this.flowLayoutPanel23.Controls.Add(this.comboBox1);
             this.flowLayoutPanel23.ForeColor = System.Drawing.Color.DodgerBlue;
             this.flowLayoutPanel23.Name = "flowLayoutPanel23";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel23, resources.GetString("flowLayoutPanel23.ToolTip"));
             // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
+            this.toolTipHelp.SetToolTip(this.label12, resources.GetString("label12.ToolTip"));
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.AliceBlue;
             resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.BackColor = System.Drawing.Color.AliceBlue;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             resources.GetString("comboBox1.Items"),
             resources.GetString("comboBox1.Items1")});
             this.comboBox1.Name = "comboBox1";
+            this.toolTipHelp.SetToolTip(this.comboBox1, resources.GetString("comboBox1.ToolTip"));
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // groupBox13
@@ -1295,6 +1407,7 @@
             this.groupBox13.ForeColor = System.Drawing.Color.White;
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox13, resources.GetString("groupBox13.ToolTip"));
             // 
             // flowLayoutPanel4
             // 
@@ -1304,11 +1417,13 @@
             this.flowLayoutPanel4.Controls.Add(this.checkBoxAutoSave);
             this.flowLayoutPanel4.ForeColor = System.Drawing.Color.DodgerBlue;
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel4, resources.GetString("flowLayoutPanel4.ToolTip"));
             // 
             // checkBoxDefIsAdv
             // 
             resources.ApplyResources(this.checkBoxDefIsAdv, "checkBoxDefIsAdv");
             this.checkBoxDefIsAdv.Name = "checkBoxDefIsAdv";
+            this.toolTipHelp.SetToolTip(this.checkBoxDefIsAdv, resources.GetString("checkBoxDefIsAdv.ToolTip"));
             this.checkBoxDefIsAdv.UseVisualStyleBackColor = true;
             this.checkBoxDefIsAdv.CheckedChanged += new System.EventHandler(this.checkBoxDefIsAdv_CheckedChanged);
             // 
@@ -1316,6 +1431,7 @@
             // 
             resources.ApplyResources(this.checkBoxAutoSave, "checkBoxAutoSave");
             this.checkBoxAutoSave.Name = "checkBoxAutoSave";
+            this.toolTipHelp.SetToolTip(this.checkBoxAutoSave, resources.GetString("checkBoxAutoSave.ToolTip"));
             this.checkBoxAutoSave.UseVisualStyleBackColor = true;
             this.checkBoxAutoSave.CheckedChanged += new System.EventHandler(this.checkBoxAutoSave_CheckedChanged);
             // 
@@ -1328,6 +1444,7 @@
             this.groupBox11.ForeColor = System.Drawing.Color.White;
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.TabStop = false;
+            this.toolTipHelp.SetToolTip(this.groupBox11, resources.GetString("groupBox11.ToolTip"));
             // 
             // flowLayoutPanel3
             // 
@@ -1336,18 +1453,28 @@
             this.flowLayoutPanel3.Controls.Add(this.checkBoxHardLowCost);
             this.flowLayoutPanel3.ForeColor = System.Drawing.Color.DodgerBlue;
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.toolTipHelp.SetToolTip(this.flowLayoutPanel3, resources.GetString("flowLayoutPanel3.ToolTip"));
             // 
             // checkBoxHardLowCost
             // 
             resources.ApplyResources(this.checkBoxHardLowCost, "checkBoxHardLowCost");
             this.checkBoxHardLowCost.Name = "checkBoxHardLowCost";
+            this.toolTipHelp.SetToolTip(this.checkBoxHardLowCost, resources.GetString("checkBoxHardLowCost.ToolTip"));
             this.checkBoxHardLowCost.UseVisualStyleBackColor = true;
             this.checkBoxHardLowCost.CheckedChanged += new System.EventHandler(this.checkBoxHardLowCost_CheckedChanged);
             // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "sharp_file_copy_black_18pt_1x.png");
+            this.imageList2.Images.SetKeyName(1, "round_settings_black_18pt_1x.png");
+            this.imageList2.Images.SetKeyName(2, "round_build_black_18pt_1x.png");
+            // 
             // statusStrip1
             // 
-            this.statusStrip1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
+            this.statusStrip1.BackColor = System.Drawing.Color.Transparent;
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel,
@@ -1358,40 +1485,41 @@
             this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.toolTipHelp.SetToolTip(this.statusStrip1, resources.GetString("statusStrip1.ToolTip"));
             // 
             // statusLabel
             // 
-            this.statusLabel.Image = global::MifareOneTool.Properties.Resources.round_sync_black_18pt_1x;
             resources.ApplyResources(this.statusLabel, "statusLabel");
+            this.statusLabel.Image = global::MifareOneTool.Properties.Resources.round_sync_black_18pt_1x;
             this.statusLabel.Margin = new System.Windows.Forms.Padding(0, 0, 50, 0);
             this.statusLabel.Name = "statusLabel";
             // 
             // runTimeLabel
             // 
-            this.runTimeLabel.Image = global::MifareOneTool.Properties.Resources.round_timer_black_18pt_1x;
             resources.ApplyResources(this.runTimeLabel, "runTimeLabel");
+            this.runTimeLabel.Image = global::MifareOneTool.Properties.Resources.round_timer_black_18pt_1x;
             this.runTimeLabel.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
             this.runTimeLabel.Name = "runTimeLabel";
             // 
             // localVersionLabel
             // 
-            this.localVersionLabel.Image = global::MifareOneTool.Properties.Resources.outline_info_black_18pt_1x;
             resources.ApplyResources(this.localVersionLabel, "localVersionLabel");
+            this.localVersionLabel.Image = global::MifareOneTool.Properties.Resources.outline_info_black_18pt_1x;
             this.localVersionLabel.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
             this.localVersionLabel.Name = "localVersionLabel";
             // 
             // curDevice
             // 
+            resources.ApplyResources(this.curDevice, "curDevice");
             this.curDevice.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
             this.curDevice.Name = "curDevice";
-            resources.ApplyResources(this.curDevice, "curDevice");
             // 
             // toolStripCheckUpdate
             // 
+            resources.ApplyResources(this.toolStripCheckUpdate, "toolStripCheckUpdate");
             this.toolStripCheckUpdate.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripCheckUpdate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripCheckUpdate.ForeColor = System.Drawing.SystemColors.ControlText;
-            resources.ApplyResources(this.toolStripCheckUpdate, "toolStripCheckUpdate");
             this.toolStripCheckUpdate.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.toolStripCheckUpdate.Name = "toolStripCheckUpdate";
             this.toolStripCheckUpdate.ButtonClick += new System.EventHandler(this.toolStripCheckUpdate_ButtonClick);
@@ -1400,14 +1528,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // imageList2
-            // 
-            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
-            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "sharp_file_copy_black_18pt_1x.png");
-            this.imageList2.Images.SetKeyName(1, "round_settings_black_18pt_1x.png");
-            this.imageList2.Images.SetKeyName(2, "round_build_black_18pt_1x.png");
             // 
             // Form1
             // 
@@ -1419,6 +1539,7 @@
             this.Controls.Add(this.richTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.toolTipHelp.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -1686,6 +1807,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.ToolStripSplitButton toolStripCheckUpdate;
         private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.Button ShowUID;
     }
 }
 

@@ -35,7 +35,6 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>11</StringID>
-    <Comment>Previous text: ппппппппппппппппппп</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>12</StringID>
@@ -417,6 +416,12 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>137</StringID>
+    <Comment>Previous text: 每个人使用CUID卡的时候，总会因不了解或是不经意犯下一些小错误。
+比如使用编辑器修改UID却没有改BCC，SAK=28的卡片解密后的文件直接写入，又或是从S70卡片导入数据写入1K卡却没有更正ATQA。
+MFF08工具给了你一次修复这些损坏卡片的机会。
+------------------------------------------------------------------------
+
+</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>138</StringID>
@@ -570,9 +575,11 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>188</StringID>
+    <Comment>Previous text: 欢迎使用M1T的集成编辑器S50HTool！</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>189</StringID>
+    <Comment>Previous text: 打开文件请点左上角文件-打开或Ctrl+O</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>190</StringID>
@@ -594,9 +601,17 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>196</StringID>
+    <Comment>Previous text: 欢迎使用M1T内置的差异工具！
+说明：
+点击上方的AB两个按键分别选择MFD文件。
+然后点击“比较”即可看到结果。
+</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>197</StringID>
+    <Comment>Previous text: 欢迎使用M1T的集成编辑器S50HTool！
+打开文件请点左上角文件-打开或Ctrl+O
+</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>198</StringID>
@@ -1029,7 +1044,6 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>341</StringID>
-    <Comment>Previous text: round_create_black_18pt_1x.png</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>342</StringID>
@@ -1042,6 +1056,76 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>345</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>346</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>347</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>348</StringID>
+    <Comment>Previous text: KeyAB读写及增减值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>349</StringID>
+    <Comment>Previous text: [只读]KeyAB读及减值/不可写及增值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>350</StringID>
+    <Comment>Previous text: [只读]KeyAB读/不可写及增减值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>351</StringID>
+    <Comment>Previous text: KeyB读写/不可增减值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>352</StringID>
+    <Comment>Previous text: KeyAB读/KeyB写/不可增减值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>353</StringID>
+    <Comment>Previous text: [只读]KeyB读/不可写及增减值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>354</StringID>
+    <Comment>Previous text: KeyAB读及减值/KeyB写及增值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>355</StringID>
+    <Comment>Previous text: [只读]锁死该扇区</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>356</StringID>
+    <Comment>Previous text: [不可逆]KeyA:A写/AC:A只读/KeyB:A读写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>357</StringID>
+    <Comment>Previous text: KeyA:A写/AC:A读写/KeyB:A读写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>358</StringID>
+    <Comment>Previous text: [不可逆]KeyA:不能读写/AC:A只读/KeyB:A读</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>359</StringID>
+    <Comment>Previous text: KeyA:B写/AC:A只读B读写/KeyB:B写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>360</StringID>
+    <Comment>Previous text: [不可逆]KeyA:B写/AC:AB只读/KeyB:B写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>361</StringID>
+    <Comment>Previous text: KeyA:不能读写/AC:A只读B读写/KeyB:不能读写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>362</StringID>
+    <Comment>Previous text: [不可逆]KeyA:不能读写/AC:AB只读/KeyB:不能读写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>363</StringID>
+    <Comment>Previous text: [不可逆]KeyA:不能读写/AC:AB只读/KeyB:不能读写(重复了?)</Comment>
   </GeneralIds>
   <Languages>
     <LanguageID>30724</LanguageID>
@@ -2237,13 +2321,13 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>188</StringID>
     <LanguageID>30724</LanguageID>
-    <LanguageText>欢迎使用M1T的集成编辑器S50HTool！</LanguageText>
+    <LanguageText>Добро пожаловать в интегрированный редактор дампа!</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>189</StringID>
     <LanguageID>30724</LanguageID>
-    <LanguageText>打开文件请点左上角文件-打开或Ctrl+O</LanguageText>
+    <LanguageText>Чтобы открыть файл, пожалуйста, нажмите на Файл в верхнем левом углу - Открыть или Ctrl + O</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -2477,7 +2561,8 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>226</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Версия программного обеспечения - </LanguageText>
+    <LanguageText>
+Версия программы - </LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3297,7 +3382,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>225</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>## Завершение работы ##</LanguageText>
+    <LanguageText>## Операция завершена ##</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3879,7 +3964,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <StringID>11</StringID>
     <LanguageID>25</LanguageID>
     <LanguageText>Привет!</LanguageText>
-    <Status>7</Status>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>12</StringID>
@@ -4003,7 +4088,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
 Описание:
 1. Нажмите  А или В, чтобы выбрать файл MFD.
 2. Нажмите «Сравнить», чтобы увидеть результаты.</LanguageText>
-    <Status>2</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>106</StringID>
@@ -4283,7 +4368,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <LanguageText>Добро пожаловать в интегрированный редактор дампа!
 Чтобы открыть файл, пожалуйста, нажмите на Файл в верхнем левом углу - Открыть или Ctrl + O
 Вы можете обновить данные вашей карты.</LanguageText>
-    <Status>2</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>144</StringID>
@@ -4373,13 +4458,13 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <StringID>188</StringID>
     <LanguageID>25</LanguageID>
     <LanguageText>Добро пожаловать в интегрированный редактор M1T S50HTool!</LanguageText>
-    <Status>5</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>189</StringID>
     <LanguageID>25</LanguageID>
     <LanguageText>Откройте файл, пожалуйста, нажмите на файл в верхнем левом углу - открыть или Ctrl + O</LanguageText>
-    <Status>5</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>127</StringID>
@@ -4450,7 +4535,7 @@ CUID карта</LanguageText>
 -------------------------------------------------- ----------------------
 
 </LanguageText>
-    <Status>6</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>138</StringID>
@@ -4624,8 +4709,9 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>258</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начните выполнять номер карты установки карты UID ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Начало записи номера UID...
+</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>259</StringID>
@@ -5213,6 +5299,216 @@ CUID карта</LanguageText>
 “Защита от записи данных” в настройках программы.</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
+  <GeneralTexts>
+    <StringID>346</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>显示UID</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>347</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>Вы можете обновить данные вашей карты.</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>348</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyAB читать, писать, увеличивать и уменьшать</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>348</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyAB читать, писать, увеличивать и уменьшать</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>349</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>349</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>350</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>350</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>351</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyB чтение / запись / не сложение и вычитание</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>351</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyB чтение / запись / не сложение и вычитание</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>352</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyAB чтение / KeyB запись / без увеличения или уменьшения</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>352</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyAB чтение / KeyB запись / без увеличения или уменьшения</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>353</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>353</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>354</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>354</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>355</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[только для чтения] заблокировать сектор</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>355</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[только для чтения] заблокировать сектор</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>356</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[Необратимый] KeyA: запись / AC: только чтение / KeyB: чтение и запись</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>356</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[Необратимый] KeyA: запись / AC: только чтение / KeyB: чтение и запись</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>357</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyA: запись / AC: чтение / запись / KeyB: чтение и запись</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>357</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyA: запись / AC: чтение / запись / KeyB: чтение и запись</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>358</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: только для чтения / KeyB: чтение</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>358</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: только для чтения / KeyB: чтение</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>359</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyA: B запись / AC: A только для чтения B чтение / запись / KeyB: B запись</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>359</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyA: B запись / AC: A только для чтения B чтение / запись / KeyB: B запись</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>360</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[необратимый] KeyA: запись B / AC: только чтение AB / KeyB: запись B</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>360</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[необратимый] KeyA: запись B / AC: только чтение AB / KeyB: запись B</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>361</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyA: невозможно чтение / запись / AC: A только для чтения B чтение / запись / KeyB: невозможно чтение или запись</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>361</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyA: невозможно чтение / запись / AC: A только для чтения B чтение / запись / KeyB: невозможно чтение или запись</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>362</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>362</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>363</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись (повторяется?)</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>363</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись (повторяется?)</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>346</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Показать UID</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
   <Properties>
     <Component>FormMFF08.resx</Component>
     <Name>logBox.Text</Name>
@@ -5288,7 +5584,8 @@ CUID карта</LanguageText>
   <Properties>
     <Component>Form1.cs</Component>
     <Name>richTextBox1.Text</Name>
-    <Selected>false</Selected>
+    <StringID>11</StringID>
+    <Selected>true</Selected>
     <ResourceName>richTextBox1.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
@@ -8239,7 +8536,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[0]</Name>
-    <StringID>160</StringID>
+    <StringID>356</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items</ResourceName>
     <Hidden>false</Hidden>
@@ -8247,7 +8544,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[1]</Name>
-    <StringID>161</StringID>
+    <StringID>357</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items1</ResourceName>
     <Hidden>false</Hidden>
@@ -8255,7 +8552,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[2]</Name>
-    <StringID>162</StringID>
+    <StringID>358</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items2</ResourceName>
     <Hidden>false</Hidden>
@@ -8263,7 +8560,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[3]</Name>
-    <StringID>163</StringID>
+    <StringID>359</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items3</ResourceName>
     <Hidden>false</Hidden>
@@ -8271,7 +8568,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[4]</Name>
-    <StringID>164</StringID>
+    <StringID>360</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items4</ResourceName>
     <Hidden>false</Hidden>
@@ -8279,7 +8576,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[5]</Name>
-    <StringID>165</StringID>
+    <StringID>361</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items5</ResourceName>
     <Hidden>false</Hidden>
@@ -8287,7 +8584,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[6]</Name>
-    <StringID>166</StringID>
+    <StringID>362</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items6</ResourceName>
     <Hidden>false</Hidden>
@@ -8295,7 +8592,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[7]</Name>
-    <StringID>167</StringID>
+    <StringID>363</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items7</ResourceName>
     <Hidden>false</Hidden>
@@ -8303,7 +8600,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[0]</Name>
-    <StringID>168</StringID>
+    <StringID>348</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items</ResourceName>
     <Hidden>false</Hidden>
@@ -8311,7 +8608,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[1]</Name>
-    <StringID>169</StringID>
+    <StringID>349</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items1</ResourceName>
     <Hidden>false</Hidden>
@@ -8319,7 +8616,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[2]</Name>
-    <StringID>170</StringID>
+    <StringID>350</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items2</ResourceName>
     <Hidden>false</Hidden>
@@ -8327,7 +8624,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[3]</Name>
-    <StringID>171</StringID>
+    <StringID>351</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items3</ResourceName>
     <Hidden>false</Hidden>
@@ -8335,7 +8632,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[4]</Name>
-    <StringID>172</StringID>
+    <StringID>352</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items4</ResourceName>
     <Hidden>false</Hidden>
@@ -8343,7 +8640,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[5]</Name>
-    <StringID>173</StringID>
+    <StringID>353</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items5</ResourceName>
     <Hidden>false</Hidden>
@@ -8351,7 +8648,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[6]</Name>
-    <StringID>174</StringID>
+    <StringID>354</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items6</ResourceName>
     <Hidden>false</Hidden>
@@ -8359,7 +8656,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[7]</Name>
-    <StringID>175</StringID>
+    <StringID>355</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items7</ResourceName>
     <Hidden>false</Hidden>
@@ -8367,7 +8664,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[0]</Name>
-    <StringID>168</StringID>
+    <StringID>348</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items</ResourceName>
     <Hidden>false</Hidden>
@@ -8375,7 +8672,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[1]</Name>
-    <StringID>169</StringID>
+    <StringID>349</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items1</ResourceName>
     <Hidden>false</Hidden>
@@ -8383,7 +8680,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[2]</Name>
-    <StringID>170</StringID>
+    <StringID>350</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items2</ResourceName>
     <Hidden>false</Hidden>
@@ -8391,7 +8688,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[3]</Name>
-    <StringID>171</StringID>
+    <StringID>351</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items3</ResourceName>
     <Hidden>false</Hidden>
@@ -8399,7 +8696,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[4]</Name>
-    <StringID>172</StringID>
+    <StringID>352</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items4</ResourceName>
     <Hidden>false</Hidden>
@@ -8407,7 +8704,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[5]</Name>
-    <StringID>173</StringID>
+    <StringID>353</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items5</ResourceName>
     <Hidden>false</Hidden>
@@ -8415,7 +8712,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[6]</Name>
-    <StringID>174</StringID>
+    <StringID>354</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items6</ResourceName>
     <Hidden>false</Hidden>
@@ -8423,7 +8720,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[7]</Name>
-    <StringID>175</StringID>
+    <StringID>355</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items7</ResourceName>
     <Hidden>false</Hidden>
@@ -8431,7 +8728,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[0]</Name>
-    <StringID>168</StringID>
+    <StringID>348</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items</ResourceName>
     <Hidden>false</Hidden>
@@ -8439,7 +8736,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[1]</Name>
-    <StringID>169</StringID>
+    <StringID>349</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items1</ResourceName>
     <Hidden>false</Hidden>
@@ -8447,7 +8744,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[2]</Name>
-    <StringID>170</StringID>
+    <StringID>350</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items2</ResourceName>
     <Hidden>false</Hidden>
@@ -8455,7 +8752,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[3]</Name>
-    <StringID>171</StringID>
+    <StringID>351</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items3</ResourceName>
     <Hidden>false</Hidden>
@@ -8463,7 +8760,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[4]</Name>
-    <StringID>172</StringID>
+    <StringID>352</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items4</ResourceName>
     <Hidden>false</Hidden>
@@ -8471,7 +8768,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[5]</Name>
-    <StringID>173</StringID>
+    <StringID>353</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items5</ResourceName>
     <Hidden>false</Hidden>
@@ -8479,7 +8776,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[6]</Name>
-    <StringID>174</StringID>
+    <StringID>354</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items6</ResourceName>
     <Hidden>false</Hidden>
@@ -8487,7 +8784,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[7]</Name>
-    <StringID>175</StringID>
+    <StringID>355</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items7</ResourceName>
     <Hidden>false</Hidden>
@@ -10034,6 +10331,38 @@ CUID карта</LanguageText>
     <StringID>345</StringID>
     <Selected>true</Selected>
     <ResourceName>tabPage3.ImageKey</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>ShowUID.Text</Name>
+    <StringID>346</StringID>
+    <Selected>true</Selected>
+    <ResourceName>ShowUID.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>ShowUID.Text</Name>
+    <StringID>346</StringID>
+    <Selected>true</Selected>
+    <ResourceName>ShowUID.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormHTool.cs</Component>
+    <Name>richTextBox1.Lines[2]</Name>
+    <StringID>347</StringID>
+    <Selected>true</Selected>
+    <ResourceName>richTextBox1.Lines[2]</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormHTool.resx</Component>
+    <Name>richTextBox1.Lines[2]</Name>
+    <StringID>347</StringID>
+    <Selected>true</Selected>
+    <ResourceName>richTextBox1.Lines[2]</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <GeneralAttributes>

@@ -420,10 +420,15 @@
   </data>
   <data name="richTextBox1.Lines[0]" xml:space="preserve">
     <value>Hello,cardman!</value>
-    <comment>Previous text: ппппппппппппппппппп</comment>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Hello,cardman!</value>
   </data>
   <data name="runTimeLabel.Text" xml:space="preserve">
     <value>计时器</value>
+  </data>
+  <data name="ShowUID.Text" xml:space="preserve">
+    <value>显示UID</value>
   </data>
   <data name="statusLabel.Text" xml:space="preserve">
     <value>就绪</value>
@@ -439,7 +444,6 @@
   </data>
   <data name="tabPage2.ImageKey" xml:space="preserve">
     <value>sharp_file_copy_black_18pt_1x.png</value>
-    <comment>Previous text: round_create_black_18pt_1x.png</comment>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>复制卡模式</value>

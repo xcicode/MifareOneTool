@@ -161,13 +161,14 @@
     <value>, рассчитать BCC =</value>
   </data>
   <data name="_软件版本" xml:space="preserve">
-    <value>Версия программного обеспечения - </value>
+    <value>
+Версия программы - </value>
   </data>
   <data name="_运行出错" xml:space="preserve">
     <value>## Ошибка запуска ##</value>
   </data>
   <data name="_运行完毕" xml:space="preserve">
-    <value>## Завершение работы ##</value>
+    <value>## Операция завершена ##</value>
   </data>
   <data name="AB文件中一个或两个无效" xml:space="preserve">
     <value>Один или два файла AB недействительны.</value>
@@ -309,7 +310,8 @@
     <value>Начните выполнять запись UID карты ...</value>
   </data>
   <data name="开始执行UID卡片设定卡号" xml:space="preserve">
-    <value>Начните выполнять номер карты установки карты UID ...</value>
+    <value>Начало записи номера UID...
+</value>
   </data>
   <data name="开始执行UID卡片读取" xml:space="preserve">
     <value>Начать чтение карты UID...</value>

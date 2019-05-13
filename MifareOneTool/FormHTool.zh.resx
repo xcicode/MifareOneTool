@@ -124,100 +124,132 @@
     <value>扇区</value>
   </data>
   <data name="comboBox1.Items" xml:space="preserve">
-    <value>KeyAB读写及增减值</value>
+    <value>KeyAB читать, писать, увеличивать и уменьшать</value>
+    <comment>Previous text: KeyAB读写及增减值</comment>
   </data>
   <data name="comboBox1.Items1" xml:space="preserve">
-    <value>[只读]KeyAB读及减值/不可写及增值</value>
+    <value>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</value>
+    <comment>Previous text: [只读]KeyAB读及减值/不可写及增值</comment>
   </data>
   <data name="comboBox1.Items2" xml:space="preserve">
-    <value>[只读]KeyAB读/不可写及增减值</value>
+    <value>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyAB读/不可写及增减值</comment>
   </data>
   <data name="comboBox1.Items3" xml:space="preserve">
-    <value>KeyB读写/不可增减值</value>
+    <value>KeyB чтение / запись / не сложение и вычитание</value>
+    <comment>Previous text: KeyB读写/不可增减值</comment>
   </data>
   <data name="comboBox1.Items4" xml:space="preserve">
-    <value>KeyAB读/KeyB写/不可增减值</value>
+    <value>KeyAB чтение / KeyB запись / без увеличения или уменьшения</value>
+    <comment>Previous text: KeyAB读/KeyB写/不可增减值</comment>
   </data>
   <data name="comboBox1.Items5" xml:space="preserve">
-    <value>[只读]KeyB读/不可写及增减值</value>
+    <value>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyB读/不可写及增减值</comment>
   </data>
   <data name="comboBox1.Items6" xml:space="preserve">
-    <value>KeyAB读及减值/KeyB写及增值</value>
+    <value>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</value>
+    <comment>Previous text: KeyAB读及减值/KeyB写及增值</comment>
   </data>
   <data name="comboBox1.Items7" xml:space="preserve">
-    <value>[只读]锁死该扇区</value>
+    <value>[только для чтения] заблокировать сектор</value>
+    <comment>Previous text: [只读]锁死该扇区</comment>
   </data>
   <data name="comboBox2.Items" xml:space="preserve">
-    <value>KeyAB读写及增减值</value>
+    <value>KeyAB читать, писать, увеличивать и уменьшать</value>
+    <comment>Previous text: KeyAB读写及增减值</comment>
   </data>
   <data name="comboBox2.Items1" xml:space="preserve">
-    <value>[只读]KeyAB读及减值/不可写及增值</value>
+    <value>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</value>
+    <comment>Previous text: [只读]KeyAB读及减值/不可写及增值</comment>
   </data>
   <data name="comboBox2.Items2" xml:space="preserve">
-    <value>[只读]KeyAB读/不可写及增减值</value>
+    <value>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyAB读/不可写及增减值</comment>
   </data>
   <data name="comboBox2.Items3" xml:space="preserve">
-    <value>KeyB读写/不可增减值</value>
+    <value>KeyB чтение / запись / не сложение и вычитание</value>
+    <comment>Previous text: KeyB读写/不可增减值</comment>
   </data>
   <data name="comboBox2.Items4" xml:space="preserve">
-    <value>KeyAB读/KeyB写/不可增减值</value>
+    <value>KeyAB чтение / KeyB запись / без увеличения или уменьшения</value>
+    <comment>Previous text: KeyAB读/KeyB写/不可增减值</comment>
   </data>
   <data name="comboBox2.Items5" xml:space="preserve">
-    <value>[只读]KeyB读/不可写及增减值</value>
+    <value>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyB读/不可写及增减值</comment>
   </data>
   <data name="comboBox2.Items6" xml:space="preserve">
-    <value>KeyAB读及减值/KeyB写及增值</value>
+    <value>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</value>
+    <comment>Previous text: KeyAB读及减值/KeyB写及增值</comment>
   </data>
   <data name="comboBox2.Items7" xml:space="preserve">
-    <value>[只读]锁死该扇区</value>
+    <value>[только для чтения] заблокировать сектор</value>
+    <comment>Previous text: [只读]锁死该扇区</comment>
   </data>
   <data name="comboBox3.Items" xml:space="preserve">
-    <value>KeyAB读写及增减值</value>
+    <value>KeyAB читать, писать, увеличивать и уменьшать</value>
+    <comment>Previous text: KeyAB读写及增减值</comment>
   </data>
   <data name="comboBox3.Items1" xml:space="preserve">
-    <value>[只读]KeyAB读及减值/不可写及增值</value>
+    <value>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</value>
+    <comment>Previous text: [只读]KeyAB读及减值/不可写及增值</comment>
   </data>
   <data name="comboBox3.Items2" xml:space="preserve">
-    <value>[只读]KeyAB读/不可写及增减值</value>
+    <value>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyAB读/不可写及增减值</comment>
   </data>
   <data name="comboBox3.Items3" xml:space="preserve">
-    <value>KeyB读写/不可增减值</value>
+    <value>KeyB чтение / запись / не сложение и вычитание</value>
+    <comment>Previous text: KeyB读写/不可增减值</comment>
   </data>
   <data name="comboBox3.Items4" xml:space="preserve">
-    <value>KeyAB读/KeyB写/不可增减值</value>
+    <value>KeyAB чтение / KeyB запись / без увеличения или уменьшения</value>
+    <comment>Previous text: KeyAB读/KeyB写/不可增减值</comment>
   </data>
   <data name="comboBox3.Items5" xml:space="preserve">
-    <value>[只读]KeyB读/不可写及增减值</value>
+    <value>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyB读/不可写及增减值</comment>
   </data>
   <data name="comboBox3.Items6" xml:space="preserve">
-    <value>KeyAB读及减值/KeyB写及增值</value>
+    <value>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</value>
+    <comment>Previous text: KeyAB读及减值/KeyB写及增值</comment>
   </data>
   <data name="comboBox3.Items7" xml:space="preserve">
-    <value>[只读]锁死该扇区</value>
+    <value>[только для чтения] заблокировать сектор</value>
+    <comment>Previous text: [只读]锁死该扇区</comment>
   </data>
   <data name="comboBox4.Items" xml:space="preserve">
-    <value>[不可逆]KeyA:A写/AC:A只读/KeyB:A读写</value>
+    <value>[Необратимый] KeyA: запись / AC: только чтение / KeyB: чтение и запись</value>
+    <comment>Previous text: [不可逆]KeyA:A写/AC:A只读/KeyB:A读写</comment>
   </data>
   <data name="comboBox4.Items1" xml:space="preserve">
-    <value>KeyA:A写/AC:A读写/KeyB:A读写</value>
+    <value>KeyA: запись / AC: чтение / запись / KeyB: чтение и запись</value>
+    <comment>Previous text: KeyA:A写/AC:A读写/KeyB:A读写</comment>
   </data>
   <data name="comboBox4.Items2" xml:space="preserve">
-    <value>[不可逆]KeyA:不能读写/AC:A只读/KeyB:A读</value>
+    <value>[Необратимый] KeyA: невозможно чтение / запись / AC: только для чтения / KeyB: чтение</value>
+    <comment>Previous text: [不可逆]KeyA:不能读写/AC:A只读/KeyB:A读</comment>
   </data>
   <data name="comboBox4.Items3" xml:space="preserve">
-    <value>KeyA:B写/AC:A只读B读写/KeyB:B写</value>
+    <value>KeyA: B запись / AC: A только для чтения B чтение / запись / KeyB: B запись</value>
+    <comment>Previous text: KeyA:B写/AC:A只读B读写/KeyB:B写</comment>
   </data>
   <data name="comboBox4.Items4" xml:space="preserve">
-    <value>[不可逆]KeyA:B写/AC:AB只读/KeyB:B写</value>
+    <value>[необратимый] KeyA: запись B / AC: только чтение AB / KeyB: запись B</value>
+    <comment>Previous text: [不可逆]KeyA:B写/AC:AB只读/KeyB:B写</comment>
   </data>
   <data name="comboBox4.Items5" xml:space="preserve">
-    <value>KeyA:不能读写/AC:A只读B读写/KeyB:不能读写</value>
+    <value>KeyA: невозможно чтение / запись / AC: A только для чтения B чтение / запись / KeyB: невозможно чтение или запись</value>
+    <comment>Previous text: KeyA:不能读写/AC:A只读B读写/KeyB:不能读写</comment>
   </data>
   <data name="comboBox4.Items6" xml:space="preserve">
-    <value>[不可逆]KeyA:不能读写/AC:AB只读/KeyB:不能读写</value>
+    <value>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись</value>
+    <comment>Previous text: [不可逆]KeyA:不能读写/AC:AB只读/KeyB:不能读写</comment>
   </data>
   <data name="comboBox4.Items7" xml:space="preserve">
-    <value>[不可逆]KeyA:不能读写/AC:AB只读/KeyB:不能读写(重复了?)</value>
+    <value>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись (повторяется?)</value>
+    <comment>Previous text: [不可逆]KeyA:不能读写/AC:AB只读/KeyB:不能读写(重复了?)</comment>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>S50HTool-beta</value>
@@ -265,15 +297,23 @@
     <value>menuStrip1</value>
   </data>
   <data name="richTextBox1.Lines[0]" xml:space="preserve">
-    <value>欢迎使用M1T的集成编辑器S50HTool！</value>
+    <value>Добро пожаловать в интегрированный редактор дампа!</value>
+    <comment>Previous text: 欢迎使用M1T的集成编辑器S50HTool！</comment>
   </data>
   <data name="richTextBox1.Lines[1]" xml:space="preserve">
-    <value>打开文件请点左上角文件-打开或Ctrl+O</value>
+    <value>Чтобы открыть файл, пожалуйста, нажмите на Файл в верхнем левом углу - Открыть или Ctrl + O</value>
+    <comment>Previous text: 打开文件请点左上角文件-打开或Ctrl+O</comment>
+  </data>
+  <data name="richTextBox1.Lines[2]" xml:space="preserve">
+    <value>Вы можете обновить данные вашей карты.</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>欢迎使用M1T的集成编辑器S50HTool！
 打开文件请点左上角文件-打开或Ctrl+O
 </value>
+    <comment>Previous text: 欢迎使用M1T的集成编辑器S50HTool！
+打开文件请点左上角文件-打开或Ctrl+O
+</comment>
   </data>
   <data name="保存ToolStripMenuItem.Text" xml:space="preserve">
     <value>保存</value>

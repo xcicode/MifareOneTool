@@ -1589,5 +1589,36 @@ namespace MifareOneTool
         {
 
         }
+
+        private void ShowUID_Click(object sender, EventArgs e)
+        {
+            Process cmd = new Process();
+            cmd.StartInfo = new ProcessStartInfo("nfc-bin/nfcUID.exe","-device=1");
+            cmd.StartInfo.RedirectStandardOutput = true;
+            cmd.StartInfo.RedirectStandardInput = true;
+            cmd.StartInfo.UseShellExecute = false;
+            cmd.StartInfo.CreateNoWindow = true;
+            cmd.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            cmd.OutputDataReceived += new DataReceivedEventHandler(SortOutputHandler);
+            cmd.Start();
+            cmd.BeginOutputReadLine();
+        }
+
+        void SortOutputHandler(object sender, DataReceivedEventArgs e)
+        {
+            Trace.WriteLine(e.Data);
+            this.BeginInvoke(new MethodInvoker(() =>
+            {
+                richTextBox1.AppendText(e.Data + Environment.NewLine);
+                richTextBox1.ScrollToCaret();
+            }));
+        }
+
+        private void Form1_Closed(object sender, System.EventArgs e)
+        {
+            this.Dispose();
+            Application.Exit();
+        }
     }
+
 }
