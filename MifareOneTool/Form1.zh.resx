@@ -120,6 +120,9 @@
   <data name="buttoEScanCard.Text" xml:space="preserve">
     <value>扫描卡片</value>
   </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button1</value>
+  </data>
   <data name="button4.Text" xml:space="preserve">
     <value>锁UFUID卡</value>
   </data>
@@ -205,7 +208,8 @@
     <value>写(UF)UID卡</value>
   </data>
   <data name="buttonHardNested.Text" xml:space="preserve">
-    <value>HardNested</value>
+    <value>Bitsliced Cropto-1</value>
+    <comment>Previous text: HardNested</comment>
   </data>
   <data name="buttonHexTool.Text" xml:space="preserve">
     <value>Hex编辑器</value>
@@ -317,9 +321,6 @@
   </data>
   <data name="checkBoxMultiDev.Text" xml:space="preserve">
     <value>多实例运行模式 会禁用多开检测 请自行指定设备</value>
-    <comment>Previous text: 多实例运行模式
-会禁用多开检测
-请自行指定设备</comment>
   </data>
   <data name="checkBoxNewScan.Text" xml:space="preserve">
     <value>减少找设备延迟</value>
@@ -329,9 +330,11 @@
   </data>
   <data name="comboBox1.Items" xml:space="preserve">
     <value>标准</value>
+    <comment>Previous text: Китайский</comment>
   </data>
   <data name="comboBox1.Items1" xml:space="preserve">
     <value>俄语</value>
+    <comment>Previous text: Русский</comment>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>MifareOne Tool</value>
@@ -420,10 +423,16 @@
   </data>
   <data name="richTextBox1.Lines[0]" xml:space="preserve">
     <value>Hello,cardman!</value>
-    <comment>Previous text: ппппппппппппппппппп</comment>
+    <comment>Previous text: Привет!</comment>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Hello,cardman!</value>
   </data>
   <data name="runTimeLabel.Text" xml:space="preserve">
     <value>计时器</value>
+  </data>
+  <data name="ShowUID.Text" xml:space="preserve">
+    <value>显示UID</value>
   </data>
   <data name="statusLabel.Text" xml:space="preserve">
     <value>就绪</value>
@@ -439,7 +448,6 @@
   </data>
   <data name="tabPage2.ImageKey" xml:space="preserve">
     <value>sharp_file_copy_black_18pt_1x.png</value>
-    <comment>Previous text: round_create_black_18pt_1x.png</comment>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>复制卡模式</value>

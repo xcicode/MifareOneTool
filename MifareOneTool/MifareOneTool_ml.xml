@@ -35,7 +35,6 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>11</StringID>
-    <Comment>Previous text: ппппппппппппппппппп</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>12</StringID>
@@ -258,9 +257,6 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>85</StringID>
-    <Comment>Previous text: 多实例运行模式
-会禁用多开检测
-请自行指定设备</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>86</StringID>
@@ -345,6 +341,7 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>113</StringID>
+    <Comment>Previous text: 初始化HardNested解密</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>114</StringID>
@@ -417,6 +414,12 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>137</StringID>
+    <Comment>Previous text: 每个人使用CUID卡的时候，总会因不了解或是不经意犯下一些小错误。
+比如使用编辑器修改UID却没有改BCC，SAK=28的卡片解密后的文件直接写入，又或是从S70卡片导入数据写入1K卡却没有更正ATQA。
+MFF08工具给了你一次修复这些损坏卡片的机会。
+------------------------------------------------------------------------
+
+</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>138</StringID>
@@ -570,9 +573,11 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>188</StringID>
+    <Comment>Previous text: 欢迎使用M1T的集成编辑器S50HTool！</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>189</StringID>
+    <Comment>Previous text: 打开文件请点左上角文件-打开或Ctrl+O</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>190</StringID>
@@ -594,9 +599,17 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>196</StringID>
+    <Comment>Previous text: 欢迎使用M1T内置的差异工具！
+说明：
+点击上方的AB两个按键分别选择MFD文件。
+然后点击“比较”即可看到结果。
+</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>197</StringID>
+    <Comment>Previous text: 欢迎使用M1T的集成编辑器S50HTool！
+打开文件请点左上角文件-打开或Ctrl+O
+</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>198</StringID>
@@ -1029,7 +1042,6 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>341</StringID>
-    <Comment>Previous text: round_create_black_18pt_1x.png</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>342</StringID>
@@ -1042,6 +1054,145 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>345</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>346</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>347</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>348</StringID>
+    <Comment>Previous text: KeyAB读写及增减值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>349</StringID>
+    <Comment>Previous text: [只读]KeyAB读及减值/不可写及增值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>350</StringID>
+    <Comment>Previous text: [只读]KeyAB读/不可写及增减值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>351</StringID>
+    <Comment>Previous text: KeyB读写/不可增减值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>352</StringID>
+    <Comment>Previous text: KeyAB读/KeyB写/不可增减值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>353</StringID>
+    <Comment>Previous text: [只读]KeyB读/不可写及增减值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>354</StringID>
+    <Comment>Previous text: KeyAB读及减值/KeyB写及增值</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>355</StringID>
+    <Comment>Previous text: [只读]锁死该扇区</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>356</StringID>
+    <Comment>Previous text: [不可逆]KeyA:A写/AC:A只读/KeyB:A读写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>357</StringID>
+    <Comment>Previous text: KeyA:A写/AC:A读写/KeyB:A读写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>358</StringID>
+    <Comment>Previous text: [不可逆]KeyA:不能读写/AC:A只读/KeyB:A读</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>359</StringID>
+    <Comment>Previous text: KeyA:B写/AC:A只读B读写/KeyB:B写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>360</StringID>
+    <Comment>Previous text: [不可逆]KeyA:B写/AC:AB只读/KeyB:B写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>361</StringID>
+    <Comment>Previous text: KeyA:不能读写/AC:A只读B读写/KeyB:不能读写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>362</StringID>
+    <Comment>Previous text: [不可逆]KeyA:不能读写/AC:AB只读/KeyB:不能读写</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>363</StringID>
+    <Comment>Previous text: [不可逆]KeyA:不能读写/AC:AB只读/KeyB:不能读写(重复了?)</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>364</StringID>
+    <Comment>Previous text: Китайский</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>365</StringID>
+    <Comment>Previous text: Русский</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>366</StringID>
+    <Comment>Previous text: Привет!</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>367</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>368</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>369</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>370</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>371</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>372</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>373</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>374</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>375</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>376</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>377</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>378</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>379</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>380</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>381</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>382</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>383</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>384</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>385</StringID>
   </GeneralIds>
   <Languages>
     <LanguageID>30724</LanguageID>
@@ -1756,7 +1907,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>113</StringID>
     <LanguageID>30724</LanguageID>
-    <LanguageText>初始化HardNested解密</LanguageText>
+    <LanguageText>Bitsliced Crypto-1 brute-forcer</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -2237,13 +2388,13 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>188</StringID>
     <LanguageID>30724</LanguageID>
-    <LanguageText>欢迎使用M1T的集成编辑器S50HTool！</LanguageText>
+    <LanguageText>Добро пожаловать в интегрированный редактор дампа!</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>189</StringID>
     <LanguageID>30724</LanguageID>
-    <LanguageText>打开文件请点左上角文件-打开或Ctrl+O</LanguageText>
+    <LanguageText>Чтобы открыть файл, пожалуйста, нажмите на Файл в верхнем левом углу - Открыть или Ctrl + O</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -2477,7 +2628,8 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>226</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Версия программного обеспечения - </LanguageText>
+    <LanguageText>
+Версия программы - </LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -2640,7 +2792,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>157</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Cектор</LanguageText>
+    <LanguageText>Cектор </LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -2828,8 +2980,8 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>282</StringID>
     <LanguageID>30724</LanguageID>
-    <LanguageText>MifareOne Tool - 已取消</LanguageText>
-    <Status>1</Status>
+    <LanguageText>MifareOne Tool - отменено</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>283</StringID>
@@ -3159,20 +3311,20 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>199</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText> Пустой сектор</LanguageText>
-    <Status>5</Status>
+    <LanguageText> - пустой сектор</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>200</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText> Есть данные</LanguageText>
-    <Status>5</Status>
+    <LanguageText>  - есть данные</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>201</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText> Есть ошибка</LanguageText>
-    <Status>5</Status>
+    <LanguageText> - есть ошибка</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>202</StringID>
@@ -3183,7 +3335,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>209</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>MifareOne Tool - Запуск</LanguageText>
+    <LanguageText>MifareOne Tool - выполнение операции</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3195,8 +3347,8 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>207</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Когда задача выполняется, она не может быть выполнена.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Операция не может быть выполнена, так как сейчас выполняется другая операция.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>208</StringID>
@@ -3213,13 +3365,13 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>211</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>MifareOne Tool - Операция завершена</LanguageText>
+    <LanguageText>MifareOne Tool - операция завершена</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>212</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>## Был сохранен автоматически -</LanguageText>
+    <LanguageText>## Файл был сохранен автоматически -</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3237,19 +3389,19 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>215</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>DUMP файл | * .dump | MFD файл | * .mfd</LanguageText>
+    <LanguageText>DUMP файл | *.dump | MFD файл | *.mfd</LanguageText>
     <Status>5</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>216</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>## Сохранено-</LanguageText>
+    <LanguageText>## Сохранено -</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>217</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>## Несохраненный ##</LanguageText>
+    <LanguageText>## Не сохранено ##</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3285,19 +3437,19 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>223</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Пожалуйста, проверьте правильность подключения/драйвер правильно установлен/питание устройства включено (для моделей с выключателем питания).</LanguageText>
+    <LanguageText>Пожалуйста, проверьте правильность подключения/правильно ли установлен драйвер/питание устройства включено (для моделей с выключателем питания).</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>224</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Запуск испытательного оборудования...</LanguageText>
+    <LanguageText>Поиск считвателя...</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>225</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>## Завершение работы ##</LanguageText>
+    <LanguageText>##Операция завершена##</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3309,7 +3461,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>228</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начать сканирование карт...</LanguageText>
+    <LanguageText>Сканирование карт...</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3321,13 +3473,13 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>230</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Найдено! K =</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Файл ключа - </LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>233</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начать чтение карты...</LanguageText>
+    <LanguageText>Чтение карты...</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3339,19 +3491,19 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>235</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>MFD файл | * .mfd | DUMP файл | * .dump</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Файл MFD|*.mfd|Файл DUMP|*.dump</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>236</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Выберите файл MFD, содержащий ключ целевой карты (обычно это файл MFD карты, которая была взломана)</LanguageText>
+    <LanguageText>Выберите файл MFD, содержащий ключ  карты (обычно это файл MFD карты, которая была взломана)</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>20</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Выбрать key.mfd</LanguageText>
+    <LanguageText>Выбрать файл ключей</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3363,7 +3515,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>238</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>MFD файл | * .mfd; *. Dump</LanguageText>
+    <LanguageText>MFD файл | *.mfd; *. Dump</LanguageText>
     <Status>5</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3375,19 +3527,19 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>240</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Существует ошибка в файле, который будет записан. Откройте вид с помощью инструмента Hex в расширенном режиме.</LanguageText>
+    <LanguageText>Существует ошибка в файле, который будет записан. Откройте его с помощью редактора дампа в расширенном режиме.</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>243</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начните запись на карту M1...</LanguageText>
+    <LanguageText>Запись на карту...</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>251</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начать чтение карты UID...</LanguageText>
+    <LanguageText>Чтение UID...</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3405,19 +3557,19 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>24</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Читать UID</LanguageText>
+    <LanguageText>Считать UID в дамп</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>25</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Прочитать UID карты</LanguageText>
+    <LanguageText>UID карты будет записан в файл дампа</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>22</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Запись UID</LanguageText>
+    <LanguageText>Записать UID из дампа</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3513,7 +3665,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>71</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Чтение UID</LanguageText>
+    <LanguageText>Считать UID в дамп</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3562,7 +3714,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>44</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Блокировка Ufuid</LanguageText>
+    <LanguageText>Блокировка UFUID</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3624,7 +3776,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>30</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Полный UID</LanguageText>
+    <LanguageText>Стереть UID</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3636,7 +3788,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>28</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Номер записи UID</LanguageText>
+    <LanguageText>Изменить UID</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3660,7 +3812,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>97</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>CUID запись патча пустой карты</LanguageText>
+    <LanguageText>CUID записывает пустой патч карты</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3703,7 +3855,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>78</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Взломать</LanguageText>
+    <LanguageText>Инструменты для взлома</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3751,7 +3903,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>96</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Операция с картой</LanguageText>
+    <LanguageText>Операции с картой</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3775,7 +3927,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>81</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Карточка читается 
+    <LanguageText>Карта читается 
 как и обычная карта</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
@@ -3879,7 +4031,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <StringID>11</StringID>
     <LanguageID>25</LanguageID>
     <LanguageText>Привет!</LanguageText>
-    <Status>7</Status>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>12</StringID>
@@ -3890,8 +4042,8 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>23</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Напишите UID-карту.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>UID будет записан из файла дампа карты, сделанного ранее</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>94</StringID>
@@ -3914,8 +4066,9 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>45</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Заблокированная карта UFUID 0 блокирует данные (тестирование)</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Блокировка 0-го блока данных UFUID карты (тестируется）
+</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>53</StringID>
@@ -3932,8 +4085,8 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>26</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Чтение MFOC</LanguageText>
-    <Status>5</Status>
+    <LanguageText>MFOC</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>14</StringID>
@@ -3962,21 +4115,20 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
   <GeneralTexts>
     <StringID>31</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Очистите карту и повторно инициализируйте ее.
-Его можно использовать для оказания первой помощи в ситуациях, когда повреждение ACbit / KEY полностью изменено.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Очистите карту и повторно инициализируйте ее. Это можно использовать для оказания первой помощи в ситуациях, когда поврежден ACbit/ключи полностью изменены.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>33</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Сброс блока UID карты 0, UID случайный, а номер производителя - Fudan.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Сброс 0-го блока карты, номер UID - случайный, а данные производителя - Fudan.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>29</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Запишите номер верхней карты на карту UID, и производитель установит его на Fudan.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>На карту записывается номер Sticky Card, производитель будет установлен на Fudan.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>110</StringID>
@@ -4003,7 +4155,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
 Описание:
 1. Нажмите  А или В, чтобы выбрать файл MFD.
 2. Нажмите «Сравнить», чтобы увидеть результаты.</LanguageText>
-    <Status>2</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>106</StringID>
@@ -4033,7 +4185,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <StringID>113</StringID>
     <LanguageID>25</LanguageID>
     <LanguageText>Расшифровка HardNested</LanguageText>
-    <Status>2</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>114</StringID>
@@ -4283,7 +4435,7 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <LanguageText>Добро пожаловать в интегрированный редактор дампа!
 Чтобы открыть файл, пожалуйста, нажмите на Файл в верхнем левом углу - Открыть или Ctrl + O
 Вы можете обновить данные вашей карты.</LanguageText>
-    <Status>2</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>144</StringID>
@@ -4373,13 +4525,13 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <StringID>188</StringID>
     <LanguageID>25</LanguageID>
     <LanguageText>Добро пожаловать в интегрированный редактор M1T S50HTool!</LanguageText>
-    <Status>5</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>189</StringID>
     <LanguageID>25</LanguageID>
     <LanguageText>Откройте файл, пожалуйста, нажмите на файл в верхнем левом углу - открыть или Ctrl + O</LanguageText>
-    <Status>5</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>127</StringID>
@@ -4450,7 +4602,7 @@ CUID карта</LanguageText>
 -------------------------------------------------- ----------------------
 
 </LanguageText>
-    <Status>6</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>138</StringID>
@@ -4509,14 +4661,14 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>203</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Размер загруженного файла карты S50 ненормальный.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Размер загруженного файла карты S50 не поддерживается.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>205</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Файл не содержит 64 блоков данных и может быть неполным или несовместимым.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Файл не содержит 64 блока данных и может быть неполным или несовместимым.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>206</StringID>
@@ -4527,63 +4679,63 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>231</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Использование Smart KeyABN ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Использование файла ключей...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>232</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Использовать KeyA (да) или KeyB (нет) или нет (для новых белых карточек) (отменить)?</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Использовать Ключ A (да) или Ключ B (нет) или нет (отменить)  для новых белых карточек?</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>242</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Keya / B / N</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Ключ A/B для новых карт</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>244</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Пожалуйста, введите известный ключ, разделенный запятой.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Пожалуйста, введите известные ключи, разделяя их запятой.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>245</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Пожалуйста, введите известный ключ</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Пожалуйста, введите известные ключи</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>246</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начните выполнять расшифровку MFOC ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Выполняется расшифровка MFOC ...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>247</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начните выполнять сброс номера карты UID ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Сброс номера UID ...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>248</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Это удалит все данные в UID-карте! ! !
-Не может быть восстановлено после опустошения! Пожалуйста, подтвердите, если вы хотите продолжить?</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Это удалит все данные в UID карты!
+Восстановление после форматирования невозможно! Пожалуйста, подтвердите, если вы хотите продолжить?</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>249</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Предупреждение об опасной работе</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Предупреждение об опасной операции</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>250</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начните выполнять UID карты в полноэкранном режиме ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Форматирование UID...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>252</StringID>
@@ -4600,8 +4752,8 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>254</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>информация</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Информация</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>255</StringID>
@@ -4624,26 +4776,27 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>258</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начните выполнять номер карты установки карты UID ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Начало записи номера UID...
+</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>259</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начните выполнять полное шифрование карты взрыва ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Начало выполнения полной расшифровки карты ...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>260</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>CUID патч для записи пустой карты включен</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Включить патч для записи на пустую карту CUID</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>261</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начать выполнение записи CUID / FUID карты ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Запись CUID/FUID карты ...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>262</StringID>
@@ -4660,15 +4813,15 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>264</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Это заблокирует карту UFUID! ! !
-Невозможно восстановить после блокировки! Невозможно изменить 0 блоков снова! Пожалуйста, подтвердите, если вы хотите продолжить?</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Это заблокирует карту UFUID!
+Восстановление после блокировки будет невозможно! Изменить 0-ой блок будет невозможно! Пожалуйста, подтвердите, если вы хотите продолжить?</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>265</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начать выполнение блокировки карты UFUID ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Блокировка карты UFUID ...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>266</StringID>
@@ -4691,21 +4844,21 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>269</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начните выполнять отформатированную карту M1 ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Форматирование карты...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>270</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Одновременное открытие опоры ACR122U может привести к снижению скорости работы.
-Пожалуйста, подтвердите, если вы хотите продолжить?</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Одновременное включение поддержки ACR122U может привести к снижению скорости работы.
+Подтвердите, хотите ли вы продолжить?</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>271</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Быстрое сообщение</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Совет</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>272</StringID>
@@ -4716,14 +4869,14 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>273</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Открытие ACR122U поддержки ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Включена поддержка ACR122U...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>274</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Он открыт.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Открыт.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>275</StringID>
@@ -4752,38 +4905,38 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>279</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начните выполнять проверку карты шифрованием ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Определение зашифрованных секторов...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>280</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Файл ключевого словаря | * .dic</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Файл словаря ключей|*.dic</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>281</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Пожалуйста, выберите ключевой файл словаря, который вы хотите открыть.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Пожалуйста, выберите файл словаря ключей, который вы хотите открыть.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>282</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Инструмент MifareOne - Отменено</LanguageText>
-    <Status>5</Status>
+    <LanguageText>MifareOne - отменено</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>283</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начать выполнение словарного режима MFOC для расшифровки ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Начало расшифровки  MFOC в режиме словаря...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>284</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Запустите карточку улучшения расшифровки HardNested ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Запуск расшифровки HardNested...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>285</StringID>
@@ -4794,8 +4947,8 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>286</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Начните выполнять HardNested для сбора данных ...</LanguageText>
-    <Status>5</Status>
+    <LanguageText>HardNested - сбор данных ...</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>287</StringID>
@@ -4806,39 +4959,39 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>288</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Пожалуйста, выберите файл MFD, который вы хотите открыть (сравните A)</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Пожалуйста, выберите файл MFD, который вы хотите открыть (сравнить A)</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>289</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Пожалуйста, выберите файл MFD, который вы хотите открыть (сравните B)</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Пожалуйста, выберите файл MFD, который вы хотите открыть (сравнит B)</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>290</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Один или два файла AB недействительны.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Один или два файла A/B недействительны.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>291</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>сектор</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Сектор </LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>292</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>найденный</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Найдено </LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>293</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText> Разные блоки
+    <LanguageText>разных блоков
 </LanguageText>
-    <Status>5</Status>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>294</StringID>
@@ -4849,35 +5002,32 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>295</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Показать сектор</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Показать сектор </LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>296</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Текущий выбранный сектор:</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Текущий выбранный сектор: </LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>297</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Значение проверки UID сектора неверно и было автоматически исправлено для вас.
-</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Ошибка проверки UID сектора была автоматически исправлена для вас.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>298</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Бит контроля доступа к сектору недействителен, запись повредит карту и будет сброшена.
-</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Бит управления доступом сектора является недопустимым, запись повредит карту и была отменена.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>299</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Бит контроля доступа к сектору поврежден, и запись повредит карту и будет сброшена.
-</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Бит управления доступом сектора является недопустимым, запись повредит карту и была отменена.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>300</StringID>
@@ -4906,73 +5056,71 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>304</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>,</LanguageText>
-    <Status>5</Status>
+    <LanguageText>.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>305</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Данные текущего сектора все еще находятся в ошибке и не могут быть изменены.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Текущие данные сектора по-прежнему имеют ошибки и не могут быть изменены.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>306</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Обновленный сектор</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Обновлен сектор </LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>307</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>## Ошибка в значении файла ###</LanguageText>
-    <Status>5</Status>
+    <LanguageText>## Ошибказначения в файле ###</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>308</StringID>
     <LanguageID>25</LanguageID>
     <LanguageText>С файлом все нормально.</LanguageText>
-    <Status>5</Status>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>309</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Файл имеет следующую ошибку:
+    <LanguageText>Файл имеет следующую ошибку: 
 </LanguageText>
-    <Status>5</Status>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>310</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Неверное значение проверки UID сектора. Нажмите, чтобы открыть сектор 0 для автоматического исправления.
-</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Ошибка проверки UID сектора, нажмите, чтобы открыть сектор 0 для автоматического исправления.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>311</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Недопустимый бит контроля доступа к сектору. Запись повредит карту. Пожалуйста, сбросьте ее.
+    <LanguageText>Недопустимый бит контроля доступа к сектору. Запись повредит карту. Пожалуйста, отмените ее.
 </LanguageText>
-    <Status>5</Status>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>312</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Бит контроля доступа к сектору поврежден, и запись повредит карту. Пожалуйста, сбросьте ее.
+    <LanguageText>Бит контроля доступа к сектору поврежден, и запись повредит карту. Пожалуйста, отмените ее.
 </LanguageText>
-    <Status>5</Status>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>313</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Сектор все хорошо.
-</LanguageText>
-    <Status>5</Status>
+    <LanguageText>В этом секторе все в порядке.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>314</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Пожалуйста, введите номер карты UID для изменения, всего 8 шестнадцатеричных чисел, таких как E44A3BF1.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Пожалуйста, введите номер UID для изменения, всего 8 шестнадцатеричных чисел, например E44A3BF1.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>316</StringID>
@@ -4983,14 +5131,14 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>317</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>, рассчитать BCC =</LanguageText>
-    <Status>5</Status>
+    <LanguageText>, рассчитан BCC = </LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>318</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Карта была сброшена и создана.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Сброшена и создана новая карта.</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>319</StringID>
@@ -5002,14 +5150,14 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>320</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Пожалуйста, выберите файл MCT.txt, чтобы сохранить местоположение и имя файла.</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Пожалуйста, выберите для MCT.txt расположение и имя файла</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>321</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Txt файл | * .txt</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Txt файл|*.txt</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>322</StringID>
@@ -5020,26 +5168,26 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>323</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Пожалуйста, выберите файл словаря ключа, сохраните местоположение и имя файла</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Выберите расположение и имя файла словаря ключей</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>324</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Файл словаря | * .dic</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Файл словаря|*.dic</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>325</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Файл словаря экспортированного ключа</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Экспортированный файлсловаря ключей</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>326</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Формат MCT | *. *</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Формат MCT|*.*</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>327</StringID>
@@ -5050,8 +5198,8 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>328</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText># сектор</LanguageText>
-    <Status>5</Status>
+    <LanguageText># сектор </LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>329</StringID>
@@ -5076,21 +5224,21 @@ CUID карта</LanguageText>
   <GeneralTexts>
     <StringID>332</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>неизвестный</LanguageText>
-    <Status>5</Status>
+    <LanguageText>неизвестно</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>333</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Вы уже запустили MifareOne Tool, и открытие нескольких программ может вызвать конфликты и непредсказуемые ошибки.
+    <LanguageText>Вы уже запустили MifareOne Tool. Открытие нескольких программ может вызвать конфликты и непредсказуемые ошибки.
 Вы уверены, что хотите продолжить?</LanguageText>
-    <Status>5</Status>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>334</StringID>
     <LanguageID>25</LanguageID>
-    <LanguageText>Вы пытаетесь запустить несколько раз</LanguageText>
-    <Status>5</Status>
+    <LanguageText>Повторный запуск</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>104</StringID>
@@ -5213,6 +5361,390 @@ CUID карта</LanguageText>
 “Защита от записи данных” в настройках программы.</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
+  <GeneralTexts>
+    <StringID>346</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>显示UID</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>347</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>Вы можете обновить данные вашей карты.</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>348</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyAB читать, писать, увеличивать и уменьшать</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>348</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyAB читать, писать, увеличивать и уменьшать</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>349</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>349</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>350</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>350</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>351</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyB чтение / запись / не сложение и вычитание</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>351</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyB чтение / запись / не сложение и вычитание</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>352</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyAB чтение / KeyB запись / без увеличения или уменьшения</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>352</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyAB чтение / KeyB запись / без увеличения или уменьшения</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>353</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>353</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>354</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>354</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>355</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[только для чтения] заблокировать сектор</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>355</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[только для чтения] заблокировать сектор</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>356</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[Необратимый] KeyA: запись / AC: только чтение / KeyB: чтение и запись</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>356</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[Необратимый] KeyA: запись / AC: только чтение / KeyB: чтение и запись</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>357</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyA: запись / AC: чтение / запись / KeyB: чтение и запись</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>357</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyA: запись / AC: чтение / запись / KeyB: чтение и запись</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>358</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: только для чтения / KeyB: чтение</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>358</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: только для чтения / KeyB: чтение</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>359</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyA: B запись / AC: A только для чтения B чтение / запись / KeyB: B запись</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>359</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyA: B запись / AC: A только для чтения B чтение / запись / KeyB: B запись</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>360</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[необратимый] KeyA: запись B / AC: только чтение AB / KeyB: запись B</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>360</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[необратимый] KeyA: запись B / AC: только чтение AB / KeyB: запись B</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>361</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>KeyA: невозможно чтение / запись / AC: A только для чтения B чтение / запись / KeyB: невозможно чтение или запись</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>361</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>KeyA: невозможно чтение / запись / AC: A только для чтения B чтение / запись / KeyB: невозможно чтение или запись</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>362</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>362</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>363</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись (повторяется?)</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>363</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись (повторяется?)</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>346</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Показать UID</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>364</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Китайский</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>364</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>标准</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>365</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Русский</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>365</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>俄语</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>366</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Привет!</LanguageText>
+    <Status>7</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>366</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>Hello,cardman!</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>367</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>libnfc.conf</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>368</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>allow_autoscan = </LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>369</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>true</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>370</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>false</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>371</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText xml:space="preserve">
+</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>372</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>allow_intrusive_scan = </LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>373</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>device.name = "NFC-Device"
+</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>374</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>device.connstring = "</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>375</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>.mfd</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>315</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>Ошибка ввода</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>376</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>376</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>___________________________________________</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>377</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>-- </LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>378</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>## </LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>379</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>：
+</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>379</StringID>
+    <LanguageID>25</LanguageID>
+    <LanguageText>： 
+</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>380</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>button1</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>381</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>Cropto1</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>382</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>label1</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>383</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>FFFFFFFFFFFF 8 A 16 A</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>384</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>После того, как вы нажмете 
+кнопку "Начать", 
+ожидайте около 1 минуты.</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>385</StringID>
+    <LanguageID>30724</LanguageID>
+    <LanguageText>Bitsliced Cropto-1</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
   <Properties>
     <Component>FormMFF08.resx</Component>
     <Name>logBox.Text</Name>
@@ -5288,14 +5820,15 @@ CUID карта</LanguageText>
   <Properties>
     <Component>Form1.cs</Component>
     <Name>richTextBox1.Text</Name>
-    <Selected>false</Selected>
+    <StringID>11</StringID>
+    <Selected>true</Selected>
     <ResourceName>richTextBox1.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <Properties>
     <Component>Form1.cs</Component>
     <Name>richTextBox1.Lines[0]</Name>
-    <StringID>11</StringID>
+    <StringID>366</StringID>
     <Selected>true</Selected>
     <ResourceName>richTextBox1.Lines[0]</ResourceName>
     <Hidden>false</Hidden>
@@ -5839,7 +6372,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>Form1.cs</Component>
     <Name>buttonHardNested.Text</Name>
-    <StringID>79</StringID>
+    <StringID>385</StringID>
     <Selected>true</Selected>
     <ResourceName>buttonHardNested.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -6862,14 +7395,6 @@ CUID карта</LanguageText>
   </Properties>
   <Properties>
     <Component>Form1.resx</Component>
-    <Name>statusLabel.Text</Name>
-    <StringID>101</StringID>
-    <Selected>true</Selected>
-    <ResourceName>statusLabel.Text</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Form1.resx</Component>
     <Name>groupBox7.Text</Name>
     <StringID>64</StringID>
     <Selected>true</Selected>
@@ -6975,7 +7500,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>Form1.resx</Component>
     <Name>buttonHardNested.Text</Name>
-    <StringID>79</StringID>
+    <StringID>385</StringID>
     <Selected>true</Selected>
     <ResourceName>buttonHardNested.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8239,7 +8764,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[0]</Name>
-    <StringID>160</StringID>
+    <StringID>356</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items</ResourceName>
     <Hidden>false</Hidden>
@@ -8247,7 +8772,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[1]</Name>
-    <StringID>161</StringID>
+    <StringID>357</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items1</ResourceName>
     <Hidden>false</Hidden>
@@ -8255,7 +8780,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[2]</Name>
-    <StringID>162</StringID>
+    <StringID>358</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items2</ResourceName>
     <Hidden>false</Hidden>
@@ -8263,7 +8788,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[3]</Name>
-    <StringID>163</StringID>
+    <StringID>359</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items3</ResourceName>
     <Hidden>false</Hidden>
@@ -8271,7 +8796,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[4]</Name>
-    <StringID>164</StringID>
+    <StringID>360</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items4</ResourceName>
     <Hidden>false</Hidden>
@@ -8279,7 +8804,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[5]</Name>
-    <StringID>165</StringID>
+    <StringID>361</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items5</ResourceName>
     <Hidden>false</Hidden>
@@ -8287,7 +8812,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[6]</Name>
-    <StringID>166</StringID>
+    <StringID>362</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items6</ResourceName>
     <Hidden>false</Hidden>
@@ -8295,7 +8820,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox4.Items[7]</Name>
-    <StringID>167</StringID>
+    <StringID>363</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox4.Items7</ResourceName>
     <Hidden>false</Hidden>
@@ -8303,7 +8828,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[0]</Name>
-    <StringID>168</StringID>
+    <StringID>348</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items</ResourceName>
     <Hidden>false</Hidden>
@@ -8311,7 +8836,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[1]</Name>
-    <StringID>169</StringID>
+    <StringID>349</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items1</ResourceName>
     <Hidden>false</Hidden>
@@ -8319,7 +8844,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[2]</Name>
-    <StringID>170</StringID>
+    <StringID>350</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items2</ResourceName>
     <Hidden>false</Hidden>
@@ -8327,7 +8852,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[3]</Name>
-    <StringID>171</StringID>
+    <StringID>351</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items3</ResourceName>
     <Hidden>false</Hidden>
@@ -8335,7 +8860,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[4]</Name>
-    <StringID>172</StringID>
+    <StringID>352</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items4</ResourceName>
     <Hidden>false</Hidden>
@@ -8343,7 +8868,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[5]</Name>
-    <StringID>173</StringID>
+    <StringID>353</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items5</ResourceName>
     <Hidden>false</Hidden>
@@ -8351,7 +8876,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[6]</Name>
-    <StringID>174</StringID>
+    <StringID>354</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items6</ResourceName>
     <Hidden>false</Hidden>
@@ -8359,7 +8884,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox3.Items[7]</Name>
-    <StringID>175</StringID>
+    <StringID>355</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items7</ResourceName>
     <Hidden>false</Hidden>
@@ -8367,7 +8892,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[0]</Name>
-    <StringID>168</StringID>
+    <StringID>348</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items</ResourceName>
     <Hidden>false</Hidden>
@@ -8375,7 +8900,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[1]</Name>
-    <StringID>169</StringID>
+    <StringID>349</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items1</ResourceName>
     <Hidden>false</Hidden>
@@ -8383,7 +8908,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[2]</Name>
-    <StringID>170</StringID>
+    <StringID>350</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items2</ResourceName>
     <Hidden>false</Hidden>
@@ -8391,7 +8916,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[3]</Name>
-    <StringID>171</StringID>
+    <StringID>351</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items3</ResourceName>
     <Hidden>false</Hidden>
@@ -8399,7 +8924,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[4]</Name>
-    <StringID>172</StringID>
+    <StringID>352</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items4</ResourceName>
     <Hidden>false</Hidden>
@@ -8407,7 +8932,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[5]</Name>
-    <StringID>173</StringID>
+    <StringID>353</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items5</ResourceName>
     <Hidden>false</Hidden>
@@ -8415,7 +8940,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[6]</Name>
-    <StringID>174</StringID>
+    <StringID>354</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items6</ResourceName>
     <Hidden>false</Hidden>
@@ -8423,7 +8948,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox2.Items[7]</Name>
-    <StringID>175</StringID>
+    <StringID>355</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox2.Items7</ResourceName>
     <Hidden>false</Hidden>
@@ -8431,7 +8956,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[0]</Name>
-    <StringID>168</StringID>
+    <StringID>348</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items</ResourceName>
     <Hidden>false</Hidden>
@@ -8439,7 +8964,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[1]</Name>
-    <StringID>169</StringID>
+    <StringID>349</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items1</ResourceName>
     <Hidden>false</Hidden>
@@ -8447,7 +8972,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[2]</Name>
-    <StringID>170</StringID>
+    <StringID>350</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items2</ResourceName>
     <Hidden>false</Hidden>
@@ -8455,7 +8980,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[3]</Name>
-    <StringID>171</StringID>
+    <StringID>351</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items3</ResourceName>
     <Hidden>false</Hidden>
@@ -8463,7 +8988,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[4]</Name>
-    <StringID>172</StringID>
+    <StringID>352</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items4</ResourceName>
     <Hidden>false</Hidden>
@@ -8471,7 +8996,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[5]</Name>
-    <StringID>173</StringID>
+    <StringID>353</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items5</ResourceName>
     <Hidden>false</Hidden>
@@ -8479,7 +9004,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[6]</Name>
-    <StringID>174</StringID>
+    <StringID>354</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items6</ResourceName>
     <Hidden>false</Hidden>
@@ -8487,7 +9012,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>FormHTool.cs</Component>
     <Name>comboBox1.Items[7]</Name>
-    <StringID>175</StringID>
+    <StringID>355</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items7</ResourceName>
     <Hidden>false</Hidden>
@@ -9422,14 +9947,6 @@ CUID карта</LanguageText>
   </Properties>
   <Properties>
     <Component>Resources.resx</Component>
-    <Name>nfc_bin_collect_exe</Name>
-    <StringID>285</StringID>
-    <Selected>true</Selected>
-    <ResourceName>nfc_bin_collect_exe</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Resources.resx</Component>
     <Name>开始执行HardNested收集数据</Name>
     <StringID>286</StringID>
     <Selected>true</Selected>
@@ -9903,7 +10420,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>Form1.cs</Component>
     <Name>comboBox1.Items[0]</Name>
-    <StringID>337</StringID>
+    <StringID>364</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items</ResourceName>
     <Hidden>false</Hidden>
@@ -9911,7 +10428,7 @@ CUID карта</LanguageText>
   <Properties>
     <Component>Form1.cs</Component>
     <Name>comboBox1.Items[1]</Name>
-    <StringID>338</StringID>
+    <StringID>365</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items1</ResourceName>
     <Hidden>false</Hidden>
@@ -10034,6 +10551,222 @@ CUID карта</LanguageText>
     <StringID>345</StringID>
     <Selected>true</Selected>
     <ResourceName>tabPage3.ImageKey</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>ShowUID.Text</Name>
+    <StringID>346</StringID>
+    <Selected>true</Selected>
+    <ResourceName>ShowUID.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>ShowUID.Text</Name>
+    <StringID>346</StringID>
+    <Selected>true</Selected>
+    <ResourceName>ShowUID.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormHTool.cs</Component>
+    <Name>richTextBox1.Lines[2]</Name>
+    <StringID>347</StringID>
+    <Selected>true</Selected>
+    <ResourceName>richTextBox1.Lines[2]</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormHTool.resx</Component>
+    <Name>richTextBox1.Lines[2]</Name>
+    <StringID>347</StringID>
+    <Selected>true</Selected>
+    <ResourceName>richTextBox1.Lines[2]</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>statusLabel.Text</Name>
+    <StringID>101</StringID>
+    <Selected>true</Selected>
+    <ResourceName>statusLabel.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>libnfc_conf</Name>
+    <StringID>367</StringID>
+    <Selected>true</Selected>
+    <ResourceName>libnfc_conf</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>allow_autoscan</Name>
+    <StringID>368</StringID>
+    <Selected>true</Selected>
+    <ResourceName>allow_autoscan</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>_true</Name>
+    <StringID>369</StringID>
+    <Selected>true</Selected>
+    <ResourceName>_true</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>_false</Name>
+    <StringID>370</StringID>
+    <Selected>true</Selected>
+    <ResourceName>_false</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>res0</Name>
+    <StringID>371</StringID>
+    <Selected>true</Selected>
+    <ResourceName>res0</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>allow_intrusive_scan</Name>
+    <StringID>372</StringID>
+    <Selected>true</Selected>
+    <ResourceName>allow_intrusive_scan</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>device_name_NFC_Device</Name>
+    <StringID>373</StringID>
+    <Selected>true</Selected>
+    <ResourceName>device_name_NFC_Device</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>device_connstring</Name>
+    <StringID>374</StringID>
+    <Selected>true</Selected>
+    <ResourceName>device_connstring</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>_mfd</Name>
+    <StringID>375</StringID>
+    <Selected>true</Selected>
+    <ResourceName>_mfd</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>res1</Name>
+    <StringID>376</StringID>
+    <Selected>true</Selected>
+    <ResourceName>res1</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>res2</Name>
+    <StringID>377</StringID>
+    <Selected>true</Selected>
+    <ResourceName>res2</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>res3</Name>
+    <StringID>378</StringID>
+    <Selected>true</Selected>
+    <ResourceName>res3</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>res4</Name>
+    <StringID>379</StringID>
+    <Selected>true</Selected>
+    <ResourceName>res4</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.resx</Component>
+    <Name>button1.Text</Name>
+    <StringID>380</StringID>
+    <Selected>true</Selected>
+    <ResourceName>button1.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Cropto1.cs</Component>
+    <Name>Cropto1.Text</Name>
+    <StringID>381</StringID>
+    <Selected>true</Selected>
+    <ResourceName>$this.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Cropto1.cs</Component>
+    <Name>label1.Text</Name>
+    <StringID>382</StringID>
+    <Selected>true</Selected>
+    <ResourceName>label1.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Cropto1.cs</Component>
+    <Name>button1.Text</Name>
+    <StringID>380</StringID>
+    <Selected>true</Selected>
+    <ResourceName>button1.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Cropto1.cs</Component>
+    <Name>textBox1.Text</Name>
+    <StringID>383</StringID>
+    <Selected>true</Selected>
+    <ResourceName>textBox1.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Cropto1.cs</Component>
+    <Name>textBox1.Lines[0]</Name>
+    <StringID>383</StringID>
+    <Selected>true</Selected>
+    <ResourceName>textBox1.Lines[0]</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Form1.cs</Component>
+    <Name>button1.Text</Name>
+    <StringID>380</StringID>
+    <Selected>true</Selected>
+    <ResourceName>button1.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormHardNes.resx</Component>
+    <Name>label7.Text</Name>
+    <StringID>384</StringID>
+    <Selected>true</Selected>
+    <ResourceName>label7.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormHardNes.cs</Component>
+    <Name>label7.Text</Name>
+    <StringID>384</StringID>
+    <Selected>true</Selected>
+    <ResourceName>label7.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <GeneralAttributes>

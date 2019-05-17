@@ -52,11 +52,6 @@ namespace MifareOneTool
             return a;
         }
 
-        public bool collectOnly()
-        {
-            return checkBoxColOnly.Checked;
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
@@ -121,6 +116,11 @@ namespace MifareOneTool
             }
             this.DialogResult = DialogResult.Yes;
             this.Close();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

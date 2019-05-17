@@ -124,95 +124,103 @@
     <value>+ Сектор:</value>
   </data>
   <data name="_个块不同" xml:space="preserve">
-    <value> Разные блоки
+    <value>разных блоков
 </value>
   </data>
   <data name="_已保存" xml:space="preserve">
-    <value>## Сохранено-</value>
+    <value>## Сохранено -</value>
   </data>
   <data name="_已自动保存" xml:space="preserve">
-    <value>## Был сохранен автоматически -</value>
+    <value>## Файл был сохранен автоматически -</value>
   </data>
   <data name="_扇区" xml:space="preserve">
-    <value># сектор</value>
+    <value># сектор </value>
   </data>
   <data name="_文件中的值错误" xml:space="preserve">
-    <value>## Ошибка в значении файла ###</value>
+    <value>## Ошибказначения в файле ###</value>
   </data>
   <data name="_有数据" xml:space="preserve">
-    <value> Есть данные</value>
+    <value>  - есть данные</value>
   </data>
   <data name="_有错误" xml:space="preserve">
-    <value> Есть ошибка</value>
+    <value> - есть ошибка</value>
   </data>
   <data name="_未保存" xml:space="preserve">
-    <value>## Несохраненный ##</value>
+    <value>## Не сохранено ##</value>
   </data>
   <data name="_程序已被强制停止" xml:space="preserve">
     <value>## Программа была вынуждена остановить ##</value>
   </data>
   <data name="_空扇区" xml:space="preserve">
-    <value> Пустой сектор</value>
+    <value> - пустой сектор</value>
   </data>
   <data name="_缓存文件异常" xml:space="preserve">
     <value>## Исключение файла кэша ##</value>
   </data>
   <data name="_计算得到BCC" xml:space="preserve">
-    <value>, рассчитать BCC =</value>
+    <value>, рассчитан BCC = </value>
   </data>
   <data name="_软件版本" xml:space="preserve">
-    <value>Версия программного обеспечения - </value>
+    <value>
+Версия программы - </value>
   </data>
   <data name="_运行出错" xml:space="preserve">
     <value>## Ошибка запуска ##</value>
   </data>
   <data name="_运行完毕" xml:space="preserve">
-    <value>## Завершение работы ##</value>
+    <value>##Операция завершена##</value>
   </data>
   <data name="AB文件中一个或两个无效" xml:space="preserve">
-    <value>Один или два файла AB недействительны.</value>
+    <value>Один или два файла A/B недействительны.</value>
   </data>
   <data name="ACR122U支持已经打开过" xml:space="preserve">
     <value>Поддержка ACR122U включена.</value>
   </data>
   <data name="DUMP文件_dump_MFD文件_mfd" xml:space="preserve">
-    <value>DUMP файл | * .dump | MFD файл | * .mfd</value>
+    <value>DUMP файл | *.dump | MFD файл | *.mfd</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>информация</value>
+    <value>Информация</value>
+  </data>
+  <data name="InputError" xml:space="preserve">
+    <value>Ошибка ввода</value>
   </data>
   <data name="KeyA_B_N" xml:space="preserve">
-    <value>Keya / B / N</value>
+    <value>Ключ A/B для новых карт</value>
   </data>
   <data name="MCT格式" xml:space="preserve">
-    <value>Формат MCT | *. *</value>
+    <value>Формат MCT|*.*</value>
   </data>
   <data name="MFD文件_mfd_dump" xml:space="preserve">
-    <value>MFD файл | * .mfd; *. Dump</value>
+    <value>MFD файл | *.mfd; *. Dump</value>
   </data>
   <data name="MFD文件_mfd_DUMP文件_dump" xml:space="preserve">
-    <value>MFD файл | * .mfd | DUMP файл | * .dump</value>
+    <value>Файл MFD|*.mfd|Файл DUMP|*.dump</value>
   </data>
   <data name="MifareOne_Tool_已取消" xml:space="preserve">
-    <value>Инструмент MifareOne - Отменено</value>
+    <value>MifareOne - отменено</value>
   </data>
   <data name="MifareOne_Tool_已终止" xml:space="preserve">
     <value>MifareOne Tool - прекращено</value>
   </data>
   <data name="MifareOne_Tool_运行中" xml:space="preserve">
-    <value>MifareOne Tool - Запуск</value>
+    <value>MifareOne Tool - выполнение операции</value>
   </data>
   <data name="MifareOne_Tool_运行完毕" xml:space="preserve">
-    <value>MifareOne Tool - Операция завершена</value>
-  </data>
-  <data name="nfc_bin_collect_exe" xml:space="preserve">
-    <value>НФК-бен / Collect.exe</value>
+    <value>MifareOne Tool - операция завершена</value>
   </data>
   <data name="res" xml:space="preserve">
-    <value>,</value>
+    <value>.</value>
+  </data>
+  <data name="res1" xml:space="preserve">
+    <value>___________________________________________</value>
+  </data>
+  <data name="res4" xml:space="preserve">
+    <value>： 
+</value>
   </data>
   <data name="txt文件_txt" xml:space="preserve">
-    <value>Txt файл | * .txt</value>
+    <value>Txt файл|*.txt</value>
   </data>
   <data name="UID已改为" xml:space="preserve">
     <value>UID был изменен на</value>
@@ -224,151 +232,152 @@
     <value>Использовать KeyA (да) или KeyB (нет)?</value>
   </data>
   <data name="使用KeyA_是_或KeyB_否_还是不使用_用于全新白卡_" xml:space="preserve">
-    <value>Использовать KeyA (да) или KeyB (нет) или нет (для новых белых карточек) (отменить)?</value>
+    <value>Использовать Ключ A (да) или Ключ B (нет) или нет (отменить)  для новых белых карточек?</value>
   </data>
   <data name="俄语" xml:space="preserve">
     <value>Русский</value>
   </data>
   <data name="共找到" xml:space="preserve">
-    <value>найденный</value>
+    <value>Найдено </value>
   </data>
   <data name="写入出错" xml:space="preserve">
     <value>Ошибка записи</value>
   </data>
   <data name="加载的S50卡文件大小异常" xml:space="preserve">
-    <value>Размер загруженного файла карты S50 ненормальный.</value>
+    <value>Размер загруженного файла карты S50 не поддерживается.</value>
   </data>
   <data name="加载的文件不存在" xml:space="preserve">
     <value>Загруженный файл не существует.</value>
   </data>
   <data name="危险操作警告" xml:space="preserve">
-    <value>Предупреждение об опасной работе</value>
+    <value>Предупреждение об опасной операции</value>
   </data>
   <data name="同时打开ACR122U支持可能会引起操作速度下降_请确认是否" xml:space="preserve">
-    <value>Одновременное открытие опоры ACR122U может привести к снижению скорости работы.
-Пожалуйста, подтвердите, если вы хотите продолжить?</value>
+    <value>Одновременное включение поддержки ACR122U может привести к снижению скорости работы.
+Подтвердите, хотите ли вы продолжить?</value>
   </data>
   <data name="字典文件_dic" xml:space="preserve">
-    <value>Файл словаря | * .dic</value>
+    <value>Файл словаря|*.dic</value>
   </data>
   <data name="密钥字典文件_dic" xml:space="preserve">
-    <value>Файл ключевого словаря | * .dic</value>
+    <value>Файл словаря ключей|*.dic</value>
   </data>
   <data name="将自动选择首个设备" xml:space="preserve">
     <value>Первое устройство будет выбрано автоматически:</value>
   </data>
   <data name="将要写入的文件存在错误_请用高级模式中的Hex工具打开查看" xml:space="preserve">
-    <value>Существует ошибка в файле, который будет записан. Откройте вид с помощью инструмента Hex в расширенном режиме.</value>
+    <value>Существует ошибка в файле, который будет записан. Откройте его с помощью редактора дампа в расширенном режиме.</value>
   </data>
   <data name="已保存到" xml:space="preserve">
     <value>Сохранено в</value>
   </data>
   <data name="已启用CUID空卡写入补丁" xml:space="preserve">
-    <value>CUID патч для записи пустой карты включен</value>
+    <value>Включить патч для записи на пустую карту CUID</value>
   </data>
   <data name="已导出MCT文件" xml:space="preserve">
     <value>MCT файл был экспортирован</value>
   </data>
   <data name="已导出密钥字典文件" xml:space="preserve">
-    <value>Файл словаря экспортированного ключа</value>
+    <value>Экспортированный файлсловаря ключей</value>
   </data>
   <data name="已打开" xml:space="preserve">
-    <value>Он открыт.</value>
+    <value>Открыт.</value>
   </data>
   <data name="已找到_K" xml:space="preserve">
-    <value>Найдено! K =</value>
+    <value>Файл ключа - </value>
   </data>
   <data name="已指定使用该NFC设备" xml:space="preserve">
     <value>Устройство NFC было указано для использования:</value>
   </data>
   <data name="已更新扇区" xml:space="preserve">
-    <value>Обновленный сектор</value>
+    <value>Обновлен сектор </value>
   </data>
   <data name="已重置并新建卡" xml:space="preserve">
-    <value>Карта была сброшена и создана.</value>
+    <value>Сброшена и создана новая карта.</value>
   </data>
   <data name="开始执行CUID_FUID卡片写入" xml:space="preserve">
-    <value>Начать выполнение записи CUID / FUID карты ...</value>
+    <value>Запись CUID/FUID карты ...</value>
   </data>
   <data name="开始执行HardNested收集数据" xml:space="preserve">
-    <value>Начните выполнять HardNested для сбора данных ...</value>
+    <value>HardNested - сбор данных ...</value>
   </data>
   <data name="开始执行HardNested解密强化卡" xml:space="preserve">
-    <value>Запустите карточку улучшения расшифровки HardNested ...</value>
+    <value>Запуск расшифровки HardNested...</value>
   </data>
   <data name="开始执行MFOC解密" xml:space="preserve">
-    <value>Начните выполнять расшифровку MFOC ...</value>
+    <value>Выполняется расшифровка MFOC ...</value>
   </data>
   <data name="开始执行UFUID卡片锁定" xml:space="preserve">
-    <value>Начать выполнение блокировки карты UFUID ...</value>
+    <value>Блокировка карты UFUID ...</value>
   </data>
   <data name="开始执行UID卡片全格" xml:space="preserve">
-    <value>Начните выполнять UID карты в полноэкранном режиме ...</value>
+    <value>Форматирование UID...</value>
   </data>
   <data name="开始执行UID卡片写入" xml:space="preserve">
     <value>Начните выполнять запись UID карты ...</value>
   </data>
   <data name="开始执行UID卡片设定卡号" xml:space="preserve">
-    <value>Начните выполнять номер карты установки карты UID ...</value>
+    <value>Начало записи номера UID...
+</value>
   </data>
   <data name="开始执行UID卡片读取" xml:space="preserve">
-    <value>Начать чтение карты UID...</value>
+    <value>Чтение UID...</value>
   </data>
   <data name="开始执行全加密卡片爆破" xml:space="preserve">
-    <value>Начните выполнять полное шифрование карты взрыва ...</value>
+    <value>Начало выполнения полной расшифровки карты ...</value>
   </data>
   <data name="开始执行写入M1卡片" xml:space="preserve">
-    <value>Начните запись на карту M1...</value>
+    <value>Запись на карту...</value>
   </data>
   <data name="开始执行字典模式MFOC解密" xml:space="preserve">
-    <value>Начать выполнение словарного режима MFOC для расшифровки ...</value>
+    <value>Начало расшифровки  MFOC в режиме словаря...</value>
   </data>
   <data name="开始执行扫描卡片" xml:space="preserve">
-    <value>Начать сканирование карт...</value>
+    <value>Сканирование карт...</value>
   </data>
   <data name="开始执行格式化M1卡片" xml:space="preserve">
-    <value>Начните выполнять отформатированную карту M1 ...</value>
+    <value>Форматирование карты...</value>
   </data>
   <data name="开始执行检测卡片加密" xml:space="preserve">
-    <value>Начните выполнять проверку карты шифрованием ...</value>
+    <value>Определение зашифрованных секторов...</value>
   </data>
   <data name="开始执行检测设备" xml:space="preserve">
-    <value>Запуск испытательного оборудования...</value>
+    <value>Поиск считвателя...</value>
   </data>
   <data name="开始执行读取卡片" xml:space="preserve">
-    <value>Начать чтение карты...</value>
+    <value>Чтение карты...</value>
   </data>
   <data name="开始执行重置UID卡片卡号" xml:space="preserve">
-    <value>Начните выполнять сброс номера карты UID ...</value>
+    <value>Сброс номера UID ...</value>
   </data>
   <data name="当前扇区数据仍有错误_不能执行修改" xml:space="preserve">
-    <value>Данные текущего сектора все еще находятся в ошибке и не могут быть изменены.</value>
+    <value>Текущие данные сектора по-прежнему имеют ошибки и не могут быть изменены.</value>
   </data>
   <data name="当前选定扇区" xml:space="preserve">
     <value>Текущий выбранный сектор: ?</value>
   </data>
   <data name="当前选定扇区0" xml:space="preserve">
-    <value>Текущий выбранный сектор:</value>
+    <value>Текущий выбранный сектор: </value>
   </data>
   <data name="您可以上传到云计算服务节点进行计算" xml:space="preserve">
     <value>Вы можете загрузить на узел службы облачных вычислений для расчета.</value>
   </data>
   <data name="您已经运行了MifareOne_Tool_打开多个本程序可能" xml:space="preserve">
-    <value>Вы уже запустили MifareOne Tool, и открытие нескольких программ может вызвать конфликты и непредсказуемые ошибки.
+    <value>Вы уже запустили MifareOne Tool. Открытие нескольких программ может вызвать конфликты и непредсказуемые ошибки.
 Вы уверены, что хотите продолжить?</value>
   </data>
   <data name="您正在试图重复运行" xml:space="preserve">
-    <value>Вы пытаетесь запустить несколько раз</value>
+    <value>Повторный запуск</value>
   </data>
   <data name="您没有给定最后一次写卡导致0块损坏的卡数据文件来作为写卡时的" xml:space="preserve">
     <value>Вы не предоставили файл данных карты, который вызвал 0 блоков повреждения, когда последняя запись была сделана в качестве ключевого источника при записи карты.
 Операция прекращена.</value>
   </data>
   <data name="扇区" xml:space="preserve">
-    <value>Cектор</value>
+    <value>Cектор </value>
   </data>
   <data name="扇区0" xml:space="preserve">
-    <value>сектор</value>
+    <value>Сектор </value>
   </data>
   <data name="打开了" xml:space="preserve">
     <value>Открыть</value>
@@ -377,10 +386,10 @@
     <value>Ошибка открытия</value>
   </data>
   <data name="提示信息" xml:space="preserve">
-    <value>Быстрое сообщение</value>
+    <value>Совет</value>
   </data>
   <data name="文件内不是含有64个块数据_可能不完整或不兼容" xml:space="preserve">
-    <value>Файл не содержит 64 блоков данных и может быть неполным или несовместимым.</value>
+    <value>Файл не содержит 64 блока данных и может быть неполным или несовместимым.</value>
   </data>
   <data name="无密钥" xml:space="preserve">
     <value>Нет ключа</value>
@@ -390,13 +399,13 @@
 Операция прекращена.</value>
   </data>
   <data name="显示扇区" xml:space="preserve">
-    <value>Показать сектор</value>
+    <value>Показать сектор </value>
   </data>
   <data name="有任务运行中_不可执行" xml:space="preserve">
-    <value>Когда задача выполняется, она не может быть выполнена.</value>
+    <value>Операция не может быть выполнена, так как сейчас выполняется другая операция.</value>
   </data>
   <data name="未知" xml:space="preserve">
-    <value>неизвестный</value>
+    <value>неизвестно</value>
   </data>
   <data name="未选择有效key_mfd" xml:space="preserve">
     <value>Действительный key.mfd не был выбран.</value>
@@ -408,10 +417,10 @@
     <value>Китайский</value>
   </data>
   <data name="正在使用智能KeyABN" xml:space="preserve">
-    <value>Использование Smart KeyABN ...</value>
+    <value>Использование файла ключей...</value>
   </data>
   <data name="正在打开ACR122U支持" xml:space="preserve">
-    <value>Открытие ACR122U поддержки ...</value>
+    <value>Включена поддержка ACR122U...</value>
   </data>
   <data name="正在检索是否存在key_mfd" xml:space="preserve">
     <value>Поиск key.mfd ...</value>
@@ -441,81 +450,76 @@
     <value>Определены следующие устройства：</value>
   </data>
   <data name="该扇区UID校验值错误_已经自动为您更正" xml:space="preserve">
-    <value>Значение проверки UID сектора неверно и было автоматически исправлено для вас.
-</value>
+    <value>Ошибка проверки UID сектора была автоматически исправлена для вас.</value>
   </data>
   <data name="该扇区UID校验值错误_已自动更正" xml:space="preserve">
     <value>Значение проверки UID сектора неверно и было автоматически исправлено.
 </value>
   </data>
   <data name="该扇区UID校验值错误_请点击打开扇区0来自动更正" xml:space="preserve">
-    <value>Неверное значение проверки UID сектора. Нажмите, чтобы открыть сектор 0 для автоматического исправления.
-</value>
+    <value>Ошибка проверки UID сектора, нажмите, чтобы открыть сектор 0 для автоматического исправления.</value>
   </data>
   <data name="该扇区一切正常" xml:space="preserve">
-    <value>Сектор все хорошо.
-</value>
+    <value>В этом секторе все в порядке.</value>
   </data>
   <data name="该扇区访问控制位损坏_写入将会损坏卡片_已重新设置" xml:space="preserve">
-    <value>Бит контроля доступа к сектору поврежден, и запись повредит карту и будет сброшена.
-</value>
+    <value>Бит управления доступом сектора является недопустимым, запись повредит карту и была отменена.</value>
   </data>
   <data name="该扇区访问控制位损坏_写入将会损坏卡片_请重新设置" xml:space="preserve">
-    <value>Бит контроля доступа к сектору поврежден, и запись повредит карту. Пожалуйста, сбросьте ее.
+    <value>Бит контроля доступа к сектору поврежден, и запись повредит карту. Пожалуйста, отмените ее.
 </value>
   </data>
   <data name="该扇区访问控制位无效_写入将会损坏卡片_已重新设置" xml:space="preserve">
-    <value>Бит контроля доступа к сектору недействителен, запись повредит карту и будет сброшена.
-</value>
+    <value>Бит управления доступом сектора является недопустимым, запись повредит карту и была отменена.</value>
   </data>
   <data name="该扇区访问控制位无效_写入将会损坏卡片_请重新设置" xml:space="preserve">
-    <value>Недопустимый бит контроля доступа к сектору. Запись повредит карту. Пожалуйста, сбросьте ее.
+    <value>Недопустимый бит контроля доступа к сектору. Запись повредит карту. Пожалуйста, отмените ее.
 </value>
   </data>
   <data name="该操作将会清空UID卡内全部数据_清空后不可恢复_请确认是否" xml:space="preserve">
-    <value>Это удалит все данные в UID-карте! ! !
-Не может быть восстановлено после опустошения! Пожалуйста, подтвердите, если вы хотите продолжить?</value>
+    <value>Это удалит все данные в UID карты!
+Восстановление после форматирования невозможно! Пожалуйста, подтвердите, если вы хотите продолжить?</value>
   </data>
   <data name="该操作将会锁死UFUID卡片_锁死后不可恢复_无法再次更改0" xml:space="preserve">
-    <value>Это заблокирует карту UFUID! ! !
-Невозможно восстановить после блокировки! Невозможно изменить 0 блоков снова! Пожалуйста, подтвердите, если вы хотите продолжить?</value>
+    <value>Это заблокирует карту UFUID!
+Восстановление после блокировки будет невозможно! Изменить 0-ой блок будет невозможно! Пожалуйста, подтвердите, если вы хотите продолжить?</value>
   </data>
   <data name="该文件一切正常" xml:space="preserve">
     <value>С файлом все нормально.</value>
   </data>
   <data name="该文件存在以下错误" xml:space="preserve">
-    <value>Файл имеет следующую ошибку:
+    <value>Файл имеет следующую ошибку: 
 </value>
   </data>
   <data name="请检查接线是否正确_驱动是否正常安装_设备电源是否已经打开_" xml:space="preserve">
-    <value>Пожалуйста, проверьте правильность подключения/драйвер правильно установлен/питание устройства включено (для моделей с выключателем питания).</value>
+    <value>Пожалуйста, проверьте правильность подключения/правильно ли установлен драйвер/питание устройства включено (для моделей с выключателем питания).</value>
   </data>
   <data name="请输入UID号" xml:space="preserve">
     <value>Пожалуйста, введите номер UID</value>
   </data>
   <data name="请输入已知Key" xml:space="preserve">
-    <value>Пожалуйста, введите известный ключ</value>
+    <value>Пожалуйста, введите известные ключи</value>
   </data>
   <data name="请输入已知的Key_以英文半角逗号分隔" xml:space="preserve">
-    <value>Пожалуйста, введите известный ключ, разделенный запятой.</value>
+    <value>Пожалуйста, введите известные ключи, разделяя их запятой.</value>
   </data>
   <data name="请输入需要写入的UID卡号_共8位十六进制数_如E44A3B" xml:space="preserve">
     <value>Пожалуйста, введите номер карты UID для записи, всего 8 шестнадцатеричных чисел, например, E44A3BF1.</value>
   </data>
   <data name="请输入需要更改的UID卡号_共8位十六进制数_如E44A3B" xml:space="preserve">
-    <value>Пожалуйста, введите номер карты UID для изменения, всего 8 шестнадцатеричных чисел, таких как E44A3BF1.</value>
+    <value>Пожалуйста, введите номер UID для изменения, всего 8 шестнадцатеричных чисел, например E44A3BF1.</value>
   </data>
   <data name="请选择MCT_txt文件保存位置及文件名" xml:space="preserve">
-    <value>Пожалуйста, выберите файл MCT.txt, чтобы сохранить местоположение и имя файла.</value>
+    <value>Пожалуйста, выберите для MCT.txt расположение и имя файла</value>
   </data>
   <data name="请选择MFD文件保存位置及文件名" xml:space="preserve">
     <value>Пожалуйста, выберите место сохранения файла MFD и имя файла</value>
   </data>
   <data name="请选择一个包含目标卡密钥的MFD文件_通常是已经破解出的该卡" xml:space="preserve">
-    <value>Выберите файл MFD, содержащий ключ целевой карты (обычно это файл MFD карты, которая была взломана)</value>
+    <value>Выберите файл MFD, содержащий ключ  карты (обычно это файл MFD карты, которая была взломана)</value>
   </data>
   <data name="请选择密钥字典文件保存位置及文件名" xml:space="preserve">
-    <value>Пожалуйста, выберите файл словаря ключа, сохраните местоположение и имя файла</value>
+    <value>Выберите расположение и имя файла словаря ключей</value>
   </data>
   <data name="请选择最后一次写卡导致0块损坏的卡数据文件" xml:space="preserve">
     <value>Пожалуйста, выберите файл данных карты, который вызвал повреждение последней 0 карты.</value>
@@ -530,13 +534,13 @@
     <value>Пожалуйста, выберите файл MFD, который вы хотите открыть.</value>
   </data>
   <data name="请选择需要打开的MFD文件_比较A" xml:space="preserve">
-    <value>Пожалуйста, выберите файл MFD, который вы хотите открыть (сравните A)</value>
+    <value>Пожалуйста, выберите файл MFD, который вы хотите открыть (сравнить A)</value>
   </data>
   <data name="请选择需要打开的MFD文件_比较B" xml:space="preserve">
-    <value>Пожалуйста, выберите файл MFD, который вы хотите открыть (сравните B)</value>
+    <value>Пожалуйста, выберите файл MFD, который вы хотите открыть (сравнит B)</value>
   </data>
   <data name="请选择需要打开的密钥字典文件" xml:space="preserve">
-    <value>Пожалуйста, выберите ключевой файл словаря, который вы хотите открыть.</value>
+    <value>Пожалуйста, выберите файл словаря ключей, который вы хотите открыть.</value>
   </data>
   <data name="输入的UID号不合法" xml:space="preserve">
     <value>Введенный номер UID недействителен.</value>
@@ -548,7 +552,7 @@
     <value>Время выполнения: </value>
   </data>
   <data name="选择key_mfd" xml:space="preserve">
-    <value>Выбрать key.mfd</value>
+    <value>Выбрать файл ключей</value>
   </data>
   <data name="错误" xml:space="preserve">
     <value>Ошибка</value>

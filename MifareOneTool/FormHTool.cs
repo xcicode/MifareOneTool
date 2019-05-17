@@ -185,7 +185,7 @@ namespace MifareOneTool
             {
                 MessageBox.Show(ex.Message, Resources.写入出错, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            logAppend(Resources.已保存到 + filename + "。");
+            logAppend(Resources.已保存到 + filename + Resources.res);
         }
 
         private void block0Edit_Validating(object sender, CancelEventArgs e)
@@ -288,7 +288,7 @@ namespace MifareOneTool
                 string msg = Resources.该文件存在以下错误;
                 for (int i = 0; i < 16; i++)
                 {
-                    msg += Resources.扇区 + i.ToString() + "：\n";
+                    msg += Resources.扇区 + i.ToString() + Resources.res4;
                     if ((res[i] & 0x01) == 0x01)
                     {
                         msg += Resources.该扇区UID校验值错误_请点击打开扇区0来自动更正;
@@ -356,7 +356,7 @@ namespace MifareOneTool
                 string msg = Resources.该文件存在以下错误;
                 for (int i = 0; i < 16; i++)
                 {
-                    msg += Resources.扇区 + i.ToString() + "：\n";
+                    msg += Resources.扇区 + i.ToString() + Resources.res4;
                     if ((res[i] & 0x01) == 0x01)
                     {
                         currentS50.Sectors[i].Block[0][4]
@@ -439,7 +439,7 @@ namespace MifareOneTool
                 return;
             }
             File.WriteAllLines(filename, this.currentS50.KeyListStr().ToArray());
-            logAppend(Resources.已导出密钥字典文件 + filename + "。");
+            logAppend(Resources.已导出密钥字典文件 + filename + Resources.res);
         }
 
         private void 导入MCT格式ToolStripMenuItem_Click(object sender, EventArgs e)

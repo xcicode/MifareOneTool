@@ -43,9 +43,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.Black;
+            this.richTextBox1.BackColor = System.Drawing.Color.AliceBlue;
             resources.ApplyResources(this.richTextBox1, "richTextBox1");
-            this.richTextBox1.ForeColor = System.Drawing.Color.Orange;
+            this.richTextBox1.ForeColor = System.Drawing.Color.Black;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.TextChanged += new System.EventHandler(this.RichTextBox1_TextChanged);
@@ -53,22 +53,29 @@
             // button1
             // 
             resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             resources.ApplyResources(this.button2, "button2");
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             resources.ApplyResources(this.button3, "button3");
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // tableLayoutPanel1
@@ -105,6 +112,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);

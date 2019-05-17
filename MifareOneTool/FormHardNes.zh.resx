@@ -127,7 +127,8 @@
     <value>只采集不计算</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>初始化HardNested解密</value>
+    <value>Bitsliced Crypto-1 brute-forcer</value>
+    <comment>Previous text: 初始化HardNested解密</comment>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>目标卡-已知信息</value>
@@ -158,6 +159,11 @@
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>扇区号</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>После того, как вы нажмете 
+кнопку "Начать", 
+ожидайте около 1 минуты.</value>
   </data>
   <data name="radioKey1A.Text" xml:space="preserve">
     <value>KeyA</value>

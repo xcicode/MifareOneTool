@@ -120,11 +120,20 @@
   <data name="_0_9A_Fa_f_32" xml:space="preserve">
     <value>[0-9A-Fa-f]{32}</value>
   </data>
+  <data name="_false" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="_mfd" xml:space="preserve">
+    <value>.mfd</value>
+  </data>
   <data name="_Nonce收集完毕" xml:space="preserve">
     <value>##Nonce收集完毕##</value>
   </data>
   <data name="_Sector" xml:space="preserve">
     <value>+Sector: </value>
+  </data>
+  <data name="_true" xml:space="preserve">
+    <value>true</value>
   </data>
   <data name="_个块不同" xml:space="preserve">
     <value> 个块不同
@@ -178,6 +187,19 @@
   <data name="ACR122U支持已经打开过" xml:space="preserve">
     <value>ACR122U支持已经打开过。</value>
   </data>
+  <data name="allow_autoscan" xml:space="preserve">
+    <value>allow_autoscan = </value>
+  </data>
+  <data name="allow_intrusive_scan" xml:space="preserve">
+    <value>allow_intrusive_scan = </value>
+  </data>
+  <data name="device_connstring" xml:space="preserve">
+    <value>device.connstring = "</value>
+  </data>
+  <data name="device_name_NFC_Device" xml:space="preserve">
+    <value>device.name = "NFC-Device"
+</value>
+  </data>
   <data name="DUMP文件_dump_MFD文件_mfd" xml:space="preserve">
     <value>DUMP文件|*.dump|MFD文件|*.mfd</value>
   </data>
@@ -189,6 +211,9 @@
   </data>
   <data name="KeyA_B_N" xml:space="preserve">
     <value>KeyA/B/N</value>
+  </data>
+  <data name="libnfc_conf" xml:space="preserve">
+    <value>libnfc.conf</value>
   </data>
   <data name="MCT格式" xml:space="preserve">
     <value>MCT格式|*.*</value>
@@ -203,7 +228,7 @@
     <value>MifareOne Tool</value>
   </data>
   <data name="MifareOne_Tool_已取消" xml:space="preserve">
-    <value>MifareOne Tool - 已取消</value>
+    <value>MifareOne Tool - отменено</value>
   </data>
   <data name="MifareOne_Tool_已终止" xml:space="preserve">
     <value>MifareOne Tool - 已终止</value>
@@ -214,11 +239,25 @@
   <data name="MifareOne_Tool_运行完毕" xml:space="preserve">
     <value>MifareOne Tool - 运行完毕</value>
   </data>
-  <data name="nfc_bin_collect_exe" xml:space="preserve">
-    <value>nfc-bin/collect.exe</value>
-  </data>
   <data name="res" xml:space="preserve">
     <value>。</value>
+  </data>
+  <data name="res0" xml:space="preserve">
+    <value>
+</value>
+  </data>
+  <data name="res1" xml:space="preserve">
+    <value>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</value>
+  </data>
+  <data name="res2" xml:space="preserve">
+    <value>-- </value>
+  </data>
+  <data name="res3" xml:space="preserve">
+    <value>## </value>
+  </data>
+  <data name="res4" xml:space="preserve">
+    <value>：
+</value>
   </data>
   <data name="txt文件_txt" xml:space="preserve">
     <value>txt文件|*.txt</value>
