@@ -1,0 +1,3511 @@
+<?xml version="1.0" standalone="yes"?>
+<ControlsScanResultsCache xmlns="http://tempuri.org/ControlsScanResults.xsd">
+  <ControlsScanResults>
+    <ControlsScanID>1</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>Form1.cs</FullName>
+    <ShortName>Form1.cs</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText />
+    <SortKey>Form1.cs</SortKey>
+    <NodeType>0</NodeType>
+    <Expanded>true</Expanded>
+    <ItemLevel>0</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName />
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>2</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>Form1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>MifareOne Tool</OriginalText>
+    <SortKey>AAForm1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>$this.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>3</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttoEScanCard.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>扫描卡片</OriginalText>
+    <SortKey>BAbuttoEScanCard.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttoEScanCard.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>4</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>button4.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>锁UFUID卡</OriginalText>
+    <SortKey>BAbutton4.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>button4.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>5</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonBmfRead.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>UID读</OriginalText>
+    <SortKey>BAbuttonBmfRead.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonBmfRead.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>6</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonBmfRead.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>读取UID卡片。</OriginalText>
+    <SortKey>BAbuttonBmfRead.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonBmfRead,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>7</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonBmfWrite.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>UID写</OriginalText>
+    <SortKey>BAbuttonBmfWrite.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonBmfWrite.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>8</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonBmfWrite.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>写入UID卡片。</OriginalText>
+    <SortKey>BAbuttonBmfWrite.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonBmfWrite,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>9</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonCheckEncrypt.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>检加密</OriginalText>
+    <SortKey>BAbuttonCheckEncrypt.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonCheckEncrypt.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>10</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonCheckEncrypt.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>检测卡片加密情况。</OriginalText>
+    <SortKey>BAbuttonCheckEncrypt.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonCheckEncrypt,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>11</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonCLI.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>手动CLI</OriginalText>
+    <SortKey>BAbuttonCLI.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonCLI.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>12</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonCLI.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>打开NFC命令行以进行高级操作。</OriginalText>
+    <SortKey>BAbuttonCLI.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonCLI,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>13</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonCLIColor.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>#M1T#</OriginalText>
+    <SortKey>BAbuttonCLIColor.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonCLIColor.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>14</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonCmfWrite.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>CUID写</OriginalText>
+    <SortKey>BAbuttonCmfWrite.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonCmfWrite.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>15</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonCmfWrite.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>写入CUID/FUID卡片（可能需要密钥文件）</OriginalText>
+    <SortKey>BAbuttonCmfWrite.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonCmfWrite,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>16</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonConClr.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>清终端</OriginalText>
+    <SortKey>BAbuttonConClr.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonConClr.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>17</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonConSave.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>存日志</OriginalText>
+    <SortKey>BAbuttonConSave.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonConSave.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>18</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonDictMfoc.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>字典测试</OriginalText>
+    <SortKey>BAbuttonDictMfoc.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonDictMfoc.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>19</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonDictMfoc.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>导入字典文件进行Nested破解。</OriginalText>
+    <SortKey>BAbuttonDictMfoc.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonDictMfoc,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>20</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonDiffTool.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>差异比较</OriginalText>
+    <SortKey>BAbuttonDiffTool.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonDiffTool.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>21</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonECheckEncrypt.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>检测加密</OriginalText>
+    <SortKey>BAbuttonECheckEncrypt.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonECheckEncrypt.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>22</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonECmfoc.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>知一密破解</OriginalText>
+    <SortKey>BAbuttonECmfoc.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonECmfoc.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>23</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonECuidWrite.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>写C/FUID卡</OriginalText>
+    <SortKey>BAbuttonECuidWrite.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonECuidWrite.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>24</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonEMfoc.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>一键解原卡</OriginalText>
+    <SortKey>BAbuttonEMfoc.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonEMfoc.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>25</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonEMfRead.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>已知密钥读</OriginalText>
+    <SortKey>BAbuttonEMfRead.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonEMfRead.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>26</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonEMfWrite.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>写入普通卡</OriginalText>
+    <SortKey>BAbuttonEMfWrite.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonEMfWrite.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>27</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonEReadUID.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>从UID卡读回</OriginalText>
+    <SortKey>BAbuttonEReadUID.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonEReadUID.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>28</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonEscan.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>检测连接</OriginalText>
+    <SortKey>BAbuttonEscan.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonEscan.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>29</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonESelectKey.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>加载密钥…</OriginalText>
+    <SortKey>BAbuttonESelectKey.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonESelectKey.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>30</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonEStop.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>停止</OriginalText>
+    <SortKey>BAbuttonEStop.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonEStop.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>31</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonEUIDWrite.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>写(UF)UID卡</OriginalText>
+    <SortKey>BAbuttonEUIDWrite.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonEUIDWrite.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>32</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonHardNested.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Bitsliced Cropto-1</OriginalText>
+    <SortKey>BAbuttonHardNested.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonHardNested.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>33</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonHexTool.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Hex编辑器</OriginalText>
+    <SortKey>BAbuttonHexTool.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonHexTool.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>34</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonKill.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>停运行</OriginalText>
+    <SortKey>BAbuttonKill.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonKill.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>35</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonListDev.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>检测设备</OriginalText>
+    <SortKey>BAbuttonListDev.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonListDev.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>36</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonListDev.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>扫描已连接的NFC设备
+(目前支持PN532、ACR122U)</OriginalText>
+    <SortKey>BAbuttonListDev.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonListDev,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>37</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonLockUfuid.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>锁Ufuid</OriginalText>
+    <SortKey>BAbuttonLockUfuid.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonLockUfuid.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>38</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonLockUfuid.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>锁死UFUID卡片0块数据（测试中）</OriginalText>
+    <SortKey>BAbuttonLockUfuid.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonLockUfuid,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>39</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMfcuk.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>全加密爆破</OriginalText>
+    <SortKey>BAbuttonMfcuk.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonMfcuk.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>40</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMfcuk.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>对卡片执行Darkside工具（不一定成功）</OriginalText>
+    <SortKey>BAbuttonMfcuk.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonMfcuk,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>41</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMFF08.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>MFF08 CUID修复</OriginalText>
+    <SortKey>BAbuttonMFF08.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonMFF08.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>42</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMfFormat.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>清M1</OriginalText>
+    <SortKey>BAbuttonMfFormat.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonMfFormat.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>43</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMfFormat.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>格式化普通M1卡（必须加载密钥文件）</OriginalText>
+    <SortKey>BAbuttonMfFormat.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonMfFormat,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>44</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMfoc.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>MFOC读</OriginalText>
+    <SortKey>BAbuttonMfoc.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonMfoc.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>45</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMfoc.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>对半加密卡片进行Nested破解。
+按住Ctrl点击该按钮可添加已知密钥。</OriginalText>
+    <SortKey>BAbuttonMfoc.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonMfoc,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>46</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMfRead.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>读M1</OriginalText>
+    <SortKey>BAbuttonMfRead.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonMfRead.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>47</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMfRead.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>读取普通M1卡片（可能需要加载密钥文件）</OriginalText>
+    <SortKey>BAbuttonMfRead.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonMfRead,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>48</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMfWrite.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>写M1</OriginalText>
+    <SortKey>BAbuttonMfWrite.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonMfWrite.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>49</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonMfWrite.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>写入普通M1卡（可能需要加载密钥文件）</OriginalText>
+    <SortKey>BAbuttonMfWrite.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonMfWrite,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>50</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonnKeysMfoc.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>知n密</OriginalText>
+    <SortKey>BAbuttonnKeysMfoc.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonnKeysMfoc.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>51</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonnKeysMfoc.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>输入已知密钥进行Nested破解。</OriginalText>
+    <SortKey>BAbuttonnKeysMfoc.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonnKeysMfoc,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>52</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonScanCard.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>手动扫描</OriginalText>
+    <SortKey>BAbuttonScanCard.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonScanCard.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>53</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonScanCard.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>扫描有效卡片。</OriginalText>
+    <SortKey>BAbuttonScanCard.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonScanCard,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>54</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonSelectKey.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>选择key.mfd</OriginalText>
+    <SortKey>BAbuttonSelectKey.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonSelectKey.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>55</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonSelectKey.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>加载含有正确读写卡密钥及正确控制位的MFD文件。</OriginalText>
+    <SortKey>BAbuttonSelectKey.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonSelectKey,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>56</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonUidFormat.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>UID全格</OriginalText>
+    <SortKey>BAbuttonUidFormat.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonUidFormat.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>57</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonUidFormat.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>将全卡清空并重新初始化。
+可用于ACbit损坏/KEY全部被改等情况的急救。</OriginalText>
+    <SortKey>BAbuttonUidFormat.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonUidFormat,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>58</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonUidReset.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>UID重置</OriginalText>
+    <SortKey>BAbuttonUidReset.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonUidReset.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>59</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonUidReset.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>重置UID卡片0块，UID随机，厂商号为复旦。</OriginalText>
+    <SortKey>BAbuttonUidReset.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonUidReset,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>60</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonUidWrite.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>UID写号</OriginalText>
+    <SortKey>BAbuttonUidWrite.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonUidWrite.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>61</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>buttonUidWrite.ToolTip на toolTipHelp</FullName>
+    <ShortName>ToolTip на toolTipHelp</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>向UID卡片写入置顶卡号，厂商设置为复旦。</OriginalText>
+    <SortKey>BAbuttonUidWrite.ToolTip на toolTipHelp</SortKey>
+    <NodeType>8970</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolTipHelp.SetToolTip(buttonUidWrite,?)</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>62</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>checkBoxAutoABN.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>自动判断Key(beta)</OriginalText>
+    <SortKey>BAcheckBoxAutoABN.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>checkBoxAutoABN.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>63</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>checkBoxAutoLoadKey.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>自动加载uid.Key文件</OriginalText>
+    <SortKey>BAcheckBoxAutoLoadKey.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>checkBoxAutoLoadKey.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>64</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>checkBoxAutoSave.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>自动以UID名保存文件</OriginalText>
+    <SortKey>BAcheckBoxAutoSave.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>checkBoxAutoSave.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>65</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>checkBoxCuidKeyOver.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>CUID写空卡补丁</OriginalText>
+    <SortKey>BAcheckBoxCuidKeyOver.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>checkBoxCuidKeyOver.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>66</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>checkBoxDefIsAdv.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>自动转到高级操作模式</OriginalText>
+    <SortKey>BAcheckBoxDefIsAdv.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>checkBoxDefIsAdv.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>67</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>checkBoxHardLowCost.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>单线程计算</OriginalText>
+    <SortKey>BAcheckBoxHardLowCost.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>checkBoxHardLowCost.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>68</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>checkBoxMultiDev.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>多实例运行模式 会禁用多开检测 请自行指定设备</OriginalText>
+    <SortKey>BAcheckBoxMultiDev.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>checkBoxMultiDev.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>69</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>checkBoxNewScan.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>减少找设备延迟</OriginalText>
+    <SortKey>BAcheckBoxNewScan.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>checkBoxNewScan.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>70</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>checkBoxWriteProtect.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>数据写入保护(建议)</OriginalText>
+    <SortKey>BAcheckBoxWriteProtect.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>checkBoxWriteProtect.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>71</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>comboBox1.Items[0]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>标准</OriginalText>
+    <SortKey>BAcomboBox1.Items[0]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>72</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>comboBox1.Items[1]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>俄语</OriginalText>
+    <SortKey>BAcomboBox1.Items[1]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>1</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[1]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>73</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>设备控制</OriginalText>
+    <SortKey>BAgroupBox1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>74</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox10.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>破解工具</OriginalText>
+    <SortKey>BAgroupBox10.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox10.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>75</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox11.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>HardNested</OriginalText>
+    <SortKey>BAgroupBox11.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox11.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>76</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox12.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>界面设置</OriginalText>
+    <SortKey>BAgroupBox12.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox12.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>77</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox13.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>偏好设置</OriginalText>
+    <SortKey>BAgroupBox13.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox13.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>78</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox14.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>优化设置</OriginalText>
+    <SortKey>BAgroupBox14.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox14.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>79</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox15.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>语言和地区</OriginalText>
+    <SortKey>BAgroupBox15.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox15.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>80</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox16.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>从这里开始</OriginalText>
+    <SortKey>BAgroupBox16.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox16.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>81</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>普通卡操作</OriginalText>
+    <SortKey>BAgroupBox2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>82</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox3.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>运行/终端</OriginalText>
+    <SortKey>BAgroupBox3.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox3.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>83</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox4.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>集成辅助工具</OriginalText>
+    <SortKey>BAgroupBox4.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox4.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>84</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox5.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[2]读取原卡</OriginalText>
+    <SortKey>BAgroupBox5.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox5.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>85</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox6.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>卡操作相关</OriginalText>
+    <SortKey>BAgroupBox6.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox6.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>86</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox7.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[3]写入新卡</OriginalText>
+    <SortKey>BAgroupBox7.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox7.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>87</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox8.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>UID/UFUID卡操作</OriginalText>
+    <SortKey>BAgroupBox8.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox8.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>88</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>groupBox9.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>C/FUID卡操作</OriginalText>
+    <SortKey>BAgroupBox9.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox9.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>89</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>label1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>该卡种读取
+同普通卡</OriginalText>
+    <SortKey>BAlabel1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>90</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>label10.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>终端文字大小</OriginalText>
+    <SortKey>BAlabel10.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label10.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>91</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>label11.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>指定设备</OriginalText>
+    <SortKey>BAlabel11.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label11.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>92</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>label12.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>选择界面语言</OriginalText>
+    <SortKey>BAlabel12.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label12.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>93</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>label13.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>本工具仅支持SAK=08/18/28的
+卡片复制。SAK28无一键解密。
+若要复制S70卡片，请在高级界
+面上取消勾选“数据写入保护”。
+</OriginalText>
+    <SortKey>BAlabel13.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label13.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>94</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>label6.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>尝试一下是否成功</OriginalText>
+    <SortKey>BAlabel6.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label6.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>95</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>label7.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>请放
+原卡</OriginalText>
+    <SortKey>BAlabel7.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label7.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>96</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>label8.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>请放
+新卡</OriginalText>
+    <SortKey>BAlabel8.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label8.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>97</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>label9.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>终端文字颜色</OriginalText>
+    <SortKey>BAlabel9.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label9.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>98</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>richTextBox1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Hello,cardman!</OriginalText>
+    <SortKey>BArichTextBox1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>99</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>runTimeLabel.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripStatusLabel</ProgID>
+    <OriginalText>计时器</OriginalText>
+    <SortKey>BArunTimeLabel.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>runTimeLabel.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>100</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>ShowUID.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>显示UID</OriginalText>
+    <SortKey>BAShowUID.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>ShowUID.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>101</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>statusLabel.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripStatusLabel</ProgID>
+    <OriginalText>就绪</OriginalText>
+    <SortKey>BAstatusLabel.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>statusLabel.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>102</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>statusStrip1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>statusStrip1</OriginalText>
+    <SortKey>BAstatusStrip1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>statusStrip1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>103</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>tabPage1.ImageKey</FullName>
+    <ShortName>ImageKey</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>round_build_black_18pt_1x.png</OriginalText>
+    <SortKey>BAtabPage1.ImageKey</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>tabPage1.ImageKey</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>104</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>tabPage1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>高级操作模式</OriginalText>
+    <SortKey>BAtabPage1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>tabPage1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>105</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>tabPage2.ImageKey</FullName>
+    <ShortName>ImageKey</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>sharp_file_copy_black_18pt_1x.png</OriginalText>
+    <SortKey>BAtabPage2.ImageKey</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>tabPage2.ImageKey</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>106</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>tabPage2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>复制卡模式</OriginalText>
+    <SortKey>BAtabPage2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>tabPage2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>107</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>tabPage3.ImageKey</FullName>
+    <ShortName>ImageKey</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>round_settings_black_18pt_1x.png</OriginalText>
+    <SortKey>BAtabPage3.ImageKey</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>tabPage3.ImageKey</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>108</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>tabPage3.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>软件设置</OriginalText>
+    <SortKey>BAtabPage3.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>tabPage3.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>109</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>toolStripCheckUpdate.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripSplitButton</ProgID>
+    <OriginalText>检查更新</OriginalText>
+    <SortKey>BAtoolStripCheckUpdate.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolStripCheckUpdate.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>110</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>toolStripCheckUpdate.ToolTipText</FullName>
+    <ShortName>ToolTipText</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripSplitButton</ProgID>
+    <OriginalText>检查更新</OriginalText>
+    <SortKey>BAtoolStripCheckUpdate.ToolTipText</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>toolStripCheckUpdate.ToolTipText</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>111</ControlsScanID>
+    <Component>Form1.cs</Component>
+    <FullName>richTextBox1.Lines[0]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Hello,cardman!</OriginalText>
+    <SortKey>BLines(0000)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Lines[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>112</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>FormDiff.cs</FullName>
+    <ShortName>FormDiff.cs</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText />
+    <SortKey>FormDiff.cs</SortKey>
+    <NodeType>0</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>0</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName />
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>113</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>FormDiff.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>DiffTool</OriginalText>
+    <SortKey>AAFormDiff.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>$this.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>114</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>button1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>A</OriginalText>
+    <SortKey>BAbutton1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>button1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>115</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>button2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>B</OriginalText>
+    <SortKey>BAbutton2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>button2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>116</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>button3.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>比较</OriginalText>
+    <SortKey>BAbutton3.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>button3.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>117</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>richTextBox1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>欢迎使用M1T内置的差异工具！
+说明：
+点击上方的AB两个按键分别选择MFD文件。
+然后点击“比较”即可看到结果。
+</OriginalText>
+    <SortKey>BArichTextBox1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>118</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>richTextBox1.Lines[0]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>欢迎使用M1T内置的差异工具！</OriginalText>
+    <SortKey>BLines(0000)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Lines[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>119</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>richTextBox1.Lines[1]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>说明：</OriginalText>
+    <SortKey>BLines(0001)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>1</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Lines[1]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>120</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>richTextBox1.Lines[2]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>点击上方的AB两个按键分别选择MFD文件。</OriginalText>
+    <SortKey>BLines(0002)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>2</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Lines[2]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>121</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>richTextBox1.Lines[3]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>然后点击“比较”即可看到结果。</OriginalText>
+    <SortKey>BLines(0003)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>3</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Lines[3]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>122</ControlsScanID>
+    <Component>FormDiff.cs</Component>
+    <FullName>richTextBox1.Lines[4]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText />
+    <SortKey>BLines(0004)</SortKey>
+    <NodeType>8709</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>4</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Lines[4]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>123</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>FormHardNes.cs</FullName>
+    <ShortName>FormHardNes.cs</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText />
+    <SortKey>FormHardNes.cs</SortKey>
+    <NodeType>0</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>0</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName />
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>124</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>FormHardNes.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Bitsliced Crypto-1 brute-forcer</OriginalText>
+    <SortKey>AAFormHardNes.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>$this.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>125</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>button1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>执行!</OriginalText>
+    <SortKey>BAbutton1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>button1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>126</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>button2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>取消</OriginalText>
+    <SortKey>BAbutton2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>button2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>127</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>groupBox1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>目标卡-已知信息</OriginalText>
+    <SortKey>BAgroupBox1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>128</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>groupBox2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>目标扇区解密设置</OriginalText>
+    <SortKey>BAgroupBox2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>129</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>keyEdit.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>ffffffffffff</OriginalText>
+    <SortKey>BAkeyEdit.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>keyEdit.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>130</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>label1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>连续工作时请注意设备散热！</OriginalText>
+    <SortKey>BAlabel1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>131</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>label2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>已知的Key</OriginalText>
+    <SortKey>BAlabel2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>132</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>label3.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>扇区号</OriginalText>
+    <SortKey>BAlabel3.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label3.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>133</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>label4.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>类型</OriginalText>
+    <SortKey>BAlabel4.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label4.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>134</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>label5.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>类型</OriginalText>
+    <SortKey>BAlabel5.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label5.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>135</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>label6.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>扇区号</OriginalText>
+    <SortKey>BAlabel6.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label6.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>136</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>label7.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>После того, как вы нажмете 
+кнопку "Начать", 
+ожидайте около 1 минуты.</OriginalText>
+    <SortKey>BAlabel7.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label7.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>137</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>radioKey1A.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyA</OriginalText>
+    <SortKey>BAradioKey1A.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>radioKey1A.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>138</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>radioKey1B.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyB</OriginalText>
+    <SortKey>BAradioKey1B.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>radioKey1B.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>139</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>radioKey2A.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyA</OriginalText>
+    <SortKey>BAradioKey2A.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>radioKey2A.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>140</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>radioKey2B.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyB</OriginalText>
+    <SortKey>BAradioKey2B.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>radioKey2B.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>141</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>sector1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>0</OriginalText>
+    <SortKey>BAsector1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>sector1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>142</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>sector1.Lines[0]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>0</OriginalText>
+    <SortKey>BLines(0000)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>sector1.Lines[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>143</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>keyEdit.Lines[0]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>ffffffffffff</OriginalText>
+    <SortKey>BLines(0000)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>keyEdit.Lines[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>144</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>FormHTool.cs</FullName>
+    <ShortName>FormHTool.cs</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText />
+    <SortKey>FormHTool.cs</SortKey>
+    <NodeType>0</NodeType>
+    <Expanded>true</Expanded>
+    <ItemLevel>0</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName />
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>145</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>FormHTool.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>S50HTool-beta</OriginalText>
+    <SortKey>AAFormHTool.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>$this.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>146</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>buttonSaveSectorEdit.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>修改扇区(Enter)</OriginalText>
+    <SortKey>BAbuttonSaveSectorEdit.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonSaveSectorEdit.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>147</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>Column1.HeaderText</FullName>
+    <ShortName>HeaderText</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.DataGridViewTextBoxColumn</ProgID>
+    <OriginalText>扇区</OriginalText>
+    <SortKey>BAColumn1.HeaderText</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>Column1.HeaderText</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>148</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox1.Items[0]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyAB читать, писать, увеличивать и уменьшать</OriginalText>
+    <SortKey>BAcomboBox1.Items[0]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>149</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox1.Items[1]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</OriginalText>
+    <SortKey>BAcomboBox1.Items[1]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>1</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[1]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>150</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox1.Items[2]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</OriginalText>
+    <SortKey>BAcomboBox1.Items[2]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>2</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[2]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>151</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox1.Items[3]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyB чтение / запись / не сложение и вычитание</OriginalText>
+    <SortKey>BAcomboBox1.Items[3]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>3</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[3]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>152</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox1.Items[4]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyAB чтение / KeyB запись / без увеличения или уменьшения</OriginalText>
+    <SortKey>BAcomboBox1.Items[4]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>4</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[4]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>153</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox1.Items[5]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</OriginalText>
+    <SortKey>BAcomboBox1.Items[5]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>5</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[5]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>154</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox1.Items[6]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</OriginalText>
+    <SortKey>BAcomboBox1.Items[6]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>6</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[6]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>155</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox1.Items[7]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[только для чтения] заблокировать сектор</OriginalText>
+    <SortKey>BAcomboBox1.Items[7]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>7</ArrayIndexOrCount>
+    <CompilerName>comboBox1.Items[7]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>156</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox2.Items[0]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyAB читать, писать, увеличивать и уменьшать</OriginalText>
+    <SortKey>BAcomboBox2.Items[0]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>comboBox2.Items[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>157</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox2.Items[1]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</OriginalText>
+    <SortKey>BAcomboBox2.Items[1]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>1</ArrayIndexOrCount>
+    <CompilerName>comboBox2.Items[1]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>158</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox2.Items[2]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</OriginalText>
+    <SortKey>BAcomboBox2.Items[2]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>2</ArrayIndexOrCount>
+    <CompilerName>comboBox2.Items[2]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>159</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox2.Items[3]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyB чтение / запись / не сложение и вычитание</OriginalText>
+    <SortKey>BAcomboBox2.Items[3]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>3</ArrayIndexOrCount>
+    <CompilerName>comboBox2.Items[3]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>160</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox2.Items[4]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyAB чтение / KeyB запись / без увеличения или уменьшения</OriginalText>
+    <SortKey>BAcomboBox2.Items[4]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>4</ArrayIndexOrCount>
+    <CompilerName>comboBox2.Items[4]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>161</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox2.Items[5]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</OriginalText>
+    <SortKey>BAcomboBox2.Items[5]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>5</ArrayIndexOrCount>
+    <CompilerName>comboBox2.Items[5]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>162</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox2.Items[6]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</OriginalText>
+    <SortKey>BAcomboBox2.Items[6]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>6</ArrayIndexOrCount>
+    <CompilerName>comboBox2.Items[6]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>163</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox2.Items[7]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[только для чтения] заблокировать сектор</OriginalText>
+    <SortKey>BAcomboBox2.Items[7]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>7</ArrayIndexOrCount>
+    <CompilerName>comboBox2.Items[7]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>164</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox3.Items[0]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyAB читать, писать, увеличивать и уменьшать</OriginalText>
+    <SortKey>BAcomboBox3.Items[0]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>comboBox3.Items[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>165</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox3.Items[1]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</OriginalText>
+    <SortKey>BAcomboBox3.Items[1]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>1</ArrayIndexOrCount>
+    <CompilerName>comboBox3.Items[1]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>166</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox3.Items[2]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</OriginalText>
+    <SortKey>BAcomboBox3.Items[2]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>2</ArrayIndexOrCount>
+    <CompilerName>comboBox3.Items[2]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>167</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox3.Items[3]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyB чтение / запись / не сложение и вычитание</OriginalText>
+    <SortKey>BAcomboBox3.Items[3]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>3</ArrayIndexOrCount>
+    <CompilerName>comboBox3.Items[3]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>168</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox3.Items[4]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyAB чтение / KeyB запись / без увеличения или уменьшения</OriginalText>
+    <SortKey>BAcomboBox3.Items[4]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>4</ArrayIndexOrCount>
+    <CompilerName>comboBox3.Items[4]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>169</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox3.Items[5]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</OriginalText>
+    <SortKey>BAcomboBox3.Items[5]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>5</ArrayIndexOrCount>
+    <CompilerName>comboBox3.Items[5]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>170</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox3.Items[6]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</OriginalText>
+    <SortKey>BAcomboBox3.Items[6]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>6</ArrayIndexOrCount>
+    <CompilerName>comboBox3.Items[6]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>171</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox3.Items[7]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[только для чтения] заблокировать сектор</OriginalText>
+    <SortKey>BAcomboBox3.Items[7]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>7</ArrayIndexOrCount>
+    <CompilerName>comboBox3.Items[7]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>172</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox4.Items[0]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[Необратимый] KeyA: запись / AC: только чтение / KeyB: чтение и запись</OriginalText>
+    <SortKey>BAcomboBox4.Items[0]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>comboBox4.Items[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>173</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox4.Items[1]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyA: запись / AC: чтение / запись / KeyB: чтение и запись</OriginalText>
+    <SortKey>BAcomboBox4.Items[1]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>1</ArrayIndexOrCount>
+    <CompilerName>comboBox4.Items[1]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>174</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox4.Items[2]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[Необратимый] KeyA: невозможно чтение / запись / AC: только для чтения / KeyB: чтение</OriginalText>
+    <SortKey>BAcomboBox4.Items[2]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>2</ArrayIndexOrCount>
+    <CompilerName>comboBox4.Items[2]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>175</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox4.Items[3]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyA: B запись / AC: A только для чтения B чтение / запись / KeyB: B запись</OriginalText>
+    <SortKey>BAcomboBox4.Items[3]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>3</ArrayIndexOrCount>
+    <CompilerName>comboBox4.Items[3]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>176</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox4.Items[4]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[необратимый] KeyA: запись B / AC: только чтение AB / KeyB: запись B</OriginalText>
+    <SortKey>BAcomboBox4.Items[4]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>4</ArrayIndexOrCount>
+    <CompilerName>comboBox4.Items[4]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>177</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox4.Items[5]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyA: невозможно чтение / запись / AC: A только для чтения B чтение / запись / KeyB: невозможно чтение или запись</OriginalText>
+    <SortKey>BAcomboBox4.Items[5]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>5</ArrayIndexOrCount>
+    <CompilerName>comboBox4.Items[5]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>178</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox4.Items[6]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись</OriginalText>
+    <SortKey>BAcomboBox4.Items[6]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>6</ArrayIndexOrCount>
+    <CompilerName>comboBox4.Items[6]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>179</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>comboBox4.Items[7]</FullName>
+    <ShortName>Items</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись (повторяется?)</OriginalText>
+    <SortKey>BAcomboBox4.Items[7]</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>7</ArrayIndexOrCount>
+    <CompilerName>comboBox4.Items[7]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>180</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>groupBox1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>扇区列表</OriginalText>
+    <SortKey>BAgroupBox1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>181</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>groupBox2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>扇区信息</OriginalText>
+    <SortKey>BAgroupBox2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>182</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>groupBox3.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>输出</OriginalText>
+    <SortKey>BAgroupBox3.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox3.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>183</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>label1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>第0块</OriginalText>
+    <SortKey>BAlabel1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>184</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>label2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>第1块</OriginalText>
+    <SortKey>BAlabel2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>185</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>label3.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>第2块</OriginalText>
+    <SortKey>BAlabel3.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label3.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>186</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>label4.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyA</OriginalText>
+    <SortKey>BAlabel4.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label4.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>187</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>label5.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>KeyB</OriginalText>
+    <SortKey>BAlabel5.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label5.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>188</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>label6.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>0块权限</OriginalText>
+    <SortKey>BAlabel6.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label6.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>189</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>label7.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>1块权限</OriginalText>
+    <SortKey>BAlabel7.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label7.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>190</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>label8.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>2块权限</OriginalText>
+    <SortKey>BAlabel8.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label8.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>191</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>label9.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Key/ACbits权限</OriginalText>
+    <SortKey>BAlabel9.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label9.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>192</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>labelCurSec.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>当前选定扇区：？？</OriginalText>
+    <SortKey>BAlabelCurSec.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>labelCurSec.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>193</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>menuStrip1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>menuStrip1</OriginalText>
+    <SortKey>BAmenuStrip1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>menuStrip1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>194</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>richTextBox1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>欢迎使用M1T的集成编辑器S50HTool！
+打开文件请点左上角文件-打开或Ctrl+O
+</OriginalText>
+    <SortKey>BArichTextBox1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>195</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>保存ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>保存</OriginalText>
+    <SortKey>BA保存ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>保存ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>196</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>修改UIDToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>修改UID</OriginalText>
+    <SortKey>BA修改UIDToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>修改UIDToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>197</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>列出全卡密钥ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>列出全卡密钥</OriginalText>
+    <SortKey>BA列出全卡密钥ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>列出全卡密钥ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>198</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>另存为ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>另存为</OriginalText>
+    <SortKey>BA另存为ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>另存为ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>199</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>导入MCT格式ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>导入MCT格式</OriginalText>
+    <SortKey>BA导入MCT格式ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>导入MCT格式ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>200</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>导出为MCT格式ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>导出为MCT格式</OriginalText>
+    <SortKey>BA导出为MCT格式ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>导出为MCT格式ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>201</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>导出密钥字典ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>导出密钥字典</OriginalText>
+    <SortKey>BA导出密钥字典ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>导出密钥字典ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>202</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>工具ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>工具</OriginalText>
+    <SortKey>BA工具ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>工具ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>203</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>打开ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>打开</OriginalText>
+    <SortKey>BA打开ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>打开ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>204</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>文件ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>文件</OriginalText>
+    <SortKey>BA文件ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>文件ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>205</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>新建ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>新建</OriginalText>
+    <SortKey>BA新建ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>新建ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>206</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>检查全卡ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>检查全卡</OriginalText>
+    <SortKey>BA检查全卡ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>检查全卡ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>207</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>检查并纠正全卡ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>检查并纠正全卡</OriginalText>
+    <SortKey>BA检查并纠正全卡ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>检查并纠正全卡ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>208</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>退出ToolStripMenuItem.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.ToolStripMenuItem</ProgID>
+    <OriginalText>退出</OriginalText>
+    <SortKey>BA退出ToolStripMenuItem.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>退出ToolStripMenuItem.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>209</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>richTextBox1.Lines[0]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Добро пожаловать в интегрированный редактор дампа!</OriginalText>
+    <SortKey>BLines(0000)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Lines[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>210</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>richTextBox1.Lines[1]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Чтобы открыть файл, пожалуйста, нажмите на Файл в верхнем левом углу - Открыть или Ctrl + O</OriginalText>
+    <SortKey>BLines(0001)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>1</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Lines[1]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>211</ControlsScanID>
+    <Component>FormHTool.cs</Component>
+    <FullName>richTextBox1.Lines[2]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Вы можете обновить данные вашей карты.</OriginalText>
+    <SortKey>BLines(0002)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>2</ArrayIndexOrCount>
+    <CompilerName>richTextBox1.Lines[2]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>212</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>FormMFF08.cs</FullName>
+    <ShortName>FormMFF08.cs</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText />
+    <SortKey>FormMFF08.cs</SortKey>
+    <NodeType>0</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>0</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName />
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>213</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>FormMFF08.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>MFF08 Tool-CUID修复工具</OriginalText>
+    <SortKey>AAFormMFF08.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>$this.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>214</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>buttonClr.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>清除</OriginalText>
+    <SortKey>BAbuttonClr.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonClr.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>215</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>buttonKeyWrite.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>修复写入
+有密码
+CUID卡</OriginalText>
+    <SortKey>BAbuttonKeyWrite.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonKeyWrite.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>216</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>buttonLoadKey.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>加载…</OriginalText>
+    <SortKey>BAbuttonLoadKey.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonLoadKey.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>217</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>buttonWriteEmpty.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>修复写入
+无密空白
+CUID卡</OriginalText>
+    <SortKey>BAbuttonWriteEmpty.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>buttonWriteEmpty.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>218</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>groupBox1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>说明</OriginalText>
+    <SortKey>BAgroupBox1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>219</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>groupBox2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>操作</OriginalText>
+    <SortKey>BAgroupBox2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>220</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>groupBox3.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>日志</OriginalText>
+    <SortKey>BAgroupBox3.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>groupBox3.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>221</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>label1.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>本工具由nfc-mfclassic做少许修改而来。可用于1K大小CUID卡0块损坏的修复。
+本工具可以修复：SAK写错（不认卡类型）、ATQA写错（不认卡大小），对于BCC写错暂时无能为力。
+请准备好你最后一次写入该卡导致0块损坏的卡数据文件（如果卡片有加密）。</OriginalText>
+    <SortKey>BAlabel1.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label1.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>222</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>label2.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>最后一次写卡导致0块损坏的卡数据文件：</OriginalText>
+    <SortKey>BAlabel2.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label2.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>223</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>logBox.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>每个人使用CUID卡的时候，总会因不了解或是不经意犯下一些小错误。
+比如使用编辑器修改UID却没有改BCC，SAK=28的卡片解密后的文件直接写入，又或是从S70卡片导入数据写入1K卡却没有更正ATQA。
+MFF08工具给了你一次修复这些损坏卡片的机会。
+------------------------------------------------------------------------
+
+</OriginalText>
+    <SortKey>BAlogBox.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>logBox.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>224</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>logBox.Lines[0]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>每个人使用CUID卡的时候，总会因不了解或是不经意犯下一些小错误。</OriginalText>
+    <SortKey>BLines(0000)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>logBox.Lines[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>225</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>logBox.Lines[1]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>比如使用编辑器修改UID却没有改BCC，SAK=28的卡片解密后的文件直接写入，又或是从S70卡片导入数据写入1K卡却没有更正ATQA。</OriginalText>
+    <SortKey>BLines(0001)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>1</ArrayIndexOrCount>
+    <CompilerName>logBox.Lines[1]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>226</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>logBox.Lines[2]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>MFF08工具给了你一次修复这些损坏卡片的机会。</OriginalText>
+    <SortKey>BLines(0002)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>2</ArrayIndexOrCount>
+    <CompilerName>logBox.Lines[2]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>227</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>logBox.Lines[3]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>------------------------------------------------------------------------</OriginalText>
+    <SortKey>BLines(0003)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>3</ArrayIndexOrCount>
+    <CompilerName>logBox.Lines[3]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>228</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>logBox.Lines[4]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText />
+    <SortKey>BLines(0004)</SortKey>
+    <NodeType>8709</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>4</ArrayIndexOrCount>
+    <CompilerName>logBox.Lines[4]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>229</ControlsScanID>
+    <Component>FormMFF08.cs</Component>
+    <FullName>logBox.Lines[5]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText />
+    <SortKey>BLines(0005)</SortKey>
+    <NodeType>8709</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>5</ArrayIndexOrCount>
+    <CompilerName>logBox.Lines[5]</CompilerName>
+  </ControlsScanResults>
+  <SelectedComponents>
+    <Component>AssemblyInfo.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>ClassMifareS50.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>Cropto1.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>Form1.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>FormDiff.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>FormHardNes.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>FormHTool.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>FormMFF08.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>GitHubUpdate.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>Program.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>Resources.resx</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+</ControlsScanResultsCache>

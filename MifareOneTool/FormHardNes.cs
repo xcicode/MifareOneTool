@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MifareOneTool.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,11 +50,6 @@ namespace MifareOneTool
             a += radioKey2A.Checked ? "A" : "B";
             a += ".txt";
             return a;
-        }
-
-        public bool collectOnly()
-        {
-            return checkBoxColOnly.Checked;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -115,11 +111,16 @@ namespace MifareOneTool
             }
             if (error)
             {
-                MessageBox.Show("设置错误，请修改。");
+                MessageBox.Show(Resources.设置错误_请修改);
                 return;
             }
             this.DialogResult = DialogResult.Yes;
             this.Close();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

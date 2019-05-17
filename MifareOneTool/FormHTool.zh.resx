@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="buttonSaveSectorEdit.Text" xml:space="preserve">
+    <value>修改扇区(Enter)</value>
+  </data>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>扇区</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>KeyAB читать, писать, увеличивать и уменьшать</value>
+    <comment>Previous text: KeyAB读写及增减值</comment>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</value>
+    <comment>Previous text: [只读]KeyAB读及减值/不可写及增值</comment>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyAB读/不可写及增减值</comment>
+  </data>
+  <data name="comboBox1.Items3" xml:space="preserve">
+    <value>KeyB чтение / запись / не сложение и вычитание</value>
+    <comment>Previous text: KeyB读写/不可增减值</comment>
+  </data>
+  <data name="comboBox1.Items4" xml:space="preserve">
+    <value>KeyAB чтение / KeyB запись / без увеличения или уменьшения</value>
+    <comment>Previous text: KeyAB读/KeyB写/不可增减值</comment>
+  </data>
+  <data name="comboBox1.Items5" xml:space="preserve">
+    <value>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyB读/不可写及增减值</comment>
+  </data>
+  <data name="comboBox1.Items6" xml:space="preserve">
+    <value>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</value>
+    <comment>Previous text: KeyAB读及减值/KeyB写及增值</comment>
+  </data>
+  <data name="comboBox1.Items7" xml:space="preserve">
+    <value>[только для чтения] заблокировать сектор</value>
+    <comment>Previous text: [只读]锁死该扇区</comment>
+  </data>
+  <data name="comboBox2.Items" xml:space="preserve">
+    <value>KeyAB читать, писать, увеличивать и уменьшать</value>
+    <comment>Previous text: KeyAB读写及增减值</comment>
+  </data>
+  <data name="comboBox2.Items1" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</value>
+    <comment>Previous text: [只读]KeyAB读及减值/不可写及增值</comment>
+  </data>
+  <data name="comboBox2.Items2" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyAB读/不可写及增减值</comment>
+  </data>
+  <data name="comboBox2.Items3" xml:space="preserve">
+    <value>KeyB чтение / запись / не сложение и вычитание</value>
+    <comment>Previous text: KeyB读写/不可增减值</comment>
+  </data>
+  <data name="comboBox2.Items4" xml:space="preserve">
+    <value>KeyAB чтение / KeyB запись / без увеличения или уменьшения</value>
+    <comment>Previous text: KeyAB读/KeyB写/不可增减值</comment>
+  </data>
+  <data name="comboBox2.Items5" xml:space="preserve">
+    <value>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyB读/不可写及增减值</comment>
+  </data>
+  <data name="comboBox2.Items6" xml:space="preserve">
+    <value>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</value>
+    <comment>Previous text: KeyAB读及减值/KeyB写及增值</comment>
+  </data>
+  <data name="comboBox2.Items7" xml:space="preserve">
+    <value>[только для чтения] заблокировать сектор</value>
+    <comment>Previous text: [只读]锁死该扇区</comment>
+  </data>
+  <data name="comboBox3.Items" xml:space="preserve">
+    <value>KeyAB читать, писать, увеличивать и уменьшать</value>
+    <comment>Previous text: KeyAB读写及增减值</comment>
+  </data>
+  <data name="comboBox3.Items1" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения и амортизации / недоступен для записи и добавляет ценность</value>
+    <comment>Previous text: [只读]KeyAB读及减值/不可写及增值</comment>
+  </data>
+  <data name="comboBox3.Items2" xml:space="preserve">
+    <value>[только для чтения] KeyAB для чтения / записи, а также для увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyAB读/不可写及增减值</comment>
+  </data>
+  <data name="comboBox3.Items3" xml:space="preserve">
+    <value>KeyB чтение / запись / не сложение и вычитание</value>
+    <comment>Previous text: KeyB读写/不可增减值</comment>
+  </data>
+  <data name="comboBox3.Items4" xml:space="preserve">
+    <value>KeyAB чтение / KeyB запись / без увеличения или уменьшения</value>
+    <comment>Previous text: KeyAB读/KeyB写/不可增减值</comment>
+  </data>
+  <data name="comboBox3.Items5" xml:space="preserve">
+    <value>[Только для чтения] KeyB для чтения / не для записи и увеличения или уменьшения</value>
+    <comment>Previous text: [只读]KeyB读/不可写及增减值</comment>
+  </data>
+  <data name="comboBox3.Items6" xml:space="preserve">
+    <value>KeyAB чтение и ухудшение / KeyB написание и добавленная стоимость</value>
+    <comment>Previous text: KeyAB读及减值/KeyB写及增值</comment>
+  </data>
+  <data name="comboBox3.Items7" xml:space="preserve">
+    <value>[только для чтения] заблокировать сектор</value>
+    <comment>Previous text: [只读]锁死该扇区</comment>
+  </data>
+  <data name="comboBox4.Items" xml:space="preserve">
+    <value>[Необратимый] KeyA: запись / AC: только чтение / KeyB: чтение и запись</value>
+    <comment>Previous text: [不可逆]KeyA:A写/AC:A只读/KeyB:A读写</comment>
+  </data>
+  <data name="comboBox4.Items1" xml:space="preserve">
+    <value>KeyA: запись / AC: чтение / запись / KeyB: чтение и запись</value>
+    <comment>Previous text: KeyA:A写/AC:A读写/KeyB:A读写</comment>
+  </data>
+  <data name="comboBox4.Items2" xml:space="preserve">
+    <value>[Необратимый] KeyA: невозможно чтение / запись / AC: только для чтения / KeyB: чтение</value>
+    <comment>Previous text: [不可逆]KeyA:不能读写/AC:A只读/KeyB:A读</comment>
+  </data>
+  <data name="comboBox4.Items3" xml:space="preserve">
+    <value>KeyA: B запись / AC: A только для чтения B чтение / запись / KeyB: B запись</value>
+    <comment>Previous text: KeyA:B写/AC:A只读B读写/KeyB:B写</comment>
+  </data>
+  <data name="comboBox4.Items4" xml:space="preserve">
+    <value>[необратимый] KeyA: запись B / AC: только чтение AB / KeyB: запись B</value>
+    <comment>Previous text: [不可逆]KeyA:B写/AC:AB只读/KeyB:B写</comment>
+  </data>
+  <data name="comboBox4.Items5" xml:space="preserve">
+    <value>KeyA: невозможно чтение / запись / AC: A только для чтения B чтение / запись / KeyB: невозможно чтение или запись</value>
+    <comment>Previous text: KeyA:不能读写/AC:A只读B读写/KeyB:不能读写</comment>
+  </data>
+  <data name="comboBox4.Items6" xml:space="preserve">
+    <value>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись</value>
+    <comment>Previous text: [不可逆]KeyA:不能读写/AC:AB只读/KeyB:不能读写</comment>
+  </data>
+  <data name="comboBox4.Items7" xml:space="preserve">
+    <value>[Необратимый] KeyA: невозможно чтение / запись / AC: AB только для чтения / KeyB: невозможно чтение или запись (повторяется?)</value>
+    <comment>Previous text: [不可逆]KeyA:不能读写/AC:AB只读/KeyB:不能读写(重复了?)</comment>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>S50HTool-beta</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>扇区列表</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>扇区信息</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>输出</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>第0块</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>第1块</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>第2块</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>KeyA</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>KeyB</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>0块权限</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>1块权限</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>2块权限</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Key/ACbits权限</value>
+  </data>
+  <data name="labelCurSec.Text" xml:space="preserve">
+    <value>当前选定扇区：？？</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="richTextBox1.Lines[0]" xml:space="preserve">
+    <value>Добро пожаловать в интегрированный редактор дампа!</value>
+    <comment>Previous text: 欢迎使用M1T的集成编辑器S50HTool！</comment>
+  </data>
+  <data name="richTextBox1.Lines[1]" xml:space="preserve">
+    <value>Чтобы открыть файл, пожалуйста, нажмите на Файл в верхнем левом углу - Открыть или Ctrl + O</value>
+    <comment>Previous text: 打开文件请点左上角文件-打开或Ctrl+O</comment>
+  </data>
+  <data name="richTextBox1.Lines[2]" xml:space="preserve">
+    <value>Вы можете обновить данные вашей карты.</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>欢迎使用M1T的集成编辑器S50HTool！
+打开文件请点左上角文件-打开或Ctrl+O
+</value>
+    <comment>Previous text: 欢迎使用M1T的集成编辑器S50HTool！
+打开文件请点左上角文件-打开或Ctrl+O
+</comment>
+  </data>
+  <data name="保存ToolStripMenuItem.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="修改UIDToolStripMenuItem.Text" xml:space="preserve">
+    <value>修改UID</value>
+  </data>
+  <data name="列出全卡密钥ToolStripMenuItem.Text" xml:space="preserve">
+    <value>列出全卡密钥</value>
+  </data>
+  <data name="另存为ToolStripMenuItem.Text" xml:space="preserve">
+    <value>另存为</value>
+  </data>
+  <data name="导入MCT格式ToolStripMenuItem.Text" xml:space="preserve">
+    <value>导入MCT格式</value>
+  </data>
+  <data name="导出为MCT格式ToolStripMenuItem.Text" xml:space="preserve">
+    <value>导出为MCT格式</value>
+  </data>
+  <data name="导出密钥字典ToolStripMenuItem.Text" xml:space="preserve">
+    <value>导出密钥字典</value>
+  </data>
+  <data name="工具ToolStripMenuItem.Text" xml:space="preserve">
+    <value>工具</value>
+  </data>
+  <data name="打开ToolStripMenuItem.Text" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="文件ToolStripMenuItem.Text" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="新建ToolStripMenuItem.Text" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="检查全卡ToolStripMenuItem.Text" xml:space="preserve">
+    <value>检查全卡</value>
+  </data>
+  <data name="检查并纠正全卡ToolStripMenuItem.Text" xml:space="preserve">
+    <value>检查并纠正全卡</value>
+  </data>
+  <data name="退出ToolStripMenuItem.Text" xml:space="preserve">
+    <value>退出</value>
+  </data>
+</root>

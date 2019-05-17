@@ -35,7 +35,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\Сборки\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -44,13 +44,31 @@
     <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Сборки\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>nfc_128.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'beta|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Сборки\Beta\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MifareOneTool|x86'">
+    <OutputPath>..\..\Сборки\MifareOneTool\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
@@ -107,27 +125,66 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.ru.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.zh.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDiff.resx">
+      <DependentUpon>FormDiff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiff.ru.resx">
+      <DependentUpon>FormDiff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiff.zh.resx">
       <DependentUpon>FormDiff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHardNes.resx">
       <DependentUpon>FormHardNes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHardNes.ru.resx">
+      <DependentUpon>FormHardNes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHardNes.zh.resx">
+      <DependentUpon>FormHardNes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHTool.resx">
+      <DependentUpon>FormHTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHTool.ru.resx">
+      <DependentUpon>FormHTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHTool.zh.resx">
       <DependentUpon>FormHTool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMFF08.resx">
       <DependentUpon>FormMFF08.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMFF08.ru.resx">
+      <DependentUpon>FormMFF08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMFF08.zh.resx">
+      <DependentUpon>FormMFF08.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Properties\Resources.ru.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -162,7 +219,25 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MifareOneTool_ml.xml" />
     <Content Include="nfc_128.ico" />
+    <None Include="Resources\round_sync_black_18pt_1x.png" />
+    <None Include="Resources\outline_info_black_18pt_1x.png" />
+    <None Include="Resources\round_info_black_18pt_1x.png" />
+    <None Include="Resources\round_timer_black_18pt_1x.png" />
+    <None Include="Resources\round_update_black_18pt_1x.png" />
+    <None Include="Resources\round_update_black_24pt_1x.png" />
+    <None Include="Resources\round_done_black_48pt_1x.png" />
+    <None Include="Resources\round_done_black_24pt_1x.png" />
+    <None Include="Resources\round_done_outline_black_24pt_1x.png" />
+    <None Include="Resources\round_done_all_black_24pt_1x.png" />
+    <None Include="Resources\round_done_all_black_36pt_1x.png" />
+    <None Include="Resources\round_done_all_black_18pt_1x.png" />
+    <None Include="Resources\round_done_all_black_18pt_2x.png" />
+    <None Include="Resources\round_clear_black_24dp.png" />
+    <None Include="Resources\round_done_all_black_36dp.png" />
+    <None Include="Resources\round_done_all_black_24dp.png" />
+    <None Include="Resources\round_chevron_right_black_24dp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

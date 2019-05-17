@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MifareOneTool.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,8 +27,8 @@ namespace MifareOneTool
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd;*.dump";
-            ofd.Title = "请选择需要打开的MFD文件(比较A)";
+            ofd.Filter = Resources.MFD文件_mfd_dump;
+            ofd.Title = Resources.请选择需要打开的MFD文件_比较A;
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -45,7 +46,7 @@ namespace MifareOneTool
             }
             catch (IOException ioe)
             {
-                MessageBox.Show(ioe.Message, "打开出错", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ioe.Message, Resources.打开出错, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 sa = new S50();
                 return;
             }
@@ -64,8 +65,8 @@ namespace MifareOneTool
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd;*.dump";
-            ofd.Title = "请选择需要打开的MFD文件(比较B)";
+            ofd.Filter = Resources.MFD文件_mfd_dump;
+            ofd.Title = Resources.请选择需要打开的MFD文件_比较B;
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -83,7 +84,7 @@ namespace MifareOneTool
             }
             catch (IOException ioe)
             {
-                MessageBox.Show(ioe.Message, "打开出错", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ioe.Message, Resources.打开出错, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 sb = new S50();
                 return;
             }
@@ -98,7 +99,7 @@ namespace MifareOneTool
             }
             else
             {
-                logAppend("AB文件中一个或两个无效。");
+                logAppend(Resources.AB文件中一个或两个无效);
             }
         }
         private string Compare()
@@ -107,8 +108,8 @@ namespace MifareOneTool
             int diffCount = 0;
             for (int i = 0; i < 16; i++)
             {
-                stb.AppendLine("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-                stb.AppendLine("扇区 " + i.ToString());
+                stb.AppendLine(Resources.res1);
+                stb.AppendLine(Resources.扇区0 + i.ToString());
                 for (int a = 0; a < 4; a++)
                 {
                     string res = "";
@@ -116,11 +117,11 @@ namespace MifareOneTool
                     {
                         if (sa.Sectors[i].Block[a][b] == sb.Sectors[i].Block[a][b])
                         {
-                            res += "-- ";
+                            res += Resources.res2;
                         }
                         else
                         {
-                            res += "## ";
+                            res += Resources.res3;
                         }
                     }
                     stb.AppendLine("A: " + Utils.Hex2StrWithSpan(sa.Sectors[i].Block[a]));
@@ -133,7 +134,12 @@ namespace MifareOneTool
                 }
 
             }
-            return "共找到 " + diffCount.ToString() + " 个块不同\n" + stb.ToString();
+            return Resources.共找到 + diffCount.ToString() + Resources._个块不同 + stb.ToString();
+        }
+
+        private void RichTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
