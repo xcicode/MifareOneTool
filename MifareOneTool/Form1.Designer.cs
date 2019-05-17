@@ -157,6 +157,9 @@
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.checkBoxHardLowCost = new System.Windows.Forms.CheckBox();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel25 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -165,9 +168,6 @@
             this.curDevice = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripCheckUpdate = new System.Windows.Forms.ToolStripSplitButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel25 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
@@ -232,9 +232,9 @@
             this.flowLayoutPanel4.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.flowLayoutPanel25.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -606,7 +606,6 @@
             this.groupBox4.ForeColor = System.Drawing.Color.MediumBlue;
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // tableLayoutPanel6
             // 
@@ -678,7 +677,6 @@
             resources.ApplyResources(this.label8, "label8");
             this.label8.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label8.Name = "label8";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // pictureBox3
             // 
@@ -702,7 +700,6 @@
             this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.label13, 0, 1);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
-            this.tableLayoutPanel15.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel15_Paint);
             // 
             // tableLayoutPanel1
             // 
@@ -867,7 +864,6 @@
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // buttonEStop
             // 
@@ -1362,6 +1358,31 @@
             this.checkBoxHardLowCost.UseVisualStyleBackColor = true;
             this.checkBoxHardLowCost.CheckedChanged += new System.EventHandler(this.checkBoxHardLowCost_CheckedChanged);
             // 
+            // groupBox17
+            // 
+            resources.ApplyResources(this.groupBox17, "groupBox17");
+            this.groupBox17.BackColor = System.Drawing.Color.DodgerBlue;
+            this.groupBox17.Controls.Add(this.flowLayoutPanel25);
+            this.groupBox17.ForeColor = System.Drawing.Color.White;
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.TabStop = false;
+            // 
+            // flowLayoutPanel25
+            // 
+            resources.ApplyResources(this.flowLayoutPanel25, "flowLayoutPanel25");
+            this.flowLayoutPanel25.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel25.Controls.Add(this.button1);
+            this.flowLayoutPanel25.Name = "flowLayoutPanel25";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // imageList2
             // 
             this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
@@ -1426,31 +1447,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // groupBox17
-            // 
-            resources.ApplyResources(this.groupBox17, "groupBox17");
-            this.groupBox17.BackColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox17.Controls.Add(this.flowLayoutPanel25);
-            this.groupBox17.ForeColor = System.Drawing.Color.White;
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.TabStop = false;
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // flowLayoutPanel25
-            // 
-            resources.ApplyResources(this.flowLayoutPanel25, "flowLayoutPanel25");
-            this.flowLayoutPanel25.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel25.Controls.Add(this.button1);
-            this.flowLayoutPanel25.Name = "flowLayoutPanel25";
             // 
             // Form1
             // 
@@ -1586,12 +1582,12 @@
             this.groupBox11.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.flowLayoutPanel25.ResumeLayout(false);
             this.flowLayoutPanel25.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1511,33 +1511,10 @@ namespace MifareOneTool
             }
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel15_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void ShowUID_Click(object sender, EventArgs e)
         {
+            if (lprocess) { MessageBox.Show(Resources.有任务运行中_不可执行, Resources.设备忙, MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+            Form1.ActiveForm.Text = Resources.MifareOne_Tool_运行中;
             Process cmd = new Process();
             cmd.StartInfo = new ProcessStartInfo("nfc-bin/nfcUID.exe","-device=1");
             cmd.StartInfo.RedirectStandardOutput = true;
