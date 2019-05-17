@@ -36,7 +36,7 @@ namespace MifareOneTool
             if (lprocess) { MessageBox.Show(Resources.有任务运行中_不可执行, Resources.设备忙, MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             Form1.ActiveForm.Text = Resources.MifareOne_Tool_运行中;
             if (Properties.Settings.Default.NewScan)
-            { File.Delete("libnfc.conf"); }
+            { File.Delete(Resources.libnfc_conf); }
             BackgroundWorker bgw = new BackgroundWorker();
             bgw.DoWork += new DoWorkEventHandler(list_dev);
             bgw.WorkerReportsProgress = true;
@@ -46,11 +46,11 @@ namespace MifareOneTool
 
         void writeConfig(string devstr, bool autoscan = true, bool intscan = false)
         {
-            string cfg = "allow_autoscan = " + (autoscan ? "true" : "false") + "\n";
-            cfg += "allow_intrusive_scan = " + (intscan ? "true" : "false") + "\n";
-            cfg += "device.name = \"NFC-Device\"\n";
-            cfg += "device.connstring = \"" + devstr + "\"";
-            File.WriteAllText("libnfc.conf", cfg);
+            string cfg = Resources.allow_autoscan + (autoscan ? Resources._true : Resources._false) + Resources.res0;
+            cfg += Resources.allow_intrusive_scan + (intscan ? Resources._true : Resources._false) + "\n";
+            cfg += Resources.device_name_NFC_Device;
+            cfg += Resources.device_connstring + devstr + "\"";
+            File.WriteAllText(Resources.libnfc_conf, cfg);
             curDevice.Text = Resources.设备串口 + devstr.Replace("pn532_uart:", "").Replace(":115200", "");
         }
 
@@ -70,7 +70,7 @@ namespace MifareOneTool
                     if (File.Exists(omfd) && new FileInfo(omfd).Length > 1)
                     {
                         Directory.CreateDirectory("auto_keys");
-                        string filename = "auto_keys\\" + lastuid + "_" + DateTime.Now.ToString().Replace("/", "-").Replace(" ", "_").Replace(":", "-") + ".mfd";
+                        string filename = "auto_keys\\" + lastuid + "_" + DateTime.Now.ToString().Replace("/", "-").Replace(" ", "_").Replace(":", "-") + Resources._mfd;
                         if (File.Exists(filename))
                         {
                             File.Delete(filename);
@@ -528,12 +528,13 @@ namespace MifareOneTool
 
         private void buttonMfoc_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show(Resources.有任务运行中_不可执行, Resources.设备忙, MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = Resources.MifareOne_Tool_运行中;
+            if (lprocess) { MessageBox.Show("有任务运行中，不可执行。", "设备忙", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+            Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
             string rmfd = "Mfoc.tmp";
             string key = "";
             if (Control.ModifierKeys == Keys.Control)
             {
-                string[] ks = Interaction.InputBox(Resources.请输入已知的Key_以英文半角逗号分隔, Resources.请输入已知Key, Properties.Settings.Default.LastTryKey, -1, -1).Trim().Split(',');
+                string[] ks = Interaction.InputBox("请输入已知的Key，以英文半角逗号分隔。", "请输入已知Key", Properties.Settings.Default.LastTryKey, -1, -1).Trim().Split(',');
                 if (ks.Length > 0)
                 {
                     Properties.Settings.Default.LastTryKey = string.Join(",", ks);
@@ -572,7 +573,7 @@ namespace MifareOneTool
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
-            b.ReportProgress(0, Resources.开始执行MFOC解密); running = true;
+            b.ReportProgress(0, "开始执行MFOC解密……"); running = true;
             process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
             //StreamReader stderr = process.StandardError;
@@ -582,11 +583,11 @@ namespace MifareOneTool
             lprocess = false; running = false;
             if (process.ExitCode == 0)
             {
-                b.ReportProgress(101, Resources._运行完毕);
+                b.ReportProgress(101, "##运行完毕##");
             }
             else
             {
-                b.ReportProgress(100, Resources._运行出错);
+                b.ReportProgress(100, "##运行出错##");
                 File.Delete(args[0]);
             }
         }
@@ -726,11 +727,11 @@ namespace MifareOneTool
 
         private void buttonBmfWrite_Click(object sender, EventArgs e)
         {
-            if (lprocess) { MessageBox.Show(Resources.有任务运行中_不可执行, Resources.设备忙, MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = "MifareOne Tool - 运行中";
+            if (lprocess) { MessageBox.Show(Resources.有任务运行中_不可执行, Resources.设备忙, MessageBoxButtons.OK, MessageBoxIcon.Warning); return; } Form1.ActiveForm.Text = Resources.MifareOne_Tool_运行中;
             string rmfd = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.CheckFileExists = true;
-            ofd.Filter = "MFD文件|*.mfd;*.dump";
+            ofd.Filter = Resources.MFD文件_mfd_dump;
             ofd.Title = Resources.请选择需要写入的MFD文件;
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -800,7 +801,7 @@ namespace MifareOneTool
             string pat = "[0-9A-Fa-f]{8}";
             if (!Regex.IsMatch(uid, pat))
             {
-                MessageBox.Show(Resources.输入的UID号不合法, "InputError", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Resources.输入的UID号不合法, Resources.InputError, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             BackgroundWorker bgw = new BackgroundWorker();
@@ -897,7 +898,7 @@ namespace MifareOneTool
             }
             else
             {
-                switch (MessageBox.Show(Resources.使用KeyA_是_或KeyB_否_还是不使用_用于全新白卡_, "KeyA/B/N", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
+                switch (MessageBox.Show(Resources.使用KeyA_是_或KeyB_否_还是不使用_用于全新白卡_, Resources.KeyA_B_N, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information))
                 {
                     case DialogResult.No:
                         kt = "B";
@@ -1368,12 +1369,6 @@ namespace MifareOneTool
             {
                 string hardargs = fhn.GetArg();
                 BackgroundWorker bgw = new BackgroundWorker();
-                if (fhn.collectOnly())
-                {
-                    //lastuid = "0x" + GetUID() + fhn.GetFileAfter();
-                    bgw.DoWork += new DoWorkEventHandler(CollectNonce);
-                }
-                else
                 {
                     bgw.DoWork += new DoWorkEventHandler(Hardnest);
                 }
@@ -1388,67 +1383,18 @@ namespace MifareOneTool
         }
         void Hardnest(object sender, DoWorkEventArgs e)
         {
-            if (lprocess) { return; }
-            ProcessStartInfo psi = new ProcessStartInfo("nfc-bin/libnfc_hardnested.exe");
-            if (Properties.Settings.Default.HardLowCost)
-            {
-                psi.FileName = "nfc-bin/libnfc_hardnestedlc.exe";
-            }
-            psi.Arguments = (string)e.Argument;
-            psi.CreateNoWindow = true;
-            psi.UseShellExecute = false;
-            psi.RedirectStandardOutput = true;
-            psi.RedirectStandardError = true;
-            lprocess = true;
-            BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); 
-            b.ReportProgress(0, Resources.开始执行HardNested解密强化卡); running = true;
-            process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
-            process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
-            //StreamReader stderr = process.StandardError;
-            process.BeginOutputReadLine();
-            process.BeginErrorReadLine();
-            process.WaitForExit();
-            lprocess = false; running = false;
-            if (process.ExitCode == 0)
-            {
-                b.ReportProgress(100, Resources._运行完毕);
-            }
-            else
-            {
-                b.ReportProgress(100, Resources._运行出错);
-            }
-        }
-
-        void CollectNonce(object sender, DoWorkEventArgs e)
-        {
-            if (lprocess) { return; }
-            ProcessStartInfo psi = new ProcessStartInfo(Resources.nfc_bin_collect_exe);
-            psi.Arguments = (string)e.Argument;
-            psi.CreateNoWindow = true;
-            psi.UseShellExecute = false;
-            psi.RedirectStandardOutput = true;
-            psi.RedirectStandardError = true;
-            lprocess = true;
-            BackgroundWorker b = (BackgroundWorker)sender;
-            process = Process.Start(psi); 
-            b.ReportProgress(0, Resources.开始执行HardNested收集数据); running = true;
-            process.OutputDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
-            process.ErrorDataReceived += (s, _e) => b.ReportProgress(0, _e.Data);
-            //StreamReader stderr = process.StandardError;
-            process.BeginOutputReadLine();
-            process.BeginErrorReadLine();
-            process.WaitForExit();
-            lprocess = false; running = false;
-            if (process.ExitCode == 0)
-            {
-                b.ReportProgress(102, Resources._运行完毕);
-            }
-            else
-            {
-                b.ReportProgress(100, Resources._运行出错);
-            }
-        }
+            Process psi = new Process();
+            psi.StartInfo = new ProcessStartInfo(@"nfc-bin\cropto1_bs.exe");
+            psi.StartInfo.Arguments = (string)e.Argument;
+            psi.StartInfo.UseShellExecute = false;
+            psi.StartInfo.RedirectStandardOutput = true;
+            psi.StartInfo.CreateNoWindow = true;
+            psi.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            psi.OutputDataReceived += new DataReceivedEventHandler(SortOutputHandler);
+            psi.Start();
+            psi.BeginOutputReadLine();
+    }
+        
 
         private void checkBoxAutoLoadKey_CheckedChanged(object sender, EventArgs e)
         {
@@ -1619,6 +1565,12 @@ namespace MifareOneTool
             this.Dispose();
             Application.Exit();
         }
-    }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process Go = new System.Diagnostics.Process();
+            Go.StartInfo.FileName = @"libusb\libusbK-inf-wizard.exe";
+            Go.Start();
+        }
+    }
 }

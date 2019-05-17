@@ -472,7 +472,7 @@
     <ShortName>Text</ShortName>
     <XPath />
     <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>HardNested</OriginalText>
+    <OriginalText>Bitsliced Cropto-1</OriginalText>
     <SortKey>BAbuttonHardNested.Text</SortKey>
     <NodeType>8963</NodeType>
     <Expanded>false</Expanded>
@@ -1866,7 +1866,7 @@
     <ShortName>Text</ShortName>
     <XPath />
     <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>初始化HardNested解密</OriginalText>
+    <OriginalText>Bitsliced Crypto-1 brute-forcer</OriginalText>
     <SortKey>AAFormHardNes.Text</SortKey>
     <NodeType>8963</NodeType>
     <Expanded>false</Expanded>
@@ -1907,21 +1907,6 @@
   <ControlsScanResults>
     <ControlsScanID>127</ControlsScanID>
     <Component>FormHardNes.cs</Component>
-    <FullName>checkBoxColOnly.Text</FullName>
-    <ShortName>Text</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>只采集不计算</OriginalText>
-    <SortKey>BAcheckBoxColOnly.Text</SortKey>
-    <NodeType>8963</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
-    <CompilerName>checkBoxColOnly.Text</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>128</ControlsScanID>
-    <Component>FormHardNes.cs</Component>
     <FullName>groupBox1.Text</FullName>
     <ShortName>Text</ShortName>
     <XPath />
@@ -1935,7 +1920,7 @@
     <CompilerName>groupBox1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>129</ControlsScanID>
+    <ControlsScanID>128</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>groupBox2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1950,7 +1935,7 @@
     <CompilerName>groupBox2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>130</ControlsScanID>
+    <ControlsScanID>129</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>keyEdit.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1965,7 +1950,7 @@
     <CompilerName>keyEdit.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>131</ControlsScanID>
+    <ControlsScanID>130</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1980,7 +1965,7 @@
     <CompilerName>label1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>132</ControlsScanID>
+    <ControlsScanID>131</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label2.Text</FullName>
     <ShortName>Text</ShortName>
@@ -1995,7 +1980,7 @@
     <CompilerName>label2.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>133</ControlsScanID>
+    <ControlsScanID>132</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label3.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2010,7 +1995,7 @@
     <CompilerName>label3.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>134</ControlsScanID>
+    <ControlsScanID>133</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label4.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2025,7 +2010,7 @@
     <CompilerName>label4.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>135</ControlsScanID>
+    <ControlsScanID>134</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label5.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2040,7 +2025,7 @@
     <CompilerName>label5.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>136</ControlsScanID>
+    <ControlsScanID>135</ControlsScanID>
     <Component>FormHardNes.cs</Component>
     <FullName>label6.Text</FullName>
     <ShortName>Text</ShortName>
@@ -2053,6 +2038,23 @@
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>-1</ArrayIndexOrCount>
     <CompilerName>label6.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>136</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>label7.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>После того, как вы нажмете 
+кнопку "Начать", 
+ожидайте около 1 минуты.</OriginalText>
+    <SortKey>BAlabel7.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>label7.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
     <ControlsScanID>137</ControlsScanID>
@@ -2132,21 +2134,6 @@
   <ControlsScanResults>
     <ControlsScanID>142</ControlsScanID>
     <Component>FormHardNes.cs</Component>
-    <FullName>keyEdit.Lines[0]</FullName>
-    <ShortName>Lines</ShortName>
-    <XPath />
-    <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>ffffffffffff</OriginalText>
-    <SortKey>BLines(0000)</SortKey>
-    <NodeType>8965</NodeType>
-    <Expanded>false</Expanded>
-    <ItemLevel>1</ItemLevel>
-    <ArrayIndexOrCount>0</ArrayIndexOrCount>
-    <CompilerName>keyEdit.Lines[0]</CompilerName>
-  </ControlsScanResults>
-  <ControlsScanResults>
-    <ControlsScanID>143</ControlsScanID>
-    <Component>FormHardNes.cs</Component>
     <FullName>sector1.Lines[0]</FullName>
     <ShortName>Lines</ShortName>
     <XPath />
@@ -2158,6 +2145,21 @@
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>0</ArrayIndexOrCount>
     <CompilerName>sector1.Lines[0]</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>143</ControlsScanID>
+    <Component>FormHardNes.cs</Component>
+    <FullName>keyEdit.Lines[0]</FullName>
+    <ShortName>Lines</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>ffffffffffff</OriginalText>
+    <SortKey>BLines(0000)</SortKey>
+    <NodeType>8965</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>0</ArrayIndexOrCount>
+    <CompilerName>keyEdit.Lines[0]</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
     <ControlsScanID>144</ControlsScanID>
@@ -3462,4 +3464,48 @@ MFF08工具给了你一次修复这些损坏卡片的机会。
     <ArrayIndexOrCount>5</ArrayIndexOrCount>
     <CompilerName>logBox.Lines[5]</CompilerName>
   </ControlsScanResults>
+  <SelectedComponents>
+    <Component>AssemblyInfo.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>ClassMifareS50.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>Cropto1.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>Form1.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>FormDiff.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>FormHardNes.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>FormHTool.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>FormMFF08.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>GitHubUpdate.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>Program.cs</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
+  <SelectedComponents>
+    <Component>Resources.resx</Component>
+    <IsSelected>true</IsSelected>
+  </SelectedComponents>
 </ControlsScanResultsCache>

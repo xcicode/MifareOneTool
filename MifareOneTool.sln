@@ -15,6 +15,10 @@ Global
 		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|Win32 = Debug|Win32
 		Debug|x86 = Debug|x86
+		MifareOneTool|Any CPU = MifareOneTool|Any CPU
+		MifareOneTool|Mixed Platforms = MifareOneTool|Mixed Platforms
+		MifareOneTool|Win32 = MifareOneTool|Win32
+		MifareOneTool|x86 = MifareOneTool|x86
 		Release|Any CPU = Release|Any CPU
 		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|Win32 = Release|Win32
@@ -22,8 +26,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Any CPU.ActiveCfg = beta|x86
-		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Mixed Platforms.ActiveCfg = Release|x86
-		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Mixed Platforms.Build.0 = Release|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Mixed Platforms.ActiveCfg = beta|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Mixed Platforms.Build.0 = beta|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Win32.ActiveCfg = beta|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|Win32.Build.0 = beta|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.beta|x86.ActiveCfg = beta|x86
@@ -34,6 +38,13 @@ Global
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.Debug|Win32.ActiveCfg = Debug|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.Debug|x86.ActiveCfg = Debug|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.Debug|x86.Build.0 = Debug|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.MifareOneTool|Any CPU.ActiveCfg = MifareOneTool|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.MifareOneTool|Mixed Platforms.ActiveCfg = MifareOneTool|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.MifareOneTool|Mixed Platforms.Build.0 = MifareOneTool|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.MifareOneTool|Win32.ActiveCfg = MifareOneTool|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.MifareOneTool|Win32.Build.0 = MifareOneTool|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.MifareOneTool|x86.ActiveCfg = MifareOneTool|x86
+		{CDB26016-FC77-403F-B22A-A011F8622FCF}.MifareOneTool|x86.Build.0 = MifareOneTool|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.Release|Any CPU.ActiveCfg = Release|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{CDB26016-FC77-403F-B22A-A011F8622FCF}.Release|Mixed Platforms.Build.0 = Release|x86

@@ -49,10 +49,10 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.sector2 = new System.Windows.Forms.TextBox();
-            this.checkBoxColOnly = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -199,7 +199,7 @@
             resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel2, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.checkBoxColOnly, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel4.ForeColor = System.Drawing.Color.DodgerBlue;
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             // 
@@ -217,13 +217,6 @@
             // 
             resources.ApplyResources(this.sector2, "sector2");
             this.sector2.Name = "sector2";
-            // 
-            // checkBoxColOnly
-            // 
-            resources.ApplyResources(this.checkBoxColOnly, "checkBoxColOnly");
-            this.checkBoxColOnly.ForeColor = System.Drawing.Color.MediumBlue;
-            this.checkBoxColOnly.Name = "checkBoxColOnly";
-            this.checkBoxColOnly.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
@@ -246,6 +239,11 @@
             this.tableLayoutPanel5.Controls.Add(this.button2, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.button1, 1, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
             // 
             // FormHardNes
             // 
@@ -299,12 +297,12 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox sector2;
         private System.Windows.Forms.TextBox sector1;
-        private System.Windows.Forms.CheckBox checkBoxColOnly;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -117,33 +117,98 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 74</value>
+  <data name="buttoEScanCard.Text" xml:space="preserve">
+    <value>Поиск карт</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 96</value>
+  <data name="button4.Text" xml:space="preserve">
+    <value>Блокировка карты UFUID</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Управление устройством</value>
+  <data name="buttonBmfRead.Text" xml:space="preserve">
+    <value>Считать UID в дамп</value>
   </data>
-  <data name="flowLayoutPanel12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 31</value>
+  <data name="buttonBmfRead.ToolTip" xml:space="preserve">
+    <value>UID карты будет записан в файл дампа</value>
   </data>
-  <data name="buttonScanCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 27</value>
+  <data name="buttonBmfWrite.Text" xml:space="preserve">
+    <value>Записать UID из дампа</value>
   </data>
-  <data name="buttonScanCard.Text" xml:space="preserve">
-    <value>Ручное сканирование</value>
+  <data name="buttonBmfWrite.ToolTip" xml:space="preserve">
+    <value>UID будет записан из файла дампа карты, сделанного ранее</value>
   </data>
-  <data name="buttonScanCard.ToolTip" xml:space="preserve">
-    <value>Сканирование для действительной карты.</value>
+  <data name="buttonCheckEncrypt.Text" xml:space="preserve">
+    <value>Проверка шифрования</value>
   </data>
-  <data name="flowLayoutPanel11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 31</value>
+  <data name="buttonCheckEncrypt.ToolTip" xml:space="preserve">
+    <value>Обнаружение шифрования карты.</value>
   </data>
-  <data name="buttonListDev.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
+  <data name="buttonCLI.Text" xml:space="preserve">
+    <value>Команды</value>
+  </data>
+  <data name="buttonCLI.ToolTip" xml:space="preserve">
+    <value>Откройте командную строку NFC для расширенных операций.</value>
+  </data>
+  <data name="buttonCLIColor.Text" xml:space="preserve">
+    <value># M1T #</value>
+  </data>
+  <data name="buttonCmfWrite.Text" xml:space="preserve">
+    <value>Запись CUID</value>
+  </data>
+  <data name="buttonCmfWrite.ToolTip" xml:space="preserve">
+    <value>Запишите CUID / FUID карту (может понадобиться файл ключа)</value>
+  </data>
+  <data name="buttonConClr.Text" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="buttonConSave.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="buttonDictMfoc.Text" xml:space="preserve">
+    <value>Тест словаря</value>
+  </data>
+  <data name="buttonDictMfoc.ToolTip" xml:space="preserve">
+    <value>Импортируйте файл словаря для Nested crack.</value>
+  </data>
+  <data name="buttonDiffTool.Text" xml:space="preserve">
+    <value>Сравнение дампов</value>
+  </data>
+  <data name="buttonECheckEncrypt.Text" xml:space="preserve">
+    <value>Определить шифрование</value>
+  </data>
+  <data name="buttonECmfoc.Text" xml:space="preserve">
+    <value>Ввести известный ключ</value>
+  </data>
+  <data name="buttonECuidWrite.Text" xml:space="preserve">
+    <value>Запись карты C/FUID</value>
+  </data>
+  <data name="buttonEMfoc.Text" xml:space="preserve">
+    <value>Автоматически</value>
+  </data>
+  <data name="buttonEMfRead.Text" xml:space="preserve">
+    <value>Известный ключ для чтения</value>
+  </data>
+  <data name="buttonEMfWrite.Text" xml:space="preserve">
+    <value>Записать обычную карту</value>
+  </data>
+  <data name="buttonEReadUID.Text" xml:space="preserve">
+    <value>Считать UID в дамп</value>
+  </data>
+  <data name="buttonEscan.Text" xml:space="preserve">
+    <value>Определить считыватель</value>
+  </data>
+  <data name="buttonESelectKey.Text" xml:space="preserve">
+    <value>Загрузить ключ...</value>
+  </data>
+  <data name="buttonEStop.Text" xml:space="preserve">
+    <value>Остановить</value>
+  </data>
+  <data name="buttonEUIDWrite.Text" xml:space="preserve">
+    <value>Запись карты (UF)UID</value>
+  </data>
+  <data name="buttonHexTool.Text" xml:space="preserve">
+    <value>Редактор дампа</value>
+  </data>
+  <data name="buttonKill.Text" xml:space="preserve">
+    <value>Остановить</value>
   </data>
   <data name="buttonListDev.Text" xml:space="preserve">
     <value>Определить</value>
@@ -152,80 +217,22 @@
     <value>Сканирование подключенных устройств NFC
 (В настоящее время поддерживает PN532, ACR122U)</value>
   </data>
-  <data name="buttonCLI.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 2</value>
+  <data name="buttonLockUfuid.Text" xml:space="preserve">
+    <value>Блокировка UFUID</value>
   </data>
-  <data name="buttonCLI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 27</value>
+  <data name="buttonLockUfuid.ToolTip" xml:space="preserve">
+    <value>Блокировка 0-го блока данных UFUID карты (тестируется）
+</value>
   </data>
-  <data name="buttonCLI.Text" xml:space="preserve">
-    <value>Команды</value>
+  <data name="buttonMfcuk.Text" xml:space="preserve">
+    <value>MFUK</value>
   </data>
-  <data name="buttonCLI.ToolTip" xml:space="preserve">
-    <value>Откройте командную строку NFC для расширенных операций.</value>
+  <data name="buttonMfcuk.ToolTip" xml:space="preserve">
+    <value>Инструмент Darkside (не обязательно успешный）
+</value>
   </data>
-  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 252</value>
-  </data>
-  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1098, 180</value>
-  </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Привет!</value>
-  </data>
-  <data name="buttonMfRead.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 27</value>
-  </data>
-  <data name="buttonMfRead.Text" xml:space="preserve">
-    <value>Чтение</value>
-  </data>
-  <data name="buttonMfRead.ToolTip" xml:space="preserve">
-    <value>Прочитайте обычные карты M1 (возможно, потребуется загрузить файл ключа)</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 2</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 96</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Обычные операции</value>
-  </data>
-  <data name="tableLayoutPanel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 74</value>
-  </data>
-  <data name="flowLayoutPanel14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 31</value>
-  </data>
-  <data name="buttonSelectKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 27</value>
-  </data>
-  <data name="buttonSelectKey.Text" xml:space="preserve">
-    <value>Выбрать key.mfd</value>
-  </data>
-  <data name="buttonSelectKey.ToolTip" xml:space="preserve">
-    <value>Загрузите файл MFD с правильным ключом для чтения и записи и правильными битами управления.</value>
-  </data>
-  <data name="flowLayoutPanel13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 31</value>
-  </data>
-  <data name="buttonMfWrite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 2</value>
-  </data>
-  <data name="buttonMfWrite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 27</value>
-  </data>
-  <data name="buttonMfWrite.Text" xml:space="preserve">
-    <value>Запись</value>
-  </data>
-  <data name="buttonMfWrite.ToolTip" xml:space="preserve">
-    <value>Напишите нормальную карту M1 (возможно, потребуется загрузить файл ключа)</value>
-  </data>
-  <data name="buttonMfFormat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 2</value>
-  </data>
-  <data name="buttonMfFormat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 27</value>
+  <data name="buttonMFF08.Text" xml:space="preserve">
+    <value>MFF08 CUID ремонт</value>
   </data>
   <data name="buttonMfFormat.Text" xml:space="preserve">
     <value>Очистить</value>
@@ -233,79 +240,343 @@
   <data name="buttonMfFormat.ToolTip" xml:space="preserve">
     <value>Отформатируйте нормальную карту M1 (необходимо загрузить файл ключа)</value>
   </data>
-  <data name="buttonBmfWrite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 27</value>
-  </data>
-  <data name="buttonBmfWrite.Text" xml:space="preserve">
-    <value>Запись UID</value>
-  </data>
-  <data name="buttonBmfWrite.ToolTip" xml:space="preserve">
-    <value>Напишите UID-карту.</value>
-  </data>
-  <data name="buttonBmfRead.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 27</value>
-  </data>
-  <data name="buttonBmfRead.Text" xml:space="preserve">
-    <value>Читать UID</value>
-  </data>
-  <data name="buttonBmfRead.ToolTip" xml:space="preserve">
-    <value>Прочитать UID карты</value>
-  </data>
-  <data name="buttonMfoc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 27</value>
-  </data>
   <data name="buttonMfoc.Text" xml:space="preserve">
-    <value>Чтение MFOC</value>
+    <value>MFOC</value>
   </data>
   <data name="buttonMfoc.ToolTip" xml:space="preserve">
     <value>Взлом на полушифрованных картах.
 Нажмите Ctrl и нажмите эту кнопку, чтобы добавить известный ключ.</value>
   </data>
-  <data name="buttonUidWrite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 2</value>
+  <data name="buttonMfRead.Text" xml:space="preserve">
+    <value>Чтение</value>
   </data>
-  <data name="buttonUidWrite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 27</value>
+  <data name="buttonMfRead.ToolTip" xml:space="preserve">
+    <value>Прочитайте обычные карты M1 (возможно, потребуется загрузить файл ключа)</value>
   </data>
-  <data name="buttonUidWrite.Text" xml:space="preserve">
-    <value>Номер записи UID</value>
+  <data name="buttonMfWrite.Text" xml:space="preserve">
+    <value>Запись</value>
   </data>
-  <data name="buttonUidWrite.ToolTip" xml:space="preserve">
-    <value>Запишите номер верхней карты на карту UID, и производитель установит его на Fudan.</value>
+  <data name="buttonMfWrite.ToolTip" xml:space="preserve">
+    <value>Напишите нормальную карту M1 (возможно, потребуется загрузить файл ключа)</value>
   </data>
-  <data name="buttonUidFormat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>167, 2</value>
+  <data name="buttonnKeysMfoc.Text" xml:space="preserve">
+    <value>Ввод ключа</value>
   </data>
-  <data name="buttonUidFormat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 27</value>
+  <data name="buttonnKeysMfoc.ToolTip" xml:space="preserve">
+    <value>Введите известный ключ для взлома.</value>
+  </data>
+  <data name="buttonScanCard.Text" xml:space="preserve">
+    <value>Ручное сканирование</value>
+  </data>
+  <data name="buttonScanCard.ToolTip" xml:space="preserve">
+    <value>Сканирование для действительной карты.</value>
+  </data>
+  <data name="buttonSelectKey.Text" xml:space="preserve">
+    <value>Выбрать файл ключей</value>
+  </data>
+  <data name="buttonSelectKey.ToolTip" xml:space="preserve">
+    <value>Загрузите файл MFD с правильным ключом для чтения и записи и правильными битами управления.</value>
   </data>
   <data name="buttonUidFormat.Text" xml:space="preserve">
-    <value>Полный UID</value>
+    <value>Стереть UID</value>
   </data>
   <data name="buttonUidFormat.ToolTip" xml:space="preserve">
-    <value>Очистите карту и повторно инициализируйте ее.
-Его можно использовать для оказания первой помощи в ситуациях, когда повреждение ACbit / KEY полностью изменено.</value>
-  </data>
-  <data name="buttonUidReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 2</value>
-  </data>
-  <data name="buttonUidReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 27</value>
+    <value>Очистите карту и повторно инициализируйте ее. Это можно использовать для оказания первой помощи в ситуациях, когда поврежден ACbit/ключи полностью изменены.</value>
   </data>
   <data name="buttonUidReset.Text" xml:space="preserve">
     <value>Сброс UID</value>
   </data>
   <data name="buttonUidReset.ToolTip" xml:space="preserve">
-    <value>Сброс блока UID карты 0, UID случайный, а номер производителя - Fudan.</value>
+    <value>Сброс 0-го блока карты, номер UID - случайный, а данные производителя - Fudan.</value>
+  </data>
+  <data name="buttonUidWrite.Text" xml:space="preserve">
+    <value>Изменить UID</value>
+  </data>
+  <data name="buttonUidWrite.ToolTip" xml:space="preserve">
+    <value>На карту записывается номер Sticky Card, производитель будет установлен на Fudan.</value>
+  </data>
+  <data name="checkBoxAutoABN.Text" xml:space="preserve">
+    <value>Автоматически определять ключ (бета)</value>
+  </data>
+  <data name="checkBoxAutoLoadKey.Text" xml:space="preserve">
+    <value>Автоматически загружать файл uid.Key</value>
+  </data>
+  <data name="checkBoxAutoSave.Text" xml:space="preserve">
+    <value>Автоматически сохранять файлы с именем UID</value>
+  </data>
+  <data name="checkBoxCuidKeyOver.Text" xml:space="preserve">
+    <value>CUID записывает пустой патч карты</value>
+  </data>
+  <data name="checkBoxDefIsAdv.Text" xml:space="preserve">
+    <value>Автоматический переход в расширенный режим работы</value>
+  </data>
+  <data name="checkBoxHardLowCost.Text" xml:space="preserve">
+    <value>Однопоточные вычисления
+</value>
+  </data>
+  <data name="checkBoxMultiDev.Text" xml:space="preserve">
+    <value>Режим нескольких устройств. Пожалуйста, укажите ваше собственное устройство</value>
+  </data>
+  <data name="checkBoxNewScan.Text" xml:space="preserve">
+    <value>Уменьшить задержку оборудования</value>
+  </data>
+  <data name="checkBoxWriteProtect.Text" xml:space="preserve">
+    <value>Защита от записи данных (рекомендуется)</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>Китайский</value>
+    <comment>Previous text: Китайский</comment>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>Русский</value>
+    <comment>Previous text: Русский</comment>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Управление устройством</value>
+  </data>
+  <data name="groupBox10.Text" xml:space="preserve">
+    <value>Инструменты для взлома</value>
+  </data>
+  <data name="groupBox12.Text" xml:space="preserve">
+    <value>Настройки интерфейса</value>
+  </data>
+  <data name="groupBox13.Text" xml:space="preserve">
+    <value>Предпочтения</value>
+  </data>
+  <data name="groupBox14.Text" xml:space="preserve">
+    <value>Настройки оптимизации</value>
+  </data>
+  <data name="groupBox15.Text" xml:space="preserve">
+    <value>Язык и регион</value>
+  </data>
+  <data name="groupBox16.Text" xml:space="preserve">
+    <value>1. Начните здесь</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Обычные операции</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Терминал</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Дополнительно</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>2. Прочитать карту</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>Операции с картой</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>3. Записать карту</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Операции с UID/UFUID</value>
+  </data>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>Работа с картой C/FUID</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Карта читается 
+как и обычная карта</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Размер текста терминала</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Укажите устройство
+</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Выберите язык интерфейса</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Этот инструмент поддерживает только копирование 
+карт SAK=08/18/28. SAK28 расшифровывается без ключа. 
+Чтобы скопировать карту S70, снимите флажок
+“Защита от записи данных” в настройках программы.</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Проверьте результат</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Пожалуйста, 
+вставьте карту</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Пожалуйста, 
+вставьте 
+новую карту</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Цвет текста терминала</value>
+  </data>
+  <data name="richTextBox1.Lines[0]" xml:space="preserve">
+    <value>Привет!</value>
+    <comment>Previous text: Привет!</comment>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Привет!</value>
+  </data>
+  <data name="runTimeLabel.Text" xml:space="preserve">
+    <value>Таймер</value>
+  </data>
+  <data name="ShowUID.Text" xml:space="preserve">
+    <value>Показать UID</value>
+  </data>
+  <data name="statusLabel.Text" xml:space="preserve">
+    <value>Готов</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Расширенный режим работы</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Режим копирования карты</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Настройки программы</value>
+  </data>
+  <data name="toolStripCheckUpdate.Text" xml:space="preserve">
+    <value>Проверка обновлений</value>
+  </data>
+  <data name="toolStripCheckUpdate.ToolTipText" xml:space="preserve">
+    <value>Проверка обновлений</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 74</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 96</value>
+  </data>
+  <data name="flowLayoutPanel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 31</value>
+  </data>
+  <data name="buttonScanCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 27</value>
+  </data>
+  <data name="flowLayoutPanel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 31</value>
+  </data>
+  <data name="buttonListDev.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 27</value>
+  </data>
+  <data name="buttonCLI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 2</value>
+  </data>
+  <data name="buttonCLI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 27</value>
+  </data>
+  <data name="richTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9.75pt</value>
+  </data>
+  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 247</value>
+  </data>
+  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1098, 185</value>
+  </data>
+  <data name="buttonMfRead.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAAKpJREFUOE/l
+        krENwkAMRU+wAx0okxBGoQSJEdiAkiyQASjoKRiBBkGZFWhoL8/wKZwT4pQKwZNecf6xZSkOf0KMscAy
+        00JtKYQN5tKoLYXQNppl+n6j74N1t3j84AE3OFFbCmHOIPOKNxyrtR8MGOAJK5X6w5Aad3p6CNxBqmz1
+        EV5wgfbr13jHlT7xEHQPcq76/vl0VDh8NHYhcAep8mujMy5xam9Fv08ILelnWlThzMVcAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="buttonMfRead.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 27</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 2</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 96</value>
+  </data>
+  <data name="tableLayoutPanel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 74</value>
+  </data>
+  <data name="flowLayoutPanel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 31</value>
+  </data>
+  <data name="buttonSelectKey.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAANpJREFUOE/t
+        kjEOAVEQhldWEAoXWLVOFA5ASeEALqBRqoREonMAtV6i1TqFWghRqShEsb55bzasrKyt+ZKvmP/NTDLJ
+        c/4kw/f9Mg5wjB3M69N3MJDCKb6zw5K2xUPzyIxFs8G0tn6GphxeZEJZ4QSvprIsUM6NshUsqmHAEbOa
+        90wSzw09Gaia0nLATMJFdzSLXDxLokSdtsTglLkEyhbtaQJF18TRnLCgrdJbN6llrfETQvk/cu8re6xo
+        i4HaQzlHmGkchocitrGPDXT1KQR5E4eY7MP+NI7zACE9wjmZDmbMAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonSelectKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 27</value>
+  </data>
+  <data name="flowLayoutPanel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 31</value>
+  </data>
+  <data name="buttonMfWrite.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAALNJREFUOE/V
+        kLEOAUEURafTqnTb+g6NikaikAgSyX6Onq/hS3Q+QCdY41x54nXjUe1JTrGz995MJrWfnPMIt9ixoziU
+        p9ig2GN8jFIXe3jENzv7/R0UBnjGCVZ4wjuOLVKG8BAvKFSeYR8XFilDWA97RY/GKouUIayRm5qOB84t
+        Uoaw3uLvEb2Bru8Jjyyt5NH32iJlCK+s5ImNCAqHV/VDfERQ8kO/jQiKG9SYrO24taT0BAzgOu74eQMU
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonMfWrite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 2</value>
+  </data>
+  <data name="buttonMfWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 27</value>
+  </data>
+  <data name="buttonMfFormat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAAK9JREFUOE/l
+        kzEKwkAQRReSQ1h5ibQKNpLeM+gB7C08Qe6TLhfxEPbC+mYyK0vYMcFG0AcPkpk/AwNJ+HFijDVusMUb
+        JuR5j9KrLe5D6IhznCzuQ6jCLe4cpVdZ/D0EB/QYLNONry8eeNAFCQpLFjV4zbzgShckKMwuWoSEx5ki
+        3mmdDudQ/OS0RodzKH7ltDuudXAKjV4jZXrLpNPOWP7SacjvId/FFKm1Fvs/QngCus/tMMJAkDEAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="buttonMfFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 2</value>
+  </data>
+  <data name="buttonMfFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 27</value>
+  </data>
+  <data name="buttonBmfWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 27</value>
+  </data>
+  <data name="buttonBmfRead.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 27</value>
+  </data>
+  <data name="buttonMfoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 27</value>
+  </data>
+  <data name="buttonUidWrite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 2</value>
+  </data>
+  <data name="buttonUidWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 27</value>
+  </data>
+  <data name="buttonUidFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 2</value>
+  </data>
+  <data name="buttonUidFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 27</value>
+  </data>
+  <data name="buttonUidReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 2</value>
+  </data>
+  <data name="buttonUidReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 27</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>630, 2</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>166, 100</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Терминал</value>
   </data>
   <data name="tableLayoutPanel10.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 78</value>
@@ -316,17 +587,11 @@
   <data name="buttonKill.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 27</value>
   </data>
-  <data name="buttonKill.Text" xml:space="preserve">
-    <value>Остановить</value>
-  </data>
   <data name="flowLayoutPanel19.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 31</value>
   </data>
   <data name="buttonConClr.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 27</value>
-  </data>
-  <data name="buttonConClr.Text" xml:space="preserve">
-    <value>Очистить</value>
   </data>
   <data name="buttonConSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>77, 2</value>
@@ -334,63 +599,29 @@
   <data name="buttonConSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 27</value>
   </data>
-  <data name="buttonConSave.Text" xml:space="preserve">
-    <value>Сохранить</value>
-  </data>
   <data name="buttonMfcuk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>190, 2</value>
+    <value>148, 2</value>
   </data>
   <data name="buttonMfcuk.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 27</value>
   </data>
-  <data name="buttonMfcuk.Text" xml:space="preserve">
-    <value>MFUK</value>
-  </data>
-  <data name="buttonMfcuk.ToolTip" xml:space="preserve">
-    <value>Инструмент Darkside (не обязательно успешный）
-</value>
-  </data>
   <data name="buttonHexTool.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 27</value>
-  </data>
-  <data name="buttonHexTool.Text" xml:space="preserve">
-    <value>Редактор дампа</value>
   </data>
   <data name="buttonDiffTool.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 29</value>
   </data>
-  <data name="buttonDiffTool.Text" xml:space="preserve">
-    <value>Сравнение дампов</value>
-  </data>
   <data name="buttonCheckEncrypt.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 27</value>
   </data>
-  <data name="buttonCheckEncrypt.Text" xml:space="preserve">
-    <value>Проверка шифрования</value>
-  </data>
-  <data name="buttonCheckEncrypt.ToolTip" xml:space="preserve">
-    <value>Обнаружение шифрования карты.</value>
-  </data>
   <data name="buttonLockUfuid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 2</value>
+    <value>255, 2</value>
   </data>
   <data name="buttonLockUfuid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 27</value>
-  </data>
-  <data name="buttonLockUfuid.Text" xml:space="preserve">
-    <value>Блокировка Ufuid</value>
-  </data>
-  <data name="buttonLockUfuid.ToolTip" xml:space="preserve">
-    <value>Заблокированная карта UFUID 0 блокирует данные (тестирование)</value>
+    <value>124, 27</value>
   </data>
   <data name="buttonCmfWrite.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 25</value>
-  </data>
-  <data name="buttonCmfWrite.Text" xml:space="preserve">
-    <value>Запись CUID</value>
-  </data>
-  <data name="buttonCmfWrite.ToolTip" xml:space="preserve">
-    <value>Запишите CUID / FUID карту (может понадобиться файл ключа)</value>
   </data>
   <data name="buttonDictMfoc.Location" type="System.Drawing.Point, System.Drawing">
     <value>156, 2</value>
@@ -398,29 +629,14 @@
   <data name="buttonDictMfoc.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 27</value>
   </data>
-  <data name="buttonDictMfoc.Text" xml:space="preserve">
-    <value>Тест словаря</value>
-  </data>
-  <data name="buttonDictMfoc.ToolTip" xml:space="preserve">
-    <value>Импортируйте файл словаря для Nested crack.</value>
-  </data>
   <data name="buttonnKeysMfoc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 2</value>
+    <value>58, 2</value>
   </data>
   <data name="buttonnKeysMfoc.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 27</value>
   </data>
-  <data name="buttonnKeysMfoc.Text" xml:space="preserve">
-    <value>Ввод ключа</value>
-  </data>
-  <data name="buttonnKeysMfoc.ToolTip" xml:space="preserve">
-    <value>Введите известный ключ для взлома.</value>
-  </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>276, 100</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Дополнительно</value>
   </data>
   <data name="tableLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>272, 78</value>
@@ -437,33 +653,21 @@
   <data name="buttonMFF08.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 27</value>
   </data>
-  <data name="buttonMFF08.Text" xml:space="preserve">
-    <value>MFF08 CUID ремонт</value>
-  </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1090, 217</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Режим копирования карты</value>
+    <value>1090, 220</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1090, 222</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Расширенный режим работы</value>
+    <value>1090, 220</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1090, 217</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Настройки программы</value>
+    <value>1090, 220</value>
   </data>
   <data name="imageList2.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACu
-        CgAAAk1TRnQBSQFMAgEBAwEAASgBAAEoAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CgAAAk1TRnQBSQFMAgEBAwEAAVABAAFQAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -512,24 +716,19 @@
 </value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1098, 250</value>
+    <value>1098, 248</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1086, 213</value>
+    <value>1086, 216</value>
   </data>
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>623, 3</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 207</value>
+    <value>92, 210</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 51</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Пожалуйста, 
-вставьте 
-новую карту</value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 54</value>
@@ -538,116 +737,95 @@
     <value>86, 29</value>
   </data>
   <data name="groupBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 207</value>
-  </data>
-  <data name="groupBox16.Text" xml:space="preserve">
-    <value>1. Начните здесь</value>
+    <value>424, 210</value>
   </data>
   <data name="tableLayoutPanel15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>406, 140</value>
+    <value>406, 138</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>402, 68</value>
+    <value>402, 66</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 32</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 34</value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Пожалуйста, 
-вставьте карту</value>
-  </data>
   <data name="buttonEscan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 30</value>
-  </data>
-  <data name="buttonEscan.Text" xml:space="preserve">
-    <value>Определить считыватель</value>
-  </data>
-  <data name="buttonECheckEncrypt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 2</value>
-  </data>
-  <data name="buttonECheckEncrypt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 30</value>
-  </data>
-  <data name="buttonECheckEncrypt.Text" xml:space="preserve">
-    <value>Определить шифрование</value>
+    <value>160, 28</value>
   </data>
   <data name="buttoEScanCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 36</value>
+    <value>202, 2</value>
   </data>
   <data name="buttoEScanCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 30</value>
+    <value>162, 28</value>
   </data>
-  <data name="buttoEScanCard.Text" xml:space="preserve">
-    <value>Поиск карт</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>167, 3</value>
   </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 26</value>
+  </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>369, 3</value>
+  </data>
+  <data name="buttonECheckEncrypt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 34</value>
+  </data>
+  <data name="buttonECheckEncrypt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 30</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 70</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>370, 68</value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Этот инструмент поддерживает только копирование 
-карт SAK=08/18/28. SAK28 расшифровывается без ключа. 
-Чтобы скопировать карту S70, снимите флажок
-“Защита от записи данных” в настройках программы.</value>
+  <data name="groupBox5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="groupBox5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>432, 2</value>
   </data>
   <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 209</value>
-  </data>
-  <data name="groupBox5.Text" xml:space="preserve">
-    <value>2. Прочитать карту</value>
+    <value>186, 212</value>
   </data>
   <data name="tableLayoutPanel11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 187</value>
+    <value>182, 190</value>
   </data>
   <data name="buttonEReadUID.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 27</value>
   </data>
-  <data name="buttonEReadUID.Text" xml:space="preserve">
-    <value>Чтение UID</value>
-  </data>
   <data name="buttonEMfRead.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 158</value>
+    <value>2, 161</value>
   </data>
   <data name="buttonEMfRead.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 27</value>
   </data>
-  <data name="buttonEMfRead.Text" xml:space="preserve">
-    <value>Известный ключ для чтения</value>
-  </data>
   <data name="buttonECmfoc.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 27</value>
-  </data>
-  <data name="buttonECmfoc.Text" xml:space="preserve">
-    <value>Ввести известный ключ</value>
   </data>
   <data name="buttonEMfoc.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 27</value>
   </data>
-  <data name="buttonEMfoc.Text" xml:space="preserve">
-    <value>Автоматически</value>
-  </data>
   <data name="buttonESelectKey.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 27</value>
-  </data>
-  <data name="buttonESelectKey.Text" xml:space="preserve">
-    <value>Загрузить ключ...</value>
   </data>
   <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>893, 3</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 207</value>
+    <value>190, 210</value>
   </data>
   <data name="flowLayoutPanel24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 68</value>
+    <value>3, 70</value>
   </data>
   <data name="flowLayoutPanel24.Size" type="System.Drawing.Size, System.Drawing">
     <value>184, 32</value>
@@ -655,71 +833,47 @@
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 32</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Проверьте результат</value>
-  </data>
   <data name="buttonEStop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 178</value>
+    <value>104, 181</value>
   </data>
   <data name="buttonEStop.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 27</value>
-  </data>
-  <data name="buttonEStop.Text" xml:space="preserve">
-    <value>Остановить</value>
   </data>
   <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>720, 2</value>
   </data>
   <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 209</value>
-  </data>
-  <data name="groupBox7.Text" xml:space="preserve">
-    <value>3. Записать карту</value>
+    <value>168, 212</value>
   </data>
   <data name="tableLayoutPanel13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 187</value>
+    <value>164, 190</value>
   </data>
   <data name="buttonEUIDWrite.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 27</value>
   </data>
-  <data name="buttonEUIDWrite.Text" xml:space="preserve">
-    <value>Запись карты (UF)UID</value>
-  </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 27</value>
-  </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>Блокировка карты UFUID</value>
   </data>
   <data name="buttonECuidWrite.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 27</value>
   </data>
-  <data name="buttonECuidWrite.Text" xml:space="preserve">
-    <value>Запись карты C/FUID</value>
-  </data>
   <data name="buttonEMfWrite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 158</value>
+    <value>3, 161</value>
   </data>
   <data name="buttonEMfWrite.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 27</value>
   </data>
-  <data name="buttonEMfWrite.Text" xml:space="preserve">
-    <value>Записать обычную карту</value>
-  </data>
   <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>914, 220</value>
+    <value>1012, 220</value>
   </data>
   <data name="flowLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>908, 104</value>
+    <value>1006, 104</value>
   </data>
   <data name="groupBox10.Location" type="System.Drawing.Point, System.Drawing">
     <value>282, 2</value>
   </data>
   <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>344, 100</value>
-  </data>
-  <data name="groupBox10.Text" xml:space="preserve">
-    <value>Взломать</value>
   </data>
   <data name="tableLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
     <value>340, 78</value>
@@ -733,44 +887,38 @@
   <data name="flowLayoutPanel17.Size" type="System.Drawing.Size, System.Drawing">
     <value>334, 31</value>
   </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>801, 3</value>
+  </data>
   <data name="flowLayoutPanel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>908, 104</value>
+    <value>1006, 104</value>
   </data>
   <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 2</value>
+    <value>448, 2</value>
   </data>
   <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 96</value>
-  </data>
-  <data name="groupBox8.Text" xml:space="preserve">
-    <value>Операции с UID/UFUID</value>
+    <value>410, 96</value>
   </data>
   <data name="tableLayoutPanel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 74</value>
+    <value>406, 74</value>
   </data>
   <data name="flowLayoutPanel16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 31</value>
+    <value>381, 31</value>
   </data>
   <data name="flowLayoutPanel15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 31</value>
+    <value>400, 31</value>
   </data>
   <data name="ShowUID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 2</value>
+    <value>304, 2</value>
   </data>
   <data name="ShowUID.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 27</value>
   </data>
-  <data name="ShowUID.Text" xml:space="preserve">
-    <value>Показать UID</value>
-  </data>
   <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>764, 2</value>
+    <value>862, 2</value>
   </data>
   <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 96</value>
-  </data>
-  <data name="groupBox9.Text" xml:space="preserve">
-    <value>Работа с картой C/FUID</value>
   </data>
   <data name="flowLayoutPanel21.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 74</value>
@@ -778,12 +926,8 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 34</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Карточка читается 
-как и обычная карта</value>
-  </data>
   <data name="tableLayoutPanel14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1090, 217</value>
+    <value>1090, 220</value>
   </data>
   <data name="flowLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>1084, 120</value>
@@ -791,44 +935,26 @@
   <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>269, 116</value>
   </data>
-  <data name="groupBox6.Text" xml:space="preserve">
-    <value>Операция с картой</value>
-  </data>
   <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 94</value>
   </data>
   <data name="checkBoxAutoABN.Size" type="System.Drawing.Size, System.Drawing">
     <value>244, 19</value>
   </data>
-  <data name="checkBoxAutoABN.Text" xml:space="preserve">
-    <value>Автоматически определять ключ (бета)</value>
-  </data>
   <data name="checkBoxAutoLoadKey.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 19</value>
-  </data>
-  <data name="checkBoxAutoLoadKey.Text" xml:space="preserve">
-    <value>Автоматически загружать файл uid.Key</value>
   </data>
   <data name="checkBoxWriteProtect.Size" type="System.Drawing.Size, System.Drawing">
     <value>261, 19</value>
   </data>
-  <data name="checkBoxWriteProtect.Text" xml:space="preserve">
-    <value>Защита от записи данных (рекомендуется)</value>
-  </data>
   <data name="checkBoxCuidKeyOver.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 19</value>
-  </data>
-  <data name="checkBoxCuidKeyOver.Text" xml:space="preserve">
-    <value>CUID запись патча пустой карты</value>
+    <value>224, 19</value>
   </data>
   <data name="groupBox12.Location" type="System.Drawing.Point, System.Drawing">
     <value>275, 2</value>
   </data>
   <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 116</value>
-  </data>
-  <data name="groupBox12.Text" xml:space="preserve">
-    <value>Настройки интерфейса</value>
   </data>
   <data name="tableLayoutPanel12.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 94</value>
@@ -842,23 +968,14 @@
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 47</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Цвет текста терминала</value>
-  </data>
   <data name="buttonCLIColor.Location" type="System.Drawing.Point, System.Drawing">
     <value>154, 2</value>
   </data>
   <data name="buttonCLIColor.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 43</value>
   </data>
-  <data name="buttonCLIColor.Text" xml:space="preserve">
-    <value># M1T #</value>
-  </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 15</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Размер текста терминала</value>
   </data>
   <data name="groupBox14.Location" type="System.Drawing.Point, System.Drawing">
     <value>499, 2</value>
@@ -866,54 +983,29 @@
   <data name="groupBox14.Size" type="System.Drawing.Size, System.Drawing">
     <value>497, 116</value>
   </data>
-  <data name="groupBox14.Text" xml:space="preserve">
-    <value>Настройки оптимизации</value>
-  </data>
   <data name="flowLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>493, 94</value>
   </data>
   <data name="checkBoxNewScan.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 19</value>
   </data>
-  <data name="checkBoxNewScan.Text" xml:space="preserve">
-    <value>Уменьшить задержку оборудования</value>
-  </data>
   <data name="checkBoxMultiDev.Size" type="System.Drawing.Size, System.Drawing">
     <value>487, 19</value>
-  </data>
-  <data name="checkBoxMultiDev.Text" xml:space="preserve">
-    <value>Режим нескольких устройств. Пожалуйста, укажите ваше собственное устройство</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 15</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Укажите устройство
-</value>
-  </data>
   <data name="flowLayoutPanel22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1084, 85</value>
+    <value>1084, 88</value>
   </data>
   <data name="groupBox15.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 68</value>
-  </data>
-  <data name="groupBox15.Text" xml:space="preserve">
-    <value>Язык и регион</value>
   </data>
   <data name="flowLayoutPanel23.Size" type="System.Drawing.Size, System.Drawing">
     <value>166, 44</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 15</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Выберите язык интерфейса</value>
-  </data>
-  <data name="comboBox1.Items" xml:space="preserve">
-    <value>Китайский</value>
-  </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>Русский</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 23</value>
@@ -924,23 +1016,14 @@
   <data name="groupBox13.Size" type="System.Drawing.Size, System.Drawing">
     <value>351, 70</value>
   </data>
-  <data name="groupBox13.Text" xml:space="preserve">
-    <value>Предпочтения</value>
-  </data>
   <data name="flowLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>347, 48</value>
   </data>
   <data name="checkBoxDefIsAdv.Size" type="System.Drawing.Size, System.Drawing">
     <value>343, 19</value>
   </data>
-  <data name="checkBoxDefIsAdv.Text" xml:space="preserve">
-    <value>Автоматический переход в расширенный режим работы</value>
-  </data>
   <data name="checkBoxAutoSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>289, 19</value>
-  </data>
-  <data name="checkBoxAutoSave.Text" xml:space="preserve">
-    <value>Автоматически сохранять файлы с именем UID</value>
   </data>
   <data name="groupBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>535, 2</value>
@@ -954,24 +1037,14 @@
   <data name="checkBoxHardLowCost.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 19</value>
   </data>
-  <data name="checkBoxHardLowCost.Text" xml:space="preserve">
-    <value>Однопоточные вычисления
-</value>
-  </data>
   <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1098, 22</value>
   </data>
   <data name="statusLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 22</value>
   </data>
-  <data name="statusLabel.Text" xml:space="preserve">
-    <value>Готов</value>
-  </data>
   <data name="runTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 22</value>
-  </data>
-  <data name="runTimeLabel.Text" xml:space="preserve">
-    <value>Таймер</value>
   </data>
   <data name="toolStripCheckUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -990,12 +1063,6 @@
   </data>
   <data name="toolStripCheckUpdate.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 22</value>
-  </data>
-  <data name="toolStripCheckUpdate.Text" xml:space="preserve">
-    <value>Проверка обновлений</value>
-  </data>
-  <data name="toolStripCheckUpdate.ToolTipText" xml:space="preserve">
-    <value>Проверка обновлений</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1098, 456</value>

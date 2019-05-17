@@ -222,6 +222,9 @@
   <data name="radioKey1B.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="radioKey1B.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="radioKey1B.Font" type="System.Drawing.Font, System.Drawing">
     <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
   </data>
@@ -232,7 +235,7 @@
     <value>2, 3, 2, 3</value>
   </data>
   <data name="radioKey1B.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 19</value>
+    <value>119, 23</value>
   </data>
   <data name="radioKey1B.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -294,6 +297,9 @@
   <data name="radioKey1A.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="radioKey1A.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="radioKey1A.Font" type="System.Drawing.Font, System.Drawing">
     <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
   </data>
@@ -304,7 +310,7 @@
     <value>2, 3, 2, 3</value>
   </data>
   <data name="radioKey1A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 19</value>
+    <value>52, 23</value>
   </data>
   <data name="radioKey1A.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -358,7 +364,7 @@
     <value>True</value>
   </data>
   <data name="label4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+    <value>Left</value>
   </data>
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
@@ -370,7 +376,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 15</value>
+    <value>31, 15</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -478,7 +484,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 44</value>
+    <value>341, 44</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -514,7 +520,7 @@
     <value>2, 3, 2, 3</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 68</value>
+    <value>345, 68</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -723,6 +729,57 @@
   <data name="groupBox2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 77</value>
+  </data>
+  <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 74</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>目标扇区解密设置</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="tableLayoutPanel4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -732,6 +789,69 @@
   <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="radioKey2B" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="radioKey2A" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="sector2" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 21</value>
+  </data>
+  <data name="tableLayoutPanel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 50</value>
+  </data>
+  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="tableLayoutPanel2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -740,6 +860,51 @@
   </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;sector2.Name" xml:space="preserve">
+    <value>sector2</value>
+  </data>
+  <data name="&gt;&gt;sector2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sector2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;sector2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 3</value>
+  </data>
+  <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 44</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="radioKey2B" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="radioKey2A" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="sector2" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="sector2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -768,147 +933,6 @@
   <data name="&gt;&gt;sector2.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 3</value>
-  </data>
-  <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 44</value>
-  </data>
-  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="radioKey2B" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="radioKey2A" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="sector2" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="checkBoxColOnly.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxColOnly.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="checkBoxColOnly.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
-  </data>
-  <data name="checkBoxColOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 3</value>
-  </data>
-  <data name="checkBoxColOnly.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="checkBoxColOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 44</value>
-  </data>
-  <data name="checkBoxColOnly.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="checkBoxColOnly.Text" xml:space="preserve">
-    <value>只采集不计算</value>
-  </data>
-  <data name="&gt;&gt;checkBoxColOnly.Name" xml:space="preserve">
-    <value>checkBoxColOnly</value>
-  </data>
-  <data name="&gt;&gt;checkBoxColOnly.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxColOnly.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;checkBoxColOnly.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 21</value>
-  </data>
-  <data name="tableLayoutPanel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 50</value>
-  </data>
-  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="checkBoxColOnly" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,Absolute,48" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="groupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 77</value>
-  </data>
-  <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 74</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>目标扇区解密设置</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="tableLayoutPanel3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -923,30 +947,6 @@
   </data>
   <data name="flowLayoutPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
-  </data>
-  <data name="tableLayoutPanel5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tableLayoutPanel5.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="tableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 3</value>
-  </data>
-  <data name="tableLayoutPanel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="tableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 37</value>
-  </data>
-  <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel5.Name" xml:space="preserve">
     <value>tableLayoutPanel5</value>
@@ -973,7 +973,7 @@
     <value>2, 3, 2, 3</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 64</value>
+    <value>345, 64</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1023,6 +1023,80 @@
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBox1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBox2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <data name="tableLayoutPanel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel5.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="tableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 3</value>
+  </data>
+  <data name="tableLayoutPanel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="tableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 37</value>
+  </data>
+  <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Name" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt, style=Bold</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 50</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>После того, как вы нажмете 
+кнопку "Начать", 
+ожидайте около 1 минуты.</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1045,7 +1119,7 @@
     <value>2, 3, 2, 3</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>初始化HardNested解密</value>
+    <value>Bitsliced Crypto-1 brute-forcer</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormHardNes</value>

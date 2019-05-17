@@ -70,6 +70,24 @@ namespace MifareOneTool.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на false.
+        /// </summary>
+        public static string _false {
+            get {
+                return ResourceManager.GetString("_false", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .mfd.
+        /// </summary>
+        public static string _mfd {
+            get {
+                return ResourceManager.GetString("_mfd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на ##Nonce收集完毕##.
         /// </summary>
         public static string _Nonce收集完毕 {
@@ -84,6 +102,15 @@ namespace MifareOneTool.Properties {
         public static string _Sector {
             get {
                 return ResourceManager.GetString("_Sector", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на true.
+        /// </summary>
+        public static string _true {
+            get {
+                return ResourceManager.GetString("_true", resourceCulture);
             }
         }
         
@@ -242,6 +269,43 @@ namespace MifareOneTool.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на allow_autoscan = .
+        /// </summary>
+        public static string allow_autoscan {
+            get {
+                return ResourceManager.GetString("allow_autoscan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на allow_intrusive_scan = .
+        /// </summary>
+        public static string allow_intrusive_scan {
+            get {
+                return ResourceManager.GetString("allow_intrusive_scan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на device.connstring = &quot;.
+        /// </summary>
+        public static string device_connstring {
+            get {
+                return ResourceManager.GetString("device_connstring", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на device.name = &quot;NFC-Device&quot;
+        ///.
+        /// </summary>
+        public static string device_name_NFC_Device {
+            get {
+                return ResourceManager.GetString("device_name_NFC_Device", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на DUMP文件|*.dump|MFD文件|*.mfd.
         /// </summary>
         public static string DUMP文件_dump_MFD文件_mfd {
@@ -274,6 +338,15 @@ namespace MifareOneTool.Properties {
         public static string KeyA_B_N {
             get {
                 return ResourceManager.GetString("KeyA_B_N", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на libnfc.conf.
+        /// </summary>
+        public static string libnfc_conf {
+            get {
+                return ResourceManager.GetString("libnfc_conf", resourceCulture);
             }
         }
         
@@ -314,7 +387,7 @@ namespace MifareOneTool.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на MifareOne Tool - 已取消.
+        ///   Ищет локализованную строку, похожую на MifareOne Tool - отменено.
         /// </summary>
         public static string MifareOne_Tool_已取消 {
             get {
@@ -350,15 +423,6 @@ namespace MifareOneTool.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на nfc-bin/collect.exe.
-        /// </summary>
-        public static string nfc_bin_collect_exe {
-            get {
-                return ResourceManager.GetString("nfc_bin_collect_exe", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap outline_info_black_18pt_1x {
@@ -374,6 +438,53 @@ namespace MifareOneTool.Properties {
         public static string res {
             get {
                 return ResourceManager.GetString("res", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 
+        ///.
+        /// </summary>
+        public static string res0 {
+            get {
+                return ResourceManager.GetString("res0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
+        /// </summary>
+        public static string res1 {
+            get {
+                return ResourceManager.GetString("res1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на -- .
+        /// </summary>
+        public static string res2 {
+            get {
+                return ResourceManager.GetString("res2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на ## .
+        /// </summary>
+        public static string res3 {
+            get {
+                return ResourceManager.GetString("res3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на ：
+        ///.
+        /// </summary>
+        public static string res4 {
+            get {
+                return ResourceManager.GetString("res4", resourceCulture);
             }
         }
         

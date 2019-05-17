@@ -52,11 +52,6 @@ namespace MifareOneTool
             return a;
         }
 
-        public bool collectOnly()
-        {
-            return checkBoxColOnly.Checked;
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;

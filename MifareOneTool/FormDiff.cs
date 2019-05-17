@@ -108,7 +108,7 @@ namespace MifareOneTool
             int diffCount = 0;
             for (int i = 0; i < 16; i++)
             {
-                stb.AppendLine("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+                stb.AppendLine(Resources.res1);
                 stb.AppendLine(Resources.扇区0 + i.ToString());
                 for (int a = 0; a < 4; a++)
                 {
@@ -117,11 +117,11 @@ namespace MifareOneTool
                     {
                         if (sa.Sectors[i].Block[a][b] == sb.Sectors[i].Block[a][b])
                         {
-                            res += "-- ";
+                            res += Resources.res2;
                         }
                         else
                         {
-                            res += "## ";
+                            res += Resources.res3;
                         }
                     }
                     stb.AppendLine("A: " + Utils.Hex2StrWithSpan(sa.Sectors[i].Block[a]));

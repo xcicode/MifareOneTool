@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHTool));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新建ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -241,18 +243,33 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.AliceBlue;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.GridColor = System.Drawing.Color.SkyBlue;
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
@@ -407,6 +424,7 @@
             // keyAEdit
             // 
             resources.ApplyResources(this.keyAEdit, "keyAEdit");
+            this.keyAEdit.BackColor = System.Drawing.Color.White;
             this.keyAEdit.Name = "keyAEdit";
             this.keyAEdit.TextChanged += new System.EventHandler(this.keyAEdit_TextChanged);
             this.keyAEdit.Validating += new System.ComponentModel.CancelEventHandler(this.keyAEdit_Validating);
@@ -419,6 +437,7 @@
             // keyBEdit
             // 
             resources.ApplyResources(this.keyBEdit, "keyBEdit");
+            this.keyBEdit.BackColor = System.Drawing.Color.White;
             this.keyBEdit.Name = "keyBEdit";
             this.keyBEdit.Validating += new System.ComponentModel.CancelEventHandler(this.keyAEdit_Validating);
             // 
@@ -463,6 +482,7 @@
             // block0Edit
             // 
             resources.ApplyResources(this.block0Edit, "block0Edit");
+            this.block0Edit.BackColor = System.Drawing.Color.White;
             this.block0Edit.Name = "block0Edit";
             this.block0Edit.Validating += new System.ComponentModel.CancelEventHandler(this.block0Edit_Validating);
             // 
@@ -474,6 +494,7 @@
             // block1Edit
             // 
             resources.ApplyResources(this.block1Edit, "block1Edit");
+            this.block1Edit.BackColor = System.Drawing.Color.White;
             this.block1Edit.Name = "block1Edit";
             this.block1Edit.Validating += new System.ComponentModel.CancelEventHandler(this.block0Edit_Validating);
             // 
@@ -485,6 +506,7 @@
             // block2Edit
             // 
             resources.ApplyResources(this.block2Edit, "block2Edit");
+            this.block2Edit.BackColor = System.Drawing.Color.White;
             this.block2Edit.Name = "block2Edit";
             this.block2Edit.Validating += new System.ComponentModel.CancelEventHandler(this.block0Edit_Validating);
             // 
