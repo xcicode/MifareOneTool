@@ -332,7 +332,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="tableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -362,7 +362,7 @@
     <value>Fill</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
@@ -374,7 +374,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 96</value>
+    <value>144, 93</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -394,20 +394,17 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="richTextBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
   <data name="richTextBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9.75pt</value>
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 257</value>
+    <value>4, 237</value>
   </data>
   <data name="richTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>643, 199</value>
+    <value>716, 298</value>
   </data>
   <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -680,7 +677,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="tableLayoutPanel7.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -710,7 +707,7 @@
     <value>Fill</value>
   </data>
   <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>150, 2</value>
@@ -722,7 +719,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 96</value>
+    <value>160, 93</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1216,7 +1213,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="tableLayoutPanel10.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1246,7 +1243,7 @@
     <value>Fill</value>
   </data>
   <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>420, 2</value>
@@ -1258,7 +1255,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 96</value>
+    <value>128, 93</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1513,13 +1510,13 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="buttonCmfWrite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 13</value>
+    <value>2, 15</value>
   </data>
   <data name="buttonCmfWrite.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonCmfWrite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
+    <value>83, 25</value>
   </data>
   <data name="buttonCmfWrite.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1747,7 +1744,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="tableLayoutPanel6.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1777,7 +1774,7 @@
     <value>Fill</value>
   </data>
   <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
@@ -1789,7 +1786,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 96</value>
+    <value>192, 93</value>
   </data>
   <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1834,7 +1831,7 @@
     <value>Fill</value>
   </data>
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9.75pt</value>
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="label8.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
@@ -1846,7 +1843,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 34</value>
+    <value>38, 32</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1877,10 +1874,10 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 37</value>
+    <value>3, 35</value>
   </data>
   <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 29</value>
+    <value>36, 27</value>
   </data>
   <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -1904,10 +1901,10 @@
     <value>TopDown</value>
   </data>
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>335, 3</value>
+    <value>369, 3</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 215</value>
+    <value>42, 196</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -1955,19 +1952,19 @@
     <value>Left</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9.75pt</value>
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 34</value>
+    <value>2, 32</value>
   </data>
   <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 34</value>
+    <value>38, 32</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2001,7 +1998,7 @@
     <value>Flat</value>
   </data>
   <data name="buttonEscan.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonEscan.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
@@ -2010,7 +2007,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonEscan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 30</value>
+    <value>71, 28</value>
   </data>
   <data name="buttonEscan.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2043,16 +2040,16 @@
     <value>Flat</value>
   </data>
   <data name="buttonECheckEncrypt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonECheckEncrypt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 2</value>
+    <value>113, 2</value>
   </data>
   <data name="buttonECheckEncrypt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonECheckEncrypt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 30</value>
+    <value>71, 28</value>
   </data>
   <data name="buttonECheckEncrypt.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2085,16 +2082,16 @@
     <value>Flat</value>
   </data>
   <data name="buttoEScanCard.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttoEScanCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 36</value>
+    <value>113, 34</value>
   </data>
   <data name="buttoEScanCard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttoEScanCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 30</value>
+    <value>71, 28</value>
   </data>
   <data name="buttoEScanCard.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2118,10 +2115,10 @@
     <value>Fill</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>68, 3</value>
+    <value>78, 3</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 28</value>
+    <value>30, 26</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2142,10 +2139,10 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 3</value>
+    <value>189, 3</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 25</value>
+    <value>30, 23</value>
   </data>
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -2172,7 +2169,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 68</value>
+    <value>222, 64</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -2199,16 +2196,17 @@
     <value>Left</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 72</value>
+    <value>3, 68</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 68</value>
+    <value>229, 80</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
-    <value>本工具仅支持SAK=08/18/28的
+    <value>
+本工具仅支持SAK=08/18/28的
 卡片复制。SAK28无一键解密。
 若要复制S70卡片，请在高级界
 面上取消勾选“数据写入保护”。
@@ -2230,13 +2228,13 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 20</value>
+    <value>12, 18</value>
   </data>
   <data name="tableLayoutPanel15.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="tableLayoutPanel15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 140</value>
+    <value>235, 148</value>
   </data>
   <data name="tableLayoutPanel15.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2260,13 +2258,13 @@
     <value>Fill</value>
   </data>
   <data name="groupBox16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox16.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
   <data name="groupBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 215</value>
+    <value>253, 196</value>
   </data>
   <data name="groupBox16.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2314,7 +2312,7 @@
     <value>Flat</value>
   </data>
   <data name="buttonEReadUID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonEReadUID.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 33</value>
@@ -2323,7 +2321,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonEReadUID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
+    <value>95, 27</value>
   </data>
   <data name="buttonEReadUID.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2356,16 +2354,16 @@
     <value>Flat</value>
   </data>
   <data name="buttonEMfRead.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonEMfRead.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 166</value>
+    <value>2, 150</value>
   </data>
   <data name="buttonEMfRead.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonEMfRead.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
+    <value>95, 27</value>
   </data>
   <data name="buttonEMfRead.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2398,7 +2396,7 @@
     <value>Flat</value>
   </data>
   <data name="buttonECmfoc.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonECmfoc.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 64</value>
@@ -2407,7 +2405,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonECmfoc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
+    <value>95, 27</value>
   </data>
   <data name="buttonECmfoc.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2440,7 +2438,7 @@
     <value>Flat</value>
   </data>
   <data name="buttonEMfoc.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonEMfoc.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
@@ -2449,7 +2447,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonEMfoc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
+    <value>95, 27</value>
   </data>
   <data name="buttonEMfoc.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2482,7 +2480,7 @@
     <value>Flat</value>
   </data>
   <data name="buttonESelectKey.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonESelectKey.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 95</value>
@@ -2491,7 +2489,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonESelectKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
+    <value>95, 27</value>
   </data>
   <data name="buttonESelectKey.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2515,13 +2513,13 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="tableLayoutPanel11.RowCount" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="tableLayoutPanel11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 195</value>
+    <value>99, 179</value>
   </data>
   <data name="tableLayoutPanel11.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2545,10 +2543,10 @@
     <value>Fill</value>
   </data>
   <data name="groupBox5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 2</value>
+    <value>261, 2</value>
   </data>
   <data name="groupBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2557,13 +2555,13 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 217</value>
+    <value>103, 198</value>
   </data>
   <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="groupBox5.Text" xml:space="preserve">
-    <value>[2]读取原卡</value>
+    <value>[2]读原卡</value>
   </data>
   <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
     <value>groupBox5</value>
@@ -2599,7 +2597,7 @@
     <value>3, 3</value>
   </data>
   <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 26</value>
+    <value>30, 24</value>
   </data>
   <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2629,7 +2627,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 32</value>
+    <value>136, 30</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2656,10 +2654,10 @@
     <value>Bottom</value>
   </data>
   <data name="flowLayoutPanel24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 72</value>
+    <value>3, 65</value>
   </data>
   <data name="flowLayoutPanel24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 32</value>
+    <value>179, 30</value>
   </data>
   <data name="flowLayoutPanel24.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2692,16 +2690,16 @@
     <value>Flat</value>
   </data>
   <data name="buttonEStop.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonEStop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 186</value>
+    <value>138, 167</value>
   </data>
   <data name="buttonEStop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonEStop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 27</value>
+    <value>45, 27</value>
   </data>
   <data name="buttonEStop.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2725,13 +2723,13 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 3</value>
+    <value>526, 3</value>
   </data>
   <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 215</value>
+    <value>185, 196</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -2779,7 +2777,7 @@
     <value>Flat</value>
   </data>
   <data name="buttonEUIDWrite.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonEUIDWrite.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
@@ -2788,7 +2786,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonEUIDWrite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
+    <value>97, 27</value>
   </data>
   <data name="buttonEUIDWrite.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2821,7 +2819,7 @@
     <value>Flat</value>
   </data>
   <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 64</value>
@@ -2830,7 +2828,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
+    <value>97, 27</value>
   </data>
   <data name="button4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2863,7 +2861,7 @@
     <value>Flat</value>
   </data>
   <data name="buttonECuidWrite.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonECuidWrite.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 33</value>
@@ -2872,7 +2870,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonECuidWrite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
+    <value>97, 27</value>
   </data>
   <data name="buttonECuidWrite.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2905,19 +2903,19 @@
     <value>Flat</value>
   </data>
   <data name="buttonEMfWrite.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="buttonEMfWrite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="buttonEMfWrite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 166</value>
+    <value>8, 150</value>
   </data>
   <data name="buttonEMfWrite.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonEMfWrite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 27</value>
+    <value>84, 27</value>
   </data>
   <data name="buttonEMfWrite.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2941,13 +2939,13 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="tableLayoutPanel13.RowCount" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="tableLayoutPanel13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 195</value>
+    <value>101, 179</value>
   </data>
   <data name="tableLayoutPanel13.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2971,10 +2969,10 @@
     <value>Fill</value>
   </data>
   <data name="groupBox7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>379, 2</value>
+    <value>416, 2</value>
   </data>
   <data name="groupBox7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2983,7 +2981,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 217</value>
+    <value>105, 198</value>
   </data>
   <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3013,7 +3011,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>641, 221</value>
+    <value>714, 202</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -3034,7 +3032,7 @@
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flowLayoutPanel1" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="groupBox16" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBox5" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="groupBox7" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tabPage2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="tabPage2.ImageKey" xml:space="preserve">
     <value>sharp_file_copy_black_18pt_1x.png</value>
@@ -3049,7 +3047,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 225</value>
+    <value>718, 206</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3208,7 +3206,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="tableLayoutPanel8.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3238,7 +3236,7 @@
     <value>Fill</value>
   </data>
   <data name="groupBox10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox10.Location" type="System.Drawing.Point, System.Drawing">
     <value>198, 2</value>
@@ -3250,7 +3248,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 96</value>
+    <value>218, 93</value>
   </data>
   <data name="groupBox10.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -3274,10 +3272,10 @@
     <value>Top</value>
   </data>
   <data name="flowLayoutPanel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 109</value>
+    <value>3, 104</value>
   </data>
   <data name="flowLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>601, 100</value>
+    <value>708, 95</value>
   </data>
   <data name="flowLayoutPanel8.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -3376,7 +3374,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="tableLayoutPanel9.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3406,7 +3404,7 @@
     <value>Fill</value>
   </data>
   <data name="groupBox8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>314, 2</value>
@@ -3418,7 +3416,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 96</value>
+    <value>198, 93</value>
   </data>
   <data name="groupBox8.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -3457,16 +3455,16 @@
     <value>Fill</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9.75pt</value>
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 40</value>
+    <value>2, 42</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
+    <value>83, 32</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3497,10 +3495,10 @@
     <value>BottomUp</value>
   </data>
   <data name="flowLayoutPanel21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="flowLayoutPanel21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 74</value>
+    <value>87, 74</value>
   </data>
   <data name="flowLayoutPanel21.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3521,7 +3519,7 @@
     <value>Fill</value>
   </data>
   <data name="groupBox9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>516, 2</value>
@@ -3533,7 +3531,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 96</value>
+    <value>91, 93</value>
   </data>
   <data name="groupBox9.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -3560,7 +3558,7 @@
     <value>3, 3</value>
   </data>
   <data name="flowLayoutPanel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>601, 100</value>
+    <value>708, 95</value>
   </data>
   <data name="flowLayoutPanel7.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -3580,14 +3578,17 @@
   <data name="&gt;&gt;flowLayoutPanel7.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 5</value>
+    <value>2, 2</value>
   </data>
   <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>607, 212</value>
+    <value>714, 202</value>
   </data>
   <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3620,7 +3621,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 225</value>
+    <value>718, 206</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3674,7 +3675,7 @@
     <value>Flat</value>
   </data>
   <data name="checkBoxAutoABN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="checkBoxAutoABN.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
@@ -3683,7 +3684,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="checkBoxAutoABN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 19</value>
+    <value>136, 19</value>
   </data>
   <data name="checkBoxAutoABN.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3710,7 +3711,7 @@
     <value>Flat</value>
   </data>
   <data name="checkBoxAutoLoadKey.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="checkBoxAutoLoadKey.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 25</value>
@@ -3719,7 +3720,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="checkBoxAutoLoadKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 19</value>
+    <value>148, 19</value>
   </data>
   <data name="checkBoxAutoLoadKey.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -3746,7 +3747,7 @@
     <value>Flat</value>
   </data>
   <data name="checkBoxWriteProtect.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="checkBoxWriteProtect.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 48</value>
@@ -3755,7 +3756,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="checkBoxWriteProtect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 19</value>
+    <value>137, 19</value>
   </data>
   <data name="checkBoxWriteProtect.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -3782,13 +3783,13 @@
     <value>Flat</value>
   </data>
   <data name="checkBoxCuidKeyOver.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="checkBoxCuidKeyOver.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 72</value>
   </data>
   <data name="checkBoxCuidKeyOver.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 19</value>
+    <value>121, 19</value>
   </data>
   <data name="checkBoxCuidKeyOver.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -3815,10 +3816,10 @@
     <value>TopDown</value>
   </data>
   <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 94</value>
+    <value>152, 94</value>
   </data>
   <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -3839,7 +3840,7 @@
     <value>Fill</value>
   </data>
   <data name="groupBox6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
@@ -3851,7 +3852,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 116</value>
+    <value>156, 113</value>
   </data>
   <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3893,16 +3894,16 @@
     <value>Top</value>
   </data>
   <data name="numericCLIFontSize.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="numericCLIFontSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 49</value>
+    <value>91, 49</value>
   </data>
   <data name="numericCLIFontSize.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="numericCLIFontSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 23</value>
+    <value>56, 21</value>
   </data>
   <data name="numericCLIFontSize.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -3929,7 +3930,7 @@
     <value>Fill</value>
   </data>
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 0</value>
@@ -3938,7 +3939,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 47</value>
+    <value>85, 47</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -3974,16 +3975,16 @@
     <value>Popup</value>
   </data>
   <data name="buttonCLIColor.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="buttonCLIColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 2</value>
+    <value>91, 2</value>
   </data>
   <data name="buttonCLIColor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="buttonCLIColor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 43</value>
+    <value>56, 43</value>
   </data>
   <data name="buttonCLIColor.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -4010,7 +4011,7 @@
     <value>Top</value>
   </data>
   <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 47</value>
@@ -4019,7 +4020,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 15</value>
+    <value>85, 15</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -4046,13 +4047,13 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="tableLayoutPanel12.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="tableLayoutPanel12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 94</value>
+    <value>149, 94</value>
   </data>
   <data name="tableLayoutPanel12.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -4076,10 +4077,10 @@
     <value>Fill</value>
   </data>
   <data name="groupBox12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>144, 2</value>
+    <value>162, 2</value>
   </data>
   <data name="groupBox12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -4088,7 +4089,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 116</value>
+    <value>153, 113</value>
   </data>
   <data name="groupBox12.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -4127,7 +4128,7 @@
     <value>Flat</value>
   </data>
   <data name="checkBoxNewScan.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="checkBoxNewScan.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
@@ -4136,7 +4137,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="checkBoxNewScan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 19</value>
+    <value>114, 19</value>
   </data>
   <data name="checkBoxNewScan.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4163,13 +4164,13 @@
     <value>Flat</value>
   </data>
   <data name="checkBoxMultiDev.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="checkBoxMultiDev.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 26</value>
   </data>
   <data name="checkBoxMultiDev.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 19</value>
+    <value>304, 19</value>
   </data>
   <data name="checkBoxMultiDev.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4193,13 +4194,13 @@
     <value>True</value>
   </data>
   <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 48</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 15</value>
+    <value>59, 15</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4223,7 +4224,7 @@
     <value>Flat</value>
   </data>
   <data name="SetDeviceCombo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="SetDeviceCombo.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 66</value>
@@ -4253,10 +4254,10 @@
     <value>TopDown</value>
   </data>
   <data name="flowLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="flowLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 94</value>
+    <value>310, 94</value>
   </data>
   <data name="flowLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -4277,10 +4278,10 @@
     <value>Fill</value>
   </data>
   <data name="groupBox14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>291, 2</value>
+    <value>319, 2</value>
   </data>
   <data name="groupBox14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -4289,7 +4290,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 116</value>
+    <value>314, 113</value>
   </data>
   <data name="groupBox14.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -4316,7 +4317,7 @@
     <value>3, 3</value>
   </data>
   <data name="flowLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 120</value>
+    <value>712, 117</value>
   </data>
   <data name="flowLayoutPanel6.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -4361,7 +4362,7 @@
     <value>Fill</value>
   </data>
   <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4370,7 +4371,7 @@
     <value>3, 0</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 15</value>
+    <value>85, 15</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4397,7 +4398,7 @@
     <value>Flat</value>
   </data>
   <data name="comboBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="comboBox1.Items" xml:space="preserve">
     <value>标准</value>
@@ -4409,7 +4410,7 @@
     <value>3, 18</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 23</value>
+    <value>85, 23</value>
   </data>
   <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4433,10 +4434,10 @@
     <value>TopDown</value>
   </data>
   <data name="flowLayoutPanel23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 21</value>
+    <value>3, 18</value>
   </data>
   <data name="flowLayoutPanel23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 44</value>
+    <value>91, 44</value>
   </data>
   <data name="flowLayoutPanel23.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -4457,13 +4458,13 @@
     <value>Fill</value>
   </data>
   <data name="groupBox15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox15.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
   <data name="groupBox15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 68</value>
+    <value>97, 65</value>
   </data>
   <data name="groupBox15.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -4502,7 +4503,7 @@
     <value>Flat</value>
   </data>
   <data name="checkBoxDefIsAdv.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="checkBoxDefIsAdv.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
@@ -4511,7 +4512,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="checkBoxDefIsAdv.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 19</value>
+    <value>153, 19</value>
   </data>
   <data name="checkBoxDefIsAdv.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4538,7 +4539,7 @@
     <value>Flat</value>
   </data>
   <data name="checkBoxAutoSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="checkBoxAutoSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 25</value>
@@ -4547,7 +4548,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="checkBoxAutoSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 19</value>
+    <value>151, 19</value>
   </data>
   <data name="checkBoxAutoSave.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4574,13 +4575,13 @@
     <value>TopDown</value>
   </data>
   <data name="flowLayoutPanel4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="flowLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="flowLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 48</value>
+    <value>157, 48</value>
   </data>
   <data name="flowLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -4601,10 +4602,10 @@
     <value>Fill</value>
   </data>
   <data name="groupBox13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 2</value>
+    <value>105, 2</value>
   </data>
   <data name="groupBox13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -4613,7 +4614,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 70</value>
+    <value>161, 67</value>
   </data>
   <data name="groupBox13.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -4655,7 +4656,7 @@
     <value>Flat</value>
   </data>
   <data name="checkBoxHardLowCost.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="checkBoxHardLowCost.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
@@ -4664,7 +4665,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="checkBoxHardLowCost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 19</value>
+    <value>88, 19</value>
   </data>
   <data name="checkBoxHardLowCost.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4691,10 +4692,10 @@
     <value>TopDown</value>
   </data>
   <data name="flowLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 17</value>
   </data>
   <data name="flowLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 48</value>
+    <value>92, 48</value>
   </data>
   <data name="flowLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -4715,10 +4716,10 @@
     <value>Fill</value>
   </data>
   <data name="groupBox11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="groupBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 2</value>
+    <value>270, 2</value>
   </data>
   <data name="groupBox11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -4727,7 +4728,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 70</value>
+    <value>96, 67</value>
   </data>
   <data name="groupBox11.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -4751,10 +4752,10 @@
     <value>Fill</value>
   </data>
   <data name="flowLayoutPanel22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 129</value>
+    <value>3, 126</value>
   </data>
   <data name="flowLayoutPanel22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 93</value>
+    <value>712, 77</value>
   </data>
   <data name="flowLayoutPanel22.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -4784,7 +4785,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanel14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 225</value>
+    <value>718, 206</value>
   </data>
   <data name="tableLayoutPanel14.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -4805,7 +4806,7 @@
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flowLayoutPanel6" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel22" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tabPage3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9.75pt</value>
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="tabPage3.ImageKey" xml:space="preserve">
     <value>round_settings_black_18pt_1x.png</value>
@@ -4817,7 +4818,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 225</value>
+    <value>718, 206</value>
   </data>
   <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4838,7 +4839,7 @@
     <value>2</value>
   </data>
   <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI Semibold, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <metadata name="imageList2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>384, 17</value>
@@ -4848,7 +4849,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACu
-        CgAAAk1TRnQBSQFMAgEBAwEAAQgBAAEIAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CgAAAk1TRnQBSQFMAgEBAwEAARgBAAEYAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -4880,8 +4881,8 @@
         BP8RAAT/FAAB8wFtCAABFAHzBwABBwLtAe8QAAH/AfIB7AFtAfEB/xMAAfMBbQgAARQB8wMABP8BbQIA
         ARUE/wsAAf8B8gFtAgAB7AH/EwAB8wFtCAABFAHzAgAB/wH0Ae8BvAHvARECAAEOAe8B8AHvAfMB/woA
         AfIB6gMAAfcB/xEAAfIB8AHzAW0IAAEUAfMCAAH/AZIBDgEQAQ8EAAEOAREBDgHsAf8JAAHyARIDAAHr
-        AfMB/xEAAe8B+AHzAW0IAAEUAfMCAAHzAQ8DAAFDAfcB7wERAwABDwHxAf8HAAHyARQDAAHrAfMB/xIA
-        AfcBbQHzAW0IAAEUAfMCAAH/AfgCAAFDAfIC/wHyAQ8CAAFtAfQB/wMAAf8B8gHwAbwBFQMAAW0B8wH/
+        AfMB/xEAAe8B7AHzAW0IAAEUAfMCAAHzAQ8DAAFDAfcB7wERAwABDwHxAf8HAAHyARQDAAHrAfMB/xIA
+        AfcBbQHzAW0IAAEUAfMCAAH/AewCAAFDAfIC/wHyAQ8CAAFtAfQB/wMAAf8B8gHwAbwBFQMAAW0B8wH/
         EwAB9wFtAfMBbQgAARQB8wMAAfQB6gEAAewB9AIAAf8B7QEAARMB8wMAAf8B8AFDBgAB6gH0FQAB9wFt
         AfMBbQQAAQcC/wHvAesB9AIAAf8B8wESAQAB6wH0AgAB/wHsAQABFAHyAf8CAAHwBwAB6gH0FgAB9wFt
         AfMBbQQAAQcB/wHvAW0B8QH/AgAB9AFtAgABDgEHAvQBvAEPAgAB6gHzAv8BQwEAAg4EAAHxFwAB9wFt
@@ -4903,7 +4904,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>653, 253</value>
+    <value>726, 234</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -4924,13 +4925,13 @@
     <value>157, 17</value>
   </metadata>
   <data name="statusStrip1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9.75pt</value>
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="statusLabel.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="statusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 22</value>
+    <value>56, 22</value>
   </data>
   <data name="statusLabel.Text" xml:space="preserve">
     <value>就绪</value>
@@ -4939,7 +4940,7 @@
     <value>None</value>
   </data>
   <data name="runTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 22</value>
+    <value>71, 22</value>
   </data>
   <data name="runTimeLabel.Text" xml:space="preserve">
     <value>计时器</value>
@@ -4966,7 +4967,7 @@
     <value>White</value>
   </data>
   <data name="toolStripCheckUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 22</value>
+    <value>84, 22</value>
   </data>
   <data name="toolStripCheckUpdate.Text" xml:space="preserve">
     <value>检查更新</value>
@@ -4975,13 +4976,13 @@
     <value>检查更新</value>
   </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 434</value>
+    <value>0, 537</value>
   </data>
   <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 10, 0</value>
   </data>
   <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>653, 22</value>
+    <value>726, 22</value>
   </data>
   <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -5011,13 +5012,13 @@
     <value>41</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>6, 12</value>
   </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>653, 456</value>
+    <value>726, 559</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6163,6 +6164,12 @@
   <data name="&gt;&gt;toolTipHelp.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;imageList2.Name" xml:space="preserve">
+    <value>imageList2</value>
+  </data>
+  <data name="&gt;&gt;imageList2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;statusLabel.Name" xml:space="preserve">
     <value>statusLabel</value>
   </data>
@@ -6198,12 +6205,6 @@
   </data>
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imageList2.Name" xml:space="preserve">
-    <value>imageList2</value>
-  </data>
-  <data name="&gt;&gt;imageList2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
