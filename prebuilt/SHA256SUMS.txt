@@ -1,2 +1,2 @@
-3c8a00be212ab237a68da73356b93990496cd8aaa38c46afb53c7a88ea4e5d78 *MifareOneTool-1.7.0-optimized-win-x86-full.zip
+e7da6a0fef44f648a0631064c61e51342a5dabc3a53be65d7e24a1ec46ac43df *M1T-Release-Optimized.zip
 99132fc9c0309d435073a83e803be6c1667dd733253080f178d46f143c689428 *MifareOneTool-1.7.0-window-ui-fix-win-x86.zip
