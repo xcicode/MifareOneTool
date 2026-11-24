@@ -1,0 +1,1 @@
+99132fc9c0309d435073a83e803be6c1667dd733253080f178d46f143c689428 *MifareOneTool-1.7.0-window-ui-fix-win-x86.zip
