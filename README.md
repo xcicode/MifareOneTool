@@ -4,9 +4,18 @@
 
 ## 预编译文件
 
+### 完整运行包（推荐，开箱即用）
+
+- 文件：[`prebuilt/MifareOneTool-1.7.0-optimized-win-x86-full.zip`](prebuilt/MifareOneTool-1.7.0-optimized-win-x86-full.zip)
+- SHA-256：`3c8a00be212ab237a68da73356b93990496cd8aaa38c46afb53c7a88ea4e5d78`
+- 内容：本 Fork 重新编译的 `MifareOneTool.exe`，以及运行所需的全部文件（`nfc-bin`、`auto_keys`、`libnfc.conf`、`mff08_empty.kmf`、`Newtonsoft.Json.dll`、`winhex.exe`）
+- 用法：解压后进入 `MifareOneTool-1.7.0-optimized` 目录，直接运行 `MifareOneTool.exe`。**无需另行下载原版**，整个目录可随意拷贝到其他电脑使用。
+
+### 增量更新包（已有原版 `M1T-Release`）
+
 - 文件：[`prebuilt/MifareOneTool-1.7.0-window-ui-fix-win-x86.zip`](prebuilt/MifareOneTool-1.7.0-window-ui-fix-win-x86.zip)
 - SHA-256：`99132fc9c0309d435073a83e803be6c1667dd733253080f178d46f143c689428`
-- 内容：`MifareOneTool.exe`、`MifareOneTool.exe.config`（仅本 Fork 重新编译的文件；不含 `nfc-bin`、`winhex.exe` 等第三方工具）
+- 内容：仅 `MifareOneTool.exe`、`MifareOneTool.exe.config`
 - 用法：备份现有 `M1T-Release` 目录后，将压缩包内两个文件解压覆盖到该目录（与 `nfc-bin`、`auto_keys`、`libnfc.conf` 同级），运行 `MifareOneTool.exe`。
 
 ## 本次优化
@@ -18,7 +27,8 @@
 
 ## 说明
 
-- 版本 1.7.0.0，x86，.NET Framework 4.8。
+- 版本 1.7.0.0，x86，.NET Framework 4.8（Windows 10/11 已自带）。
+- 完整运行包已包含原版所需的全部第三方工具与配置，可脱离原版独立运行；增量包只替换本 Fork 修改的文件。
 - 新版按可执行文件路径保存界面偏好，首次运行会使用默认设置；`libnfc.conf` 与 `auto_keys` 不受影响。
 - 原项目已停止更新；本 Fork 仅做 Windows 使用体验优化，未改动读写卡逻辑。
 
