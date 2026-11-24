@@ -1,21 +1,13 @@
 # MifareOneTool 1.7（Windows 优化版）
 
-本仓库是 [xcicode/MifareOneTool](https://github.com/xcicode/MifareOneTool) 的 Fork，针对 Windows 版做了窗口与界面优化，并提供可直接使用的预编译文件。
+本仓库是 [xcicode/MifareOneTool](https://github.com/xcicode/MifareOneTool) 的 Fork，针对 Windows 版做了窗口与界面优化，预编译包请从 Releases 页面下载。
 
-## 预编译文件
+## 下载
 
-### 完整运行包（推荐，开箱即用）
+请到 [Releases](https://github.com/lyx7725/MifareOneTool/releases) 页面下载 `M1T-Release-Optimized.zip`（完整运行包）。
 
-- 文件：[`prebuilt/M1T-Release-Optimized.zip`](prebuilt/M1T-Release-Optimized.zip)
-- 发布页：[Releases · net4.8](https://github.com/lyx7725/MifareOneTool/releases/tag/net4.8)（同一份压缩包）
 - 内容：本 Fork 重新编译的 `MifareOneTool.exe`，以及运行所需的全部文件（`nfc-bin`、`auto_keys`、`libnfc.conf`、`mff08_empty.kmf`、`Newtonsoft.Json.dll`、`winhex.exe`）
 - 用法：解压后进入 `M1T-Release-Optimized` 目录，直接运行 `MifareOneTool.exe`。**无需另行下载原版**，整个目录可随意拷贝到其他电脑使用。
-
-### 增量更新包（已有原版 `M1T-Release`）
-
-- 文件：[`prebuilt/MifareOneTool-1.7.0-window-ui-fix-win-x86.zip`](prebuilt/MifareOneTool-1.7.0-window-ui-fix-win-x86.zip)
-- 内容：仅 `MifareOneTool.exe`、`MifareOneTool.exe.config`
-- 用法：备份现有 `M1T-Release` 目录后，将压缩包内两个文件解压覆盖到该目录（与 `nfc-bin`、`auto_keys`、`libnfc.conf` 同级），运行 `MifareOneTool.exe`。
 
 ## 本次优化
 
@@ -27,7 +19,7 @@
 ## 说明
 
 - 版本 1.7.0.0，x86，.NET Framework 4.8（Windows 10/11 已自带）。
-- 完整运行包已包含原版所需的全部第三方工具与配置，可脱离原版独立运行；增量包只替换本 Fork 修改的文件。
+- 完整运行包已包含原版所需的全部第三方工具与配置，可脱离原版独立运行。
 - 新版按可执行文件路径保存界面偏好，首次运行会使用默认设置；`libnfc.conf` 与 `auto_keys` 不受影响。
 - 原项目已停止更新；本 Fork 仅做 Windows 使用体验优化，未改动读写卡逻辑。
 
