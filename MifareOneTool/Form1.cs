@@ -25,6 +25,122 @@ namespace MifareOneTool
             System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
             System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
             InitializeComponent();
+            ApplyModernTheme();
+        }
+
+        private static readonly Color AccentColor = Color.FromArgb(37, 99, 235);
+        private static readonly Color AccentHoverColor = Color.FromArgb(29, 78, 216);
+        private static readonly Color AccentDownColor = Color.FromArgb(30, 64, 175);
+        private static readonly Color InkColor = Color.FromArgb(31, 41, 55);
+
+        private void ApplyModernTheme()
+        {
+            DoubleBuffered = true;
+
+            ApplyAccentColors(this);
+            ApplyModernButtonStyle(this);
+
+            richTextBox1.BackColor = Color.FromArgb(15, 23, 42);
+            statusStrip1.BackColor = Color.FromArgb(243, 244, 246);
+            statusStrip1.ForeColor = Color.FromArgb(55, 65, 81);
+        }
+
+        private static void ApplyAccentColors(Control parent)
+        {
+            foreach (Control child in parent.Controls)
+            {
+                if (child.BackColor == Color.DodgerBlue)
+                {
+                    child.BackColor = AccentColor;
+                }
+                if (child.ForeColor == Color.MediumBlue)
+                {
+                    child.ForeColor = Color.FromArgb(30, 64, 175);
+                }
+                else if (child.ForeColor == Color.DodgerBlue)
+                {
+                    child.ForeColor = AccentColor;
+                }
+                ApplyAccentColors(child);
+            }
+        }
+
+        private static void ApplyModernButtonStyle(Control parent)
+        {
+            foreach (Control child in parent.Controls)
+            {
+                Button button = child as Button;
+                if (button != null)
+                {
+                    button.FlatStyle = FlatStyle.Flat;
+                    button.FlatAppearance.BorderSize = 1;
+                    button.Cursor = Cursors.Hand;
+
+                    if (button.BackColor == AccentColor)
+                    {
+                        button.ForeColor = Color.White;
+                        button.FlatAppearance.BorderColor = AccentColor;
+                        button.FlatAppearance.MouseOverBackColor = AccentHoverColor;
+                        button.FlatAppearance.MouseDownBackColor = AccentDownColor;
+                    }
+                    else if (button.BackColor == SystemColors.Control)
+                    {
+                        button.BackColor = Color.White;
+                        button.ForeColor = InkColor;
+                        button.FlatAppearance.BorderColor = Color.FromArgb(203, 213, 225);
+                        button.FlatAppearance.MouseOverBackColor = Color.FromArgb(239, 246, 255);
+                        button.FlatAppearance.MouseDownBackColor = Color.FromArgb(219, 234, 254);
+                    }
+                }
+                ApplyModernButtonStyle(child);
+            }
+        }
+
+        private void RestoreWindowState()
+        {
+            MinimumSize = Size;
+
+            int width = Properties.Settings.Default.WindowWidth;
+            int height = Properties.Settings.Default.WindowHeight;
+            if (width >= MinimumSize.Width && height >= MinimumSize.Height)
+            {
+                Rectangle saved = new Rectangle(
+                    Properties.Settings.Default.WindowX,
+                    Properties.Settings.Default.WindowY,
+                    width, height);
+                bool visible = false;
+                foreach (Screen screen in Screen.AllScreens)
+                {
+                    if (screen.WorkingArea.IntersectsWith(saved))
+                    {
+                        visible = true;
+                        break;
+                    }
+                }
+                if (visible)
+                {
+                    StartPosition = FormStartPosition.Manual;
+                    Bounds = saved;
+                }
+            }
+
+            if (Properties.Settings.Default.WindowMaximized)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void SaveWindowState()
+        {
+            Rectangle bounds = WindowState == FormWindowState.Normal ? Bounds : RestoreBounds;
+            if (bounds.Width > 0 && bounds.Height > 0)
+            {
+                Properties.Settings.Default.WindowX = bounds.X;
+                Properties.Settings.Default.WindowY = bounds.Y;
+                Properties.Settings.Default.WindowWidth = bounds.Width;
+                Properties.Settings.Default.WindowHeight = bounds.Height;
+                Properties.Settings.Default.WindowMaximized = WindowState == FormWindowState.Maximized;
+            }
         }
 
         private Process process = new Process();
@@ -205,6 +321,7 @@ namespace MifareOneTool
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            RestoreWindowState();
             logAppend(Resources._软件版本 + Assembly.GetExecutingAssembly().GetName().Version.ToString());
             localVersionLabel.Text = Resources.本地版本 + Assembly.GetExecutingAssembly().GetName().Version.ToString();
             Directory.CreateDirectory("auto_keys");
@@ -1481,6 +1598,7 @@ namespace MifareOneTool
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            SaveWindowState();
             Properties.Settings.Default.Save();
         }
 
